@@ -1,0 +1,240 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+snippet printf "printf - format and print data" b
+printf( "$1\n" );
+$2
+endsnippet
+
+snippet scanf "int scanf(const char *format, ...);" b
+scanf ( "$1", &$2 );
+endsnippet
+
+snippet calloc "void *calloc(size_t nmemb, size_t size);" b 
+$1	= calloc ( (size_t)($2), sizeof($3) );
+if ( $1==NULL ) {
+	fprintf ( stderr, "\ndynamic memory allocation failed\n" );
+	exit (EXIT_FAILURE);
+}
+
+free ($1);
+$1	= NULL;
+endsnippet 
+
+snippet malloc "void *malloc(size_t size);" b
+$1	= malloc ( $2 * sizeof($3) );
+if ( $1==NULL ) {
+	fprintf ( stderr, "\ndynamic memory allocation failed\n" );
+	exit (EXIT_FAILURE);
+}
+
+free ($1);
+$1	= NULL;
+endsnippet 
+
+snippet realloc "void *realloc(void *ptr, size_t size);" b
+$1	= realloc ( $1, sizeof( $2 ) );
+if ( $1==NULL ) {
+	fprintf ( stderr, "\ndynamic memory reallocation failed\n" );
+	exit (EXIT_FAILURE);
+}
+endsnippet 
+
+snippet sizeof "return size of argument" b
+sizeof( $1 )
+endsnippet 
+
+snippet assert "return assertion or not" b 
+assert( $1 );
+endsnippet 
+
+snippet FILE "input FILE pointer" b 
+FILE	*$1;
+char	*$1_file_name = "$2";		/* input-file name    */
+
+$1	= fopen( $1_file_name, "r" );
+if ( $1 == NULL ) {
+	fprintf ( stderr, "couldn't open file '%s'; %s\n",
+			$1_file_name, strerror(errno) );
+	exit (EXIT_FAILURE);
+}
+
+{
+	$3
+}
+
+if( fclose($1) == EOF ) {			/* close input file   */
+	fprintf ( stderr, "couldn't close file '%s'; %s\n",
+			$1_file_name, strerror(errno) );
+	exit (EXIT_FAILURE);
+}
+endsnippet 
+
+snippet FILE "output FILE pointer" b 
+FILE	*$1;
+char	*$1 = "$2";		/* output-file name    */
+
+$1	= fopen( $1_file_name, "w" );
+if ( $1 == NULL ) {
+	fprintf ( stderr, "couldn't open file '%s'; %s\n",
+			$1_file_name, strerror(errno) );
+	exit (EXIT_FAILURE);
+}
+
+{
+	$3
+}
+
+if( fclose($1) == EOF ) {			/* close output file   */
+	fprintf ( stderr, "couldn't close file '%s'; %s\n",
+			$1_file_name, strerror(errno) );
+	exit (EXIT_FAILURE);
+}
+endsnippet
+
+snippet fprintf "int fprintf(FILE *stream, const char *format, ...);" b
+fprintf ( $1, "$2\n",  );
+endsnippet 
+
+snippet fscanf "int fscanf(FILE *stream, const char *format, ...);" b 
+fscanf ( $1, "$2", &$3 );
+endsnippet 
+
+
+snippet for "For loop" b
+for(int ${VISUAL:default} = 0; $${VISUAL:default} < $2; ${VISUAL:default}++){
+	$3;
+}
+$4
+endsnippet
+
+snippet if "If condition" b
+if ( ${VISUAL:default} }{
+	$2;
+}
+$3
+endsnippet
+
+snippet while "While loop" b
+while ( ${VISUAL:default} ){
+	${VISUAL:2};
+}
+$3
+endsnippet
+
+snippet do "Do while loop" b
+do {
+$1
+} while ( $2 );
+$3
+endsnippet
+
+snippet else "Else part following if" b
+else {
+	$1;
+}
+$2
+endsnippet
+
+snippet switch "Switch statements" b
+switch ( $1 ) {
+	case $2:	
+		$3
+		break;
+
+	default:	
+		$4
+		break;
+}
+$5
+endsnippet
+snippet case "Case part of switch" b
+case $1:	
+	$2
+	break;
+endsnippet
+
+snippet /*-- "Bloc comment" b
+/*-----------------------------------------------------------------------------
+ *  $1
+ *-----------------------------------------------------------------------------*/
+endsnippet
+
+snippet /* "Header comment" b
+/*
+ * =====================================================================================
+ *
+ *       Filename:  $1 
+ *
+ *    Description:  $2
+ *
+ *        Version:  1.0
+ *        Created:  $3 
+ *       Revision:  none
+ *       Compiler:  gcc
+ *
+ *         Author: $4
+ *   Organization: 
+ *
+ * =====================================================================================
+ */
+endsnippet
+
+snippet main "Main function" b
+int main ( int argc, char **argv ){
+	$1
+	return 0;
+}
+endsnippet
+
+snippet function "New function" b 
+$1 ( $2 )
+{
+	$3	
+}
+endsnippet 
+
+snippet enum "typedef enum idiom" b 
+enum $1 {
+	$2
+};				
+typedef enum $1 $1;
+endsnippet 
+
+snippet struct "typedef struct idiom" b 
+struct $1 {
+	$2
+};
+typedef struct $1 $1;
+endsnippet 
+
+snippet union "typedef union idiom" b 
+union $1 {
+	$2
+};				/* ----------  end of union |UNION_NAME|  ---------- */
+
+typedef union $1 $1;
+endsnippet 
