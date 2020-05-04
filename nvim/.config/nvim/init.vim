@@ -44,6 +44,11 @@ nnoremap <leader>h :wincmd h<cr>
 nnoremap <leader> :wincmd l<cr>
 nnoremap <leader> :wincmd u<cr>
 nnoremap <leader> :wincmd d<cr>
+" commenting C code
+nnoremap <leader>cc :normal I//<space><cr>
+vnoremap <leader>cc :normal I//<space><cr> 
+nnoremap <leader>co :normal Ixx<space><cr>
+vnoremap <leader>co :normal Ixx<space><cr> 
 " Netrw
 nnoremap <C-b> :Lexplore<cr>
 let g:netrw_liststyle= 3
