@@ -1,7 +1,7 @@
 fpath+=$HOME/.local/share/zsh/pure
 autoload -U promptinit; promptinit
 # change the color for both `prompt:success` and `prompt:error`
-zstyle ':prompt:pure:prompt:*' color cyan
+#zstyle ':prompt:pure:prompt:*' color cyan
 # turn on git stash status
 PURE_GIT_PULL=1
 zstyle :prompt:pure:git:stash show yes

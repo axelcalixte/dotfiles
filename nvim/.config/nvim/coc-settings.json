@@ -1,0 +1,5 @@
+{
+    // doesn't autocomplete with just one letter
+    "suggest.autoTrigger": "always",
+    "suggest.triggerAfterInsertEnter": true,
+}
