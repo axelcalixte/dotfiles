@@ -1,4 +1,22 @@
 {
     "suggest.autoTrigger": "always",
-    "suggest.triggerAfterInsertEnter": true
+    "suggest.triggerAfterInsertEnter": true,
+    "coc.preferences.formatOnType": true,
+    "coc.preferences.formatOnTypeFiletypes": ["c", "vim"],
+
+      "languageserver": {
+        "clangd": {
+            "command": "clangd",
+            "rootPatterns": [
+                "compile_flags.txt",
+                "compile_commands.json"
+            ],
+            "filetypes": [
+                "c",
+                "cpp",
+                "objc",
+                "objcpp"
+            ]
+        }
+    }
 }
