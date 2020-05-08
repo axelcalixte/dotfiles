@@ -9,10 +9,11 @@ if exists('g:vscode')
 else
 "start of vim config
     "---Plugin Manager
-        set runtimepath+=/home/axel/.cache/dein/repos/github.com/Shougo/dein.vim
-        if dein#load_state('/home/axel/.cache/dein')
-        call dein#begin('/home/axel/.cache/dein')
-        call dein#add('/home/axel/.cache/dein/repos/github.com/Shougo/dein.vim')
+    	set runtimepath+=~/.cache/dein/github.com/Shougo/dein.vim
+        if dein#load_state('~/.cache/dein')
+        call dein#begin('~/.cache/dein')
+
+        call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
         call dein#add('tpope/vim-sensible')
         call dein#add('morhetz/gruvbox')
         call dein#add('dense-analysis/ale')
@@ -28,7 +29,7 @@ else
         colorscheme gruvbox
 
     "--fzf
-        nnoremap <c-p> :FZF<cr>
+        nnoremap <c-p> :FZF<CR>
 
     "---CoC settings
         autocmd CursorHold * silent call CocActionAsync('highlight')
@@ -37,9 +38,9 @@ else
         inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
         inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
     "confirm with enter
-        inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-        inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
-        inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+        inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+        inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
+        inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
         autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
     "Remap for rename current word
         nmap rn <Plug>(coc-rename)
@@ -81,7 +82,7 @@ else
         let g:netrw_banner=0
         let g:netrw_winsize=25
         set hidden "don't know why i need it for for <C-b> netrw
-        nnoremap <C-b> :Lexplore<cr>
+        nnoremap <C-b> :Lexplore<CR>
 
 "--- My own
         set showcmd
@@ -99,26 +100,29 @@ else
     " To work with the debugger
         packadd termdebug 
         let g:termdebug_wide=1 "debugger window on the left
-        nnoremap <F5> :Termdebug<cr> 
+        nnoremap <F5> :Termdebug<CR> 
 
     " buffer menu"
         set wildchar=<Tab> wildmenu wildmode=list
 
     " navigating threw windows
-        nnoremap <Leader>h :wincmd h<cr>
-        nnoremap <Leader>l :wincmd l<cr>
-        nnoremap <Leader>k :wincmd k<cr>
-        nnoremap <Leader>j :wincmd j<cr>
+        nnoremap <Leader>h :wincmd h<CR>
+        nnoremap <Leader>l :wincmd l<CR>
+        nnoremap <Leader>k :wincmd k<CR>
+        nnoremap <Leader>j :wincmd j<CR>
+    " resizing splits
+	nnoremap <Silent> <Left> :vertical resize -5<CR>
+	nnoremap <Silent> <Right> :vertical resize +5<CR>
 
     " commenting C code
-        nnoremap <Leader>cc :normal I//<space><cr>
-        vnoremap <Leader>cc :normal I//<space><cr> 
-        nnoremap <Leader>co :normal Ixx<space><cr>
-        vnoremap <Leader>co :normal Ixx<space><cr> 
+        nnoremap <Leader>cc :normal I//<space><CR>
+        vnoremap <Leader>cc :normal I//<space><CR> 
+        nnoremap <Leader>co :normal Ixx<space><CR>
+        vnoremap <Leader>co :normal Ixx<space><CR> 
 
     " moving blocks of text
-        vnoremap J :m '>+1<cr>gv=gv 
-        vnoremap K :m '<-2<cr>gv=gv
+        vnoremap J :m '>+1<CR>gv=gv 
+        vnoremap K :m '<-2<CR>gv=gv
 
 "---From ModernVim Book
     " you can undo even after saving and resuming the file

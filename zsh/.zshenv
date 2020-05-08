@@ -5,8 +5,6 @@ export PATH
 # Default programs:
 export SHELL="/usr/bin/zsh"
 export EDITOR="nvim"
-export VISUAL="nvim"
-export PAGER="nvim"
 export TERMINAL="kitty"
 export BROWSER="firefox"
 export READER="evince"
