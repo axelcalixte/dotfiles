@@ -9,7 +9,7 @@ if exists('g:vscode')
 else
 "start of vim config
     "---Plugin Manager
-    	set runtimepath+=~/.cache/dein/github.com/Shougo/dein.vim
+    	set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
         if dein#load_state('~/.cache/dein')
         call dein#begin('~/.cache/dein')
 
