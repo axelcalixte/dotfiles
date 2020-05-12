@@ -1185,7 +1185,7 @@ cd nvim
 ls
 rm -rf pack/
 cat init.vim 
-:q
+
 vi init.vim 
 rm -rf init.vim coc-settings.json 
 cd ../

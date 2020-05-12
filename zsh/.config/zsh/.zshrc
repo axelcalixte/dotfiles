@@ -1,4 +1,4 @@
-fpath+=~/dotfiles/zsh/.local/share/pure/
+fpath+=~/dotfiles/zsh/.local/share/zsh/pure/
 autoload -U promptinit; promptinit
 # change the color for both `prompt:success` and `prompt:error`
 #zstyle ':prompt:pure:prompt:*' color cyan
