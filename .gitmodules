@@ -1,9 +1,0 @@
-[submodule "zsh/.local/share/zsh/plugins/fast-syntax-highlighting"]
-	path = zsh/.local/share/zsh/plugins/fast-syntax-highlighting
-	url = git@github.com:zdharma/fast-syntax-highlighting.git
-[submodule "zsh/.local/share/zsh/pure"]
-	path = zsh/.local/share/zsh/pure
-	url = git@github.com:sindresorhus/pure.git
-[submodule "dein/.cache/dein/repos/github.com/Shougo/dein.vim"]
-	path = dein/.cache/dein/repos/github.com/Shougo/dein.vim
-	url = git@github.com:Shougo/dein.vim.git
