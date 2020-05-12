@@ -2,10 +2,11 @@
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int gappx     = 3;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
+static const char *fonts[]          = { "Hack:style=regular:size=10 FontAwesome:style=regular:pixelsize=10:antialias=true:autohint=true" };
 static const char dmenufont[]       = "monospace:size=10";
 //static const char col_gray1[]       = "#222222";
 static const char col_gray1[]       = "#282828"; 
@@ -97,6 +98,17 @@ static Key keys[] = {
 	TAGKEYS(                        XK_underscore,                     7)
 	TAGKEYS(                        XK_ccedilla,                       8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	/* function keys */
+	{ 0, XF86XK_MonBrightnessUp,	spawn,		SHCMD("xbacklight -inc 15") },
+	{ 0, XF86XK_MonBrightnessDown,	spawn,		SHCMD("xbacklight -dec 15") },
+	{ 0, XF86XK_AudioMute,		spawn,		SHCMD("amixer sset Toggle Master") },
+	{ 0, XF86XK_AudioRaiseVolume,	spawn,		SHCMD("amixer -M set Master 5%+") },
+	{ 0, XF86XK_AudioLowerVolume,	spawn,		SHCMD("amixer -M set Master 5%-") },
+	/* applications keys */
+	{Mod1Mask, 			XK_n,	spawn,		SHCMD("st -e nnn") },
+	{Mod1Mask, 			XK_h,	spawn,		SHCMD("st -e htop") },
+	{Mod1Mask, 			XK_k,	spawn,		SHCMD("st -e keepassxc") },
+	{Mod1Mask, 			XK_c,	spawn,		SHCMD("st -e chromium") },
 };
 
 /* button definitions */
