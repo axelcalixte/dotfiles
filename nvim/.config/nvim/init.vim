@@ -1,74 +1,26 @@
-if exists('g:vscode')
-"vscode config
-    nnoremap <silent> <C-w>gd :<C-u>call VSCodeNotify('editor.action.revealDefinitionAside')<CR>
-    nnoremap <silent> ? :<C-u>call VSCodeNotify('workbench.action.findInFiles', { 'query': expand('<cword>')})<CR>
-    xmap gc  <Plug>VSCodeCommentary
-    nmap gc  <Plug>VSCodeCommentary
-    omap gc  <Plug>VSCodeCommentary
-    nmap gcc <Plug>VSCodeCommentaryLine
-else
-"start of vim config
-    "---Plugin Manager
-    	set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
-        if dein#load_state('~/.cache/dein')
-        call dein#begin('~/.cache/dein')
+packadd minpac
 
-        call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
-        call dein#add('tpope/vim-sensible')
-        call dein#add('morhetz/gruvbox')
-        call dein#add('dense-analysis/ale')
-        call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
-        call dein#add('junegunn/fzf')
+call minpac#init()
 
-        call dein#end()
-        call dein#save_state()
-        endif
+" minpac must have {'type': 'opt'} so that it can be loaded with `packadd`.
+call minpac#add('k-takata/minpac', {'type': 'opt'})
 
+" Add other plugins here.
+call minpac#add('tpope/vim-sensible')
+call minpac#add('vim-scripts/c.vim')
+call minpac#add('morhetz/gruvbox')
+call minpac#add('dense-analysis/ale')
+call minpac#add('junegunn/fzf')
+
+" Load the plugins right now. (optional)
+"packloadall
+"
     "---Coloscheme
         set termguicolors     " enable true colors support
         colorscheme gruvbox
 
     "--fzf
         nnoremap <c-p> :FZF<CR>
-
-    "---CoC settings
-        autocmd CursorHold * silent call CocActionAsync('highlight')
-        autocmd FileType json syntax match Comment +\/\/.\+$+
-    "use tabs instead of c-p and c-n
-        inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-        inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-    "confirm with enter
-        inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-        inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
-        inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-        autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
-    "Remap for rename current word
-        nmap rn <Plug>(coc-rename)
-    "Use <C-l> for trigger snippet expand.
-        imap <C-l> <Plug>(coc-snippets-expand)
-    "Use <C-j> for jump to next placeholder, it's default of coc.nvim
-        let g:coc_snippet_next = '<c-j>'
-    "Use <C-k> for jump to previous placeholder, it's default of coc.nvim
-        let g:coc_snippet_prev = '<c-k>'
-    " Remap keys for gotos
-        nmap <silent> gd <Plug>(coc-definition)
-        nmap <silent> gy <Plug>(coc-type-definition)
-        nmap <silent> gi <Plug>(coc-implementation)
-        nmap <silent> gr <Plug>(coc-references)
-    " Remap for format selected region
-        xmap <Leader>f  <Plug>(coc-format-selected)
-        nmap <Leader>f  <Plug>(coc-format-selected)
-
-        augroup mygroup
-            autocmd!
-        "Setup formatexpr specified filetypes
-            autocmd FileType c,json setl formatexpr=CocAction('format-selected')
-        " Update signature help on jump placeholder
-            autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-        augroup end
-
-    "Use `:Format` to format current buffer
-        command! -nargs=0 Format :call CocAction('format')
 
 "---ALE show errors in files
     "Mappings in the style of unimpaired-next
@@ -81,21 +33,16 @@ else
         let g:netrw_liststyle= 3
         let g:netrw_banner=0
         let g:netrw_winsize=25
-        set hidden "don't know why i need it for for <C-b> netrw
-        nnoremap <C-b> :Lexplore<CR>
+        set hidden "don't know why i need it for for <A-e> netrw
+        nnoremap <A-e> :Lexplore<CR>
 
 "--- My own
-        set showcmd
-        set shiftwidth=4 softtabstop=4 tabstop=4 expandtab smarttab
+        set shiftwidth=4 softtabstop=4 tabstop=4 smarttab
         set number
         set smartindent
         set foldmethod=indent
         set path+=**
-        set incsearch
         set colorcolumn=80  
-
-    "use system clipboard !
-        set clipboard+=unnamedplus 
 
     " To work with the debugger
         packadd termdebug 
@@ -104,21 +51,6 @@ else
 
     " buffer menu"
         set wildchar=<Tab> wildmenu wildmode=list
-
-    " navigating threw windows
-        nnoremap <Leader>h :wincmd h<CR>
-        nnoremap <Leader>l :wincmd l<CR>
-        nnoremap <Leader>k :wincmd k<CR>
-        nnoremap <Leader>j :wincmd j<CR>
-    " resizing splits
-	nnoremap <Silent> <Left> :vertical resize -5<CR>
-	nnoremap <Silent> <Right> :vertical resize +5<CR>
-
-    " commenting C code
-        nnoremap <Leader>cc :normal I//<space><CR>
-        vnoremap <Leader>cc :normal I//<space><CR> 
-        nnoremap <Leader>co :normal Ixx<space><CR>
-        vnoremap <Leader>co :normal Ixx<space><CR> 
 
     " moving blocks of text
         vnoremap J :m '>+1<CR>gv=gv 
@@ -139,5 +71,3 @@ else
     "---run :make and then :copen to keep the list of errors
         set makeprg=gcc\ -g\ -o\ %<\ %
         set errorformat=%+A\ %#%f\ %#(%l\\\,%c):\ %m,%C%mq
-"end of vim config
-endif
