@@ -1,4 +1,4 @@
-fpath+=$HOME/.local/share/zsh/pure
+fpath+=~/dotfiles/zsh/.local/share/pure/
 autoload -U promptinit; promptinit
 # change the color for both `prompt:success` and `prompt:error`
 #zstyle ':prompt:pure:prompt:*' color cyan
@@ -50,7 +50,6 @@ stty stop undef		# Disable ctrl-s to freeze terminal
 # End of lines moved by zsh-newuser-install.
 
 # Aliases
-alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias in='nvim /home/axel/Documents/notes/in.md'
 alias t='todo-txt'
 alias vi='nvim'
@@ -60,9 +59,6 @@ alias ss='systemctl suspend'
 alias sr='systemctl reboot'
 
 #Fish syntax highlighting
-source /home/axel/.local/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+source /home/axel/dotfiles/zsh/.local/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 #ZSH auto-suggestions
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-#fzf fuzzy file search
-source /usr/share/fzf/completion.zsh
-source /usr/share/fzf/key-bindings.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
