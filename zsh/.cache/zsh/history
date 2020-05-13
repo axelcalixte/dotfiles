@@ -1936,3 +1936,22 @@ git push
 sudo apt install xev
 apt search xev
 xev
+sudo apt install scrot
+cd dotfiles/dwm/.local/share/dwm
+vi config.h
+sudo make clean install
+vi config.h
+sudo make clean install
+cd ~/dotfiles
+vi zsh/.zshenv
+vi zsh/.zshenv
+git status
+vi zsh/.zshenv
+vi xinitrc/.xinitrc
+git add -u
+git status
+git commit -m "dwm and zshenv configs update"
+git push
+startx
+sudo reboot
+sudo apt install xarchiver
