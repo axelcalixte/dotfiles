@@ -1326,3 +1326,316 @@ vi .profile
 echo $EDITOR
 systemctl reboot
 startx
+ls
+bash
+cat bash/.bash_history
+git submodule status
+rm -rf zsh/.local/share/pure
+git submodule status
+cd .git/modules
+ls
+cd zsh
+ls
+ls -a
+cd .local
+cd share
+ls
+rm -rf pure
+cd ../../../
+ls
+cd ./
+cd ../
+ls
+cd ../
+git submodule status
+git status
+git add -u
+git status
+cd zsh/.local
+ls
+cd share
+ls
+cd ../
+rm async async.zsh license package.json prompt_pure_setup pure.plugin.zsh pure.zsh readme.md screenshot screenshot-title-cmd.png
+rm async async.zsh license package.json prompt_pure_setup pure.plugin.zsh pure.zsh readme.md screenshot.png screenshot-title-cmd.png
+ls -A
+rm .editorconfig .gitattributes .github .npmrc 
+ls -a
+cd share
+ls
+cd ../../
+cd ../
+git submodule status
+git status
+git commit -m "everything but pure prompt"
+git submodule status
+cd zsh/.local/share
+ls
+cd zsh
+ls
+cd plugins
+ls
+cd fast-syntax-highlighting
+ls
+cd ../../../
+cd ../../
+cd ../
+vi .gitmodules
+git status
+git add -u
+git commit -m "everything but pure prompt"
+git status
+git submodule status
+cat bash/.bash_history
+git submodule add git@github.com:sindresorhus/pure.git zsh/.local/share/zsh/pure
+git submodule status
+git status
+git add -u
+git commit -m "pfiouh everything finally clean and up to date"
+vi zsh/.config/zsh/.zshrc
+stow zsh
+zsh
+cd ../.config/zsh
+ls
+ls -a
+vi .zshrc
+cd ../
+cd ../
+cd dotfiles
+ls
+echo $SHELL
+git status
+cd zsh/.config/zsh
+vi .zshrc
+git status
+git commit -m "well now its clean anyway"
+git add -u
+git commit -m "well now its clean anyway"
+git status
+git push
+vi
+cd ./.
+cd ../
+chromium
+sudo apt autopurge ungoogled-chromium ungoogled-chromium-sandbox
+sudo apt install ungoogled-chromium ungoogled-chromium-sandbox
+cd 
+cd .local/share/Discord
+ls
+./Discord
+chromium
+cd ../.local/share/dwm
+vi config.h
+sudo make clean install
+chromium
+sudo apt install lsb_release
+sudo apt install lsb-release
+chromium
+lsb_release
+lsb_release 
+sudo apt autopurge lsb-release
+neofetch
+sudo apt install firefox-esr
+firefox-esr
+chromium
+locate chromium
+cd ../../../
+cd .cache
+cd chromium
+ls
+cd Default
+ls
+cd ../../
+rm -rf chromium
+chromium
+sudo updatedb
+locate chromium
+cd /etc/chromium
+ls
+sudo apt autopurge ungoogled-chromium ungoogled-chromium-sandbox
+sudo updatedb
+locate chromium
+rm -rf /var/cache/apt/archives/ungoogled-chromium-common_81.0.4044.138-1.buster1_amd64.deb
+sudo rm -rf /var/cache/apt/archives/ungoogled-chromium-common_81.0.4044.138-1.buster1_amd64.deb
+sudo rm -rf /var/cache/apt/archives/ungoogled-chromium_81.0.4044.138-1.buster1_amd64.deb
+sudo rm -rf /var/lib/apt/lists/download.opensuse.org_repositories_home:_ungoogled%5fchromium_Debian%5fBuster_InRelease\
+
+sudo rm -rf /var/lib/apt/lists/download.opensuse.org_repositories_home:_ungoogled%5fchromium_Debian%5fBuster_Packages \
+
+cd ../
+cd 
+sudo apt autopurge ungoogled-chromium ungoogled-chromium-sandbox
+sudo updatedb
+locate chromium
+rm -rf /home/axel/.config/chromium
+sudo apt install ungoogled-chromium-sandbox ungoogled-chromium
+sudo apt update
+sudo apt install ungoogled-chromium
+sudo apt install ungoogled-chromium-sandbox
+sudo apt install ungoogled-chromium-l10n
+chromium
+cd ../
+chromium
+sudo apt autopurge firefox-esr
+cd .local/share/dwm
+vi config.h
+sudo make clean install
+ls -a
+dc
+cd
+~
+sudo apt install libreoffice-writer 
+cd UTT/NF04
+ls
+vi .
+vi mastermind.c
+vi mastermind.c
+vi mastermind.c
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+vi mastermind.c
+gcc -g mastermind.c -o mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+vi mastermind.c
+gcc -g mastermind.c -o mastermind
+./mastermind
+vi mastermind.c
+gcc -g mastermind.c -o mastermind
+vi mastermind.c
+vi mastermind.c
+gcc -g mastermind.c -o mastermind
+./mastermind
+vi mastermind.c
+gcc -g mastermind.c -o mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+vi mastermind.c
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+vi mastermind.c
+./mastermind
+./mastermind
+gcc -g mastermind.c -o mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+./mastermind
+vi mastermind.c
+gcc -g mastermind.c -o mastermind
+./mastermind
+vi mastermind.c
+sudo apt install gdb
+vi mastermind.c
+gdb mastermind
+cd ~/UTT/NF04/
+./mastermind
+./mastermind
+vi mastermind.c
+cd ~/UTT/NF04/Projet/
+cd ../
+vi mastermind.c
+y
+vi mastermind.c
+ env /bin/sh /tmp/Microsoft-MIEngine-Cmd-j2r4rfnt.14d 
+ env /bin/sh /tmp/Microsoft-MIEngine-Cmd-8y889wm8.0fe 
+cd .local/share/dW
+cd .local/share/dwm
+vi config.h
+man scanf
+man printf
+man scan
+alsamixer
+\:q
+amixer -c 0 set Master 2dB+
+amixer sset toggler Master
+amixer sset toggle Master
+amixer sset Toggle Master
+amixer sset Master Toggle
+amixer
+alsamixer
+alsamixer
+alsamixer
+nnn
+sudo apt install pcmanfm
+sudo apt install zip unzip
+nnn
+sudo apt install firefox-esr
+firefox-esr
+sudo apt autopurge firefox-esr
+startx
+echo $EDITOR
+sudo apt update
+sp
+echo $EDITOR
+ls -a
+rm -rf .mozilla/ .mono
+sudo apt autopurge firefox-esr
+ls -A
+ls -A | wc -l
+ls -a | wc -l
+msmtp --help
+apt info msmtp
