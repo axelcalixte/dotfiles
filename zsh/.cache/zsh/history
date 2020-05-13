@@ -1639,3 +1639,225 @@ ls -A | wc -l
 ls -a | wc -l
 msmtp --help
 apt info msmtp
+echo $XDG_RUNTIME_DIR
+ls -A
+cat .mbsyncrc
+cat .msmtprc
+ls -a
+ssh axel@remicalixte.ddns.net
+cd .local/share/dwm
+vi config.h
+sudo make clean install
+cat .profile 
+cd ~
+cat .profile 
+cd .local/share/gnupg
+ls
+cd ../../../
+ls
+cd .gnupg
+ls
+cd private-keys-v1.d
+ls
+ls -a
+cd ../
+ls
+cd ../
+cd .gnupg
+ls -a
+cd private-keys-v1.d
+ls
+ls -a
+cd ../../
+rm -rf .gnupg
+ls -A
+vi .profile
+cd .config/msmtp
+mkdir .config/msmtp
+cd .config/
+ls
+cat msmtp
+nnn
+neomutt
+mw add
+ls
+rm -rf xfce4 QtProject.conf
+cd mutt-wizard/
+ls -a
+cd mutt
+cd ../
+cd .local/share
+ls -a
+cd mail
+ls
+cd cock-li
+ls
+cd ../
+ls
+cd ../
+ls
+rm *.tar
+nnn
+git status
+git add -u
+git commit -m "removed geary"
+ls
+cd ../
+ls
+ls -A
+cd dotfiles
+mkdir profile
+mkdir xinitrc
+mv ../.profile profile/.profile
+mv ../.xinitrc xinitrc/.xinitrc
+cd ../
+ls -A
+cd dotfiles
+ls
+git status
+git add profile/.profile
+git add xinitrc/.xinitrc
+git commit -m "added .profile and .xinitrc"
+stow profile xinitrc
+cd ../
+ls -A
+ls -lh
+ls -lah
+ssh axel@192.168.1.35
+mw
+gpg --homedir "$XDG_DATA_HOME"/gnupg
+apt search gpg2
+apt search openpgp
+info gnupgn
+info gnupg
+sudo apt install gnupg2
+gpg --homedir "$XDG_DATA_HOME"/gnupg
+gpg2 --homedir "$XDG_DATA_HOME"/gnupg
+gpg2
+man gpg2
+gpg2 --homedir "~/.config/gnupg"
+ls
+ls -a
+cd .config
+ls
+sudo updatedb
+locate gnupg
+gpg2 --homedir "~/.local/share/gnupg"
+gpg2 --homedir ~/.local/share/gnupg
+gpg2 --homedir
+man gpg2
+apt list --installed | gnupg
+apt list --installed | grep gnupg
+gpg2 --homedir $HOME/.config
+ls
+ls -a
+rm pubring.kbx
+ls
+cd ../
+cd .local/share
+ls
+cd gnupg
+ls
+cd ../../
+cd ../
+gpg2 --homedir $HOME/.local/share/gnupg
+gpg2 --homedir $HOME/.local/share/gnupg/
+gpg2 --homedir "$XDG_DATA_HOME"/gnupg
+cd .local/share
+rm -rf gnupg
+cd ../../
+ls
+cat .profile
+gpg2 --homedir "$XDG_DATA_HOME/gnupg"
+mw add
+echo $GNUPGHOME
+cd .local/share/
+mkdir gnupg
+cd ../../
+gpg2 --full-gen-key
+mw 
+pass init axelcalixte@disroot.org
+mw
+mw ls
+cd .config/mutt
+cd .local/share
+cd mutt
+cd ../../
+locate mutt
+cd .config/mutt
+ls -a
+nnn
+mw ls
+mw add
+cat .profile
+cd .config/msmtp
+ls
+touch config
+cd ./.
+cd ../
+cd ../
+ls -a
+vi .profile
+rm -rf .password-store
+mw
+pass init axelcalixte@disroot.org
+rm -rf .password-store
+source .profile
+pass init axelcalixte@disroot.org
+mw
+mw ls
+mw add
+nn
+nnn
+mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc
+mkdir -p .config/isync/mbsyncrc
+cd .config/isync/
+rm -rf mbsyncrc
+touch mbsyncrc
+cd  é
+cd ~
+mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc
+mbsync -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+man mbsync
+mbsync -a
+locate mbsync
+rm -rf .local/share/mail
+rm -rf .mbsyncrc
+mbsync -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+cd .config/isync/
+touch mbsyncrc
+cd ../../
+mw add
+mw add
+mw add
+mbsync 
+mbsync -a
+ls -a | wc -l
+ls -a
+cd .config/isync/
+ls
+rm mbsyncrc
+mv ~/.mbsyncrc ~/.config/isync/mbsyncrc
+cd ../../
+source .profile
+vi .profile
+mbsync -c "$XDG_CONFIG_HOME/isync/mbsycrc"
+cd .config/isync/
+ls
+cd .././
+cd ..
+mbsync -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+ ls -a
+mbsync -a
+mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc
+neomutt
+mv ~/.config/isync/mbsyncrc ~/.mbsyncrc
+ls -a
+cd .config/msmtp
+ls
+cd ../
+rm -rf msmtp isync
+cd ../
+ls -a
+mbsync -a
