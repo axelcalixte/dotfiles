@@ -2,6 +2,9 @@ typeset -U PATH path
 path=("$HOME/.local/bin" "$path[@]")
 export PATH
 
+# Start graphical server on tty1 if not already running.
+[ "$(tty)" = "/dev/tty1" ] && ! ps -e | grep -qw Xorg && exec startx
+
 # Default programs:
 export SHELL="/usr/bin/zsh"
 export EDITOR="nvim"
@@ -28,3 +31,6 @@ export ANDROID_SDK_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/android"
 export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
 export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
 export ANSIBLE_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/ansible/ansible.cfg"
+
+# random java
+export _JAVA_AWT_WM_NONREPARENTING=1

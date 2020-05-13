@@ -1861,3 +1861,78 @@ rm -rf msmtp isync
 cd ../
 ls -a
 mbsync -a
+cat .zshenv
+vi .profile
+rm -rf .profile
+cd dotfiles
+ls -a
+rm -rf profile
+git status
+git add -u
+git commit -m "removed .profile using .zshenv"
+cd ../
+cd dotfiles
+mkdir fontconfig/.config/fontconfig
+cd fontconfig/.config/fontconfig
+ls
+touch fonts.conf
+vi fonts.conf
+sudo apt install dejavu
+apt search dejavu
+sudo apt install fonts-dejavu
+vi fonts.conf
+fc-list 
+vi fonts.conf
+fc-list 
+vi fonts.conf
+cd ../
+cd ../../
+git status
+git add -u fontconfig/.config/fontconfig/fonts.conf
+vi dwm/.local/share/dwm/config.h
+vi st/.local/share/st/config.h
+vi dwm/.local/share/dwm/config.h
+vi st/.local/share/st/config.h
+cd dwm/.local/share
+cd dwm
+sudo make clean install
+cd ../../.././../st/.local/share/st
+sudo make clean install
+ls
+cat /etc/terminfo
+cd /etc/terminfo
+ls
+cat s
+cd s
+ls
+cat st
+cd -
+cd -
+cd ~
+cd dotfiles
+ls
+git status
+git add -u
+git commit -m "updated st and dwm for fontconfig"
+ssh-agent
+git push
+touch truc
+git add truc
+git commit -m 'truc test'
+git push
+rm -rf truc
+git status
+git rm truc
+git status
+git commit -m 'truc removed test'
+eval 'ssh-agent'
+git push
+cd dotfiles
+git push
+touch tru
+git add tru
+git commit -m "second test"
+git push
+sudo apt install xev
+apt search xev
+xev

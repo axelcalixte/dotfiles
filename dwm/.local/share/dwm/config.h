@@ -110,6 +110,7 @@ static Key keys[] = {
 	{Mod1Mask, 			XK_k,	spawn,		SHCMD("keepassxc") },
 	{Mod1Mask, 			XK_c,	spawn,		SHCMD("chromium") },
 	{Mod1Mask, 			XK_a,	spawn,		SHCMD("st -e alsamixer") },
+	{0,					XK_Print,  spawn,		SHCMD("scrot 'mv $f ~/Images'") },
 };
 
 /* button definitions */
