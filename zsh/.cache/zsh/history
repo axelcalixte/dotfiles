@@ -1955,3 +1955,1453 @@ git push
 startx
 sudo reboot
 sudo apt install xarchiver
+htop
+cd dotfiles/
+ls -a
+n
+nnn
+cd ../.local/share/slstatus
+cd ../
+mv slstatus ~/dotfiles/slstatus/.local/share/slstatus
+mkdir -p ~/dotfiles/slstatus/.local/share/slstatus
+mv slstatus ~/dotfiles/slstatus/.local/share/slstatus
+ls -a
+xarchiver Stencyl-4.0.2-linux.tar.gz
+xarchiver
+nnn 
+mw
+ls
+cd ~/dotfiles/slstatus/.local/share/slstatus
+ls
+cd slstatus
+ls
+cd ../
+ls
+mv slstatus ../slstatus2/
+ls
+cd ../
+ls
+rm -rf slstatus
+mv slstatus2 slstatus/
+ls
+cd slstatus
+ls
+vi config.h
+sudo make clean install
+slstatus
+kill slstatus
+cd ~/dotfiles
+git status
+git add slstatus/.local/share/slstatus/
+git status
+git add -u
+git status
+git add fontconfig/.config/fontconfig/fonts.conf
+git ls
+git status
+git commit -m "added slstatus"
+git push
+cd .local/share/mail
+ls
+cd utt
+ls
+cd INBOX
+ls
+cd cur
+ls
+cd new
+cd new/
+ls
+cd ../new
+ls
+cd dotfiles
+stow slstatus
+cd ../
+vi .local/share/dwm/config.h
+apt search maim
+sudo apt install maim
+man maim
+man maim
+maim -s ~/Images 
+maim
+scrot -s
+sleep 0.2; scrot -s
+ls -a
+rm .Xauthority
+xauth $DISPLAY
+vi .zshenv
+sudo reboot
+ls
+ls -a
+scrot
+scrot -s
+cd Images
+ls
+cd ../
+ls
+rm 2020-05-13-120354_214x113_scrot.png 2020-05-13-120349_1366x768_scrot.png
+ls -A
+maim
+maim -s
+maim -s ~/Images 
+sudo apt autopurge maim
+ls -A
+cd Images
+ls
+man scrot
+man scrot
+scrot -s 'mv $f ~/Images'
+scrot -s -e 'mv $f ~/Images'
+cd Images
+ls
+sudo apt install sxiv
+sxiv 2020-05-13-120849_135x124_scrot.png
+scrot -s -e 'mv $f ~/Images' -e 'xclip'
+cd ../dotfiles/dwm/.local/share/dwm
+vi config.h
+sudo make clean install
+sleep 0.2 ; scrot -s -e 'mv $f ~/Images'
+cd dotfiles/dwm/.local/share/dwm
+vi config.h
+sudo make clean install
+cd Images
+ls
+ls
+rm *_scrot.png
+man xclip
+vi .zshenv
+apt info atool
+apt list --installed | grep atol
+apt list --installed | grep atool
+apt list --installed | grep bsdtar
+sudo apt install bsdtar
+nnn
+sudo apt install tar
+sudo apt install unzip
+cd .local/share
+nnn
+sudo apt autopurge bsdtar
+xarchiver Stencyl-4.0.2-linux.tar.gz
+nnn
+ln -s .local/bin/stencyl .local/share/Stencyl-4.0.2-linux/Stencyl
+cd .local/share
+ls
+cd ../bin
+ls
+rm -rf discord
+man ln
+ln -s .local/share/Stencyl-4.0.2-linux/Stencyl .local/bin/stencyl
+cd ../../
+ln -s .local/share/Stencyl-4.0.2-linux/Stencyl .local/bin/stencyl
+cd .local/bin
+ls -lh
+stencyl
+./stencyl
+ls
+./stencyl
+nnn
+cd ../../
+ln -s .local/share/Stencyl-4.0.2-linux/Stencyl .local/bin/stencyl
+cd .local/bin
+ls
+cd ../../
+ln -s .local/share/Discord/Discord .local/bin/discord
+cd .local/bin
+ls -lh
+cd ../../
+.local/share/Discord/Discord
+.local/share/Stencyl-4.0.2-linux/Stencyl
+.local/share/Stencyl-4.0.2-linux/Stencyl
+scp axel@remicalixte.ddns.net:/home/axel/Storage/stencylworks /home/axel/stencylworks
+man scp
+cd .local/share/dwm
+vi config.h
+sudo make clean install
+notify-send zqrf
+cd .local/share/mail
+ls
+cd disroot
+ls
+cd INBOX/new
+ls
+ls -a
+cd ../../
+ls
+cd ../
+cd utt
+cd INBOX/new
+ls
+wc -l
+ls | wc -l
+scp -r axel@remicalixte.ddns.net:/home/axel/Storage/stencylworks /home/axel/stencylworks
+mailsync
+ls -a
+cd .gnupg
+ls
+cd dotfiles/slstatus/.local/share/slstatus
+vi config.h
+sudo make clean install
+man slstatus
+slstatus -s
+vi config.h
+sudo make clean install
+slstatus -s
+sudo make clean install
+vi config.h
+sudo make clean install
+slstatus -s
+cd ~/.local/share/mail/utt/INBOX/new
+ls
+ls -a
+cat 1589360705.8090_112.axeldebian,U=20:2,
+cd -
+vi config.h
+sudo make clean install
+slstatus -s
+a = 2
+$1 = 3
+wc -l
+ls ~ | wc -l
+ls ~ | ls ~ | wc -l
+ls ~
+ls ~ + ls ~
+ls ~ && 
+ls ~ && ls ~
+ls ~ && ls ~ | wc -l
+(ls ~ && ls ~ )| wc -l
+vi config.h
+sudo make clean install
+slstatus -s
+cd ~/.local/share/mail/utt/INBOX/new
+cd ../../
+ls
+cd ../
+ls
+cd cock-li/INBOX/new
+ls
+cd ../../../
+cd disroot/INBOX/new/
+ls
+cd ~/dotfiles/slstatus/.local/share/slstatus
+vi config.h
+sudo make clean install
+slstatus -s
+mkdir -p .local/share/stencylworks
+cd dotfiles/dwm/.local/share/dwm
+vi config.h
+sudo make clean install
+sudo apt install xawtv
+mpv av://v4l2:/dev/video0
+discord
+.local/share/Discord/Discord
+.local/share/Discord/Discord
+sudo apt install flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install discord
+flatpak run com.discord.app
+flatpak list
+flatpak run com.discordapp.Discord
+flatpak remove *
+flatpak uninstall *
+flatpak uninstall com.discordapp.Discord
+flatpak uninstall org.freedesktop.Platform
+flatpak uninstall org.freedesktop.Platform.GL.default
+flatpak uninstall org.freedesktop.Platform.openh264
+flatpak uninstall org.freedesktop.Platform.VAAPI.Intel
+flatpak list
+sudo apt install audacity
+audacity
+mailsync
+cd .gnupg
+ls
+cd ../
+vi .zshenv
+mv .local/share/gnupg/ ~/.gnupg
+cd .gnupg
+ls
+mv gnupg ../2/
+ls
+cd ../
+ls
+rm -rf .gnupg
+mv 2/ .gnupg/
+ls -a
+ls -a
+nnn
+mailsync
+vi .mbsyncrc
+vi .msmtprc
+cd .config/msmtp
+sudo updatedb
+locate msmtp
+cat .msmtprc
+rm -rf .msmtprc .mbsyncrc
+ls -a
+cd .StencylWorks
+ls
+cd ../
+.local/share/Stencyl-4.0.2-linux/Stencyl
+.local/share/Stencyl-4.0.2-linux/Stencyl
+nnn
+scp -r axel@remicalixte.ddns.net:/home/axel/Storage/stencylworks /home/axel/.local/share/stencylworks
+cd .local/bin
+ln -s ~/.local/share/Discord/Discord discord
+ls
+rm -rf *
+ls
+ln -s ~/.local/share/Discord/Discord discord
+ls
+ls -lh
+cat discord
+ln -s ~/.local/share/Stencyl-4.0.2-linux/Stencyl stencyl
+ls
+cd .local/bin
+ls
+./stencyl
+cd ~/.local/share/Stencyl-4.0.2-linux/
+ls
+./Stencyl
+ls
+dmenu_run stencyl
+cd .local/bin
+./stencyl
+ln -s runtimes ~/.local/share/Stencyl-4.0.2-linux/runtimes
+ls
+ls -a
+ln -s runtimes/ ~/.local/share/Stencyl-4.0.2-linux/runtimes
+cd ../
+cd bin
+ls
+ls -a
+nnn
+ls
+rm runtimes
+ln -s ~/.local/share/Stencyl-4.0.2-linux/runtimes runtimes/
+ln -s ~/.local/share/Stencyl-4.0.2-linux/runtimes runtimes
+ls
+cd runtimes
+ls
+cd ../
+./stencyl
+ln -s ~/.local/share/Stencyl-4.0.2-linux/sw.jar sw.jar
+./stencyl
+ls
+rm runtimes stencyl sw.jar
+ls
+cd ../../
+vi .config/zsh/.zshrc 
+source .config/zsh/.zshrc
+stencyl
+cd .local/bin
+./stencyl
+cd ~
+.local/share/Stencyl-4.0.2-linux/Stencyl
+cd .local/share/Stencyl-4.0.2-linux
+ls
+cd runtimes
+ls
+./jre-linux6
+./jre-linux64
+ls
+cd bin
+ls
+cd ja
+ls
+cd ../
+ls
+cd ../
+ls
+cd ../
+ls
+./stencyl
+./Stencyl
+mpv https://invidio.us/watch?v=Kb4_JTfqusA
+mpv 'https://invidio.us/watch?v=Kb4_JTfqusA'
+amixer sget Master | grep %
+amixer sget Master | grep % | sed s/Mono: Pl//
+amixer sget Master | grep % | sed s/Mono: Pl//g
+amixer sget Master | grep % | sed s/Mono:\ Pl/g
+amixer sget Master | grep % | sed s/Mono//g
+amixer sget Master | grep % | sed s/Mono://g
+amixer sget Master | grep % | sed s/Mono: //g
+amixer sget Master | grep % | sed s/Mono:\s//g
+amixer sget Master | grep % | sed s/Mono:\//g
+amixer sget Master | grep % | sed s/Mono: Playback//g
+amixer sget Master | grep % | sed s/Mono:\sPlayback//g
+amixer sget Master | grep % | sed s/Mono:/sPlayback//g
+amixer sget Master | grep % | sed -e "s/\s\{3,\}/  /g"
+amixer sget Master | grep % | sed -e "s/\s\{3,\}/  /g"
+amixer sget Master | grep % | sed -e "s/\s\{3,\}//g"
+amixer sget Master | grep % | sed -e "s/\s//g"
+amixer sget Master | grep % | sed -e "s/\s//g" -e s/Mono:Playback103[//g
+amixer sget Master | grep % | sed -e "s/\s//g" -e s/Mono:Playback103\[//g
+amixer sget Master | grep % | sed -e "s/\s//g" -e "s/Mono:Playback103[//g"
+amixer sget Master | grep % | sed -e "s/\s//g" -e "s/Mono:Playback103//g"
+amixer sget Master | grep % | sed -e "s/\s//g" -e "s/Mono:Playback103[]//g"
+amixer sget Master | grep % | sed -e "s/\s//g" -e "s/[]Mono:Playback103//g"
+amixer sget Master | grep % | sed -e "s/\s//g" -e "s/[]=+...-]//g"
+amixer sget Master | grep % | sed -e "s/\s//g" -e "s/[]=+...-][//g"
+amixer sget Master | grep % | sed -e "s/\s//g" -e "s/[]=+...-]//g"
+amixer sget Master | grep % | sed -e "s/\s//g" -e "s/[][=+...-]//g"
+amixer sget Master | grep % | sed -e "s/\s//g" -e "s/[ ][=+...-]//g"
+amixer sget Master | grep % | sed -e "s/\s//g" -e "s/[[]=+...-]//g"
+amixer sget Master | grep % | sed -e "s/\s//g" -e "s/[]=+...-]//g"
+amixer sget Master | grep % | sed -e "s/\s//g"
+amixer sget Master | grep % | sed -e "s/\s//g" | sed -e 's/[^a-zA-Z0-9]/ /g'
+amixer sget Master | grep % | sed -e "s/\s//g" | sed -e 's/[^a-zA-Z0-9]//g'
+amixer sget Master | grep % | sed -e "s/\s//g" | sed -e 's/[^a-zA-Z0-9]/ /g'
+amixer sget Master | grep % | sed -e "s/\s//g" | sed -e 's/[^0-9]/ /g'
+amixer sget Master | grep % | sed -e 's/[^0-9]/ /g'
+amixer sget Master | grep % | sed -e 's/[^0-9]/ /g' | sed -e 's/103//g' 
+amixer sget Master | grep % | sed 's/[^0-9]/ /g' | sed 's/103//g' 
+amixer sget Master | grep % | sed 's/[^0-9]/ /g' | sed 's/103//g' | sed 's/12 00//g'
+amixer sget Master | grep % | sed 's/[^0-9]/ /g' | sed 's/103//g' | sed 's/12 00//g' | sed 's/ //g'
+amixer sget Master | grep % | sed 's/[^0-9%]/ /g' | sed 's/103//g' | sed 's/12 00//g' | sed 's/ //g'
+amixer sget Master | grep % | sed -e 's/[^0-9%]/ /g' -e 's/103//g' -e 's/12 00//g' -e 's/ //g'
+amixer sget Master | grep % | sed -e 's/[^0-9% ]/ /g' -e 's/103//g' -e 's/12 00//g'
+amixer sget Master | grep % | sed -e 's/[^0-9%\ ]/ /g' -e 's/103//g' -e 's/12 00//g'
+amixer sget Master | grep % | sed -e 's/[^0-9%+\s]/ /g' -e 's/103//g' -e 's/12 00//g'
+amixer sget Master | grep % | sed -e 's/[^0-9%+\s.]/ /g' -e 's/103//g' -e 's/12 00//g'
+amixer sget Master | grep % | sed -e 's/[^0-9%+\s]/ /g' -e 's/103//g' -e 's/12 00//g'
+amixer sget Master | grep % | sed -e 's/[^0-9%]/ /g' -e 's/103//g' -e 's/12 00//g'
+amixer sget Master | grep % | sed -e 's/[^0-9%]/ /g' -e 's/103//g' -e 's/12 00//g' -e 's/ //g'
+amixer sget Master | grep % | sed -e 's/[^0-9%]/ /g' -e 's/103//g' -e 's/12 00//g' -e 's/ //g'
+cd dotfiles/slstatus/.local/share/slstatus
+vi config.h
+amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1
+amixer sget Master
+amixer sget Mastet | grep [*]
+amixer sget Mastet | grep Playback
+amixer sget Master | grep [*]
+amixer sget Master | grep []
+amixer sget Master | grep [ ]
+amixer sget Master | grep Playback
+amixer sget Master | grep *%
+amixer sget Master | grep [.*% ]
+amixer sget Master | grep .*%
+amixer sget Master | grep .*
+amixer sget Master | grep %.*
+amixer sget Master | grep .*%
+amixer sget Master | grep .*]
+vi config.h
+sudo make clean install
+amixer sget Master | grep -F '[*]'
+amixer sget Master | grep -F '[ ]'
+amixer sget Master | grep -F '[]'
+amixer sget Master
+amixer sget Master | grep -F '[91%]'
+vi dotfiles/slstatus/.local/share/slstatus
+cd dotfiles/slstatus/.local/share/slstatus
+sudo make clean install
+ls
+cd UTT/NF04/Projet
+ls
+./main
+cd UTT/NF04/Projet
+./main
+mailsync
+nnn
+cd UTT/NF04/Projet
+./main
+./main
+./main
+vi UTT/NF04/Projet/main.c
+cd Téléchargements
+gcc main.c
+./a.out
+vi main.c
+mv main.c main_hope.c
+mv main_hope.c ~/UTT/NF04/Projet/
+sudo apt install neomutt
+neomutt
+sudo apt install libreoffice-gtk3
+neomutt
+sudo apt autopurge neomutt
+mw
+mbsync -a
+cd .config/isync/
+ls
+ls -a
+ls -A | wc -l
+rm -rf .audacity-data
+rm -rf .var
+ls -A | wc -l
+sudo apt autopurge neomutt
+locate neomutt
+locate mutt
+cd .config
+rm -rf mutt
+cd ../
+mw
+mw ls
+mw add
+cat .msmM
+cat .msm
+cat .msmtprc
+cat .mbsyncrc
+ls -a
+cd .gnupg
+ls
+cd ../
+ls -A
+mbsync -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+cd .config
+mkdir isync
+cd isync
+touch mbsyncrc
+cd ../../
+mbsync -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+ls -A
+cd .config
+mkdir msmtp
+cd msmtp
+touch config
+cd ../
+cd ../
+ls 6A
+ls -A
+cd .StencylWorks
+ls
+cd ../
+ls -A
+mw add
+ls -A
+cat .msmtprc
+mv .msmtprc .config/msmtp/.config
+cd .config/msmtp
+ls
+rm config  && mv .config config
+ls
+cat config
+ls -a
+cat config
+ls
+mv config ../../
+cd .././
+ls
+cd ../
+ls
+cat config
+mv config .mbsyncrc
+cat .mbsyncrc
+rm .mbsyncrc
+cat .msmtprc
+ls -A
+nnn
+syncthing
+ env /bin/sh /tmp/Microsoft-MIEngine-Cmd-g81khi1z.07w 
+ env /bin/sh /tmp/Microsoft-MIEngine-Cmd-5xdd9knr.3l7 
+ env /bin/sh /tmp/Microsoft-MIEngine-Cmd-gdo89ui5.bax 
+ env /bin/sh /tmp/Microsoft-MIEngine-Cmd-pq4g2fe0.axw 
+ env /bin/sh /tmp/Microsoft-MIEngine-Cmd-oq1a8yor.ajy 
+ env /bin/sh /tmp/Microsoft-MIEngine-Cmd-i0kjbun5.b6l 
+ env /bin/sh /tmp/Microsoft-MIEngine-Cmd-bx6gj4oo.7z1 
+ env /bin/sh /tmp/Microsoft-MIEngine-Cmd-a9fr5j0l.qyu 
+sudo apt install lynx
+mv VRANA_NF04-TD10.pdf td10.pdf
+neomutt
+mw add
+mw add
+mbsync utt
+neomutt
+neomutt
+neomutt utt
+neomutt
+cd .config
+ls
+mkdir -p ~/.config/user-dirs.dirs
+cd .config/user-dirs.dirs
+cd ../
+rm -rf user-dirs.dirs
+vi user-dirs.dirs
+neomutt
+cat .msmtprc
+mw add 
+mw ls
+mw 
+mw cron
+mw delete disroot
+mw delete disroot
+mw add
+mbsync -a
+neomutt
+sudo updatedb
+locate msmtp
+cat .msmtprc
+cd .config/msmtp
+ls
+ls -a
+cat config
+cd ../../
+rm .msmtprc
+cd .config/msmtp
+ls
+cat config
+cd ../../
+ls -A
+cat .abook
+cd .abook
+ls -A
+cd ../
+rm -rf .abook
+ls -A
+cat .recently-used
+rm -rf .recently-used
+neomutt
+neomutt
+cd .local/share/dwm
+vi config.h
+sudo make clean install
+cd .local/share/st
+vi config.h
+cd .local/share/dwm
+vi config.h
+sudo make clean install
+ls -A
+ls -A | wc -l
+desmume
+cd /b
+cd /boot
+sudo cd /boot
+sudo su
+lsblk
+cat /etc/fstab
+cat /etc/fstab
+bootctl --path=/boot/efi install
+sudo bootctl --path=/boot/efi install
+sudo su
+sudo bootctl --path=/boot install
+sudo bootctl update
+sudo su 
+sudo cp /vmlinuz /boot/vmlinuz
+sudo cp /vmlinuz /boot/
+sudo cp /initrd.img /boot/
+sudo  efibootmgr --disk /dev/nvme0n1 --part p1 --create --label "Debian" --loader /vmlinuz-linux --unicode 'root=PARTUUID=ebe57881-3038-4a29-8042-ea7205b30dc5 rw initrd=\initrd.img' --verbose
+sudo  efibootmgr --disk /dev/nvme0n1 --part 1 --create --label "Debian" --loader /vmlinuz-linux --unicode 'root=PARTUUID=ebe57881-3038-4a29-8042-ea7205b30dc5 rw initrd=\initrd.img' --verbose
+efibootmgr --verbose
+man efibootmgr
+efibootmgr -D
+sudo efibootmgr -D
+man efibootmgr
+man efibootmgr
+efibootmgr --verbose
+systemctl poweroff
+cat /etc/fstab
+efibootmgr
+man efibootmgr
+man efibootmgr
+efibootmgr --verbose
+efibootmgr -b 3 -B
+sudo efibootmgr -b 3 -B
+cd /boot
+sudo su
+cd /
+ls
+man efibootmgr
+lsblk
+man efibootmgr
+efibootmgr --disk /dev/nvme0n1 --part 1 --create --label "Debiann" --loader /vmlinuz --unicode 'root=PARTUUID=ebe57881-3038-4a29-8042-ea7205b30dc5 rw initrd=\initrd.img' --verbose
+sudo efibootmgr --disk /dev/nvme0n1 --part 1 --create --label "Debiann" --loader /vmlinuz --unicode 'root=PARTUUID=ebe57881-3038-4a29-8042-ea7205b30dc5 rw initrd=\initrd.img' --verbose
+systemctl poweroff
+efibootmgr --verbose
+sudo efibootmgr -b 1 -B
+systemctl reboot
+efibootmgr --verbose
+efibootmgr --bootorder 0000,0002 --verbose
+sudo efibootmgr --bootorder 0000,0002 --verbose
+sudo efibootmgr --bootorder 0002,0000 --verbose
+sudo efibootmgr --bootorder 0000,0002 --verbose
+sudo efibootmgr --bootorder 0002,0000 --verbose
+sr
+sudo cp /vmlinuz /boot/efi/EFI/debian/
+cat /etc/fstab
+ls -lh /
+ls -lh /
+cat /etc/fstab
+locate vmlinuz
+ls /
+ls -lh /
+cd /boot
+sudo su
+efibootmgr -V
+efibootmgr --verbose
+efibootmgr -b 2 -B
+sudo efibootmgr -b 2 -B
+efibootmgr -c -g -L "Debian (EFI stub)" -l '\boot\vmlinuz-4.19.0-9-amd64' -u "root=UUID=ebe57881-3038-4a29-8042-ea7205b30dc5 ro quiet rootfstype=ext4 add_efi_memmap initrd=\\boot\\initrd.img-4.19.0-9-amd64"
+sudo efibootmgr -c -g -L "Debian (EFI stub)" -l '\boot\vmlinuz-4.19.0-9-amd64' -u "root=UUID=ebe57881-3038-4a29-8042-ea7205b30dc5 ro quiet rootfstype=ext4 add_efi_memmap initrd=\\boot\\initrd.img-4.19.0-9-amd64"
+efibootmgr --verbose
+efibootmgr --disk /dev/nvme0n1 --part 1 --create --label "Debian EFI" --loader /boot/vmlinuz-4.19.0-9-amd64 --unicode 'root=PARTUUID=ebe57881-3038-4a29-8042-ea7205b30dc5 rw initrd=\boot\initrd.img-4.19.0-9-amd64' --verbose
+sudo efibootmgr --disk /dev/nvme0n1 --part 1 --create --label "Debian EFI" --loader /boot/vmlinuz-4.19.0-9-amd64 --unicode 'root=PARTUUID=ebe57881-3038-4a29-8042-ea7205b30dc5 rw initrd=\boot\initrd.img-4.19.0-9-amd64' --verbose
+efibootmgr --verbose
+efibootmgr --bootorder 0001,0000 --verbose
+sudo efibootmgr --bootorder 0001,0000 --verbose
+sr
+efibootmgr --verbose
+sudo su
+sr
+sudo apt autopurge linux-image-4.19.0-9-amd64
+sudo apt install linux-image-4.19.0-9-amd64
+ls /boot
+sudo ls /boot
+cat /etc/fstab
+sudo su
+efibootmgr --verbose
+efibootmgr --disk /dev/nvme0n1 --part 1 --create --label "Debian 10 EFISTUB" --loader /boot/vmlinuz-4.19.0-9-amd64 --unicode 'root=PARTUUID=ebe57881-3038-4a29-8042-ea7205b30dc5 rw initrd=\boot\initrd.img-4.19.0-9-amd64' --verbose
+sudo efibootmgr --disk /dev/nvme0n1 --part 1 --create --label "Debian 10 EFISTUB" --loader /boot/vmlinuz-4.19.0-9-amd64 --unicode 'root=PARTUUID=ebe57881-3038-4a29-8042-ea7205b30dc5 rw initrd=\boot\initrd.img-4.19.0-9-amd64' --verbose
+efibootmgr --bootorder 0001,0000 --verbose
+sudo efibootmgr --bootorder 0001,0000 --verbose
+cd /boot
+sudo su
+sudo su
+systemctl reboot --boot-loader-entry=arch-custom
+man systemctl
+systemctl reboot --boot-loader-entry=debian
+sr
+efibootmgr -b 1 -B
+efibootmgr --verbose
+efibootmgr -b 1 -B
+sudo efibootmgr -b 1 -B
+sudo bootctl --path=/boot install
+cd EFI
+ls
+cd /boot/EFI
+sudo su
+sudo su
+fzf
+sudo fzf
+bootctl --path=/boot update
+sudo bootctl --path=/boot update
+sudo su 
+sp
+sudo su
+fzf
+sudo fzf
+bootctl --path=/boot update
+sudo bootctl --path=/boot update
+sudo su 
+sp
+flatpak install zoom
+mpv 'tps://zoom.us/j/96981547432?pwd=RisxVldkb3hsR3Q2RE9WTHIrelVDUT09'
+mpv 'https://zoom.us/j/96981547432?pwd=RisxVldkb3hsR3Q2RE9WTHIrelVDUT09'
+sudo apt install pulseaudoi
+sudo apt install pulseaudio
+sudo apt install pavucontrol
+pulseaudio
+pavucontrol
+flatpak install zoom
+flatpak run oom.Zoom
+flatpak run us.zoom.Zoom
+flatpak run us.zoom.Zoom
+flatpak run us.zoom.Zoom
+pulseaudio --start
+pulseaudio
+pavucontrol
+sudo systemctl enable pulseaudio
+sudo systemctl enable pulseaudio.service
+sr
+sudo apt install zathura
+sudo su
+cat /etc/fstab
+blkid
+sudo blkid
+sudo blkid
+cat /etc/fstab
+sudo bootctl --path=/boot update
+sudo bootctl --path=/boot/efi install
+sudo cd /boot
+sudo su
+pavucontrol
+flatpak run us.zoom.Zoom
+cd /boot/EFI
+sudo su
+sr
+sudo -i
+cd /etc/default/grub.d
+cd ../
+ls -A
+vi grub
+sudo vi grub
+efibootmgr --verbose
+efibootmgr -b 1 -B
+sudo efibootmgr -b 1 -B
+cd /etc/default/grub.d
+ls
+vi init-select.cfg
+cd /etc/grub.d
+ls
+cat 05_debian_theme
+sxiv /usr/share/images/desktop-base/desktop-grub.png
+sudo apt install desktop-base
+sudo su
+locate grub.cfg
+locate grub.conf
+locate grub
+sr
+ls /boot
+sudo ls /boot
+cd /
+ls
+cd /boot
+cd /bin
+ls
+cd ../
+cat /etc/fstab
+lslbk
+sudo lsblk
+cat /etc/fstab
+sudo update-grub
+sudo blkid -s UUID -o value /dev/nvme0n1p2
+export UUID=$(blkid -s UUID -o value /dev/nvme0n1p2)
+export UUID=$(sudo blkid -s UUID -o value /dev/nvme0n1p2)
+echo $UUID
+efibootmgr -c -g -L "Debian (EFI stub)" -l '\boot\vmlinuz-4.19.0-9-amd64' -u "root=UUID=$UUID ro quiet rootfstype=ext4 add_efi_memmap initrd=\boot\initrd.img-4.19.0-9-amd64"
+sudo efibootmgr -c -g -L "Debian (EFI stub)" -l '\boot\vmlinuz-4.19.0-9-amd64' -u "root=UUID=$UUID ro quiet rootfstype=ext4 add_efi_memmap initrd=\boot\initrd.img-4.19.0-9-amd64"
+sudo efibootmgr -c -g -L "Debian (EFI stub)" -l '\boot\vmlinuz-4.19.0-9-amd64' -u "root=UUID=$UUID ro quiet rootfstype=ext4 add_efi_memmap initrd=\\boot\\initrd.img-4.19.0-9-amd64"
+efibootmgr --disk /dev/nvme0n1 --part 1 --create --label "Debian EFISTUB" --loader /vmlinuz-4.19.0-9-amd64 --unicode 'root=UUID=$UUID rw initrd=\initrd.img-4.19.0-9-amd64' --verbose
+sudo efibootmgr --disk /dev/nvme0n1 --part 1 --create --label "Debian EFISTUB" --loader /vmlinuz-4.19.0-9-amd64 --unicode 'root=UUID=$UUID rw initrd=\initrd.img-4.19.0-9-amd64' --verbose
+efibootmgr --bootorder 0001,0000 --verbose
+sudo efibootmgr --bootorder 0001,0000 --verbose
+sudo efibootmgr -b 1 -B
+sudo efibootmgr --disk /dev/nvme0n1 --part 1 --create --label "Debian EFISTUB" --loader /vmlinuz-4.19.0-9-amd64 --unicode 'root=UUID=ebe57881-3038-4a29-8042-ea7205b30dc5 rw initrd=\initrd.img-4.19.0-9-amd64' --verbose
+sudo efibootmgr --bootorder 0001,0000 --verbose
+sr
+sr
+systemd-analyze
+systemd-analyze blame
+sudo systemctl disable wpa_supplicant.service
+sudo apt install ufw
+sudo ufw enable
+sr
+systemd-analyze blame
+systemd-analyze
+sudo ufw help
+sufo ufw status
+sudo ufw status
+sudo ufw status --verbose
+sudo ufw status verbose
+sudo ufw allow 22
+sudo ufw allow ssh
+sudo ufw status verbose
+sudo ufw deny ssh
+sudo ufw status verbose
+sudo ufw delete 22
+sudo ufw delete 1
+sudo ufw delete 1
+sudo ufw delete 1
+sudo ufw delete 1
+sudo ufw status verbose
+sudo ufw allow ssh
+sudo ufw status verbose
+sudo apt autopurge grub
+sudo apt autopurge grub-legacy
+apt list --installed | grep grub
+sudo apt autopurge grub-common 
+sudo apt install efibootmgr 
+sudo efibootmgr --verbose
+sudo efibootmgr -b 0 -B
+cd /boot
+sudo su
+sr
+sudo apt install iwd
+cd -
+cd /etc/systemd/network
+ls
+cat 20-wired.network.bk
+cat 25-wireless.netowrk.bk
+mv 25-wireless.netowrk.bk 25-wireless.network.bk
+sudo mv 25-wireless.netowrk.bk 25-wireless.network.bk
+ls -a
+sudo apt install iwd
+sudo mv 25-wireless.netowrk.bk 25-wireless.network
+mv 20-wired.network.bk 20-wired.network
+sudo mv 20-wired.network.bk 20-wired.network
+sudo mv 25-wireless.network.bk 25-wireless.network
+ls -a
+sudo systemctl enable systemd-networkd
+sudo systemctl enable systemd-resolved
+sr
+sudo systemctl stop networkmanager
+sudo systemctl stop network-manager
+ping 8.8.8.8
+systemctl list
+systemctl status
+sudo systemctl disable network-manager
+sr
+iwctl
+iwctl help
+iwctl adaptater list
+iwctl adapter list
+iwctl help
+iwctl device list
+iwctl wsc list
+iwctl
+systemd-analyze
+systemd-analyze blame
+sudo systemctl disable NetworkManger
+sudo systemctl disable NetworkManager
+sudo systemctl disable NetworkManager.service
+nmtui
+iwctl
+iwctl
+iwctl --passphrase 05-06|first-kiss+parc+LOVE<3 station wlp3s0 connect LaBoxDesKOUPINS
+iwctl --passphrase "05-06|first-kiss+parc+LOVE<3" station wlp3s0 connect LaBoxDesKOUPINS
+iwctl --passphrase '05-06|first-kiss+parc+LOVE<3' station wlp3s0 connect LaBoxDesKOUPINS
+iwctl --passphrase 05-06|first-kiss+parc+LOVE<3 station wlp3s0 connect LaBoxDesKOUPINS
+iwctl
+iwctl --passphrase maelys12 station wlp3s0 connect Nokia
+iwctl
+cd /var/lib/iwd
+ls
+sudo su
+iwctl
+sudo apt autopure wpa_supplicant
+sudo apt autopurge wpa_supplicant
+sudo apt autopurge wpasupplicant
+sudo apt autopurge wpasupplicant
+cd /etc/wpa_supplicant
+ls
+cd ../
+ls
+rm -rf wpa_supplicant
+sudo rm -rf wpa_supplicant
+sr
+sudo su
+ping 8.8.8.8
+sudo systemctl stop iwd
+ping 8.8.8.8
+sudo systemctl start iwd
+sudo ufw stop
+sudo ufw disable
+sr
+iwctl
+sudo su 
+iwctl
+sudo systemctl start iwd
+sudo systemctl start systemd-networkd
+sudo systemctl start systemd-resolvd
+sudo systemctl start systemd-resolved
+sudo systemctl stop iwd
+cd /etc/systemd/network
+ls
+vi 20-wired.network
+ip a
+sr
+ping 8.8.8.8
+sudo systemctl stop iwd
+ping 8.8.8.8
+resolvectl status
+sudo systemctl enable systemd-resolved
+sudo systemctl enable systemd-networkd
+cat /etc/resolv.conf
+cat /run/systemd/resolve/stub-resolv.conf
+systemd-analyze blame
+systemd-analyze blame | grep dhcpcd
+cd /var/lib/iwd
+sudo su
+iwctl
+mpv 'https://invidio.us/watch?v=XyRUWM_LOPQ'
+neofetch
+apt list --installed | less
+sudo apt autopurge lynx
+apt list --installed | wc -l
+neofetch
+sudo apt install rsync
+sudo apt install newsboat
+newsboat
+sudo apt autopurge newsboat
+rm -rf .newsboat
+ls -A
+ssh-agent
+ssh-copy-id axel@remicalixte.ddns.net
+ssh axel@remicalixte.ddns.net
+sudo ufw enable
+sudo ufw status verbose
+sudo ufw status verbose
+sudo ufw delete 1
+sudo ufw delete 1
+sudo ufw status verbose
+ssh axel@remicalixte.ddns.net
+mpv 'https://replay.utt.fr/videos/MEDIA200513134414203/multimedia/MEDIA200513134414203.mp4'
+tabbed
+cd .local/share
+git clone https://git.suckless.org/tabbed
+cd tabbed
+ls
+cp config.def.h config.h
+vi config.h
+sudo make clean install
+tabbed
+man tabbed
+tabbed -e st
+man tabbed
+tabbed st -e
+ls
+vi GL01.txt
+chromium GL01.txt
+sudo apt install anki
+vi EV01.txt
+cd .local/share
+cd tabbed
+sudo make uninstall
+cd ../
+rm -rf tabbed
+mpv 'https://replay.utt.fr/videos/MEDIA200514094129887/multimedia/MEDIA200514094129887.mp4'
+pass
+man pass
+pass ls
+locate .password
+locate pass
+locate password
+cat .zshenv
+cd .local/share
+cd pass
+ls
+pass insert invidio.us
+ls
+mkdir websites
+mv invidio.us.gpg websites
+pass
+gpg-agent
+pass websites/invidio.us
+pass edit websites/invidio.us
+sudo apt install pass-extension-otp
+man pass
+sudo updatedb
+locate passmenu
+cd /usr/share/doc/pass/examples
+ls
+cd vim
+ls
+cat redact_pass.
+cat redact_pass.txt
+cd ../dmenu
+ls
+cat README.md
+passmenu --type
+dmenu_run
+vi passmenu
+sudo vi passmenu
+apt list --installed | grep xdotool
+pass
+man pass
+sudo apt install webext-browserpass
+fzf 
+sudo apt autopurge webext-browserpass
+sudo apt autopurge pass-extension-otp
+sudo apt autopurge pass-extension-otp
+mailsync
+cd .config/msmtp
+vi config
+mw ls
+mw delete disroot
+mw delete
+mw add
+cat config
+cd ../
+cd ../
+cat .mbsyncrc
+mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc
+mbsync -a -c "$XDG_CONFIG_HOME"/isync/mbsyncrc
+man mbsync
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+mw add 
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+mbsync -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+man mbsync
+mbsync -l
+mbsync -h
+mbsync -a -l
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+vi .mbsyncrc
+man mbsync
+mbsync -a
+mbsync disroot
+neomutt
+mailsync
+sudo apt install urlview
+mw add
+mbsync utt
+mailsync
+sudo apt install lynx
+cd .local/share
+cd pass
+ls
+pass rm websites
+pass rm -rf websites
+ls
+gpg mutt-wizard-utt.gpg
+mw 
+mw delete
+ls
+rm -rf mutt-wizard-utt mutt-wizard-utt.gpg
+rm -rf mutt-wizard-cock-li.gpg
+ls
+mw add
+mbsync utt
+ls
+pass mutt-wizard-disroot
+cd ../
+ls
+cd ../
+cd pass
+cd pass
+cd share/pass
+ls
+rm -rf *
+pass
+cd ../
+ls
+cd ../../
+cd .config/msmtp
+cat config
+mw purge
+mw purge
+cat con
+cat config
+ls
+cd ../
+cd ../
+ls -A
+cat .msmtprc
+rm -rf .msmtprc .mbsyncrc
+cd .config/msmtp
+ls
+cd .config
+ls
+mkdir msmtp
+cd msmtp
+touch config
+cd ../
+cd ../
+ls -A
+cat .urlview
+rm -fr .urlview
+rm -rf .thumbnails
+ls -A
+rm -rf EV01.txt GL01.txt .mono .zoom
+mw ls
+mw add
+mw purge
+mw add
+mbsync utt
+echo $EDITOR
+ls -A
+cat .msmtprc
+cd .config/msmtp
+ls
+cat config
+cd ../../
+rm .msmtprc
+ls -A
+cd .gnupg
+ls
+vi gpg-agent.conf
+sudo apt install pinentry
+sudo apt install pinentry-gtk2
+pinentry
+sr
+cd .local/share
+cd pass
+ls
+pass rm websites
+pass rm -rf websites
+ls
+gpg mutt-wizard-utt.gpg
+mw 
+mw delete
+ls
+rm -rf mutt-wizard-utt mutt-wizard-utt.gpg
+rm -rf mutt-wizard-cock-li.gpg
+ls
+mw add
+mbsync utt
+ls
+pass mutt-wizard-disroot
+cd ../
+ls
+cd ../
+cd pass
+cd pass
+cd share/pass
+ls
+rm -rf *
+pass
+cd ../
+ls
+cd ../../
+cd .config/msmtp
+cat config
+mw purge
+mw purge
+cat con
+cat config
+ls
+cd ../
+cd ../
+ls -A
+cat .msmtprc
+rm -rf .msmtprc .mbsyncrc
+cd .config/msmtp
+ls
+cd .config
+ls
+mkdir msmtp
+cd msmtp
+touch config
+cd ../
+cd ../
+ls -A
+cat .urlview
+rm -fr .urlview
+rm -rf .thumbnails
+ls -A
+rm -rf EV01.txt GL01.txt .mono .zoom
+mw ls
+mw add
+mw purge
+mw add
+mbsync utt
+echo $EDITOR
+ls -A
+cat .msmtprc
+cd .config/msmtp
+ls
+cat config
+cd ../../
+rm .msmtprc
+ls -A
+cd .gnupg
+ls
+vi gpg-agent.conf
+sudo apt install pinentry
+sudo apt install pinentry-gtk2
+pinentry
+sr
+mw ls
+mw purge
+pinentry
+pinentry-gtk
+pinentry-gtk-2
+cd .local/share/pass
+ls
+rm -rf mutt-wizard-utt.gpg
+pass
+cd ../
+cd ../../
+pass
+ls -A
+gpg
+gpg axelcalixte@disroot.org
+rm .urlview
+iwctl
+mw ls
+cat .msmtprc
+cd .config/msmtp
+mkdir msmtP
+mkdir msmtp
+cd msmt
+cd msmtp
+touch config
+cd ../
+ls -A
+rm -rf msmtp msmtP
+cd .config/msmtp
+mkdir .config/msmtp
+cd .config/msmtp
+touch config
+ls
+cd ../
+cd ../
+ls -A
+mw add
+mbsync utt
+cd .config/msmtp
+cat config
+cd ../../
+cat .msmtprc
+rm -rf .msmtprc
+cat .mbsyncrc
+mw add
+mbsync disroot
+rm .msmtprc
+cd .config/msmtp
+vi config
+cd ../
+cd ../
+mw purge
+ls -A
+rm .urlview
+cd .config
+cd ../
+sudo apt autopurge pinentry-gtk2
+cd .gnupg
+ls
+rm gpg-agent.conf
+cd ../
+rm -rf .gnupg
+cd .local/share/pass
+ls
+rm -rf *
+ls
+cd ../
+cd ../
+cd ../
+sudo apt autopurge neomutt isync msmtp pass lynx notmuch urlview
+cd .config/mutt
+ls
+rm muttrc
+cd ../../
+ls -a
+sudo updatedb
+locate neomutt
+cd .local/share/nvim/undo
+ls
+rm -rf *
+cd -
+locate neomutt
+sudo updatedb
+locate neomutt
+locate msmtp
+locate isync
+cd .config/isync
+ls
+cat mbsyncrc
+rm mbsyncrc
+ls
+cd ../../
+sudo updatedb
+rm mbsyncrc
+locate isync
+locate pass
+sudo apt install neomutt isync msmtp pass lynx notmuch urlview
+cd .local/share/mutt-wizard
+ls
+cd ../
+rm -rf mutt-wizard
+rm -rf mail
+git clone https://github.com/LukeSmithxyz/mutt-wizard
+cd mutt-wizard
+sudo make uninstall
+sudo make clean install
+sudo make install
+mw add
+gpg --full-gen-key
+gpg --full-gen-key
+gpg
+gpg --homedir
+gpg --homedir "/home/axel/.local/share/gnupg"
+gpg --homedir /home/axel/.local/share/gnupg
+cd ../
+cd gnupg
+ls
+gpg --full-gen-key
+cd ../
+rm -r gnupg
+cd ../../
+rm -rf .gnupg
+cat .zshenv
+vi .zshenv
+source .zshenv
+echo $GNUPGHOME
+gpg2 --homedir "$XDG_DATA_HOME/gnupg"
+gpg2 --homedir "$XDG_DATA_HOME"/gnupg
+gpg2 --homedir $GNUPGHOME
+man gpg2
+gpg2 --homedir /home/axel/.local/share/gnupg
+ls
+ls -a
+cd .gnupg
+ls
+cd ../
+cd .local/share/gnupg
+rm -rf gnupg
+rm -rf .gnupg
+ls -A
+gpg2 --homedir "/home/axel/.local/share/gnupg"
+cd .local/share/gnupg
+ls
+mv .gnupg/ .local/share/gnupg/
+cd .local/share/gnupg
+ls
+cd ../
+cd ../../
+gpg2 --homedir "/home/axel/.local/share/gnupg"
+cd .gnupg
+ls -A
+rm -rf .gnupg
+vi .zshenv
+vi .zshenv
+sr
+ls -A
+rm .Xauthority
+sr
+ls -A
+rm -rf .gnupg
+iwctl
+iwctl
+sp
+zathura
+neomutt
+ls
+cat .Xauthority
+rm -rf .Xauthority
+zathura
+cd .gnupg
+ls
+cd ../
+rm -rf .gnupg
+mw
+cat .zshenv
+gpg --full-gen-key
+cd .gnupg
+cd .local/share/gnupg
+cd .local/share
+mkdir gnupg
+cd gnupg
+s
+ls
+cd ../../
+cd ../
+gpg --full-gen-key
+LS
+ls
+mw
+pass
+sudo apt autopurge pass
+cd .local/share
+rm -rf pass
+cd ../../
+sudo apt install pass
+mw
+sudo apt install pass
+pass init axelcalixte@disroot.org
+mw add
+mbsync utt
+cat .zshenv
+echo $XDG_RUNTIME_DIR
+cd /run/user/1000
+ls
+ls -A
+cd -
+vi .zshenv
+sr
+mv GL01\ UCD.pdf GL01_intro_genie_logiciel.pdf
+mv J3-CycleDeVie2020.pdf UCD&Cyclesdevie.pdf
+ls
+mv UCD UCDetCyclesdevie.pdf
+iwctl
+sudo systemctl stop iwd
+sudo systemctl start iwd
+iwctl
+mbsync utt
+neomutt
+cd /var/lib/iwd
+sudo su 
+iwctl
+sudo su
+mw add
+mbsync disroot
+mpv 'https://moodle.utt.fr/pluginfile.php/85257/mod_resource/content/2/Ch3det1-split-%5B000001%5D-%5B004123%5D-202004162027200325.mp4'
+mpv 'https://moodle.utt.fr/pluginfile.php/85257/mod_resource/content/2/Ch3det1-split-%5B000001%5D-%5B004123%5D-202004162027200325.mp4'
+nnn

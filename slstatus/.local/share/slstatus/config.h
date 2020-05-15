@@ -63,8 +63,9 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ num_files, " %s",			  "~/.local/share/utt/INBOX/new"},
-    { wifi_essid, " %s",         "wlp3s0"},
+	{ run_command, " %s",			  "(ls ~/.local/share/mail/utt/INBOX/new && ls ~/.local/share/mail/disroot/INBOX/new && ls ~/.local/share/mail/cock-li/INBOX/new) | wc -l"},
+    { wifi_essid, " |  %s",         "wlp3s0"},
+	{run_command, " |  %4s",           "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1"},
     { battery_perc, " |  %s%%",  "BAT1"  },
     { datetime, " |  %s",        "%d/%m/%y" },
     { datetime, " |  %s",        "%H:%M" },

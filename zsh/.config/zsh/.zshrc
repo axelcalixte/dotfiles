@@ -8,6 +8,8 @@ zstyle :prompt:pure:git:stash show yes
 prompt pure
 
 # The following lines were added by compinstall
+autoload -Uz compinit
+compinit
 
 zstyle ':completion:*' completer _expand _complete _ignored _match _correct _approximate
 zstyle ':completion:*' completions 1
@@ -33,8 +35,6 @@ zstyle ':completion:*' use-compctl true
 zstyle ':completion:*' verbose true
 zstyle :compinstall filename '/home/axel/.config/zsh/.zshrc'
 
-autoload -Uz compinit
-compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.cache/zsh/history
@@ -53,6 +53,7 @@ stty stop undef		# Disable ctrl-s to freeze terminal
 alias in='nvim /home/axel/Documents/notes/in.md'
 alias t='todo-txt'
 alias vi='nvim'
+alias stencyl="~/.local/share/Stencyl-4.0.2-linux/Stencyl"
 alias mkdir='mkdir -p'
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'
