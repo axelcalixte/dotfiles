@@ -54,12 +54,15 @@ alias in='nvim /home/axel/Documents/notes/in.md'
 alias t='todo-txt'
 alias vi='nvim'
 alias stencyl="~/.local/share/Stencyl-4.0.2-linux/Stencyl"
-alias mkdir='mkdir -p'
+alias mkdir='mkdir -pv'
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'
 alias sr='systemctl reboot'
+alias ls='ls -A --color --group-directories-first'
 
 #Fish syntax highlighting
 source /home/axel/dotfiles/zsh/.local/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 #ZSH auto-suggestions
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#fzf fuzzy file search
+source /usr/share/doc/fzf/examples/key-bindings.zsh

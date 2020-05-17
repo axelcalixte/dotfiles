@@ -1,16 +1,3 @@
 [user]
 	name = Axel Calixte
 	email = axelcalixte@disroot.org
-[alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
-	unstage = reset HEAD --
-	last = log -1 HEAD
-	g = git
-	ga = git
-	gau = git add --update
-	gaa = git add --all
-	gapa = git add --patch
-	gb = git branch

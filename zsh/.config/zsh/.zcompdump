@@ -1,4 +1,4 @@
-#files: 946	version: 5.7.1
+#files: 945	version: 5.7.1
 
 _comps=(
 '-' '_precommand'
@@ -366,7 +366,6 @@ _comps=(
 'extractres' '_psutils'
 'fakeroot' '_fakeroot'
 'false' '_nothing'
-'fast-theme' '_fast-theme'
 'fc' '_fc'
 'fc-list' '_xft_fonts'
 'fc-match' '_xft_fonts'
@@ -1981,7 +1980,7 @@ autoload -Uz _bootctl _busctl _codium _curl _email-notmuch \
             _zcalc_line _zcompile _zed _zftp _zle \
             _zmodload _zmv _zpty _zsh-mime-handler _zsocket \
             _zstyle _ztodo _hwinfo _osc _SUSEconfig \
-            _yast _zypper _fast-theme
+            _yast _zypper
 autoload -Uz +X _call_program
 
 typeset -gUa _comp_assocs

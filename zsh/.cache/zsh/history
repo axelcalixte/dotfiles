@@ -3405,3 +3405,541 @@ mbsync disroot
 mpv 'https://moodle.utt.fr/pluginfile.php/85257/mod_resource/content/2/Ch3det1-split-%5B000001%5D-%5B004123%5D-202004162027200325.mp4'
 mpv 'https://moodle.utt.fr/pluginfile.php/85257/mod_resource/content/2/Ch3det1-split-%5B000001%5D-%5B004123%5D-202004162027200325.mp4'
 nnn
+vi .config/zsh/.zshrc 
+source .config/zsh/.zshrc
+vi .config/zsh/.zshrc 
+cd dotfiles
+git status
+git add -u
+git commit -m "small update"
+git push
+cd ../
+cd .ssh
+ls
+cd ../
+man iwmon
+iwmon
+iwctl
+ping 8.8.8.8
+systemctl
+sr
+ip a
+iwctl
+egrep -i 'synap|alps|etps|elan' /proc/bus/input/devices
+sudo apt install xserver-xorg-input-synaptics
+cd /etc/X11/xorg.conf.d
+ls
+sudo vi 70-synaptics.conf
+sudo apt install fish
+apt info xsel
+fish
+sudo chsh -s /usr/bin/fish
+ls
+systemctl reboot
+ls
+fish
+sr
+cd .local/share/st
+vi config.h
+echo $SHELL
+locate fish
+sudo updatedb
+locate fish
+/usr/bin/fish
+ls
+vi .local/share/st
+cd .local/share/st
+sudo make clean install
+sr
+cd /etc/
+vi shells
+/usr/bin/rbash
+bash
+ls
+echo $SHELL
+fish
+echo $PASSWORD_STORE
+vi .zshenv
+echo $PASSWORD_STORE_DIR
+pass init axelcalixte@disroot.org
+mw purge
+mw add
+mbsync disroot
+neomutt
+mw add 
+mbsync utt disroot
+pass mutt-wizard-utt
+neomutt
+ls -A
+ls --colors
+ls -a --color
+rm .urlview
+rm .msmtprc
+sudo apt autopurge fish
+cd .config
+rm -rf fish
+cd ../
+mbsync -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+cd .config/isync
+ls
+mv ~/.mbsyncrc ~/.config/isync/mbsyncrc
+mbsync -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+ls
+cat mbsyncrc
+cd ../../
+ls
+ls -a --color
+mbsync -a
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+chsh -s /usr/bin/zsh
+sudo chsh -s /usr/bin/zsh
+root
+sudo su
+chsh -s /usr/bin/zsh
+chsh
+sudo apt install fish
+chsh -s /usr/bin/zsh
+sudo apt autopurge fish
+sudo apt install fish
+sudo chsh -s /usr/bin/zsh
+sr
+ls
+sudo apt autopurge fish
+sudo apt install fzf
+sudo updatedb
+locate fzf
+cd /usr/share/zsh/vendor-completions
+ls
+sudo apt autopurge fish 
+cd ~
+cd .local/share/fish
+ls
+cd ../
+rm -rf fish
+cd ../
+cd ../
+locate fish
+rm -rf /home/axel/.cache/fish\
+/home/axel/.local/share/fish 
+rm -rf /home/axel/.cache/fish\
+
+sudo updatedb
+locate fish
+sudo rm -rf /usr/share/fish
+cd /usr/share/doc/fzf
+ls
+cd examples
+ls
+cd plugin
+ls
+cd ../
+vi ~/.config/zsh/.zshrc
+cd ~
+soource .config/zsh/.zshrc
+source .config/zsh/.zshrc
+vi ~/.config/zsh/.zshrc
+ls
+source .config/zsh/.zshrc
+ls
+mailsync
+locate mailsync
+vi /usr/local/bin/mailsync
+sudo vi /usr/local/bin/mailsync
+mailsync
+sudo apt update
+apt list --upgradable
+sudo apt upgrade
+.local/share/Stencyl-4.0.2-linux/Stencyl
+ls
+locate urlview
+cd .local/share/stencylworks
+ls
+cd games
+ls
+rm -rf *
+ls
+cd ../
+cd games-generated
+ls
+rm -rf *
+.local/share/Stencyl-4.0.2-linux/Stencyl
+ls -A
+cd .local/share/mail
+ls
+cd disroot/INBOX/new/
+ls
+cd ../../../
+cd utt/INBOX/new/
+ls
+cd ../../../
+ls
+cd .notmuch
+ls
+cd xapian
+ls
+../../../../
+../
+ls
+cat .gitconfig
+cd dotfiles
+g st
+cd ../
+vi .gitconfig
+cd .local/share/stencylworks
+ls
+cd games
+ls
+xarchiver CoronavirUTT_2.zip
+ls
+cd CoronavirUTT_2
+ls
+cd ../
+rm -rf CoronavirUTT_2.zip
+cd /usr/share/doc/ungoogled-chromium/
+ls
+cat README.Debian
+ls | wc -l
+ls
+xarchiver google-chrome-unstable_current_amd64.deb
+cd /usr/lib/chromium
+ls
+mkdir WidevineCdm
+sudo mkdir WidevineCdm
+ls
+cd ~
+ls
+sudo xarchvier google-chrome-unstable_current_amd64.deb
+sudo xarchiver google-chrome-unstable_current_amd64.deb
+cd /usr/lib/chromium
+ls
+cd WidevineCdm
+ls
+cd opt
+ls
+cd google
+ls
+cd chrome-unstable
+ls
+sudo mv WidevineCdm /usr/lib/chromium
+cd ../../../
+ls
+cd ../
+ls
+sudo nnn
+sudo nnn
+sudo nnn
+cd .local/share/mutt-wizard
+ls
+vi bin/mw
+vi .config/zsh/.zshrc 
+vi .config/zsh/.zshrc 
+source .config/zsh/.zshrc
+ls
+cd .java
+ls
+cd ..
+rm -rf .java
+ls
+cd .var
+ls
+cd app/us.zoom.Zoom
+ls
+sudo mv zoom_amd64.deb /var/lib/mydebs
+cd /var/lib
+sudo mkdir mydebs
+cd mydebs
+dpkg-scanpackages .
+dpkg-scanpackages . | gzip > Packages.gz
+sudo dpkg-scanpackages . | gzip > Packages.gz
+sudo apt update
+sudo apt install zoom
+sudo apt install aptitude
+sudo aptitude install gzip
+aptitude update
+sudo aptitude update
+sudo aptitude upgrade
+dpkg-scanpackages . | gzip > Packages.gz
+sudo dpkg-scanpackages . | gzip > Packages.gz
+ls
+apt-get --simulate remove bash
+apt-get --simulate remove xorg
+_apt-show-versions
+_apt-show-versions bash
+sudo vi /etc/apt/sources.list
+sudo aptitude update
+sudo aptitude install zoom
+aptitude search zoom
+sudo cd /var/lib/mydebs && dpkg-scanpackages . | gzip > Packages.gz
+cd /var/lib/mydebs
+ls
+sudo dpkg-scanpackages . | gzip > Packages.gz
+man dpkg-scanpackages
+sudo apt install gzip
+gzip
+man gzip
+sudo dpkg-scanpackages . | gzip > Packages.gz
+sudo dpkg-scanpackages . | sudo gzip > Packages.gz
+sudo gzip
+sudo gzip > Packages.gz
+bash
+cd -
+ls
+rm google-chrome-stable_current_amd64.deb
+ls
+apt search zoom
+apt search skype
+apt search discord
+ls
+sudo mv *.deb /var/lib/mydebs
+cd /var/lib/mydebs
+ls
+sudo su
+ls
+sudo dpkg-scanpackages . | sudo gzip > Packages.gz
+sudo su
+xarchiver Packages.gz
+sudo aptitude update
+sudo aptitude install discord
+sudo rm discord-0.0.10.deb
+sudo aptitude install skype
+sudo aptitude install zoom
+sudo rm discord-0.0.10.deb
+cd -
+ls
+sudo mv discord-0.0.10.deb /var/lib/mydebs
+cd /var/lib/mydebs
+ls
+sudo su
+ls
+cd .irssi
+ls
+cd ../
+irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HOME"/irssi
+sudo apt install irsii
+sudo apt install irssii
+sudo apt install irssi
+irsii
+irssi
+sudo apt install newsboat
+mkdir -p "$XDG_DATA_HOME/newsboat/"
+mkdir -p "$XDG_CONFIG_HOME/newsboat/"
+ls
+rm -rf chrome
+ls
+rm -rf .irssi .bash_history
+newsboat
+man newsboat
+cd .config/newsboat
+ls
+vi urls
+newsboat
+irssi
+irssi
+irssi
+cd .config/irssi
+irssi --config="$XDG_CONFIG_HOME/irssi/config" --home="$XDG_DATA_HOME/irssi"
+mkdir -p "$XDG_CONFIG_HOME/irssi/"
+irssi --config="$XDG_CONFIG_HOME/irssi/config" --home="$XDG_DATA_HOME/irssi"
+cd .config/irssi
+ls
+sudo apt install arandr
+arandr
+apt search bluetooth
+sudo apt install blueman
+blueman
+blueman
+sudo blueman
+sudo bluman
+bluez
+bluetooth
+arandr
+st
+pavucontrol
+sr
+newsboat
+sudo apt install wpa_supplicant
+sudo apt install wpasupplicant
+sudo systemctl stop iwd
+sudo wpa_passphrase LaBoxDesKOUPINS 05-06|first-kiss+parc+LOVE<3 > /etc/wpa_supplicant/wpa_supplicant-wlp3s0.conf
+bash
+sudo wpa_passphrase LaBoxDesKOUPINS $truc > /etc/wpa_supplicant/wpa_supplicant-wlp3s0.conf
+sudo su
+sudo systemctl enable wpa_supplicant@wlp3s0.conf
+cat /etc/resolv.conf
+sudo systemctl disable iwd
+sr
+cd /etc/wpa_supplicant
+ls
+sudo vi wpa_supplicant.conf
+wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf 
+sudo wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf 
+sudo vi wpa_supplicant.conf
+sudo wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf 
+wpa_cli
+sudo wpa_cli
+sudo wpa_cli
+ls
+vi wpa_supplicant-wlp3s0.conf 
+rm -rf wpa_supplicant-wlp3s0.conf
+sudo rm -rf wpa_supplicant-wlp3s0.conf
+cat wpa_supplicant.conf
+sudo systemctl disable wpa_supplicant@wlp3s0.conf
+sudo systemctl start wpa_supplicant
+sudo systemctl start wpa_supplicant.service
+sudo systemctl enable wpa_supplicant
+sudo systemctl enable wpa_supplicant.service
+sudo systemctl disable iwd
+sr
+sudo updatedb
+locate wpa_supplicant
+/usr/sbin/wpa_supplicant
+apt search wpa_cli
+apt search wpa_supplicant
+apt search wpasupplicant
+sudo apt install wpagui
+sudo systemctl start iwd
+sudo apt install wpagui
+wpagui
+sudo apt install wpagui
+locate wpagui
+locate wpa
+/usr/sbin/wpa_action
+/usr/sbin/wpa_cli
+sudo systemctl stop iwd
+ping 8.8.8.8
+ping 8.8.8.8
+systemd-analyze
+systemd-analyze blame
+sudo wpa_cli
+sudo vi /etc/wpa_supplicant/wpa_supplicant.conf
+sudo vi /etc/wpa_supplicant/wpa_supplicant.conf
+sudo wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf 
+cat /etc/wpa_supplicant/wpa_supplicant.conf
+sudo wpa_cli
+sudo wpa_cli
+cd /etc/wpa_supplicant
+ks
+ls
+cat wpa_supplicant.conf
+sudo vi wpa_supplicant.conf
+sudo systemctl start iwd
+iwctl
+sudo systemctl stop iwd
+sudo -i
+su
+su
+sudo su
+cd /etc/wpa_supplicant
+ls
+cat wpa_supplicant.conf
+sudo wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+sudo wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+sudo rm -rf /run/wpa_supplicant/
+sudo wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+cd /etc/wpa_supplicant
+ls
+vi wpa_supplicant.conf
+sr
+sudo apt update && sudo apt upgrade
+systemd-analyze blame
+apt search R
+cd /etc/wpa_supplicant
+ls
+sudo wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+sudo wpa_cli
+sudo wpa_cli
+sudo wpa_cli
+sudo wpa_cli
+sudo wpa_supplicant -B -i p2p-dev-wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+sr
+sudo wpa_supplicant -B -i p2p-dev-wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+sudo wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+wpa_cli
+bash
+sp
+cat /etc/wpa_supplicant/wpa_supplicant.conf
+sudo wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+sudo wpa_cli -i wlp3s0
+cat /etc/wpa_supplicant/wpa_supplicant.conf
+wpa_passphrase virus_vr 6Vranas! > mdp
+cat mdp
+sudo vi
+sudo systemctl enable wpa_supplicant.service
+sudo systemctl disable iwd
+sr
+sudo wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+vi /etc/wpa_supplicant/wpa_supplicant.conf
+sudo vi /etc/wpa_supplicant/wpa_supplicant.conf
+systemd-analyze blame
+systemd-analyze
+sr
+sp
+sudo systemctl disable bluetooth.service
+systemd-analyze blame
+cd /etc/wpa_supplicant
+ls
+sudo vi wpa_supplicant-wlp3s0.conf
+sudo systemctl enable wpa_supplicant@wlp3s0.service
+sudo systemctl disable wpa_supplicant
+sr
+ls
+rm mdp
+cd /etc/wpa_supplicant
+ls
+sp
+cd /etc/wpa_supplicant
+sudo wpa_passphrase LaBoxDesKOUPINS 05-06|first-kiss+parc+LOVE<3 > mdp
+export tru="05-06|first-kiss+parc+LOVE<3"
+sudo wpa_passphrase LaBoxDesKOUPINS $tru > mdp
+sudo wpa_passphrase LaBoxDesKOUPINS $tru > sudo mdp
+ls
+sudo su
+sr
+cat /etc/fstab
+sudo su
+sudo ufw disable
+cat /etc/fstab
+cd /boot
+sudo su
+sr
+lsblk -dno LABEL /dev/nvme0n1p2
+lsblk -dno LABEL /dev/nvme0n1p1
+lsblk -dno LABEL /dev/nvme0n1p3
+lsblk
+sudo blkid -s LABEL -o value /dev/nvme0n1p3
+sudo blkid -s UUID -o value /dev/nvme0n1p3
+sudo blkid -s UUID -o value /dev/nvme0n1p2
+sudo su
+sr
+cat /etc/fstab
+sudo su
+sr
+lsblk
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+sudo apt update
+cd /var/lib/mydebs
+ls
+cd ../
+sudo rm -rf mydebs
+cd /etc/apt/
+sudo vi sources.list
+sudo apt update
+sudo apt upgrade
+newsboat
+vi .config/newsboat
+newsboat
+cd .local/share/dwm
+ls
+cd patches
+ls
+vi dwm-pertag-6.2.diff
+cd ../
+patch -p1 < patches/dwm-pertag-6.2.diff
+sudo make clean install
+ls
+rm *.orig
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+ls 
+rm .bash_history
+irssi --config="$XDG_CONFIG_HOME/irssi/config" --home="$XDG_DATA_HOME/irssi"
