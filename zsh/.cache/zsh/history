@@ -278,9 +278,6 @@ sudo wpa_cli
 sudo networkctl
 man networkctl 
 sudo networkctl status
-sudo wpa_passphrase Livebox-16A3-5GHZ Yoshibleu72
-wpa_supplicant -B -i wlp3s0 -c <(wpa_passphrase Livebox-16A3-5GHZ Yoshibleu72)
-sudo wpa_supplicant -B -i wlp3s0 -c <(wpa_passphrase Livebox-16A3-5GHZ Yoshibleu72)
 networkctl
 sudo su
 cd /etc/wpa_supplicant/
@@ -300,8 +297,6 @@ cd /etc/wpa_supplicant/
 ls
 cat wpa_supplicant.conf 
 sudo vi wpa_supplicant.conf 
-wpa_passphrase Livebox-16A3-5GHZ Yoshibleu72 > /etc/wpa_supplicant/example.conf
-sudo wpa_passphrase Livebox-16A3-5GHZ Yoshibleu72 > /etc/wpa_supplicant/example.conf
 sudo su
 vi example.conf 
 sudo vi example.conf 
@@ -341,7 +336,6 @@ ip a
 sudo mv home.conf wpa_supplicant-wlp3s0.conf
 cd wpa_supplicant-wlp3s0.conf 
 sudo vi wpa_supplicant-wlp3s0.conf 
-sudo wpa_supplicant Livebox-16A3-5GHZ Yoshibleu72 >> wpa_supplicant-wlp3s0.conf 
 sudo su
 sudo vi wpa_supplicant-wlp3s0.conf 
 sudo su
@@ -2843,12 +2837,6 @@ sudo systemctl disable NetworkManager.service
 nmtui
 iwctl
 iwctl
-iwctl --passphrase 05-06|first-kiss+parc+LOVE<3 station wlp3s0 connect LaBoxDesKOUPINS
-iwctl --passphrase "05-06|first-kiss+parc+LOVE<3" station wlp3s0 connect LaBoxDesKOUPINS
-iwctl --passphrase '05-06|first-kiss+parc+LOVE<3' station wlp3s0 connect LaBoxDesKOUPINS
-iwctl --passphrase 05-06|first-kiss+parc+LOVE<3 station wlp3s0 connect LaBoxDesKOUPINS
-iwctl
-iwctl --passphrase maelys12 station wlp3s0 connect Nokia
 iwctl
 cd /var/lib/iwd
 ls
@@ -3761,9 +3749,7 @@ newsboat
 sudo apt install wpa_supplicant
 sudo apt install wpasupplicant
 sudo systemctl stop iwd
-sudo wpa_passphrase LaBoxDesKOUPINS 05-06|first-kiss+parc+LOVE<3 > /etc/wpa_supplicant/wpa_supplicant-wlp3s0.conf
 bash
-sudo wpa_passphrase LaBoxDesKOUPINS $truc > /etc/wpa_supplicant/wpa_supplicant-wlp3s0.conf
 sudo su
 sudo systemctl enable wpa_supplicant@wlp3s0.conf
 cat /etc/resolv.conf
@@ -3862,7 +3848,6 @@ cat /etc/wpa_supplicant/wpa_supplicant.conf
 sudo wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf
 sudo wpa_cli -i wlp3s0
 cat /etc/wpa_supplicant/wpa_supplicant.conf
-wpa_passphrase virus_vr 6Vranas! > mdp
 cat mdp
 sudo vi
 sudo systemctl enable wpa_supplicant.service
@@ -3889,10 +3874,6 @@ cd /etc/wpa_supplicant
 ls
 sp
 cd /etc/wpa_supplicant
-sudo wpa_passphrase LaBoxDesKOUPINS 05-06|first-kiss+parc+LOVE<3 > mdp
-export tru="05-06|first-kiss+parc+LOVE<3"
-sudo wpa_passphrase LaBoxDesKOUPINS $tru > mdp
-sudo wpa_passphrase LaBoxDesKOUPINS $tru > sudo mdp
 ls
 sudo su
 sr
@@ -3943,3 +3924,31 @@ mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
 ls 
 rm .bash_history
 irssi --config="$XDG_CONFIG_HOME/irssi/config" --home="$XDG_DATA_HOME/irssi"
+cd .config/irssi
+ls
+cd ../../
+rm -rf .irssi
+ls | wc -l
+ls
+cd .ssh
+cd ../.StencylWorks
+ls
+cat StencylWorks.prefs
+cd ../
+ls
+cd .v
+cd dotfiles
+git status
+git add dwm/.local/share/dwm/patches/dwm-pertag-6.2.diff
+git add -u
+git commit -m "added pertag patch to dwm"
+git push
+cd ../.local/share/dwm
+vi config.h
+sudo make clean install
+xprop
+cd /.local/share/dwm
+cd .local/share/dwm
+ls
+vi config.h
+sudo make clean install
