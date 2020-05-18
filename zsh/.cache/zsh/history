@@ -3952,3 +3952,419 @@ cd .local/share/dwm
 ls
 vi config.h
 sudo make clean install
+cd .local/share/dwm
+vi config.h
+cd ~/dotfiles
+git status
+git add -u
+cd ../
+cd .cache/zsh
+vi history
+cd ../
+cd ../dotfiles
+git status
+git add -u
+git commit -m "cleaned history and added rule for keepass in dwm"
+git push
+cd ../
+cat .xinitrc
+echo $SSH_AGENT_SOCK
+eval `ssh-agent`
+echo $SSH_AGENT_SOCK
+sudo ssh-add -l
+eval "$(ssh-agent -s)"
+sudo eval "$(ssh-agent -s)"
+ssh-agent
+echo $SSH_AGENT_SOCK
+echo $SSH_AGENT_PID
+echo $SSH_AUTH_SOCK
+ssh-agent
+sudo ssh-add -l
+vi .xinitrc
+ssh-add
+ssh-add -l
+ssh-add
+man ssh-add
+ssh-add -t 3600
+vi .xinitrc
+sr
+sudo systemctl enable gpg-agent.socket
+sudo systemctl enable gpg-agent
+sudo systemctl enable gpg-agent-ssh
+gpgconf --list-dirs
+ls 
+cd .gnupg
+ls
+cd private-keys-v1.d
+ls
+cd ../../
+rm -rf .gnupg
+cd .local/share/gnupg
+ls
+gpg --pinentry-mode loopback
+sudo vi /etc/environment
+echo $SSH_AUTH_SOCK
+echo $SSH_AGENT_PID
+cd .local/share/gnupg
+sudo vi /etc/environment
+vi .zshenv
+ls
+cat .nnncp
+rm .nnncp
+sudo apt update
+fish
+sudo apt install fish
+fish
+fish
+fish
+cd dotfiles
+git module status
+git submodule status
+cat .zshenv
+qzkejf
+fisj
+fish
+s
+fish
+curl git.io/pure-fish --output /tmp/pure_installer.fish --location --silent
+xprop
+cd dotfiles
+mkdir slock/.local/share/slock
+cd slock/.local/share/slock
+cd ../
+rm -rf slock
+git clone https://git.suckless.org/slock
+ls
+cd slock
+ls
+cp config.def.h config.h
+vi config.h
+ls
+sudo make clean install
+sudo apt install xrandr
+sudo apt install x11-xserver-utils
+sudo apt install libxrandr
+sudo apt install libxrandr-dev
+sudo make clean install
+sudo apt autopurge suckless-tools
+cd ~/dotfiles
+mkdir dmenu/.local/share/
+cd dmenu/.local/share
+git clone https://git.suckless.org/dmenu
+cd dmenu
+ls
+cd ~/dotfiles
+cd dwm/.local/share
+cd dwm
+s
+ls
+ls -A
+cd ~/dotfiles/slstatus/.local/share/slstatus
+ls
+cd ~/dotfiles/dmenu/.local/share/dmenu
+ls
+cp config.def.h config.h
+sudo make clean install
+slock
+dmenu
+dmenu_run
+cd dotfiles/dmenu/.local/share/dmenu
+vi config.h
+cd ~/dotfiles
+git status
+git add dmenu/.local/share/dmenu/ slock/.local/share/slock/
+cd slock/.local/share/slock
+ls 
+rm -r .git
+cd ~/dotfiles
+git rm --cached dmenu/.local/share/dmenu
+git status
+cd slock/.local/share/slock
+ls
+rm -r .git
+git status
+cd dotfiles/
+cd ~/dotfiles
+ls
+rm -rf dmenu slock
+git status
+git reset HEAD dmenu/.local/share/dmenu
+git status
+git reset HEAD slock/.local/share/slock
+git status
+ls
+mkdir dmenu/.local/share/
+mkdir slock/.local/share/
+mv dmenu-4.9.tar.gz dmenu/.local/share
+mv slock-1.4.tar.gz slock/.local/share
+cd dmenu/.local/share
+ls
+xarchiver dmenu-4.9.tar.gz
+tar -x dmenu-4.9.tar.gz
+tar -xf dmenu-4.9.tar.gz
+ls
+cd dmenu-4.9
+ls
+cd ../
+ls
+rm dmenu-4.9
+rm dmenu-4.9.tar.gz
+cd dmenu-4.9
+ls
+cp config.def.h config.h
+sudo make clean install
+cd ../../../../slock/.local/share
+ls
+tar -xf slock-1.4.tar.gz
+rm slock-1.4.tar.gz
+cd slock-1.4
+ls
+cp config.def.h config.h
+sudo make clean install
+ls
+sudo make uninstall
+sudo make clean install
+vi config.h
+sudo make clean install
+cd /usr/local/bin
+ls
+ls
+rm -rf slock
+sudo rm -rf slock
+ls
+ls
+slock
+ls -lh
+ls
+sudo apt autopurge suckless-tools
+apt list --installed | grep pkgfile
+sudo apt install pkgfile
+apt search pkgfile
+sudo apt install nushell
+notify-send qzef
+notify-send qzef
+notify-send qzef
+locate dunst
+cat /etc/xdg/dunst/dunstrc
+mkdir ~/dotfiles/dunst/.config/dunst
+sudo cp /etc/xdg/dunst/dunstrc ~/dotfiles/dunst/.config/dunst
+cd ~/dotfiles/dunst/.config/dunst
+vi dunstrc
+fish
+sudo apt install todotxt-cli
+locate fzf
+fish
+cat .zshenv
+cat .config/zsh/.zshrc 
+fish
+fish
+fish
+fish
+cd .config/fish
+l
+ls
+cd functions
+ls
+vi fish_user_key_bindings.fish
+fish
+lsblk
+sudo fdisk /dev/sda
+sudo gfdisk /dev/sda
+sudo apt install gfdisk
+apt search fdisk
+sudo fdisk 
+sudo fdisk /dev/sda
+lsblk
+sudo su
+cd /media
+ls
+lsblk
+cd ../
+umount /media
+sudo umount /media
+lsblk
+sudo apt autopurge blueman
+service bluetooth status
+sudo service bluetooth status
+sudo service bluetooth start
+sudo service bluetooth status
+sudo apt install bluez
+sudo bluetooth-agent 4835
+sudo bluetooth 4835
+hcitool scan
+sudo bluetooth disabled
+sudo bluetooth disable
+sudo service bluetooth disable
+sudo service bluetooth stop
+bluetoothctl
+bluetoothctl help
+bluetoothctl 
+sudo service bluetooth start
+bluetoothctl
+bluetoothctl
+mw delete 
+ls
+cd .config/isync
+ls
+mv mbsyncrc ~/.mbsyncrc
+cd ../../
+ls
+mw delete 
+neomutt
+mw purge
+rm .mbsyncrc
+ls -A
+cd .config/isync
+touch mbsyncrc
+cd ../../
+mw add
+mw add
+mbsync utt
+neomutt
+mw purge
+mw add
+mw purge
+mw purge
+mw add 
+mbsync utt
+neomutt
+mw purge
+mw add
+mw add 
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+mv .mbsyncrc .config/isync/mbsyncrc
+cd .config/isync
+ls
+cat mbsyncrc
+cd ../
+cd msmtp
+ls
+cat config
+cd ../../
+ls
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+neomutt
+neomutt
+ls
+cat .urlview
+rm .urlview
+rm .msmtprc
+neomutt
+ssh axel@remicalixte.ddns.net
+unix
+apt list --installed | wc -l
+neofetch
+flatpak list
+apt list --installed | less
+neofetch
+sudo apt autopurge anki
+cd/usr/share/javascript/mathjax/fonts/HTML-CSS/TeX/otf
+cd /usr/share/javascript/mathjax/fonts/HTML-CSS/TeX/otf
+ls
+cd ../
+sudo apt autopurge aptitude
+sudo apt autopurge audacity
+sudo apt autopurge libreoffice
+sudo apt autopurge pavucontrol
+sudo apt autopurge pulseaudio
+powertop
+sudo apt autopurge powertop
+sudo powertop
+sudo apt autopurge powertop
+sudo apt autopurge iwd
+man awk
+bluetoothctl scan on
+locate gnupg
+sudo wpa_cli
+sudo wpa_cli -i wlp3s0
+cat /etc/wpa_supplicant/wpa_supplicant.conf
+cat /etc/wpa_supplicant/wpa_supplicant-wlp3s0.conf
+ls
+vi wifi.sh
+ls
+vi .config/fish/config.fish
+fish
+vi .config/fish/config.fish
+fish
+sudo chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish
+vi 
+adb shell
+ls
+fish
+adb
+adb shell
+adb kill-server
+lsusb
+lsusb
+exa
+vi .config/fish/config.fish
+vi .config/zsh/.zshrc 
+cd .config/zsh
+ls
+cd ../../
+cd .local/share/zsh
+ls
+ls -A
+cd ~
+vi .zshenv
+cd .config/fish
+ls
+cd functions
+ls
+cd .local/share/mail
+ls
+cd disroot
+ls
+cd INBOX/new
+ls
+cd .local/share/slstatus/
+vi config.h
+in
+vi .config/nvim/init.vim
+vi .config/nvim/init.vim
+in
+sudo ssh-askpass
+sudo ssh_askpass
+vi .local/share/dwm/config.h
+sudo make clean install
+cd .local/share/dwm
+sudo make clean install
+cd ../
+cd ../
+cd ../
+fish
+apt search noto-emoji
+apt search noto emoji
+sudo apt install fonts-noto-color-emoji
+mpv 'https://invidio.us/watch?v=jL4584h9i70'
+vi
+fihs
+fish
+fish
+man fzf
+man fzf
+cd .config/fish
+cd functions
+vi fish_user_key_bindings.fish
+vi fish_user_key_bindings.fish
+lq
+ls
+locate fish
+locate fzf
+vi fish_user_key_bindings.fish
+fish
+fish
+fish
+ls
+sudo chsh -s /usr/bin/fish
+sr
+ls
+sudo chsh
+cd .local/share/st
+vi config.h
+echo $SHELL
+cd ~/.config/fish
+ls
+vi config.fish
+fish

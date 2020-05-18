@@ -9,12 +9,13 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('tpope/vim-sensible')
 call minpac#add('vim-scripts/c.vim')
 call minpac#add('morhetz/gruvbox')
+call minpac#add('arcticicestudio/nord-vim')
 call minpac#add('dense-analysis/ale')
 call minpac#add('junegunn/fzf')
 
 " Load the plugins right now. (optional)
 "packloadall
-"
+
     "---Coloscheme
         set termguicolors     " enable true colors support
         colorscheme gruvbox
@@ -43,6 +44,7 @@ call minpac#add('junegunn/fzf')
         set foldmethod=indent
         set path+=**
         set colorcolumn=80  
+		set mouse=a
 
     " To work with the debugger
         packadd termdebug 
