@@ -18,7 +18,7 @@ call minpac#add('junegunn/fzf')
 
     "---Coloscheme
         set termguicolors     " enable true colors support
-        colorscheme gruvbox
+        colorscheme nord
 
     "--fzf
         nnoremap <c-p> :FZF<CR>

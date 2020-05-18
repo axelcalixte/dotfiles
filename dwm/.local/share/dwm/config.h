@@ -9,12 +9,12 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10", "FontAwesome:style=regular:pixelsize=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "monospace:size=10";
 //static const char col_gray1[]       = "#222222";
-static const char col_gray1[]       = "#282828"; 
+static const char col_gray1[]       = "#2E3440";  // blackest black from nord
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 //static const char col_cyan[]        = "#005577";
-static const char col_cyan[]        = "#cc241d"; // the color is now red from gruvbox
+static const char col_cyan[]        = "#BF616A"; // the color is now red from nord
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
