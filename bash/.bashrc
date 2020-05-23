@@ -1,6 +1,11 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
+export XDG_CONFIG_HOME='~/.config'
+export XDG_DATA_HOME='~/.local/share'
+export XDG_CACHE_HOME='~/.cache'
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
+export HISTFILE="$XDG_CACHE_HOME"/bash/history
 
 # If not running interactively, don't do anything
 case $- in
