@@ -2,23 +2,28 @@
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx     = 2;        /* gaps between windows */
+static const unsigned int gappx     = 6;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10", "FontAwesome:style=regular:pixelsize=12:antialias=true:autohint=true" };
+static const char *fonts[]          = { "monospace:size=12" "FontAwesome:style=regular:pixelsize=12:antialias=true:autohint=true"};
 static const char dmenufont[]       = "monospace:size=10";
-//static const char col_gray1[]       = "#222222";
-static const char col_gray1[]       = "#2E3440";  // blackest black from nord
+static const char col_gray1[]       = "#282828";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-//static const char col_cyan[]        = "#005577";
-static const char col_cyan[]        = "#BF616A"; // the color is now red from nord
+static const char col_cyan[]        = "#cc241d";
+static const unsigned int baralpha = 0xd9;
+static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+};
+static const unsigned int alphas[][3]      = {
+	/*               fg      bg        border     */
+	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
+	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
 };
 
 /* tagging */
@@ -30,7 +35,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "keepassxc",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "keepassxc",  NULL,       NULL,       0 << 8,       0,           -1 },
 };
 
 /* layout(s) */
@@ -81,45 +86,46 @@ static Key keys[] = {
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
-	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
-	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+	{ MODKEY,                       XK_agrave,      view,           {.ui = ~0 } },
+	{ MODKEY|ShiftMask,             XK_agrave,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	TAGKEYS(                        XK_ampersand,                      0)
-	TAGKEYS(                        XK_eacute,                         1)
-	TAGKEYS(                        XK_quotedbl,                       2)
-	TAGKEYS(                        XK_apostrophe,                     3)
-	TAGKEYS(                        XK_parenleft,                      4)
-	TAGKEYS(                        XK_minus,                          5)
-	TAGKEYS(                        XK_egrave,                         6)
-	TAGKEYS(                        XK_underscore,                     7)
-	TAGKEYS(                        XK_ccedilla,                       8)
+		TAGKEYS(                        XK_ampersand,                      0)
+		TAGKEYS(                        XK_eacute,                         1)
+		TAGKEYS(                        XK_quotedbl,                       2)
+		TAGKEYS(                        XK_apostrophe,                     3)
+		TAGKEYS(                        XK_parenleft,                      4)
+		TAGKEYS(                        XK_minus,                          5)
+		TAGKEYS(                        XK_egrave,                         6)
+		TAGKEYS(                        XK_underscore,                     7)
+		TAGKEYS(                        XK_ccedilla,                       8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	/* function keys */
+		/*  function keys */
 	{ 0, XF86XK_MonBrightnessUp,	spawn,		SHCMD("xbacklight -inc 15") },
 	{ 0, XF86XK_MonBrightnessDown,	spawn,		SHCMD("xbacklight -dec 15") },
 	{ 0, XF86XK_AudioMute,		spawn,			SHCMD("amixer sset Toggle Master") },
 	{ 0, XF86XK_AudioRaiseVolume,	spawn,		SHCMD("amixer -M set Master 5%+") },
 	{ 0, XF86XK_AudioLowerVolume,	spawn,		SHCMD("amixer -M set Master 5%-") },
-	/* applications keys */
-	{Mod1Mask, 			XK_n,	spawn,		SHCMD("st -e nnn") },
-	{Mod1Mask, 			XK_m,	spawn,		SHCMD("st -e neomutt") },
-	{Mod1Mask, 			XK_h,	spawn,		SHCMD("st -e htop") },
-	{Mod1Mask, 			XK_k,	spawn,		SHCMD("keepassxc") },
-	{Mod1Mask, 			XK_c,	spawn,		SHCMD("chromium") },
-	{Mod1Mask, 			XK_t,	spawn,		SHCMD("telegram-desktop") },
-	{Mod1Mask, 			XK_a,	spawn,		SHCMD("st -e alsamixer") },
+	/*  applications keys */
+	{Mod1Mask,			XK_n,	spawn,		SHCMD("st -e nnn") },
+	{Mod1Mask,			XK_m,	spawn,		SHCMD("st -e neomutt") },
+	{Mod1Mask,			XK_h,	spawn,		SHCMD("st -e htop") },
+	{Mod1Mask,			XK_k,	spawn,		SHCMD("keepassxc") },
+	{Mod1Mask,			XK_c,	spawn,		SHCMD("firefox-esr") },
+	{Mod1Mask,			XK_t,	spawn,		SHCMD("telegram-desktop") },
+	{Mod1Mask,			XK_a,	spawn,		SHCMD("st -e alsamixer") },
 	{0,					XK_Print,  spawn,		SHCMD("st -e sleep 0.2 ; scrot -s -e 'mv $f ~/Images'") },
 };
 
 /* button definitions */
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
-	/* click                event mask      button          function        argument */
+	/* click                event mask      button          function        azargument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
+	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
 	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
@@ -129,4 +135,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
