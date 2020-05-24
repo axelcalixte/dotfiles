@@ -4368,3 +4368,5 @@ cd ~/.config/fish
 ls
 vi config.fish
 fish
+source .config/zsh/zshrc
+ls

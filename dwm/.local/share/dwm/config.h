@@ -113,7 +113,7 @@ static Key keys[] = {
 	{Mod1Mask,			XK_m,	spawn,		SHCMD("st -e neomutt") },
 	{Mod1Mask,			XK_h,	spawn,		SHCMD("st -e htop") },
 	{Mod1Mask,			XK_k,	spawn,		SHCMD("keepassxc") },
-	{Mod1Mask,			XK_f,	spawn,		SHCMD("firefox-esr") },
+	{Mod1Mask,			XK_c,	spawn,		SHCMD("chromium") },
 	{Mod1Mask,			XK_t,	spawn,		SHCMD("telegram-desktop") },
 	{Mod1Mask,			XK_a,	spawn,		SHCMD("st -e alsamixer") },
 	{0,					XK_Print,  spawn,		SHCMD("st -e sleep 0.2 ; scrot -s -e 'mv $f ~/Images'") },

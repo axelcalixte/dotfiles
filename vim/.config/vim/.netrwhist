@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/axel/.config/vim/pack/minpac/start'
+let g:netrw_dirhist_2='/home/axel/UTT/NF04/Projet'
+let g:netrw_dirhist_3='/home/axel/UTT/NF04/Projet/.vscode'
+let g:netrw_dirhist_4='/home/axel/.config/vim/pack/minpac/start'
+let g:netrw_dirhist_5='/home/axel/dotfiles/st/.local/share/st'

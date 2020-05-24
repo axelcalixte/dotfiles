@@ -60,7 +60,7 @@ alias sr='systemctl reboot'
 alias ls='ls -A --color --group-directories-first'
 
 #Fish syntax highlighting
-source /home/axel/dotfiles/zsh/.local/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #ZSH auto-suggestions
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #fzf fuzzy file search

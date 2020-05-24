@@ -1,0 +1,6 @@
+[submodule "zsh/.local/share/zsh/pure"]
+	path = zsh/.local/share/zsh/pure
+	url = git@github.com:sindresorhus/pure.git
+[submodule "vim/.config/vim/pack/minpac/opt/minpac"]
+	path = vim/.config/vim/pack/minpac/opt/minpac
+	url = git@github.com:k-takata/minpac.git
