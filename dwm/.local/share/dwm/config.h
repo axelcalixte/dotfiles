@@ -6,7 +6,7 @@ static const unsigned int gappx     = 6;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=12" "FontAwesome:style=regular:pixelsize=12:antialias=true:autohint=true"};
+static const char *fonts[]          = { "monospace:size=10", "FontAwesome:style=regular:pixelsize=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#282828";
 static const char col_gray2[]       = "#444444";
@@ -35,7 +35,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "keepassxc",  NULL,       NULL,       0 << 8,       0,           -1 },
+	{ "keepassxc",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
@@ -113,7 +113,7 @@ static Key keys[] = {
 	{Mod1Mask,			XK_m,	spawn,		SHCMD("st -e neomutt") },
 	{Mod1Mask,			XK_h,	spawn,		SHCMD("st -e htop") },
 	{Mod1Mask,			XK_k,	spawn,		SHCMD("keepassxc") },
-	{Mod1Mask,			XK_c,	spawn,		SHCMD("firefox-esr") },
+	{Mod1Mask,			XK_f,	spawn,		SHCMD("firefox-esr") },
 	{Mod1Mask,			XK_t,	spawn,		SHCMD("telegram-desktop") },
 	{Mod1Mask,			XK_a,	spawn,		SHCMD("st -e alsamixer") },
 	{0,					XK_Print,  spawn,		SHCMD("st -e sleep 0.2 ; scrot -s -e 'mv $f ~/Images'") },

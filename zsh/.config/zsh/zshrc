@@ -52,7 +52,6 @@ stty stop undef		# Disable ctrl-s to freeze terminal
 # Aliases
 alias in='nvim /home/axel/Documents/notes/in.md'
 alias t='todo-txt'
-alias vi='nvim'
 alias stencyl="~/.local/share/Stencyl-4.0.2-linux/Stencyl"
 alias mkdir='mkdir -pv'
 alias sp='systemctl poweroff'
