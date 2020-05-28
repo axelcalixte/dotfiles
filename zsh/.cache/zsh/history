@@ -4370,3 +4370,1836 @@ vi config.fish
 fish
 source .config/zsh/zshrc
 ls
+ls
+ls -a
+source .zshrc
+ls
+git add .zshrc
+gs
+..
+cd ../
+cd -
+cd zsh
+vi .zshrc
+source .zshrc
+cd ../
+cd vim
+ls
+cd pack
+ls
+cd minpac
+cd opt
+ls
+cd minpac
+ls
+cd ~/dotfiles
+ls
+cd vim
+cd ../
+cd -
+mkdir vim
+cd ../
+mv .config/vim ~/dotfiles/vim
+cd dotfiles/vim
+ls
+cd vim
+ls
+ls
+la
+cd ../
+la
+ls -A
+ls
+cd ../
+ls
+cd vim
+ls
+ls -A
+mkdir .config
+mv vim .config
+ls
+cd .config
+ls
+cd vim
+ls
+cd pack
+ls
+cd minpac
+ls
+cd opt
+ls
+cd minpac
+ls
+cd ../
+rm -rf minpac
+ls
+cd ~/dotfiles
+git submodule add git@github.com:k-takata/minpac.git vim/.config/vim/pack/minpac/opt/minpac
+git submodule status
+cat .gitmodules
+git status
+git add -u
+git status
+git add vim
+git status
+ git rm --cached vim/.config/vim/pack/minpac/start/ale
+git rm --cached vim/.config/vim/pack/minpac/start/ale
+git rm --cached -f vim/.config/vim/pack/minpac/start/ale
+git status
+git rm --cached -f vim/.config/vim/pack/minpac/start/c.vim\
+vim/.config/vim/pack/minpac/start/fzf vim/.config/vim/pack/minpac/start/gruvbox vim/.config/vim/pack/minpac/start/lightline.vim\
+ vim/.config/vim/pack/minpac/start/vim-sensible 
+git rm --cached -f vim/.config/vim/pack/minpac/start/fzf
+git status
+lq
+ls
+cd ../
+cd ../
+ls
+cd opt
+ls
+git status
+cd ~/dotfiles
+git status
+git rm --cached -f vim/.config/vim/pack/minpac/start/fzf
+git rm --cached -f vim/.config/vim/pack/minpac/start/gruvbox\
+
+git rm --cached -f vim/.config/vim/pack/minpac/start/lightline.vim\
+
+git rm --cached -f vim/.config/vim/pack/minpac/start/vim-sensible\
+ \
+
+git status
+cd vim/.config/vim/pack/minpac
+ls
+cd start
+ls
+cd ../
+git add vim/.config/vim/pack/minpac/start/\
+
+git status
+cd ~/dotfiles
+git status
+git commit -m "added vim submodule minpac"
+git push
+stow vim
+cd ../
+vim
+cd .config/vim
+ls
+ls -lh
+ls
+cd pack
+sl
+cd ../
+cd ../
+rm -rf vim
+cd ~/
+cd ~/dotfiles/
+git status
+stow vim
+cd ~/.config/vim
+ls
+cd ../zsh
+ls
+ls -lh
+cd ../
+cd ../
+cd dotfiles
+ls
+cd ../
+cd .config/dunst
+ls
+ls -lha
+nnn
+vim
+cd ../../
+ls
+vi /etc/shells
+vi /etc/passwd
+sudo vi /etc/passwd
+ls
+rm -rf .bashrc .bash_history .profile .mozilla
+sudo apt autopurge firefox-esr 
+sr
+ls
+ls -a
+source .zshrc
+ls
+git add .zshrc
+gs
+..
+cd ../
+cd -
+cd zsh
+vi .zshrc
+source .zshrc
+cd ../
+cd vim
+ls
+cd pack
+ls
+cd minpac
+cd opt
+ls
+cd minpac
+ls
+cd ~/dotfiles
+ls
+cd vim
+cd ../
+cd -
+mkdir vim
+cd ../
+mv .config/vim ~/dotfiles/vim
+cd dotfiles/vim
+ls
+cd vim
+ls
+ls
+la
+cd ../
+la
+ls -A
+ls
+cd ../
+ls
+cd vim
+ls
+ls -A
+mkdir .config
+mv vim .config
+ls
+cd .config
+ls
+cd vim
+ls
+cd pack
+ls
+cd minpac
+ls
+cd opt
+ls
+cd minpac
+ls
+cd ../
+rm -rf minpac
+ls
+cd ~/dotfiles
+git submodule add git@github.com:k-takata/minpac.git vim/.config/vim/pack/minpac/opt/minpac
+git submodule status
+cat .gitmodules
+git status
+git add -u
+git status
+git add vim
+git status
+ git rm --cached vim/.config/vim/pack/minpac/start/ale
+git rm --cached vim/.config/vim/pack/minpac/start/ale
+git rm --cached -f vim/.config/vim/pack/minpac/start/ale
+git status
+git rm --cached -f vim/.config/vim/pack/minpac/start/c.vim\
+vim/.config/vim/pack/minpac/start/fzf vim/.config/vim/pack/minpac/start/gruvbox vim/.config/vim/pack/minpac/start/lightline.vim\
+ vim/.config/vim/pack/minpac/start/vim-sensible 
+git rm --cached -f vim/.config/vim/pack/minpac/start/fzf
+git status
+lq
+ls
+cd ../
+cd ../
+ls
+cd opt
+ls
+git status
+cd ~/dotfiles
+git status
+git rm --cached -f vim/.config/vim/pack/minpac/start/fzf
+git rm --cached -f vim/.config/vim/pack/minpac/start/gruvbox\
+
+git rm --cached -f vim/.config/vim/pack/minpac/start/lightline.vim\
+
+git rm --cached -f vim/.config/vim/pack/minpac/start/vim-sensible\
+ \
+
+git status
+cd vim/.config/vim/pack/minpac
+ls
+cd start
+ls
+cd ../
+git add vim/.config/vim/pack/minpac/start/\
+
+git status
+cd ~/dotfiles
+git status
+git commit -m "added vim submodule minpac"
+git push
+stow vim
+cd ../
+vim
+cd .config/vim
+ls
+ls -lh
+ls
+cd pack
+sl
+cd ../
+cd ../
+rm -rf vim
+cd ~/
+cd ~/dotfiles/
+git status
+stow vim
+cd ~/.config/vim
+ls
+cd ../zsh
+ls
+ls -lh
+cd ../
+cd ../
+cd dotfiles
+ls
+cd ../
+cd .config/dunst
+ls
+ls -lha
+nnn
+vim
+cd ../../
+ls
+vi /etc/shells
+vi /etc/passwd
+sudo vi /etc/passwd
+ls
+rm -rf .bashrc .bash_history .profile .mozilla
+sudo apt autopurge firefox-esr 
+sr
+cd /usr/lib/chromium
+ls
+cd WidevineCdm
+ls
+ls
+cd .gnupg
+ls
+cd ../
+rm -rf .gnupg
+la
+ls
+rm .bash_history
+ls | wc -l
+cd TÃ©lÃ©chargements
+rm google-chrome-stable_current_amd64.deb extension_2_0_13_0.crx extension_1_17_0_0.crx extension_2020_5_20_0.crx extension_1_6_3_0.crx extension_1_26_0_0.crx 
+ls
+rm CoronavirUTT.stencyl
+rm CoronavirUTT_2.stencyl
+ls
+cd ../
+ls
+sudo apt search gvfs
+sudo apt install gvfs
+sudo apt search gvfs
+ls
+pcmanfm
+ssh axel@remicalixte.ddns.net
+ssh-copy-id axel@remicalixte.ddns.net
+ssh axel@remicalixte.ddns.net
+ssh axel@remicalixte.ddns.net
+rsync -a --delete --quiet -e ssh ~ axel@remicalixte.ddns.net:/home/axel/Storage/debian
+rsync -a -v --delete --quiet -e ssh ~ axel@remicalixte.ddns.net:/home/axel/Storage/debian
+rsync -a --info=progress2 --delete --quiet -e ssh /home/axel axel@remicalixte.ddns.net:/home/axel/Storage/debian
+sudo rsync -a --info=progress2 --delete --quiet -e ssh /home/axel axel@remicalixte.ddns.net:/home/axel/Storage/debian
+vi
+cd .config
+ls
+cd vim
+ls
+vi vimrc
+vi .zshenv
+source .zshenv
+vim
+cd .config/vim
+ls
+rm .vimrc.swp
+rm .netrwhist
+vim vimrc
+cd ../
+cd zsh
+vi .zshrc
+source .zshrc
+vi
+vim .zshrc
+sr
+vim
+vi .zshenv
+source .zshenv
+vim
+vim .zshenv
+ls
+rm .viminfo .gnupg
+rm -rf .viminfo .gnupg
+cd .vscode-oss
+ls
+ls
+cd .config/todo
+vi config
+ls
+cd .todo-txt
+ls
+cd ../
+mkdir .config/todo
+cd .config/todo
+touch config
+cd Documents
+ls
+t ls
+ls
+sr
+apt-cache show aglfn
+sudo apt autopurge aglfn
+sudo apt autopurge arandr
+sudo apt autopurge xrandr
+sudo apt autopurge bash-completion
+apt-cache show bubblewrap | grep info
+apt-cache show bubblewrap
+sudo apt autopurge codium
+rm -rf .vscode-oss .config/VSCodium 
+apt-cache show discover
+sudo apt autopurge fish
+apt-cache show gsettings-desktop-schemas
+apt-cache show gsfonts
+sudo apt autopurge lynx mousepad
+sudo apt autopurge xserver-xorg-video-radeon
+neofetch
+t ls
+cd .config/todo
+vi config
+cd ../
+source .zshenv
+cd ../
+source .zshenv
+t ls
+rm -rf .config/todo
+ls
+t ls
+vi .zshenv
+apt list --installed | less
+ls
+ln -s ~/.local/share/Discord/Discord discord
+ls
+stencyl
+stencyl
+cd .local
+cd bin
+ls
+./discord
+cd ../share/Discord/
+ls
+chmod 4755 chrome-sandbox
+./Discord
+sudo chmod 4755 chrome-sandbox 
+chown root:root chrome-sandbox 
+sudo chown root:root chrome-sandbox 
+./Discord
+./chrome-sandbox
+./chrome-sandbox discord
+sudo ./chrome-sandbox discord
+cd .local/share/bin
+cd ~/.local/share/Discord
+./Discord
+sudo chown root chrome-sandbox
+chmod 4755 chrome-sandbox
+sudo chmod 4755 chrome-sandbox
+./Discord
+xprop
+xprop
+vi .local/share/dwm/config.h
+sudo make clean install
+cd .local/share/dwm
+sudo make clean install
+vi config.h
+sudo make clean install
+vi config.h
+sudo make clean install
+xarchiver CoronavirUTT_Axel_24
+ls
+cd CoronavirUTT_Axel_24
+ls
+mv 05.stencyl CoronavirUTT_Axel_24/05.stencyl
+mv 05.stencyl CoronavirUTT_Axel_24|05.stencyl
+mv 05.stencyl CoronavirUTT_Axel_24.05.stencyl
+ls
+cd Co
+ls
+cd ../
+rm -rf CoronavirUTT_Axel_24
+stencyl
+t ls
+t do 01
+t ls
+cd UTT/NF04/Projet
+./main_hope
+cat fichier_coefficients_resultat
+rm fichier
+cd UTT/NF04/Projet
+vi main_hope.c
+gcc -g main_hope.c -o main_hope
+./main_hope
+gcc -g main_hope.c -o main_hope
+vi main_hope.c
+ls
+cat fichier
+vi main_hope.c
+gcc -g main_hope.c -o main_hope
+./main_hope
+cat fichier
+vi main_hope.c
+gcc -g main_hope.c -o main_hope
+./main_hope
+./main_hope
+vi main_hope.c
+gcc -g main_hope.c -o main_hope
+vi main_hope.c
+./main_hope
+zathura UTT/NF04/Projet/Document2.pdf
+cat .xinitrc
+cd UTT/NF04/Projet
+./main_hope
+cat fichier_coefficients_resultat
+vi main_hope.c
+gcc -g main_hope.c -o main_hope
+vi main_hope.c
+./main_hope
+cat fichier_coefficients_resultat
+./main_hope
+vi main_hope.c
+gcc -g main_hope.c -o main_hope
+vi main_hope.c
+./main_hope
+./main_hope
+cat fichier_coefficients_resultat
+vi main_hope.c
+vi main_hope.c
+cd UTT/NF04/Projet
+cat fichier_coefficients_resultat
+cd UTT/NF04/Projet
+./main_hope
+2
+./main_hope
+cd UTT/NF04/Projet
+./main_hope
+cat fichier_coefficients_resultat
+./main_hope
+./main_hope
+gcc -g main_hope.c -o main_hope
+./main_hope
+cat fichier_coefficients_resultat
+cat fichier_coefficients_resultat
+vi main_hope.c
+vi main_hope.c
+./main_hope
+cat fichier_coefficients_resultat
+vi main_hope.c
+gcc -g main_hope.c -o main_hope
+./main_hope
+cat fichier_coefficients_resultat
+rm fichier_coefficients_colonne_resultat
+vi main_hope.c
+gcc -g main_hope.c -o main_hope
+./main_hope
+./main_hope
+cat fichier_coefficients_resultat
+./main_hope
+cat fichier_coefficients_resultat
+./main_hope
+cat fichier_coefficients_resultat
+./main_hope
+cat fichier_coefficients_resultat
+vi main_hope.c
+gcc -g main_hope.c -o main_hope
+./main_hope
+vi main_hope.c
+ls | wc -l
+ls
+rm CoronavirUTT_Axel_24Mai.stencyl mm.cfg .gnupg
+rm -rf CoronavirUTT_Axel_24Mai.stencyl mm.cfg .gnupg
+ms
+ls
+ls | wc -l
+t ls
+cd UTT/NF04/Projet
+./main_hope
+./main_hope
+cat fichier_coefficients_resultat
+vi truc.c
+ls
+vi truc
+ls
+sudo apt install pluma
+sudo apt install mousepad
+mousepad
+mv truc truc.c
+gcc truc.c
+./a.out
+./main_hope
+cat fichier_coefficients_resultat
+./main_hope
+./main_hope
+cat fichier_coefficients_resultat
+./main_hope
+./main_hope
+cat fichier_coefficients_resultat
+./main_hope
+./main_hope
+./main_hope
+cat fichier_coefficients_resultat
+./main_hope
+cat fichier_coefficients_resultat
+./main_hope
+./main_hope
+./main_ho
+./main_hope
+./main_hope
+./main_hope
+./main_hope
+./main_hope
+./main_hope
+./main_hope
+vi UTT/NF04/Projet/main_hope.c
+vi UTT/NF04/Projet/main_hope.c
+cd UTT/NF04/Projet
+./main_hope
+cat fichier_coefficients_resultat
+vi main_hope.c
+./main_hope
+sudo apt update
+cd .local/share
+ls 
+ls | wc -l
+ssh axel@remicalixte.ddns.net
+rsync -a --info=progress2 --delete --quiet -e ssh /home/axel/Images axel@remicalixte.ddns.net:/home/axel/Storage/debian/Images
+rsync -a --info=progress2 --delete --quiet -e ssh /home/axel/Images axel@remicalixte.ddns.net:/home/axel/Storage/debian/Images
+ssh axel@remicalixte.ddns.net
+rsync -a -v --delete --quiet -e ssh /home/axel/.local/ axel@remicalixte.ddns.net:/home/axel/Storage/debian/
+ssh axel@remicalixte.ddns.net
+rsync -a -v --delete --quiet -e ssh /home/axel/.local/ axel@remicalixte.ddns.net:/home/axel/Storage/debian/.local/
+ssh axel@remicalixte.ddns.net
+vi UTT/NF04/Projet/main_hope.c
+sudo apt install geany && sudo apt autopurge mousepad
+sudo apt install sxhkd lemonbar
+man berry
+lemonbar
+echo $SHELL | lemonbar
+echo $SHELL | lemonbar
+echo $SHELL | lemonbar && sleep 5
+echo $SHELL | lemonbar
+echo $SHELL | lemonbar
+echo $SHELL | lemonbar
+echo $SHELL
+date | lemonbar
+date | lemonbar
+date | lemonbar -p
+date | lemonbar -p -f "Hack"
+date | lemonbar -p -f "DejaVu Sans"
+date | lemonbar -p -f "DejaVu Serif"
+date | lemonbar -p -f "Font Awesome"
+sudo apt autopurge lemonbar
+cd .local/share
+git clone https://github.com/drscream/lemonbar-xft.git
+cd lemonbar-xft
+ls
+rm -rf .git
+sudo make clean install
+cat Makefile
+cd .local/share
+git clone https://github.com/JLErvin/berry
+cd berry
+rm -rf .git
+sudo make clean install
+vi Makefile
+cd ~/.config
+cd b
+ls
+cd -
+ls
+cd examples
+ls
+vi autostart
+ls
+vi compile_commands.json
+vi xephyr.sh
+cd /etc/wpa_supplicant
+ls
+cat wpa_supplicant.conf
+sudo vi wpa_supplicant.conf
+vi wpa_supplicant-wlp3s0.conf
+vim
+suod systemctl start pulseaudio
+sudo systemctl start pulseaudio
+sudo apt install pulseaudio
+pulseaudio
+sudo systemctl stop pulseaudio
+cd .config
+cd pulse
+ls
+sudo rm *
+ls
+systemctl reboot
+pulseaudio
+pavucontrol
+vim
+cd .ssh
+ls
+cat id_rsa
+ssh-agent
+vim
+mw ls
+pass init axelcalixte@disroot.org
+ls
+rm a.out truc.c
+cd .local/share
+ls
+cd ../../
+pass
+gpg --full-gen-key
+gpg-agent
+gpg --full-gen-key
+ls
+rm -rf .gnupg
+vi .zshenv
+ssh axel@remicalixte.ddns.net
+cd /usr/local/bin
+ls
+ls -lh
+stest
+ls -lh
+openfile
+sudo apt update
+ip
+ip list
+ip ls
+ip a
+man scrot
+man xclip
+scrot | xclip
+scrot > xclip
+apt search myki
+cd .local/share
+ls
+./MYKI-latest.AppImage
+rm MYKI-latest.AppImage
+sudo apt install snap
+man snap
+snap
+sudo apt autopurge snap
+sudo apt install snapd
+sudo snap install myki
+ls
+man snap
+sudo snap install MYKI-latest-amd64.snap
+snap find myki
+rm MYKI-latest.AppImage
+rm MYKI-latest-amd64.snap
+ls
+discord
+cd .local/share
+dpkg -i MYKI-latest-amd64.deb
+sudo dpkg -i MYKI-latest-amd64.deb
+sudo apt-get -f install
+myki
+sudo ufw disable
+myki
+sudo dpkg -P myki
+sudo apt update
+sudo apt autopurge
+vm
+vim
+sudo apt install xreader
+sudo apt install reader
+apt search x reader
+sudo apt install xpdf
+xpdf
+sudo apt autopurge xpdf
+sudo apt install atril
+atril
+sudo apt autopurge zathura
+sudo apt install sxhkd
+mkdir .config/berry
+cp .local/share/berry/examples/sxhkdrc ~/.config/berry
+cp .local/share/berry/examples/autostart ~/.config/berry
+cd .config/berry
+ls
+berry
+less sxhkdrc
+cd ~/.local/share/berry
+vi config.h
+vi ~/.config/berry/sxhkdrc
+vi ~/.config/berry/sxhkdrc
+vi ~/.config/berry/sxhkdrc
+sudo apt update
+cd .local/share/dmenu-4.9
+cd patches
+vi dmenu-instant.diff
+cd ../
+patch < patches/dmenu-instant.diff
+sudo make clean install
+sudo ap
+sudo apt update
+startx
+startx
+berry
+vi .xinitrc
+startx
+sp
+vi .xinitrc
+startx
+alsamixer
+pulseaudio
+vi .config/pulse
+cd .config/pulse
+rm *
+sr
+vi .config/pulse
+stencyl
+gpg
+ls
+rm *.png *.cfg xclip
+rm -rf .thumbnails
+cd .myki
+ls
+cat config
+cd ../
+rm -rf .myki .gnupg
+cd .local/share/
+ls
+rm *.dev *.tar.gz *.tar
+ls
+rm MYKI-latest-amd64.deb
+rm Stencyl-4.0.2-linux.tar.gz 
+ls
+rm discord-0.0.10.tar
+mkdir gnupg
+cd ~
+gpg2 --homedir "/home/axel/.local/share/gnupg"
+gpg --full-gen-key
+gpg-connect-agent
+vi .zshenv
+source .zshenv
+gpg2 --homedir "/home/axel/.local/share/gnupg"
+gpg-connect-agent
+gpg --full-gen-key
+pass init axelcalixte@disroot.org
+pass
+vi .zshenv
+cd .config
+ls
+vi user-dirs.dirs
+xdg-user-dirs-update
+pass init axelcalixte@disroot.org
+cd ../
+vi .zshenv
+source .zshenv
+pass init axelcalixte@disroot.org
+gpg --full-gen-key
+mw add
+pass init axelcalixte@disroot.org
+vi .zshenv
+vi .zshenv
+echo $HOME
+source .zshenv
+gpg --full-gen-key
+A
+pass init axelcalixte@disroot.org
+vi .zshenv
+nnn
+pcmanfm
+nnn
+unzip TD8\ -\ Guide\ utilisateur.zip
+ls
+chromium TD8Guideutilisateur.html
+ls
+cd Documents
+ls
+atril sortie.pdf
+gimp
+vim
+sudo apt install python3-pip
+pip3 install --user smdv
+vim td8.md
+chromium td8.md
+ls
+mkdir td8
+mv td8.md barre.jpg td8/
+cd td8
+ls
+vim .
+vim .
+sudo apt install node
+sudo apt install nodejs
+vi td8/td8.md
+sudo apt autopurge nodejs
+pip3 remove --user smdv
+pip3 uninstall --user smdv
+pip3 uninstall smdv
+sudo apt autopurge python3-pip
+vi .config/vim/vimrc
+vi td8/td8.md
+cd td8
+pandoc td8.md -f gfm -s -o test.pdf
+cd td8
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+cd ..
+ls
+cd -
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+ls
+mv png.jpg pnj.jpg
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+gimp robert.jpg
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+pandoc td8.md -f gfm -s -o test.pdf 
+ls
+nnn
+nnn
+chromium TD8\ -\ Guide\ utilisateurqze.pdf
+sudo apt install pandoc
+cd td8
+pandoc td8.md -s -o test.pdf
+sudo apt install pdflatex
+sudo apt install texlive-latex-recommended
+pandoc td8.md -s -o test.pdf
+sudo apt install texlive-latex-extra
+pandoc td8.md -s -o test.pdf
+sudo apt autopurge texlive-latex-extra texlive-latex-recommended
+sudo apt autopurge pandoc
+sudo apt autopurge   fonts-lmodern libpotrace0 libptexenc1 libsynctex2 libteckit0\
+  libtexlua52 libtexlua53 libtexluajit2 libzzip-0-13 t1utils\
+  texlive-base texlive-binaries texlive-latex-base\
+  texlive-latex-recommended\
+
+sudo apt autopurge libtexlua52
+sudo apt autopurge preview-latex-style texlive-latex-extra texlive-pictures
+sudo apt install texlive-latex-extra --Install-recommends
+pandoc td8.md -s -o test.pdf
+chromium test.pdf
+vi td8.md
+pandoc td8.md -s -o test.pdf
+vi td8.md
+ls
+ls -A
+cd ~/.config/vim
+ls
+~/td8
+vim td8.md
+cd ../
+ls
+rm td8.md.swp
+cd -
+cd ../
+-
+cd -
+vi td8.md
+pandoc td8.md -s -o test.pdf
+vi td8.md
+pandoc td8.md -s -o test.pdf
+pandoc td8.md -f -o test.pdf
+man pandoc
+pandoc td8.md -f gfm -o test.pdf
+pandoc td8.md -f gfm -s -o test.pdf
+pandoc td8.md -f markdown -s -o test.pdf
+man pandoc
+pandoc td8.md -f gfm -s -o test.pdf
+libreoffice test.pdf
+pandoc td8.md -f latex -s -o test.tex
+vi test.tex
+pandoc test.tex -f gfm -s -o td8.pdf
+vi test.tex
+rm *.tex
+ls
+vi td8.md
+pandoc td8.md -f gfm -s -o test.pdf
+ls
+chromium test.pdf
+chromium td8.pdf
+rm td8.pdf
+vi td8.md
+vi td8.md
+vi td8.md
+mv Robert_1.png Robert_2.png
+cd UTT/GL01
+ls
+pcmanfm
+sudo apt autopurge pcmanfm
+sudo updatedb
+locate AlcoolUTT_deplacement.png
+notify-send qzef
+stencyl
+stencyl
+stencyl
+./main_hope
+cat fichier_coefficients_resultat
+./main_hope
+cat fichier_coefficients_resultat
+vim UTT/NF04/Projet/main_hope.C
+cd UTT/NF04/Projet
+ls
+vi main_hope.c
+stencyl
+cd .config
+mkdir zathura
+cd zathura
+vi zathurarc
+sudo apt autopurge atril && sudo apt install zathura
+vi
+zathura
+gpg
+cd .local/share/gnupg
+ls
+cd ../../
+cd ~
+cd gnupg
+cd .gnupg
+mw ls
+pass init axelcalixte@disroot.org
+ls
+rm -r ~
+ls
+cd ~
+ls
+cd ~
+ls
+cd .local
+cd ../
+vi .zshenv
+cd .config
+ls
+cd ../
+cd .local/share
+ls
+cd ../
+cd ../
+cd dotfiles
+ls
+stow *
+cd ../.config
+ls
+cd vim
+ls
+vi vimrc
+cd ../
+cd ../
+ls
+cd .local
+cd share
+rm -rf pass
+cd ~
+ls
+rm mm.cfg
+rm .swp
+sudo nnn
+ls
+source .zshenv
+pass init axelcalixte@disroot.org
+vi .zshenv
+sudo nnn
+ls
+vi .zshenv
+pass init axelcalixte@disroot.org
+pass
+mw 
+mw add
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+mkdir .config/isync
+mv .mbsyncrc .config/isync/mbsyncrc
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+pass mutt-wizard-disroot
+mw purge
+gpg --list-keys 
+gpg --list-secret-keys --keyid-format LONG
+rm -rf ~/.local/share/gnupg
+gpg --full-gen-key
+gpg-connect-agent
+gpg-connect-agent /bye
+gpgconf --kill gpg-agent
+gpg-connect-agent /bye
+gpg2
+gpg2 --homedir "/home/axel/.local/share/gnupg"
+gpg --full-gen-key
+sr
+gpg --full-gen-key
+gpg-agent --deamon /bin/sh
+gpg-agent --daemon /bin/sh
+gpg --full-gen-key
+gpg-connect-agent
+gpg-agent
+gpg-connect-agent
+man gpg-agent
+eval $(gpg-agent --daemon)
+gpg-connect-agent
+gpg --full-gen-key
+gpg --full-gen-key
+gpg2
+ls
+rm -rf .gnupg
+rm -rf ~/.local/share/gnupg
+gpgconf --launch gpg-agent
+man gpg-agent
+man gpg-agent
+vi .zshenv
+sr
+vi .zshenv
+sr
+pass mutt-wizard-disroot
+pass mutt-wizard-disroot
+pass mutt-wizard-disroot | grep \
+pass mutt-wizard-disroot | grep 7
+pass mutt-wizard-disroot | grep -l 7
+man grep
+pass mutt-wizard-disroot | grep -w 7
+sudo apt install gpg
+sudo apt install pinentry-gtk2
+ls
+ls -A
+cd .gnupg
+ls
+cd private-keys-v1.d
+ls
+cd ../../
+rm -rf .gnupg
+gpg --full-gen-key
+cd .local/share
+mkdir gnupg
+gpg --full-gen-key
+ cd pass
+ls
+cd ../
+rm -rf .password-store
+ls
+rm -rf .pass
+cd ~
+vi .zshenv
+echo $XDG_DATA_HOME/pass
+gpg --list-secret-keys --keyid-format LONG
+man pass
+pass init 521F0D68519AB7E3
+cd .local/share/pass
+ls
+gpg mutt-wizard-disroot.gpg
+cd ../
+rm -rf pass
+pass init axelcalixte@disroot.org
+mw
+mw add
+mv .mbsyncrc .config/isync/mbsyncrc
+mkdir .config/isync
+rm -rf .config/isync
+ls
+rm -rf .config
+cd ~
+mkdir .config/isync
+mv .mbsyncrc .config/isync/mbsyncrc
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+ls
+cd .config/msmtp
+ls
+vi config
+vi ~/.local/share/gnupg/gpg-agent.conf
+sudo updatedb
+locate pinentry
+pass mutt-wizard-disroot
+vi .zshenv
+ls
+rm Sync
+rm .msmtprc
+mw purge
+rm -rf .local/share/gnupg .local/share/pass
+gpg --full-gen-key
+source .zshenv
+touch .gnupg
+gpg --full-gen-key
+vi .zshenv
+rm -rf .local/share/gnupg .local/share/pass
+rm -rf .gnupg
+sr
+gpg --full-gen-key
+zfqrza'(byz-'ueÃ¨idube(ie(Ã¨iÃ¨         0 = la clef n'expire pas\
+      <n>  = la clef expire dans nÂƒ€jours\
+      <n>w = la clef expire dans nÂƒ€semaines\
+      <n>m = la clef expire dans nÂƒ€mois\
+      <n>y = la clef expire dans nÂƒ€ans\
+iue         0 = la clef n'expire pas\
+      <n>  = la clef expire dans nÂƒ€jours
+      <n>w = la clef expire dans nÂƒ€semaines
+      <n>m = la clef expire dans nÂƒ€mois
+      <n>y = la clef expire dans nÂƒ€ans
+dd
+ls
+pass init axelcalixte@disroot.org
+pass mutt-wizard-disroot
+mw add
+mkdir .config/isync
+mv .mbsyncrc .config/isync/mbsyncrc
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+echo "Some text" | msmtp axelcalixte@disroot.org -a disroot
+sudo apt install gnome-boxes --install-recommends
+vi .config
+cd .config
+vi xdg-users.dirs
+xdg-user-dirs-update
+cd ../
+ls
+mv Documents docs/
+ls
+vi .config/xdg-users.dirs
+xdg-user-dirs-update
+ls
+vi .config/xdg-users.dirs
+xdg-user-dirs-update
+ls
+vi .config/zsh/.zshrc 
+source .config/zsh/.zshrc
+ls
+ls -l
+ls -h
+prompt pure
+cd .local/share
+ls
+cd zsh
+ls
+cd pure
+ls
+cd ~/.config/zsh/.zshrc
+ls
+cd ~
+ls
+cd .config
+ls
+cd zsh
+ls
+rm *
+cd ../
+cd dots
+pwd
+cd ~/dots
+stow zsh
+zsh
+vi .config/zsh/.zshrc 
+zsh
+pcmanfm
+sudo apt install nemo
+sudo apt install pcmanfm
+cd dl
+pcmanfm .
+killall syncthing
+sudo apt install yarn
+apt search yarn
+sudo apt autopurge nodejs
+sudo apt install yarnpkg
+sudo apt install nodejs
+ls
+cd .macromedia
+ls
+cd ../
+rm -rf .thumbnails 
+t ls
+t do 01
+sudo apt autopurge todotxt-cli
+rm -rf .todo-txt
+cd docs
+ls
+rm -rf todo-txt
+cd ../
+cd docs/games
+ls
+cd ../../
+vi .config/vim/vimrc
+vi .config/vim/vimrc
+vi .config/vim/vimrc
+sudo apt install yarn
+vi .config/vim/vimrc
+sudo apt autopurge nodejs yarn
+sudo apt autopurge python-cliapp mython-markdown python-ttystatus
+sudo apt autopurge python-cliapp python-ttystatus
+sudo apt install nodejs
+sudo apt install npm
+sudo apt autopurge nodejs
+sudo ufw disable
+sudo apt install yarn
+sudo apt install nodejs
+vim
+vim .config/vim/vimrc
+cd .config/vim
+ls
+mkdir conf
+vim vimrc
+cd conf
+ls
+touch coc.vim
+vim coc.vim
+cd ../
+ls
+vim coc-settings.json
+vim coc-settings.json
+vi coc-settings.json
+cd ~
+vim UTT/NF04/Projet/main_hope.C
+vim UTT/NF04/Projet/main_hope.c
+vim UTT/NF04/Projet/
+vim
+vim utt/NF04/Projet
+vim .config/vim/vimrc
+sudo apt autopurge clang
+vim
+vim .config/vim/vimrc
+rm .config/vim/conf/coc.vim
+geany
+vim
+vim
+vim
+vi utt/NF04/Projet/main_hope.c
+sudo apt install cland
+sudo apt install clang
+sudo apt install clangd
+sudo apt install clang
+sudo apt autopurge snapd
+vim utt/NF04/Projet/main_hope.c
+vim utt/NF04/Projet/main_hope.c
+vim utt/NF04/Projet/main_hope.c
+vim .config/vim/coc-settings.json
+vim utt/NF04/Projet/main_hope.c
+vim .config/vim/coc-settings.json
+vim utt/NF04/Projet/main_hope.c
+vim
+vim utt/NF04/Projet/main_hope.c
+cd utt/NF04/Projet
+./main_hope
+cat fichier_resultats
+mw add
+mw add
+mw purge
+mw add
+mw ls
+mw add
+gnupg
+gpg
+vi .zshenv
+source .zshenv
+cd .local/share/
+git clone git@github.com:LukeSmithxyz/mutt-wizard.git
+cd mutt-wizard
+sudo make uninstall
+sudo make clean install
+sudo make install
+mw
+cd ../
+rm -rf gnupg pass
+cd ~
+ls
+mw
+gpg --full-gen-key
+gpg --full-gen-key
+pass init axelcalixte@disroot.org
+pass
+mw add
+mw add
+mw add
+mw add
+cd .local/share
+cd mutt-wizard
+sudo make install
+sudo make uninstall
+cd /usr/local/bin
+ls
+cd -
+sudo make install
+mw add
+sudo apt install xterm
+xterm
+sudo apt autopurge xterm sudo apt install -y qterminal
+sudo apt autopurge xterm sudo && apt install -y qterminal
+sudo apt autopurge xterm && apt install -y qterminal
+sudo apt update
+sudo apt autopurge xterm
+qterminal
+mw add
+mbsync disroot
+neomutt
+ls
+vi .zshenv
+vi .zshenv
+mw add
+ls
+vi .zhshenv
+vi .zshenv
+rm -rf .gnupg 
+ls
+rm .thumbnails
+rm -r .thumbnails
+sudo updatedb
+pass
+gpg --full-gen-key
+pass init axelcalixte@disroot.org
+mw ls
+mw purge
+mw add
+mbsync disroot
+mw add
+mw add
+mbsync utt
+neomutt
+neofetcg
+neofetch
+sudo updatedb
+locate darkpastel
+locate DarkPastels
+vi /usr/share/qtermwidget5/color-schemes/DarkPastels.colorscheme
+vi .config/vim/vimrc
+vi
+vi .config/vim/vimrc
+vi .config/vim/vimrc
+vi /usr/share/qtermwidget5/color-schemes/DarkPastels.colorscheme
+gimp
+vi .local/share/st/config.h
+cd .local/share/st
+sudo make clean install
+vi config.h
+sudo make clean install
+st
+vi config.h
+sudo make clean install
+vi /usr/share/qtermwidget5/color-schemes/DarkPastels.colorscheme
+neofetch
+ls
+vi /usr/share/qtermwidget5/color-schemes/DarkPastels.colorscheme
+vi /usr/share/qtermwidget5/color-schemes/DarkPastels.colorscheme
+vi UTT/NF04/Projet/main_hope.c
+vi utt/NF04/Projet/main_hope.c
+neofetch
+neomutt
+vi .xinitrc
+sr
+cd .local/share/st
+ls
+sudo make uninstall
+sudo make clean install
+sudo apt install qterminal
+locate DarkPastels
+neofetch
+neofetch
+qterminal
+neofetch
+vi .local/share/dwm/config.h
+vi .local/share/dwm/config.h
+cd .local/share/dwm
+sudo make clean install
+cd ../slock-1.4
+vi config.h
+sudo make clean install
+sr
+vi .zshenv
+ls
+mv .password-store/ .local/share/pass
+pass
+pass
+ls
+vi .msmtprc
+mw purge
+pass uninit
+cd .local/share/pass
+ls
+cat .gpg-id
+cd .password-store
+ls
+cd ../
+rm -rf *
+ls
+rm -rf .password-store
+rm -rf .gpg-id
+pass init axelcalixte@disroot.org
+ls
+pass
+mw add
+mbsync disroot
+neomutt
+neomutt
+locate mailsync
+vi /usr/local/bin/mailsync
+ls
+sudo apt autopurge neomutt
+sudo apt install neomutt
+neomutt
+mw purge
+cd .local/share/mail
+ls
+rm -rf disroot utt
+cd ../
+cd pass
+ls
+mw purge 
+mw add
+mbsync disroot
+neomutt
+mw add
+mbsync utt
+neomutt
+neomutt
+locate neomutt
+sudo apt autopurge neomutt isync msmtp pass lynx notmuch urlview
+rm -rf .local/share/mail .local/share/pass
+cd .local/share
+cd mutt-wizard
+sudo make uninstall
+cd ../
+rm -rf mutt-wizard
+cd .cache/ls
+cd .cache/
+ls
+cd mutt-wizard
+ls
+cd ../
+rm -rf mutt-wizard
+sudo updatedb
+locate mutt-wizard
+locate pass
+cd /tmp
+ls
+rm neomutt-axeldebian-1000-5543-3528140008644903228
+sudo apt install neomutt isync msmtp pass lynx notmuch urlview
+cd .calcurse
+ls
+cd ../
+rm -rf .calcurse
+cd .config
+mkdir calcurse
+cd ../
+mkdir .local/share/calcurse
+ls
+calcurse
+ls
+rm -rf .calcurse
+geany
+cd .local/share/dwm
+sudo make clean install
+cd ../st
+sudo make clean install
+geany config.h
+geany config.h
+sudo make clean install
+geany config.h
+sudo make clean install
+cd ../dwm
+sudo make clean install
+cd ../slock-1.4
+sudo make clean install
+cd .local/share
+git clone git@github.com:LukeSmithxyz/mutt-wizard.git
+cd mutt-wizard
+sudo make install
+mw 
+pass init axelcalixte@disroot.org
+mw add
+mw purge
+mw add
+mw add 
+mbsync -a
+sudo apt install calcurse
+calcurse
+ls
+neomutt
+cd /tmp
+ls
+apt search scim
+apt search sc-im
+ls
+rm -rf .mozilla .urlview .viminfo
+vi .config/vim/vimrc
+apt list --installed | grep zathura
+cd .local/share
+ls
+mkdir calcurse
+calcurse -D $HOME/.local/share/calcurse
+cd ~
+ls
+calcurse
+ls
+rm .calcurse
+rm -r .calcurse
+vi .config/zsh/.zshrc 
+man calcurse
+echo qzefqzejfb | zathura
+echo 'qzefqzejfb' | zathura
+echo 'qzefqzejfb' | zathura -
+echo 'qzefqzejfb' | zathura ~
+zathura
+zathura UTT/NF04/Projet/Document2.pdf
+zathura utt/NF04/Projet/Document2.pdf
+zathura utt/MATH03/Vrana-Maelys-TD2bis.pdf
+sr
+pass mutt-wizard-disroot
+pass
+pass mutt-wizard-utt
+mbsync -a
+cd .local/share
+cd pass
+ls
+rm *
+ls
+rm .gpg-id
+cd ../
+mw
+mw purge
+pass init axelcalixte@disroot.org
+mw purge
+mw add
+mbsync disroot
+neomutt
+cd /tmp
+ls
+ls
+sudo rm neomutt-axeldebian-1000-2934-*
+ls
+sr
+vi .config/mutt/accounts/1-disroot.muttrc
+vi .config/mutt/accounts/1-disroot.muttrc 
+vi .config/msmtp/config
+mv ~/.local/share/pass ~/.password-store/
+ls
+cd .password-store
+ls
+cd ../
+cd .local/share
+ms
+ls
+neomutt
+vi .config/mutt/muttrc
+man pass
+cd /tmp
+ls
+neomutt
+sr
+vi .zshenv
+source .zshenv
+mv ~/.gnupg ~/.local/share/gnupg
+cd .local/share/gnupg
+ls
+cd ~
+neomutt
+cd /tmp
+ls
+sr
+neomutt
+cd /tmp
+ls
+cd -
+locate neomutt
+sudo updatedb
+locate neomutt
+mw add
+mbsync utt
+neomutt
+neomutt
+mw purge
+rm -rf .local/share/mail
+pass
+rm -rf .password-store
+pass init axelcalixte@disroot.org
+mw add
+mw add
+mv .mbsyncrc .config/isync/mbsyncrc
+cd .config/isync
+ls
+cd ~
+mbsync -a -c "$XDG_CONFIG_HOME/isync/mbsyncrc"
+neomutt
+mv .config/isync/mbsyncrc ~/.mbsyncrc
+mbsync -a
+neomutt
+cd /tmp
+ls
+cat .font-unix
+cd .font-unix
+ls
+cd ../
+cat .X0-lock
+sr
+neomutt
+sudo apt remove neomutt
+sudo apt install neomutt
+neomutt
+sp
+sudo apt autopurge nnn
+lynx https://github.com/jarun/nnn/releases/tag/v3.2
+lynx https://github.com/jarun/nnn/releases/
+sudo wpa_cli -i wlp3s0
+vi /etc/wpa_supplicant/wpa_supplicant.conf
+sc /etc/wpa_supplicant
+cd /etc/wpa_supplicant
+ls
+sudo wpa_passphrase truc Aron_304 >> wpa_supplicant-wlp3s0.conf
+sudo su
+nnn
+sudo apt install trash-cli
+sudo apt autopurge gnome-boxes
+ls
+ls -A
+cd ../docs
+ls
+sudo dpkg -i nnn_3.2-1_debian10.amd64.deb
+sudo apt install libncursesw5 
+apt --fix-broken install
+sudo apt --fix-broken install
+nnn
+pass mutt-wizard-utt
+nnn
+cd ../
+vi .zshenv
+apt list --installed | grep tar
+apt list --installed | grep zip
+sudo apt autopurge gzip
+man rclone
+man sshf
+apt info sshfs
+apt info rclone
+apt info advcpmv
+echo $VISUAL
+apt list --installed | grep atool
+apt list --installed | grep bsdtar
+nnn
+vim
+nnn
+nnn
+nnn
+source .zshenv
+nnn
+man nnn
+vi .zshenv
+source .zshenv
+nnn
+nnn
+mv gnupg .gnupg
+vi .zshenv
+source .zshenv
+vi .zshenv
+nnn
+nnn
+ls
+rm -rf music
+cd .vim
+ls
+cd ../
+rm -rf .vim
+rm -rf .viminfo
+nnn
+vi .local/share/dwm/config.h
+vi .zshenv
+source .zshenv
+nnn
+sudo apt autopurge geany
+vi 
+vi .zshenv
+source .zshenv
+echo $VISUAL
+sudo apt install geany
+nnn
+nnn -e 
+man nnn
+nnn -E
+vi .zshenv
+source .zshenv
+nnn
+nnn -E
+vi .zshenv
+source .zshenv
+nnn
+vi .zshenv
+vi .config/zsh/.zshrc 
+sudo make clean install
+vi .zshenv
+mv .gnupg/ .local/share/gnupg/
+nnn
+neomutt
+vi .zshenv
+source .zshenv
+neomutt
+vi .zshenv
+source .zshenvv
+source .zshenv
+neomutt
+sr
+neomutt
+vi .zshenv
+mv .password-store/ .local/share/pass
+nnn ~/.local/share
+mv .local/share/gnupg/
+mv .local/share/gnupg/ ~/.gnupg
+ls
+ls .gnupg
+nnn
+pass
+vi .zshenv
+ls
+vi .zshenv
+source .zshenv
+pass
+neomutt
+vi .zshenv
+alsamixer
+cd .config/pulse
+ls
+rm -rf *
+ls
+cd ../
+alsamixer
+cd .gnupg
+ls
+vi trustdb.gpg
+gpg trustdb.gpg
+man gpg
+gpg -d trustdb.gpg
+nnn
+nnn
+vi .zshenv
+mv .gnupg/ .local/share/gnupg/
+pass
+ls
+mv .local/share/gnupg/ ~/.gnupg
+pass
+vi .zshenv
+source .zshenv
+pass
+source .zshenv
+vi .zshenv
+mv .gnupg/ .local/share/gnupg/
+ls
+nnn
+source .zshenv
+pass
+pass mutt-wizard-utt
+neomutt
+ls
+cd .abook
+ls
+cd ../
+rm -rf .abook
+neomutt
+st -e neomutt
+vi .local/share/dwm/config.h
+dmenu st -e neomutt
+pcmanfm
+mv dotfiles dots
+cd dots
+git status

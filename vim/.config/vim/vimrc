@@ -1,7 +1,7 @@
 " Environment
 set directory=$XDG_CACHE_HOME/vim,~/,/tmp
 set backupdir=$XDG_CACHE_HOME/vim,~/,/tmp
-set viminfo+=n$XDG_CACHE_HOME/vim/viminfo
+set viminfo+='1000,n$XDG_DATA_HOME/vim/viminfo
 set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME
 let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
 
@@ -15,44 +15,42 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 
 " Add other plugins here.
 call minpac#add('tpope/vim-sensible')
-call minpac#add('vim-scripts/c.vim')
-call minpac#add('dense-analysis/ale')
+" call minpac#add('vim-scripts/c.vim')
+" call minpac#add('dense-analysis/ale')
 call minpac#add('junegunn/fzf')
-call minpac#add('gruvbox-community/gruvbox')
-call minpac#add('morhetz/gruvbox')
+call minpac#add('itchyny/lightline.vim')
+call minpac#add('vimwiki/vimwiki')
+call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
 
-" Load the plugins right now. (optional)
-"packloadall
-
-    "---Coloscheme
 	set background=dark
-    colorscheme gruvbox
 
-    "--fzf
-        nnoremap <c-p> :FZF<CR>
+"--fzf
+	"fold"
+	nnoremap <c-p> :FZF<CR>
 
 "---ALE show errors in files
-    "Mappings in the style of unimpaired-next
-        nmap <silent> [W <Plug>(ale_first)
-        nmap <silent> [w <Plug>(ale_previous)
-        nmap <silent> ]w <Plug>(ale_next)
-        nmap <silent> ]W <Plug>(ale_last)
+	"Mappings in the style of unimpaired-next
+	nmap <silent> [W <Plug>(ale_first)
+	nmap <silent> [w <Plug>(ale_previous)
+	nmap <silent> ]w <Plug>(ale_next)
+	nmap <silent> ]W <Plug>(ale_last)
 
 "--- Netrw
-        let g:netrw_liststyle= 3
-        let g:netrw_banner=0
-        let g:netrw_winsize=25
-        set hidden "don't know why i need it for for <A-e> netrw
-        nnoremap <A-e> :Lexplore<CR>
+	let g:netrw_liststyle= 3
+	let g:netrw_banner=0
+	let g:netrw_winsize=25
+	set hidden "don't know why i need it for for <A-e> netrw
+	nnoremap <A-e> :Lexplore<CR>
 
 "--- My own
-        set shiftwidth=4 softtabstop=4 tabstop=4 smarttab
-        set number
-		set noshowmode "to notshow modes with lightline
-        set smartindent
-        set foldmethod=indent
-        set path+=**
-        set colorcolumn=80  
+	set shiftwidth=4 softtabstop=4 tabstop=4 smarttab
+	set number relativenumber
+	set noshowmode "to notshow modes with lightline
+	set smartindent
+	set foldmethod=indent
+	set path+=**
+	set colorcolumn=80  
+	set showcmd
 
     " To work with the debugger
         packadd termdebug 
@@ -67,17 +65,19 @@ call minpac#add('morhetz/gruvbox')
         vnoremap K :m '<-2<CR>gv=gv
 
 "---From ModernVim Book
-    " you can undo even after saving and resuming the file
-        set undofile
-        if !has('nvim')
-            set undodir=~/.local/share/nvim/undo
-        endif
-    " press escape to go back in normal mode inside terminal buffers
-        if has('nvim')
-            tnoremap <Esc> <C-\><C-n>
-            tnoremap <C-v><Esc> <Esc>
-        endif
+	" you can undo even after saving and resuming the file
+	set undofile
+	if !has('nvim')
+		set undodir=~/.local/share/nvim/undo
+	endif
+" press escape to go back in normal mode inside terminal buffers
+	if has('nvim')
+		tnoremap <Esc> <C-\><C-n>
+		tnoremap <C-v><Esc> <Esc>
+	endif
 
-    "---run :make and then :copen to keep the list of errors
-        set makeprg=gcc\ -g\ -o\ %<\ %
-        set errorformat=%+A\ %#%f\ %#(%l\\\,%c):\ %m,%C%mq
+"---run :make and then :copen to keep the list of errors
+	set makeprg=gcc\ -g\ -o\ %<\ %
+	set errorformat=%+A\ %#%f\ %#(%l\\\,%c):\ %m,%C%mq
+
+source $HOME/.config/vim/conf/coc.vim

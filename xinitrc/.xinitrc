@@ -1,7 +1,8 @@
 xautolock -time 5 -locker slock -corners ---- &
-xwallpaper --zoom ~/Images/federico-bottos-Z3NceSeZqgI-unsplash.jpg &
+xwallpaper --zoom ~/pics/noah-silliman-01Qqkfz-ck8-unsplash.jpg &
 dunst &
 compton &
 slstatus &
-eval "$(ssh-agent -s)" &
+# sxhkd &
+# exec berry
 exec dwm

@@ -12,7 +12,7 @@ static const char col_gray1[]       = "#282828";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#cc241d";
+static const char col_cyan[]        = "#98971a";
 static const unsigned int baralpha = 0xd9;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
@@ -36,6 +36,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "keepassxc",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "discord",	NULL,		NULL,			 0,		  1,		   -1 },
 };
 
 /* layout(s) */
@@ -116,7 +117,7 @@ static Key keys[] = {
 	{Mod1Mask,			XK_c,	spawn,		SHCMD("chromium") },
 	{Mod1Mask,			XK_t,	spawn,		SHCMD("telegram-desktop") },
 	{Mod1Mask,			XK_a,	spawn,		SHCMD("st -e alsamixer") },
-	{0,					XK_Print,  spawn,		SHCMD("st -e sleep 0.2 ; scrot -s -e 'mv $f ~/Images'") },
+	{0,					XK_Print,  spawn,		SHCMD("st -e sleep 0.2 ; scrot -s -e 'mv $f ~/pics'") },
 };
 
 /* button definitions */
