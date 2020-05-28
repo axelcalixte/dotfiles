@@ -6203,3 +6203,4 @@ pcmanfm
 mv dotfiles dots
 cd dots
 git status
+sudo apt autopurge qterminal
