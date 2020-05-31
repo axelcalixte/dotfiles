@@ -1,11 +1,4 @@
-" Environment
-set directory=$XDG_CACHE_HOME/vim,~/,/tmp
-set backupdir=$XDG_CACHE_HOME/vim,~/,/tmp
-set viminfo+='1000,n$XDG_DATA_HOME/vim/viminfo
-set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME
-let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
-
-set packpath^=~/.config/vim
+set packpath^=~/.config/nvim
 packadd minpac
 
 call minpac#init()
@@ -15,14 +8,12 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 
 " Add other plugins here.
 call minpac#add('tpope/vim-sensible')
+call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
 " call minpac#add('vim-scripts/c.vim')
 " call minpac#add('dense-analysis/ale')
 call minpac#add('junegunn/fzf')
 call minpac#add('itchyny/lightline.vim')
-call minpac#add('vimwiki/vimwiki')
-call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
-
-	set background=dark
+" call minpac#add('vimwiki/vimwiki')
 
 "--fzf
 	"fold"
@@ -43,13 +34,13 @@ call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
 	nnoremap <A-e> :Lexplore<CR>
 
 "--- My own
+	set background=dark
 	set shiftwidth=4 softtabstop=4 tabstop=4 smarttab
 	set number relativenumber
 	set noshowmode "to notshow modes with lightline
 	set smartindent
 	set foldmethod=indent
 	set path+=**
-	set colorcolumn=80  
 	set showcmd
 
     " To work with the debugger
@@ -68,7 +59,7 @@ call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
 	" you can undo even after saving and resuming the file
 	set undofile
 	if !has('nvim')
-		set undodir=~/.local/share/nvim/undo
+		set undodir=~/.local/share/vim/undo
 	endif
 " press escape to go back in normal mode inside terminal buffers
 	if has('nvim')
@@ -80,4 +71,4 @@ call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
 	set makeprg=gcc\ -g\ -o\ %<\ %
 	set errorformat=%+A\ %#%f\ %#(%l\\\,%c):\ %m,%C%mq
 
-source $HOME/.config/vim/conf/coc.vim
+source ~/.config/nvim/conf/coc.vim

@@ -5,4 +5,5 @@ compton &
 slstatus &
 # sxhkd &
 # exec berry
+keepassxc &
 exec dwm

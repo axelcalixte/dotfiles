@@ -23,7 +23,7 @@ static const char unknown_str[] = "n/a";
  * datetime            date and time                   format string (%F %T)
  * disk_free           free disk space in GB           mountpoint path (/)
  * disk_perc           disk usage in percent           mountpoint path (/)
- * disk_total          total disk space in GB          mountpoint path (/")
+ * disk_total          total disk space in GB          mountpoint path (/)
  * disk_used           used disk space in GB           mountpoint path (/)
  * entropy             available entropy               NULL
  * gid                 GID of current user             NULL
@@ -63,10 +63,10 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, "  %s",			  "(ls ~/.local/share/mail/utt/INBOX/new && ls ~/.local/share/mail/disroot/INBOX/new && ls ~/.local/share/mail/cock-li/INBOX/new) | wc -l"},
-    { wifi_essid, " |  %s",         "wlp3s0"},
-	{run_command, " |  %4s",           "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1"},
-    { battery_perc, " |  %s%%",  "BAT1"  },
-    { datetime, " |  %s",        "%d/%m/%y" },
-    { datetime, " |  %s",        "%H:%M" },
+	{ run_command, "  %s",	         "(ls ~/.local/share/mail/utt/INBOX/new && ls ~/.local/share/mail/disroot/INBOX/new && ls ~/.local/share/mail/cock-li/INBOX/new) | wc -l"},
+    	{ wifi_perc, " |  %s %%",         "wlp3s0"},
+	{run_command, " |  %4s",        "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1"},
+    	{ battery_perc, " |  %s%%",     "BAT1"  },
+    	{ datetime, " |  %s",           "%d/%m/%y" },
+    	{ datetime, " |  %s",           "%H:%M" },
 };

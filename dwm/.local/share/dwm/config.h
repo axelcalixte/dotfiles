@@ -13,7 +13,7 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#98971a";
-static const unsigned int baralpha = 0xd9;
+static const unsigned int baralpha = 0xE6;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -110,8 +110,9 @@ static Key keys[] = {
 	{ 0, XF86XK_AudioRaiseVolume,	spawn,		SHCMD("amixer -M set Master 5%+") },
 	{ 0, XF86XK_AudioLowerVolume,	spawn,		SHCMD("amixer -M set Master 5%-") },
 	/*  applications keys */
-	{Mod1Mask,			XK_n,	spawn,		SHCMD("st -e nnn") },
-	{Mod1Mask,			XK_m,	spawn,		SHCMD("st -e neomutt") },
+	{Mod1Mask,			XK_n,	spawn,		SHCMD("st -e zsh -c 'nnn'") },
+	{Mod1Mask,			XK_m,	spawn,		SHCMD("st -e zsh -c 'neomutt'") },
+	{Mod1Mask,			XK_s,	spawn,		SHCMD("st -e mailsync") },
 	{Mod1Mask,			XK_h,	spawn,		SHCMD("st -e htop") },
 	{Mod1Mask,			XK_k,	spawn,		SHCMD("keepassxc") },
 	{Mod1Mask,			XK_c,	spawn,		SHCMD("chromium") },

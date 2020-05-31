@@ -51,18 +51,16 @@ stty stop undef		# Disable ctrl-s to freeze terminal
 
 # Aliases
 alias in='nvim /home/axel/Documents/notes/in.md'
+alias vi="nvim"
 alias stencyl="~/.local/share/Stencyl-4.0.2-linux/Stencyl"
 alias mkdir='mkdir -pv'
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'
 alias sr='systemctl reboot'
-alias ls='ls -lhA --color --group-directories-first'
+# alias ls='ls -lhA --color --group-directories-first'
+alias ls='exa -la --group-directories-first'
 alias calcurse="calcurse -D $HOME/.local/share/calcurse"
 alias nnn="nnn -dH"
-
-# GPG
-GPG_TTY=$(tty)
-export GPG_TTY
 
 #Fish syntax highlighting
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
