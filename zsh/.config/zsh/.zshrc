@@ -67,8 +67,8 @@ alias gs="git status"
 alias gcm="git commit -m"
 alias gau="git add -u"
 alias ga="git add"
-alias gs="git push"
-alias gl="git pull"
+alias gps="git push"
+alias gpl="git pull"
 
 #Fish syntax highlighting
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
