@@ -61,7 +61,12 @@ alias sr='systemctl reboot'
 alias ls='exa -la --group-directories-first'
 alias calcurse="calcurse -D $HOME/.local/share/calcurse"
 alias nnn="nnn -dH"
-alias apt remove="apt autopurge" 
+alias remove="autopurge" 
+alias g="git"
+alias gs="git status"
+alias gcm="git commit -m"
+alias gau="git add -u"
+alias ga="git add"
 
 #Fish syntax highlighting
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
