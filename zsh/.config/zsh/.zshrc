@@ -61,6 +61,7 @@ alias sr='systemctl reboot'
 alias ls='exa -la --group-directories-first'
 alias calcurse="calcurse -D $HOME/.local/share/calcurse"
 alias nnn="nnn -dH"
+alias apt remove="apt autopurge" 
 
 #Fish syntax highlighting
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -13,7 +13,9 @@ call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
 " call minpac#add('dense-analysis/ale')
 call minpac#add('junegunn/fzf')
 call minpac#add('itchyny/lightline.vim')
-" call minpac#add('vimwiki/vimwiki')
+call minpac#add('vimwiki/vimwiki')
+
+let g:vimwiki_list = [{'path': '~/docs/vimwiki', 'syntax': 'markdown', 'ext': '.wiki'}]
 
 "--fzf
 	"fold"

@@ -1,9 +1,9 @@
-xautolock -time 5 -locker slock -corners ---- &
+xautolock -time 10 -locker slock -corners ---- &
 xwallpaper --zoom ~/pics/noah-silliman-01Qqkfz-ck8-unsplash.jpg &
 dunst &
 compton &
 slstatus &
 # sxhkd &
 # exec berry
-keepassxc &
+keepass &
 exec dwm

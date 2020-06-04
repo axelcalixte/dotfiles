@@ -6,8 +6,8 @@ static const unsigned int gappx     = 6;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10", "FontAwesome:style=regular:pixelsize=12:antialias=true:autohint=true" };
-static const char dmenufont[]       = "monospace:size=10";
+static const char *fonts[]          = { "monospace:size=12", "FontAwesome:style=regular:pixelsize=14:antialias=true:autohint=true" };
+static const char dmenufont[]       = "monospace:size=12";
 static const char col_gray1[]       = "#282828";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -70,7 +70,8 @@ static const char *termcmd[]  = { "st", NULL };
 #include <X11/XF86keysym.h>
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+	//{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_p,      spawn,          SHCMD("rofi -show run") },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
@@ -106,16 +107,17 @@ static Key keys[] = {
 		/*  function keys */
 	{ 0, XF86XK_MonBrightnessUp,	spawn,		SHCMD("xbacklight -inc 15") },
 	{ 0, XF86XK_MonBrightnessDown,	spawn,		SHCMD("xbacklight -dec 15") },
-	{ 0, XF86XK_AudioMute,		spawn,			SHCMD("amixer sset Toggle Master") },
+	{ 0, XF86XK_AudioMute,			spawn,		SHCMD("amixer sset Toggle Master") },
 	{ 0, XF86XK_AudioRaiseVolume,	spawn,		SHCMD("amixer -M set Master 5%+") },
 	{ 0, XF86XK_AudioLowerVolume,	spawn,		SHCMD("amixer -M set Master 5%-") },
 	/*  applications keys */
-	{Mod1Mask,			XK_n,	spawn,		SHCMD("st -e zsh -c 'nnn'") },
-	{Mod1Mask,			XK_m,	spawn,		SHCMD("st -e zsh -c 'neomutt'") },
+	{Mod1Mask,			XK_Tab,		spawn,		SHCMD("rofi -show window") },
+	{Mod1Mask,			XK_n,		spawn,		SHCMD("st -e zsh -c 'nnn'") },
+	{Mod1Mask,			XK_m,		spawn,		SHCMD("st -e zsh -c 'neomutt'") },
 	{Mod1Mask,			XK_s,	spawn,		SHCMD("st -e mailsync") },
 	{Mod1Mask,			XK_h,	spawn,		SHCMD("st -e htop") },
-	{Mod1Mask,			XK_k,	spawn,		SHCMD("keepassxc") },
-	{Mod1Mask,			XK_c,	spawn,		SHCMD("chromium") },
+	{Mod1Mask,			XK_k,	spawn,		SHCMD("keepass") },
+	{Mod1Mask,			XK_c,	spawn,		SHCMD("chromium --force-device-scale-factor=1.2") },
 	{Mod1Mask,			XK_t,	spawn,		SHCMD("telegram-desktop") },
 	{Mod1Mask,			XK_a,	spawn,		SHCMD("st -e alsamixer") },
 	{0,					XK_Print,  spawn,		SHCMD("st -e sleep 0.2 ; scrot -s -e 'mv $f ~/pics'") },
