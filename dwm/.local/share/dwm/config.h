@@ -35,8 +35,8 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "keepassxc",  NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "discord",	NULL,		NULL,			 0,		  1,		   -1 },
+	{ "KeePassXC",	NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "discord",	NULL,		NULL,		1 << 7,		  0,		   -1 },
 };
 
 /* layout(s) */

@@ -36,7 +36,6 @@ export ANSIBLE_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/ansible/ansible.cfg"
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 export QT_SCALE_FACTOR=1.2
 export QT_AUTO_SCREEN_SCALE_FACTOR=1.2
-export GDK_SCALE=1.2
 
 # Application configs
 export _JAVA_AWT_WM_NONREPARENTING=1

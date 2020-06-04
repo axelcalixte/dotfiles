@@ -6,4 +6,5 @@ slstatus &
 # sxhkd &
 # exec berry
 keepass &
-exec dwm
+xrdb -merge ~/.Xresources & 
+ssh-agent dwm 
