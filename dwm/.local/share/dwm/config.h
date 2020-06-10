@@ -27,7 +27,8 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+//static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "2", "3", "4", "5", "6", "7", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -35,8 +36,9 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "KeePassXC",	NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "discord",	NULL,		NULL,		1 << 7,		  0,		   -1 },
+	{ "KeePassXC",			NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "discord",			NULL,		NULL,		1 << 7,		  0,		   -1 },
+	{ "TelegramDesktop",	NULL,		NULL,		1 << 7,		  0,		   -1 },
 };
 
 /* layout(s) */
@@ -114,13 +116,12 @@ static Key keys[] = {
 	{Mod1Mask,			XK_Tab,		spawn,		SHCMD("rofi -show window") },
 	{Mod1Mask,			XK_n,		spawn,		SHCMD("st -e zsh -c 'nnn'") },
 	{Mod1Mask,			XK_m,		spawn,		SHCMD("st -e zsh -c 'neomutt'") },
-	{Mod1Mask,			XK_s,	spawn,		SHCMD("st -e mailsync") },
-	{Mod1Mask,			XK_h,	spawn,		SHCMD("st -e htop") },
-	{Mod1Mask,			XK_k,	spawn,		SHCMD("keepass") },
-	{Mod1Mask,			XK_c,	spawn,		SHCMD("chromium --force-device-scale-factor=1.2") },
-	{Mod1Mask,			XK_t,	spawn,		SHCMD("telegram-desktop") },
-	{Mod1Mask,			XK_a,	spawn,		SHCMD("st -e alsamixer") },
-	{0,					XK_Print,  spawn,		SHCMD("st -e sleep 0.2 ; scrot -s -e 'mv $f ~/pics'") },
+	{Mod1Mask,			XK_h,		spawn,		SHCMD("st -e htop") },
+	{Mod1Mask,			XK_k,		spawn,		SHCMD("keepass") },
+	{Mod1Mask,			XK_f,		spawn,		SHCMD("firefox-esr") },
+	{Mod1Mask,			XK_t,		spawn,		SHCMD("telegram-desktop") },
+	{Mod1Mask,			XK_a,		spawn,		SHCMD("st -e alsamixer") },
+	{0,					XK_Print,	spawn,		SHCMD("st -e sleep 0.2 ; scrot -s '/home/axel/pics/%F-%T_$wx$h_scrot.png' -e 'xclip -selection clipboard -target image/png -i $f'") },
 };
 
 /* button definitions */
