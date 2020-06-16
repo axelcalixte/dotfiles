@@ -33,6 +33,7 @@ export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
 export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
 export ANSIBLE_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/ansible/ansible.cfg"
 # export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+export ICEAUTHORITY="$XDG_CACHE_HOME"/Iceauthority
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 export QT_SCALE_FACTOR=1.2
 export QT_AUTO_SCREEN_SCALE_FACTOR=1.2
