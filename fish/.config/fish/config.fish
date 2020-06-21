@@ -1,3 +1,7 @@
+if test -n "$DESKTOP_SESSION"
+    set (gnome-keyring-daemon --start | string split "=")
+    end
+
 #Default programs
 set PATH /home/axel/.local/bin $PATH
 set -x EDITOR nvim
@@ -55,5 +59,3 @@ abbr gau 'git add -u'
 abbr ga 'git add'
 abbr gps 'git push'
 abbr gpl 'git pull'
-
-
