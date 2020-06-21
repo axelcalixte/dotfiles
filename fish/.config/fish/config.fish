@@ -1,6 +1,6 @@
-if test -n "$DESKTOP_SESSION"
-    set (gnome-keyring-daemon --start | string split "=")
-    end
+#if test -n "$DESKTOP_SESSION"
+#    set (gnome-keyring-daemon --start | string split "=")
+#end
 
 #Default programs
 set PATH /home/axel/.local/bin $PATH
@@ -59,3 +59,5 @@ abbr gau 'git add -u'
 abbr ga 'git add'
 abbr gps 'git push'
 abbr gpl 'git pull'
+
+starship init fish | source
