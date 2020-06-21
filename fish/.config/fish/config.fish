@@ -26,7 +26,7 @@ set -x CARGO_HOME /home/axel/.local/share/cargo
 set -x GOPATH /home/axel/.local/share/go
 set -x ICEAUTHORITY /home/axel/.cache/Iceauthority
 set -x ANSIBLE_CONFIG /home/axel/.config/ansible/ansible.cfg
-set -x _JAVA_OPTIONS -Djava.util.prefs.userRoot /home/axel/.config/java
+#set -x _JAVA_OPTIONS -Djava.util.prefs.userRoot /home/axel/.config/java
 #set -x QT_SCALE_FACTOR 1.2
 #set -x QT_AUTO_SCREEN_SCALE_FACTOR 1.2
 set -x QT_QPA_PLATFORMTHEME 'gnome'
