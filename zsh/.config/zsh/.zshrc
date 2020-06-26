@@ -50,9 +50,7 @@ stty stop undef		# Disable ctrl-s to freeze terminal
 # End of lines moved by zsh-newuser-install.
 
 # Aliases
-alias in='nvim /home/axel/Documents/notes/in.md'
 alias vi="nvim"
-alias stencyl="~/.local/share/Stencyl-4.0.2-linux/Stencyl"
 alias mkdir='mkdir -pv'
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'
@@ -60,7 +58,6 @@ alias sr='systemctl reboot'
 # alias ls='ls -lhA --color --group-directories-first'
 alias ls='exa -la --group-directories-first'
 alias calcurse="calcurse -D $HOME/.local/share/calcurse"
-alias nnn="nnn -dH"
 alias remove="autopurge" 
 alias g="git"
 alias gs="git status"
