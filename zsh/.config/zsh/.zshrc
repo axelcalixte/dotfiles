@@ -72,4 +72,4 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #ZSH auto-suggestions
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #fzf fuzzy file search
-/usr/share/fzf/shell/key-bindings.zsh
+source /usr/share/fzf/shell/key-bindings.zsh

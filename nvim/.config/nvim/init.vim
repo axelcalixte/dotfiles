@@ -74,6 +74,6 @@ let g:vimwiki_list = [{'path': '~/docs/vimwiki', 'syntax': 'markdown', 'ext': '.
 
 "--- other config files related to coc
 source ~/.config/nvim/conf/coc.vim
-source ~/.config/nvim/conf/git.nvim
+source ~/.config/nvim/conf/git.vim
 source ~/.config/nvim/conf/snippets.vim
 
