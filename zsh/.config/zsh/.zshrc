@@ -37,7 +37,7 @@ zstyle :compinstall filename '/home/axel/.config/zsh/.zshrc'
 
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.cache/zsh/history
+HISTFILE=/home/axel/.cache/zsh/history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt autocd completealiases extendedglob nomatch notify
@@ -55,9 +55,8 @@ alias mkdir='mkdir -pv'
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'
 alias sr='systemctl reboot'
-# alias ls='ls -lhA --color --group-directories-first'
+# alias ls='ls -lhA --color --group-directories-first' Using exa for funsies
 alias ls='exa -la --group-directories-first'
-alias calcurse="calcurse -D $HOME/.local/share/calcurse"
 alias remove="autopurge" 
 alias g="git"
 alias gs="git status"
