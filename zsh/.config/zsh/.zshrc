@@ -55,8 +55,7 @@ alias mkdir='mkdir -pv'
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'
 alias sr='systemctl reboot'
-# alias ls='ls -lhA --color --group-directories-first' Using exa for funsies
-alias ls='exa -la --group-directories-first'
+alias ls='ls -lhA --color --group-directories-first'
 alias remove="autopurge" 
 alias g="git"
 alias gs="git status"
@@ -71,4 +70,4 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #ZSH auto-suggestions
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #fzf fuzzy file search
-source /usr/share/fzf/shell/key-bindings.zsh
+source /etc/zsh_completion.d/fzf-key-bindings
