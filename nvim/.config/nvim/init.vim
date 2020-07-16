@@ -11,14 +11,20 @@ call minpac#add('tpope/vim-sensible')
 call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
 call minpac#add('dense-analysis/ale')
 call minpac#add('junegunn/fzf')
-call minpac#add('itchyny/lightline.vim')
+call minpac#add('junegunn/fzf.vim')
 call minpac#add('vimwiki/vimwiki')
+call minpac#add('tomasiser/vim-code-dark')
+call minpac#add('itchyny/lightline.vim')
 
 let g:vimwiki_list = [{'path': '~/docs/vimwiki', 'syntax': 'markdown', 'ext': '.wiki'}]
+nnoremap <c-p> :FZF<CR>
 
-"--fzf
-	"fold"
-	nnoremap <c-p> :FZF<CR>
+"---ColorScheme
+	let g:codedark_conservative = 0 " enables the 'more colors' option of VSCode
+	let g:lightline = {
+		  \ 'colorscheme': 'codedark',
+		  \ }
+	colorscheme codedark
 
 "---ALE show errors in files
 	"Mappings in the style of unimpaired-next
@@ -38,16 +44,11 @@ let g:vimwiki_list = [{'path': '~/docs/vimwiki', 'syntax': 'markdown', 'ext': '.
 	set background=dark
 	set shiftwidth=4 softtabstop=4 tabstop=4 smarttab
 	set number relativenumber
-	set noshowmode "to notshow modes with lightline
+	set noshowmode "to not show modes with lightline
 	set smartindent
 	set foldmethod=indent
 	set path+=**
 	set showcmd
-
-    " To work with the debugger
-        packadd termdebug 
-        let g:termdebug_wide=1 "debugger window on the left
-        nnoremap <F5> :Termdebug<CR> 
 
     " buffer menu"
         set wildchar=<Tab> wildmenu wildmode=list
@@ -68,11 +69,8 @@ let g:vimwiki_list = [{'path': '~/docs/vimwiki', 'syntax': 'markdown', 'ext': '.
 		tnoremap <C-v><Esc> <Esc>
 	endif
 
-"---run :make and then :copen to keep the list of errors
-	set makeprg=gcc\ -g\ -o\ %<\ %
-	set errorformat=%+A\ %#%f\ %#(%l\\\,%c):\ %m,%C%mq
-
 "--- other config files related to coc
+source ~/.config/nvim/conf/debug.vim
 source ~/.config/nvim/conf/coc.vim
 source ~/.config/nvim/conf/git.vim
 source ~/.config/nvim/conf/snippets.vim
