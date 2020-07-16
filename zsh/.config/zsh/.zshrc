@@ -51,6 +51,7 @@ stty stop undef		# Disable ctrl-s to freeze terminal
 
 # Aliases
 alias vi="nvim"
+alias sv="sudo nvim"
 alias mkdir='mkdir -pv'
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'
