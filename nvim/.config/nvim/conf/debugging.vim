@@ -13,3 +13,10 @@ autocmd Filetype c set makeprg=gcc\ -g\ -o\ %<\ %
 autocmd Filetype c set errorformat=%+A\ %#%f\ %#(%l\\\,%c):\ %m,%C%mq " format of compilation errors for C
 autocmd Filetype java set makeprg=javac\ %
 autocmd Filetype java set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#  " format of compilation errors for java
+
+"---ALE show errors in files
+	"Mappings in the style of unimpaired-next
+	nmap <silent> [W <Plug>(ale_first)
+	nmap <silent> [w <Plug>(ale_previous)
+	nmap <silent> ]w <Plug>(ale_next)
+	nmap <silent> ]W <Plug>(ale_last)
