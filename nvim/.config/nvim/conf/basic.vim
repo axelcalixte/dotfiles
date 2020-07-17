@@ -31,23 +31,8 @@
         vnoremap K :m '<-2<CR>gv=gv
 
 	" switching between buffers
-	"	noremap <C-6> <C-Tab>
-		map <C-i><C> <C-6>
-	
-	" Firefox Tab-Like Switching but buffers and maybe splits are better
-	" Tab navigation like Firefox.
-		nnoremap <C-S-tab> :tabprevious<CR>
-		nnoremap <C-tab>   :tabnext<CR>
-		nnoremap <C-t>     :tabnew<CR>
-		inoremap <C-S-tab> <Esc>:tabprevious<CR>i
-		inoremap <C-tab>   <Esc>:tabnext<CR>i
-		inoremap <C-t>     <Esc>:tabnew<CR>	
-
-		" only in normal modes because these mappings already exist in insert
-		" or visual mode
-		nnoremap <C-Insert> :tabnew<CR> 
-		nnoremap <C-Delete> :tabclose<CR>
-
+		nnoremap <Space>b :Buffers<CR>
+		nnoremap <Space><Space> :b#<CR>
 
 "---From ModernVim Book
 	" you can undo even after saving and resuming the file

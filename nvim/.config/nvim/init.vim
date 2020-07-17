@@ -6,6 +6,9 @@ call minpac#init()
 " minpac must have {'type': 'opt'} so that it can be loaded with `packadd`.
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 
+nnoremap <Space>b :Buffers<CR>
+nnoremap <Space><Space> :b#<CR>
+
 " Add other plugins here.
 call minpac#add('tpope/vim-sensible')
 call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
