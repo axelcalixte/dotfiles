@@ -8,9 +8,9 @@ export PATH
 # Default programs:
 export VISUAL="nvim"
 export PAGER="less"
-export TERMINAL="st"
+export TERMINAL="kitty"
 export BROWSER="firefox-esr"
-export READER="zathura"
+export READER="evince"
 
 # ~/ Clean-up:
 export XDG_DATA_HOME="$HOME/.local/share"
