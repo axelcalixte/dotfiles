@@ -1,9 +1,10 @@
 "---ColorScheme
-	let g:codedark_conservative = 0 " enables the 'more colors' option of VSCode
-	let g:lightline = {
-		  \ 'colorscheme': 'codedark',
-		  \ }
-	colorscheme codedark
+	"let g:codedark_conservative = 0 " enables the 'more colors' option of VSCode
+	"let g:lightline = {
+	"	  \ 'colorscheme': 'codedark',
+	"	  \ }
+	"colorscheme codedark
+	let g:lightline = {'colorscheme' : 'gruvbox_material'}
 
 "--- Netrw
 	let g:netrw_preview=1

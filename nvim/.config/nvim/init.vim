@@ -17,7 +17,8 @@ call minpac#add('junegunn/fzf')
 call minpac#add('junegunn/fzf.vim')
 call minpac#add('jiangmiao/auto-pairs')
 call minpac#add('vimwiki/vimwiki')
-call minpac#add('tomasiser/vim-code-dark')
+"call minpac#add('tomasiser/vim-code-dark')
+call minpac#add('sainnhe/gruvbox-material') " only used to get the lightline theme
 call minpac#add('itchyny/lightline.vim')
 
 
