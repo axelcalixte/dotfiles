@@ -45,6 +45,6 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=1.2
 export _JAVA_AWT_WM_NONREPARENTING=1
 export NNN_TRASH=1 
 export NNN_COLORS="2136" 
-export NNN_BMS='s:~/.local/share;c:~/.config;u:~/utt'
+#export NNN_BMS='s:~/.local/share;c:~/.config;u:~/utt'
 export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
 export NNN_PLUG='t:nmount'
