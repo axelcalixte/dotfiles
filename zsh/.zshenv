@@ -9,8 +9,8 @@ export PATH
 export VISUAL="nvim"
 export PAGER="less"
 export TERMINAL="kitty"
-export BROWSER="firefox-esr"
-export READER="evince"
+export BROWSER="firefox"
+export READER="zathura"
 
 # ~/ Clean-up:
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -43,8 +43,8 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=1.2
 
 # Application configs
 export _JAVA_AWT_WM_NONREPARENTING=1
-export NNN_TRASH=1 
-export NNN_COLORS="2136" 
+#export NNN_TRASH=1 
+#export NNN_COLORS="1256" 
 #export NNN_BMS='s:~/.local/share;c:~/.config;u:~/utt'
-export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
-export NNN_PLUG='t:nmount'
+#export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
+#export NNN_PLUG='t:nmount'
