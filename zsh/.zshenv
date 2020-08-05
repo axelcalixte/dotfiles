@@ -40,10 +40,11 @@ export ICEAUTHORITY="$XDG_CACHE_HOME"/Iceauthority
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 export QT_SCALE_FACTOR=1.2
 export QT_AUTO_SCREEN_SCALE_FACTOR=1.2
+export QT_QPA_PLATFORMTHEME='gnome'
 
 # Application configs
 export _JAVA_AWT_WM_NONREPARENTING=1
-#export NNN_TRASH=1 
+export NNN_TRASH=1 
 #export NNN_COLORS="1256" 
 #export NNN_BMS='s:~/.local/share;c:~/.config;u:~/utt'
 #export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
