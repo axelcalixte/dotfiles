@@ -32,7 +32,7 @@ for battery in /sys/class/power_supply/BAT?
 do
 	# Get its remaining capacity and charge status.
 	capacity=$(cat "$battery"/capacity 2>/dev/null) || break
-	status=$(sed "s/[Dd]ischarging/  /;s/[Nn]ot charging/ /;s/[Cc]harging/  /;s/[Uu]nknown/  /;s/[Ff]ull/ /" "$battery"/status)
+	status=$(sed "s/[Dd]ischarging/  /;s/[Nn]ot charging/ /;s/[Cc]harging/  /;s/[Uu]nknown/  /;s/[Ff]ull/  /" "$battery"/status)
 
 	# If it is discharging and 20% or less, we will add a  as a warning.
 	 [ "$capacity" -le 20 ] && [ "$status" = "  " ] && warn=" "
