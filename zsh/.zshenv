@@ -3,7 +3,12 @@ path=("$HOME/.local/bin" "$path[@]")
 export PATH
 
 # Start graphical server on tty1 if not already running.
-[ "$(tty)" = "/dev/tty1" ] && ! ps -e | grep -qw Xorg && exec startx "/home/axel/.config/X11/xinitrc"
+#[ "$(tty)" = "/dev/tty1" ] && ! ps -e | grep -qw Xorg && exec startx "/home/axel/.config/X11/xinitrc"
+
+if [ -n "$DESKTOP_SESSION" ];then
+    eval $(gnome-keyring-daemon --start)
+    export SSH_AUTH_SOCK
+fi
 
 # Default programs:
 export VISUAL="nvim"
