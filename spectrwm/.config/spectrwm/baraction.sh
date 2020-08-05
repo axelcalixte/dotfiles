@@ -14,7 +14,6 @@ volume(){
 [ $(pamixer --get-mute) = true ] && echo "   " && exit
 
 vol="$(pamixer --get-volume)"
-
 if [ "$vol" -gt "70" ]; then
 	icon=""
 elif [ "$vol" -lt "30" ]; then
@@ -23,7 +22,13 @@ else
 	icon=""
 fi
 
-echo "  $icon $vol%"
+if [ $(amixer scontents | grep -m 1 -o off) ]; then
+	mic=""
+else
+	mic=""
+fi
+
+echo "  $icon $vol%  $mic"
 
 }
 
