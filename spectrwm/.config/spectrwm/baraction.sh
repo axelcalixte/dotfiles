@@ -1,12 +1,17 @@
 #!/bin/sh
 
+snapshot(){
+	shot=$(lsb_release -r | egrep -o '.{3,8}$')
+	echo "$shot"
+}
+
 net(){
 	case "$(cat /sys/class/net/w*/operstate 2>/dev/null)" in
 	down) wifiicon="" ;;
-	up) wifiicon="$(awk '/^\s*w/ { print "", int($3 * 100 / 70) "% " }' /proc/net/wireless)" ;;
+	up) wifiicon="$(awk '/^\s*w/ { print " ", int($3 * 100 / 70) "% " }' /proc/net/wireless)" ;;
 	esac
 
-printf "%s%s\n" "$wifiicon" "$(sed "s/down/ /;s/up/  /" /sys/class/net/e*/operstate 2>/dev/null)"
+printf "%s%s\n" "$wifiicon" "$(sed "s/down/  /;s/up/  /" /sys/class/net/e*/operstate 2>/dev/null)"
 }
 
 volume(){
@@ -25,7 +30,7 @@ fi
 if [ $(amixer scontents | grep -m 1 -o off) ]; then
 	mic=""
 else
-	mic=""
+	mic=" "
 fi
 
 echo "  $icon $vol%  $mic"
@@ -51,10 +56,10 @@ dte(){
 	hm=$(date +%R)
 	cal=$(date +%x)
 
-	echo "  $hm|  $cal"
+	echo "  $hm |   $cal"
 }
 
 while true; do
-	echo "$(net)|$(volume)|$(battery)|$(dte)"
-	sleep 5 
+	echo "$(snapshot)+<|+<$(net)|$(volume)|+<$(battery)+<|+<$(dte)"
+	sleep 10 
 done
