@@ -52,12 +52,15 @@ stty stop undef		# Disable ctrl-s to freeze terminal
 # Aliases
 alias vi="nvim"
 alias sv="sudo nvim"
+alias N='sudo -E nnn -dH'
 alias mkdir='mkdir -pv'
+alias ls='ls -lhA --color --group-directories-first'
+alias udb="sudo updatedb"
+alias icat="kitty +kitten icat"
+alias bdiff="kitty +kitten diff" # stands for beautiful diff
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'
 alias sr='systemctl reboot'
-alias ls='ls -lhA --color --group-directories-first'
-alias udb="sudo updatedb"
 alias g="git"
 alias gs="git status"
 alias gcm="git commit -m"

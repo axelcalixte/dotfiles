@@ -25,7 +25,6 @@ _comps=(
 'add-zle-hook-widget' '_add-zle-hook-widget'
 'add-zsh-hook' '_add-zsh-hook'
 'admin' '_sccs'
-'alacritty' '_alacritty'
 'ali' '_mh'
 'alias' '_alias'
 'amaya' '_webbrowser'
@@ -613,6 +612,7 @@ _comps=(
 'isag' '_sysstat'
 'ispell' '_ispell'
 'iwconfig' '_iwconfig'
+'j' '_j'
 'jadetex' '_tex'
 'jar' '_java'
 'jarsigner' '_java'
@@ -1625,8 +1625,8 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz _alacritty _bootctl _busctl _coredumpctl _curl \
-            _firewalld _gsettings _hostnamectl _journalctl _kernel-install \
+autoload -Uz _bootctl _busctl _coredumpctl _curl _firewalld \
+            _gsettings _hostnamectl _j _journalctl _kernel-install \
             _localectl _loginctl _machinectl _mpv _networkctl \
             _pulseaudio _resolvectl _sd_hosts_or_user_at_host _sd_machines _sd_outputmodes \
             _sd_unit_files _systemctl _systemd _systemd-analyze _systemd-delta \
