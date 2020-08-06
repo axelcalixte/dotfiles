@@ -1,10 +1,7 @@
 "---ColorScheme
-	"let g:codedark_conservative = 0 " enables the 'more colors' option of VSCode
-	"let g:lightline = {
-	"	  \ 'colorscheme': 'codedark',
-	"	  \ }
-	"colorscheme codedark
-	let g:lightline = {'colorscheme' : 'gruvbox_material'}
+	set termguicolors
+	let g:lightline = {'colorscheme' : 'nord'}
+	colorscheme nord
 
 "--- Netrw
 	let g:netrw_preview=1
@@ -24,7 +21,10 @@
 	set path+=**
 	set showcmd
 
-    " buffer menu"
+	" FZF
+		nnoremap <c-p> :FZF<CR>
+
+	" buffer menu"
         set wildchar=<Tab> wildmenu wildmode=list
 
     " moving blocks of text
