@@ -1,5 +1,5 @@
 typeset -U PATH path
-path=("$HOME/.local/bin" "$path[@]")
+path+=("$HOME/.local/bin" "$path[@]")
 export PATH
 
 # Start graphical server on tty1 if not already running.
@@ -50,7 +50,8 @@ export QT_QPA_PLATFORMTHEME='gnome'
 # Application configs
 export _JAVA_AWT_WM_NONREPARENTING=1
 export NNN_TRASH=1 
-export NNN_COLORS="1256" 
-#export NNN_BMS='s:~/.local/share;c:~/.config;u:~/utt'
-#export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
-#export NNN_PLUG='t:nmount'
+export NNN_COLORS="3246" 
+export NNN_FIFO=/tmp/nnn.fifo
+export NNN_BMS='s:~/.local/share;c:~/.config;u:~/utt'
+export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
+export NNN_PLUG='a:autojump;d:dragdrop;m:nmount;n:nuke;p:preview-tabbed;s:suedit;v:vidthumb;w:wall'
