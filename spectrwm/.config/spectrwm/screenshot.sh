@@ -8,7 +8,7 @@ screenshot() {
 		;;
 	select-save)
 		sleep 0.2
-		scrot -s 'scrot-%d-%m-%Y_%R_$wx$h.png' -e 'mv $f ~/pics/'
+		scrot -s 'scrot-%d-%m-%Y_%R_$wx$h.png' -e 'mv $f ~/pics/ ; sxiv ~/pics/$f'
 		;;
 	*)
 		;;

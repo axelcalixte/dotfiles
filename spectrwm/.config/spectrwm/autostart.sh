@@ -1,7 +1,7 @@
 #!/bin/bash
 
 nitrogen --restore &
-xrdb ~/.config/X11/Xresources
+#xrdb ~/.config/X11/Xresources
 xautolock -time 10 -locker slock -corners ---- &
 dunst -conf ~/.config/dunst/dunstrc &
 picom -b --config ~/.config/picom/picom.conf &
