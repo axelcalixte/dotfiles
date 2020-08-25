@@ -17,7 +17,7 @@ call minpac#add('vimwiki/vimwiki')
 call minpac#add('arcticicestudio/nord-vim')
 call minpac#add('itchyny/lightline.vim')
 
-let g:vimwiki_list = [{'path': '~/docs/vimwiki', 'syntax': 'markdown', 'ext': '.wiki'}]
+let g:vimwiki_list = [{'path': '~/docs/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
 
 "--- other config files 
 source ~/.config/nvim/conf/basic.vim
