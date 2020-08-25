@@ -55,6 +55,7 @@ alias sv="sudo nvim"
 alias N='sudo -E nnn -dH'
 alias mkdir='mkdir -pv'
 alias ls='ls -lhA --color --group-directories-first'
+alias lc="ls -lA | wc -l"
 alias udb="sudo updatedb"
 alias icat="kitty +kitten icat"
 alias bdiff="kitty +kitten diff" # stands for beautiful diff
