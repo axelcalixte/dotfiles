@@ -1,0 +1,94 @@
+Return-Path: <noreply@github.com>
+Delivered-To: axelcalixte@disroot.org
+Received: from localhost (localhost [127.0.0.1])
+	by disroot.org (Postfix) with ESMTP id 49A8E4E8D2
+	for <axelcalixte@disroot.org>; Mon, 17 Aug 2020 06:13:43 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at disroot.org
+Received: from knopi.disroot.org ([127.0.0.1])
+	by localhost (disroot.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id AqlZlLHiArL6 for <axelcalixte@disroot.org>;
+	Mon, 17 Aug 2020 06:13:41 +0200 (CEST)
+Received: from out-25.smtp.github.com (out-25.smtp.github.com [192.30.252.208])
+	by disroot.org (Postfix) with ESMTPS id C79014B38D
+	for <axelcalixte@disroot.org>; Mon, 17 Aug 2020 06:13:41 +0200 (CEST)
+Authentication-Results: disroot.org;
+	dkim=pass (1024-bit key; unprotected) header.d=github.com header.i=@github.com header.b="AxE8vcg4";
+	dkim-atps=neutral
+Received: from github-lowworker-ca5950c.va3-iad.github.net (github-lowworker-ca5950c.va3-iad.github.net [10.48.17.57])
+	by smtp.github.com (Postfix) with ESMTP id 033D4840C4A
+	for <axelcalixte@disroot.org>; Sun, 16 Aug 2020 21:13:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=github.com;
+	s=pf2014; t=1597637621;
+	bh=7j+e5CZax2b609Ugvxy/vFOSnp8O4hqd4nPhmzWNDHc=;
+	h=Date:From:Reply-To:To:Cc:In-Reply-To:References:Subject:List-ID:
+	 List-Archive:List-Post:List-Unsubscribe:From;
+	b=AxE8vcg40G/+fr2EVVkHo9aaGOQZ4q1lwz51lcifWyxdoSQNV4LsQXc4mvX1AkGg4
+	 hpYla7bee7VvQulyasAXs9JgcwinmaK2kfcA6Z7DQ8RZqWBm7EOgzO1fnK74Wg8L2B
+	 1+HZTMky3UoYpu7D48uM3887Ex/CsxPzjX2g0QUw=
+Date: Sun, 16 Aug 2020 21:13:40 -0700
+From: LordReg <notifications@github.com>
+Reply-To: conformal/spectrwm <reply+ANHKJ2TRLSGG5IQ77S24A3V5IXSPJEVBNHHCQOYI2Q@reply.github.com>
+To: conformal/spectrwm <spectrwm@noreply.github.com>
+Cc: Axel Calixte <axelcalixte@disroot.org>, 
+ Author <author@noreply.github.com>
+Message-ID: <conformal/spectrwm/issues/375/674645247@github.com>
+In-Reply-To: <conformal/spectrwm/issues/375@github.com>
+References: <conformal/spectrwm/issues/375@github.com>
+Subject: Re: [conformal/spectrwm] Cannot use dmenu_run with flag -fn (#375)
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5f3a03f4e71b6_2afe1964133728f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Precedence: list
+X-GitHub-Sender: LordReg
+X-GitHub-Recipient: axelcalixte
+X-GitHub-Reason: author
+List-ID: conformal/spectrwm <spectrwm.conformal.github.com>
+List-Archive: https://github.com/conformal/spectrwm
+List-Post: <mailto:reply+ANHKJ2TRLSGG5IQ77S24A3V5IXSPJEVBNHHCQOYI2Q@reply.github.com>
+List-Unsubscribe: <mailto:unsub+ANHKJ2TRLSGG5IQ77S24A3V5IXSPJEVBNHHCQOYI2Q@reply.github.com>,
+ <https://github.com/notifications/unsubscribe/ANHKJ2TUR6IAVLAUKEGHD4DSBCU7JANCNFSM4PXRM77Q>
+X-Auto-Response-Suppress: All
+X-GitHub-Recipient-Address: axelcalixte@disroot.org
+
+
+----==_mimepart_5f3a03f4e71b6_2afe1964133728f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Did you check `~/dmenu.log` after adding ` > ~/dmenu.log 2>&1` to your script as in my example?  If dmenu has issues loading a font, it will output errors. 
+
+-- 
+You are receiving this because you authored the thread.
+Reply to this email directly or view it on GitHub:
+https://github.com/conformal/spectrwm/issues/375#issuecomment-674645247
+----==_mimepart_5f3a03f4e71b6_2afe1964133728f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p></p>
+<p>Did you check <code>~/dmenu.log</code> after adding <code> &gt; ~/dmenu.log 2&gt;&amp;1</code> to your script as in my example?  If dmenu has issues loading a font, it will output errors.</p>
+
+<p style="font-size:small;-webkit-text-size-adjust:none;color:#666;">&mdash;<br />You are receiving this because you authored the thread.<br />Reply to this email directly, <a href="https://github.com/conformal/spectrwm/issues/375#issuecomment-674645247">view it on GitHub</a>, or <a href="https://github.com/notifications/unsubscribe-auth/ANHKJ2XLSUYSM75VEIR7VWDSBCU7JANCNFSM4PXRM77Q">unsubscribe</a>.<img src="https://github.com/notifications/beacon/ANHKJ2XE6KSDEFJGWQ76MQ3SBCU7JA5CNFSM4PXRM772YY3PNVWWK3TUL52HS4DFVREXG43VMVBW63LNMVXHJKTDN5WW2ZLOORPWSZGOFA3EJ7Y.gif" height="1" width="1" alt="" /></p>
+<script type="application/ld+json">[
+{
+"@context": "http://schema.org",
+"@type": "EmailMessage",
+"potentialAction": {
+"@type": "ViewAction",
+"target": "https://github.com/conformal/spectrwm/issues/375#issuecomment-674645247",
+"url": "https://github.com/conformal/spectrwm/issues/375#issuecomment-674645247",
+"name": "View Issue"
+},
+"description": "View this Issue on GitHub",
+"publisher": {
+"@type": "Organization",
+"name": "GitHub",
+"url": "https://github.com"
+}
+}
+]</script>
+----==_mimepart_5f3a03f4e71b6_2afe1964133728f--

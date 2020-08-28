@@ -1,0 +1,202 @@
+Return-Path: <opensuse-factory+bounces-95948-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 283D982605; Tue,  4 Aug 2020 12:00:15 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.6 required=5.0 tests=BAYES_50,DKIM_SIGNED,
+	FREEMAIL_FROM,MAILING_LIST_MULTI,RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,
+	RCVD_IN_MSPIKE_WL,RDNS_NONE,T_DKIM_INVALID,URIBL_BLOCKED
+	shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 6068F82711
+	for <axelcalixte@cock.li>; Tue,  4 Aug 2020 12:00:08 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (1024-bit key; unprotected) header.d=gmx.net header.i=@gmx.net header.b="LlPZYEAC";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 54C4B21D78
+	for <axelcalixte@cock.li>; Tue,  4 Aug 2020 12:00:07 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 1950F10E2C;
+	Tue,  4 Aug 2020 11:59:44 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id F1C5E10E2C
+	for <opensuse-factory@lists5.opensuse.org>; Tue,  4 Aug 2020 11:59:43 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id CFB472C15D
+	for <opensuse-factory@lists5.opensuse.org>; Tue,  4 Aug 2020 12:00:08 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id mYpD63o5lqXT for <opensuse-factory@lists5.opensuse.org>;
+	Tue,  4 Aug 2020 12:00:03 +0000 (UTC)
+Received: from mx2.suse.de (unknown [149.44.161.68])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 3DF502C164
+	for <opensuse-factory@lists5.opensuse.org>; Tue,  4 Aug 2020 12:00:03 +0000 (UTC)
+Received: from mout.gmx.net (mout.gmx.net [212.227.17.22])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx2.suse.de (Postfix) with ESMTPS id F0FCCAB3D
+	for <opensuse-factory@opensuse.org>; Tue,  4 Aug 2020 12:00:16 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=gmx.net;
+	s=badeba3b8450; t=1596542400;
+	bh=sSgRGvVFpSqf3ZS3jdtzxaRefHMwu9/zIwlurtogAyw=;
+	h=X-UI-Sender-Class:From:To:Subject:Date:In-Reply-To:References;
+	b=LlPZYEACFJu9vlhcFl++TKaDpgb8JvdAkLM4SZAA4W9Ci7blZ5rnj77yo1/1mQ2zU
+	 V1i4knOaJIDJPj2b3GxpbeSNcPDxM+DRDEBPNW0l0NboUWxipsBzm/NrqdzIj8FCCu
+	 z+3igWBKXqqK4SIlXOE/+qTS18AoiX7LIRwo7Q2M=
+X-UI-Sender-Class: 01bb95c1-4bf8-414a-932a-4f6e2808ef9c
+Received: from [89.244.169.62] ([89.244.169.62]) by web-mail.gmx.net
+ (3c-app-gmx-bap17.server.lan [172.19.172.87]) (via HTTP); Tue, 4 Aug 2020
+ 14:00:00 +0200
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Message-ID: <trinity-693f8db8-2614-4b99-b36c-3bbc03a364fe-1596542400673@3c-app-gmx-bap17>
+From: ub22@gmx.net
+To: Mailing List openSUSE Factory <opensuse-factory@opensuse.org>
+Subject: Aw: Re: update hangs on Plasma update tool ([opensuse-factory] New
+ Tumbleweed snapshot 20200801)
+Content-Type: text/plain; charset=UTF-8
+Date: Tue, 4 Aug 2020 14:00:00 +0200
+Importance: normal
+Sensitivity: Normal
+In-Reply-To: <20200803193059.GB6814@saturn.hollstein.homelinux.org>
+References: <20200803174642.GA6814@saturn.hollstein.homelinux.org>
+ <trinity-49583721-2698-489d-8bf6-dbc39e3c8725-1596480263952@3c-app-gmx-bs78>
+ <20200803193059.GB6814@saturn.hollstein.homelinux.org>
+X-UI-Message-Type: mail
+X-Provags-ID: V03:K1:t3qhNIPmvn4Zwgs/0ur9gpZzoGLcQwkiYUYXJ8cWHqyHZbuz1J+8NYJu2XuLuidiR5CvE
+ kTlqh/ptAZJRSlzPcjJd4GdRozBBde1NUi2xRX3d+IuUh134gBUKA4si/9v303INCZ6bXF8/E9Su
+ wGQBXFfdLG2AGzP9vm7rxL9WYBXe0ZEdupwKTaIl6LlLBDV8EHqrXL4FSE+TgckDAW4+7Cs4Km+d
+ ansP/isETXaX8NKBJY9+CVDhFyjZ18xQ8c+FrTLwEWHfJTm7Rq2k1jAwya0USpl+sm9Jo1Eu5air
+ x8=
+X-UI-Out-Filterresults: notjunk:1;V03:K0:G6K9EGkRbhY=:WoHvcVMcVdcYyDs+PqADNT
+ Folg3c7n1fwZUeMxedG3JVCH5NQGBkerRUhXP/y0rSDF9Lr8nAtIFKH0IVY4hXSYqeBV69tmQ
+ W2SL3qVpGxr892QLkoFad4ppoH+WdePtKi9LglpbZViBwgTLXL8cguURuWH7XXBHQtZwrEdjq
+ BRlsDahSC9GzSAc8bsfY7q/FWTHk6e9arEau0xCf6nU8X5fYEXM148iYJw5AjJREhhC667xAV
+ JkHkD2Rx4Q2Rwe4U/kYHz4Ph1wDUABlAkJYNj/v5Bl9/hXwzxSNnjVy8x2cjLQf113TYHKZiy
+ 4dtFt7bRt2gfcJeq5IhKtE55qC7C/jWh9YdyhGyOeAgCKu4E0o45S3O3RvAKsgQdlV2UfCAfb
+ BjcDCLqZdWSHr1Q409GJ9nIc7N9BR1BQ6tbdPROyAtV0gT8RY53UByz/latmwOASurnW2QqS+
+ DzEpL61UgT9TLodC1x/e+JHjX1FMAiQ07BHmZQtE5hbdasI9rLGrKU2ExtKzPPiK/H4t5hhr2
+ wZfeWpNy9CY1sF+H95KFPOrC4P5yhsTJm7bKs4dfC8QVZ63gyjQWYQh+wXgy+Tjhu116QsqxR
+ pUE3Cvp67isTJyE+F50nSmoEM2K1ZthasOBDRk/ripqspenKlv0OV4uuBwIYt2ohBv4A+Eo6S
+ gv/QnBaUUuFGtlCCloTpPYVxRv8NoJlMLiE+ccI2CRIVIfw==
+Content-Transfer-Encoding: quoted-printable
+
+Hi Manfred and other readers,
+
+> Gesendet: Montag, 03. August 2020 um 21:30 Uhr; Von: "Manfred Hollstein"
+>
+> On Mon, 03 Aug 2020, 20:44:23 +0200, ub22@gmx.net wrote:
+> > OK, thats the hard methode, but then only for "filesystem" rpm
+> > I changed it a little bit and search for SymLinks
+> >
+> > # rpm -ql filesystem | while read dir; do [ -h $dir ] && echo $dir; do=
+ne
+> > /var/mail
+> > /var/run
+> >
+> > Seems that there are some default directories which are linked.
+> > Why this are working?
+>
+> It works because these are symbolic links which ought to be symbolic
+> links according to the package's source rpm/spec file. Think of an rpm
+> as a defined set of files/directories/links, where each of them carry
+> another defined set of information such as who owns it (user/group id),
+> permissions, etc. When you run "rpm -V filesystem" and you've modified
+> /home and /root/bin, you'll get warnings as the integrity of that
+> package is no longer maintained. Please have a look at "man rpm" and
+> search for "VERIFY OPTIONS" which will show what this
+> integrity/consistency actually means.
+
+OK, thanks for your detailed answer :-)
+Seems to be fine now, with mounting of /home and /root/bin
+
+
+> > > This will print all directories which are owned by the filesystem
+> > > package and thusly a candidate for similar trouble, when you're
+> > > replacing any of them with a symbolic link. There are probably more
+> > > directories owned by other packages...
+> >
+> > Yes, but from my point of view, a System must be tolerant according to
+> > such case of (possible or not forbidden) issues.
+>
+> It surely can be discussed if /home actually should be owned by a
+> package, but, as others have argued, it plays an established role in the
+> Linux/UNIX FHS and therefore has to be created according to some proper
+> rules. These rules say that it is a directory, owned by root:root with
+> permission 755! When you want/need a different device to carry your
+> /home directory, you can either bind-mount another directory (as I
+> suggested in my initial reply), or bind a different block device to
+> /home. This way rpm wouldn't complain about any inconsistency. So, if
+> your HOME directories should live on a partition of your second disk
+> /dev/sdb, you could use something like this:
+>
+>   - Use fdisk or parted (or your preferred partition tool) to create
+>     such a partition with your preferred file system type; ideally you
+>     assign it a unique label such as HOME
+>   - Then you could mount your home directory using something like
+>     LABEL=3DHOME	/home	auto	defaults	1 2
+>
+> I guess, your /home.server is already mounted like this. So, you could
+> just replace /home.server in the line of your /etc/fstab with /home. No
+> need for a symbolic link at all ;)
+
+Yes, you are right, now my new fstab:
+# cat /etc/fstab
+UUID=3Duuid-xyz  /                       btrfs  defaults                  =
+    0  0
+UUID=3Duuid-xyz  /var                    btrfs  subvol=3D/@/var           =
+      0  0
+UUID=3Duuid-xyz  /usr/local              btrfs  subvol=3D/@/usr/local     =
+      0  0
+UUID=3Duuid-xyz  /tmp                    btrfs  subvol=3D/@/tmp           =
+      0  0
+UUID=3Duuid-xyz  /srv                    btrfs  subvol=3D/@/srv           =
+      0  0
+UUID=3Duuid-xyz  /root                   btrfs  subvol=3D/@/root          =
+      0  0
+UUID=3Duuid-xyz  /opt                    btrfs  subvol=3D/@/opt           =
+      0  0
+UUID=3Duuid-xyz  /home.local             btrfs  subvol=3D/@/home          =
+      0  0
+UUID=3Duuid-xyz  /boot/grub2/x86_64-efi  btrfs  subvol=3D/@/boot/grub2/x86=
+_64-efi  0  0
+UUID=3Duuid-xyz  /boot/grub2/i386-pc     btrfs  subvol=3D/@/boot/grub2/i38=
+6-pc  0  0
+UUID=3Duuid-abc  /boot/efi               vfat   defaults                  =
+    0  2
+UUID=3Duuid-xyz  /.snapshots             btrfs  subvol=3D/@/.snapshots    =
+      0  0
+UUID=3Duuid-123  swap                    swap   defaults                  =
+    0  0
+## Remote Mounts
+server:/home   /home.server            nfs    defaults                    =
+  0  0
+/home.server   /home                   none   bind                        =
+  0  0
+/home/all/bin  /root/bin               none   bind                        =
+  0  0
+
+So I hope this will work fine :-)
+
+cheers :-)
+Ulf
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

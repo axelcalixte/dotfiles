@@ -1,0 +1,148 @@
+Return-Path: <opensuse-factory+bounces-95870-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 55C1782671; Fri, 24 Jul 2020 20:19:39 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=0.6 required=5.0 tests=BAYES_50,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_NONE,RDNS_NONE,T_TVD_MIME_EPI shortcircuit=_SCTYPE_
+	autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id A3D3B80153
+	for <axelcalixte@cock.li>; Fri, 24 Jul 2020 20:19:37 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id E1E832186C
+	for <axelcalixte@cock.li>; Fri, 24 Jul 2020 20:19:36 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 56BD610E2C;
+	Fri, 24 Jul 2020 20:19:29 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 475E510E2C
+	for <opensuse-factory@lists5.opensuse.org>; Fri, 24 Jul 2020 20:19:29 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id E48C22C164
+	for <opensuse-factory@lists5.opensuse.org>; Fri, 24 Jul 2020 20:19:30 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id ISgSAfxTJMBX for <opensuse-factory@lists5.opensuse.org>;
+	Fri, 24 Jul 2020 20:19:25 +0000 (UTC)
+Received: from mx2.suse.de (unknown [149.44.161.68])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 828922C15D
+	for <opensuse-factory@lists5.opensuse.org>; Fri, 24 Jul 2020 20:19:25 +0000 (UTC)
+Received: from omta04.suddenlink.net (omta04.suddenlink.net [208.180.40.74])
+	by mx2.suse.de (Postfix) with ESMTP id F2658AD0B
+	for <opensuse-factory@opensuse.org>; Fri, 24 Jul 2020 20:19:38 +0000 (UTC)
+Received: from [192.168.6.104] (really [66.76.46.195])
+          by dalofep04.suddenlink.net
+          (InterMail vM.8.04.03.22.02 201-2389-100-169-20190213) with ESMTP
+          id <20200724201928.WUZG4955.dalofep04.suddenlink.net@[192.168.6.104]>
+          for <opensuse-factory@opensuse.org>;
+          Fri, 24 Jul 2020 15:19:28 -0500
+Subject: Re: [opensuse-factory] Linux Kernel / KVM Developer
+To: opensuse-factory@opensuse.org
+References: <CACB8RRb+f96gWxKmu8OShktawQpNmmvweQDnyceTO6rAmjbQGw@mail.gmail.com>
+ <2a01589a-cf96-f30a-9bab-a29d2a429775@suddenlinkmail.com>
+ <29ebfca7-0b2b-2030-b032-afe6091e8137@telefonica.net>
+From: "David C. Rankin" <drankinatty@suddenlinkmail.com>
+Autocrypt: addr=drankinatty@suddenlinkmail.com; prefer-encrypt=mutual;
+ keydata=
+ xsBNBFkinL8BCADU5H9ZxEu+IIMb75pSmVXhW7ujTM7p2TzjZiyTT3Lfbxuoso1rWyAaAti6
+ Jyfw2pk0SJYw+8afn1+Ag/BtmSGm7wiuGdpHlDL0e/2sbyCYoFExpFLecgd5+mU+M6GCNUaM
+ vZ79BaM2wn+c4r1r0LcPmy7uweHhaVXGlocfMChd2fBweonL2jd4bX64XZbB5YErpkzxFN69
+ kM+I4CmkzOaSSLfN6//EUgc2zBKGVJhM6fpZjVE4Wm8S+khvrJwFG0ZoaPC1Ol/b47iyqZcf
+ jFZs75i2Tjd3AYyQ6Ai3ZNGrwv2PJSAawR+hfZLeNf5aMaIqoG099SsAN3j8wW97DDjbABEB
+ AAHNRERhdmlkIEMuIFJhbmtpbiwgSi5ELixQLkUuICh3aXphcmQpIDxkcmFua2luYXR0eUBz
+ dWRkZW5saW5rbWFpbC5jb20+wsClBBMBCAA4FiEEUoo6wDEaJyRJMG0RyQVv1wIPCIcFAlki
+ nL8CGwMFCwkIBwIGFQgJCgsCBBYCAwECHgECF4AAIQkQyQVv1wIPCIcWIQRSijrAMRonJEkw
+ bRHJBW/XAg8Ih3/CB/9v70EHOFGvaL4sNrmofCXGZFu9Bmn3JjMVslXqzgOPK6SKvsIZivMC
+ +4VRYEgWITEGykZ0e5Ddv9QDrr+66l/oOXNFFOzrZYyMr0NNltB8XGqfH4RYIMpsGVcyxoi7
+ 8WO0G1zXe47PNr3rs50TyXa7FQfv4Hj9LxF6mkn4VebanOjiqWrVhg21fRx3sHKZl2fQbaiB
+ 4eizYDLltg5+JhYVXBvt+dnngMKw59sfQz1FQiEDlkp4KGwI4Bm+2Iwx6Yiv/GKETwOzsg1u
+ 0RfGbTSjjGBGJZJIl66g595KKUdtWMlHLboT8qEq+RltycYImxBGjwM+rk/87lRCfQdW8bJO
+ zsBNBFkinL8BCADBf/hnq9+d9ayvxYCpXpZgorwW0itZcGMR7O3GIIAnJ0zBmQ9BFs4mVkSU
+ ulm9YscWnryZsx+ty/bd0wkIf6MTlcEtr+ntdmnXQgfMGF51lsjYwEGyd+uqoJ2t/Qo099L1
+ sPr7fu55347w42bgQuHMd+OUaiM110G8wS7sRApjX279fawg2Ji+sA5fqyzbUTivgChWiNCp
+ ovt+atEIPa4jvrPs73MLeZDT8mmS4SjRiL3sf4/d3epINvQii88/J+KgwDLsogZIBgIfPF3j
+ vO+RhaV9IRZDVp6cAC8aCoqtnf8o/1pXV6QaKZhgimdP8knrsM8PH2AqVAP1/VhlVxC/ABEB
+ AAHCwI0EGAEIACAWIQRSijrAMRonJEkwbRHJBW/XAg8IhwUCWSKcvwIbDAAhCRDJBW/XAg8I
+ hxYhBFKKOsAxGickSTBtEckFb9cCDwiH348H/2F6IpwFmm7qroGMUjWn7wXFwBhBOWq02Ehk
+ l4VFgREdTs9FOQY3lgCirWp/PKR5Ba3R2FvLLuQOg5+4w8VFgFY180bwNCzWyXyjqwcO5Jxi
+ UqmEA+4HXgSWTki39DLfYPXr5MYUeHCxRxtJlh9Ox9ciK3izRU7PotAd7SmOOD+W7DXAMzMA
+ 9htayXoYhU28UZQIgnOr+ta87vNF2gyixCRR1WIQiUV65WtOA6BmXWSn3OrqxYP2lJ/u89aT
+ u9Lrpjpyry1YorbCeiLMQLH4WaeCjwW25E44sXEz3yQEBs0IXKGUttoxkz4NTexuMbajE/zN
+ +E26HU22iDtB5AOJ9R8=
+Organization: Rankin Law Firm, PLLC
+Message-ID: <27b16e91-12a9-4959-03cb-eac23d0e8b46@suddenlinkmail.com>
+Date: Fri, 24 Jul 2020 15:19:23 -0500
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101
+ Thunderbird/68.2.1
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+In-Reply-To: <29ebfca7-0b2b-2030-b032-afe6091e8137@telefonica.net>
+Content-Type: multipart/signed; micalg=pgp-sha256;
+ protocol="application/pgp-signature";
+ boundary="zfY173A1XSgASnRCwQv7v8ZMewpiXK67h"
+X-Authentication-Info: Submitted using SMTP AUTH PLAIN at dalofep04.suddenlink.net from [66.76.46.195] using ID drankinatty@suddenlinkmail.com at Fri, 24 Jul 2020 15:19:28 -0500
+X-CM-Analysis: v=2.3 cv=PfaBeRpd c=1 sm=1 tr=0 cx=a_idp_d a=/cos1G3ae6AqFCvJLv+j9g==:117 a=/cos1G3ae6AqFCvJLv+j9g==:17 a=_RQrkK6FrEwA:10 a=A1jyNYAxBm8A:10 a=13zjGPudsaEWiJwPRgMA:9 a=tAF1jH0RUR-rZe8F1yoA:9 a=QEXdDO2ut3YA:10 a=ZwTJOk5o70_feQq-lCoA:9 a=FfaGCDsud1wA:10
+X-CM-Envelope: MS4wfFOwsRtc3ZNGiTdqy6whCwC4Lvzf1jePZf1oB/kwgj2e9E9CIRBVrvAEboUWgbZ5d2+vuChqU5h32EuJCvniX1Wb/plHsOIRDgJpASAh+gkPjBZB/Rzy +miMA7BSL7cmVjpWG7Vz0AHKthmng3H+lNE2EGVyrKJEwRM6fhq3soI3ms9rZIusMMZlZmb0xY8Hjl5A32uwlztf9980CBcYEe0=
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--zfY173A1XSgASnRCwQv7v8ZMewpiXK67h
+Content-Type: multipart/mixed; boundary="ukLqtEJXgwy0BvCorcwX8FDSCWwfoVjwd"
+
+--ukLqtEJXgwy0BvCorcwX8FDSCWwfoVjwd
+Content-Type: text/plain; charset=utf-8
+Content-Language: en-US
+Content-Transfer-Encoding: quoted-printable
+
+On 7/24/20 5:00 AM, Carlos E. R. wrote:
+> It works here :-?
+> maybe temporary problem.
+>=20
+> If not, they don't like your IP.
+
+Must be an IP issue -- it definitely doesn't work from my IP.
+
+
+--=20
+David C. Rankin, J.D.,P.E.
+
+
+--ukLqtEJXgwy0BvCorcwX8FDSCWwfoVjwd--
+
+--zfY173A1XSgASnRCwQv7v8ZMewpiXK67h
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEUoo6wDEaJyRJMG0RyQVv1wIPCIcFAl8bQk8ACgkQyQVv1wIP
+CIfD1Af/YE0hA1Xg/bUeJ+NGhBxj+67/zDdkamwebKu2M0Ug5LryJ7cDxJs6x+tp
+aqOn977LRSc6wnRt2qwBBCtmrPGQZOuf3tErrzKCqI6koDZ206ROXNt23vNFaT6z
+5y3DBQQ/FBEFenfy93UT6uACsa0/wMr75vGkPDtW9mELoHyQPiHcSy7gktymivaT
+QCRQg94w7DMT/efWtt+OPu6uFXJKun+YASNf7hSh1DWzM66hnVWUtUla3DpUnKup
+nfHDWoAximhIU4D8fQS39m1r1B3xNir+pdzxj68zlhKh0JzYdGyd/l3+Zv8J7Ma7
+uoaVKGUpLRylkaAF+/sTH8oDKm0fyA==
+=smgV
+-----END PGP SIGNATURE-----
+
+--zfY173A1XSgASnRCwQv7v8ZMewpiXK67h--
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

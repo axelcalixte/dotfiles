@@ -1,0 +1,85 @@
+Return-Path: <opensuse-factory+bounces-96099-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 41D5D82430; Thu, 20 Aug 2020 15:40:30 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.5 required=5.0 tests=BAYES_40,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,RDNS_NONE,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 6B75282430
+	for <axelcalixte@cock.li>; Thu, 20 Aug 2020 15:40:24 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 681102052B
+	for <axelcalixte@cock.li>; Thu, 20 Aug 2020 15:40:23 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 508BF119C9;
+	Thu, 20 Aug 2020 15:40:23 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from mx1.opensuse.org (unknown [192.168.47.95])
+	by lists5.opensuse.org (Postfix) with ESMTP id 4822611B1A
+	for <opensuse-factory@lists5.opensuse.org>; Thu, 20 Aug 2020 15:40:23 +0000 (UTC)
+Received: from mx1.opensuse.org (localhost [127.0.0.1])
+	by mx1.opensuse.org (Postfix) with ESMTP id B74928654
+	for <opensuse-factory@opensuse.org>; Thu, 20 Aug 2020 15:40:22 +0000 (UTC)
+Received: from mout.kundenserver.de (mout.kundenserver.de [212.227.17.13])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange ECDHE (P-256) server-signature RSA-PSS (4096 bits) server-digest SHA256)
+	(No client certificate requested)
+	by mx1.opensuse.org (Postfix) with ESMTPS
+	for <opensuse-factory@opensuse.org>; Thu, 20 Aug 2020 15:40:22 +0000 (UTC)
+Received: from 'smile.earth' ([95.88.238.127]) by mrelayeu.kundenserver.de
+ (mreue107 [212.227.15.183]) with ESMTPSA (Nemesis) id
+ 1MDgtl-1jyeJt1URj-00AnqJ for <opensuse-factory@opensuse.org>; Thu, 20 Aug
+ 2020 17:40:22 +0200
+X-Virus-Scanned: amavisd at 'smile.earth'
+From: Hans-Peter Jansen <hpj@urpla.net>
+To: opensuse-factory@opensuse.org
+Subject: [opensuse-factory] Wanted: Tumbleweed 20200807 dvd iso
+Date: Thu, 20 Aug 2020 17:40:21 +0200
+Message-ID: <1831309.nVGKmeHnSu@xrated>
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7Bit
+Content-Type: text/plain; charset="us-ascii"
+X-Provags-ID: V03:K1:4utujCkWLHsO8il0Ft+O/RD2eVYJ5ha0/BfkAG6Qhtw+ai1BFgX
+ NMj4sqLQ+iSl9MlYCaRTrsXWCpvcC2ykdhdeDvhDtFdNkejC0i1nV3fSFb0BnPIm850zvQB
+ OOteterPpred+8olUYEd8fWY35Z7zaT/a5wJhy+1U//5VtAP7EK4Ao4b3YZsaHDVXWmOK8h
+ DHl2nsNTqhCyXvAEG6ZBw==
+X-UI-Out-Filterresults: notjunk:1;V03:K0:lKX5yVozUoI=:ldeIsEdJkoRRCPJ1Q5YlNc
+ ex0MQ5RdgLTsPiN57k9xy8foevG3V8UeDl9rgl2an62De1InmwtX0g/oS/GSOwMgxY0N06u+d
+ jtfafYHu/ZMBdYUjGz1dCYS7ivJZ1YWjB83Z99gV+92Jky2vDu+mZ4u+A+A65qghj8Riq0JKJ
+ ZJV8zHi5oAvRll8nIwJvWer3R7U7f3udJ+l/QpDG+Z5d+sF1r9J+iaBFdZnoylZ7LuKsaPW5Q
+ +9QwRtBn5L36fjcZJLDdf2aYp/dcluDL13p5Nl5o9MOqA7+WJ4ljl/lM5UU25LjHN0p1OwZ8X
+ BcfuhQKRyHwrthGCYUPv3nPGbv12uQnLs5lr6SOmAX92ieIwW9jIvkOwp8lQQJfy9wG+1rZe3
+ NAbd7CGgVrdfuM4q3nmhQkLm0cBd/SkT7jz4la5n6s7JFyDhHaFfoqv9/JLCbRKpt7kPFIGG8
+ dL/cpMQwq2fzpCnHtFJEVlh5Q0FAZNLZ6NmFLRvRlqL6KCEDwuytBZWq2fvguX20myepDILWa
+ 5YTkEoUPwk7PMUbhmZIt0abejFHyTDIIXiA8xiJ2xcAqrU8Gra9DELDxHzAAoE98aJsAnNZ0Z
+ z4JUh1F3vVH9Lh/QVBVZK240ErR5fguIDdt82z+FSnUfKwd74Euk7kEB7GsQDny0Z5JL4cYP7
+ mx8VCDMTXGfegeIKE5fpX1Mze9RYKbp9KWsUviZuevvsp1FLhDI9fD8Y64fpqkvexTJq0Bumb
+ 9Zll+vDMQ1VJCm4GpDcc23Sl4GO4CteobRc3G+0vow5DmmDUwOAH3/MHxpsQgrDwzfIyMpfC2
+ uBzm477qoNMIKVkG0umxKaLso9x5ONeEvbHr7uNHKRVYDaZyBoPEKXpqDQjnum7caQVk92L
+
+Hi,
+
+are older ISOs of Tumbleweed available anywhere?
+
+Looking for 20200807, since that's the last one, that features a 5.7 kernel 
+(Virtualbox bust..)
+
+Pete
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

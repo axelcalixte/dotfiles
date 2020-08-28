@@ -1,0 +1,139 @@
+Return-Path: <opensuse-factory+bounces-96045-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 770178273C; Sat, 15 Aug 2020 06:43:20 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.0 required=5.0 tests=BAYES_00,DKIM_ADSP_CUSTOM_MED,
+	DKIM_SIGNED,FREEMAIL_FROM,MAILING_LIST_MULTI,RCVD_IN_DNSWL_NONE,
+	RDNS_NONE,T_DKIM_INVALID,URIBL_BLOCKED shortcircuit=_SCTYPE_
+	autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id C1EB8824F9
+	for <axelcalixte@cock.li>; Sat, 15 Aug 2020 06:43:15 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.b="jZUYQZ56";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 0D88D219F3
+	for <axelcalixte@cock.li>; Sat, 15 Aug 2020 06:43:15 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 409AD10E2C;
+	Sat, 15 Aug 2020 06:42:39 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from mx1.opensuse.org (unknown [192.168.47.95])
+	by lists5.opensuse.org (Postfix) with ESMTP id 28C1410E2C
+	for <opensuse-factory@lists5.opensuse.org>; Sat, 15 Aug 2020 06:42:39 +0000 (UTC)
+Received: from mx1.opensuse.org (localhost [127.0.0.1])
+	by mx1.opensuse.org (Postfix) with ESMTP id 0DB6B8469
+	for <opensuse-factory@opensuse.org>; Sat, 15 Aug 2020 06:43:14 +0000 (UTC)
+Received: from mail-ed1-x534.google.com (mail-ed1-x534.google.com [IPv6:2a00:1450:4864:20::534])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits)
+	 key-exchange ECDHE (P-256) server-signature RSA-PSS (4096 bits) server-digest SHA256)
+	(No client certificate requested)
+	by mx1.opensuse.org (Postfix) with ESMTPS
+	for <opensuse-factory@opensuse.org>; Sat, 15 Aug 2020 06:43:14 +0000 (UTC)
+Received: by mail-ed1-x534.google.com with SMTP id l23so8414356edv.11
+        for <opensuse-factory@opensuse.org>; Fri, 14 Aug 2020 23:43:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=message-id:subject:from:to:date:user-agent:mime-version
+         :content-transfer-encoding;
+        bh=8B3ZI48D6SwN6jwXB5WRcnuv7nVtLnm7AzP3muhZ1ec=;
+        b=jZUYQZ56kJ1hUAUBR4ark5DIysKMZmtHISFRpS0IqR4FHHJk8bb4qbMv4cQu2Fb4Ex
+         pZdq6EuoFJkZNwU3t8HIrruLbAtdNGJhsk3XlLk/hGoUcED68sOBS45Ju+CXFGnZlqAs
+         QoojeYh8cc7pXoW/feu90RzzmkO1DIzncvyVryNARkHUZ3xaP+KxmSTqsOJOhBiAvZPu
+         eEYSK8QczaydDFb53TRf2fVVd3u5K64CYiU1iHPzqCBo2jUwyuYz0MnCPQfeT0C18fJ6
+         hsXr/4xZDKEou6qeOKD2wHK80cGgW2g5OQkc9QpKligtgmIZP4PL/qTlSptDryiI4qcE
+         +Jyw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:message-id:subject:from:to:date:user-agent
+         :mime-version:content-transfer-encoding;
+        bh=8B3ZI48D6SwN6jwXB5WRcnuv7nVtLnm7AzP3muhZ1ec=;
+        b=kTil9R4kSA+7ZKnX3P/XpYP6U+WYB1Pqv8utByeMkSI5ntcOEhBJKxg/BiNqigBdVd
+         m9cZVjOhxBXfWFHovQkQ0PijntwfYtoss+S9jGd9xYReb00Fw6v7VcvZ8MykSbVknmtI
+         4D9Np/i8BDFMmxrvuCCxMfSS8CGUx+lb3URDStIL7QCt3bfQFzGOh+fYgkvzV0iABnFk
+         M1xMeRf2x4E18SnjeGOw4FtuFAvFgDHsoSrjp4e1yLHQ9Zg3KU44s6bprvh1E9GDg3Rg
+         tVxgM13CFubRMq/cQBgE/LeRbSXpmGhuzrSZHB2dBCpi4JtUrGsA3iRe70rOvjltB8Qt
+         +8Rw==
+X-Gm-Message-State: AOAM533p2qBST1jDwnikfgU2aAkw6zLmbcz6gL6LbPqD243dQ7WhHOWo
+	4ncESTG5h0HI8OwGv78nCBIlDNFwypE=
+X-Google-Smtp-Source: ABdhPJykcTkK9nO0YyxK8wPh5phhQrEiKPQIPUrDy0tkGJ5lSMJpVG54EElPKYWg7xs6jKmFIYqOHg==
+X-Received: by 2002:a50:d80b:: with SMTP id o11mr5621728edj.148.1597473793302;
+        Fri, 14 Aug 2020 23:43:13 -0700 (PDT)
+Received: from [10.20.4.4] ([46.140.103.10])
+        by smtp.gmail.com with ESMTPSA id y13sm7540689eds.64.2020.08.14.23.43.12
+        for <opensuse-factory@opensuse.org>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 14 Aug 2020 23:43:12 -0700 (PDT)
+Message-ID: <df9f3a0ac7e7c536b4b34df83c16d869bf71510c.camel@gmail.com>
+Subject: [opensuse-factory] Convert from classic to transactional server?
+From: seroton10@gmail.com
+To: opensuse-factory@opensuse.org
+Date: Sat, 15 Aug 2020 08:43:11 +0200
+Content-Type: text/plain; charset="UTF-8"
+User-Agent: Evolution 3.36.5 
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+When installing openSUSE (any flavour), the installer offers a choice
+between the "server" and "transactional server" roles, among others.
+
+If I choose to install using the "server" role, is there a (supported)
+procedure by which I can later convert it into a "transactional
+server"? (Assume using btrfs for /, and having snapshots.)
+
+
+I tried to do this conversion on a test system running openSUSE Leap
+15.2 as follows:
+
+ * run "zypper install patterns-base-transactional_base"
+ * edit /etc/fstab to make root read-only
+ * reboot
+
+This appears to work: The system self-updates, and reboots when needed;
+/etc has been turned into an overlay filesystem; and zypper up tells me
+to use the transactional-update tool.
+
+
+However, one of the packages installed during the conversion is "read-
+only-root-fs", and its description contains a rather stern warning:
+
+   Files, scripts and directories to run the system with a
+   read-only root filesystem with /etc writeable via overlayfs.
+
+   This package should never be installed in an already running
+   system! It should only be selected by a system role for a
+   read-only root filesystem with transactional updates.
+   The package will create / modify entries for mounting /etc and /var.
+   Those entries are used by dracut to mount the overlay file systems
+   during the early boot phase.
+
+After reading this, I ask myself, was it just dumb luck that the test
+system wasn't destroyed during the conversion? What can/does go wrong
+if read-only-root-fs is installed in an already running system, against
+the advice given?
+
+Any clarification on this would be much appreciated.
+
+
+Regards,
+Olav
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

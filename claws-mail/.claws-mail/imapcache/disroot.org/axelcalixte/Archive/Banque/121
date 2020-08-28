@@ -1,0 +1,525 @@
+Return-Path: <contact@info-client.hellobank.fr>
+Delivered-To: axelcalixte@disroot.org
+Received: from localhost (localhost [127.0.0.1])
+	by disroot.org (Postfix) with ESMTP id 646AF529D2
+	for <axelcalixte@disroot.org>; Wed, 19 Aug 2020 15:35:48 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at disroot.org
+Received: from knopi.disroot.org ([127.0.0.1])
+	by localhost (disroot.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id RuI_pk7uueV5 for <axelcalixte@disroot.org>;
+	Wed, 19 Aug 2020 15:35:44 +0200 (CEST)
+Received: from vmta-246-216.sfsmtp.net (vmta-246-216.sfsmtp.net [185.26.246.216])
+	by disroot.org (Postfix) with ESMTPS id A607C529DD
+	for <axelcalixte@disroot.org>; Wed, 19 Aug 2020 15:34:27 +0200 (CEST)
+Authentication-Results: disroot.org;
+	dkim=pass (1024-bit key; unprotected) header.d=info-client.hellobank.fr header.i=contact@info-client.hellobank.fr header.b="EheJXiF1";
+	dkim-atps=neutral
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=emv; d=info-client.hellobank.fr;
+ h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:List-Unsubscribe:List-Id; i=contact@info-client.hellobank.fr;
+ bh=MncYqJyQPBxSac9HVGW2Szcq0yY=;
+ b=EheJXiF1mq8Q64hGL7lLCzLKHkuEsaKdY9wmV+Nv3tlm/Rg+lFSFUYijwojbQdCcHXogzq9SUC+T
+   9sy3cSyN1khPS9WS7QO2XtV7KWu1wmaYqmNW4xOtrVbqlIiyFZA5TlJEFa1FXxJxfChkoF7gELMX
+   kljy1QFEh9BgkNxT0vg=
+Received: by vmta-246-216.sfsmtp.net id h7kl6a16758m for <axelcalixte@disroot.org>; Wed, 19 Aug 2020 15:34:26 +0200 (envelope-from <contact@info-client.hellobank.fr>)
+Date: Wed, 19 Aug 2020 15:34:26 +0200 (CEST)
+From: Hello bank! <contact@info-client.hellobank.fr>
+Reply-To: Hello bank! <ne-pas-repondre@hellobank.fr>
+To:  <axelcalixte@disroot.org>
+Message-ID: <2.1.74.1101059241.8382061.41891834218@info-client.hellobank.fr>
+Subject: Des nouveaux documents sont disponibles
+Mime-Version: 1.0
+Content-Type: text/html; charset=iso-8859-15
+Content-Transfer-Encoding: 8bit
+X-EMV-Platform: p9cce.campaigncommander.com$
+X-EMV-CampagneId: 8382061$
+X-EMV-MemberId: 41891834218$
+X-Feedback-ID: 1101059241:CC_74_8382061:2:sfocus
+List-Unsubscribe: <http://services.hellobank.fr/HD?b=R5cAh8jWluogI5hVCzOIUEVCla_aw50Gzz9d3m7JvFqeXeHlRYSi-d7ZXV4kfrJw&c=Ra3eZnCkVXsMSRet5Axz_Q>, <mailto:unsubscribe@info-client.hellobank.fr?subject=unsubscribe-74-R5cAh8jWluogI5hVCzOIUEVCla_aw50Gzz9d3m7JvFqeXeHlRYSi-d7ZXV4kfrJw/Ra3eZnCkVXsMSRet5Axz_Q>
+List-Id: <1101059241.74.1.1.list-id.info-client.hellobank.fr>
+
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!--[if gte mso 9]><xml> <o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--></head>
+
+<body bgcolor="#f6f6f6">
+	<table bgcolor="#f6f6f6" border="0" cellpadding="0" cellspacing="0" id="conteneur" style="table-layout:fixed;"
+		width="100%">
+		<tbody style="padding-bottom:10px">
+			<tr>
+				<td align="center">
+					<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="fluide" width="600">
+						<tbody>
+							<tr>
+								<td align="center" bgcolor="#f5f5f5" class="pm"
+									style="font-family:Arial, Helvetica, sans-serif; font-size:10px;color:#028eb0; padding-top:15px;">
+									&nbsp;Consultez-les dès maintenant sur votre espace client !</td>
+							</tr>
+							<tr>
+								<td align="center" bgcolor="#f5f5f5" class="pm"
+									style="font-family:Arial, Helvetica, sans-serif; font-size:10px;color:#696969; padding-bottom:20px;">
+									<a class="block" href="http://services.hellobank.fr/HM?b=R5cAh8jWluogI5hVCzOIUHrqFw_zM2BASsBQ-awV5sbe9gv7JU8hg1dp9GQaMQ5E&c=Ra3eZnCkVXsMSRet5Axz_Q"
+										style="color:#696969; text-decoration:underline;" target="_blank">Voir la
+										version en ligne</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="fluide" width="600">
+						<tbody>
+							<tr>
+								<td>
+									<table bgcolor="#445a71" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td>
+													<table border="0" cellpadding="0" cellspacing="0" class="mb"
+														width="100%">
+														<tbody>
+															<tr>
+																<td class="hide" width="50"></td>
+																<td class="mobile-only fluide" height="30"></td>
+																<td align="center" class="fluide" width="91">
+																	<a href="https://www.hellobank.fr"
+																		style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold;color:#ffffff; line-height:91px;"
+																		target="_blank"><img alt="Hello bank!"
+																			height="100"
+																			src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/logo_HBnouveauMessage.png"
+																			width="91" /></a>
+																</td>
+																<td class="hide" width="20"></td>
+																<td class="mobile-only fluide" height="20"></td>
+																<td align="left" class="ac fluide"
+																	style="font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:bold;color:#fff;">
+																	Vous avez un
+																	<br class="hide" /> nouveau message&nbsp;!</td>
+																<td class="mobile-only fluide" height="10"></td>
+																<td align="center" class="fluide" width="223"><img
+																		alt="" border="0" height="196"
+																		src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/header_HBnouveauMessage.jpg"
+																		style="display:block;" width="223" /></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#ffffff" height="40"></td>
+							</tr>
+							<tr>
+								<td align="left" class="pm"
+									style="font-family:Arial, Helvetica, sans-serif; font-size:14px;color:#696969; padding:0 40px 10px 40px;">
+									<strong>Hello,</strong>
+									<br />
+									<br /> De nouveaux documents (relevés de compte de dépôt, relevés de compte
+									d&rsquo;épargne ou de compte titre<span
+										style="color:#01a0c0;"><sup>(1)</sup></span>&hellip;), sont disponibles sur votre espace
+									client<span style="color:#01a0c0;"><sup>(2)</sup></span>.
+									<br /> Et comme avec Hello bank!, on fait tout pour vous suivre, vos documents sont
+									accessibles où que vous soyez<span style="color:#01a0c0;"><sup>(3)</sup></span>.
+									<br /> Consultez-les dès maintenant dans votre espace client sur le site internet ou
+									sur votre application Hello bank!.
+									<br />
+									<br />
+									<strong>Sur l&rsquo;appli<sup>**</sup> :</strong>
+									<br />
+									<br /> 1 &ndash; Cliquez sur « Mon espace »
+									<br /> 2 &ndash; Cliquez sur « Mes RIB, chèques & Documents » 
+									<br /> 3 &ndash; Rendez-vous dans l&rsquo;onglet, « Relevés »
+									<br />
+									<br />
+
+									<strong>Sur le site :</strong>
+									<br />
+									<br /> 1 &ndash; Cliquez sur votre nom en haut à droite
+									<br /> 2 &ndash; Cliquez sur « Mes documents »
+									<br /> 3 &ndash; Sélectionnez les documents que vous souhaitez consulter<br />
+									<br />Vous y trouverez un message important concernant l'évolution de votre convention de compte, et plus précisément la clause relative à  la résolution de vos litiges, applicable au 01/09/2020.<br />
+									<br /> Que vous ayez souscrit un ou plusieurs contrats Hello bank!, veuillez noter
+									que vous recevrez cette information dès la mise en ligne d&rsquo;un ou plusieurs
+									documents concernés<span style="color:#01a0c0;"><sup>(4)</sup></span>.
+									<br />
+									<br /> Restons en contact et à bientôt,
+									<br />
+									<br /> La Hello Team.
+									<br />
+									<br />
+							</tr>
+							<tr>
+								<td bgcolor="#ffffff" height="25"></td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="fluide" width="600">
+						<tbody>
+							<tr>
+								<td align="center">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td height="30" width="16"><img alt="" border="0" height="30"
+														src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/btnLeft_HBnouveauMessage.png"
+														style="display:block;" width="16" /></td>
+												<td align="center" bgcolor="#ff5a64" height="30"
+													style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; vertical-align:middle;">
+													<a href="https://www.hellobank.fr" style="text-decoration:none" target="_blank"><span
+															style="color:#ffffff; text-decoration:none;display:block; height:22px; padding:8px 20px 0px 20px;">C'est
+															parti !</span> </a></td>
+												<td height="30" width="16"><img alt="" border="0" height="30"
+														src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/btnRight_HBnouveauMessage.png"
+														style="display:block;" width="16" /></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td height="28"></td>
+							</tr>
+							<tr>
+								<td align="center"><img alt=" " class="fluide480"
+										src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/contact_separateur_HBnouveauMessage.png"
+										width="380" /></td>
+							</tr>
+							<tr>
+								<td height="25" style="font-size: 1px; line-height: 1px;"></td>
+							</tr>
+							<tr>
+								<td align="center"
+									style="font-family:Arial, Helvetica, sans-serif; font-size:20px; color:#415873; font-weight: bold; padding:0 10px 10px 10px; line-height: 24px;">
+									<img alt="Retrouvez-nous facilement" class="fluide480"
+										src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/retrouvezNousFacilement_HBnouveauMessage.png"
+										width="380" /></td>
+							</tr>
+							<tr>
+								<td height="25" style="font-size: 1px; line-height: 1px;"></td>
+							</tr>
+							<tr>
+								<td align="center"
+									style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#415873; font-weight: bold; line-height: 16px;">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td align="right" width="33.33%">
+													<a href="https://twitter.com/Hellobank_Fr"
+														style="color:#415873;"><img alt="@Hellobank_fr"
+															class="fluide480"
+															src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/contact_hellobank_fr_HBnouveauMessage.png" />
+													</a>
+												</td>
+												<td align="center" width="33.33%">
+													<a href=https://www.hellobank.fr/fr/chat-hb
+														style="color:#415873;"><img alt="Chat Helloïz" class="fluide480"
+															src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/contact_helloiz_HBnouveauMessage.png" />
+													</a>
+												</td>
+												<td align="left" width="33.33%">
+													<a href="https://www.hellobank.fr/fr/offre/compte-et-cartes/services-bancaires/appli-bancaire" style="color:#415873;"><img alt="Appli Hello bank!"
+															class="fluide480"
+															src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/contact_app_HBnouveauMessage.png" />
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td height="40" style="font-size: 1px; line-height: 1px;"></td>
+							</tr>
+							<tr>
+								<td align="center"
+									style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#415873; line-height: 10px;text-decoration: none; ">
+									<a href="https://fr-fr.facebook.com/HelloBankFr"
+										style="color:#415873;text-decoration: none; "><img alt="Facebook"
+											src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/contact_fb_HBnouveauMessage.png"
+											style="display: inline !important;" /></a>
+									<a href="https://twitter.com/Hellobank_Fr"
+										style="color:#415873;text-decoration: none; "><img alt="Twitter"
+											src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/contact_tw_HBnouveauMessage.png"
+											style="display: inline !important;" /></a>
+									<a href="https://www.instagram.com/hellobank/"
+										style="color:#415873;text-decoration: none; "><img alt="Instagram"
+											src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/contact_in_HBnouveauMessage.png"
+											style="display: inline !important;" /></a>
+									<a href="https://www.youtube.com/user/HelloBankFr"
+										style="color:#415873;text-decoration: none; "><img alt="Youtube"
+											src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/contact_yt_HBnouveauMessage.png"
+											style="display: inline !important;" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td height="35"></td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<table width="600" bgcolor="#ffffff" class="fluide" border="0" cellspacing="0" cellpadding="0">
+
+						<tr>
+							<td style="padding-bottom:20px;" align="center">
+								<table class="mb" style="border-top:2px solid #ff5a64;" width="560" cellspacing="0"
+									cellpadding="0" border="0" bgcolor="#f6f6f6">
+									<tbody>
+										<tr>
+											<td class="pm"
+												style="font-family:Arial, Helvetica, sans-serif; font-size:12px;color:#ffffff;padding:8px 0;"
+												bgcolor="#ff5a64" align="center">Découvrez les <a
+													href="https://www.hellobank.fr/fr/client/espace-securise"
+													target="_blank"
+													style="color:#ffffff; text-decoration:underline;">bonnes
+													pratiques</a> à appliquer pour éviter le piratage sur Internet.</td>
+										</tr>
+										<tr>
+											<td class="pm" style="font-size: 1px; line-height: 1px;" valign="top"
+												height="20" align="center"><img
+													src="https://www.hellobank.fr/rsc/contrib/image/emailing/emails_permanents/fleche_HBnouveauMessage.png"
+													alt=" " style="display:block;" border="0"></td>
+										</tr>
+										<tr>
+											<td align="center">
+
+												<table width="100%" cellspacing="0" cellpadding="0" border="0">
+													<tbody>
+														<tr>
+															<td width="50%" valign="top" align="center">
+																<table width="100%" cellspacing="0" cellpadding="0"
+																	border="0">
+																	<tbody>
+																		<tr>
+																			<td style=" font-family:Arial, Helvetica, sans-serif;font-size:07px;color:#696969;"
+																				align="center">
+																				<img src="https://www.hellobank.fr/rsc/contrib/image/emailing/emails_permanents/code_HBnouveauMessage.jpg"
+																					alt="Code personnel" width="30"
+																					height="28">
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="pm"
+																				style="font-family:Arial, Helvetica, sans-serif; font-size:12px;color:#696969;padding: 8px 20px 20px 20px;"
+																				align="center">
+																				Indiquez vos <strong>codes
+																					personnels&nbsp;</strong> seulement
+																				sur votre <strong>Espace&nbsp;Client
+																					Hello&nbsp;bank!</strong>.
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<table width="90%" cellspacing="0" cellpadding="0" border="0">
+													<tbody>
+														<tr>
+															<td style="font-size: 0.1px; border-top: 1px solid #d4d4d4"
+																height="1">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												<table width="100%" cellspacing="0" cellpadding="0" border="0">
+													<tbody>
+														<tr>
+															<td width="50%" valign="top" align="center">
+																<table width="100%" cellspacing="0" cellpadding="0"
+																	border="0">
+																	<tbody>
+																		<tr>
+																			<td style="font-size: 0.1px;" height="10">
+																				&nbsp;</td>
+																		</tr>
+																		<tr>
+																			<td class="ha"
+																				style=" font-family:Arial, Helvetica, sans-serif;font-size:07px;color:#696969;"
+																				height="28" align="center">
+																				<img src="https://www.hellobank.fr/rsc/contrib/image/emailing/emails_permanents/croix_HBnouveauMessage.jpg"
+																					alt="Informations confidentielles"
+																					width="22" height="22">
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="pm"
+																				style="font-family:Arial, Helvetica, sans-serif; font-size:12px;color:#696969;padding:8px 20px 20px 20px;"
+																				align="center">
+																				Ne communiquez pas
+																				<strong>d&rsquo;informations
+																					confidentielles</strong> par email,
+																				<strong> sur les réseaux sociaux ou sur
+																					un site Internet non
+																					sécurisé.</strong>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+															<td style="vertical-align:middle;" width="1">
+																<table width="1" cellspacing="0" cellpadding="0"
+																	border="0" bgcolor="#cecece">
+																	<tbody>
+																		<tr>
+																			<td class="separ"
+																				style="line-height:1px;font-size:1px;"
+																				height="50">
+																				&nbsp;
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+															<td class="w130" width="50%" valign="top" align="center">
+																<table width="100%" cellspacing="0" cellpadding="0"
+																	border="0">
+																	<tbody>
+																		<tr>
+																			<td style="font-size: 0.1px;" height="10">
+																				&nbsp;</td>
+																		</tr>
+																		<tr>
+																			<td class="ha"
+																				style=" font-family:Arial, Helvetica, sans-serif;font-size:07px;color:#696969;"
+																				height="28" align="center">
+																				<img src="https://www.hellobank.fr/rsc/contrib/image/emailing/emails_permanents/contact_HBnouveauMessage.jpg"
+																					alt="Joignables" width="23"
+																					height="23">
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="pm"
+																				style="font-family:Arial, Helvetica, sans-serif; font-size:12px;color:#696969; padding: 8px 20px 20px 20px;"
+																				align="center">
+																				En cas de doute
+																				<br><strong>contactez-nous
+																				</strong>au<strong>
+																					01&nbsp;43&nbsp;63&nbsp;15&nbsp;15*&nbsp;</strong>
+																				6j/7 de 8h&nbsp;à&nbsp;22h en semaine et
+																				de 8h&nbsp;à&nbsp;18h le samedi.</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td class="pm justify" align="left"
+								style="font-family:Arial, Helvetica, sans-serif; font-size:14px;color:#696969; padding:0 18px;">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tbody>
+										<tr>
+											<td height="20"><img alt="" border="0" height="20"
+													src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/px.gif"
+													style="display: block;" title="" width="1" /></td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" class="pm justify"
+								style="font-family:Arial, Helvetica, sans-serif; font-size:12px;color:#696969; padding:0 18px 20px 18px;"><span
+									style="color:#01a0c0;">*</span> Appel non surtaxé.
+								<br />
+					
+								<br />
+								<span style="color:#01a0c0;">**</span> Co&ucirc;t de connexion selon op&eacute;rateur.
+								<br />
+								<br />
+								<span style="color:#01a0c0;"><sup>(1)</sup></span> Liste des documents concernés à ce jour, en fonction de
+								vos contrats Hello bank!: Relevés de compte de dépôt, relevés de compte et livrets d&rsquo;épargne, relevés
+								de compte titre, relevés de compte PEA, Avis d&rsquo;exécution, Synthèses, Récapitulatifs annuels des frais
+								bancaires.
+								<br />
+								<span style="color:#01a0c0;"><sup>(2)</sup></span> Abonnement à des services de banque à distance (internet,
+								téléphone fixe, SMS, etc.) : gratuit et illimité, hors coût de communication ou de fourniture d&rsquo;accès
+								à internet et hors Service d&rsquo;alertes par SMS.
+								<br />
+								<span style="color:#01a0c0;"><sup>(3)</sup></span> En utilisant l&rsquo;application Hello bank!, sous
+								réserve de disposer d&rsquo;une connexion internet suffisante.
+								<br />
+								<span style="color:#01a0c0;"><sup>(4)</sup></span> Lorsque plusieurs documents sont mis à disposition dans
+								votre espace sécurisé le même jour, vous ne recevrez qu&rsquo;une seule information pour l&rsquo;ensemble de
+								ces documents, quels que soient les contrats concernés.
+								<br />
+								<br /> Veuillez noter que cet email a été envoyé à partir d'une adresse ne pouvant recevoir d'emails.
+								<br />
+								<br />
+								<strong>Hello&nbsp;bank! est l'offre 100% digitale de BNP&nbsp;Paribas&nbsp;SA </strong>
+								<br /> BNP&nbsp;Paribas&nbsp;SA
+								<br /> Siège social&nbsp;: 16,&nbsp;boulevard&nbsp;des&nbsp;Italiens - 75009&nbsp;Paris
+								<br /> Immatriculée sous le n°662&nbsp;042&nbsp;449 RCS&nbsp;Paris
+								<br /> ORIAS n°07&nbsp;022&nbsp;735 <a href="https://www.orias.fr/"
+									style="color:#4a4a4a; text-decoration:underline;" target="_blank">www.orias.fr</a>
+								<br />
+								<br /> Hello&nbsp;bank! (Contestations/réclamations)&nbsp;: 01&nbsp;43&nbsp;63&nbsp;15&nbsp;15 (Appel non
+								surtaxé) - <a href="http://www.hellobank.fr" style="color:#4a4a4a; text-decoration:underline;"
+									target="_blank">www.hellobank.fr</a> (Coût de connexion selon opérateur).</td>
+						</tr>
+						
+		</tbody>
+	</table>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+	</td>
+	</tr>
+	</tbody>
+
+	</td>
+	</tr>
+	<tr>
+		<td height="15" style="line-height: 1px; font-size: 1px;"><img alt="" height="15"
+				src="https://www.hellobank.fr/rsc/contrib/image/email/gestion/px.gif" style="display: block;" title=""
+				width="1" /></td>
+	</tr>
+	</tbody>
+	</table>
+	<img alt="" border="0" height="1" src="https://ib.adnxs.com/getuid?http://insight.tradelab.fr/emailopen.php?uid=$UID&amp;email=NULL&amp;seg=7423063&amp;advid=1448684" style="display:block;" width="1" />
+<div class="gmailfix" style="white-space:nowrap; font:15px courier; line-height:0;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+<img src="http://services.hellobank.fr/HO?p0_tZrmHFG-7cTW9gQy-CDvsv7_3-3JfUDiCeWStBEmjMQ2DZzDh8WdUw6NM7HKW/Ra3eZnCkVXsMSRet5Axz_Q.gif" border="0" alt="" width="1" height="1" /></body>
+</html>

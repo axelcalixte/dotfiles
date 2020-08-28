@@ -1,0 +1,123 @@
+Return-Path: <opensuse-factory+bounces-95885-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id A6B1882526; Sun, 26 Jul 2020 19:02:28 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.7 required=5.0 tests=BAYES_50,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,RDNS_NONE,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 06D1A82512
+	for <axelcalixte@cock.li>; Sun, 26 Jul 2020 19:02:24 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 51D982200E
+	for <axelcalixte@cock.li>; Sun, 26 Jul 2020 19:02:23 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 6790B10E1C;
+	Sun, 26 Jul 2020 19:02:12 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 501E610E1C
+	for <opensuse-factory@lists5.opensuse.org>; Sun, 26 Jul 2020 19:02:12 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id 1D59B2C171
+	for <opensuse-factory@lists5.opensuse.org>; Sun, 26 Jul 2020 19:02:20 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id KPwhDO5WKU3q for <opensuse-factory@lists5.opensuse.org>;
+	Sun, 26 Jul 2020 19:02:14 +0000 (UTC)
+Received: from mx1.suse.de (unknown [149.44.161.67])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 93D652C15D
+	for <opensuse-factory@lists5.opensuse.org>; Sun, 26 Jul 2020 19:02:14 +0000 (UTC)
+Received: from elasmtp-kukur.atl.sa.earthlink.net (elasmtp-kukur.atl.sa.earthlink.net [209.86.89.65])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx1.suse.de (Postfix) with ESMTPS id 950A1AC75
+	for <opensuse-factory@opensuse.org>; Sun, 26 Jul 2020 19:02:04 +0000 (UTC)
+Received: from [24.75.148.33] (helo=[192.168.0.11])
+	by elasmtp-kukur.atl.sa.earthlink.net with esmtpa (Exim 4)
+	(envelope-from <mrmazda@earthlink.net>)
+	id 1jzluZ-000D2Y-Ci
+	for opensuse-factory@opensuse.org; Sun, 26 Jul 2020 15:02:15 -0400
+Subject: Re: [opensuse-factory] Flickering screen (and worse)
+To: opensuse-factory@opensuse.org
+References: <ecbb1bde-29ed-6189-741a-8ead3abd189b@WalkerStreet.info>
+ <275199df123386c0545b23bd59503309fd00920f.camel@opensuse.org>
+ <c96f01b6-4458-934b-b2fe-39a8ccdf9a4b@WalkerStreet.info>
+From: Felix Miata <mrmazda@earthlink.net>
+Organization: less than infinite
+Message-ID: <ffdcca7b-667e-65dc-1e17-c531dfb377e6@earthlink.net>
+Date: Sun, 26 Jul 2020 15:02:15 -0400
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101
+ SeaMonkey/2.49.5
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+In-Reply-To: <c96f01b6-4458-934b-b2fe-39a8ccdf9a4b@WalkerStreet.info>
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-ELNK-Trace: 7235c9a3853724b974bf435c0eb9d478e3a5161f04cb9dee730c30e30841d0a87b9d5a4069d3327d350badd9bab72f9c350badd9bab72f9c350badd9bab72f9c
+X-Originating-IP: 24.75.148.33
+
+David Walker composed on 2020-07-26 10:37 (UTC-0700):
+
+> Here's the output from "inxi -Gxx":
+> 
+>   Graphics:
+>     Device-1: Intel UHD Graphics 620 vendor: CLEVO/KAPOK driver: i915
+>     v: kernel bus ID: 00:02.0 chip ID: 8086:3ea0
+>     Device-2: Chicony Chicony USB2.0 Camera type: USB driver: uvcvideo
+>     bus ID: 1-7:3 chip ID: 04f2:b649
+>     Display: wayland server: X.org 1.20.8 compositor: gnome-shell
+>     driver: modesetting unloaded: fbdev,vesa alternate: intel
+>     resolution: <xdpyinfo missing>
+
+Most installations include this. Did you start with a minimal installation and
+keep recommends disabled? It's a small and useful utility for X diagnosis.
+
+>     OpenGL: renderer: Mesa DRI Intel UHD Graphics 620 (WHL GT2)
+>     v: 4.6 Mesa 20.1.3 compat-v: 3.0 direct render: Yes
+
+> I'll try switching to the Intel DDX after resolving Atri's suggestion. I
+> currently have xorg-x11-driver-video installed and the following
+> xf86-video-*  packages:
+
+>   xf86-video-fbdev
+>   xf86-video-vesa
+
+Those are crude, useful mainly as fallbacks for diagnosis and repai.
+
+> Am I right that I can switch to the Intel DDX by just installing
+> xf86-video-intel?
+
+That's how it has always worked for me. /etc/X11/xorg_pci_ids/modesetting_ids
+supposedly exists to be able to override it, but it has only ever been a 2 byte
+placeholder for me.
+
+> I notice there's also xf86-video-intel-32bit; is there
+> a reason it should be installed, too?
+
+I didn't know it existed. I suppose Wine users might benefit from it.
+-- 
+Evolution as taught in public schools is religion, not science.
+
+ Team OS/2 ** Reg. Linux User #211409 ** a11y rocks!
+
+Felix Miata  ***  http://fm.no-ip.com/
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

@@ -1,0 +1,139 @@
+Return-Path: <opensuse-factory+bounces-95934-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 0933C823DC; Mon,  3 Aug 2020 14:31:32 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.5 required=5.0 tests=BAYES_40,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,RDNS_NONE,
+	T_TVD_MIME_EPI,URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled
+	version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 6F35182747
+	for <axelcalixte@cock.li>; Mon,  3 Aug 2020 14:31:26 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 6CCFC217F6
+	for <axelcalixte@cock.li>; Mon,  3 Aug 2020 14:31:25 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 5F19F10E2C;
+	Mon,  3 Aug 2020 14:31:03 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 4E13910E2C
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 14:31:03 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id 3E74E2C164
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 14:31:27 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id d2CCUApHS-RD for <opensuse-factory@lists5.opensuse.org>;
+	Mon,  3 Aug 2020 14:31:21 +0000 (UTC)
+Received: from mx1.suse.de (unknown [149.44.161.67])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 9408B2C15D
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 14:31:21 +0000 (UTC)
+Received: from outbound.soverin.net (outbound.soverin.net [116.202.65.215])
+	(using TLSv1.2 with cipher ADH-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx1.suse.de (Postfix) with ESMTPS id C37E9ACB8;
+	Mon,  3 Aug 2020 14:31:02 +0000 (UTC)
+Received: from smtp.freedom.nl (unknown [10.10.3.36])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(No client certificate requested)
+	by outbound.soverin.net (Postfix) with ESMTPS id 0A20E60539;
+	Mon,  3 Aug 2020 14:31:17 +0000 (UTC)
+Received: from smtp.freedom.nl (smtp.freedom.nl [116.202.65.211]) by soverin.net
+Date: Mon, 3 Aug 2020 16:31:04 +0200
+From: "H.Merijn Brand" <linux@tux.freedom.nl>
+To: Cristian =?UTF-8?B?Um9kcsOtZ3Vleg==?= <crrodriguez@opensuse.org>
+Cc: OS-fctry op <opensuse-factory@opensuse.org>
+Subject: Re: [opensuse-factory] ... tmpfs
+Message-ID: <20200803163104.5026e7ef@pc09.procura.nl>
+In-Reply-To: <CAPBLoAd9+x0F2WEeU+D-had-crZOfSEzRG7__3XdBZJJhuO0Cg@mail.gmail.com>
+References: <trinity-5317f446-6c6d-4d6e-8ddc-ae2bd32072f8-1596443488597@3c-app-gmx-bap18>
+	<20200803095219.3BDB3159D421@mta-5-out.mta.xion.oxcs.net>
+	<20200803120843.2b168ab5@pc09.procura.nl>
+	<CAPBLoAd9+x0F2WEeU+D-had-crZOfSEzRG7__3XdBZJJhuO0Cg@mail.gmail.com>
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+X-Virus-Status: Clean
+Content-Type: multipart/signed; micalg=pgp-sha256;
+ boundary="Sig_/h/M3YqUkURW0F9N=FzzPEFk"; protocol="application/pgp-signature"
+
+--Sig_/h/M3YqUkURW0F9N=FzzPEFk
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+On Mon, 3 Aug 2020 10:15:17 -0400, Cristian Rodr=C3=ADguez
+<crrodriguez@opensuse.org> wrote:
+
+> On Mon, Aug 3, 2020 at 6:08 AM H.Merijn Brand <linux@tux.freedom.nl>
+> wrote:
+>=20
+> > Is it plausible to have /tmp =3D tmpfs with a service that depends on
+> > /tmp that mounts /tmp/whatever to /opt/product/workspace on boot? =20
+>=20
+> Just use bind mounts if this a regular user app
+>  or systemd unit setting TemporaryFileSystem=3D if this is a service.
+>=20
+> > If I can setup such a scheme in a reliable way, I think that I can
+> > workaround the problems I mentioned with legacy products wanting to
+> > write files to /tmp (and persist there) =20
+>=20
+> I assume that this legacy products cannot be fixed...because it they
+> could be..you better do that and operate under the expected
+> constraints: "programs should not assume that files in /tmp persist
+> between invocations" (currently the system is forgiving and will
+> persist until next reboot (unless it is a system service with
+> privatetmp on) but again nothing should depend on this
+> implementation-specific detail)
+
+It is even worse for one product: it supports $TMPDIR (yeah) but not
+for all files used (WTF?). Another issue I need sudo for is that it
+requires a hard-coded path in /usr. I need to make a symbolic link
+there to escape of that idiot stupidity.
+
+As the company of that product does not exist anymore (at least not
+in terms of maint or support) there is no chance of getting that fixed
+
+I will investigate bind mounts!
+
+--=20
+H.Merijn Brand  http://tux.nl   Perl Monger  http://amsterdam.pm.org/
+using perl5.00307 .. 5.31      porting perl5 on HP-UX, AIX, and Linux
+https://useplaintext.email  https://tux.nl  http://www.test-smoke.org
+http://qa.perl.org   http://www.goldmark.org/jeff/stupid-disclaimers/
+
+--Sig_/h/M3YqUkURW0F9N=FzzPEFk
+Content-Type: application/pgp-signature
+Content-Description: OpenPGP digital signature
+
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEGolmczWuFi3lJEbAA6FHoT5dwJgFAl8oH6gACgkQA6FHoT5d
+wJiMGQf9F7hCnffzz7KSHBXFBaA2F4ba9v73IKzSewRWprECL7kkj5/dWLRYVt2M
+trlpVgBqwj+V3j1U/7o0i1e2KUcdaDFO4wxnS4furKr1dfUG1WThGZZT3OnRAcgW
+yF06E09D9udX2VRqAqzjjFCsApMMVYAMS/NppHH8UQY6PaO++otOlr83LwryWcld
+E7DVpjxFdnIcvxWgIqwhMFhbXffrHbnpeyp5E4EHLceQGcq3ey9BwVN7csXa22su
+D4W4C3UDh9EP8/5dpjERwCLQBUr0ghciULofbl9UfoOWDTV23GV6NIYEI2tn4eZS
+euSGinKpVv624QcfFx+DsHM6loCvqg==
+=4Usp
+-----END PGP SIGNATURE-----
+
+--Sig_/h/M3YqUkURW0F9N=FzzPEFk--
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

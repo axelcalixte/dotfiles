@@ -1,0 +1,148 @@
+Return-Path: <opensuse-factory+bounces-95901-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 4135381D7C; Fri, 31 Jul 2020 03:51:14 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.0 required=5.0 tests=BAYES_00,DKIM_ADSP_CUSTOM_MED,
+	DKIM_SIGNED,FREEMAIL_FROM,MAILING_LIST_MULTI,RCVD_IN_DNSWL_NONE,
+	RDNS_NONE,T_DKIM_INVALID,URIBL_BLOCKED shortcircuit=_SCTYPE_
+	autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id 225B9825CF
+	for <axelcalixte@cock.li>; Fri, 31 Jul 2020 03:51:09 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.b="uYhQ0VmI";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 15E9021846
+	for <axelcalixte@cock.li>; Fri, 31 Jul 2020 03:51:08 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id E93DD11B93;
+	Fri, 31 Jul 2020 03:50:49 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id DBB0111B93
+	for <opensuse-factory@lists5.opensuse.org>; Fri, 31 Jul 2020 03:50:49 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id 0AE1F2C15C
+	for <opensuse-factory@lists5.opensuse.org>; Fri, 31 Jul 2020 03:51:10 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id BtGog-PWK04c for <opensuse-factory@lists5.opensuse.org>;
+	Fri, 31 Jul 2020 03:51:04 +0000 (UTC)
+Received: from mx1.suse.de (unknown [149.44.161.67])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id AD9202C17B
+	for <opensuse-factory@lists5.opensuse.org>; Fri, 31 Jul 2020 03:50:52 +0000 (UTC)
+Received: from mail-io1-f53.google.com (mail-io1-f53.google.com [209.85.166.53])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mx1.suse.de (Postfix) with ESMTPS id B6849ACB8
+	for <opensuse-factory@opensuse.org>; Fri, 31 Jul 2020 03:50:35 +0000 (UTC)
+Received: by mail-io1-f53.google.com with SMTP id s189so23206578iod.2
+        for <opensuse-factory@opensuse.org>; Thu, 30 Jul 2020 20:50:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=lU/l8H5pQlBudkrEP7kJfT1qnq1M61bVHW1p0hNmyOM=;
+        b=uYhQ0VmIUkDFLaYqD2L8wYgP12f5Ops7dCvlmEYAJaeJdjD8HEpfYj7Oworh5uzl2U
+         Ni0/8qIy3ZWofz5ozWy8hsvPeUTP/TtxohjbysucN7z0WjNLhiwujibn5w1u28jUrIzu
+         2z7i4iHzpJhvl1KolIhDYmXisI/RFCyDN13B2DQi8GkwEeN3/dxdvk0UdgonP8KJVG89
+         JWv7BHdYzYjlntK5nruP/mGEmzwVjSQAh8Gbcg89R8ozNjKFzheC/2j7D6g/vZY1VzQo
+         CgQreAjo+UxLRiU6QG28UYDhoXzSUvZyHic973TYVpXPml6GnK+TbHBomBWVqwnyPoS3
+         abIw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=lU/l8H5pQlBudkrEP7kJfT1qnq1M61bVHW1p0hNmyOM=;
+        b=G4cI4dyIyTDjv8BDlE6VqwWECgDt06f6H4b5GlgE3kP6h0nBex4bf/nIRgh3sEfU80
+         XqeIyyKkMP4UmS5BS8T8K/s9GLET15WQ0b0ethYsIH1p7Esd6ib2D+bjiZlgUiyLyJp9
+         hh/YFsKLfyMZGKuk+dUbB1uQL08wNLzXPC7GK4A9eqjC5W1v+tO1MTt7+awz5K0YKpPV
+         VO2kHh3hMar1B/utUMqoP6cwyHzV8yu380XouXEwoqr0PViECTXYD2XLpzD/LW1XbUVY
+         7yZ0HhLUFB3OOdzbuMtPMYb6F+x+2BKgjba5vktExdvsDngZPme76cePCfwuOf1q9Apj
+         /Bdw==
+X-Gm-Message-State: AOAM530EaA1OHpjblP0bYucco9hhSE56EuOCl6ssPaq48CHPRE/JK9uq
+	MRLW5aET2g+VdPiRAIi90dWZZNIr7XmKJrreiRYtKy7X
+X-Google-Smtp-Source: ABdhPJwOpv/E0Szjp2FiEP+gZNYLurU0/B/OdNzBJxkQEdvONhnMcul2OaNjKyi/x759iaZsmKTp2gvoGDyfYwgKuGA=
+X-Received: by 2002:a6b:9354:: with SMTP id v81mr1739367iod.13.1596167448486;
+ Thu, 30 Jul 2020 20:50:48 -0700 (PDT)
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+From: Linux Kamarada <linuxkamarada@gmail.com>
+Date: Fri, 31 Jul 2020 00:50:37 -0300
+Message-ID: <CAGiRJVLFfvgmPhzvqyfsyJNtrXsW0Xz=NCQdkZsmv-WGEmEKfQ@mail.gmail.com>
+Subject: [opensuse-factory] Firefox - I think I have found a bug regarding locales/languages
+To: opensuse-factory <opensuse-factory@opensuse.org>
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi everyone!
+
+Last week I formatted my SSD, I installed openSUSE Leap 15.2
+(actually, a development image of Linux Kamarada 15.2 Beta [1]) and I
+realized Firefox was behaving differently than I remembered regarding
+locales/languages on 15.1.
+
+TLDR: Firefox is not retrieving the current user's language
+preferences on GNOME.
+
+Try the following steps (I suggest using the openSUSE Leap 15.2 GNOME
+live image [2]):
+
+1. (not needed if you are running the live image) Make sure the
+MozillaFirefox-translations-common package is installed
+2. (not needed if you are running the live image) Create a new user
+3. (not needed if you are running the live image) Log in to this user
+4. Change the GNOME language to another one different from English -
+e.g. Portugu=C3=AAs Brasil
+(log out and log in to apply the language change)
+5. Start Firefox
+
+On openSUSE Leap 15.2, Firefox starts in English. Also, if I open
+Firefox and set its interface language to Portuguese (Brazil), it
+downloads the language pack. Shouldn't it use the one present on the
+MozillaFirefox-translations-common package? The openSUSE Leap 15.2
+GNOME live image comes with Firefox 78.0.2esr.
+
+But if you try the Linux Kamarada 15.2 Beta live image from the
+website [3] which is by now with Firefox 68.9.0esr (it's older than
+the one I used to format my SSD), Firefox presents the expected
+behavior: it starts in the current user's language preferences on
+GNOME.
+
+Maybe something changed from 68.9.0esr to 78.0.2esr.
+
+Please someone confirm if that is really a bug. If so, I can open a
+bug report on Bugzilla.
+
+Thanks!
+
+
+Antonio
+The Linux Kamarada Project
+http://kamarada.github.io/
+
+
+[1]: https://build.opensuse.org/package/show/home:kamarada:15.2:dev/Linux-K=
+amarada-GNOME
+[2]: https://software.opensuse.org/distributions/leap
+[3] https://kamarada.github.io/en/download/15.2/
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

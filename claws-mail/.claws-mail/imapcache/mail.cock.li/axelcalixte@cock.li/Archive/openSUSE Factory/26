@@ -1,0 +1,145 @@
+Return-Path: <opensuse-factory+bounces-95872-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 725068179A; Fri, 24 Jul 2020 20:58:17 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.5 required=5.0 tests=BAYES_40,FREEMAIL_FROM,
+	MAILING_LIST_MULTI,RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,
+	RCVD_IN_MSPIKE_WL,RDNS_NONE,T_TVD_MIME_EPI shortcircuit=_SCTYPE_
+	autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 485D0826B5
+	for <axelcalixte@cock.li>; Fri, 24 Jul 2020 20:58:16 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 85F8421865
+	for <axelcalixte@cock.li>; Fri, 24 Jul 2020 20:58:15 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id DA05E10E2C;
+	Fri, 24 Jul 2020 20:58:07 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id B482310E2C
+	for <opensuse-factory@lists5.opensuse.org>; Fri, 24 Jul 2020 20:58:07 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id 5A7732C174
+	for <opensuse-factory@lists5.opensuse.org>; Fri, 24 Jul 2020 20:58:09 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id a1iLsBB_MvWO for <opensuse-factory@lists5.opensuse.org>;
+	Fri, 24 Jul 2020 20:58:04 +0000 (UTC)
+Received: from mx2.suse.de (unknown [149.44.161.68])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 04C1B2C15C
+	for <opensuse-factory@lists5.opensuse.org>; Fri, 24 Jul 2020 20:58:04 +0000 (UTC)
+Received: from relayout01-sq01.e.movistar.es (relayout01-sq01.e.movistar.es [86.109.101.143])
+	(using TLSv1.2 with cipher ADH-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx2.suse.de (Postfix) with ESMTPS id D4484AB8B
+	for <opensuse-factory@opensuse.org>; Fri, 24 Jul 2020 20:58:17 +0000 (UTC)
+Received: from relayout01-redir.e.movistar.es (unknown [86.109.101.201])
+	by relayout01-out.e.movistar.es (Postfix) with ESMTP id 4BD1kS56bYzjYpB
+	for <opensuse-factory@opensuse.org>; Fri, 24 Jul 2020 22:58:08 +0200 (CEST)
+Received: from Telcontar.valinor (1.red-79-158-162.dynamicip.rima-tde.net [79.158.162.1])
+	(using TLSv1.2 with cipher ADH-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	(Authenticated sender: robin.listas2@telefonica.net)
+	by relayout01.e.movistar.es (Postfix) with ESMTPSA id 4BD1jg2h6kzfcMp
+	for <opensuse-factory@opensuse.org>; Fri, 24 Jul 2020 22:57:27 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by Telcontar.valinor (Postfix) with ESMTP id B68703212D1
+	for <opensuse-factory@opensuse.org>; Fri, 24 Jul 2020 22:57:26 +0200 (CEST)
+Received: from Telcontar.valinor ([127.0.0.1])
+	by localhost (telcontar.valinor [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id CiLvsA27stGa for <opensuse-factory@opensuse.org>;
+	Fri, 24 Jul 2020 22:57:26 +0200 (CEST)
+Received: from [127.0.0.1] (localhost [127.0.0.1])
+	by Telcontar.valinor (Postfix) with ESMTP id 976CA320AC3
+	for <opensuse-factory@opensuse.org>; Fri, 24 Jul 2020 22:57:26 +0200 (CEST)
+Subject: Re: [opensuse-factory] Linux Kernel / KVM Developer
+To: oS-fctry <opensuse-factory@opensuse.org>
+References: <CACB8RRb+f96gWxKmu8OShktawQpNmmvweQDnyceTO6rAmjbQGw@mail.gmail.com>
+ <2a01589a-cf96-f30a-9bab-a29d2a429775@suddenlinkmail.com>
+ <29ebfca7-0b2b-2030-b032-afe6091e8137@telefonica.net>
+ <27b16e91-12a9-4959-03cb-eac23d0e8b46@suddenlinkmail.com>
+From: "Carlos E. R." <robin.listas@telefonica.net>
+Message-ID: <777b6e09-38e8-d0dd-27ea-23d7b6f4ce30@telefonica.net>
+Date: Fri, 24 Jul 2020 22:57:26 +0200
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101
+ Thunderbird/68.10.0
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+In-Reply-To: <27b16e91-12a9-4959-03cb-eac23d0e8b46@suddenlinkmail.com>
+Content-Type: multipart/signed; micalg=pgp-sha1;
+ protocol="application/pgp-signature";
+ boundary="FqLmMtjPhWMWveo5721vHBkCSm5kpKP8Q"
+X-TnetOut-Country: IP: 79.158.162.1 | Country: ES
+X-VADETOUT-SPAMSTATE: clean
+X-VADETOUT-SPAMSCORE: 0
+X-TnetOut-Information: AntiSPAM and AntiVIRUS on relayout01
+X-TnetOut-MsgID: 4BD1jg2h6kzfcMp.A74F7
+X-TnetOut-SpamCheck: no es spam (whitelisted), clean
+X-TnetOut-From: robin.listas@telefonica.net
+X-TnetOut-Watermark: 1596229047.92136@i+cZQ16WAC4JxcARLqL3JA
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--FqLmMtjPhWMWveo5721vHBkCSm5kpKP8Q
+Content-Type: multipart/mixed; boundary="iNxagibRh8gRTaztT5egeWqeUfGI0AiRG"
+
+--iNxagibRh8gRTaztT5egeWqeUfGI0AiRG
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Language: en-CA
+Content-Transfer-Encoding: quoted-printable
+
+On 24/07/2020 22.19, David C. Rankin wrote:
+> On 7/24/20 5:00 AM, Carlos E. R. wrote:
+>> It works here :-?
+>> maybe temporary problem.
+>>
+>> If not, they don't like your IP.
+>=20
+> Must be an IP issue -- it definitely doesn't work from my IP.
+
+You can tray TOR viewer, your IP changes. In fact, you can choose=20
+another country.
+
+
+--=20
+Cheers / Saludos,
+
+		Carlos E. R.
+		(from 15.1 x86_64 at Telcontar)
+
+
+--iNxagibRh8gRTaztT5egeWqeUfGI0AiRG--
+
+--FqLmMtjPhWMWveo5721vHBkCSm5kpKP8Q
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+Comment: Using GnuPG with Thunderbird - https://www.enigmail.net/
+
+iF0EARECAB0WIQQZEb51mJKK1KpcU/W1MxgcbY1H1QUCXxtLNgAKCRC1MxgcbY1H
+1Z+iAKCCpwL0qTjdrk9WQzd0Q7ucY+3krwCdErcYk1oJ6gIuYQQPbnf8Ghp8XgE=
+=qdO1
+-----END PGP SIGNATURE-----
+
+--FqLmMtjPhWMWveo5721vHBkCSm5kpKP8Q--
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

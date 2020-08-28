@@ -1,0 +1,115 @@
+Return-Path: <opensuse-factory+bounces-95927-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 7256982704; Mon,  3 Aug 2020 09:16:49 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=0.6 required=5.0 tests=BAYES_50,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_NONE,RDNS_NONE,URIBL_BLOCKED shortcircuit=_SCTYPE_
+	autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id D4FBD8271F
+	for <axelcalixte@cock.li>; Mon,  3 Aug 2020 09:16:32 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 204D021777
+	for <axelcalixte@cock.li>; Mon,  3 Aug 2020 09:16:32 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 55F3C10E2C;
+	Mon,  3 Aug 2020 09:16:10 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 4D56810E2C
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 09:16:10 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id 0487D2C15C
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 09:16:34 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id zsa-GE_RvPRz for <opensuse-factory@lists5.opensuse.org>;
+	Mon,  3 Aug 2020 09:16:28 +0000 (UTC)
+Received: from mx2.suse.de (unknown [149.44.161.68])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id A82B42C15D
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 09:16:28 +0000 (UTC)
+Received: from mout.kundenserver.de (mout.kundenserver.de [212.227.126.131])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx2.suse.de (Postfix) with ESMTPS id 88197B6EC
+	for <opensuse-factory@opensuse.org>; Mon,  3 Aug 2020 09:16:41 +0000 (UTC)
+Received: from 'smile.earth' ([95.89.3.2]) by mrelayeu.kundenserver.de
+ (mreue010 [212.227.15.167]) with ESMTPSA (Nemesis) id
+ 1MTR6K-1kCORy0MKy-00TnGo for <opensuse-factory@opensuse.org>; Mon, 03 Aug
+ 2020 11:16:26 +0200
+From: Hans-Peter Jansen <hpj@urpla.net>
+To: opensuse-factory@opensuse.org
+Subject: Re: update hangs on Plasma update tool ([opensuse-factory] New
+ Tumbleweed snapshot 20200801)
+Date: Mon, 03 Aug 2020 11:16:24 +0200
+Message-ID: <11015074.tJN8lJgSeD@xrated>
+In-Reply-To: <nycvar.YFH.7.77.849.2008031045490.14142@n3.vanv.qr>
+References: 
+ <trinity-5317f446-6c6d-4d6e-8ddc-ae2bd32072f8-1596443488597@3c-app-gmx-bap18>
+ <nycvar.YFH.7.77.849.2008031045490.14142@n3.vanv.qr>
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7Bit
+Content-Type: text/plain; charset="us-ascii"
+X-Provags-ID: V03:K1:Tcw6P0YSWHvuOsgHXcBckt8Kcxy25u0EfAJ/rw0vr+wBd1iHMjz
+ p56KvZq7/Z6uVAnJGh16BkbQYKcU2PZe/1pjokd++ZDL41uZiVrzUbWcOvDpu2u2Ye+CiTD
+ 4Ev2fbY2XsRhzMOFefSwc1AyME7bCAMTWauI0shvG3eDTYVmxs5ddgKEc4yluMrHlR0n/cd
+ IP9QJc1iXAofKesTz9MmQ==
+X-UI-Out-Filterresults: notjunk:1;V03:K0:ZRu9df8WwI8=:48hw4x8Kiwt0P4s6Ow7REw
+ DiHgS3VrOffrDzZ+o91h1w9CB/zdxvU2gpKpeXY9RMSOaBnjXnpq/5+hj8nkKsLloP7r7TAB0
+ adqnFYC3oCObDIki1XFiI3wZ66W4hou7983ghIM7AyhAW2LOhZ67uvEEy6RO5CdNR0yp3i1JI
+ U2LBYmtqjDXxXmNBzFwbyRsxGlcRbssMgqS2j0bUmJQrqcfUW4FgHDpBFXzZr3cwYs9LX/XnC
+ tjQvFGdi2LnGJCklZn9+WMFYvegM5khT1NHMsPF5P+MLjVEfdo2coWRllQNop7VRg2Nkju+br
+ SlAmL+jfNPjNv5wLyELPwVdTt1UARw3zh8B6GCeY7T8qU5K3A88IVn7hA4w6DYVw1zREhiIT1
+ wQhH53hMgChYWfiTfa5hTSZGCmmxilJaFApIX0KJYMuthWxrMg+g6p1lWluoSs6LVe/zcj680
+ IJYm4saW3g/W1ljRTditlNPcGY0OVh9gLcve5/Rbw7x38ATMDB55E1Iz9bsAJrlimCOqSJhAh
+ uc06tuxbLFI1xMMcPuFGow7y/HFQ4AOlP867HVQpXRs7BUPPJJWEc1ZA4AsQlP9QWIzJJMqPP
+ 5ML5aUIFMn6lBc6vHTwQ33+J3ckCO9U+90dnjmD7eH1gZFtJ1SayoIkD4FNlm2Ih8aGGwnczi
+ SoSEwzG8oB436hvkiah4epTB36k8m6bUeC0jchEHqqpEmWLyt9BYxhkpWTRSKfFX2jGYTIFYs
+ RgSD9UVDDih0GbIQ3LAe0FqK6pZ8SVZ2GF3QqSCYOjpOE+GIGq9Xe+v3VZiS6VxrYIRQTARXy
+ dCnKScaXRjyeDry1XbVOVLMJy6vl6geowJeFsqMNREQAhG18Ejfn8fUVmwB+Wwkvaw3xSRm
+
+Am Montag, 3. August 2020, 10:46:50 CEST schrieb Jan Engelhardt:
+> On Monday 2020-08-03 10:31, ub22@gmx.net wrote:
+> >If I start the update on plasma update tool, it stops/hangs.
+> >
+> >Subprocess failed. Error: RPM failed: error: unpacking of archive failed on
+> >file /home: cpio: chmod failed - No such file or directory error:
+> >filesystem-15.5-30.1.x86_64: install failed
+> >error: filesystem-15.5-29.2.x86_64: erase skipped
+> >
+> ># ls -l / | grep home
+> >lrwxrwxrwx   1 root root   11 Jun  4 21:50 home -> /home.server/
+> 
+> Isn't this the historic problem of rpm having been unable to deal with
+> from-symlink and to-symlink changes.. (after all, it is trying
+> to update/replace it with a drwx /home)
+
+..along with the from-dir to-file and vice versa. 
+
+Considering, that we all get bitten by it from time to time, question is, why 
+rpm refrains from solving this annoyance?
+
+Another question is, if packages should touch /home at all?
+
+
+
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

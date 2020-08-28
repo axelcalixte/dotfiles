@@ -1,0 +1,61 @@
+1598116672682	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1598119009740	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1598119009740	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1598119009743	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1598119009748	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1598119014903	Sync.Service	DEBUG	User-Agent: Firefox/79.0 (Linux x86_64) FxSync/1.81.0.20200720193547.desktop
+1598119014904	Sync.Service	INFO	Starting sync at 2020-08-22 17:56:54 in browser session x3YUmugofi3S
+1598119014904	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1598119014913	Sync.Status	INFO	Resetting Status.
+1598119014913	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1598119014915	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1598119014915	FirefoxAccounts	DEBUG	getOAuthToken enter
+1598119014917	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1598119014918	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1598119014918	Sync.BrowserIDManager	INFO	Getting keys
+1598119014921	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1598119014922	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1598119014923	FirefoxAccounts	DEBUG	enter getAssertion()
+1598119014923	FirefoxAccounts	DEBUG	getKeypairAndCertificate: already have keyPair and certificate
+1598119014923	FirefoxAccounts	DEBUG	getAssertionFromCert
+1598119014929	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1598119014930	Sync.BrowserIDManager	DEBUG	Getting a token using an Assertion
+1598119014931	Services.Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1598119014932	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1598119016433	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1598119016435	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1598119016440	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1598119016441	Sync.BrowserIDManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.js:39:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.js:62:16
+_tokenServerExchangeRequest@tokenserverclient.js:298:13
+1598119016442	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1598119016442	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1598119016444	Sync.BrowserIDManager	ERROR	Failed to fetch a token for authentication: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.js:39:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.js:62:16
+_tokenServerExchangeRequest@tokenserverclient.js:298:13
+1598119016449	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1598119016453	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1598119017369	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1598119017370	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1598119017373	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1598119017376	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1598119017378	Sync.Service	DEBUG	User-Agent: Firefox/79.0 (Linux x86_64) FxSync/1.81.0.20200720193547.desktop
+1598119017379	Sync.Service	INFO	Starting sync at 2020-08-22 17:56:57 in browser session x3YUmugofi3S
+1598119017380	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.js:62:5) JS Stack trace: LockException@util.js:62:5
+throwLockException@util.js:148:11
+WrappedLock@util.js:162:15
+_lockedSync@service.js:1375:6
+sync/<@service.js:1339:18
+WrappedCatch@util.js:133:27
+sync@service.js:1340:7
+1598119017380	Sync.Service	INFO	Cannot start sync: already syncing?
+1598119018475	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1598119019919	Sync.Resource	DEBUG	GET fail 401 https://sync-614-us-west-2.sync.services.mozilla.com/1.5/96295564/info/collections
+1598119019919	Sync.Resource	WARN	GET request to https://sync-614-us-west-2.sync.services.mozilla.com/1.5/96295564/info/collections failed with status 401
+1598119019919	Sync.Service	INFO	Logging out
+1598119019920	Sync.ErrorHandler	INFO	Got 401 response; resetting clusterURL.
+1598119019920	Sync.ErrorHandler	DEBUG	New mid-sync 401 failure. Making a note.
+1598119019921	Sync.ErrorHandler	INFO	Attempting to schedule another sync.
+1598119019922	Sync.Service	ERROR	Aborting sync: failed to get collections.
+1598119019923	Sync.ErrorHandler	ERROR	Sync encountered an error: {"data":"0","url":"https://sync-614-us-west-2.sync.services.mozilla.com/1.5/96295564/info/collections","status":401,"success":false,"headers":{"connection":"keep-alive","content-length":"1","content-type":"application/json; charset=UTF-8","date":"Sat, 22 Aug 2020 17:57:00 GMT","server":"openresty/1.9.7.3","strict-transport-security":"max-age=15768000; includeSubDomains","www-authenticate":"Hawk","x-weave-timestamp":"1598119020.53"},"obj":0}
+1598119019926	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1598119019929	Sync.Telemetry	INFO	Early submission of sync telemetry due to changed IDs/NodeType
+1598119019946	Sync.Service	DEBUG	Exception calling anonymous function: {"data":"0","url":"https://sync-614-us-west-2.sync.services.mozilla.com/1.5/96295564/info/collections","status":401,"success":false,"headers":{"connection":"keep-alive","content-length":"1","content-type":"application/json; charset=UTF-8","date":"Sat, 22 Aug 2020 17:57:00 GMT","server":"openresty/1.9.7.3","strict-transport-security":"max-age=15768000; includeSubDomains","www-authenticate":"Hawk","x-weave-timestamp":"1598119020.53"},"obj":0}

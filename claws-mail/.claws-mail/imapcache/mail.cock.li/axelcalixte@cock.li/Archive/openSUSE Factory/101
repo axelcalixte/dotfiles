@@ -1,0 +1,130 @@
+Return-Path: <opensuse-factory+bounces-95935-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 40A4882728; Mon,  3 Aug 2020 14:42:47 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.6 required=5.0 tests=BAYES_50,DKIM_SIGNED,
+	FREEMAIL_FROM,MAILING_LIST_MULTI,RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,
+	RCVD_IN_MSPIKE_WL,RDNS_NONE,T_DKIM_INVALID,URIBL_BLOCKED
+	shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 9174082510
+	for <axelcalixte@cock.li>; Mon,  3 Aug 2020 14:42:41 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (1024-bit key; unprotected) header.d=gmx.net header.i=@gmx.net header.b="G0DlhuLh";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id C9A75219CA
+	for <axelcalixte@cock.li>; Mon,  3 Aug 2020 14:42:40 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id BFD4210E2C;
+	Mon,  3 Aug 2020 14:42:18 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id B760510E2C
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 14:42:18 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id ABBFE2C49B
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 14:42:42 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id f1DDuV9aY5x8 for <opensuse-factory@lists5.opensuse.org>;
+	Mon,  3 Aug 2020 14:42:37 +0000 (UTC)
+Received: from mx2.suse.de (unknown [149.44.161.68])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 554182C16F
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 14:42:37 +0000 (UTC)
+Received: from mout.gmx.net (mout.gmx.net [212.227.17.20])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx2.suse.de (Postfix) with ESMTPS id 571C9AF16
+	for <opensuse-factory@opensuse.org>; Mon,  3 Aug 2020 14:42:50 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=gmx.net;
+	s=badeba3b8450; t=1596465754;
+	bh=iawtlnlhExKsz/If0bfwBGPB/VwwsTZji6ggKKF10qA=;
+	h=X-UI-Sender-Class:From:To:Subject:Date:In-Reply-To:References;
+	b=G0DlhuLh2Ntm+o3C75Fhi/AMJOnIzMsn/YgKLDCDudxrvjAStmHbhuvYxMKBmvWIj
+	 Mp1tMVC8NhSiEQnQSQ6acaS54QzQuzTfzm63pgSx7oQOK+KmafBHPSf/ZoNHhTc6ZV
+	 oOfRtsUm5OwQ8mjz4TLwJrwh4itVNxNq0i2hWBeg=
+X-UI-Sender-Class: 01bb95c1-4bf8-414a-932a-4f6e2808ef9c
+Received: from [89.245.36.39] ([89.245.36.39]) by web-mail.gmx.net
+ (3c-app-gmx-bap06.server.lan [172.19.172.76]) (via HTTP); Mon, 3 Aug 2020
+ 16:42:34 +0200
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Message-ID: <trinity-cc7dbe7b-68a5-480f-8002-e7365df82bab-1596465754426@3c-app-gmx-bap06>
+From: ub22@gmx.net
+To: Mailing List openSUSE Factory <opensuse-factory@opensuse.org>
+Subject: Aw: Re: update hangs on Plasma update tool ([opensuse-factory] New
+ Tumbleweed snapshot 20200801)
+Content-Type: text/plain; charset=UTF-8
+Date: Mon, 3 Aug 2020 16:42:34 +0200
+Importance: normal
+Sensitivity: Normal
+In-Reply-To: <20200803094246.GA7499@saturn.hollstein.homelinux.org>
+References: <trinity-5317f446-6c6d-4d6e-8ddc-ae2bd32072f8-1596443488597@3c-app-gmx-bap18>
+ <nycvar.YFH.7.77.849.2008031045490.14142@n3.vanv.qr>
+ <11015074.tJN8lJgSeD@xrated>
+ <20200803094246.GA7499@saturn.hollstein.homelinux.org>
+X-UI-Message-Type: mail
+X-Provags-ID: V03:K1:JCDm3Dw76HlllLl4PZf8LhKPZXYgPcOQ9bvaDuTrunAC2EeuBUJZxp2MH0UV6PN6eH/Kw
+ 7/wFREmFAIzGQxQ/74N5IhKDO29F2zIQnlvfkSgPPtz+6Q5gtrLue0g+JrO1UYKJ72XJtu3Rj7NR
+ bowiW1YIA5rrHY/JJCVkRY0bnqExQSPBNu9K4kK2Se3ze+GMAYz0j2Lfj6ZemjKh8WmOqXkJE6gw
+ Typg4Zdz7q1Du9QV1Rcru8WDaDOSic1SYk6g+1Ppz6ZQyg/lKoUC5+ahQkTleHS87yJaPs2Vs9SF
+ QM=
+X-UI-Out-Filterresults: notjunk:1;V03:K0:AJ0Rafa7i+I=:QIVofeUlIaESH6pbsgRuqz
+ ZtGk/ZmftP5Yu9E1eNGJTw2SWsFJqyhJnko4thEoXf6UXO+d1i1qiJ3CjvH3PErNwfizismpm
+ 48Ex+66hmd6ZZ4Jdvx6Y8ayxoB0+2VG8Oztksu/+pY5oDqb8KN+gcpKPGdisJNNgnhZkuPL8W
+ ZgaQWOk1t5ACbfbh2MR1aLK4Kya0oIPHajQ4yZ0WKw2DIK8+u71ogEUiiHTf7q11u79Ia6x8/
+ M7MWiTQ50t+LGw52C72uLLMOF23cG/OT0dYEFKHl/qaZu9hx+sLgHowNiOkPAMFT9xnTjpszO
+ gX2FgJni6y9Bt57GAeVtkKD7ikxtscNo/yji6c/3FUgEV9YvkIc3T30QST4y0Kd6LAyzlczr0
+ qjhQE4zjUlO6sT8tUjcfRkzwLTlfdEEK5+gaOFO3PQm5FEXgMepEMRCOlWiIaOEx88CqrLgqR
+ FgeREMb49AqMcO1yvhnvPPfAENb3cCxIaS0h25eMW9VNY0F+w4W61keefieOVO2G5x6YOhX55
+ Y3kD70QPI/iM8IHoKayG5fN7ItgDMvcEh5sOIGV07AJMDBd5o8Vg/pkoNexyyVvJOI0eHcgjc
+ qM2w+8sEpyUCih1lkB7A4IomUjV6QY/4zGQ6OgS94Rl9tTw2NSSzp4/tBNGNFvL9Zz6ufRw6t
+ js6k7qKINItVN6yMGV4xKo+AJc9MsXul1tZqwC7yL1BPi9Q==
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+> Gesendet: Montag, 03. August 2020 um 11:42 Uhr; Von: "Manfred Hollstein"
+> I'd rather ask why people don't add a proper entry to their /etc/fstab?
+> This way, everything would be OK from rpm's point of view:
+>
+>   /home.server	/home	none  bind  0 0
+
+OK, I was not aware about this entry (so I'm only an experianced user not =
+an
+Linux professional ;-) ).
+
+But now I added this in the entry and the same with my '/root/bin' now. Ar=
+e
+this all pathes which are not allowing symlinks to other pathes. Or will b=
+e
+generelly not allowed to do a symlink to a path?
+
+We will see if this really fix this Issue.
+
+Only to be sure, will the mounting in /etc/fstab will be done sequential
+starting at line 1 till the end?
+
+
+Regards
+Ulf
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

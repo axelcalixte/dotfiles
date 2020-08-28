@@ -1,0 +1,862 @@
+Return-Path: <bounces+169303-6e67-axelcalixte=disroot.org@email.airbnb.com>
+Delivered-To: axelcalixte@disroot.org
+Received: from localhost (localhost [127.0.0.1])
+	by disroot.org (Postfix) with ESMTP id D949E4F28A
+	for <axelcalixte@disroot.org>; Fri, 14 Aug 2020 14:23:38 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at disroot.org
+Received: from knopi.disroot.org ([127.0.0.1])
+	by localhost (disroot.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id p4onLcai7m8S for <axelcalixte@disroot.org>;
+	Fri, 14 Aug 2020 14:23:37 +0200 (CEST)
+Received: from o14.email.airbnb.com (o14.email.airbnb.com [50.31.32.8])
+	by disroot.org (Postfix) with ESMTPS id D5E5B51AEF
+	for <axelcalixte@disroot.org>; Fri, 14 Aug 2020 14:23:36 +0200 (CEST)
+Authentication-Results: disroot.org;
+	dkim=pass (1024-bit key; unprotected) header.d=email.airbnb.com header.i=@email.airbnb.com header.b="IZ1jGypH";
+	dkim-atps=neutral
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=email.airbnb.com; h=content-type:from:mime-version:to:subject; 
+	s=s20150428; bh=jIEoBlW55tgeCd8GT3/RoQ8rx0lnsb6VhpO/oezRKSI=; b=
+	IZ1jGypHl4u27dS4tBKj6llEqqxfmp5Gvn6dwCBH4PCR5qRlp1qsJzII3VMSdoU0
+	O94M6wX0NGR2R1jKNsUy4S/Hcaj+UOhpbl6fAsAA98ofLQiOD4xrrYt1azHkGGVN
+	dMOToYEf4UvQ7/O+7Wb8R4MtbJy54SMGno3oU+sy8Mg=
+Received: by filter1944p1mdw1.sendgrid.net with SMTP id filter1944p1mdw1-23270-5F368246-3E
+        2020-08-14 12:23:34.916684468 +0000 UTC m=+53064.241709417
+Received: from MTY5MzAz (unknown)
+	by geopod-ismtpd-4-2 (SG) with HTTP id Rv-ttysqRkyFYyfp6qFBnQ
+	Fri, 14 Aug 2020 12:23:34.872 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=c2f2fd6bf62069f77c80673a573fd252d3097a01ee6dc2493f925526f8e4
+Date: Fri, 14 Aug 2020 12:23:34 +0000 (UTC)
+From: "Airbnb" <automated@airbnb.com>
+Mime-Version: 1.0
+To: axelcalixte@disroot.org
+Message-ID: <Rv-ttysqRkyFYyfp6qFBnQ@geopod-ismtpd-4-2>
+Subject: =?UTF-8?B?QWN0aXZpdMOpIGR1IGNvbXB0ZcKgOiBub3V2ZWxsZSBjb25uZXhpb24gw6AgcGFydGlyIGRlIEZpcmVmb3g=?=
+X-User-ID: 359968449
+X-Template: account_alerts/new_device_login
+X-Priority: critical
+X-Category: support
+X-rpcampaign: airbnb2020081489841244889147982815716922691663014988
+X-Message-Package-UUID: 2510334c-22fa-7628-7739-9a45af174f59
+X-Strategy: email
+X-Locale: fr
+X-SG-EID: FhN5XaSadNplhrBlBfImv0B6wjyB9YgE8cEJB0RWQg0ZIylxoA0Hc9uDTaKSKZyR99DOWA41W5y2ZZ
+ JuTDNKQBm5lWJRr1tM3znVeNryV7Wq/KNZPfLJhg3umA4J63kPyf+2zv15qVAV0xssbdUO8MopzLbo
+ uglsZfb9pbaiodifwSHx6Bfw3E7D+35DWD1cy6tcDy0P9hZXVhNv18gNzW/2D/df4beMnmcQzVnLm9
+ g=
+X-SG-ID: Ke7zKVohU8z9OM0urakurehArBgvcxBffNjJFvgAG/2UD57hDDmCHJ4aGIVlMV09nAgMUiLrDRD4sT
+ L9VyyFnf21ICobRp/bqoVzWj6vICfrK9N98e+gESFTitreRkekPcKmxTEGtMMgsLX8mGDK3mtfflqN
+ JvuPEtHY9Jlg+YfXMR7RYy/IEBlHzUfmRJviVIzOYKVHafV81PjRzEQ2KuZIzYJc4+WdVIyKiHfyPQ
+ unw4eq9+zkss+yWP6nJR4F5pr7xFQr8Fgekefg8waewU2GCE7uUKzaNY/4IQ9GySLazqO4LevU5Z0m
+ VxQSXkiTmBlB2dH27QFCHyJnrKreTgDewWtUjwO1DYmvhJJGpUCPPlDQRCsQi3bAqn15K6eiIv8jac
+ sflQR871ZLAUDHqx3JcWwKvYxY43djTCZIvJgTCbyqk0asY1P6gUQp18c1EvEdGAmtTPPWKF5P1fdx
+ 4A==
+
+--c2f2fd6bf62069f77c80673a573fd252d3097a01ee6dc2493f925526f8e4
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+Vous =C3=AAtes-vous connect=C3=A9 =C3=A0 partir d'un nouvel appareil=C2=A0?
+
+Un nouvel appareil a acc=C3=A9d=C3=A9 =C3=A0 votre compte Airbnb. Si vous n=
+'=C3=AAtes pas =C3=A0 l'origine de cette op=C3=A9ration, v=C3=A9rifiez votr=
+e compte d=C3=A8s maintenant. Si vous =C3=AAtes =C3=A0 l'origine de cette o=
+p=C3=A9ration, vous pouvez ignorer cet e-mail en toute s=C3=A9curit=C3=A9.
+
+Horaires    ven. 14 ao=C3=BBt 2020, 12:23 UTC
+Lieu    GES, France
+Type d'appareil    Firefox avec Windows
+
+V=C3=A9rifier mon compte
+https://www.airbnb.fr/review_your_account?alert_name=3Dnew_device_login&c=
+=3D.pi80.pkYWNjb3VudF9hbGVydHMvbmV3X2RldmljZV9sb2dpbg%3D%3D&euid=3D2510334c=
+-22fa-7628-7739-9a45af174f59&rya_flow_token=3Dfbb2da14-fb27-4ec2-bafe-6279a=
+04601d3&user_id=3D359968449=
+
+--c2f2fd6bf62069f77c80673a573fd252d3097a01ee6dc2493f925526f8e4
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" dir=3D"ltr" style=3D"min-heigh=
+t:100%;background:#f3f3f3">
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+</head>
+<body style=3D"min-width:100%;-webkit-text-size-adjust:none;-ms-text-size-a=
+djust:none;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-siz=
+ing:border-box;color:#0a0a0a;font-family:'Cereal', Helvetica, Arial, sans-s=
+erif;font-weight:normal;padding:0;margin:0;text-align:left;font-size:16px;l=
+ine-height:19px;width:100% !important">
+<div class=3D"preheader" style=3D"visibility:hidden;opacity:0;color:transpa=
+rent;height:0;width:0;font-size:0px;mso-hide:all;display:none !important"><=
+/div>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <style data-roadie-ignore data-immutable=3D"true" type=3D"text/css">
+  /*Light*/
+  @font-face {
+    font-family: 'Cereal';
+    font-style: normal;
+    font-weight: 200;
+    src: url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+Lt-61d38480cfdf1dfc73d6bd0f459b3e10.eot");
+    src: url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+Lt-61d38480cfdf1dfc73d6bd0f459b3e10.eot?#") format("eot"),
+      url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Lt-=
+4f51497e2f6db6e72599a1f2f484eb7e.woff") format("woff"),
+      url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Lt-=
+919ae0b65de2f8c6204ec57daeceb9e9.woff2") format("woff2"),
+      url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Lt-=
+ef243dd05072c5987d3abcbe00581224.ttf") format("truetype");
+  }
+
+  /*Regular*/
+  @font-face {
+    font-family: 'Cereal';
+    font-style: normal;
+    font-weight: 300;
+    src: url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+Rg-909a75677f1cbf6e66c8811e6d39441a.eot");
+    src: url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+Rg-909a75677f1cbf6e66c8811e6d39441a.eot?#") format("eot"),
+      url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Rg-=
+391ee76d399e20117aade2ce1f7e196e.woff") format("woff"),
+      url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Rg-=
+3ff4006ded0500d605d6eff88ccc59f8.woff2") format("woff2"),
+      url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Rg-=
+190a6e02b3b3d6cfaf3bbe887349adad.ttf") format("truetype");
+  }
+
+  /*Medium*/
+  @font-face {
+    font-family: 'Cereal';
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+Md-ff8747694c95295917ef4c60c2bb6bce.eot");
+    src: url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+Md-ff8747694c95295917ef4c60c2bb6bce.eot?#") format("eot"),
+      url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Md-=
+b9bb7e6d20007be4b0caa86ea7fbd906.woff") format("woff"),
+      url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Md-=
+dec1db4a099dd1761f19bbe3088de0c8.woff2") format("woff2"),
+      url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Md-=
+2f25e87279c9c202ebf384fae79ac376.ttf") format("truetype");
+  }
+
+  /*Bold*/
+  @font-face {
+    font-family: 'Cereal';
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+Bd-7b4c5f071be2fb695c04a1af3a1e0616.eot");
+    src: url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+Bd-7b4c5f071be2fb695c04a1af3a1e0616.eot?#") format("eot"),
+      url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Bd-=
+20d7bff68cfbfa449bd9601275d29996.woff") format("woff"),
+      url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Bd-=
+32afa6b67d060b665623bbc48ce00187.woff2") format("woff2"),
+      url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Bd-=
+943ebbaff21543f9115cf46427213a47.ttf") format("truetype");
+  }
+
+  /*XBold*/
+  @font-face {
+    font-family: 'Cereal';
+    font-style: normal;
+    font-weight: 800;
+    src: url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+XBd-170530db17719eb719c2f03f8ac2a94d.eot");
+    src: url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+XBd-170530db17719eb719c2f03f8ac2a94d.eot?#") format("eot"),
+      url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_XBd=
+-3aea49864b40db534f43dc271460baba.woff") format("woff"),
+      url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_XBd=
+-66f244ea0cd79026250a9ba89a47a7aa.woff2") format("woff2"),
+      url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_XBd=
+-5d879965b6ea4ac2a31b41647c283433.ttf") format("truetype");
+  }
+
+  /*Black*/
+  @font-face {
+    font-family: 'Cereal';
+    font-style: normal;
+    font-weight: 900;
+    src: url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+Bk-5e8fbee9505fc68a77d714aa35aee405.eot");
+    src: url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+Bk-5e8fbee9505fc68a77d714aa35aee405.eot?#") format("eot"),
+      url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Bk-=
+36f3fbaecfd0e0f82e83f28a466ce425.woff") format("woff"),
+      url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Bk-=
+eed38b780704d1a3acbdb4ed930f6cdf.woff2") format("woff2"),
+      url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Bk-=
+a7f958b92f5a7555e9a6d5755e026c6b.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: 'Cereal Black';
+    src: url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+Bk-5e8fbee9505fc68a77d714aa35aee405.eot");
+    src: url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_=
+Bk-5e8fbee9505fc68a77d714aa35aee405.eot?#") format("eot"),
+      url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Bk-=
+36f3fbaecfd0e0f82e83f28a466ce425.woff") format("woff"),
+      url("https://a1.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Bk-=
+eed38b780704d1a3acbdb4ed930f6cdf.woff2") format("woff2"),
+      url("https://a0.muscache.com/airbnb/rookery/fonts/Cereal/Cereal_W_Bk-=
+a7f958b92f5a7555e9a6d5755e026c6b.ttf") format("truetype");
+  }
+</style>
+
+=20=20=20=20
+=20=20=20=20
+=20=20=20=20
+    <style data-roadie-ignore data-immutable=3D"true">
+      @media only screen and (max-width: 596px) {
+        .small-float-center {
+          margin: 0 auto !important;
+          float: none !important;
+          text-align: center !important; }
+        .small-text-center {
+          text-align: center !important; }
+        .small-text-left {
+          text-align: left !important; }
+        .small-text-right {
+          text-align: right !important; } }
+
+        @media only screen and (max-width: 596px) {
+          table.body table.container .hide-for-large {
+            display: block !important;
+            width: auto !important;
+            overflow: visible !important;
+            max-height: none !important; } }
+
+      @media only screen and (max-width: 596px) {
+        table.body table.container .row.hide-for-large,
+        table.body table.container .row.hide-for-large {
+          display: table !important;
+          width: 100% !important; } }
+
+      @media only screen and (max-width: 596px) {
+        table.body table.container .show-for-large {
+          display: none !important;
+          width: 0;
+          mso-hide: all;
+          overflow: hidden; } }
+
+      @media only screen and (max-width: 596px) {
+        table.body img {
+          width: auto !important;
+          height: auto !important; }
+        table.body center {
+          min-width: 0 !important; }
+        table.body .container {
+          width: 95% !important; }
+        table.body .columns,
+        table.body .column {
+          height: auto !important;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          padding-left: 16px !important;
+          padding-right: 16px !important; }
+          table.body .columns .column,
+          table.body .columns .columns,
+          table.body .column .column,
+          table.body .column .columns {
+            padding-left: 0 !important;
+            padding-right: 0 !important; }
+          table.body .columns .column.nested,
+          table.body .columns .columns.nested,
+          table.body .column .column.nested,
+          table.body .column .columns.nested {
+            padding-left: 16px !important;
+            padding-right: 16px !important; }
+        table.body .collapse .columns,
+        table.body .collapse .column {
+          padding-left: 0 !important;
+          padding-right: 0 !important; }
+        td.small-1,
+        th.small-1 {
+          display: inline-block !important;
+          width: 8.33333% !important; }
+        td.small-2,
+        th.small-2 {
+          display: inline-block !important;
+          width: 16.66667% !important; }
+        td.small-3,
+        th.small-3 {
+          display: inline-block !important;
+          width: 25% !important; }
+        td.small-4,
+        th.small-4 {
+          display: inline-block !important;
+          width: 33.33333% !important; }
+        td.small-5,
+        th.small-5 {
+          display: inline-block !important;
+          width: 41.66667% !important; }
+        td.small-6,
+        th.small-6 {
+          display: inline-block !important;
+          width: 50% !important; }
+        td.small-7,
+        th.small-7 {
+          display: inline-block !important;
+          width: 58.33333% !important; }
+        td.small-8,
+        th.small-8 {
+          display: inline-block !important;
+          width: 66.66667% !important; }
+        td.small-9,
+        th.small-9 {
+          display: inline-block !important;
+          width: 75% !important; }
+        td.small-10,
+        th.small-10 {
+          display: inline-block !important;
+          width: 83.33333% !important; }
+        td.small-11,
+        th.small-11 {
+          display: inline-block !important;
+          width: 91.66667% !important; }
+        td.small-12,
+        th.small-12 {
+          display: inline-block !important;
+          width: 100% !important; }
+        .columns td.small-12,
+        .column td.small-12,
+        .columns th.small-12,
+        .column th.small-12 {
+          display: block !important;
+          width: 100% !important; }
+        .body .columns td.small-1,
+        .body .column td.small-1,
+        td.small-1 center,
+        .body .columns th.small-1,
+        .body .column th.small-1,
+        th.small-1 center {
+          display: inline-block !important;
+          width: 8.33333% !important; }
+        .body .columns td.small-2,
+        .body .column td.small-2,
+        td.small-2 center,
+        .body .columns th.small-2,
+        .body .column th.small-2,
+        th.small-2 center {
+          display: inline-block !important;
+          width: 16.66667% !important; }
+        .body .columns td.small-3,
+        .body .column td.small-3,
+        td.small-3 center,
+        .body .columns th.small-3,
+        .body .column th.small-3,
+        th.small-3 center {
+          display: inline-block !important;
+          width: 25% !important; }
+        .body .columns td.small-4,
+        .body .column td.small-4,
+        td.small-4 center,
+        .body .columns th.small-4,
+        .body .column th.small-4,
+        th.small-4 center {
+          display: inline-block !important;
+          width: 33.33333% !important; }
+        .body .columns td.small-5,
+        .body .column td.small-5,
+        td.small-5 center,
+        .body .columns th.small-5,
+        .body .column th.small-5,
+        th.small-5 center {
+          display: inline-block !important;
+          width: 41.66667% !important; }
+        .body .columns td.small-6,
+        .body .column td.small-6,
+        td.small-6 center,
+        .body .columns th.small-6,
+        .body .column th.small-6,
+        th.small-6 center {
+          display: inline-block !important;
+          width: 50% !important; }
+        .body .columns td.small-7,
+        .body .column td.small-7,
+        td.small-7 center,
+        .body .columns th.small-7,
+        .body .column th.small-7,
+        th.small-7 center {
+          display: inline-block !important;
+          width: 58.33333% !important; }
+        .body .columns td.small-8,
+        .body .column td.small-8,
+        td.small-8 center,
+        .body .columns th.small-8,
+        .body .column th.small-8,
+        th.small-8 center {
+          display: inline-block !important;
+          width: 66.66667% !important; }
+        .body .columns td.small-9,
+        .body .column td.small-9,
+        td.small-9 center,
+        .body .columns th.small-9,
+        .body .column th.small-9,
+        th.small-9 center {
+          display: inline-block !important;
+          width: 75% !important; }
+        .body .columns td.small-10,
+        .body .column td.small-10,
+        td.small-10 center,
+        .body .columns th.small-10,
+        .body .column th.small-10,
+        th.small-10 center {
+          display: inline-block !important;
+          width: 83.33333% !important; }
+        .body .columns td.small-11,
+        .body .column td.small-11,
+        td.small-11 center,
+        .body .columns th.small-11,
+        .body .column th.small-11,
+        th.small-11 center {
+          display: inline-block !important;
+          width: 91.66667% !important; }
+        table.body td.small-offset-1,
+        table.body th.small-offset-1 {
+          margin-left: 8.33333% !important;
+          Margin-left: 8.33333% !important; }
+        table.body td.small-offset-2,
+        table.body th.small-offset-2 {
+          margin-left: 16.66667% !important;
+          Margin-left: 16.66667% !important; }
+        table.body td.small-offset-3,
+        table.body th.small-offset-3 {
+          margin-left: 25% !important;
+          Margin-left: 25% !important; }
+        table.body td.small-offset-4,
+        table.body th.small-offset-4 {
+          margin-left: 33.33333% !important;
+          Margin-left: 33.33333% !important; }
+        table.body td.small-offset-5,
+        table.body th.small-offset-5 {
+          margin-left: 41.66667% !important;
+          Margin-left: 41.66667% !important; }
+        table.body td.small-offset-6,
+        table.body th.small-offset-6 {
+          margin-left: 50% !important;
+          Margin-left: 50% !important; }
+        table.body td.small-offset-7,
+        table.body th.small-offset-7 {
+          margin-left: 58.33333% !important;
+          Margin-left: 58.33333% !important; }
+        table.body td.small-offset-8,
+        table.body th.small-offset-8 {
+          margin-left: 66.66667% !important;
+          Margin-left: 66.66667% !important; }
+        table.body td.small-offset-9,
+        table.body th.small-offset-9 {
+          margin-left: 75% !important;
+          Margin-left: 75% !important; }
+        table.body td.small-offset-10,
+        table.body th.small-offset-10 {
+          margin-left: 83.33333% !important;
+          Margin-left: 83.33333% !important; }
+        table.body td.small-offset-11,
+        table.body th.small-offset-11 {
+          margin-left: 91.66667% !important;
+          Margin-left: 91.66667% !important; }
+        table.body table.columns td.expander,
+        table.body table.columns th.expander {
+          display: none !important; }
+        table.body .right-text-pad,
+        table.body .text-pad-right {
+          padding-left: 10px !important; }
+        table.body .left-text-pad,
+        table.body .text-pad-left {
+          padding-right: 10px !important; }
+        table.menu {
+          width: 100% !important; }
+          table.menu td,
+          table.menu th {
+            width: auto !important;
+            display: inline-block !important; }
+          table.menu.vertical td,
+          table.menu.vertical th, table.menu.small-vertical td,
+          table.menu.small-vertical th {
+            display: block !important; }
+        table.menu[align=3D"center"] {
+          width: auto !important; }
+        table.button.expand {
+          width: 100% !important; } }
+
+      @media only screen and (max-width: 596px) {
+        .day-box {
+          padding-top: 2vw !important;
+          width: 14vw !important;
+          height: 14vw !important;
+        }
+        .icon {
+          margin-right: 0.5vw;
+          width: 8px !important;
+        }
+        .icon-container {
+          height: 25%;
+        }
+        .exp-day-label {
+          margin-top: 0% !important;
+          font-size: 15px;
+        }
+        .exp-calendar-content {
+          min-width: 320px;
+          height: 14vw;
+        }
+      }
+
+      @media only screen and (min-width: 596px) {
+        .exp-calendar-content {
+          margin-left: auto;
+          margin-right: auto;
+          width: 78 * 7 + 8;
+          height: 78;
+        }
+        .icon-container {
+          height: 35px;
+        }
+      }
+
+      @media only screen and (max-width: 596px) {
+        .calendar-content {
+          padding: 0px !important;
+          width: 288px !important;
+        }
+
+        .not-available-day, .calendar-today, .available-day {
+          height: 40px !important;
+          width: 40px !important;
+        }
+
+        .day-label {
+          margin-left: 10% !important;
+          margin-top: 0% !important;
+          font-size: 15px;
+        }
+      }
+
+      @media only screen and (max-width: 596px) {
+        .small-font {
+          font-size: 15px !important;
+        }
+      }
+
+      .gmailfix {
+        display: none;
+        display: none !important;
+      }
+    </style>
+    <meta name=3D"filler" content=3D"        _      _           _      ">
+    <meta name=3D"filler" content=3D"       (_)    | |         | |     ">
+    <meta name=3D"filler" content=3D"   __ _ _ _ __| |__  _ __ | |__   ">
+    <meta name=3D"filler" content=3D"  / _' | | '__| '_ \| '_ \| '_ \  ">
+    <meta name=3D"filler" content=3D" | (_| | | |  | |_) | | | | |_) | ">
+    <meta name=3D"filler" content=3D"  \__,_|_|_|  |_.__/|_| |_|_.__/  ">
+    <meta name=3D"filler" content=3D"                                  ">
+=20=20=20=20
+=20=20
+=20=20
+    <img class=3D"tracking" src=3D"https://www.airbnb.com/tracking/pixel/em=
+ail_opened/1597407814?rookery_uuid=3D2510334c-22fa-7628-7739-9a45af174f59" =
+style=3D"outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;w=
+idth:auto;max-width:100%;clear:both;display:block;display:none">
+<img class=3D"tracking" src=3D"https://pixel.monitor1.returnpath.net/pixel.=
+gif?r=3Dd18944536895e922f0e7423fe24e51aff6f2b008" width=3D"1" height=3D"1" =
+style=3D"outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;w=
+idth:auto;max-width:100%;clear:both;display:block">
+    <table dir=3D"ltr" class=3D"body" style=3D"border-spacing:0;border-coll=
+apse:collapse;vertical-align:top;hyphens:none;-moz-hyphens:none;-webkit-hyp=
+hens:none;-ms-hyphens:none;background:#f3f3f3;height:100%;width:100%;color:=
+#0a0a0a;font-family:'Cereal', Helvetica, Arial, sans-serif;font-weight:norm=
+al;padding:0;margin:0;text-align:left;font-size:16px;line-height:19px;margi=
+n-bottom:0px !important;background-color: white">
+      <tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <td class=3D"center" align=3D"center" valign=3D"top" style=3D"word-=
+wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertica=
+l-align:top;color:#0a0a0a;font-family:'Cereal', Helvetica, Arial, sans-seri=
+f;font-weight:normal;padding:0;margin:0;text-align:left;font-size:16px;line=
+-height:19px;border-collapse:collapse !important">
+          <center style=3D"width:100%;min-width:580px">
+            <!--[if mso]>
+              <table class=3D"container" width=3D"580">
+            <![endif]-->
+            <!--[if !mso]> <!-- -->
+              <table class=3D"container" style=3D"border-spacing:0;border-c=
+ollapse:collapse;padding:0;vertical-align:top;background:#fefefe;width:580p=
+x;margin:0 auto;text-align:inherit;max-width:580px;">
+            <!-- <![endif]-->
+              <tr style=3D"padding:0;vertical-align:top;text-align:left">
+                <td style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz=
+-hyphens:auto;hyphens:auto;vertical-align:top;color:#0a0a0a;font-family:'Ce=
+real', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;t=
+ext-align:left;font-size:16px;line-height:19px;border-collapse:collapse !im=
+portant">
+                  <div>
+<table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse;ver=
+tical-align:top;text-align:left;padding:0;width:100%;position:relative;disp=
+lay:table">
+  <tr class=3D"" style=3D"padding:0;vertical-align:top;text-align:left">
+    <th class=3D"columns first large-12 last small-12" style=3D"color:#0a0a=
+0a;font-family:'Cereal', Helvetica, Arial, sans-serif;font-weight:normal;pa=
+dding:0;text-align:left;font-size:16px;line-height:19px;margin:0 auto;paddi=
+ng-bottom:16px;width:564px;padding-left:16px;padding-right:16px">
+      <a href=3D"https://www.airbnb.fr?eal_exp=3D1599999814&amp;eal_sig=3Dd=
+6b07b9813000a6640d11259e8abf9adeeeec06658fbbb81000d032961ad6620&amp;eal_uid=
+=3D359968449&amp;eluid=3D0&amp;euid=3D2510334c-22fa-7628-7739-9a45af174f59"=
+ style=3D"font-family:'Cereal', Helvetica, Arial, sans-serif;font-weight:no=
+rmal;padding:0;margin:0;text-align:left;line-height:1.3;color:#2199e8;text-=
+decoration:none">
+<img align=3D"center" alt=3D"Airbnb" class=3D"center standard-header" heigh=
+t=3D"30" src=3D"https://a1.muscache.com/airbnb/rookery/dls/logo_standard_2x=
+-c0ed1450d18490825bc37dd6cb23e5c5.png" style=3D"outline:none;text-decoratio=
+n:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;=
+display:block;border:none;padding-bottom:16px;padding-top:48px;max-height:3=
+0px">      </a>
+    </th>
+  </tr>
+</table>
+</div>
+<div>
+<table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse;ver=
+tical-align:top;text-align:left;padding:0;width:100%;position:relative;disp=
+lay:table">
+  <tr class=3D"" style=3D"padding:0;vertical-align:top;text-align:left">
+    <th class=3D"columns first large-12 last small-12" style=3D"color:#0a0a=
+0a;font-family:'Cereal', Helvetica, Arial, sans-serif;font-weight:normal;pa=
+dding:0;text-align:left;font-size:16px;line-height:19px;margin:0 auto;paddi=
+ng-bottom:16px;width:564px;padding-left:16px;padding-right:16px">
+      <p class=3D"headline headline-lg  heavy max-width-485" style=3D'paddi=
+ng:0;margin:0;text-align:left;font-family:"Cereal", "Helvetica", Helvetica,=
+ Arial, sans-serif;max-width:485px;font-weight:700;color:#484848;word-break=
+:normal;hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;-ms-hyphens:non=
+e;font-size:32px;line-height:1.3;margin-bottom:0 !important;'>
+        Vous =C3=AAtes-vous connect=C3=A9 =C3=A0 partir d'un nouvel apparei=
+l=C2=A0?
+      </p>
+    </th>
+  </tr>
+</table>
+</div>
+<div style=3D"padding-bottom:16px">
+<table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse;ver=
+tical-align:top;text-align:left;padding:0;width:100%;position:relative;disp=
+lay:table">
+  <tr class=3D"" style=3D"padding:0;vertical-align:top;text-align:left">
+    <th class=3D"columns first large-12 last small-12" style=3D"color:#0a0a=
+0a;font-family:'Cereal', Helvetica, Arial, sans-serif;font-weight:normal;pa=
+dding:0;text-align:left;font-size:16px;line-height:19px;margin:0 auto;paddi=
+ng-bottom:16px;width:564px;padding-left:16px;padding-right:16px">
+      <p class=3D"body  body-lg  body-link-rausch light text-left   " style=
+=3D'padding:0;margin:0;font-family:"Cereal", "Helvetica", Helvetica, Arial,=
+ sans-serif;font-weight:300;color:#484848;hyphens:none;-moz-hyphens:none;-w=
+ebkit-hyphens:none;-ms-hyphens:none;font-size:18px;line-height:1.4;text-ali=
+gn:left;margin-bottom:0px !important;'>
+Un nouvel appareil a acc=C3=A9d=C3=A9 =C3=A0 votre compte Airbnb. Si vous n=
+'=C3=AAtes pas =C3=A0 l'origine de cette op=C3=A9ration, v=C3=A9rifiez votr=
+e compte d=C3=A8s maintenant. Si vous =C3=AAtes =C3=A0 l'origine de cette o=
+p=C3=A9ration, vous pouvez ignorer cet e-mail en toute s=C3=A9curit=C3=A9. =
+     </p>
+    </th>
+  </tr>
+</table>
+</div>
+<div>
+<table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse;ver=
+tical-align:top;text-align:left;padding:0;width:100%;position:relative;disp=
+lay:table">
+  <tr class=3D"" style=3D"padding:0;vertical-align:top;text-align:left">
+    <th class=3D"columns first large-12 last small-12" style=3D"color:#0a0a=
+0a;font-family:'Cereal', Helvetica, Arial, sans-serif;font-weight:normal;pa=
+dding:0;text-align:left;font-size:16px;line-height:19px;margin:0 auto;paddi=
+ng-bottom:16px;width:564px;padding-left:16px;padding-right:16px">
+      <div class=3D"account-alert-card account-alert-card-border" style=3D"=
+border-radius:4px;border-color:#dbdbdb;border-width:1px;border-style:solid">
+        <div class=3D"account-alert-card-with-padding" style=3D"padding-top=
+:36px;padding-bottom:20px;padding-left:36px;padding-right:36px">
+          <p style=3D'color:#0a0a0a;font-weight:normal;padding:0;margin:0;t=
+ext-align:left;font-size:16px;line-height:19px;margin-bottom:10px;font-fami=
+ly:"Cereal", "Helvetica", Helvetica, Arial, sans-serif'>
+            <span class=3D"body body-lg bold" style=3D"font-weight:bold;col=
+or:#484848;hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;-ms-hyphens:=
+none;font-size:18px;line-height:1.4;margin-bottom:0px !important">
+              Horaires
+            </span>
+=C2=A0=C2=A0=C2=A0=C2=A0            <span class=3D"body body-lg light" styl=
+e=3D"font-weight:300;color:#484848;hyphens:none;-moz-hyphens:none;-webkit-h=
+yphens:none;-ms-hyphens:none;font-size:18px;line-height:1.4;margin-bottom:0=
+px !important">
+              ven. 14 ao=C3=BBt 2020, 12:23 UTC
+            </span>
+          </p>
+          <p style=3D'color:#0a0a0a;font-weight:normal;padding:0;margin:0;t=
+ext-align:left;font-size:16px;line-height:19px;margin-bottom:10px;font-fami=
+ly:"Cereal", "Helvetica", Helvetica, Arial, sans-serif'>
+            <span class=3D"body body-lg bold" style=3D"font-weight:bold;col=
+or:#484848;hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;-ms-hyphens:=
+none;font-size:18px;line-height:1.4;margin-bottom:0px !important">
+              Lieu
+            </span>
+=C2=A0=C2=A0=C2=A0=C2=A0            <span class=3D"body body-lg light" styl=
+e=3D"font-weight:300;color:#484848;hyphens:none;-moz-hyphens:none;-webkit-h=
+yphens:none;-ms-hyphens:none;font-size:18px;line-height:1.4;margin-bottom:0=
+px !important">
+              GES, France
+            </span>
+          </p>
+          <p style=3D'color:#0a0a0a;font-weight:normal;padding:0;margin:0;t=
+ext-align:left;font-size:16px;line-height:19px;margin-bottom:10px;font-fami=
+ly:"Cereal", "Helvetica", Helvetica, Arial, sans-serif'>
+            <span class=3D"body body-lg bold" style=3D"font-weight:bold;col=
+or:#484848;hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;-ms-hyphens:=
+none;font-size:18px;line-height:1.4;margin-bottom:0px !important">
+              Type d'appareil
+            </span>
+=C2=A0=C2=A0=C2=A0=C2=A0            <span class=3D"body body-lg light" styl=
+e=3D"font-weight:300;color:#484848;hyphens:none;-moz-hyphens:none;-webkit-h=
+yphens:none;-ms-hyphens:none;font-size:18px;line-height:1.4;margin-bottom:0=
+px !important">
+              Firefox avec Windows
+            </span>
+          </p>
+        </div>
+        <hr class=3D"full-divider" style=3D"max-width:580px;border-right:0;=
+border-top:0;border-bottom:1px solid #cacaca;border-left:0;margin:20px auto=
+;clear:both;background-color:#dbdbdb;height:1px;border:none;width:100%;marg=
+in-top:0;margin-bottom:0">
+        <div class=3D"account-alert-card-button-container" style=3D"padding=
+-top:16px;padding-bottom:16px;padding-left:0px;padding-right:0px">
+          <table class=3D"row" style=3D"border-spacing:0;border-collapse:co=
+llapse;vertical-align:top;text-align:left;padding:0;position:relative;width=
+:100%;display:table">
+            <tr style=3D"padding:0;vertical-align:top;text-align:left">
+              <th class=3D"col-pad-left-2 col-pad-right-2" style=3D"color:#=
+0a0a0a;font-family:'Cereal', Helvetica, Arial, sans-serif;font-weight:norma=
+l;padding:0;margin:0;text-align:left;font-size:16px;line-height:19px;paddin=
+g-left:16px;padding-right:16px">
+                <a href=3D"https://www.airbnb.fr/review_your_account?alert_=
+name=3Dnew_device_login&amp;c=3D.pi80.pkYWNjb3VudF9hbGVydHMvbmV3X2RldmljZV9=
+sb2dpbg%3D%3D&amp;euid=3D2510334c-22fa-7628-7739-9a45af174f59&amp;rya_flow_=
+token=3Dfbb2da14-fb27-4ec2-bafe-6279a04601d3&amp;user_id=3D359968449" class=
+=3D"btn-primary btn-sm btn-rausch btn-full-width" style=3D"font-family:'Cer=
+eal', Helvetica, Arial, sans-serif;font-weight:normal;margin:0;text-align:l=
+eft;line-height:1.3;color:#2199e8;text-decoration:none;background-color:#ff=
+5a5f;-webkit-border-radius:4px;border-radius:4px;display:block;padding:19px=
+ 24px 19px 24px;">
+                  <p class=3D"text-center" style=3D'font-weight:normal;padd=
+ing:0;margin:0;font-size:16px;line-height:19px;text-align:center;font-famil=
+y:"Cereal", "Helvetica", Helvetica, Arial, sans-serif;color:white;margin-bo=
+ttom:0px !important;'>
+                    V=C3=A9rifier mon compte
+                  </p>
+                </a>
+              </th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </th>
+  </tr>
+</table>
+</div>
+<div style=3D"padding-top:48px">
+<table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse;ver=
+tical-align:top;text-align:left;padding:0;width:100%;position:relative;disp=
+lay:table">
+  <tr class=3D"" style=3D"padding:0;vertical-align:top;text-align:left">
+    <th class=3D"columns first large-12 last small-12 standard-footer-paddi=
+ng" style=3D"color:#0a0a0a;font-family:'Cereal', Helvetica, Arial, sans-ser=
+if;font-weight:normal;padding:0;text-align:left;font-size:16px;line-height:=
+19px;margin:0 auto;padding-bottom:16px;width:564px;padding-left:16px;paddin=
+g-right:16px">
+      <div class=3D"">
+        <hr class=3D"standard-footer-hr" style=3D"max-width:580px;border-ri=
+ght:0;border-top:0;border-bottom:1px solid #cacaca;border-left:0;clear:both=
+;background-color:#dbdbdb;height:2px;width:100%;border:none;margin:auto">
+        <div class=3D"row-pad-bot-4" style=3D"padding-bottom:32px">
+        </div>
+        <p class=3D"standard-footer-text " style=3D'padding:0;margin:0;text=
+-align:left;margin-bottom:10px;font-family:"Cereal", "Helvetica", Helvetica=
+, Arial, sans-serif;color:#9ca299;font-size:14px;text-shadow:0 1px #fff;fon=
+t-weight:300;line-height:1.4'>
+        </p>
+        <p class=3D"standard-footer-text center " style=3D'padding:0;margin=
+:0;text-align:left;margin-bottom:10px;font-family:"Cereal", "Helvetica", He=
+lvetica, Arial, sans-serif;color:#9ca299;font-size:14px;text-shadow:0 1px #=
+fff;font-weight:300;line-height:1.4'>
+          Envoy=C3=A9 avec =E2=99=A5 par Airbnb
+        </p>
+        <p class=3D"standard-footer-text " style=3D'padding:0;margin:0;text=
+-align:left;margin-bottom:10px;font-family:"Cereal", "Helvetica", Helvetica=
+, Arial, sans-serif;color:#9ca299;font-size:14px;text-shadow:0 1px #fff;fon=
+t-weight:300;line-height:1.4'>
+=E2=80=8CA=E2=80=8Ci=E2=80=8Cr=E2=80=8Cb=E2=80=8Cn=E2=80=8Cb=E2=80=8C,=E2=
+=80=8C =E2=80=8CI=E2=80=8Cn=E2=80=8Cc=E2=80=8C.=E2=80=8C,=E2=80=8C =E2=80=
+=8C8=E2=80=8C8=E2=80=8C8=E2=80=8C =E2=80=8CB=E2=80=8Cr=E2=80=8Ca=E2=80=8Cn=
+=E2=80=8Cn=E2=80=8Ca=E2=80=8Cn=E2=80=8C =E2=80=8CS=E2=80=8Ct=E2=80=8C,=E2=
+=80=8C =E2=80=8CS=E2=80=8Ca=E2=80=8Cn=E2=80=8C =E2=80=8CF=E2=80=8Cr=E2=80=
+=8Ca=E2=80=8Cn=E2=80=8Cc=E2=80=8Ci=E2=80=8Cs=E2=80=8Cc=E2=80=8Co=E2=80=8C,=
+=E2=80=8C =E2=80=8CC=E2=80=8CA=E2=80=8C =E2=80=8C9=E2=80=8C4=E2=80=8C1=E2=
+=80=8C0=E2=80=8C3=E2=80=8C,=E2=80=8C =E2=80=8C=C3=89=E2=80=8Ct=E2=80=8Ca=E2=
+=80=8Ct=E2=80=8Cs=E2=80=8C-=E2=80=8CU=E2=80=8Cn=E2=80=8Ci=E2=80=8Cs=E2=80=
+=8C        </p>
+        <p class=3D"standard-footer-text " style=3D'padding:0;margin:0;text=
+-align:left;margin-bottom:10px;font-family:"Cereal", "Helvetica", Helvetica=
+, Arial, sans-serif;color:#9ca299;font-size:14px;text-shadow:0 1px #fff;fon=
+t-weight:300;line-height:1.4'>
+        </p>
+      </div>
+    </th>
+  </tr>
+</table>
+</div>
+                </td>
+              </tr>
+            </table>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <!-- Gmail on iOS will automatically increase font-size for readability=
+ -->
+    <!-- http://freshinbox.com/blog/gmail-supports-displaynone-and-gmail-io=
+s-font-fix-update/ -->
+    <div class=3D"gmailfix" style=3D"white-space:nowrap; font:15px courier;=
+ line-height:0; color:white;">
+      =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0
+      =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0
+      =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0
+    </div>
+=20=20
+
+<img src=3D"http://email.airbnb.com/wf/open?upn=3Dg2VHUT6BeRrbGSmR5-2FpYYF5=
+MsYKtWlVcBB8yrpD9HDnIEL0MuHlwv5JLsTUsFUi2l1xp-2Bp8nUp6GF5TbTrmBZ42dc1LsPE9P=
+bDgxzGdWz3lfb4BMo43c-2Fr9nMkAsVlf7-2FPtslxifQcBaTNFK893mjtZewXXw1lT6xEbKfVf=
+Km-2BORh29aeno2dzhBeAHdSj40YsGXFSkLSn0C-2BHbLhdbc7gtadFETXyFadaPwzH603344Tc=
+WYcEnDUR47Yug0o76MlkxJN6fAvygnHRLG2-2BDWXKZsRIPtnC-2FFq1UCnQVnGjlKLPw99yBEc=
+QmC66Bp6i6oIaR3Cccx4UQeleF0lE7npUDgZgsB5gQKvB0bhTLcFLwkgrdf1Nx4jDAVYbMCtFIE=
+oIop1QgsTuIfjCvyJBTdjYZV1gEwFYXQxKbY4svqtsf-2FeYHJ3uPX-2B9Mhqyat41ckFOQgXvi=
+ExBoeyyaciOFyUaJcx5J-2FhAytVq0ERrQtZRjc8FkRki4W08KRcFF1B839iryCCcgOIYFBAhMU=
+EqFzFPsIfGT6Ab-2F4aYh9mlkAVdZtTB0yDyE058RTW-2BeWwAC-2FCSSEwlGUdOTYJ14nnHdPi=
+zNjP20t8vvIfZd0n4K0rW7TDW0PasaUKeqFobnYoPHDk3bpDkl5t-2BzigE31CvHUnTZGe94P4S=
+S-2B97FX3X1Vp5CkhEPOL4qkRVTKh9cvP1Kn" alt=3D"" width=3D"1" height=3D"1" bor=
+der=3D"0" style=3D"height:1px !important;width:1px !important;border-width:=
+0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-righ=
+t:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bo=
+ttom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+
+--c2f2fd6bf62069f77c80673a573fd252d3097a01ee6dc2493f925526f8e4--

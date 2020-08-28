@@ -1,0 +1,108 @@
+Return-Path: <opensuse-factory+bounces-96117-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 2112E822AB; Fri, 21 Aug 2020 11:23:39 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.8 required=5.0 tests=BAYES_20,DKIM_SIGNED,
+	MAILING_LIST_MULTI,RCVD_IN_DNSWL_LOW,RDNS_NONE,T_DKIM_INVALID,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id 38EA382578
+	for <axelcalixte@cock.li>; Fri, 21 Aug 2020 11:23:33 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (1024-bit key; unprotected) header.d=kairo.at header.i=@kairo.at header.b="B4Ygj7pG";
+	dkim=fail reason="signature verification failed" (1024-bit key) header.d=kairo.at header.i=@kairo.at header.b="pPX5atEu";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 963DF2146C
+	for <axelcalixte@cock.li>; Fri, 21 Aug 2020 11:23:32 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 7BC3411B1A;
+	Fri, 21 Aug 2020 11:23:32 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from mx1.opensuse.org (unknown [192.168.47.95])
+	by lists5.opensuse.org (Postfix) with ESMTP id 748D811B1A
+	for <opensuse-factory@lists5.opensuse.org>; Fri, 21 Aug 2020 11:23:32 +0000 (UTC)
+Received: from mx1.opensuse.org (localhost [127.0.0.1])
+	by mx1.opensuse.org (Postfix) with ESMTP id DB541894
+	for <opensuse-factory@opensuse.org>; Fri, 21 Aug 2020 11:23:28 +0000 (UTC)
+Received: from mail.kairo.at (mail.kairo.at [92.42.142.148])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange ECDHE (P-256) server-signature ECDSA (P-384) server-digest SHA384)
+	(No client certificate requested)
+	by mx1.opensuse.org (Postfix) with ESMTPS
+	for <opensuse-factory@opensuse.org>; Fri, 21 Aug 2020 11:23:28 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.kairo.at (Postfix) with ESMTP id 9AB561965487
+	for <opensuse-factory@opensuse.org>; Fri, 21 Aug 2020 13:23:28 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=kairo.at; s=mail;
+	t=1598009008; bh=+zxVPwAp1tKx+TlLompO7HCyPKRKPIjSa0N6DPe9wHE=;
+	h=To:From:Subject:Date;
+	b=B4Ygj7pGio/JqXUJ7ajKAp7sRa1kxnsXkkJBvOq5+zOct9ZyYC67pipWRCxPjnHSs
+	 vj2AudkVTnZm+YKvzRwG78qG4JkEfRtZ3tmDId5HXeS3qbyxY8SeXDWkOxm/ccCtIU
+	 RKhPuMBApJNaMWG+T87KYJbidqKGG+Nk7dggllRw=
+X-Virus-Scanned: amavisd-new at kairo.at
+Received: from mail.kairo.at ([92.42.142.148])
+	by localhost (mail.kairo.at [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id B5NCQMhtxhET for <opensuse-factory@opensuse.org>;
+	Fri, 21 Aug 2020 13:23:26 +0200 (CEST)
+Received: from [192.168.13.5] (80-121-62-205.adsl.highway.telekom.at [80.121.62.205])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits)
+	 key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256)
+	(No client certificate requested)
+	by mail.kairo.at (Postfix) with ESMTPSA id C2E1A196540B
+	for <opensuse-factory@opensuse.org>; Fri, 21 Aug 2020 13:23:26 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=kairo.at; s=mail;
+	t=1598009006; bh=+zxVPwAp1tKx+TlLompO7HCyPKRKPIjSa0N6DPe9wHE=;
+	h=To:From:Subject:Date;
+	b=pPX5atEuTRG5bj4zS3ZNvZPKyxLujZN4xjecoaTgcCrYqaDa3euYIIoQnTXR53TZP
+	 pxhTYm++iPftxzILJA0GW+91a+rzl02XRrXmhii8M6iSu+82H9IEHDgMAMZNARFOic
+	 xuGJh6BHDug01o26bSxebxhpDKYcW6hVb5judVL8=
+To: opensuse-factory@opensuse.org
+From: Robert Kaiser <kairo@kairo.at>
+Subject: [opensuse-factory] `systemctl show` isn't showing everything it should
+Message-ID: <d3ea20a8-2a9f-2a1f-ae74-c18cce0560e7@kairo.at>
+Date: Fri, 21 Aug 2020 13:22:47 +0200
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101
+ Firefox/60.0 SeaMonkey/2.53.1
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+
+Looks like on current Tumbleweed, we have an issue with `systemctl show` 
+running into `Failed to parse bus message: Invalid argument` and not 
+showing all it should show, which I noticed because one of my tools 
+fails because it can't find `ActiveState`.
+
+A bit of searching leads to 
+https://www.mail-archive.com/debian-bugs-dist@lists.debian.org/msg1759127.html 
+and https://bugzilla.redhat.com/show_bug.cgi?id=1853736
+
+So, this is caused by running kernel 5.8 with a a systemd compiled 
+against an older kernel version, and openSUSE can either fix this by 
+rebuilding systemd or in addition also upgrading systemd to include the 
+upstream fix mentioned in the RedHat bug.
+
+Should I file a bug on this?
+
+Cheers,
+Robert Kaiser
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

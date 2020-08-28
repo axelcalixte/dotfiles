@@ -1,0 +1,166 @@
+Return-Path: <3us4mXwgTC_Egh-kXierTVVhngml.ZhhZeX.VhfTqXeVTebqmXVhVd.eb@gaia.bounces.google.com>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 3246782662; Sun,  2 Aug 2020 14:33:43 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.8 required=5.0 tests=BAYES_95,DKIMWL_WL_HIGH,
+	DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,HTML_MESSAGE,RCVD_IN_DNSWL_NONE,
+	RDNS_NONE,URIBL_BLOCKED,URI_TRY_3LD,USER_IN_DEF_DKIM_WL
+	shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from mail-pg1-x54a.google.com (unknown [IPv6:2607:f8b0:4864:20::54a])
+	by mx1.cock.li (Postfix) with ESMTPS id 8D9988260F
+	for <axelcalixte@cock.li>; Sun,  2 Aug 2020 14:33:38 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=pass (2048-bit key; unprotected) header.d=accounts.google.com header.i=@accounts.google.com header.b="jR0a4zzJ";
+	dkim-atps=neutral
+Received: by mail-pg1-x54a.google.com with SMTP id t6so24402479pgv.5
+        for <axelcalixte@cock.li>; Sun, 02 Aug 2020 07:33:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=accounts.google.com; s=20161025;
+        h=mime-version:date:feedback-id:message-id:subject:from:to;
+        bh=/DW+TabR6NhyccbdrKyAVyT/QAE8gf4hJJ0l+YUHhX0=;
+        b=jR0a4zzJlQEmD0ZzziJitLlToCp32LHconE/WC3taDyEvPrnJx49+LAeaCYuom1Qxl
+         7W/nDYB93R9P/xGoVeup10HvZD9xmVylapsGjQeXZPTpIAcFX48DYXPOGkznhw4UpQXQ
+         n4NQQCAUmvwhFUU/BZaR/yDEd+NQugujUCAn/valCUz8nowL8dRsaW55EZ7Jl40V7BNw
+         FkLT0qHDsriu/YGZVIuHaO0uTmXMvkvl4ZOxerVTSSZEoSL+aQ7LoFSIIhN2U9n5nton
+         yY7vgt4/ceMAI1f7s6XwnrsYmw1whn6UYbWmtV9AuCiovcD/gDOVz4b6IDZ8y2Ujv0pR
+         fGZQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:date:feedback-id:message-id:subject
+         :from:to;
+        bh=/DW+TabR6NhyccbdrKyAVyT/QAE8gf4hJJ0l+YUHhX0=;
+        b=ULp92hHGJX2RgR1DxtlLC7vStZxTttX8JgxJkKi7mMy9nh1bUApLum7PO2d0MC8uT/
+         U1e8iRbrhicZ2vIgrqsxDeFf/Cbz6ex5wwMH5ST+zRkbnEp19d2i70BYJS9/GRQaO0I0
+         5sp0+0Qda7BVusdiTH4QSFiUMIUAdw3zaAHQ5GzyTgdC1VCTNuc8EWgqSsVx2hGjtOiy
+         0+k2jJIGqwZiPWliGhkhvfAk52nxPFKWNp2qsPE/hgvOoFaOTYvwQUrc3Ux5+GMrp18d
+         xr+Po0bk90iLV0vhFAi1Bt60q5AW2eL0/5r3oQF0KvbNhorpg+k/3itk8YX5kA92Gdvj
+         vl5w==
+X-Gm-Message-State: AOAM530NFkX6GwLzqAQLHfNMNVE5ZA2LWJNJaPsNNtE0lfCSVdJCYaWT
+	I6P/ZJWgGstLvVfDU0BAE7cDGpO6giMT
+X-Google-Smtp-Source: ABdhPJyAKsND2C0nEiMq4f3BLpoH4ofYzDgHCYhGbxTvXa/VDL8K1wrmz8LBMmBzEwZpjUS+FW1NGUdfu7PwZndVFP6wew==
+MIME-Version: 1.0
+X-Received: by 2002:a17:902:5985:: with SMTP id p5mr10847445pli.73.1596378810536;
+ Sun, 02 Aug 2020 07:33:30 -0700 (PDT)
+Date: Sun, 02 Aug 2020 14:33:29 GMT
+X-Account-Notification-Type: 31-RECOVERY
+Feedback-ID: 31-RECOVERY:account-notifier
+X-Notifications: 27d12aec21400000
+Message-ID: <bGskmMFhwiNyrD94DspbEg.0@notifications.google.com>
+Subject: =?UTF-8?Q?Alerte_de_s=C3=A9curit=C3=A9_concernant_votre_compte_Google_?=
+	=?UTF-8?Q?associ=C3=A9?=
+From: Google <no-reply@accounts.google.com>
+To: axelcalixte@cock.li
+Content-Type: multipart/alternative; boundary="000000000000edd2af05abe5e7c0"
+
+--000000000000edd2af05abe5e7c0
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+Vm90cmUgY29tcHRlIGF4ZWxjYWxpeHRlQGNvY2subGkgZXN0IGluZGlxdcOpIGNvbW1lIGFkcmVz
+c2UgZS1tYWlsIGRlDQpyw6ljdXDDqXJhdGlvbiBwb3VyIGxlIGNvbXB0ZSBjYWxpeHRlYXhlbG1l
+dGFsaW5lQGdtYWlsLmNvbS4gVm91cyBuZQ0KcmVjb25uYWlzc2V6IHBhcyBjZSBjb21wdGUgPyBD
+bGlxdWV6IGljaQ0KPGh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9BY2NvdW50RGlzYXZvdz9h
+ZHQ9QU9YOGtpcXBFNlJvTjVPeXVVLWZkSkNDT0lVakJZTUxMSEJWU2JCd2ZKSDIwSzlFMThOMWNR
+aU9aVWx4QlFMTSZyZm49MzE+DQpbaW1hZ2U6IEdvb2dsZV0NCk5vdXZlbGxlIGNvbm5leGlvbiDD
+oCB2b3RyZSBjb21wdGUgYXNzb2Npw6kNCg0KDQpjYWxpeHRlYXhlbG1ldGFsaW5lQGdtYWlsLmNv
+bQ0KVW4gdXRpbGlzYXRldXIgdmllbnQgZGUgc2UgY29ubmVjdGVyIMOgIHZvdHJlIGNvbXB0ZSBH
+b29nbGUgw6AgcGFydGlyIGQndW4NCm5vdXZlbCBhcHBhcmVpbCBXaW5kb3dzLiBOb3VzIHZvdXMg
+ZW52b3lvbnMgY2V0IGUtbWFpbCBwb3VyIHbDqXJpZmllciBxdSdpbA0KcydhZ2lzc2FpdCBiaWVu
+IGRlIHZvdXMuDQpDb25zdWx0ZXIgbCdhY3Rpdml0w6kNCjxodHRwczovL2FjY291bnRzLmdvb2ds
+ZS5jb20vQWNjb3VudENob29zZXI/RW1haWw9Y2FsaXh0ZWF4ZWxtZXRhbGluZUBnbWFpbC5jb20m
+Y29udGludWU9aHR0cHM6Ly9teWFjY291bnQuZ29vZ2xlLmNvbS9hbGVydC9udC8xNTk2Mzc4ODA5
+MDAwP3JmbiUzRDMxJTI2cmZuYyUzRDElMjZlaWQlM0QyMzk2MTE4MjMxOTQzMzA0NDc1JTI2ZXQl
+M0QxPg0KQ2V0IGUtbWFpbCB2b3VzIGEgw6l0w6kgZW52b3nDqSBwb3VyIHZvdXMgaW5mb3JtZXIg
+ZGUgbW9kaWZpY2F0aW9ucw0KaW1wb3J0YW50ZXMgYXBwb3J0w6llcyDDoCB2b3RyZSBjb21wdGUg
+ZXQgYXV4IHNlcnZpY2VzIEdvb2dsZSBxdWUgdm91cw0KdXRpbGlzZXouDQrCqSAyMDIwIEdvb2ds
+ZSBMTEMsIDE2MDAgQW1waGl0aGVhdHJlIFBhcmt3YXksIE1vdW50YWluIFZpZXcsIENBIDk0MDQz
+LCBVU0ENCg==
+--000000000000edd2af05abe5e7c0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"en"><head><meta name=3D"format-detection" cont=
+ent=3D"email=3Dno"/><meta name=3D"format-detection" content=3D"date=3Dno"/>=
+<style nonce=3D"9U7qkWw11lDT+zFoo+mqCQ">.awl a {color: #FFFFFF; text-decora=
+tion: none;} .abml a {color: #000000; font-family: Roboto-Medium,Helvetica,=
+Arial,sans-serif; font-weight: bold; text-decoration: none;} .adgl a {color=
+: rgba(0, 0, 0, 0.87); text-decoration: none;} .afal a {color: #b0b0b0; tex=
+t-decoration: none;} @media screen and (min-width: 600px) {.v2sp {padding: =
+6px 30px 0px;} .v2rsp {padding: 0px 10px;}} @media screen and (min-width: 6=
+00px) {.mdv2rw {padding: 40px 40px;}} </style><link href=3D"//fonts.googlea=
+pis.com/css?family=3DGoogle+Sans" rel=3D"stylesheet" type=3D"text/css"/></h=
+ead><body style=3D"margin: 0; padding: 0;" bgcolor=3D"#FFFFFF"><table width=
+=3D"100%" height=3D"100%" style=3D"min-width: 348px;" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" lang=3D"en"><tr height=3D"32" style=3D"height: =
+32px;"><td></td></tr><tr align=3D"center"><td><div itemscope itemtype=3D"//=
+schema.org/EmailMessage"><div itemprop=3D"action" itemscope itemtype=3D"//s=
+chema.org/ViewAction"><link itemprop=3D"url" href=3D"https://accounts.googl=
+e.com/AccountChooser?Email=3Dcalixteaxelmetaline@gmail.com&amp;continue=3Dh=
+ttps://myaccount.google.com/alert/nt/1596378809000?rfn%3D31%26rfnc%3D1%26ei=
+d%3D2396118231943304475%26et%3D1"/><meta itemprop=3D"name" content=3D"Consu=
+lter l&#39;activit=C3=A9 du compte"/></div></div><table border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0" style=3D"padding-bottom: 20px; max-width: 516=
+px; min-width: 220px;"><tr><td width=3D"8" style=3D"width: 8px;"></td><td><=
+div style=3D"background-color: #F5F5F5; direction: ltr; padding: 16px;margi=
+n-bottom: 6px;"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0"><tbody><tr><td style=3D"vertical-align: top;"><img height=3D"20=
+" src=3D"https://www.gstatic.com/accountalerts/email/Icon_recovery_x2_20_20=
+.png"></td><td width=3D"13" style=3D"width: 13px;"></td><td style=3D"direct=
+ion: ltr;"><span style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-=
+serif; font-size: 13px; color: rgba(0,0,0,0.87); line-height: 1.6; color: r=
+gba(0,0,0,0.54);">Votre compte <a style=3D"text-decoration: none; color: rg=
+ba(0,0,0,0.87);">axelcalixte@cock.li</a> est indiqu=C3=A9 comme adresse e-m=
+ail de r=C3=A9cup=C3=A9ration pour le compte <a style=3D"text-decoration: n=
+one; color: rgba(0,0,0,0.87);">calixteaxelmetaline@gmail.com</a>.</span> <s=
+pan><span style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif; =
+font-size: 13px; color: rgba(0,0,0,0.87); line-height: 1.6; color: rgba(0,0=
+,0,0.54);">Vous ne reconnaissez pas ce compte=C2=A0? <a href=3D"https://acc=
+ounts.google.com/AccountDisavow?adt=3DAOX8kiqpE6RoN5OyuU-fdJCCOIUjBYMLLHBVS=
+bBwfJH20K9E18N1cQiOZUlxBQLM&amp;rfn=3D31" data-meta-key=3D"disavow" style=
+=3D"text-decoration: none; color: #4285F4;" target=3D"_blank">Cliquez ici</=
+a></span></span></td></tr></tbody></table></div><div style=3D"border-style:=
+ solid; border-width: thin; border-color:#dadce0; border-radius: 8px; paddi=
+ng: 40px 20px;" align=3D"center" class=3D"mdv2rw"><img src=3D"https://www.g=
+static.com/images/branding/googlelogo/2x/googlelogo_color_74x24dp.png" widt=
+h=3D"74" height=3D"24" aria-hidden=3D"true" style=3D"margin-bottom: 16px;" =
+alt=3D"Google"><div style=3D"font-family: &#39;Google Sans&#39;,Roboto,Robo=
+toDraft,Helvetica,Arial,sans-serif;border-bottom: thin solid #dadce0; color=
+: rgba(0,0,0,0.87); line-height: 32px; padding-bottom: 24px;text-align: cen=
+ter; word-break: break-word;"><div style=3D"font-size: 24px;">Nouvelle conn=
+exion =C3=A0 votre compte associ=C3=A9</div><table align=3D"center" style=
+=3D"margin-top:8px;"><tr style=3D"line-height: normal;"><td align=3D"right"=
+ style=3D"padding-right:8px;"><img width=3D"20" height=3D"20" style=3D"widt=
+h: 20px; height: 20px; vertical-align: sub; border-radius: 50%;;" src=3D"ht=
+tps://lh3.googleusercontent.com/a-/AOh14GjMdl6L16QqdVyegaTjQwl17RQR9DM6GFqO=
+fmUP=3Ds96" alt=3D""></td><td><a style=3D"font-family: &#39;Google Sans&#39=
+;,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color: rgba(0,0,0,0.87); fo=
+nt-size: 14px; line-height: 20px;">calixteaxelmetaline@gmail.com</a></td></=
+tr></table></div><div style=3D"font-family: Roboto-Regular,Helvetica,Arial,=
+sans-serif; font-size: 14px; color: rgba(0,0,0,0.87); line-height: 20px;pad=
+ding-top: 20px; text-align: center;">Un utilisateur vient de se connecter =
+=C3=A0 votre compte Google =C3=A0 partir d'un nouvel appareil Windows. Nous=
+ vous envoyons cet e-mail pour v=C3=A9rifier qu'il s'agissait bien de vous.=
+<div style=3D"padding-top: 32px; text-align: center;"><a href=3D"https://ac=
+counts.google.com/AccountChooser?Email=3Dcalixteaxelmetaline@gmail.com&amp;=
+continue=3Dhttps://myaccount.google.com/alert/nt/1596378809000?rfn%3D31%26r=
+fnc%3D1%26eid%3D2396118231943304475%26et%3D1" target=3D"_blank" link-id=3D"=
+main-button-link" style=3D"font-family: &#39;Google Sans&#39;,Roboto,Roboto=
+Draft,Helvetica,Arial,sans-serif; line-height: 16px; color: #ffffff; font-w=
+eight: 400; text-decoration: none;font-size: 14px;display:inline-block;padd=
+ing: 10px 24px;background-color: #4184F3; border-radius: 5px; min-width: 90=
+px;">Consulter l&#39;activit=C3=A9</a></div></div></div><div style=3D"text-=
+align: left;"><div style=3D"font-family: Roboto-Regular,Helvetica,Arial,san=
+s-serif;color: rgba(0,0,0,0.54); font-size: 11px; line-height: 18px; paddin=
+g-top: 12px; text-align: center;"><div>Cet e-mail vous a =C3=A9t=C3=A9 envo=
+y=C3=A9 pour vous informer de modifications importantes apport=C3=A9es =C3=
+=A0 votre compte et aux services Google que vous utilisez.</div><div style=
+=3D"direction: ltr;">&copy; 2020 Google LLC, <a class=3D"afal" style=3D"fon=
+t-family: Roboto-Regular,Helvetica,Arial,sans-serif;color: rgba(0,0,0,0.54)=
+; font-size: 11px; line-height: 18px; padding-top: 12px; text-align: center=
+;">1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</a></div></div><=
+/div></td><td width=3D"8" style=3D"width: 8px;"></td></tr></table></td></tr=
+><tr height=3D"32" style=3D"height: 32px;"><td></td></tr></table></body></h=
+tml>
+--000000000000edd2af05abe5e7c0--

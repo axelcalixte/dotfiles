@@ -1,0 +1,81 @@
+Return-Path: <opensuse-factory+bounces-95981-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 16BA3825D5; Fri,  7 Aug 2020 08:16:21 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=0.6 required=5.0 tests=BAYES_50,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_NONE,RDNS_NONE,URIBL_BLOCKED shortcircuit=_SCTYPE_
+	autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id 1425C8189D
+	for <axelcalixte@cock.li>; Fri,  7 Aug 2020 08:16:17 +0000 (UTC)
+Received: from lists5.opensuse.org (unknown [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 5013922636
+	for <axelcalixte@cock.li>; Fri,  7 Aug 2020 08:16:16 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id A4DF710E46;
+	Fri,  7 Aug 2020 08:15:47 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 96F1010E46;
+	Fri,  7 Aug 2020 08:15:47 +0000 (UTC)
+Received: from imap.suse.de (unknown [149.44.161.75])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id A94592C15C;
+	Fri,  7 Aug 2020 08:16:15 +0000 (UTC)
+Received: from guanche.site (unknown [47.62.239.121])
+	by imap.suse.de (Postfix) with ESMTPSA id 8D970118DF;
+	Fri,  7 Aug 2020 08:16:13 +0000 (UTC)
+From: Ancor Gonzalez Sosa <ancor@suse.de>
+Subject: [opensuse-factory] Highlights of development sprint 105
+To: YaST-devel <yast-devel@opensuse.org>,
+ openSUSE <opensuse-factory@opensuse.org>
+Message-ID: <4b337270-9536-854c-b510-b0964e3ab14f@suse.de>
+Date: Fri, 7 Aug 2020 10:16:12 +0200
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101
+ Thunderbird/68.7.0
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Language: es-ES
+Content-Transfer-Encoding: 8bit
+
+During the latest two weeks the YaST Team has fixed quite some bugs in
+(Auto)YaST, but we also has done more interesting stuff you can find in
+our usual report, including:
+
+- Documenting the current handling of the AutoYaST profile.
+- Removing an undocumented AutoYaST feature for creating images.
+- Improvements regarding I/O devices auto-configuration on s390.
+- Support for exporting the AutoYaST firewall section in compact format.
+- Some reduction in the size of the system images used by the installer.
+- Updating the documentation of mk_image.
+- Fixes in the Service Manager section of the AutoYaST UI.
+- Making YaST deal with the dual location of /usr/etc/nsswitch.conf
+  and /etc/nsswitch.conf.
+- Unified and more configurable layout for both the installer and YaST
+  Firstboot.
+
+Check the extended versions with links and some screenshots at
+https://yast.opensuse.org/blog/2020-08-06/sprint-105
+
+Cheers.
+--
+Ancor González Sosa
+YaST Team at SUSE Linux GmbH
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

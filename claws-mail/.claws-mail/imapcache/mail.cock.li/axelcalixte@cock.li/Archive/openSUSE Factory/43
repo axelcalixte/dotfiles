@@ -1,0 +1,231 @@
+Return-Path: <opensuse-factory+bounces-95894-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 9B41F8261F; Tue, 28 Jul 2020 16:43:20 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.0 required=5.0 tests=BAYES_00,DKIM_SIGNED,
+	MAILING_LIST_MULTI,RCVD_IN_DNSWL_NONE,RDNS_NONE,T_DKIM_INVALID,
+	T_TVD_MIME_EPI,URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled
+	version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id A08FE8262E
+	for <axelcalixte@cock.li>; Tue, 28 Jul 2020 16:43:14 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (2048-bit key; unprotected) header.d=mailbox.org header.i=@mailbox.org header.b="huHNwA3l";
+	dkim=fail reason="signature verification failed" (2048-bit key) header.d=mailbox.org header.i=@mailbox.org header.b="YRPu+xfH";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id D7794218C6
+	for <axelcalixte@cock.li>; Tue, 28 Jul 2020 16:43:13 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id ADD4410E4F;
+	Tue, 28 Jul 2020 16:42:59 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id A2E2210E4F
+	for <opensuse-factory@lists5.opensuse.org>; Tue, 28 Jul 2020 16:42:59 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id F04A32C15C
+	for <opensuse-factory@lists5.opensuse.org>; Tue, 28 Jul 2020 16:43:14 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id 0K1fw1fOnScn for <opensuse-factory@lists5.opensuse.org>;
+	Tue, 28 Jul 2020 16:43:09 +0000 (UTC)
+Received: from mx1.suse.de (unknown [149.44.161.67])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 8A3982C164
+	for <opensuse-factory@lists5.opensuse.org>; Tue, 28 Jul 2020 16:43:09 +0000 (UTC)
+Received: from mout-p-202.mailbox.org (mout-p-202.mailbox.org [80.241.56.172])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx1.suse.de (Postfix) with ESMTPS id 33497ABE4
+	for <opensuse-factory@opensuse.org>; Tue, 28 Jul 2020 16:42:54 +0000 (UTC)
+Received: from smtp2.mailbox.org (smtp2.mailbox.org [IPv6:2001:67c:2050:105:465:1:2:0])
+	(using TLSv1.2 with cipher ECDHE-RSA-CHACHA20-POLY1305 (256/256 bits))
+	(No client certificate requested)
+	by mout-p-202.mailbox.org (Postfix) with ESMTPS id 4BGMtM1PZSzQlHh
+	for <opensuse-factory@opensuse.org>; Tue, 28 Jul 2020 18:43:07 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=mailbox.org; h=
+	content-type:content-type:in-reply-to:mime-version:date:date
+	:message-id:from:from:references:subject:subject:received; s=
+	mail20150812; t=1595954578; bh=5f6FoO3S+ScOeU95qpzYpc8VaCTtVuNtY
+	4J3WARetR0=; b=huHNwA3lK4nt1rC7uwIPP4CFnl9Tg5CQGCZpDkf45gtN4DS+G
+	piuRsIHC2DvUuXUD50ciSzth5FEGlWBSGXsRDNeKtHK6tQd/1ECyDUjSTFmuxlQR
+	g9my/2sLy+mnYyzJ3VzDlZolo+RJCvtLzgzaMUy0msZHPKHjhdh984L2JPi0ASzi
+	hZREi8VWSUFb3RJPeS/t3Yue1vUQgX2L+H16aJqU/mwumE/NwbjZQnLXkMVeGjyr
+	3d4QcLnj5zyyXOxfKRuPZVTfaq5/sXnXwPAWPfaMYLIC5NcQA1QlBzj64NrPCHCz
+	9d73hBEhUhJ3mlA7UX2bRzU9R94d9VhkkQBPQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mailbox.org; s=mail20150812;
+	t=1595954580;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 in-reply-to:in-reply-to:references:references:autocrypt:autocrypt;
+	bh=yp+CavcRzx4LIUTRRoMMaVwXELPaTbGwYyN7hYfTf4E=;
+	b=YRPu+xfHgoJ3nxQMD1kVHv2TpxiofgFbdg3xDgCzxRUnaaATHjubp3MeEzK7ZV9dyvBC3H
+	bNo85qb19WY39al3lqsiq3sEycOkKiuuxNkZFtuOa/izyFgw9m78vlTg2ApgrWnKPyEub9
+	WdGEC1YhllD1R9GxRjJvL/a0Da0vm2ozpfUcGHVX5ZHRJx6hCX4w2Y+m6m0IIP75kWoCaI
+	6Cgr4dNzXgA5pRXNvR0omVjm7RjG78vfZbEXRyKJhT3ObzF+rAmTAiUTDDMGevAjqMB1zM
+	53towrPArrMnjNVKXYQzrSjxLeZboorfbekgktdRPAxQC9Dfk1S+69wYsAfL9Q==
+Received: from smtp2.mailbox.org ([80.241.60.241])
+	by spamfilter03.heinlein-hosting.de (spamfilter03.heinlein-hosting.de [80.241.56.117]) (amavisd-new, port 10030)
+	with ESMTP id gs24QrCxhl5H for <opensuse-factory@opensuse.org>;
+	Tue, 28 Jul 2020 18:42:58 +0200 (CEST)
+Subject: Re: [opensuse-factory] Crash opening Firefox as a user
+To: opensuse-factory@opensuse.org
+References: <03d63b35-25a4-0582-aa37-0125e036ac0a@transauto.com.br>
+ <2251086.Q0cdJdFiYp@knurpht-hp>
+From: victorhck <victorhck@mailbox.org>
+Autocrypt: addr=victorhck@mailbox.org; keydata=
+ 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
+Message-ID: <a54f0eff-41ef-fa7b-a5ca-b5a9ced3c183@mailbox.org>
+Date: Tue, 28 Jul 2020 18:42:52 +0200
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+In-Reply-To: <2251086.Q0cdJdFiYp@knurpht-hp>
+Content-Type: multipart/signed; micalg=pgp-sha256;
+ protocol="application/pgp-signature";
+ boundary="0t3jTrSZ5pK7HiQFBRkVRIy5Yz6kx9KSd"
+X-MBO-SPAM-Probability: 0
+X-Rspamd-Score: -8.77 / 15.00 / 15.00
+X-Rspamd-Queue-Id: 760CE1797
+X-Rspamd-UID: 42b07e
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--0t3jTrSZ5pK7HiQFBRkVRIy5Yz6kx9KSd
+Content-Type: multipart/mixed; boundary="RAmOCX0fY2kgqrjo10FTb0IGeycyj8Rod"
+
+--RAmOCX0fY2kgqrjo10FTb0IGeycyj8Rod
+Content-Type: text/plain; charset=utf-8
+Content-Language: es-ES
+Content-Transfer-Encoding: quoted-printable
+
+El 28/7/20 a las 17:11, Knurpht-openSUSE escribi=C3=B3:
+> Op dinsdag 28 juli 2020 17:03:56 CEST schreef Luiz Alberto Saba:
+>> Hi
+>>
+>> I'm using updated tw
+>>
+>> Since yesterday, when I try to open firefox I get this:
+>>
+>>                <toolbarbutton id=3D"UITourTooltipClose" class=3D"close=
+-icon"
+>> --------------^
+>>
+>> As root it works fine.
+>>
+>> Ideas?
+>>
+>>
+>> Thanks
+>>
+>>
+>> Luiz Alberto Saba
+> I  hit that as well, the trick was to remove the addonStartup.json.lz4 =
+file,=20
+> then try again.=20
+>=20
+
+Hey!
+Thanks a lot!!
+
+Greetings!
+
+--=20
+-------------------
+GPG Key: 0xcc742e8dc9b7e22a
+Fingerprint =3D 6FE2 3B1F AAC8 E5B7 63EA 88A9 CC74 2E8D C9B7 E22A
+
+Aprende a proteger la privacidad de tu correo:
+https://emailselfdefense.fsf.org/es/
+
+Mi blog sobre openSUSE, GNU/Linux y software libre:
+https://victorhckinthefreeworld.com/
+
+Herramientas para proteger tu privacidad
+https://victorhck.gitlab.io/privacytools-es/
+
+
+
+--RAmOCX0fY2kgqrjo10FTb0IGeycyj8Rod--
+
+--0t3jTrSZ5pK7HiQFBRkVRIy5Yz6kx9KSd
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEb+I7H6rI5bdj6oipzHQujcm34ioFAl8gVZEACgkQzHQujcm3
+4iqyBA/9GIXYV2WFtUqxJVEQMtcOeQn/IHqro3AAFsY0o92vAsj1kr0PjeTxyziw
+vBrZt+FW1uqGShuY2F1lnl2MM7eRuH7m5p3CG5WRtclSxfKwU3xDUN2UaOsIOHrC
+Wn6JBRxFyrG7OVQnRuVQURrqipoFrXarYASxKx7vD17rxO2aR7biS/OzB3vZnj9X
+BZxJDIdFrO4s4SUCrO46BGM71npDmCkK7ttk3zFPPWc3RSYr/ktKn0S4OH5KFX92
+orAMlqznBpY8eRCnIYrib3DQwr0gI/zMvck7uUuga/gKKwdSHD8mO/Z02Om2W33L
+fBM+pd767H0GzJsZn6FTUWSns9pdf4M0kgGLuguTJJVqrxL+lAA7zsK/DVOdHzji
+YfmUlrV4vP5JK0uc3P3y3M6GUXDCqk/HfyBPBQaOl9+2jWxKQX+5xkgapC3dves2
+IjSK+xndK5jHBTyprngJDA44O7aBSXqHR2R0gBmK4SD73csTDaWM/wFuYHmxTNpb
+ZL7BJ5VshEmstfDJDTEJg0YPkzR0+yzK5iHOOFU/pVHv8NfW6vS3WJcxuLU7yPpr
+xXnolcbNEYo5f6GzWuqs1Xni/p8R8e+GU4k6ZhVbNcsUArTVR+Eqk07qPeMIt5GD
+GT6Q+RZR+DJRQmfQDUNWEHUfqmLSSOMnjSb05UEhvK78ym+SnKE=
+=T5V/
+-----END PGP SIGNATURE-----
+
+--0t3jTrSZ5pK7HiQFBRkVRIy5Yz6kx9KSd--
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

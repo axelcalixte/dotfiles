@@ -1,0 +1,136 @@
+Return-Path: <opensuse-factory+bounces-96051-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 01AE88264D; Mon, 17 Aug 2020 01:49:11 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=5.0 tests=BAYES_05,DKIM_ADSP_CUSTOM_MED,
+	DKIM_SIGNED,FREEMAIL_FROM,MAILING_LIST_MULTI,RCVD_IN_DNSWL_MED,
+	RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,RDNS_NONE,T_DKIM_INVALID,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 96C9882640
+	for <axelcalixte@cock.li>; Mon, 17 Aug 2020 01:49:07 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.b="T/Mw+Cvy";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id BBE5F21E69
+	for <axelcalixte@cock.li>; Mon, 17 Aug 2020 01:49:06 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id D11C710E67;
+	Mon, 17 Aug 2020 01:48:28 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from mx2.opensuse.org (unknown [192.168.47.96])
+	by lists5.opensuse.org (Postfix) with ESMTP id B0BD810E67
+	for <opensuse-factory@lists5.opensuse.org>; Mon, 17 Aug 2020 01:48:28 +0000 (UTC)
+Received: from mx2.opensuse.org (localhost [127.0.0.1])
+	by mx2.opensuse.org (Postfix) with ESMTP id 728B34B95
+	for <opensuse-factory@opensuse.org>; Mon, 17 Aug 2020 01:49:04 +0000 (UTC)
+Received: from mail-vs1-xe43.google.com (mail-vs1-xe43.google.com [IPv6:2607:f8b0:4864:20::e43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits)
+	 key-exchange ECDHE (P-256) server-signature RSA-PSS (4096 bits) server-digest SHA256)
+	(No client certificate requested)
+	by mx2.opensuse.org (Postfix) with ESMTPS
+	for <opensuse-factory@opensuse.org>; Mon, 17 Aug 2020 01:49:04 +0000 (UTC)
+Received: by mail-vs1-xe43.google.com with SMTP id a127so730756vsd.1
+        for <opensuse-factory@opensuse.org>; Sun, 16 Aug 2020 18:49:04 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=to:from:subject:message-id:date:user-agent:mime-version
+         :content-language:content-transfer-encoding;
+        bh=IGhLA3nItrJqP0ndxJ0ZhzToX4mXuMB9zCKM8vmu+OY=;
+        b=T/Mw+CvyJvWAGYmS0ok8Hbi0YGLqdKs1FKm08Li5tbP2OdA49klbiKnLbtqAq1Izqt
+         Bq79JXfWK1Ma/Uz3I2LwFvuAnSmj81Ug3DLhqhbRO/6DAFgYcJCxoqVxNXDSLd8lM9/0
+         D52KWktE0H+DB9twVd6oCL2lc81A5U529bB6f95CMg5SuSMeU0Fj+8r2UXaz3+rqOlpl
+         IStz1aAWzm8TaxNbjX3sz2qQIY7LGrYIPC1thrgDIabLHR/n0lNgWJqOgy1a5Oka0HV3
+         lRHu5KMG9D8kkpGAFKVn1o5GffNj1xDjU2xBZs+kBNm5rO0Lh/SMmldX9cYB9HHHq1+i
+         ocMQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:to:from:subject:message-id:date:user-agent
+         :mime-version:content-language:content-transfer-encoding;
+        bh=IGhLA3nItrJqP0ndxJ0ZhzToX4mXuMB9zCKM8vmu+OY=;
+        b=OuI9uT7M98wz2V9+CmypWibhJdKH34Y/D5UiNrf+b5XtVlbcevG7c27kijR9uZBDe0
+         A2lY3B5pcqsvjYC+XhnytW876meXadEolYdleVa8v4p6sSytwym951s0FNsMaBmUvkMO
+         b/5NzT+cBXEST3rPiqUzGkicMUCbUf7z1GGfI4+zocpi9Y5PSnTsR3Y5xNUl5m9GgRf2
+         ZOEzUDI/KE8Rn6P0kAfZwF+J6Dq8EQt3rJwrvtc/oDheFsfwGiLK5/uMPKmNJwZ0f78z
+         DN8M9s9XmGYyMxfvu4ctpo0Ffbs7IjXgoLOuaEAVS4dnZZjLHaO2a/vgmzruBQ8V/0fN
+         6bLw==
+X-Gm-Message-State: AOAM532YvROJ983QhcBcB1//hkzY6zUGuCvvBw1l2XvxhnCwyP3g6jRp
+	kbEAEJosGd2ZcWEn/1u5YRS8xyYcJyU=
+X-Google-Smtp-Source: ABdhPJwJDtpIkFB1JK1ZSnOFnRLKYeScyEPCMLNk3I1KHpDSVRaZCn4hTqVrZi+9zUfrJ4fV18YpEw==
+X-Received: by 2002:a67:1505:: with SMTP id 5mr6418304vsv.63.1597628941530;
+        Sun, 16 Aug 2020 18:49:01 -0700 (PDT)
+Received: from ?IPv6:2800:370:147:c1c0:8269:cd3d:c960:31c8? ([2800:370:147:c1c0:8269:cd3d:c960:31c8])
+        by smtp.gmail.com with ESMTPSA id w69sm3122952vkd.23.2020.08.16.18.49.00
+        for <opensuse-factory@opensuse.org>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 16 Aug 2020 18:49:00 -0700 (PDT)
+To: opensuse-factory@opensuse.org
+From: "S." <sb56637@gmail.com>
+Subject: [opensuse-factory] Major breakage of squashfs (kernel 5.8.0 regression?)
+Message-ID: <f2d4a28e-fb61-e845-b800-d578a0441c3d@gmail.com>
+Date: Sun, 16 Aug 2020 20:48:59 -0500
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101
+ Thunderbird/68.10.0
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Language: en-US
+Content-Transfer-Encoding: base64
+
+SGkgdGhlcmUsIEknbSBmaWdodGluZyB3aXRoIGEgcmVhbGx5IHdlaXJkIGlzc3VlLiBJJ3Zl
+IGJlZW4gYnVpbGRpbmcgSVNPcyB3aXRoIEtpd2kgZm9yIHllYXJzLiBJIHVzZSBhIFZQUyBy
+dW5uaW5nIG9wZW5TVVNFIDE1LjIgYW5kIHdoYXRldmVyIGlzIHRoZSBsYXRlc3QgdmVyc2lv
+biBvZiBLaXdpIHRvIGJ1aWxkIGxpdmUgSVNPcyBiYXNlZCBvbiBUdW1ibGV3ZWVkIG9yIExl
+YXAgMTUuMi4gTXkgbW9zdCByZWNlbnQgc3VjY2Vzc2Z1bCBidWlsZHMgYmFzZWQgb24gVHVt
+Ymxld2VlZCB3ZXJlIG9uIDIwMjAtMDctMjkuIEJ1dCBkdXJpbmcgdGhlIHBhc3Qgd2VlayBJ
+IGhhdmUgdHJpZWQgdG8gYnVpbGQgSVNPcyBiYXNlZCBvbiB0aGUgS2l3aSBkZXNjcmlwdGlv
+bnMgdGhhdCBJIHNhdmVkIGZyb20gdGhhdCBsYXN0IGRhdGUsIGFuZCBJIGhhdmVuJ3QgY2hh
+bmdlZCB0aGVtLiBUaGUgSVNPcyBnZW5lcmF0ZSBzdWNjZXNzZnVsbHkgYW5kIHRoZXkgYm9v
+dCwgYnV0IHRoZSB3YWxscGFwZXIgUE5HIHRoYXQgSSBwbGFjZWQgYXMgYW4gb3ZlcmxheSBp
+biAvdXNyL3NoYXJlL2JhY2tncm91bmRzIHJlc3VsdHMgaW4gYW4gaW5wdXQvb3V0cHV0IGVy
+cm9yIHdoZW4gdHJ5aW5nIHRvIGFjY2VzcyBpdCwgYW5kIHdoaWxlIHRyeWluZyB0byBkbyBz
+byBkbWVzZyBjb21wbGFpbnMgYWJvdXQgYmFkIGJsb2NrcyBpbiB0aGUgc3F1YXNoZnMuIEkg
+dGhlbiBub3RpY2VkIHRoYXQgbW9zdCAoYnV0IG5vdCBhbGwpIG9mIHRoZSBvdGhlciBpbWFn
+ZXMgdGhhdCB3ZXJlIHBsYWNlZCBpbiAvdXNyL3NoYXJlL2JhY2tncm91bmRzIGZyb20gYW4g
+UlBNIGFyZSBhbHNvIGNvcnJ1cHQgYW5kL29yIG9ubHkgcGFydGlhbGx5IGxvYWQuIFdoZW4g
+dHJ5aW5nIHRvIGNvcHkgdGhlIC91c3Ivc2hhcmUvYmFja2dyb3VuZHMgZGlyZWN0b3J5IHRv
+IHRoZSBvdmVybGF5IGZpbGVzeXN0ZW0gaW4gfi8gdmlhIHRoZSB0ZXJtaW5hbCBpbiBmYWls
+cyB3aXRoIGlucHV0L291dHB1dCBlcnJvcnMsIGFuZCB0aGUgR1VJIGZpbGUgbWFuYWdlciB0
+aHJvd3MgYW4gIkVycm9yIHNwbGljaW5nIGZpbGUiLg0KDQpJIGhhdmUgcmVwZWF0ZWQgdGhp
+cyBidWcgbXVsdGlwbGUgdGltZXMgd2l0aCBtYW55IGRpZmZlcmVudCBWUFMgaW5zdGFuY2Vz
+IG9uIHR3byBkaWZmZXJlbnQgVlBTIHBsYXRmb3Jtcy4gSXQgb25seSBvY2N1cnMgd2l0aCBJ
+U09zLCB3aGVyZWFzIHJhdyBpbWFnZXMgZ2VuZXJhdGVkIHdpdGggS2l3aSAobm8gc3F1YXNo
+IGNvbXByZXNzaW9uKSBhcmUgZmluZS4gQW5kIHRoaXMgYnVnIG9ubHkgdmVyeSByZWNlbnRs
+eSBzdGFydGVkIGFwcGVhcmluZyBvbiBteSBuZXdseSBnZW5lcmF0ZWQgVHVtYmxld2VlZC1i
+YXNlZCBJU09zLCB3aGVyZWFzIG5ld2x5IGdlbmVyYXRlZCBMZWFwLWJhc2VkIElTT3MgYXJl
+IGZpbmUuIEknbSBhbG1vc3Qgc3VyZSB0aGF0IHRoaXMgaXMgdGhlIGN1bHByaXQgaW4ga2Vy
+bmVsIDUuOC4wLCBidXQgSSdkIGFwcHJlY2lhdGUgaXQgaWYgc29tZW9uZSBtb3JlIGtub3ds
+ZWRnZWFibGUgY291bGQgY29uZmlybSBpdDoNCmh0dHBzOi8vZ2l0Lmtlcm5lbC5vcmcvcHVi
+L3NjbS9saW51eC9rZXJuZWwvZ2l0L3RvcnZhbGRzL2xpbnV4LmdpdC9jb21taXQvP2lkPTkz
+ZTcyYjNjNjEyYWRjYWNhMTNkODc0ZmNjODZjNTNlNmM4ZGE1NDENCg0KSnVzdCB0byBkb3Vi
+bGUtY2hlY2sgdGhhdCBpdCdzIG5vdCBzb21ldGhpbmcgd3Jvbmcgd2l0aCBteSBzZXR1cCwg
+SSBqdXN0IHRlc3RlZCB0aGUgbGF0ZXN0IFR1bWJsZXdlZWQgS0RFIElTTyBmcm9tIGhlcmU6
+DQpodHRwOi8vbWlycm9yLmRhbDEwLnVzLmxlYXNld2ViLm5ldC9vcGVuc3VzZS90dW1ibGV3
+ZWVkL2lzby9vcGVuU1VTRS1UdW1ibGV3ZWVkLUtERS1MaXZlLXg4Nl82NC1TbmFwc2hvdDIw
+MjAwODE1LU1lZGlhLmlzbw0KVGhlcmUgYXJlIGFsc28gc3F1YXNoZnMgZXJyb3JzIGluIGRt
+ZXNnOg0KaHR0cHM6Ly9pLmltZ3VyLmNvbS9uSzFPbG1ULnBuZw0KQW5kIGFnYWluIGl0IGNh
+bid0IGNvcHkgYWxsIHRoZSBmaWxlcyBpbiAvdXNyL3NoYXJlL3dhbGxwYXBlcnMgdG8gdGhl
+IH4vRGVza3RvcCBkdWUgdG8gImVycm9ybm86IDUiIGluIERvbHBoaW46DQpodHRwczovL2ku
+aW1ndXIuY29tL1VQTnRqclYucG5nDQo=
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

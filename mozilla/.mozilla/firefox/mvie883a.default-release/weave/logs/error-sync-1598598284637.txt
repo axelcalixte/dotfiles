@@ -1,0 +1,88 @@
+1598554719436	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1598554918391	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1598554918391	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1598554918394	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1598554918397	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1598597690838	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1598597690838	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1598597690844	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1598597692441	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1598597694286	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1598598282492	Sync.Service	DEBUG	User-Agent: Firefox/79.0 (Linux x86_64) FxSync/1.81.0.20200720193547.desktop
+1598598282492	Sync.Service	INFO	Starting sync at 2020-08-28 07:04:42 in browser session UJLPPTqZN61H
+1598598282493	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1598598282499	Sync.Status	INFO	Resetting Status.
+1598598282499	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1598598282501	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1598598282502	FirefoxAccounts	DEBUG	getOAuthToken enter
+1598598282503	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1598598282503	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1598598282503	Sync.BrowserIDManager	INFO	Getting keys
+1598598282504	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1598598282506	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1598598282506	FirefoxAccounts	DEBUG	enter getAssertion()
+1598598282512	FirefoxAccounts	DEBUG	got keyPair
+1598598282513	FirefoxAccounts	DEBUG	getCertificateSigned: true true
+1598598282519	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/certificate/sign?service=sync
+1598598282519	Services.Common.RESTRequest	DEBUG	POST Length: 888
+1598598283204	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1598598283209	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/certificate/sign?service=sync 200
+1598598283210	Hawk	DEBUG	(Response) /certificate/sign?service=sync: code: 200 - Status text: OK
+1598598283210	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -210
+1598598283211	FirefoxAccounts	DEBUG	getCertificate got a new one: true
+1598598283211	FirefoxAccounts	DEBUG	_updateAccountData with items: ["keyPair","cert"]
+1598598283211	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","device","oauthTokens","profileCache"]
+1598598283212	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","device","oauthTokens","profileCache"]
+1598598283213	FirefoxAccounts	DEBUG	getAssertionFromCert
+1598598283215	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1598598283216	Sync.BrowserIDManager	DEBUG	Getting a token using an Assertion
+1598598283216	Services.Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1598598283217	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1598598283218	FirefoxAccounts	TRACE	finished write of json user data - took: 6
+1598598283218	FirefoxAccounts	DEBUG	writing secure storage: ["kSync","kXCS","kExtSync","kExtKbHash"]
+1598598283219	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1598598283228	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1598598283916	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 200
+1598598283916	Services.Common.TokenServerClient	DEBUG	Got token response: 200
+1598598283917	Services.Common.TokenServerClient	DEBUG	Successful token response
+1598598283917	Sync.Status	DEBUG	Status.login: success.login => success.login
+1598598283917	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1598598283920	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1598598283925	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1598598284611	Sync.Resource	DEBUG	GET fail 401 https://sync-614-us-west-2.sync.services.mozilla.com/1.5/96295564/info/collections
+1598598284611	Sync.Resource	WARN	GET request to https://sync-614-us-west-2.sync.services.mozilla.com/1.5/96295564/info/collections failed with status 401
+1598598284611	Sync.Service	INFO	Logging out
+1598598284612	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1598598284613	Sync.ErrorHandler	INFO	Got 401 response; resetting clusterURL.
+1598598284613	Sync.ErrorHandler	DEBUG	New mid-sync 401 failure. Making a note.
+1598598284614	Sync.ErrorHandler	INFO	Attempting to schedule another sync.
+1598598284614	Sync.Service	ERROR	Aborting sync: failed to get collections.
+1598598284616	Sync.Resource	WARN	Got exception parsing response body: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data(resource://services-sync/resource.js:229:21) JS Stack trace: _processResponse/<@resource.js:229:21
+get@XPCOMUtils.jsm:129:51
+format@Log.jsm:642:19
+formatText@Log.jsm:571:44
+format@Log.jsm:589:12
+append@Log.jsm:682:37
+append@logmanager.js:156:44
+log@Log.jsm:379:16
+error@Log.jsm:387:10
+observe@policies.js:936:19
+observe@observers.js:135:21
+notify@observers.js:87:18
+notify@util.js:204:19
+WrappedNotify@util.js:214:17
+1598598284617	Sync.Resource	DEBUG	Parse fail: Response body starts: <html>
+<head><title>401 Authorization Required</title></head>
+<body bgcolor="white">
+<center><h1>
+1598598284615	Sync.ErrorHandler	ERROR	Sync encountered an error: ({data:"<html>\r\n<head><title>401 Authorization Required</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>401 Authorization Required</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n", url:"https://sync-614-us-west-2.sync.services.mozilla.com/1.5/96295564/info/collections", status:401, success:false, headers:{connection:"keep-alive", 'content-length':"188", 'content-type':"text/html", date:"Fri, 28 Aug 2020 07:04:44 GMT", 'strict-transport-security':"max-age=31536000"}, get obj() {
+        if (!redefining) {
+          // Make sure we don't get into an infinite recursion loop if
+          // the getter lambda does something shady.
+          redefining = true;
+          return redefine(aObject, aName, aLambda.apply(aObject));
+        }
+      }})
+1598598284619	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1598598284621	Sync.Telemetry	INFO	Early submission of sync telemetry due to changed IDs/NodeType
+1598598284635	Sync.Service	DEBUG	Exception calling anonymous function: {"data":"<html>\r\n<head><title>401 Authorization Required</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>401 Authorization Required</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n","url":"https://sync-614-us-west-2.sync.services.mozilla.com/1.5/96295564/info/collections","status":401,"success":false,"headers":{"connection":"keep-alive","content-length":"188","content-type":"text/html","date":"Fri, 28 Aug 2020 07:04:44 GMT","strict-transport-security":"max-age=31536000"}}

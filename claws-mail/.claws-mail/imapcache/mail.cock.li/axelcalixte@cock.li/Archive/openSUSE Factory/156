@@ -1,0 +1,120 @@
+Return-Path: <opensuse-factory+bounces-95990-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 9ABD888489; Sun,  9 Aug 2020 11:33:06 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.1 required=5.0 tests=BAYES_40,DKIM_SIGNED,
+	MAILING_LIST_MULTI,RCVD_IN_DNSWL_NONE,RDNS_NONE,T_DKIM_INVALID,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id 0E3F488498
+	for <axelcalixte@cock.li>; Sun,  9 Aug 2020 11:32:58 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (1024-bit key; unprotected) header.d=elena.space header.i=alin@elena.space header.b="vrGBf2N4";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 4E3662204C
+	for <axelcalixte@cock.li>; Sun,  9 Aug 2020 11:32:57 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 668FD10E67;
+	Sun,  9 Aug 2020 11:32:28 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 4E1CE10E67
+	for <opensuse-factory@lists5.opensuse.org>; Sun,  9 Aug 2020 11:32:28 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id B48622C15D
+	for <opensuse-factory@lists5.opensuse.org>; Sun,  9 Aug 2020 11:32:58 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id Aiq6h9zeejGZ for <opensuse-factory@lists5.opensuse.org>;
+	Sun,  9 Aug 2020 11:32:53 +0000 (UTC)
+Received: from mx2.suse.de (unknown [149.44.161.68])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 51C222C15C
+	for <opensuse-factory@lists5.opensuse.org>; Sun,  9 Aug 2020 11:32:53 +0000 (UTC)
+Received: from sender4-of-o52.zoho.com (sender4-of-o52.zoho.com [136.143.188.52])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx2.suse.de (Postfix) with ESMTPS id 7AF77AC94
+	for <opensuse-factory@opensuse.org>; Sun,  9 Aug 2020 11:33:08 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; t=1596972767; cv=none; 
+	d=zohomail.com; s=zohoarc; 
+	b=PxEnFfPUycl/9RvTFtyZBEnxWkVS6jEnhA33WfzYtfRYlk3SWvH8y8vEhpzygQ4ynSvtf0AwVi8FwfbteSvT6ZmsRa0hLvDE0bl7LJTSjgi2vn8DmaDhIM1rKTmoN2O/ONIgU+32UeeIm/KgGTqEeR1iRL7rgLcJKX675OMY7aI=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=zohomail.com; s=zohoarc; 
+	t=1596972767; h=Content-Type:Content-Transfer-Encoding:Date:From:MIME-Version:Message-ID:Subject:To; 
+	bh=QgPG+brsVWBtPpmA/Dbrq3xYnsNuxjpoLh/KtabeCjI=; 
+	b=B+UR2S9oVnbLMmSMMuPIjxb1SottGyxCh8zhyWwRdAxv42NqzKAVYwiu5IGfdQSjKZrZDeUy+eZZE3lBbXrHhqy+dNts1XpO26E6O1YNT2SBBzyhX1xfptgkZHkR+MaeXQ21ZaDvyzDlJsy8LYfxA2EQ7LWvpnuejE5LGl4y2Go=
+ARC-Authentication-Results: i=1; mx.zohomail.com;
+	dkim=pass  header.i=elena.space;
+	spf=pass  smtp.mailfrom=alin@elena.space;
+	dmarc=pass header.from=<alin@elena.space> header.from=<alin@elena.space>
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1596972767;
+	s=abaddon; d=elena.space; i=alin@elena.space;
+	h=Date:From:To:Message-ID:In-Reply-To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding;
+	bh=QgPG+brsVWBtPpmA/Dbrq3xYnsNuxjpoLh/KtabeCjI=;
+	b=vrGBf2N41ggBECgoOy5VB4s/BBCzRFvE6dKxVgLEf7QzMKQzDT+21gSegRWlW7ux
+	j71iQY7nZDoO7rxC5bLs66HFHzhk6pWQPtW6RpEX1EhljSvU0W7Ann81hG7mZJ6c0Ln
+	jYcXy/qXHqbnB9F9ozBklpC8l7o8VVoMeMU/u4Wc=
+Received: from mail.zoho.com by mx.zohomail.com
+	with SMTP id 1596972761602974.283296937; Sun, 9 Aug 2020 04:32:41 -0700 (PDT)
+Date: Sun, 09 Aug 2020 12:32:41 +0100
+From: Alin Marin Elena <alin@elena.space>
+To: "opensuse-factory" <opensuse-factory@opensuse.org>
+Message-ID: <173d2fe81f0.11b1a5549555919.7919224876797278142@elena.space>
+In-Reply-To: 
+Subject: [opensuse-factory] bluetooth fail to connect to speakers/headphone
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+Importance: Medium
+User-Agent: Zoho Mail
+X-Mailer: Zoho Mail
+
+Hi,
+
+after the last updates i fail to connect to headphones/speakers via bluetooth... sometimes may work but majority of the cases not.
+
+the mice on bt seem to be ok.
+
+
+the only erors i see 
+
+in journal
+Aug 09 12:20:57 circassia bluetoothd[5065]: connect error: Connection refused (111)
+
+and in bluetoothctl 
+
+Failed to connect: org.bluez.Error.Failed
+
+
+this is on a dell xps 9370
+
+and kde full wayland plasma.
+
+Anyone else noticed this?
+
+Alin
+
+
+---Dr Alin Marin Elenahttp://alin.elena.space
+
+
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

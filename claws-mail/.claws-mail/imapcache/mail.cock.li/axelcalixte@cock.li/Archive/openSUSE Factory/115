@@ -1,0 +1,73 @@
+Return-Path: <opensuse-factory+bounces-95949-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id D3AA882656; Tue,  4 Aug 2020 12:31:35 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.7 required=5.0 tests=BAYES_50,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,RDNS_NONE,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 659A682660
+	for <axelcalixte@cock.li>; Tue,  4 Aug 2020 12:31:28 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 867FE21D97
+	for <axelcalixte@cock.li>; Tue,  4 Aug 2020 12:31:27 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 2480C10E2C;
+	Tue,  4 Aug 2020 12:31:04 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 179C810E2C
+	for <opensuse-factory@lists5.opensuse.org>; Tue,  4 Aug 2020 12:31:04 +0000 (UTC)
+Received: from imap.suse.de (unknown [149.44.161.75])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 0CD7A2C173
+	for <opensuse-factory@opensuse.org>; Tue,  4 Aug 2020 12:31:29 +0000 (UTC)
+Received: from [192.168.0.41] (ip4d177a06.dynamic.kabel-deutschland.de [77.23.122.6])
+	by imap.suse.de (Postfix) with ESMTPSA id DE69C118DF
+	for <opensuse-factory@opensuse.org>; Tue,  4 Aug 2020 12:31:26 +0000 (UTC)
+Message-ID: <eab0a2b101a04f93c2b9d19b331d3b603b8b55d7.camel@suse.de>
+Subject: [opensuse-factory] openSUSE:usr merge status
+From: Elisei Roca <eroca@suse.de>
+To: opensuse-factory@opensuse.org
+Date: Tue, 04 Aug 2020 14:31:26 +0200
+Content-Type: text/plain; charset="UTF-8"
+User-Agent: Evolution 3.36.4 
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Hi there,
+
+looking at https://en.opensuse.org/openSUSE:Usr_merge which hasn't been updated in quite a
+while doesn't yield much information. Is there any other source to get a current status on
+this?
+
+Regards
+Eli
+
+-- 
+Elisei Roca <eroca@suse.de>
+Apprentice SUSE Engineering
+
+SUSE Software Solutions Germany GmbH
+Maxfeldstr. 5, 90409 Nürnberg, Germany (HRB 36809, AG Nürnberg)
+Geschäftsführer: Felix Imendörffer
+Tel: +49-911-74053-0; Fax: +49-911-7417755; https://www.suse.com
+
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

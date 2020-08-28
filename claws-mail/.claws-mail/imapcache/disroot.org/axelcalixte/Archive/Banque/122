@@ -1,0 +1,682 @@
+Return-Path: <MperfBouncesCIFA02K0023V3002AVJKI@vous.hellobank.fr>
+Delivered-To: axelcalixte@disroot.org
+Received: from localhost (localhost [127.0.0.1])
+	by disroot.org (Postfix) with ESMTP id 106E351BBF
+	for <axelcalixte@disroot.org>; Thu, 27 Aug 2020 11:17:32 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at disroot.org
+Received: from knopi.disroot.org ([127.0.0.1])
+	by localhost (disroot.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id K0KPFcVyzM54 for <axelcalixte@disroot.org>;
+	Thu, 27 Aug 2020 11:17:29 +0200 (CEST)
+X-Greylist: delayed 962 seconds by postgrey-1.36 at mail01; Thu, 27 Aug 2020 11:17:27 CEST
+Authentication-Results: disroot.org;
+	dkim=pass (1024-bit key; unprotected) header.d=vous.hellobank.fr header.i=client@vous.hellobank.fr header.b="Ny9oTC4w";
+	dkim-atps=neutral
+Received: from mail.static.s4.75.lr004.net (mail.static.s4.75.lr004.net [195.62.75.4])
+	by disroot.org (Postfix) with ESMTPS id 70D1651BD9
+	for <axelcalixte@disroot.org>; Thu, 27 Aug 2020 11:17:26 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed; s=dkim1; d=vous.hellobank.fr;
+ h=Date:Subject:Reply-To:From:To:Message-Id:List-Unsubscribe:MIME-Version:
+ Content-Type; i=client@vous.hellobank.fr;
+ bh=N23oLX9EnTyyupoiOCtOp87nSxGtyvXYfvErw7dv74k=;
+ b=Ny9oTC4w4JNRhOVpOo2hKiF/9lo2SILZ3KP/g6el+c7cFv6CoQquKltYgPE41sd13qSQKPqXjWYF
+   GzTX5woo548Vn+PerXsHkIGfqdAYJLt+/f+kZ4wr0sWEmfeckHf9mnvCmCp+74KAthl+t4zEaFU1
+   C8OyCettEIVOPzYpPtA=
+Received: by mail.static.s4.75.lr004.net id h8tt2e2jl0g1 for <axelcalixte@disroot.org>; Thu, 27 Aug 2020 11:01:23 +0200 (envelope-from <MperfBouncesCIFA02K0023V3002AVJKI@vous.hellobank.fr>)
+Date: Thu, 27 Aug 2020 11:01:23 +0200
+Subject: Hello bank! : Evolution de la tarification de vos virements internationaux en ligne
+Reply-To: ne-pas-repondre@hellobank.fr 
+From: "Hello bank!" <client@vous.hellobank.fr> 
+To: axelcalixte@disroot.org 
+X-priority: 3
+X-TRID: 002AVJKI
+X-CAID: 0023V3
+X-CUID: 02K
+X-AID: CIFA
+X-CAT: GCIFA02K-118
+Message-Id: <CIFA02K0023V3005002AVJKI592833146454@vous.hellobank.fr>
+Feedback-ID: CIFA:02K:0023V3:espmp-np6
+X-Conf: CIFA#02K#666
+List-Unsubscribe: <http://tr.vous.hellobank.fr/do?E5E88B5904BB54B2FC4C50468CBBF19E31FAFCB826E91C95DDAB0DDD27EB297A1DF9FA686439EE93>
+X-UK: de9451652fa277a36c402a6b4562f9ea
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="ABOUNDARY.637341228839109970"
+
+--ABOUNDARY.637341228839109970
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Vos conditions tarifaires =C3=A9voluent=2E
+
+Voir la version en ligne
+htt=
+p://tr=2Evous=2Ehellobank=2Efr/do?8A8D2169245255F2E65881849AC76E9B0493B4628=
+6E0C4BB244DE07B313C20F6D12CF2DB31D28D6E998B74E538F220B0FE22A46ECFEDB95464A6=
+1E03110ED537=20
+/ Informations personnelles de s=C3=A9curit=C3=A9=C2=A0: 1=
+8/04=2E
+
+
+
+
+http://tr=2Evous=2Ehellobank=2Efr/r5=2Easpx?GV1=3DCIFA02K0=
+00000023V3001BIRV002AVJKI&mpvrs=3D00021F1D05521D339=20
+Informations sur vo=
+s=20
+ virements internationaux=C2=A0!
+
+Hello Axel Calixte,
+
+ =C3=80 co=
+mpter de novembre 2020, les tarifs de notre offre de virements internationa=
+ux en ligne =C3=A9volueront=2E Vous trouverez les nouvelles conditions tari=
+faires ci-apr=C3=A8s=2E Si vous souhaitez refuser ces nouvelles conditions =
+tarifaires, vous pouvez r=C3=A9silier, sans frais, votre convention de comp=
+te de d=C3=A9p=C3=B4t avant le 01/11/2020=2E =C3=80 d=C3=A9faut de notifica=
+tion =C3=A9crite de votre part en ce sens, les nouvelles conditions tarifai=
+res s=E2=80=99appliqueront=2E
+Nouvelle offre MyTransfer, disponible exclus=
+ivement sur le site hellobank=2Efr et l=E2=80=99application Hello bank!*
+
+=
+
+=C3=89mission d=E2=80=99un virement non SEPA (par op=C3=A9ration, libell=
+=C3=A9e en devises ou en euros hors SEPA(1))=C2=A0:
+
+Change=C2=A0:
+ Taux=
+ de change affich=C3=A9 au moment de l=E2=80=99op=C3=A9ration
+
+Commission=
+ d=E2=80=99=C3=A9mission :
+Virement occasionnel vers un pays de la zone SE=
+PA dans une devise autre que l=E2=80=99euro :Libell=C3=A9 dans la devise du=
+ pays du b=C3=A9n=C3=A9ficiaire : GRATUITE(2)Libell=C3=A9 dans une autre de=
+vise que celle du pays du b=C3=A9n=C3=A9ficiaire=C2=A0: 15=C2=A0=E2=82=ACVi=
+rement occasionnel vers un pays hors de la zone SEPA=C2=A0:Libell=C3=A9 dan=
+s la devise du pays du b=C3=A9n=C3=A9ficiaire=C2=A0: GRATUITE(2)Libell=C3=
+=A9 en euros ou dans une autre devise que celle du pays du b=C3=A9n=C3=A9fi=
+ciaire : 3=C2=A0=E2=82=AC vers une filiale BNP=C2=A0Paribas=C2=A0(3) / 15=
+=C2=A0=E2=82=AC sinon
+
+
+
+
+
+
+
+
+http://tr=2Evous=2Ehellobank=2Efr/r5=
+=2Easpx?GV1=3DCIFA02K000000023V3001BIRW002AVJKI&mpvrs=3D00021F1D05521D339=
+=20
+
+http://tr=2Evous=2Ehellobank=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V3=
+001BIRX002AVJKI&mpvrs=3D00021F1D05521D339=20
+
+http://tr=2Evous=2Ehelloban=
+k=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V3001BIRY002AVJKI&mpvrs=3D00021F1D05=
+521D339=20
+
+
+
+
+
+http://tr=2Evous=2Ehellobank=2Efr/r5=2Easpx?GV1=3DCIF=
+A02K000000023V3001BIRZ002AVJKI&mpvrs=3D00021F1D05521D339=20
+
+
+http://tr=
+=2Evous=2Ehellobank=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V3001BIS0002AVJKI&=
+mpvrs=3D00021F1D05521D339=20
+
+http://tr=2Evous=2Ehellobank=2Efr/r5=2Easpx=
+?GV1=3DCIFA02K000000023V3001BIS1002AVJKI&mpvrs=3D00021F1D05521D339=20
+
+ht=
+tp://tr=2Evous=2Ehellobank=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V3001BIS200=
+2AVJKI&mpvrs=3D00021F1D05521D339=20
+
+http://tr=2Evous=2Ehellobank=2Efr/r5=
+=2Easpx?GV1=3DCIFA02K000000023V3001BIS3002AVJKI&mpvrs=3D00021F1D05521D339=
+=20
+
+
+
+
+
+
+
+
+Ne communiquez jamais vos codes personnels par mail, p=
+ar t=C3=A9l=C3=A9phone, par SMS=20
+ ou sur les r=C3=A9seaux sociaux=2E=20
+=
+
+
+ Nous vous rappelons nos=20
+bonnes pratiques
+http://tr=2Evous=2Ehellob=
+ank=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V3001BIS4002AVJKI&mpvrs=3D00021F1D=
+05521D339=20
+ pour =C3=A9viter le piratage sur internet=2E
+
+
+
+
+
+Indi=
+quez vos codes personnels seulement sur votre Espace=C2=A0Client Hello=C2=
+=A0bank!=2E
+
+
+Par s=C3=A9curit=C3=A9 nous vous rappelons vos jour et moi=
+s de naissance en haut de chaque email=2E
+
+
+
+
+Ne communiquez pas d'inf=
+ormations confidentielles par email,  sur les r=C3=A9seaux sociaux ou sur u=
+n site Internet non s=C3=A9curis=C3=A9=2E
+
+
+
+En cas de doute=20
+contac=
+tez-nous au 01=C2=A043=C2=A063=C2=A015=C2=A015** 6j/7 de 8h=C2=A0=C3=A0=C2=
+=A022h en semaine et de 8h=C2=A0=C3=A0=C2=A018h le samedi=2E
+(1)=C2=A0Zone=
+ SEPA : 27 pays de l=E2=80=99Union Europ=C3=A9enne (Allemagne, Autriche, Be=
+lgique, Bulgarie, Chypre, Croatie, Danemark, Espagne, Estonie, Finlande, Fr=
+ance, Gr=C3=A8ce, Hongrie, Irlande, Italie, Lettonie, Lituanie, Luxembourg,=
+ Malte, Pays-Bas, Pologne, Portugal, R=C3=A9publique Tch=C3=A8que, Roumanie=
+, Slovaquie, Slov=C3=A9nie, Su=C3=A8de), les 4 pays de l=E2=80=99AELE (Asso=
+ciation Europ=C3=A9enne de Libre Echange =E2=80=93 Islande, Liechtenstein, =
+Suisse, Norv=C3=A8ge), le Royaume-Uni, la principaut=C3=A9 de Monaco et Sai=
+nt-Marin=2E=20
+
+ (2)=C2=A0En cas d=E2=80=99information n=C3=A9cessaire ab=
+sente, une commission d=E2=80=99=C3=A9mission de 15=C2=A0=E2=82=AC s=E2=80=
+=99applique=2E=20
+
+ (3)=C2=A0Liste sur le site hellobank=2Efr=2E
+
+* Abo=
+nnements =C3=A0 des services de banque =C3=A0 distance (internet, t=C3=A9l=
+=C3=A9phone fixe, SMS, etc=2E) : gratuit et illimit=C3=A9, hors co=C3=BBt d=
+e communication ou de fourniture d'acc=C3=A8s =C3=A0 internet et hors alert=
+es par SMS=2E=20
+
+** Appel non surtax=C3=A9=2E=20
+
+ Veuillez noter que =
+cet email r=C3=A8glementaire a =C3=A9t=C3=A9 envoy=C3=A9 =C3=A0 partir d'un=
+e adresse ne pouvant recevoir d'emails=2E=20
+
+Hello=C2=A0bank! est l'offr=
+e 100% digitale de BNP=C2=A0Paribas=C2=A0SA=20
+ BNP=C2=A0Paribas=C2=A0SA a=
+u capital de 2=C2=A0499=C2=A0597=C2=A0122=C2=A0=E2=82=AC=20
+ Si=C3=A8ge so=
+cial=C2=A0: 16,=C2=A0boulevard=C2=A0des=C2=A0Italiens - 75009=C2=A0Paris=20=
+
+ Immatricul=C3=A9e sous le n=C2=B0662=C2=A0042=C2=A0449 RCS=C2=A0Paris=20=
+
+ ORIAS n=C2=B007=C2=A0022=C2=A0735 -=20
+www=2Eorias=2Efr
+http://tr=2Evo=
+us=2Ehellobank=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V3001BIS5002AVJKI&mpvrs=
+=3D00021F1D05521D339=20
+
+
+ Hello=C2=A0bank! (Contestations/r=C3=A9clamat=
+ions)=C2=A0: 01=C2=A043=C2=A063=C2=A015=C2=A015 (Appel non surtax=C3=A9) -=
+=20
+www=2Ehellobank=2Efr
+http://tr=2Evous=2Ehellobank=2Efr/r5=2Easpx?GV1=
+=3DCIFA02K000000023V3001BIS6002AVJKI&mpvrs=3D00021F1D05521D339=20
+ (Co=C3=
+=BBt de connexion selon op=C3=A9rateur)=2E
+
+--ABOUNDARY.637341228839109970
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1=2E0 Transitional//EN" "http://ww=
+w=2Ew3=2Eorg/TR/xhtml1/DTD/xhtml1-transitional=2Edtd"><html xmlns=3D"http:/=
+/www=2Ew3=2Eorg/1999/xhtml"><head><meta http-equiv=3D"Content-Type" content=
+=3D"text/html; charset=3Dutf-8" /><title>Hello bank! | Nouveau message</tit=
+le><meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1" /><style type=3D"text/css">
+body {
+=09height: 100% !important;
+=09=
+margin: 0!important;
+=09padding: 0!important;
+=09width: 100% !important;
+=
+
+}
+f  div,  button {
+=09margin: 0 !important;
+=09padding: 0 !important;
+=
+
+=09display: block !important;
+}
+div[style*=3D"margin: 16px 0"] {
+=09mar=
+gin: 0 !important;
+}
+/* marge android 4=2E4*/
+       =20
+html {
+=09-we=
+bkit-text-size-adjust: 100%;
+=09-ms-text-size-adjust: 100%;
+}
+table {
+=
+=09border-collapse: collapse !important;
+}
+#outlook a {
+=09padding: 0;
+=
+}
+=2EReadMsgBody {
+=09width: 100%;
+}
+=2EExternalClass {
+=09width: 100%=
+;
+}
+=2Egmailfix {
+=09display: none;
+=09display: none!important;
+}
+tab=
+le,  td {
+=09mso-table-lspace: 0pt;
+=09mso-table-rspace: 0pt;
+}
+img {
+=
+=09-ms-interpolation-mode: bicubic;
+=09border: none !important;
+=09displa=
+y: block !important;
+}
+/* iOS BLUE LINKS */
+       =20
+a[x-apple-data-d=
+etectors] {
+=09color: inherit !important;
+=09text-decoration: none !impor=
+tant;
+=09font-size: inherit !important;
+=09font-family: inherit !importan=
+t;
+=09font-weight: inherit !important;
+=09line-height: inherit !important=
+;
+}
+=2Emobile-only {
+=09display: none !important;
+}
+ @media all and (m=
+ax-width: 600px) {
+=2Emobile-only {
+=09display: block !important;
+=09max=
+-height: none !important;
+}
+img {
+=09height: auto;
+}
+table[class=3Dflu=
+ide] {
+=09width: 100% !important;
+=09min-width: 0 !important;
+}
+td[clas=
+s=3Dfluide] {
+=09width: 100% !important;
+=09min-width: 0 !important;
+=09=
+float: left;
+}
+=2Efluide {
+=09width: 100% !important;
+=09min-width: 0 !=
+important;
+=09float: left;
+}
+=2Emb {
+=09width: 90% !important;
+=09marg=
+in: auto;
+}
+=2Epm {
+=09padding-left: 5% !important;
+=09padding-right: 5=
+% !important;
+}
+=2Ehide {
+=09display: none!important;
+}
+=2Eblock {
+=
+=09display: block;
+}
+=2Eac {
+=09text-align: center;
+}
+=2Eha {
+=09heig=
+ht: auto;
+}
+=2Ejustify {
+=09text-align: justify;
+}
+=2Efont15 {
+=09fon=
+t-size: 15px !important;
+}
+=2Efont16 {
+=09font-size: 16px !important;
+}=
+
+#hellolife {
+=09margin-top: 20px;
+}
+=2Ew130 {
+=09width: 130px !import=
+ant;
+}
+=2Emb17 {
+=09margin-bottom: 17px;
+}
+=2Emb20 {
+=09margin-bottom=
+: 20px;
+}
+#securite1 {
+=09border-bottom: 1px solid #d4d4d4;
+=09margin-b=
+ottom: 17px;
+}
+}
+ @media all and (max-width: 480px) {
+=2Efluide480 {
+=
+=09width: 100% !important;
+=09min-width: 0px !important;
+=09float: left;
+=
+
+}
+}
+</style></head><body bgcolor=3D"#f6f6f6"><table id=3D"conteneur" sty=
+le=3D"table-layout: fixed;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" bgcolor=3D"#f6f6f6"><tbody><tr><td align=3D"center"><table=
+ class=3D"fluide" width=3D"600" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" bgcolor=3D"#ffffff"><tbody><tr><td class=3D"pm" style=3D"font-family=
+: Arial, Helvetica, sans-serif; font-size: 10px; color: #028eb0; padding-to=
+p: 15px;" bgcolor=3D"#f5f5f5" align=3D"center">=C2=A0Vos conditions tarifai=
+res =C3=A9voluent=2E</td></tr><tr><td class=3D"pm" style=3D"font-family: Ar=
+ial, Helvetica, sans-serif; font-size: 10px; color: #696969; padding-bottom=
+: 20px;" bgcolor=3D"#f5f5f5" align=3D"center"><a class=3D"block" href=3D"ht=
+tp://tr=2Evous=2Ehellobank=2Efr/do?910C4B825CB855975C03993179EB4890707C38D2=
+E305DB7CC5CFD86E1C669A3F9C723B33CFF4A2F95E29BB1C15857FD6383CFD3A0A45588F607=
+228D8FB09557E" target=3D"_blank" style=3D"color: #696969; text-decoration: =
+underline;">Voir la version en ligne</a> <span class=3D"hide">/</span> Info=
+rmations personnelles de s=C3=A9curit=C3=A9=C2=A0: 18/04=2E</td></tr></tbod=
+y></table></td></tr><tr><td align=3D"center"><table class=3D"fluide" width=
+=3D"600" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#fffff=
+f"><tbody><tr><td><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"=
+ border=3D"0" bgcolor=3D"#445a71"><tbody><tr><td><table class=3D"mb" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td c=
+lass=3D"hide" width=3D"50">=C2=A0</td><td class=3D"mobile-only fluide" heig=
+ht=3D"30">=C2=A0</td><td class=3D"fluide" width=3D"91" align=3D"center"><a =
+href=3D"http://tr=2Evous=2Ehellobank=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V=
+3001BHP2002AVJKI&amp;mpvrs=3D00021F1D05521D339" target=3D"_blank" style=3D"=
+font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bo=
+ld; color: #ffffff; line-height: 91px;"><img src=3D"https://www=2Ehellobank=
+=2Efr/rsc/contrib/image/emailing/VousAvezUnMessage-OcNet/logo_OcNet=2Epng" =
+alt=3D"Hello bank!" width=3D"91" height=3D"100" /></a></td><td class=3D"hid=
+e" width=3D"20">=C2=A0</td><td class=3D"mobile-only fluide" height=3D"20">=
+=C2=A0</td><td class=3D"ac fluide" style=3D"font-family: Arial, Helvetica, =
+sans-serif; font-size: 20px; font-weight: bold; color: #fff;" align=3D"left=
+">Informations sur vos <br class=3D"hide" /> virements internationaux=C2=A0=
+!</td><td class=3D"mobile-only fluide" height=3D"10">=C2=A0</td><td class=
+=3D"fluide" width=3D"223" align=3D"center"><img src=3D"https://www=2Ehellob=
+ank=2Efr/rsc/contrib/image/emailing/VousAvezUnMessage-OcNet/client_OcNet_7=
+=2Epng" style=3D"display: block;" width=3D"223" height=3D"196" border=3D"0"=
+ /></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td he=
+ight=3D"40" bgcolor=3D"#ffffff">=C2=A0</td></tr><tr><td class=3D"pm" style=
+=3D"font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height=
+: 24px; color: #696969; padding: 0 40px 30px 40px;" align=3D"center"><stron=
+g style=3D"font-size: 24px;">Hello Axel Calixte,</strong><br /> <br /> =C3=
+=80 compter de novembre 2020, les tarifs de notre offre de virements intern=
+ationaux en ligne =C3=A9volueront=2E Vous trouverez les nouvelles condition=
+s tarifaires ci-apr=C3=A8s=2E Si vous souhaitez refuser ces nouvelles condi=
+tions tarifaires, vous pouvez r=C3=A9silier, sans frais, votre convention d=
+e compte de d=C3=A9p=C3=B4t avant le 01/11/2020=2E =C3=80 d=C3=A9faut de no=
+tification =C3=A9crite de votre part en ce sens, les nouvelles conditions t=
+arifaires s=E2=80=99appliqueront=2E</td></tr><tr><td class=3D"pm" style=3D"=
+font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24=
+px; color: #696969; padding: 0 40px 10px 40px;" align=3D"padding-right"><u>=
+Nouvelle offre MyTransfer, disponible exclusivement sur le site hellobank=
+=2Efr et l=E2=80=99application Hello bank!*</u><br /> <br /> <strong>=C3=89=
+mission d=E2=80=99un virement non SEPA</strong> (par op=C3=A9ration, libell=
+=C3=A9e en devises ou en euros hors SEPA<sup style=3D"font-size: 12px;">(1)=
+</sup>)=C2=A0:<br /> <br /> <u>Change</u>=C2=A0:<br /> Taux de change affic=
+h=C3=A9 au moment de l=E2=80=99op=C3=A9ration<br /> <br /> <u>Commission d=
+=E2=80=99=C3=A9mission :<br /> </u> <strong>Virement occasionnel vers un pa=
+ys de la zone SEPA dans une devise autre que l=E2=80=99euro :</strong><ul><=
+li>Libell=C3=A9 dans la devise du pays du b=C3=A9n=C3=A9ficiaire : GRATUITE=
+<sup style=3D"font-size: 12px;">(2)</sup></li><li>Libell=C3=A9 dans une aut=
+re devise que celle du pays du b=C3=A9n=C3=A9ficiaire=C2=A0: 15=C2=A0=E2=82=
+=AC</li></ul><strong>Virement occasionnel vers un pays hors de la zone SEPA=
+=C2=A0:</strong><ul><li>Libell=C3=A9 dans la devise du pays du b=C3=A9n=C3=
+=A9ficiaire=C2=A0: GRATUITE<sup style=3D"font-size: 12px;">(2)</sup></li><l=
+i>Libell=C3=A9 en euros ou dans une autre devise que celle du pays du b=C3=
+=A9n=C3=A9ficiaire : 3=C2=A0=E2=82=AC vers une filiale BNP=C2=A0Paribas=C2=
+=A0<sup style=3D"font-size: 12px;">(3)</sup> / 15=C2=A0=E2=82=AC sinon</li>=
+</ul></td></tr></tbody></table></td></tr><tr><td align=3D"center"><table cl=
+ass=3D"fluide" width=3D"600" cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" bgcolor=3D"#ffffff"><tbody><tr></tr><tr><td align=3D"center"><img class=
+=3D"fluide480" src=3D"https://www=2Ehellobank=2Efr/rsc/contrib/image/emaili=
+ng/imagespermanentes/footer_separateur=2Epng" alt=3D"&#160;" width=3D"380" =
+/></td></tr><tr><td style=3D"font-size: 1px; line-height: 1px;" height=3D"2=
+5">=C2=A0</td></tr><tr><td style=3D"font-family: Arial, Helvetica, sans-ser=
+if; font-size: 20px; color: #415873; font-weight: bold; padding: 0 10px 10p=
+x 10px; line-height: 24px;" align=3D"center"><img class=3D"fluide480" src=
+=3D"https://www=2Ehellobank=2Efr/rsc/contrib/image/emailing/imagespermanent=
+es/footer_helloiz=2Epng" alt=3D"Hello&#239;Z est l&#224; pour r&#233;pondre=
+ &#224; vos questions&#160;:" width=3D"367" /></td></tr><tr><td style=3D"fo=
+nt-size: 1px; line-height: 1px;" height=3D"25">=C2=A0</td></tr><tr><td styl=
+e=3D"font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #41=
+5873; font-weight: bold; line-height: 16px;" align=3D"center"><table width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td w=
+idth=3D"33=2E33%" align=3D"right"><a href=3D"http://tr=2Evous=2Ehellobank=
+=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V3001BHP3002AVJKI&amp;mpvrs=3D00021F1=
+D05521D339" style=3D"color: #415873;"> <img class=3D"fluide480" src=3D"http=
+s://www=2Ehellobank=2Efr/rsc/contrib/image/emailing/imagespermanentes/foote=
+r_messenger=2Epng" alt=3D"Sur Messenger" /> </a></td><td width=3D"33=2E33%"=
+ align=3D"center"><a href=3D"http://tr=2Evous=2Ehellobank=2Efr/r5=2Easpx?GV=
+1=3DCIFA02K000000023V3001BHP4002AVJKI&amp;mpvrs=3D00021F1D05521D339" style=
+=3D"color: #415873;"> <img class=3D"fluide480" src=3D"https://www=2Ehelloba=
+nk=2Efr/rsc/contrib/image/emailing/imagespermanentes/footer_chat=2Epng" alt=
+=3D"Via le Chat" /> </a></td><td width=3D"33=2E33%" align=3D"left"><a href=
+=3D"http://tr=2Evous=2Ehellobank=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V3001=
+BHP5002AVJKI&amp;mpvrs=3D00021F1D05521D339" style=3D"color: #415873;"> <img=
+ class=3D"fluide480" src=3D"https://www=2Ehellobank=2Efr/rsc/contrib/image/=
+emailing/imagespermanentes/footer_twitter=2Epng" alt=3D"Sur Twitter" /> </a=
+></td></tr></tbody></table></td></tr><tr><td style=3D"font-size: 1px; line-=
+height: 1px;" height=3D"30" align=3D"center"><table width=3D"80%" cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td style=3D"border-bott=
+om: 1px solid #ddd;" height=3D"30" align=3D"center">=C2=A0</td></tr></tbody=
+></table></td></tr><tr><td style=3D"font-size: 1px; line-height: 1px;" heig=
+ht=3D"30">=C2=A0</td></tr><tr><td style=3D"font-family: Arial, Helvetica, s=
+ans-serif; font-size: 20px; color: #415873; font-weight: bold; padding: 0 1=
+0px 10px 10px; line-height: 24px;" align=3D"center"><a href=3D"http://tr=2E=
+vous=2Ehellobank=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V3001BHP6002AVJKI&amp=
+;mpvrs=3D00021F1D05521D339" style=3D"color: #415873;"> <img class=3D"fluide=
+480" src=3D"http://services=2Ehellobank=2Efr/IL/2/4/1/1101059241/112363748=
+=2Epng" alt=3D"G&#233;rez vos comptes en mobilit&#233; avec l=E2=80=99appli=
+ Hello bank!" width=3D"367" /> </a></td></tr><tr><td style=3D"font-family: =
+Arial, Helvetica, sans-serif; font-size: 16px; color: #415873; line-height:=
+ 10px; text-decoration: none;" align=3D"center"><a href=3D"http://tr=2Evous=
+=2Ehellobank=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V3001BHP7002AVJKI&amp;mpv=
+rs=3D00021F1D05521D339" style=3D"color: #415873; text-decoration: none;"><i=
+mg style=3D"display: inline !important;" src=3D"https://www=2Ehellobank=2Ef=
+r/rsc/contrib/image/emailing/imagespermanentes/footer_fb=2Epng" alt=3D"Face=
+book" /></a> <a href=3D"http://tr=2Evous=2Ehellobank=2Efr/r5=2Easpx?GV1=3DC=
+IFA02K000000023V3001BHP8002AVJKI&amp;mpvrs=3D00021F1D05521D339" style=3D"co=
+lor: #415873; text-decoration: none;"><img style=3D"display: inline !import=
+ant;" src=3D"https://www=2Ehellobank=2Efr/rsc/contrib/image/emailing/images=
+permanentes/footer_tw=2Epng" alt=3D"Twitter" /></a> <a href=3D"http://tr=2E=
+vous=2Ehellobank=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V3001BHP9002AVJKI&amp=
+;mpvrs=3D00021F1D05521D339" style=3D"color: #415873; text-decoration: none;=
+"><img style=3D"display: inline !important;" src=3D"https://www=2Ehellobank=
+=2Efr/rsc/contrib/image/emailing/imagespermanentes/footer_in=2Epng" alt=3D"=
+Instagram" /></a> <a href=3D"http://tr=2Evous=2Ehellobank=2Efr/r5=2Easpx?GV=
+1=3DCIFA02K000000023V3001BHPA002AVJKI&amp;mpvrs=3D00021F1D05521D339" style=
+=3D"color: #415873; text-decoration: none;"><img style=3D"display: inline !=
+important;" src=3D"https://www=2Ehellobank=2Efr/rsc/contrib/image/emailing/=
+imagespermanentes/footer_yt=2Epng" alt=3D"Youtube" /></a></td></tr><tr><td =
+height=3D"35">=C2=A0</td></tr></tbody></table></td></tr><tr><td align=3D"ce=
+nter"><table class=3D"fluide" width=3D"600" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" bgcolor=3D"#ffffff"><tbody><tr><td align=3D"center"><ta=
+ble class=3D"fluide" width=3D"600" cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" bgcolor=3D"#ffffff"><tbody><tr><td style=3D"padding-bottom: 20px;"=
+ align=3D"center"><table class=3D"mb" style=3D"border-top: 2px solid #ff5a6=
+4;" width=3D"560" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=
+=3D"#f6f6f6"><tbody><tr><td style=3D"font-size: 1px; line-height: 1px;" hei=
+ght=3D"8" bgcolor=3D"#ff5a64">=C2=A0</td></tr><tr><td class=3D"pm" style=3D=
+"font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #ffffff=
+; font-weight: bold;" bgcolor=3D"#ff5a64" align=3D"center"><img style=3D"di=
+splay: inline !important;" class=3D"fluide480" src=3D"http://services=2Ehel=
+lobank=2Efr/IL/2/4/1/1101059241/156538601=2Epng" alt=3D"Restez en alerte fa=
+ce &#224; la fraude&#160;" /></td></tr><tr><td style=3D"font-size: 1px; lin=
+e-height: 1px;" height=3D"8" bgcolor=3D"#ff5a64">=C2=A0</td></tr><tr><td cl=
+ass=3D"pm" style=3D"font-family: Arial, Helvetica, sans-serif; font-size: 1=
+4px; color: #ffffff;" bgcolor=3D"#ff5a64" align=3D"center"><strong>Ne commu=
+niquez jamais vos codes personnels par mail, par t=C3=A9l=C3=A9phone, par S=
+MS <br /> ou sur les r=C3=A9seaux sociaux=2E </strong> <br /> <br /> Nous v=
+ous rappelons nos <a href=3D"http://tr=2Evous=2Ehellobank=2Efr/r5=2Easpx?GV=
+1=3DCIFA02K000000023V3001BHPB002AVJKI&amp;mpvrs=3D00021F1D05521D339" data-o=
+rder-id=3D"12" target=3D"_blank" style=3D"color: #ffffff; font-weight: bold=
+; text-decoration: underline;">bonnes pratiques</a> pour =C3=A9viter le pir=
+atage sur internet=2E</td></tr><tr><td style=3D"font-size: 1px; line-height=
+: 1px;" height=3D"15" bgcolor=3D"#ff5a64">=C2=A0</td></tr><tr><td class=3D"=
+pm" style=3D"font-size: 1px; line-height: 1px;" valign=3D"top" height=3D"20=
+" align=3D"center"><img src=3D"https://www=2Ehellobank=2Efr/rsc/contrib/ima=
+ge/emailing/imagespermanentes/fleche=2Epng" alt=3D"&#160;" style=3D"display=
+: block;" border=3D"0" /></td></tr><tr><td align=3D"center"><table width=3D=
+"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td widt=
+h=3D"50%" valign=3D"top" align=3D"center"><table width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td style=3D"font-family: =
+Arial, Helvetica, sans-serif; font-size: 07px; color: #696969;" align=3D"ce=
+nter"><img src=3D"https://www=2Ehellobank=2Efr/rsc/contrib/image/emailing/i=
+magespermanentes/code=2Ejpg" alt=3D"Code personnel" width=3D"30" height=3D"=
+28" /></td></tr><tr><td class=3D"pm" style=3D"font-family: Arial, Helvetica=
+, sans-serif; font-size: 12px; color: #696969; padding: 8px 20px 20px 20px;=
+" align=3D"center">Indiquez vos <strong>codes personnels </strong>seulement=
+ sur votre <strong>Espace=C2=A0Client Hello=C2=A0bank!</strong>=2E</td></tr=
+></tbody></table></td><td style=3D"vertical-align: middle;" width=3D"1"><ta=
+ble class=3D"mb17" width=3D"1" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" bgcolor=3D"#cecece"><tbody><tr><td style=3D"line-height: 1px; font-s=
+ize: 1px;" height=3D"50">=C2=A0</td></tr></tbody></table></td><td width=3D"=
+50%" valign=3D"top" align=3D"center"><table width=3D"100%" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0"><tbody><tr><td class=3D"ha" style=3D"font-=
+family: Arial, Helvetica, sans-serif; font-size: 07px; color: #696969;" hei=
+ght=3D"28" align=3D"center"><img src=3D"https://www=2Ehellobank=2Efr/rsc/co=
+ntrib/image/emailing/imagespermanentes/calendar=2Ejpg" alt=3D"Date de naiss=
+ance" width=3D"21" height=3D"22" /></td></tr><tr><td class=3D"pm" style=3D"=
+font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #696969;=
+ padding: 8px 20px 20px 20px;" align=3D"center">Par s=C3=A9curit=C3=A9 nous=
+ <strong>vous rappelons vos jour et mois de naissance</strong> en haut de c=
+haque email=2E</td></tr></tbody></table></td></tr></tbody></table><table wi=
+dth=3D"90%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td=
+ style=3D"font-size: 0=2E1px; border-top: 1px solid #d4d4d4;" height=3D"1">=
+=C2=A0</td></tr></tbody></table><table width=3D"100%" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0"><tbody><tr><td width=3D"50%" valign=3D"top" ali=
+gn=3D"center"><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0"><tbody><tr><td style=3D"font-size: 0=2E1px;" height=3D"10">=C2=A0=
+</td></tr><tr><td class=3D"ha" style=3D"font-family: Arial, Helvetica, sans=
+-serif; font-size: 07px; color: #696969;" height=3D"28" align=3D"center"><i=
+mg src=3D"https://www=2Ehellobank=2Efr/rsc/contrib/image/emailing/imagesper=
+manentes/croix=2Ejpg" alt=3D"Informations confidentielles" width=3D"22" hei=
+ght=3D"22" /></td></tr><tr><td class=3D"pm" style=3D"font-family: Arial, He=
+lvetica, sans-serif; font-size: 12px; color: #696969; padding: 8px 20px 20p=
+x 20px;" align=3D"center">Ne communiquez pas <strong>d'informations confide=
+ntielles</strong> par email, <strong> sur les r=C3=A9seaux sociaux ou sur u=
+n site Internet non s=C3=A9curis=C3=A9=2E</strong></td></tr></tbody></table=
+></td><td style=3D"vertical-align: middle;" width=3D"1"><table width=3D"1" =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#cecece"><tbody=
+><tr><td class=3D"separ" style=3D"line-height: 1px; font-size: 1px;" height=
+=3D"50">=C2=A0</td></tr></tbody></table></td><td class=3D"w130" width=3D"50=
+%" valign=3D"top" align=3D"center"><table width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0"><tbody><tr><td style=3D"font-size: 0=2E1px;"=
+ height=3D"10">=C2=A0</td></tr><tr><td class=3D"ha" style=3D"font-family: A=
+rial, Helvetica, sans-serif; font-size: 07px; color: #696969;" height=3D"28=
+" align=3D"center"><img src=3D"https://www=2Ehellobank=2Efr/rsc/contrib/ima=
+ge/emailing/imagespermanentes/contact=2Ejpg" alt=3D"Joignables" width=3D"23=
+" height=3D"23" /></td></tr><tr><td class=3D"pm" style=3D"font-family: Aria=
+l, Helvetica, sans-serif; font-size: 12px; color: #696969; padding: 8px 20p=
+x 20px 20px;" align=3D"center">En cas de doute <br /> <strong>contactez-nou=
+s </strong>au<strong> 01=C2=A043=C2=A063=C2=A015=C2=A015** </strong>6j/7 de=
+ 8h=C2=A0=C3=A0=C2=A022h en semaine et de 8h=C2=A0=C3=A0=C2=A018h le samedi=
+=2E</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></=
+table></td></tr><tr><td class=3D"pm justify" style=3D"font-family: Arial, H=
+elvetica, sans-serif; font-size: 12px; color: #696969; padding: 0 18px;" al=
+ign=3D"left">(1)=C2=A0Zone SEPA : 27 pays de l=E2=80=99Union Europ=C3=A9enn=
+e (Allemagne, Autriche, Belgique, Bulgarie, Chypre, Croatie, Danemark, Espa=
+gne, Estonie, Finlande, France, Gr=C3=A8ce, Hongrie, Irlande, Italie, Letto=
+nie, Lituanie, Luxembourg, Malte, Pays-Bas, Pologne, Portugal, R=C3=A9publi=
+que Tch=C3=A8que, Roumanie, Slovaquie, Slov=C3=A9nie, Su=C3=A8de), les 4 pa=
+ys de l=E2=80=99AELE (Association Europ=C3=A9enne de Libre Echange =E2=80=
+=93 Islande, Liechtenstein, Suisse, Norv=C3=A8ge), le Royaume-Uni, la princ=
+ipaut=C3=A9 de Monaco et Saint-Marin=2E <br /><br /> (2)=C2=A0En cas d=E2=
+=80=99information n=C3=A9cessaire absente, une commission d=E2=80=99=C3=A9m=
+ission de 15=C2=A0=E2=82=AC s=E2=80=99applique=2E <br /><br /> (3)=C2=A0Lis=
+te sur le site hellobank=2Efr=2E<br /> <br /> <span style=3D"color: #01a0c0=
+;">*</span> Abonnements =C3=A0 des services de banque =C3=A0 distance (inte=
+rnet, t=C3=A9l=C3=A9phone fixe, SMS, etc=2E) : gratuit et illimit=C3=A9, ho=
+rs co=C3=BBt de communication ou de fourniture d'acc=C3=A8s =C3=A0 internet=
+ et hors alertes par SMS=2E <br /> <br /> <span style=3D"color: #01a0c0;">*=
+*</span> Appel non surtax=C3=A9=2E <br /> <br /> Veuillez noter que cet ema=
+il r=C3=A8glementaire a =C3=A9t=C3=A9 envoy=C3=A9 =C3=A0 partir d'une adres=
+se ne pouvant recevoir d'emails=2E <br /> <br /> <strong>Hello=C2=A0bank! e=
+st l'offre 100% digitale de BNP=C2=A0Paribas=C2=A0SA </strong> <br /> BNP=
+=C2=A0Paribas=C2=A0SA au capital de 2=C2=A0499=C2=A0597=C2=A0122=C2=A0=E2=
+=82=AC <br /> Si=C3=A8ge social=C2=A0: 16,=C2=A0boulevard=C2=A0des=C2=A0Ita=
+liens - 75009=C2=A0Paris <br /> Immatricul=C3=A9e sous le n=C2=B0662=C2=A00=
+42=C2=A0449 RCS=C2=A0Paris <br /> ORIAS n=C2=B007=C2=A0022=C2=A0735 - <a hr=
+ef=3D"http://tr=2Evous=2Ehellobank=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V30=
+01BHPC002AVJKI&amp;mpvrs=3D00021F1D05521D339" target=3D"_blank" style=3D"co=
+lor: #4a4a4a; text-decoration: underline;">www=2Eorias=2Efr</a> <br /> <br =
+/> Hello=C2=A0bank! (Contestations/r=C3=A9clamations)=C2=A0: 01=C2=A043=C2=
+=A063=C2=A015=C2=A015 (Appel non surtax=C3=A9) - <a href=3D"http://tr=2Evou=
+s=2Ehellobank=2Efr/r5=2Easpx?GV1=3DCIFA02K000000023V3001BHPD002AVJKI&amp;mp=
+vrs=3D00021F1D05521D339" target=3D"_blank" style=3D"color: #4a4a4a; text-de=
+coration: underline;">www=2Ehellobank=2Efr</a> (Co=C3=BBt de connexion selo=
+n op=C3=A9rateur)=2E</td></tr><tr><td>=C2=A0</td></tr><!-- ----- FOOTER FIN=
+ --> <!-- +++++ ESSENTIEL FIN - DEBUT --></tbody></table></td></tr></tbody>=
+</table><img src=3D"https://ib=2Eadnxs=2Ecom/getuid?http://insight=2Etradel=
+ab=2Efr/emailopen=2Ephp?uid=3D$UID&amp;email=3DNULL&amp;seg=3D7423063&amp;a=
+dvid=3D1448684" style=3D"display: block;" width=3D"1" height=3D"1" border=
+=3D"0" /><div class=3D"gmailfix" style=3D"white-space: nowrap; font: 15px c=
+ourier; line-height: 0;">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0</div></td></tr></tbody></table><img src=3D"http://tr=2Evous=
+=2Ehellobank=2Efr/o5=2Easpx?GV1=3DCIFA02K000000023V3002AVJKI&amp;mpvrs=3D00=
+021F1D05521D339" style=3D"visibility : hidden;" border=3D"0" width=3D"0" he=
+ight=3D"0"></body></html>
+
+--ABOUNDARY.637341228839109970--
+
+

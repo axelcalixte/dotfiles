@@ -1,0 +1,182 @@
+Return-Path: <calixteaxelmetaline+caf_=axelcalixte=disroot.org@gmail.com>
+Delivered-To: axelcalixte@disroot.org
+Received: from localhost (localhost [127.0.0.1])
+	by disroot.org (Postfix) with ESMTP id 185C5529C7
+	for <axelcalixte@disroot.org>; Wed, 26 Aug 2020 20:47:38 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at disroot.org
+Received: from knopi.disroot.org ([127.0.0.1])
+	by localhost (disroot.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id sJkIhdxpVYHd for <axelcalixte@disroot.org>;
+	Wed, 26 Aug 2020 20:47:36 +0200 (CEST)
+Received: from mail-il1-f180.google.com (mail-il1-f180.google.com [209.85.166.180])
+	by disroot.org (Postfix) with ESMTPS id 72699529E3
+	for <axelcalixte@disroot.org>; Wed, 26 Aug 2020 20:47:36 +0200 (CEST)
+Authentication-Results: disroot.org;
+	dkim=pass (2048-bit key; unprotected) header.d=accounts.google.com header.i=@accounts.google.com header.b="XyC3ZwX7";
+	dkim-atps=neutral
+Received: by mail-il1-f180.google.com with SMTP id k4so2680413ilr.12
+        for <axelcalixte@disroot.org>; Wed, 26 Aug 2020 11:47:36 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:delivered-to:dkim-signature:mime-version:date
+         :feedback-id:message-id:subject:from:to;
+        bh=XSHggzLW/wc+xgrPewGp9YWpfmJtwfupzik3K4gcVs8=;
+        b=KpfLZhhgNUKzvesQoUutjR7TklvLLwC8+Tcw7Nh1cYW0XFZ8zXCIfJDiArvMT7UqIY
+         6RpZH/gcTYgGcWNpZe0epXwCcmegwf8Xzaa+KzYnVdyTql5r7zS5P+7BWZVbpH5M3x42
+         V2quhBtfhFuO0y3SkKXlSY3Q6yU2jhpuXp04rVyaMv7pdmgZXpkBI7ZkWP12hUq2MI1M
+         RPv/HYLHKXbTpoIRY8Jn22f3J3vECJKCX3MrnXQPSp+nPQkmxKnZOq5reVwIS+gILLVO
+         +KryXOF/C+frJkFdZ2PMhs7HBYneWC1vujV6eYm3B9qCT9oxwUxR6eN6bBhjbr3SMMsn
+         8m2Q==
+X-Gm-Message-State: AOAM533ZuKKGbaaYUXkzHjOmP4qYVzK4ENFziUz2PILBnDo85JbVYZjC
+	i2d58SiopP7i+/Ey/6SzYGVS/D/iinFfMJo8/OO0FggiOU0jXjd6pA==
+X-Received: by 2002:a92:ca8d:: with SMTP id t13mr14619898ilo.302.1598467655045;
+        Wed, 26 Aug 2020 11:47:35 -0700 (PDT)
+X-Forwarded-To: axelcalixte@disroot.org
+X-Forwarded-For: calixteaxelmetaline@gmail.com axelcalixte@disroot.org
+Delivered-To: calixteaxelmetaline@gmail.com
+Received: by 2002:a02:928e:0:0:0:0:0 with SMTP id b14csp4303542jah;
+        Wed, 26 Aug 2020 11:47:33 -0700 (PDT)
+X-Received: by 2002:a05:620a:1653:: with SMTP id c19mr15585419qko.501.1598467653781;
+        Wed, 26 Aug 2020 11:47:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1598467653; cv=none;
+        d=google.com; s=arc-20160816;
+        b=tDcT1nWgQSeKe03vDYs3gn3qn2LXdZ5/+4U1PaWqU9xmWmUet0wfhcn/k5J+qqLB6e
+         ZalkyWDDQZFQCwQNuNdqH6jPOhK+DJmpkiwpFBgjjAFzQJzr97/6IKNJZMC8XkRn1nYg
+         qdrsW71YP5OEIsuxH+LSfHx3V2ZN0d3CN0TgNAktT1t1JcKEt8JZX6OWoQmGja/rTjw4
+         LQtltjwD5kLbZ5wUxI0gNAjPENOsRg0tQY2YyeZ+jjTPjA7VTgkTezUd7ruHmv2PLC0B
+         Xv4Vxjag8V8vOvk5fIDAGZXo7f0lRex4BSKernwXCy1qbPqzQQqxflgWAR13ebb1PVlC
+         EgIQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:feedback-id:date:mime-version
+         :dkim-signature;
+        bh=XSHggzLW/wc+xgrPewGp9YWpfmJtwfupzik3K4gcVs8=;
+        b=fXfZsZcgOJ2qedau9VJ8uZ7Dj7I4cJAf6g1yu2ULRLc1iFatI6HJiyUoxFNmfcuc11
+         C0RJ6ytKuUjPkdzGWNWiV/CHm1At64d4HqPU/K1HcINX5VKBifwevkGxUb/ey3nsEp3o
+         WZbks7pVUPC10Yokzz6/MWQ58gUKRnhaQAn0D62WrMypsbol2PmAW6KDPIpuBXL4/KJ1
+         HftuV94u2tP0Yt9Y8hb8VdM7JjXuEPd9wG2upSrtIsOE2j1L0tTekn6rYi2HdKlqC1Q3
+         vanqxClh/otBhpPs6YRlIaWaOe1qdS8U4qPsvaMVkYILT3f1zy9s4M3Smi1QqYyT6GyE
+         wvZg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20161025 header.b=XyC3ZwX7;
+       spf=pass (google.com: domain of 3ra5gxwgtalwpq-tgrn0ceeqwpvu.iqqing.eqo@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3Ra5GXwgTALwpq-tgrn0ceeqwpvu.iqqing.eqo@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id u76sor1121632qka.111.2020.08.26.11.47.33
+        for <CalixteAxelMetaline@gmail.com>
+        (Google Transport Security);
+        Wed, 26 Aug 2020 11:47:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3ra5gxwgtalwpq-tgrn0ceeqwpvu.iqqing.eqo@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) client-ip=209.85.220.73;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20161025 header.b=XyC3ZwX7;
+       spf=pass (google.com: domain of 3ra5gxwgtalwpq-tgrn0ceeqwpvu.iqqing.eqo@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3Ra5GXwgTALwpq-tgrn0ceeqwpvu.iqqing.eqo@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=accounts.google.com; s=20161025;
+        h=mime-version:date:feedback-id:message-id:subject:from:to;
+        bh=XSHggzLW/wc+xgrPewGp9YWpfmJtwfupzik3K4gcVs8=;
+        b=XyC3ZwX77EedL4MqSMy9C/c0dIsL4UP8+I28nFp99pc+UCCbAVu10mico99La0I3dl
+         F6ZVGNP7IRQwr2SOMK44ghPV4vFEZgLgyuxgI+8nObqAf5RLay9TbD75lWsqxe7rbFxA
+         OelS5Hrw8JD5qcLExQjuno6qi2Acz1LH2LEQQkFa09mcIjm9mqixe8ChXTMq/eYE39GT
+         3CylX2eUuCQc5F3nAbhYQqdZ3x6dqkKDkJPIZ48wykpM3u2z8ua8pgxj5bbo2v1H922s
+         kYEmhHCRtOWFtc9WiVezO6I1VfnArIzzOstEwcxBg6Ft7OttloTz/4O2+q/Uw8BdQTgl
+         wkpA==
+X-Google-Smtp-Source: ABdhPJwvZeO4JjXpfAaJUagAlTs9kV/PTqxEYS99SXT80UzVMijZ3VrCr6VjuqmP48g4ZfdtAgSmI5S3PXRAVyxh4L7SYQ==
+Mime-Version: 1.0
+X-Received: by 2002:a05:620a:148a:: with SMTP id w10mr8418209qkj.281.1598467653070;
+ Wed, 26 Aug 2020 11:47:33 -0700 (PDT)
+Date: Wed, 26 Aug 2020 18:47:31 GMT
+X-Account-Notification-Type: 31-anexp#-experiment
+Feedback-ID: 31-anexp#-experiment:account-notifier
+X-Notifications: 6b4a0a62f8400000
+Message-ID: <3HObcYU73j9WHJVLve9SXg.0@notifications.google.com>
+Subject: =?UTF-8?B?QWxlcnRlIGRlIHPDqWN1cml0w6k=?=
+From: Google <no-reply@accounts.google.com>
+To: CalixteAxelMetaline@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000a5700a05adcc40e2"
+
+--000000000000a5700a05adcc40e2
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+W2ltYWdlOiBHb29nbGVdDQpDb25uZXhpb24gc3VyIHVuIG5vdXZlbCBhcHBhcmVpbA0KDQoNCmNh
+bGl4dGVheGVsbWV0YWxpbmVAZ21haWwuY29tDQpVbiB1dGlsaXNhdGV1ciB2aWVudCBkZSBzZSBj
+b25uZWN0ZXIgw6Agdm90cmUgY29tcHRlIEdvb2dsZSDDoCBwYXJ0aXIgZCd1bg0Kbm91dmVsIGFw
+cGFyZWlsIFdpbmRvd3MuIE5vdXMgdm91cyBlbnZveW9ucyBjZXQgZS1tYWlsIHBvdXIgdsOpcmlm
+aWVyIHF1J2lsDQpzJ2FnaXNzYWl0IGJpZW4gZGUgdm91cy4NCkNvbnN1bHRlciBsJ2FjdGl2aXTD
+qQ0KPGh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9BY2NvdW50Q2hvb3Nlcj9FbWFpbD1jYWxp
+eHRlYXhlbG1ldGFsaW5lQGdtYWlsLmNvbSZjb250aW51ZT1odHRwczovL215YWNjb3VudC5nb29n
+bGUuY29tL2FsZXJ0L250LzE1OTg0Njc2NTEwMDA/cmZuJTNEMzElMjZyZm5jJTNEMSUyNmVpZCUz
+RC04MjUyOTA5MDUwMTg2NDAwMzcwJTI2ZXQlM0QyJTI2YW5leHAlM0QtZXhwZXJpbWVudD4NCkNl
+dCBlLW1haWwgdm91cyBhIMOpdMOpIGVudm95w6kgcG91ciB2b3VzIGluZm9ybWVyIGRlIG1vZGlm
+aWNhdGlvbnMNCmltcG9ydGFudGVzIGFwcG9ydMOpZXMgw6Agdm90cmUgY29tcHRlIGV0IGF1eCBz
+ZXJ2aWNlcyBHb29nbGUgcXVlIHZvdXMNCnV0aWxpc2V6Lg0KwqkgMjAyMCBHb29nbGUgTExDLCAx
+NjAwIEFtcGhpdGhlYXRyZSBQYXJrd2F5LCBNb3VudGFpbiBWaWV3LCBDQSA5NDA0MywgVVNBDQo=
+--000000000000a5700a05adcc40e2
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"en"><head><meta name=3D"format-detection" cont=
+ent=3D"email=3Dno"/><meta name=3D"format-detection" content=3D"date=3Dno"/>=
+<style nonce=3D"ZGLAlLwK04t2ilX64C1hjw">.awl a {color: #FFFFFF; text-decora=
+tion: none;} .abml a {color: #000000; font-family: Roboto-Medium,Helvetica,=
+Arial,sans-serif; font-weight: bold; text-decoration: none;} .adgl a {color=
+: rgba(0, 0, 0, 0.87); text-decoration: none;} .afal a {color: #b0b0b0; tex=
+t-decoration: none;} @media screen and (min-width: 600px) {.v2sp {padding: =
+6px 30px 0px;} .v2rsp {padding: 0px 10px;}} @media screen and (min-width: 6=
+00px) {.mdv2rw {padding: 40px 40px;}} </style><link href=3D"//fonts.googlea=
+pis.com/css?family=3DGoogle+Sans" rel=3D"stylesheet" type=3D"text/css"/></h=
+ead><body style=3D"margin: 0; padding: 0;" bgcolor=3D"#FFFFFF"><table width=
+=3D"100%" height=3D"100%" style=3D"min-width: 348px;" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" lang=3D"en"><tr height=3D"32" style=3D"height: =
+32px;"><td></td></tr><tr align=3D"center"><td><div itemscope itemtype=3D"//=
+schema.org/EmailMessage"><div itemprop=3D"action" itemscope itemtype=3D"//s=
+chema.org/ViewAction"><link itemprop=3D"url" href=3D"https://accounts.googl=
+e.com/AccountChooser?Email=3Dcalixteaxelmetaline@gmail.com&amp;continue=3Dh=
+ttps://myaccount.google.com/alert/nt/1598467651000?rfn%3D31%26rfnc%3D1%26ei=
+d%3D-8252909050186400370%26et%3D2%26anexp%3D-experiment"/><meta itemprop=3D=
+"name" content=3D"Consulter l&#39;activit=C3=A9 du compte"/></div></div><ta=
+ble border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"padding-botto=
+m: 20px; max-width: 516px; min-width: 220px;"><tr><td width=3D"8" style=3D"=
+width: 8px;"></td><td><div style=3D"border-style: solid; border-width: thin=
+; border-color:#dadce0; border-radius: 8px; padding: 40px 20px;" align=3D"c=
+enter" class=3D"mdv2rw"><img src=3D"https://www.gstatic.com/images/branding=
+/googlelogo/2x/googlelogo_color_74x24dp.png" width=3D"74" height=3D"24" ari=
+a-hidden=3D"true" style=3D"margin-bottom: 16px;" alt=3D"Google"><div style=
+=3D"font-family: &#39;Google Sans&#39;,Roboto,RobotoDraft,Helvetica,Arial,s=
+ans-serif;border-bottom: thin solid #dadce0; color: rgba(0,0,0,0.87); line-=
+height: 32px; padding-bottom: 24px;text-align: center; word-break: break-wo=
+rd;"><div style=3D"font-size: 24px;">Connexion sur un nouvel=C2=A0appareil<=
+/div><table align=3D"center" style=3D"margin-top:8px;"><tr style=3D"line-he=
+ight: normal;"><td align=3D"right" style=3D"padding-right:8px;"><img width=
+=3D"20" height=3D"20" style=3D"width: 20px; height: 20px; vertical-align: s=
+ub; border-radius: 50%;;" src=3D"https://lh3.googleusercontent.com/a-/AOh14=
+GjMdl6L16QqdVyegaTjQwl17RQR9DM6GFqOfmUP=3Ds96" alt=3D""></td><td><a style=
+=3D"font-family: &#39;Google Sans&#39;,Roboto,RobotoDraft,Helvetica,Arial,s=
+ans-serif;color: rgba(0,0,0,0.87); font-size: 14px; line-height: 20px;">cal=
+ixteaxelmetaline@gmail.com</a></td></tr></table></div><div style=3D"font-fa=
+mily: Roboto-Regular,Helvetica,Arial,sans-serif; font-size: 14px; color: rg=
+ba(0,0,0,0.87); line-height: 20px;padding-top: 20px; text-align: center;">U=
+n utilisateur vient de se connecter =C3=A0 votre compte Google =C3=A0 parti=
+r d'un nouvel appareil Windows. Nous vous envoyons cet e-mail pour v=C3=A9r=
+ifier qu'il s'agissait bien de vous.<div style=3D"padding-top: 32px; text-a=
+lign: center;"><a href=3D"https://accounts.google.com/AccountChooser?Email=
+=3Dcalixteaxelmetaline@gmail.com&amp;continue=3Dhttps://myaccount.google.co=
+m/alert/nt/1598467651000?rfn%3D31%26rfnc%3D1%26eid%3D-8252909050186400370%2=
+6et%3D2%26anexp%3D-experiment" target=3D"_blank" link-id=3D"main-button-lin=
+k" style=3D"font-family: &#39;Google Sans&#39;,Roboto,RobotoDraft,Helvetica=
+,Arial,sans-serif; line-height: 16px; color: #ffffff; font-weight: 400; tex=
+t-decoration: none;font-size: 14px;display:inline-block;padding: 10px 24px;=
+background-color: #4184F3; border-radius: 5px; min-width: 90px;">Consulter =
+l&#39;activit=C3=A9</a></div></div></div><div style=3D"text-align: left;"><=
+div style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif;color: =
+rgba(0,0,0,0.54); font-size: 11px; line-height: 18px; padding-top: 12px; te=
+xt-align: center;"><div>Cet e-mail vous a =C3=A9t=C3=A9 envoy=C3=A9 pour vo=
+us informer de modifications importantes apport=C3=A9es =C3=A0 votre compte=
+ et aux services Google que vous utilisez.</div><div style=3D"direction: lt=
+r;">&copy; 2020 Google LLC, <a class=3D"afal" style=3D"font-family: Roboto-=
+Regular,Helvetica,Arial,sans-serif;color: rgba(0,0,0,0.54); font-size: 11px=
+; line-height: 18px; padding-top: 12px; text-align: center;">1600 Amphithea=
+tre Parkway, Mountain View, CA 94043, USA</a></div></div></div></td><td wid=
+th=3D"8" style=3D"width: 8px;"></td></tr></table></td></tr><tr height=3D"32=
+" style=3D"height: 32px;"><td></td></tr></table></body></html>
+--000000000000a5700a05adcc40e2--

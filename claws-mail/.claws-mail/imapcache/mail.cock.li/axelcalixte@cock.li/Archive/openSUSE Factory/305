@@ -1,0 +1,120 @@
+Return-Path: <opensuse-factory+bounces-96142-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 1B80A82437; Tue, 25 Aug 2020 08:32:48 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.8 required=5.0 tests=BAYES_00,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_LOW,RDNS_NONE,T_TVD_MIME_EPI shortcircuit=_SCTYPE_
+	autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id 274F082319
+	for <axelcalixte@cock.li>; Tue, 25 Aug 2020 08:32:34 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id D8E9E20B92
+	for <axelcalixte@cock.li>; Tue, 25 Aug 2020 08:32:10 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id BCF9811B1B;
+	Tue, 25 Aug 2020 08:32:10 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from mx1.opensuse.org (unknown [192.168.47.95])
+	by lists5.opensuse.org (Postfix) with ESMTP id ACDB811B1B
+	for <opensuse-factory@lists5.opensuse.org>; Tue, 25 Aug 2020 08:32:10 +0000 (UTC)
+Received: from mx1.opensuse.org (localhost [127.0.0.1])
+	by mx1.opensuse.org (Postfix) with ESMTP id BB0543EEE
+	for <opensuse-factory@opensuse.org>; Tue, 25 Aug 2020 08:32:06 +0000 (UTC)
+Received: from ani.leuenberger.net (ani.leuenberger.net [77.72.146.213])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange ECDHE (P-256) server-signature ECDSA (P-384) server-digest SHA384)
+	(No client certificate requested)
+	by mx1.opensuse.org (Postfix) with ESMTPS
+	for <opensuse-factory@opensuse.org>; Tue, 25 Aug 2020 08:32:06 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+	by ani.leuenberger.net (Postfix) with ESMTP id D9F251BA80
+	for <opensuse-factory@opensuse.org>; Tue, 25 Aug 2020 08:32:05 +0000 (UTC)
+X-Virus-Scanned: amavisd-new at leuenberger.net
+Received: from ani.leuenberger.net ([127.0.0.1])
+	by localhost (ani.leuenberger.net [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id O6N6hicy9Ilf for <opensuse-factory@opensuse.org>;
+	Tue, 25 Aug 2020 08:32:05 +0000 (UTC)
+Received: from [IPv6:2a00:d2a0:1:4f00:a21d:48ff:feb8:a4cd] (unknown [IPv6:2a00:d2a0:1:4f00:a21d:48ff:feb8:a4cd])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange ECDHE (P-256) server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(Client did not present a certificate)
+	by ani.leuenberger.net (Postfix) with ESMTPSA id 713091BA7A
+	for <opensuse-factory@opensuse.org>; Tue, 25 Aug 2020 08:32:05 +0000 (UTC)
+Message-ID: <728db2656643d30f22334dc266de34dbd936972a.camel@opensuse.org>
+Subject: [opensuse-factory] TW 0825: %{_libexecdir} == /usr/libexec
+From: Dominique Leuenberger / DimStar <dimstar@opensuse.org>
+To: opensuse-factory <opensuse-factory@opensuse.org>
+Date: Tue, 25 Aug 2020 10:32:00 +0200
+Content-Type: multipart/signed; micalg="pgp-sha1"; protocol="application/pgp-signature";
+	boundary="=-gjZ5x97wISO7N2iyTiU5"
+User-Agent: Evolution 3.36.5 
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+
+
+--=-gjZ5x97wISO7N2iyTiU5
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Tumbleweed users and hackers,
+
+After a few months of hard labor by many package maintainers, we
+reached the point where we could merge the change for %_libexecdir now.
+
+Snapshot 0825 has just started building and will be the first snapshot
+to come out (or to be built - we'll see if it will be published) with
+that change enabled.
+
+As this is a change also having impact on interactions between packages
+it was nescessary to trigger a rebuild of all packages. It's not
+realistically possible to identify the packages that would effectively
+be affected. So, besides the 'big change', you can expect also 'big
+download' for Snapshot 0825 (or the first snapshot to be published
+after that date).
+
+Please be extra attentive to things no longer behaving as you expect.
+There is unfortunately a chance that some packages have hardcoded paths
+to files that moved around or also packages that hardcoded the install
+path even though things expect the helpers in different locations.
+
+Should you come across one of your packages failing to build, it would
+be appreciated by all users of said package to receive a fix rather
+sooner than later.
+
+Than kyou all for your great work on this topic. It once again showed
+that together, we can reach even such larger goals and doing so without
+rishing things.
+
+Cheers,
+  Dominique
+
+--=-gjZ5x97wISO7N2iyTiU5
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: This is a digitally signed message part
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNATURE-----
+
+iF0EABECAB0WIQRvWMRjWlGejEpqzW7mnyIIm0l8mQUCX0TMgAAKCRDmnyIIm0l8
+mW/zAJ9l6jw+zP+Xsk9olV3UvMPdDN0kaACg/qHY6mGvOrzLdSuR5kteDKBqUWw=
+=lqvA
+-----END PGP SIGNATURE-----
+
+--=-gjZ5x97wISO7N2iyTiU5--
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

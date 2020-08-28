@@ -1,0 +1,148 @@
+Return-Path: <opensuse-factory+bounces-96191-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 5DC18827C4; Thu, 27 Aug 2020 10:02:30 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.6 required=5.0 tests=BAYES_50,DKIM_SIGNED,
+	MAILING_LIST_MULTI,MSGID_FROM_MTA_HEADER,RCVD_IN_DNSWL_MED,
+	RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,RDNS_NONE,T_DKIM_INVALID,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 9F8EB827B3
+	for <axelcalixte@cock.li>; Thu, 27 Aug 2020 10:02:25 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (1024-bit key; unprotected) header.d=suse.com header.i=@suse.com header.b="A5MaV3hq";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id B6769217D7
+	for <axelcalixte@cock.li>; Thu, 27 Aug 2020 10:02:24 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 6F73410E52;
+	Thu, 27 Aug 2020 10:02:24 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from mx2.opensuse.org (unknown [192.168.47.96])
+	by lists5.opensuse.org (Postfix) with ESMTP id 5BF0110E52
+	for <opensuse-factory@lists5.opensuse.org>; Thu, 27 Aug 2020 10:02:24 +0000 (UTC)
+Received: from mx2.opensuse.org (localhost [127.0.0.1])
+	by mx2.opensuse.org (Postfix) with ESMTP id 29C303ED6
+	for <opensuse-factory@opensuse.org>; Thu, 27 Aug 2020 10:02:22 +0000 (UTC)
+Received: from de-smtp-delivery-102.mimecast.com (de-smtp-delivery-102.mimecast.com [62.140.7.102])
+	(using TLSv1.2 with cipher ECDHE-ECDSA-AES256-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx2.opensuse.org (Postfix) with ESMTPS
+	for <opensuse-factory@opensuse.org>; Thu, 27 Aug 2020 10:02:22 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=suse.com; s=mimecast20200619;
+	t=1598522541;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding;
+	bh=tqvTpAB+a3sTTLzZhiSnPT9NFveSJlfxOMLcAbYNgi8=;
+	b=A5MaV3hqJAwx4XiRQbvRjHFVQhqz2VOxqGcQGF1vCGhQc9oKOfVSwaJllg+5J3eYhi1p+O
+	15PoGIUAsUo4KSH9FDTsB3mXQwzcTip20B+f22U4D7tPuQtva5QCpp4+ytJN1R+6ec5y/N
+	R61ISGrZaHvJIRQOqkGltHjA8XZq3lU=
+Received: from EUR02-HE1-obe.outbound.protection.outlook.com
+ (mail-he1eur02lp2055.outbound.protection.outlook.com [104.47.5.55]) (Using
+ TLS) by relay.mimecast.com with ESMTP id
+ de-mta-14-is43X7dlMn2r4MMjtEbOaw-1; Thu, 27 Aug 2020 12:02:20 +0200
+X-MC-Unique: is43X7dlMn2r4MMjtEbOaw-1
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=B+KxZDLo36CDZknplSosSyrqs8p7rT5ZkF/s6/nR6xpym/f/WjUfN0sq4PH/Qt5rsBnU0Y2CaVrnqbH+Tt/Hp96gaZM9caFhPeHSlVt98scYGepRGyFSnPh3QcTrene1WmbiII/FCkyIM9n+ISrQ6NKELJKCHqksQAljJ4fg1YKViQOORWUdi8WGqg2Hz1eGj66seRGMH8P8xiucBOuLMegaUFv5NaVwU5RxxZ19lXA2Pdo9vjnLPIhid6qy2sA7RLHKZIvTKFosQdCZ36ZLAYhyOFpT3FLZpJtawZ1TOygHvGE6aYCAOXp15MtDYcEJpbabHup2QPc67KR7Yw8a2w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=tqvTpAB+a3sTTLzZhiSnPT9NFveSJlfxOMLcAbYNgi8=;
+ b=nQzeBzJg+eyaQKga1q/dxuemiNDbhNB0XuzgVOMQ+PxpTbkfVaRvu2RXNBTzOnuI1u7jnEmuulcxxQHp+SKrctnSt0t/VlNiduisB+UroJPwa42Eq2FEgzv+XmSPxDRwttGW998NDXIN8mUsoPUOxnW7xV7dkBmd6dQySWt9kDo7Aix22KsfSZHroJ2lVIZ75+qQiKA97a3AfptUbMQD0+3rSWqn7ACpqBuXBX6O/pGzQyo62ByZNBrE2F8yzp1j38j9V8CzE8Upv2LWJ57NJQMubktJBWqVwB9DSOF/f3rg//s1nxkO8KrN2S3X/vkosAwxOMYGEf7uMiP1ONZN/Q==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=suse.com; dmarc=pass action=none header.from=suse.com;
+ dkim=pass header.d=suse.com; arc=none
+Authentication-Results: opensuse.org; dkim=none (message not signed)
+ header.d=none;opensuse.org; dmarc=none action=none header.from=suse.com;
+Received: from DB7PR04MB4793.eurprd04.prod.outlook.com (2603:10a6:10:1c::17)
+ by DB7PR04MB5161.eurprd04.prod.outlook.com (2603:10a6:10:1c::33) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3305.24; Thu, 27 Aug
+ 2020 10:02:19 +0000
+Received: from DB7PR04MB4793.eurprd04.prod.outlook.com
+ ([fe80::d410:4d1:ec34:45d7]) by DB7PR04MB4793.eurprd04.prod.outlook.com
+ ([fe80::d410:4d1:ec34:45d7%4]) with mapi id 15.20.3305.032; Thu, 27 Aug 2020
+ 10:02:17 +0000
+To: opensuse-factory <opensuse-factory@opensuse.org>
+From: John Paul Adrian Glaubitz <adrian.glaubitz@suse.com>
+Subject: [opensuse-factory] Dependency problems with python3-base package
+Message-ID: <48a8fde6-c5a0-46d2-b000-d7a36d7cc922@suse.com>
+Date: Thu, 27 Aug 2020 12:02:11 +0200
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101
+ Thunderbird/68.11.0
+Content-Type: text/plain; charset=utf-8
+Content-Language: en-US
+Content-Transfer-Encoding: 7bit
+X-ClientProxiedBy: AM3PR05CA0132.eurprd05.prod.outlook.com
+ (2603:10a6:207:2::34) To DB7PR04MB4793.eurprd04.prod.outlook.com
+ (2603:10a6:10:1c::17)
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+X-MS-Exchange-MessageSentRepresentingType: 1
+Received: from [160.45.32.140] (160.45.32.140) by AM3PR05CA0132.eurprd05.prod.outlook.com (2603:10a6:207:2::34) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3326.19 via Frontend Transport; Thu, 27 Aug 2020 10:02:15 +0000
+X-Originating-IP: [160.45.32.140]
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 1b3cf599-2d2e-43c9-e83e-08d84a7046a2
+X-MS-TrafficTypeDiagnostic: DB7PR04MB5161:
+X-Microsoft-Antispam-PRVS:
+	<DB7PR04MB5161BC3AE0E0C2F9C591CD3180550@DB7PR04MB5161.eurprd04.prod.outlook.com>
+X-MS-Oob-TLC-OOBClassifiers: OLM:7691;
+X-MS-Exchange-SenderADCheck: 1
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+	bQcxdCFR5eYERHxu9pkycz58r3xqhVGPL9K7yxj4dQZ4iVByhZqNtHojIyT3kfwvnKN5OzCDFThTU6l+NOHDGCYJNqOB+ZHwjQAz3iapeMci7FVUHJZy7JzQhLUmi54e7jQIoyalG2xaRwt6hyPR0Akf9SfYOzzxO5BgcYrgWMUmDGIJFZHn9rdutt8OizpqxR6SNvZn61QGLJB9RkhabJTBeLHHSK1Dp9JutIv/Gzew1SP0nRJbHtfBjkUZMtZK7qaoI9XUFMsN+rsnsOVhkghCyk18dOmHjCw3poJ0k58umPCJoDEEXXsJPB0wFdbi4c7Xbq2N4c4aNq6vNtFUqFVBnF83Fbm0g2TY+GwCYYfJ3WaQtXz0tCVQiThIkNK/WGYP93iJkq3RNlPg/c1ozjM9AdM6zSO95sLGEL1sQD4R4JdXsQBU3hbE9cUzgXNds46xijZsAkJimY5eiVlk6P80odiN6/vuzc8JIQgiHbA=
+X-Forefront-Antispam-Report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:DB7PR04MB4793.eurprd04.prod.outlook.com;PTR:;CAT:NONE;SFS:(346002)(376002)(366004)(396003)(39860400002)(136003)(66946007)(4744005)(6486002)(16526019)(478600001)(316002)(6666004)(26005)(16576012)(31696002)(5660300002)(186003)(966005)(8676002)(2616005)(31686004)(66476007)(66556008)(8936002)(52116002)(6916009)(36756003)(2906002)(86362001)(6706004)(956004)(3940600001)(43740500002);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData:
+	pASd5PWx8TwbrBAaagm9WmFQGkgvT17i0M1qZMw+hDl8AS/JwtfwM6Jh746xw1j63n38d1a5aNnd5Wrkfm8qGOG73fXDtiLYL6fzWz/2QKPTPl0Uz0aZjuy4c7TiTwGNfxSvydkLRNLKM+TvSkJnZc+47/i6qV7rqYLF9tKeZpvyp3wlUmDBPeZ50aILy118q60iXjj13t8EcLGvFAYFKqJ+zqfE7jQ1ei4ovH0FazdgTOAHGJm0MIXI3BakdOwM9zL1wy4RSyG37jckbPlA9mL/uqZDEuj0E1lpwAKgHsoTLSl82a+IAMRfjBq/6RYDAsMytAAxaIifBQa901FUa/TQSNSliSgX1O7yG+nK2p6KpwPCvbI63snJbWZ3Olj8UHO1PGZaUyeCvv6JkXVxqFRaPNKtXsg5qnkDWXvAsmRBtp4sNkH4MssBQvU/MVQ1dyR1smk4B3qJUXzvD6T+Qd76FzhVey+34ECpLn14KFR1TlfhaiMLGrivpUNqZ4t68A9wsJ5OxZP5o/kxGnSmJ473q97g0DhfQjnBuQlxDj3NMN9LjBObolfiiWePYv0+il9QkAFAP0JhsHo2A9JWcGzSd4zoyP7SuwAPDTFmpIFExmd8KGScYinpygQzSpnvyxxdehOg+O+yLshTlA7Etg==
+X-OriginatorOrg: suse.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 1b3cf599-2d2e-43c9-e83e-08d84a7046a2
+X-MS-Exchange-CrossTenant-AuthSource: DB7PR04MB4793.eurprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 Aug 2020 10:02:15.7097
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: f7a17af6-1c5c-4a36-aa8b-f5be247aa4ba
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: UZ5dubZd3j1nZ+qPFbzw2th6BB+p4jjMLbmnfy+9vNk7DnvCX18YwY/WpcsXayTDm2r2uG91cpkA+E3OJlbJIonewT+X1ShNUJgaHRSw1pA=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB7PR04MB5161
+
+Hi!
+
+I'm currently trying to fix up the devel:languages:python:azure repository [1] for
+older distributions and I'm running into the problem of a mismatch between the
+python3-base package and one of its runtime library packages.
+
+For example, trying to build python-azure-batch in d:l:p:azure fails with:
+
+unresolvable: nothing provides libpython3_6m1_0 = 3.6.10-3.59.1 needed by python3-base
+      (got version 3.6.12-3.1)
+
+I assume I need to adjust the project configuration to prefer the proper versions
+of python3-base and the libpython3 runtime package. However, I couldn't find the
+syntax for that in the documentation [2].
+
+Anyone got any idea how to fix this?
+
+Adrian
+
+> [1] https://build.opensuse.org/project/show/devel:languages:python:azure
+> [2] https://openbuildservice.org/help/manuals/obs-user-guide/cha.obs.prjconfig.html
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

@@ -1,0 +1,119 @@
+Return-Path: <opensuse-factory+bounces-95902-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 3FBEF825EC; Fri, 31 Jul 2020 10:20:34 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.5 required=5.0 tests=BAYES_40,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,RDNS_NONE,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id D2D86825EC
+	for <axelcalixte@cock.li>; Fri, 31 Jul 2020 10:20:28 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id EBC4D21846
+	for <axelcalixte@cock.li>; Fri, 31 Jul 2020 10:20:27 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 77D3C11B93;
+	Fri, 31 Jul 2020 10:20:09 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 4D8FF11B93
+	for <opensuse-factory@lists5.opensuse.org>; Fri, 31 Jul 2020 10:20:09 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id ADE1B2C164
+	for <opensuse-factory@lists5.opensuse.org>; Fri, 31 Jul 2020 10:20:29 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id rBKgpnL357ra for <opensuse-factory@lists5.opensuse.org>;
+	Fri, 31 Jul 2020 10:20:24 +0000 (UTC)
+Received: from mx2.suse.de (unknown [149.44.161.68])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 534242C15C
+	for <opensuse-factory@lists5.opensuse.org>; Fri, 31 Jul 2020 10:20:24 +0000 (UTC)
+Received: from helios.sst.iac.es (ns.sst.iac.es [161.72.15.6])
+	by mx2.suse.de (Postfix) with ESMTP id E07D5AF95
+	for <opensuse-factory@opensuse.org>; Fri, 31 Jul 2020 10:20:34 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+	by helios.sst.iac.es (Postfix) with ESMTP id 82B97142A36
+	for <opensuse-factory@opensuse.org>; Fri, 31 Jul 2020 10:20:20 +0000 (GMT)
+Received: from helios.sst.iac.es ([127.0.0.1])
+	by localhost (royac6.royac.iac.es [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 2JFAQsH0suQs for <opensuse-factory@opensuse.org>;
+	Fri, 31 Jul 2020 10:20:19 +0000 (GMT)
+Received: from woodstock.pitnet (unknown [192.168.97.23])
+	by helios.sst.iac.es (Postfix) with ESMTP id EA779142A31
+	for <opensuse-factory@opensuse.org>; Fri, 31 Jul 2020 10:20:19 +0000 (GMT)
+Received: by woodstock.pitnet (Postfix, from userid 1000)
+	id E0EC3312FC6; Fri, 31 Jul 2020 11:20:19 +0100 (WEST)
+Date: Fri, 31 Jul 2020 11:20:19 +0100
+From: Peter Suetterlin <pit@astro.su.se>
+To: opensuse-factory@opensuse.org
+Subject: Re: [opensuse-factory] Flickering screen (and worse)
+Message-ID: <20200731102019.GA7032@woodstock.pitnet>
+Mail-Followup-To: Peter Suetterlin <pit@astro.su.se>,
+	opensuse-factory@opensuse.org
+References: <ecbb1bde-29ed-6189-741a-8ead3abd189b@WalkerStreet.info>
+ <275199df123386c0545b23bd59503309fd00920f.camel@opensuse.org>
+ <c96f01b6-4458-934b-b2fe-39a8ccdf9a4b@WalkerStreet.info>
+ <ffdcca7b-667e-65dc-1e17-c531dfb377e6@earthlink.net>
+ <18f85fff-e0ed-d440-1d35-cfb3df1efa22@WalkerStreet.info>
+ <4fa5f93d-bab9-5eb9-17ec-6dfc4cdc237b@WalkerStreet.info>
+ <a5abb068-6832-38e8-e657-87ae5799a33c@WalkerStreet.info>
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <a5abb068-6832-38e8-e657-87ae5799a33c@WalkerStreet.info>
+
+David Walker wrote:
+> I am still having flickering woes, and I'm increasingly convinced that
+> simply installing xf86-video-intel and xf86-video-intel-32bit isn't
+> sufficient to actually switch to the intel DDX, instead of modesetting.
+> (See below.) Can anyone shed some light on how to switch from
+> modesetting to intel? I have the feeling that the wiki's documentation
+> may be out of date (or things aren't working as they should).
+
+For me it does work that way, at least for the normal Xorg.  There, intel has
+higher priority than modesetting, and just by having xf86-video-intel
+installed it uses it (32bit isn't needed in my case).  /var/log/Xorg.0.log
+confirms that intel is used (see excerpt below).  This is with a HD530
+(Skylake) GPU. 
+
+But you seem to use Wayland?  No idea how that works, and which logs are
+created there... 
+
+------------------
+[    27.107] (==) Matched intel as autoconfigured driver 0
+[    27.107] (==) Matched modesetting as autoconfigured driver 1
+[    27.107] (==) Matched fbdev as autoconfigured driver 2
+[    27.107] (==) Matched vesa as autoconfigured driver 3
+....
+[    27.125] (II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+.....
+[    27.154] (II) UnloadModule: "modesetting"
+[    27.154] (II) Unloading modesetting
+[    27.154] (II) UnloadModule: "fbdev"
+[    27.154] (II) Unloading fbdev
+[    27.154] (II) UnloadSubModule: "fbdevhw"
+[    27.154] (II) Unloading fbdevhw
+[    27.154] (II) UnloadModule: "vesa"
+[    27.154] (II) Unloading vesa
+-----------------------------------
+
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

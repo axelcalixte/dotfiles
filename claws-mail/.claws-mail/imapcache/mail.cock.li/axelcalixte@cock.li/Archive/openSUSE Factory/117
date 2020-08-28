@@ -1,0 +1,88 @@
+Return-Path: <opensuse-factory+bounces-95951-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id C4BD48267B; Tue,  4 Aug 2020 13:15:59 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.1 required=5.0 tests=BAYES_00,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_NONE,RDNS_NONE,URIBL_BLOCKED shortcircuit=_SCTYPE_
+	autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id 1774582325
+	for <axelcalixte@cock.li>; Tue,  4 Aug 2020 13:15:54 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 07A4E21DB7
+	for <axelcalixte@cock.li>; Tue,  4 Aug 2020 13:15:53 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id C36BC10E2C;
+	Tue,  4 Aug 2020 13:15:29 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id AE32D10E2C
+	for <opensuse-factory@lists5.opensuse.org>; Tue,  4 Aug 2020 13:15:29 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id A9E7E2C1DF
+	for <opensuse-factory@lists5.opensuse.org>; Tue,  4 Aug 2020 13:15:54 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id 01Th8u196ohi for <opensuse-factory@lists5.opensuse.org>;
+	Tue,  4 Aug 2020 13:15:49 +0000 (UTC)
+Received: from mx1.suse.de (unknown [149.44.161.67])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 5145A2C178
+	for <opensuse-factory@lists5.opensuse.org>; Tue,  4 Aug 2020 13:15:49 +0000 (UTC)
+Received: from a3.inai.de (a3.inai.de [88.198.85.195])
+	(using TLSv1.2 with cipher ADH-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx1.suse.de (Postfix) with ESMTPS id F0B25AD27
+	for <opensuse-factory@opensuse.org>; Tue,  4 Aug 2020 13:15:29 +0000 (UTC)
+Received: by a3.inai.de (Postfix, from userid 25121)
+	id 9312A588BD2AF; Tue,  4 Aug 2020 15:15:46 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by a3.inai.de (Postfix) with ESMTP id 925A160D365A4;
+	Tue,  4 Aug 2020 15:15:46 +0200 (CEST)
+Date: Tue, 4 Aug 2020 15:15:46 +0200 (CEST)
+From: Jan Engelhardt <jengelh@inai.de>
+To: Elisei Roca <eroca@suse.de>
+cc: opensuse-factory@opensuse.org
+Subject: Re: [opensuse-factory] openSUSE:usr merge status
+In-Reply-To: <eab0a2b101a04f93c2b9d19b331d3b603b8b55d7.camel@suse.de>
+Message-ID: <nycvar.YFH.7.77.849.2008041513090.25604@n3.vanv.qr>
+References: <eab0a2b101a04f93c2b9d19b331d3b603b8b55d7.camel@suse.de>
+User-Agent: Alpine 2.22 (LSU 394 2020-01-19)
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+
+On Tuesday 2020-08-04 14:31, Elisei Roca wrote:
+
+>Hi there,
+>
+>looking at https://en.opensuse.org/openSUSE:Usr_merge which hasn't been updated in quite a
+>while doesn't yield much information. Is there any other source to get a current status on
+>this?
+
+You can look in /bin and /sbin and see two things:
+
+ - how many regular files are remaining that should be moved to /usr and 
+for which symlinks be created
+
+ - how many symlinks remain that possibly (but not always) may be 
+removed, e.g. dbus*.
+
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

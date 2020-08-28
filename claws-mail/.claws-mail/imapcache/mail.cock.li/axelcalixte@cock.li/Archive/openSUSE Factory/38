@@ -1,0 +1,198 @@
+Return-Path: <opensuse-factory+bounces-95888-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id B86DE827A4; Mon, 27 Jul 2020 17:21:02 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.2 required=5.0 tests=BAYES_20,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_NONE,RDNS_NONE,T_TVD_MIME_EPI,URIBL_BLOCKED
+	shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id 769E5827C0
+	for <axelcalixte@cock.li>; Mon, 27 Jul 2020 17:20:53 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 7641E2174F
+	for <axelcalixte@cock.li>; Mon, 27 Jul 2020 17:20:52 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id E30AE10E46;
+	Mon, 27 Jul 2020 17:20:39 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id CA5D410E46
+	for <opensuse-factory@lists5.opensuse.org>; Mon, 27 Jul 2020 17:20:39 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id F19442C15D
+	for <opensuse-factory@lists5.opensuse.org>; Mon, 27 Jul 2020 17:20:51 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id ApjjLWBjMfh0 for <opensuse-factory@lists5.opensuse.org>;
+	Mon, 27 Jul 2020 17:20:46 +0000 (UTC)
+Received: from mx2.suse.de (unknown [149.44.161.68])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 8D6D32C164
+	for <opensuse-factory@lists5.opensuse.org>; Mon, 27 Jul 2020 17:20:46 +0000 (UTC)
+Received: from c.mail.sonic.net (c.mail.sonic.net [64.142.111.80])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mx2.suse.de (Postfix) with ESMTPS id 94149AD41
+	for <opensuse-factory@opensuse.org>; Mon, 27 Jul 2020 17:20:55 +0000 (UTC)
+Received: from [192.168.1.108] (142-254-41-13.dsl.dynamic.fusionbroadband.com [142.254.41.13])
+	(authenticated bits=0)
+	by c.mail.sonic.net (8.15.1/8.15.1) with ESMTPSA id 06RHKg3r015757
+	(version=TLSv1.2 cipher=DHE-RSA-AES128-SHA bits=128 verify=NOT)
+	for <opensuse-factory@opensuse.org>; Mon, 27 Jul 2020 10:20:43 -0700
+From: David Walker <David@WalkerStreet.info>
+Subject: Re: [opensuse-factory] Flickering screen (and worse)
+To: opensuse-factory@opensuse.org
+References: <ecbb1bde-29ed-6189-741a-8ead3abd189b@WalkerStreet.info>
+ <275199df123386c0545b23bd59503309fd00920f.camel@opensuse.org>
+ <c96f01b6-4458-934b-b2fe-39a8ccdf9a4b@WalkerStreet.info>
+ <ffdcca7b-667e-65dc-1e17-c531dfb377e6@earthlink.net>
+ <18f85fff-e0ed-d440-1d35-cfb3df1efa22@WalkerStreet.info>
+Autocrypt: addr=David@WalkerStreet.info; prefer-encrypt=mutual; keydata=
+ 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
+ /80UItZthxTDWQ==
+Message-ID: <4fa5f93d-bab9-5eb9-17ec-6dfc4cdc237b@WalkerStreet.info>
+Date: Mon, 27 Jul 2020 10:20:42 -0700
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101
+ Thunderbird/68.10.0
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+In-Reply-To: <18f85fff-e0ed-d440-1d35-cfb3df1efa22@WalkerStreet.info>
+Content-Type: multipart/signed; micalg=pgp-sha256;
+ protocol="application/pgp-signature";
+ boundary="CjZ11od3fnjgo9zBLc0Jwvvp9SVoBrSS0"
+X-Sonic-CAuth: UmFuZG9tSVY2MJGcBqVkQX4SbbWi6Cx6tyMfk2kr/R9hWOyIz9YI6jBzCm+UoKUemyhHD8ju5SkuGVUzrB7H8/Tt+57JNwih
+X-Sonic-ID: C;aIkIgC3Q6hGL5WrW5qp4uA== M;xjs5gC3Q6hGL5WrW5qp4uA==
+X-Sonic-Spam-Details: -0.8/5.0 by cerberusd
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--CjZ11od3fnjgo9zBLc0Jwvvp9SVoBrSS0
+Content-Type: multipart/mixed; boundary="5pjKYpSMnEsH9huFtM50MCVkOj6cQGlN6"
+
+--5pjKYpSMnEsH9huFtM50MCVkOj6cQGlN6
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-Language: en-US
+
+I got some flickering with "i915.enable_psr=3D0", so I've removed it and
+have installed xf86-video-intel and xf86-video-intel-32bit, which pulled
+in libvdpau_va_gl1, libvulkan_intel, libxcb-util1-32bit, libXv1-32bit,
+libXvMC1, and libXvMC1-32bit. I haven't seen any flickering since
+installing these, but it has been very long. Also...
+
+>> Am I right that I can switch to the Intel DDX by just installing
+>> xf86-video-intel?
+> That's how it has always worked for me. /etc/X11/xorg_pci_ids/modesetti=
+ng_ids
+> supposedly exists to be able to override it, but it has only ever been =
+a 2 byte
+> placeholder for me.
+
+If I'm reading the following from "inxi -Gxx" right, though, it doesn't
+look like I am using the Intel DDX after installing it.
+
+=C2=A0 Graphics:
+=C2=A0 =C2=A0 Device-1: Intel UHD Graphics 620 vendor: CLEVO/KAPOK driver=
+: i915
+=C2=A0 =C2=A0 v: kernel bus ID: 00:02.0 chip ID: 8086:3ea0
+=C2=A0 =C2=A0 Device-2: Chicony Chicony USB2.0 Camera type: USB driver: u=
+vcvideo
+=C2=A0 =C2=A0 bus ID: 1-7:3 chip ID: 04f2:b649
+=C2=A0 =C2=A0 Display: wayland server: X.Org 1.20.8 compositor: gnome-she=
+ll
+=C2=A0 =C2=A0 driver: modesetting unloaded: fbdev,vesa alternate: intel
+=C2=A0 =C2=A0 resolution: 1920x1080~60Hz s-dpi: 96
+=C2=A0 =C2=A0 OpenGL: renderer: Mesa DRI Intel UHD Graphics 620 (WHL GT2)=
+
+=C2=A0 =C2=A0 v: 4.6 Mesa 20.1.3 compat-v: 3.0 direct render: Yes
+
+Am I misreading this, or is there something more I need to do to use the
+Intel DDX?
+
+David
+
+
+
+
+--5pjKYpSMnEsH9huFtM50MCVkOj6cQGlN6--
+
+--CjZ11od3fnjgo9zBLc0Jwvvp9SVoBrSS0
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEN1xAK8FR1iZVY1ylygFwaENcLG0FAl8fDOoACgkQygFwaENc
+LG2+Lw//R+/jz2ZAY7S9u1y+Y9BT3steG/TwZLhO1Jk9YKVWUPIpjucbjkybGITn
+KQbHIDjeZUGMQwibAOEF4b627UWMTN4DpwReS09o3OWcPG21rtun3VdRcxNQFFqb
+nPDpLMBrNS8a9JjDBkaTfuNxhmEeZ9Y3Hok4WbmAYun6kepwxCXIqA07IOzJ3vmn
+uhetBvGfE6u1dPc1C+utPeZBsoiKVLCuhfUMwGue+NqjkJA1tqu6QGnYrOaE/XrZ
+gte7DjfztrIxL0s9PzKJuwNB5KHkAMB2qg/bt9g0s9j9dEk4f09BokPLWkHIZtpW
+2kcPYLWElk7j1CUHfJKy5vxmpkGo/RtoGV0I5aLbV/Taac6hnIhxNo5MIdXEndW+
+joJA1lJaaWAscpoAElkbzHLkCEUngemq0yW+CWb1JGXReR9qKX+dDTlw3trV+ezC
+hnJ3vM6lj0xc/nhNsg1NDFfHO2K5w1NmWynz1/WgvId1a9fp1F3q+V0duw4gVGO9
+m+pg/6mxUoyXNxn41Ty/hEO/00iTIGjiqnoDTwSnR7yKtWEWxGeFUoviycueeh1X
+QDJU3KMFDJPJKmtq8yZ/30tbYUFkhPmI18JgMt+M1V/keJVroNf2vnzxjOLLZcB+
+19vw51Evw3tqHR/tOGLeTHtXQz8SlgH3qxoeen7KjQoW8VCt3MI=
+=roll
+-----END PGP SIGNATURE-----
+
+--CjZ11od3fnjgo9zBLc0Jwvvp9SVoBrSS0--
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

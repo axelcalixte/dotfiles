@@ -1,0 +1,171 @@
+Return-Path: <opensuse-factory+bounces-95920-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id D02688261B; Sun,  2 Aug 2020 00:17:01 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.1 required=5.0 tests=BAYES_20,DKIM_ADSP_CUSTOM_MED,
+	DKIM_SIGNED,FREEMAIL_FROM,MAILING_LIST_MULTI,RCVD_IN_DNSWL_NONE,
+	RDNS_NONE,T_DKIM_INVALID,URIBL_BLOCKED shortcircuit=_SCTYPE_
+	autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id 769998261B
+	for <axelcalixte@cock.li>; Sun,  2 Aug 2020 00:16:57 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.b="c/N2fQFo";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 8E36A2200D
+	for <axelcalixte@cock.li>; Sun,  2 Aug 2020 00:16:56 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 0732011BB4;
+	Sun,  2 Aug 2020 00:16:36 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id E0B7111BB4
+	for <opensuse-factory@lists5.opensuse.org>; Sun,  2 Aug 2020 00:16:35 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id 13E362C15D
+	for <opensuse-factory@lists5.opensuse.org>; Sun,  2 Aug 2020 00:16:58 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id 4LGZdaL4IB5V for <opensuse-factory@lists5.opensuse.org>;
+	Sun,  2 Aug 2020 00:16:52 +0000 (UTC)
+Received: from mx2.suse.de (unknown [149.44.161.68])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 827172C15C
+	for <opensuse-factory@lists5.opensuse.org>; Sun,  2 Aug 2020 00:16:52 +0000 (UTC)
+Received: from mail-il1-f182.google.com (mail-il1-f182.google.com [209.85.166.182])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mx2.suse.de (Postfix) with ESMTPS id 2C412ABA2
+	for <opensuse-factory@opensuse.org>; Sun,  2 Aug 2020 00:17:04 +0000 (UTC)
+Received: by mail-il1-f182.google.com with SMTP id j9so24943648ilc.11
+        for <opensuse-factory@opensuse.org>; Sat, 01 Aug 2020 17:16:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=ONmnLErEH++ziT3UyzDYe8DUmbcO3ebPrISrEish4b8=;
+        b=c/N2fQFoBcGEmMOrZYueftuMpOj+OnPIbeoSRnDpGVHYLcWIFWrKpIj1Zrpga4uez8
+         o/92g1nZS9xOoVY4G2j4+GSvfceciSeSYGzKuDle5njhuACu1X6k41wszEjjPKr3lmfL
+         x0rtZEQdH5lD8xw5j+qumDVxYh2Iqjv1a+779HmV++IQ4yyUyX3eRFlrcWEmmhEKyNZi
+         I1fr4/JVl3fII/YDT2p6bXtalDQQQ2YxLmX+puKkT3ZrM8BZ7oyhsxX2mQCBtibOq5/Q
+         cincV8VUSubc/Po5D9i+WAtcmXaBX+JEEBzE3qOqlwFk2BE4ZLRFWuvYzNCUMN1co0qp
+         vVwA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=ONmnLErEH++ziT3UyzDYe8DUmbcO3ebPrISrEish4b8=;
+        b=fde25SzmRndn4u15OP7/6exg7ECPhBBxj04ITyV1Y9FwWmuQAOOHERlmYrzJF09VeI
+         tc9xOKtEBUdX6OXgZeVA0/1uvlZArwWCMwz5msSkqK3TrRdd1GZQPM/F7c/TLsvMB/d9
+         USyNIgq7zTOJJz6AH+R4WrPxDxSiipO7aXZiDDjtsfSZ76//pCXk/NYI1c3iin4aTt7P
+         2Yra8KCopA8a0MdFey2OampKqiyNGuO2EKCRvtor2csRMiCrNsiUsHPgtXfYmwR69pAW
+         d8+J9ZJndLgjeinS1yF6myZOr39dsd5V9Hh8nZh4ZwN3ZHryOiVskwSwwB1/t3cZxYH1
+         WZxg==
+X-Gm-Message-State: AOAM531ednqHQ8IewcZ/8rQJ4bCmyqXyDdlWob8QagkSmj/WLrTB44gO
+	v1Jg0G+x0oGgurddJrDGfAE7S/HYaWB828V/pYhwrFzb
+X-Google-Smtp-Source: ABdhPJxuwDhFOT6lMDJcvOUnA7yasIRh+m8pnqGhIL9b6904LnU6YGC3KW7bRGW5zvPGPAxQFTWiUCT7NkkGrME9tBM=
+X-Received: by 2002:a92:1f95:: with SMTP id f21mr6848471ilf.287.1596327408502;
+ Sat, 01 Aug 2020 17:16:48 -0700 (PDT)
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+From: Linux Kamarada <linuxkamarada@gmail.com>
+Date: Sat, 1 Aug 2020 21:16:37 -0300
+Message-ID: <CAGiRJV+SY-=axLAM-7oAp+fcb2iqNqrFoaXvgnQUck38qDQ=WQ@mail.gmail.com>
+Subject: [opensuse-factory] YaST Firstboot - Cannot find client keyboard/dialogs.rb
+To: opensuse-factory <opensuse-factory@opensuse.org>
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi everyone!
+
+The Linux Kamarada 15.2 ISO image [1] presents YaST Firstboot to allow
+setting up the keyboard, among other things. But it fails with the
+following error message:
+
+Cannot find client keyboard/dialogs.rb
+
+Checking /var/log/YaST2/y2log I see that
+/usr/share/YaST2/clients/firstboot_keyboard.rb fails on line 39 while
+trying to include keyboard/dialogs.rb. [2]
+
+That error didn't happen on the Linux Kamarada 15.1 ISO image [3] so I
+booted it and realized that there was a file
+/usr/share/YaST2/include/keyboard/dialogs.rb that used to belong to
+the yast2-country package. [4]
+
+That file is not present on the the yast2-country package shipped with
+Leap 15.2. I found out it has been deleted. [5]
+
+Has it moved somewhere else, maybe another package? Or is this a bug?
+
+Thanks for your attention!
+
+The relevant part in /var/log/YaST2/y2log:
+
+=E2=9C=80 ----------------------------------------
+
+2020-08-01 14:31:10 <3> kamarada-pc(1570) [Ruby] yast/wfm.rb:253
+Client /usr/share/YaST2/clients/firstboot_keyboard.rb failed with
+'Cannot find client keyboard/dialogs.rb' (RuntimeError).
+Backtrace:
+/usr/lib64/ruby/vendor_ruby/2.5.0/yast/yast.rb:134:in `find_include_file'
+/usr/lib64/ruby/vendor_ruby/2.5.0/yast/yast.rb:134:in `include'
+/usr/share/YaST2/clients/firstboot_keyboard.rb:39:in `main'
+/usr/share/YaST2/clients/firstboot_keyboard.rb:55:in `<top (required)>'
+/usr/lib64/ruby/vendor_ruby/2.5.0/yast/wfm.rb:318:in `eval'
+/usr/lib64/ruby/vendor_ruby/2.5.0/yast/wfm.rb:318:in `run_client'
+/usr/lib64/ruby/vendor_ruby/2.5.0/yast/wfm.rb:206:in `call_builtin'
+/usr/lib64/ruby/vendor_ruby/2.5.0/yast/wfm.rb:206:in `call_builtin_wrapper'
+/usr/lib64/ruby/vendor_ruby/2.5.0/yast/wfm.rb:195:in `CallFunction'
+/usr/share/YaST2/modules/ProductControl.rb:1338:in `RunFrom'
+/usr/share/YaST2/modules/ProductControl.rb:1507:in `Run'
+/usr/share/YaST2/clients/firstboot.rb:71:in `main'
+/usr/share/YaST2/clients/firstboot.rb:137:in `<top (required)>'
+/usr/lib64/ruby/vendor_ruby/2.5.0/yast/wfm.rb:318:in `eval'
+/usr/lib64/ruby/vendor_ruby/2.5.0/yast/wfm.rb:318:in `run_client'
+/usr/lib64/ruby/vendor_ruby/2.5.0/yast/wfm.rb:206:in `call_builtin'
+/usr/lib64/ruby/vendor_ruby/2.5.0/yast/wfm.rb:206:in `call_builtin_wrapper'
+/usr/lib64/ruby/vendor_ruby/2.5.0/yast/wfm.rb:195:in `CallFunction'
+/usr/lib/YaST2/bin/y2start:60:in `<main>'
+2020-08-01 14:31:10 <3> kamarada-pc(1570) [Ruby] yast/wfm.rb:281
+Internal error. Please report a bug report with logs.<br />Run
+save_y2logs to get complete logs.<br /><br />Caller:
+/usr/lib64/ruby/vendor_ruby/2.5.0/yast/yast.rb:134:in
+`find_include_file'<br /><br />Details: Cannot find client
+keyboard/dialogs.rb
+
+=E2=9C=80 ----------------------------------------
+
+
+[1]: https://kamarada.github.io/en/download/15.2/
+[2]: https://github.com/yast/yast-firstboot/blob/e7d2bf8cfdaf2bdd1f30a2bab6=
+f1eb2819b0468d/src/clients/firstboot_keyboard.rb#L39
+[3]: https://kamarada.github.io/en/download/15.1/
+[4]: https://github.com/yast/yast-country/blob/a0312aab3072ea5cd236008791da=
+6efd5669de50/keyboard/src/include/keyboard/dialogs.rb
+[5]: https://github.com/yast/yast-country/commit/4e32e3a3ab319240f752a3158f=
+b5e6f3ed4dc291#diff-baf6d6c36d77f482ca8e6213c06cebc5
+
+
+Antonio
+The Linux Kamarada Project
+http://kamarada.github.io/
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

@@ -1,0 +1,108 @@
+Return-Path: <opensuse-factory+bounces-96135-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 9BBB88263B; Sun, 23 Aug 2020 10:35:25 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.7 required=5.0 tests=BAYES_50,FROM_EXCESS_BASE64,
+	MAILING_LIST_MULTI,RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,
+	RCVD_IN_MSPIKE_WL,RDNS_NONE,T_TVD_MIME_EPI,URIBL_BLOCKED
+	shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 8B82382616
+	for <axelcalixte@cock.li>; Sun, 23 Aug 2020 10:35:21 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id C74C020B9D
+	for <axelcalixte@cock.li>; Sun, 23 Aug 2020 10:35:20 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id AEB5E11B1B;
+	Sun, 23 Aug 2020 10:35:20 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id A73BF11B1B
+	for <opensuse-factory@lists5.opensuse.org>; Sun, 23 Aug 2020 10:35:20 +0000 (UTC)
+Received: from imap.suse.de (unknown [149.44.161.75])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 878932C6B6
+	for <opensuse-factory@opensuse.org>; Sun, 23 Aug 2020 10:35:21 +0000 (UTC)
+Received: from localhost (ip5f5ad6be.dynamic.kabel-deutschland.de [95.90.214.190])
+	by imap.suse.de (Postfix) with ESMTPSA id 5248A118DF
+	for <opensuse-factory@opensuse.org>; Sun, 23 Aug 2020 10:35:20 +0000 (UTC)
+From: Dan =?utf-8?B?xIxlcm3DoWs=?= <dcermak@suse.com>
+To: opensuse-factory@opensuse.org
+Subject: [opensuse-factory] openQA Livestream next Wednesday 11 UTC
+Date: Sun, 23 Aug 2020 12:35:09 +0200
+Message-ID: <87d03htztu.fsf@cgc-instruments.com>
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="=-=-=";
+	micalg=pgp-sha256; protocol="application/pgp-signature"
+
+--=-=-=
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi all,
+
+I'll be live streaming another tutorial about openQA next Wednesday (August
+26) over on https://www.twitch.tv/defolos.
+
+The current plan is to cover the following topics:
+=2D How to setup your own local test environment
+=2D How does running tests actually work (including job groups, test
+  suites, etc.)
+
+and anything else that you'd like to hear.
+
+
+Hope to see you on Wednesday in the chat,
+
+Dan
+
+=2D-=20
+Dan =C4=8Cerm=C3=A1k <dcermak@suse.com>
+Software Engineer Development tools
+SUSE Software Solutions Germany GmbH
+Maxfeldstr. 5
+90409 Nuremberg
+Germany
+
+(HRB 36809, AG N=C3=BCrnberg)
+Managing Director: Felix Imend=C3=B6rffer
+
+--=-=-=
+Content-Type: application/pgp-signature; name="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQJFBAEBCAAvFiEE/2KDnDCX6+IOiSay5jLDOAYQ0cUFAl9CRl0RHGRjZXJtYWtA
+c3VzZS5jb20ACgkQ5jLDOAYQ0cUzWRAAjkA12BnMAapG2fGqHo3Au5ySad4OPuRd
+dTgB+9or1WHGnYH4vTkZxfrNwT7OPJ9hKixANRaEdHq9Bl5WsHe2bPrWM/Pe940d
+AXLZ4N+/Z55YQAgusip+zhrabHwezUlEAPiJ6Wk/NA1R8NzjulJChJ8MEYhtx8Q1
+uTuMBT+v3RlHL59DlN668GUvVIXySAO0aWIATIF1EQ/1lMiKtDvcI7VBIQRw3KyK
+5hPF/ofhSga8DuxEAj6ycHhzx2TTlpY3Qu+K57fVX92Di/tUcgQvS5+TFJtDKObQ
+2FaYw34HE+AEpvw78rmBul1RYz2SmNSTHFWx48CwXGnpl29GZnu526JWPso0tin6
+Zp4KiQsfdRdgkG7NptMYhWVUsyPcuFyZQxC4+RnoTq/Gc7kNLb3pLGDdwoNCRqRi
+lZDGgEvKQ2owtxsKPgXkP4XtpwgDmKNxPIsdoVZDyU1i4T6JI7shO2HYSKvk74nC
+kECc4PLVF3W3zL1xWwTmqSvvCGS+tyrymFDcRaEdk0p8SN02+k+Be/M4PuGiXtMB
+pWt7Q94OCU189CbGfE8cxGhmTJb1qDYmt0v++8DmFRlotRU01Eurol0QCEo7Opem
+Lt2LDnS33qBz8FavYo1QhfjSOErgrA7VYzD87hpMPY2N2VPUoH4WUQ6A6B7OdAAA
+YHv9+br8RuY=
+=AscP
+-----END PGP SIGNATURE-----
+--=-=-=--
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

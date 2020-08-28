@@ -1,0 +1,204 @@
+Return-Path: <ne-pas-repondre@chronopost.fr>
+Delivered-To: axelcalixte@disroot.org
+Received: from localhost (localhost [127.0.0.1])
+	by disroot.org (Postfix) with ESMTP id E444851BDA
+	for <axelcalixte@disroot.org>; Tue, 25 Aug 2020 07:37:52 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at disroot.org
+Received: from knopi.disroot.org ([127.0.0.1])
+	by localhost (disroot.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 63k1Yd6lVkzd for <axelcalixte@disroot.org>;
+	Tue, 25 Aug 2020 07:37:50 +0200 (CEST)
+Received: from proxysmtp2.chronopost.fr (proxysmtp2.chronopost.fr [213.41.95.26])
+	by disroot.org (Postfix) with ESMTPS id 8057F529A8
+	for <axelcalixte@disroot.org>; Tue, 25 Aug 2020 07:37:50 +0200 (CEST)
+Authentication-Results: disroot.org;
+	dkim=pass (1024-bit key; unprotected) header.d=chronopost.fr header.i=@chronopost.fr header.b="ZD9xpiMO";
+	dkim-atps=neutral
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=chronopost.fr;
+	s=dkim2; t=1598333869;
+	bh=ODBtYdtFVmQRW8i6P1zuspHapNE+FG4biFQH9x3+MKc=;
+	h=Date:From:To:Subject;
+	b=ZD9xpiMOfV9WMjhUdKio9/3syVU08o1T+Z/p5io4HAgr+e13gg9bMNls8AlkI/LGs
+	 Rn6qIjNA53q5oMMrtJJSUFWBMAiCPQNXp+qkgBc9PLFWVCRXmB3V6weaefIgriWySc
+	 /m/y96Cp0nd8+8LBLpslAx1aJ5HeCib+URSfYIDM=
+Date: Tue, 25 Aug 2020 07:37:49 +0200 (CEST)
+From: Chronopost <ne-pas-repondre@chronopost.fr>
+To: axelcalixte@disroot.org
+Message-ID: <1367366555.322750.1598333869558.JavaMail.tibco@lyn1e106.tlt>
+Subject: Votre colis AMAZON est en cours de livraison KM992589544JB
+Mime-Version: 1.0
+content-type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:soapenv=3D"http://schemas.xmlsoap.org/soap/envelope/" xmlns:fo=
+=3D"http://www.w3.org/1999/XSL/Format" xmlns:msxsl=3D"urn:schemas-microsoft=
+-com:xslt"><head><meta content=3D"text/html; charset=3DUTF-8" http-equiv=3D=
+"Content-Type"/><meta content=3D"width=3Ddevice-width, initial-scale=3D1" n=
+ame=3D"viewport"/><style>
+=09=09@media screen and (max-width: 600px) {
+=09=09=09img.logo {
+=09=09=09=09display: none;
+=09=09=09}
+=09=09}
+=09=09=09.column {
+=09=09=09  width: 48%;
+=09=09=09  padding: 5px;
+=09=09=09}
+=09=09=09.left{
+=09=09=09=09float:left;
+=09=09=09=09}
+=09=09=09.right{
+=09=09=09float:right;
+=09=09=09}
+=09=09=09img {
+=09=09=09=09max-width: 100%;
+=09=09=09=09height: auto;
+=09=09=09}
+=09=09=09.text-block {
+=09=09=09clear: both;
+=09=09=09}
+=09=09.main-div {
+=09=09max-width:600px;
+=09=09margin: auto;
+=09=09}a:hover=20
+=09=09=09=09{
+=09=09=09=09background-color: #E1F3FB;
+=09=09=09=09}
+=09=09=09=09
+=09=09</style></head><body><div class=3D"main-div" style=3D"font-size:14px;=
+ font-family :Arial ; color :#434343 ;"><div><table border=3D"0" cellspacin=
+g=3D"0" width=3D"100%" cellpadding=3D"0"><tr><td align=3D"left"><img src=3D=
+"http://www.chronopost.fr/transport-express/jsp/jahia/templates/chronov4/we=
+bpro_templates/images/avisage/2clk_Chronopost_HEADER.png" alt=3D"Le logo Ch=
+ronopost"/></td><td align=3D"right"><img src=3D"http://www.chronopost.fr/tr=
+ansport-express/jsp/jahia/templates/chronov4/webpro_templates/images/avisag=
+e/2clk_logo_predict.png" alt=3D"Le logo Predict"/></td></tr></table><br/><i=
+mg class=3D"logo" src=3D"http://www.chronopost.fr/transport-express/jsp/jah=
+ia/templates/chronov4/webpro_templates/images/avisage/2clk_banniere_mas_ta.=
+png" alt=3D"La banni=E8re du statut de votre colis" width=3D"600px"/><img h=
+eight=3D"1" src=3D"http://www.chronopost.fr/tagmail/tag.gif?CODE_APPLICATIO=
+N=3DEAI&amp;NUMERO_COLIS=3DKM992589544JB&amp;ID=3D1477594549&amp;DATE_ENVOI=
+=3D202008250737&amp;INFORMATION=3DMAS_ALL_TA,MULTI" alt=3D"" width=3D"1"/><=
+div class=3D"text-block"/></div><p>Bonjour,</p><p>C'est le jour J, votre co=
+lis <strong>KM992589544JB</strong> exp=E9di=E9 par <strong>AMAZON</strong> =
+est en cours de livraison.</p>
+=09=09=09=09Notre chauffeur pr=E9voit de passer aujourd'hui entre <strong>0=
+9h20</strong> et <strong>10h20</strong>.<br/><strong><p>
+=09=09=09=09=09=09=09=09Vous serez absent ? <a href=3D"https://www.chronopo=
+st.fr/fclV2/authentification.html?numLt=3DKM992589544JB&amp;profil=3DDEST&a=
+mp;cc=3D28911&amp;type=3DMASMail&amp;lang=3Dfr_FR"><u>Agissez sur votre liv=
+raison avant 9h20.</u></a></p></strong><!--[if mso]><a href=3D"https://www.=
+chronopost.fr/fclV2/authentification.html?numLt=3DKM992589544JB&amp;profil=
+=3DDEST&amp;cc=3D28911&amp;type=3DMASMail&amp;lang=3Dfr_FR&amp;menu=3DCF54"=
+><u>Choisir un lieu s=FBr ou compl=E9ter mon adresse</u></a><br/><a href=3D=
+"https://www.chronopost.fr/fclV2/authentification.html?numLt=3DKM992589544J=
+B&amp;profil=3DDEST&amp;cc=3D28911&amp;type=3DMASMail&amp;lang=3Dfr_FR&amp;=
+menu=3DCF59"><u>Livrer chez mon voisin</u></a><br/><a href=3D"https://www.c=
+hronopost.fr/fclV2/authentification.html?numLt=3DKM992589544JB&amp;profil=
+=3DDEST&amp;cc=3D28911&amp;type=3DMASMail&amp;lang=3Dfr_FR&amp;menu=3DCF52"=
+><u>Modifier la date de livraison</u></a><br/><a href=3D"https://www.chrono=
+post.fr/fclV2/authentification.html?numLt=3DKM992589544JB&amp;profil=3DDEST=
+&amp;cc=3D28911&amp;type=3DMASMail&amp;lang=3Dfr_FR&amp;menu=3DCF51"><u>Cho=
+isir un point de proximit=E9</u></a><br/><![endif]--><![if !mso]><table ali=
+gn=3D"center" border=3D"0" cellspacing=3D"0" width=3D"100%" cellpadding=3D"=
+0"><tr><td><table border=3D"0" cellspacing=3D"10" width=3D"100%" cellpaddin=
+g=3D"0"><tr><td style=3D"border: 2px solid #e6e7e8;font-size:14px;" width=
+=3D"100%"><a target=3D"_blank" style=3D"font-family: Arial; color: #000000;=
+text-decoration: none; padding: 5px 0%; display: inline-block; width:100%;t=
+ouch-action:manipulation; cursor:pointer; white-space:nowrap; line-height:1=
+.42857143; -webkit-user-select:none; -moz-user-select:none; -ms-user-select=
+:none; user-select:none;" href=3D"https://www.chronopost.fr/fclV2/authentif=
+ication.html?numLt=3DKM992589544JB&amp;profil=3DDEST&amp;cc=3D28911&amp;typ=
+e=3DMASMail&amp;lang=3Dfr_FR&amp;menu=3DCF54"><table><tr><td align=3D"cente=
+r" width=3D"33%"><img src=3D"http://www.chronopost.fr/transport-express/jsp=
+/jahia/templates/chronov4/webpro_templates/images/avisage/2clk_lieu.png" al=
+t=3D" "/></td><td/><td style=3D"font-family: Arial; color: #000000;font-siz=
+e:16px;padding-right:10" width=3D"67%"> Choisir un lieu s=FBr ou compl=E9te=
+r mon adresse</td></tr></table></a></td></tr><tr><td style=3D"border: 2px s=
+olid #e6e7e8;font-size:14px;" width=3D"100%"><a target=3D"_blank" style=3D"=
+font-family: Arial; color: #000000;text-decoration: none; padding: 5px 0%; =
+display: inline-block; width:100%;touch-action:manipulation; cursor:pointer=
+; white-space:nowrap; line-height:1.42857143; -webkit-user-select:none; -mo=
+z-user-select:none; -ms-user-select:none; user-select:none;" href=3D"https:=
+//www.chronopost.fr/fclV2/authentification.html?numLt=3DKM992589544JB&amp;p=
+rofil=3DDEST&amp;cc=3D28911&amp;type=3DMASMail&amp;lang=3Dfr_FR&amp;menu=3D=
+CF59"><table><tr><td align=3D"center" width=3D"33%"><img src=3D"http://www.=
+chronopost.fr/transport-express/jsp/jahia/templates/chronov4/webpro_templat=
+es/images/avisage/2clk_voisin.png" alt=3D" "/></td><td/><td style=3D"font-f=
+amily: Arial; color: #000000;font-size:16px;padding-right:10" width=3D"67%"=
+> Livrer chez mon voisin</td></tr></table></a></td></tr><tr><td style=3D"bo=
+rder: 2px solid #e6e7e8;font-size:14px;" width=3D"100%"><a target=3D"_blank=
+" style=3D"font-family: Arial; color: #000000;text-decoration: none; paddin=
+g: 5px 0%; display: inline-block; width:100%;touch-action:manipulation; cur=
+sor:pointer; white-space:nowrap; line-height:1.42857143; -webkit-user-selec=
+t:none; -moz-user-select:none; -ms-user-select:none; user-select:none;" hre=
+f=3D"https://www.chronopost.fr/fclV2/authentification.html?numLt=3DKM992589=
+544JB&amp;profil=3DDEST&amp;cc=3D28911&amp;type=3DMASMail&amp;lang=3Dfr_FR&=
+amp;menu=3DCF52"><table><tr><td align=3D"center" width=3D"33%"><img src=3D"=
+http://www.chronopost.fr/transport-express/jsp/jahia/templates/chronov4/web=
+pro_templates/images/avisage/2clk_date.png" alt=3D" "/></td><td/><td style=
+=3D"font-family: Arial; color: #000000;font-size:16px;padding-right:10" wid=
+th=3D"67%"> Modifier la date de livraison</td></tr></table></a></td></tr><t=
+r><td style=3D"border: 2px solid #e6e7e8;font-size:14px;" width=3D"100%"><a=
+ target=3D"_blank" style=3D"font-family: Arial; color: #000000;text-decorat=
+ion: none; padding: 5px 0%; display: inline-block; width:100%;touch-action:=
+manipulation; cursor:pointer; white-space:nowrap; line-height:1.42857143; -=
+webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-=
+select:none;" href=3D"https://www.chronopost.fr/fclV2/authentification.html=
+?numLt=3DKM992589544JB&amp;profil=3DDEST&amp;cc=3D28911&amp;type=3DMASMail&=
+amp;lang=3Dfr_FR&amp;menu=3DCF51"><table><tr><td align=3D"center" width=3D"=
+33%"><img src=3D"http://www.chronopost.fr/transport-express/jsp/jahia/templ=
+ates/chronov4/webpro_templates/images/avisage/2clk_point.png" alt=3D" "/></=
+td><td/><td style=3D"font-family: Arial; color: #000000;font-size:16px;padd=
+ing-right:10" width=3D"67%"> Choisir un point de proximit=E9</td></tr></tab=
+le></a></td></tr></table></td></tr></table><![endif]><br/><table border=3D"=
+0" style=3D"font-family: Arial; color: #000000;font-size:14px;" cellspacing=
+=3D"0" width=3D"100%" cellpadding=3D"10"><tr><td bgcolor=3D"#e6e7e8"><stron=
+g>Adresse de livraison</strong></td></tr></table><table bgcolor=3D"#f4f4f4"=
+ border=3D"0" cellspacing=3D"0" width=3D"100%" cellpadding=3D"0"><tr><td st=
+yle=3D"padding: 14px;font-family: Arial; color: #000000;font-size:14px;" va=
+lign=3D"top">AXEL CALIXTE <br/>13 RUE DE LA GRANDE COUR  <br/>10150 CRENEY =
+PRES TROYES<br/></td></tr></table><p>En cas d'absence, votre colis sera mis=
+ =E0 disposition dans le point de proximit=E9 le plus proche ou en agence C=
+hronopost. Dans ce cas, vous en serez inform=E9.</p><br/>Retrouvez le suivi=
+ de colis en <a target=3D"_top" href=3D"&#xA;&#x9;&#x9;&#x9;https://www.chr=
+onopost.fr/tracking-no-cms/suivi-page?listeNumerosLT=3DKM992589544JB&amp;la=
+ngue=3Dfr_FR &#xA;&#x9;&#x9;&#x9;"><strong>cliquant ici</strong></a>.<br/><=
+br/><p>Une question ? <br/><a href=3D"https://www.chronopost.fr/fr/particul=
+ier/nous-contacter"><strong>Notre =E9quipe</strong></a>
+=09=09=09=09=09est l=E0 pour vous aider<br/><br/>A bient=F4t.<br/></p><tabl=
+e border=3D"0" cellspacing=3D"0" width=3D"100%" cellpadding=3D"0"><tr><td a=
+lign=3D"left"><img src=3D"http://www.chronopost.fr/transport-express/jsp/ja=
+hia/templates/chronov4/webpro_templates/images/avisage/2clk_Dpd_FOOTER.png"=
+ alt=3D"Le logo DPD"/></td><td align=3D"right"><img src=3D"http://www.chron=
+opost.fr/transport-express/jsp/jahia/templates/chronov4/webpro_templates/im=
+ages/avisage/2clk_Chronopost_FOOTER.png" alt=3D"Le logo Chronopost"/></td><=
+/tr></table><br/><p style=3D"font-size:11px; font-family :Arial ;">
+=09=09=09=09=09Cet e-mail est envoy=E9 de fa=E7on automatique. Il n'est don=
+c pas possible d'y r=E9pondre en retour.<br/>
+=09=09=09=09=09Ne plus recevoir de Message Automatique de Suivi pour le col=
+is
+=09=09=09=09=09<a href=3D"http://www.chronopost.fr/web/fr/tracking/stop_mas=
+.jsp?lt=3DKM992589544JB&amp;idabo=3D26152642615&amp;email=3Daxelcalixte%40d=
+isroot.org"><strong>KM992589544JB</strong></a></p><p style=3D"font-size:9px=
+; font-family :Arial ; color :grey ;">
+=09=09=09=09=09Ce message vous est envoy=E9 par Chronopost et a pour objet =
+de vous informer de la situation de la livraison de votre colis. Vos coordo=
+nn=E9es nous ont =E9t=E9 transmises, pour les besoins exclusifs de la livra=
+ison, par l'exp=E9diteur de votre colis. Elles seront conserv=E9es pendant =
+6 mois puis archiv=E9es pour une dur=E9e maximale de 3 ans. Elles ne seront=
+ pas utilis=E9es =E0 des fins de prospection commerciale.  Conform=E9ment =
+=E0 la r=E9glementation applicable en mati=E8re de donn=E9es =E0 caract=E8r=
+e personnel, vous disposez d'un droit d'acc=E8s, de rectification et d'oppo=
+sition de vos donn=E9es =E0 caract=E8re personnel pour motifs l=E9gitimes q=
+ue vous pouvez exercer via le formulaire sur <a href=3D"https://www.chronop=
+ost.fr/fr/exercice-des-droits-sur-les-donnees-personnelles">www.chronopost.=
+fr/fr/exercice-des-droits-sur-les-donnees-personnelles</a> ou par courrier =
+=E0 l'adresse suivante: Chronopost SAS - Contact Informatique et Libert=E9s=
+ - 3 Boulevard Romain Rolland, 75014 Paris en indiquant vos nom, pr=E9nom, =
+adresse postale et en joignant une copie recto-verso de votre pi=E8ce d'ide=
+ntit=E9.Toute demande relative =E0 l'ex=E9cution de la prestation de transp=
+ort doit =EAtre adress=E9e au Service Client. <br/>
+=09=09=09=09=09*Zones "livraison verte" 100% des livraisons du dernier kilo=
+m=E8tre en v=E9hicules =E9lectriques, gaz naturel ou v=E9lo cargo
+=09=09=09=09</p></div></body></html>

@@ -1,0 +1,132 @@
+Return-Path: <opensuse-factory+bounces-95969-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 00587825DB; Wed,  5 Aug 2020 09:47:02 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=0.6 required=5.0 tests=BAYES_50,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_NONE,RDNS_NONE,T_TVD_MIME_EPI shortcircuit=_SCTYPE_
+	autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id 95420825B1
+	for <axelcalixte@cock.li>; Wed,  5 Aug 2020 09:46:58 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id CEFE421CAE
+	for <axelcalixte@cock.li>; Wed,  5 Aug 2020 09:46:57 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 8E87310E46;
+	Wed,  5 Aug 2020 09:46:33 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 7AAFC10E46
+	for <opensuse-factory@lists5.opensuse.org>; Wed,  5 Aug 2020 09:46:33 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id 5C35F2C16E
+	for <opensuse-factory@lists5.opensuse.org>; Wed,  5 Aug 2020 09:46:59 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id NY1Nbx0FK1Ek for <opensuse-factory@lists5.opensuse.org>;
+	Wed,  5 Aug 2020 09:46:54 +0000 (UTC)
+Received: from mx2.suse.de (unknown [149.44.161.68])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id BB83B2C16F
+	for <opensuse-factory@lists5.opensuse.org>; Wed,  5 Aug 2020 09:46:53 +0000 (UTC)
+Received: from ani.leuenberger.net (ani.leuenberger.net [77.72.146.213])
+	(using TLSv1.2 with cipher ADH-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx2.suse.de (Postfix) with ESMTPS id 3525CAC83
+	for <opensuse-factory@opensuse.org>; Wed,  5 Aug 2020 09:47:08 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+	by ani.leuenberger.net (Postfix) with ESMTP id 4E5721BA7B
+	for <opensuse-factory@opensuse.org>; Wed,  5 Aug 2020 09:46:51 +0000 (UTC)
+Received: from ani.leuenberger.net ([127.0.0.1])
+	by localhost (ani.leuenberger.net [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id rQfgDX-j-69X for <opensuse-factory@opensuse.org>;
+	Wed,  5 Aug 2020 09:46:50 +0000 (UTC)
+Received: from [IPv6:2a00:d2a0:1:4f00:a21d:48ff:feb8:a4cd] (unknown [IPv6:2a00:d2a0:1:4f00:a21d:48ff:feb8:a4cd])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange ECDHE (P-256) server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(Client did not present a certificate)
+	by ani.leuenberger.net (Postfix) with ESMTPSA id D22021BA7A
+	for <opensuse-factory@opensuse.org>; Wed,  5 Aug 2020 09:46:50 +0000 (UTC)
+Message-ID: <c60f27f7fa5ebcfe19c0dfc67fe8ddfe101f1d70.camel@opensuse.org>
+Subject: Re: [opensuse-factory] Re: Initialization error in /etc/profile
+From: Dominique Leuenberger / DimStar <dimstar@opensuse.org>
+To: opensuse-factory@opensuse.org
+Date: Wed, 05 Aug 2020 11:46:46 +0200
+In-Reply-To: <20200805094045.41150F34FEE@mta-8-out.mta.xion.oxcs.net>
+References: <159658922127.20495.6183142456028848635@go-agent-stagingbot-1>
+	 <20200805094045.41150F34FEE@mta-8-out.mta.xion.oxcs.net>
+Content-Type: multipart/signed; micalg="pgp-sha1"; protocol="application/pgp-signature";
+	boundary="=-xGjX1d9M2xiuy1YsHYwV"
+User-Agent: Evolution 3.36.4 
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+
+
+--=-xGjX1d9M2xiuy1YsHYwV
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+On Wed, 2020-08-05 at 11:39 +0200, Bjoern Voigt wrote:
+> Dominique Leuenberger wrote:
+> > Packages changed:
+> >   aaa_base (84.87+git20200708.f5e90d7 -> 84.87+git20200507.e2243a4)
+> After the aaa_base update I get this error when I start a shell (login,
+> sudo ...):
+>=20
+> # sudo -i
+> -bash: test: too many arguments
+>=20
+> The reason is that /usr/etc/profile.d/ does not exists and the following
+> code results in this error
+>=20
+> # vi +307 /etc/profile
+> [...]
+>     for s in /usr/etc/profile.d/*.sh ; do
+>         test -e /etc/profile.d/${s##*/} && continue
+>         test -r $s -a ! -k $s && . $s
+>     done
+> [...]
+
+Please DUP to 0803 - aaa_base has been reverted already in that
+snapshot and a new version with the issue fixed is in the queue.
+
+Besides that, the error has no negative impacts on your system: it's a
+preparation for moving some more distro files to /usr/etc, which was
+not completley done right. But as there is nothing in
+/usr/etc/profiles.d yet, no bad things happened neither.
+
+Cheers,
+  Dominique
+
+--=-xGjX1d9M2xiuy1YsHYwV
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: This is a digitally signed message part
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNATURE-----
+
+iF0EABECAB0WIQRvWMRjWlGejEpqzW7mnyIIm0l8mQUCXyqABgAKCRDmnyIIm0l8
+mUSYAKCiIXxAD/7+dKZHvXBr8wAZiQ8OggCdGMPJkbiKQ9KviuG7pD6tfxcxMyQ=
+=FIoB
+-----END PGP SIGNATURE-----
+
+--=-xGjX1d9M2xiuy1YsHYwV--
+
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

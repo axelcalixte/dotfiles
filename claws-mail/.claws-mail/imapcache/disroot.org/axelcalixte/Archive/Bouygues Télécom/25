@@ -1,0 +1,1358 @@
+Return-Path: <bounce-16_HTML-97160597-105854-7213695-1345@bounce.infos.bouyguestelecom.fr>
+Delivered-To: axelcalixte@disroot.org
+Received: from localhost (localhost [127.0.0.1])
+	by disroot.org (Postfix) with ESMTP id 134E653572
+	for <axelcalixte@disroot.org>; Fri, 17 Jul 2020 18:12:29 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at disroot.org
+Received: from knopi.disroot.org ([127.0.0.1])
+	by localhost (disroot.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id n6PJ4q7Hjdqd for <axelcalixte@disroot.org>;
+	Fri, 17 Jul 2020 18:12:26 +0200 (CEST)
+Received: from mta.infos.bouyguestelecom.fr (mta.infos.bouyguestelecom.fr [136.147.178.125])
+	by disroot.org (Postfix) with ESMTPS id 8FC68551A1
+	for <axelcalixte@disroot.org>; Fri, 17 Jul 2020 18:12:24 +0200 (CEST)
+Authentication-Results: disroot.org;
+	dkim=pass (1024-bit key; unprotected) header.d=infos.bouyguestelecom.fr header.i=info@infos.bouyguestelecom.fr header.b="Dm6PMvQX";
+	dkim-atps=neutral
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=200608; d=infos.bouyguestelecom.fr;
+ h=From:To:Subject:Date:List-Unsubscribe:MIME-Version:List-ID:X-CSA-Complaints:
+ Message-ID:Content-Type; i=info@infos.bouyguestelecom.fr;
+ bh=xbzDxyxrr85i3GRtr1Qy9ulwjXt5a3hK6T9W9mz5ZDQ=;
+ b=Dm6PMvQXXNPB3BvmF7CKI8bpJMzmp8uOk5Vm1KegmtRkVoPog57oqvPVKgyNxPJDPveZ3uKDLvur
+   U570sqAYIOQ35xkSbMTN99jdDuqZjHIK5TOnIQ1hQOa4+7uDkIGDa9aOQxyy4juofhb0do2TTqLJ
+   kQvn+GYPEYqsqMt+s8E=
+Received: by mta.infos.bouyguestelecom.fr id h276ui2fmd4c for <axelcalixte@disroot.org>; Fri, 17 Jul 2020 16:12:23 +0000 (envelope-from <bounce-16_HTML-97160597-105854-7213695-1345@bounce.infos.bouyguestelecom.fr>)
+From: "Bouygues Telecom" <info@infos.bouyguestelecom.fr>
+To: <axelcalixte@disroot.org>
+Subject: Et si vous changiez de box, Axel ?
+Date: Fri, 17 Jul 2020 10:12:22 -0600
+List-Unsubscribe: <mailto:leave-fd8415761a3c402029-fe531d77746204787c13-fec81570706c0179-fe8e13727467027470-ff3215737161@leave.infos.bouyguestelecom.fr>
+Mime-Version: 1.0
+List-ID: <7211327.xt.local>
+X-CSA-Complaints: whitelist-complaints@eco.de
+X-SFMC-Stack: 7
+x-job: 7213695_105854
+Message-ID: <ca5c297a-c534-4c68-89f8-62ce8633a87b@xtgap4s7mta1305.xt.local>
+Content-Type: multipart/alternative;
+	boundary="Gnd59U2x1Wkh=_?:"
+
+This is a multi-part message in MIME format.
+
+--Gnd59U2x1Wkh=_?:
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Bouygues Telecom
+ 
+  
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ Avec un prix avantageux comme ça, vous avez le droit…
+
+ Retrouvez cet e-mail egalement sur la 
+https://view.infos.bouyguestelecom.fr/?qs=ed4607832374ce81b5f98113322552204aaba04c242c314d11e42cd54c4323f38a3f1f87f28d024e75d6820b33cac411058f2795546d133ce689271f8ad4dc2f3d1cf2bc866d2489974bb8ec270966fe 
+version en ligne.  
+
+
+ 
+
+ 
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee857e5f0c5119de45d6931309c7070b2613ad609e8fd4f2b146ea186065be1e5c8be89f95d4c35a3ec03c8ec47ae6f7ea7b2018a7f2fdda0a3 
+
+ Votre ligne
+ 07 84 35 85 27
+
+
+ 
+
+ 
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8bbc6050b401354c11146304640ebcc852c195fdc4a5b6ec37b4424eb79bc171c4bcbc779ee815f73beab1e65605f449af244f0ad18784cb2 
+
+
+ Avec votre forfait, vous avez deja fait un bon choix pour votre mobile. A la maison, une bonne connexion a prix avantageux, ce serait pas mal aussi.
+
+
+  
+
+ On a justement deux nouvelles offres Bbox ADSL qui ont tout pour plaire. L&rsquo;occasion de changer de box Internet ? On dirait bien.
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8bbc6050b401354c11146304640ebcc852c195fdc4a5b6ec37b4424eb79bc171c4bcbc779ee815f73beab1e65605f449af244f0ad18784cb2 
+Ca s'etudie de pres 
+
+
+ 
+
+ 
+Le plein de bonus ?
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8bbc6050b401354c11146304640ebcc852c195fdc4a5b6ec37b4424eb79bc171c4bcbc779ee815f73beab1e65605f449af244f0ad18784cb2 
+
+27&euro;99
+
+/mois
+pendant 12 mois(1)
+
+puis 40,99 &euro;/mois.
+
+
+Engagement 1 an.
+
+Location box incluse.
+
+
+Appels illimites vers fixes et mobiles
+
+en France et d&rsquo;Europe
+
++ fixes de 110 pays
+
+
+180 chaines TV
+
+avec decodeur 4K
+
+
+Internet en haut debit et couverture Wi-Fi etendue 
+
+
+1 Bonus inclus au choix :
+
+ 
+
+
+Ou
+
+cle 4G, Playzer, bouquet TV Bbox jeunesse
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8bbc6050b401354c11146304640ebcc852c195fdc4a5b6ec37b4424eb79bc171c4bcbc779ee815f73beab1e65605f449af244f0ad18784cb2 
+Plus de details ? 
+
+
+ 
+
+ 
+&hellip;ou tous les services essentiels ?
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8bbc6050b401354c11146304640ebcc852c195fdc4a5b6ec37b4424eb79bc171c4bcbc779ee815f73beab1e65605f449af244f0ad18784cb2 
+
+
+ 21&euro;99
+
+/mois
+pendant 12 mois(2)
+
+puis 33,99 &euro;/mois.
+
+
+Engagement 1 an.
+
+Location box incluse.
+
+Appels illimites vers fixes et mobiles
+
+en France et d&rsquo;Europe
+
++ fixes de 110 pays
+
+
+180 chaines TV
+
+
+Internet en haut debit et couverture Wi-Fi etendue
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8bbc6050b401354c11146304640ebcc852c195fdc4a5b6ec37b4424eb79bc171c4bcbc779ee815f73beab1e65605f449af244f0ad18784cb2 
+Plus de details ? 
+
+
+ 
+
+ 
+
+
+En plus, on a pense a tout...
+
+Internet garanti(3) : pas de coupure de votre connexion. On vous prete une cle 4G jusqu&rsquo;a la mise en service de votre Bbox.
+Jusqu'a 100 &euro; rembourses(4) sur les frais de resiliation.
+
+
+ 
+
+ 3 façons d’en profiter
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee863a9a10a80a6c7bfc6e2f8c1fe92d4e018cb34d638e2240d5a134f78dd27cc32d18e3d1e313865b307e35a5f859343ace341ae16ea88ce26 
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee863a9a10a80a6c7bfc6e2f8c1fe92d4e018cb34d638e2240d5a134f78dd27cc32d18e3d1e313865b307e35a5f859343ace341ae16ea88ce26 
+Venez nous  
+
+ voir en boutique
+
+tel:3106 
+
+tel:3106 
+Appelez-nous au 
+
+ au 3106
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee89f7e9e6d6890a429663003a6fcfa271d168c6cf084a4150110979c2847c5991b64728d31fd411439e4c49b8dd5937d45aac337f4d1bfa00f 
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee89f7e9e6d6890a429663003a6fcfa271d168c6cf084a4150110979c2847c5991b64728d31fd411439e4c49b8dd5937d45aac337f4d1bfa00f 
+Rendez-vous 
+
+ sur le site
+
+
+ 
+
+ 
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee89f7e9e6d6890a429663003a6fcfa271d168c6cf084a4150110979c2847c5991b64728d31fd411439e4c49b8dd5937d45aac337f4d1bfa00f 
+Une question sur l'utilisation  
+de vos services ?
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee89f7e9e6d6890a429663003a6fcfa271d168c6cf084a4150110979c2847c5991b64728d31fd411439e4c49b8dd5937d45aac337f4d1bfa00f 
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8aef88b79d450d049353e6347684fbb2d992d894d460363499cab7ae71722fc8e914c7f1bf292b4d4dc6343ea85df09f3a7b71582479f0650 
+Mon compte 
+
+Axel CALIXTE 
+
+  
+ Votre ligne : 
+ 07 84 35 85 27
+
+ 
+ 
+
+
+ Gérez votre offre depuis votre smartphone en téléchargeant l’application Espace Client
+ 
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee837d8752365952147e7888d4c6e6b4ba8623a84d4616bebe96f0fc1ac13f9407d3b689cc815169c0ef10c8ff769ed41de2c0b1703b85f9635 
+
+  
+ 
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8ac01ec817b8e79f7704bd9af4f80cba1fb90223e8277518be415d27c856185495b85493e66bc5d38b882a2fcee0d3a688dac6ed9f3d19112 
+
+  
+ 
+
+
+  
+ 
+
+ 
+
+ 
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8c40808f1a3c2500a654b5c188dd2385bc3d8bb6c6e0a09836ce7938f4cb6d3dc6b4ee506c4c98d7fe9e28ceb91a2cb9d568edc887e959490 
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee865ae82fc3b141ebf6bdaa5de26e213c2d0d392c17adfbad3e44493d0724d4e41ce90b03f5f7472470a25ebb9e1ac2ac6b51e050bb28792ca 
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8fd20d17ad1d10eeb04e4b3c40c436c8319e6c8ef73c0e2a7a1a686988b9249fe67771723424662be3b5a5b97273a9b68f8add831ca63247e 
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee89ea91825ae3dfc18a2e1ab188e21f8dde80bea76092dfd12ab107fcb4ce7db2f7bc90514ee044937e08488624b0af576207a8c5b831b62e8 
+
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8cc1d9ddfde21f40f68538488d6e592dafa400d713b3ce9f88743ba059c10862182aa49877c4df1fbc31afd465c7102f3d44007827e6059d7 
+
+(1) Offre valable jusqu'au 16/08/2020 pour toute premiere souscription sous reserve d&rsquo;eligibilite zone degroupee par Bouygues Telecom. Engagement 1 an. Frais de mise en service : 48&euro; ; frais de resiliation : 59&euro;. Debit TV min : 3,6 Mbit/s (7,7 Mbit/s pour la HD). Appels illimites vers les fixes et mobiles France / DOM / EUROPE et 110 destinations jusqu&rsquo;a 199 correspondants differents (au-dela : factures hors forfait). En zone degroupee en propre par Bouygues Telecom : remise de 13&euro;/mois pendant 1 an, soit 27,99&euro;/mois puis 40,99&euro;/mois. En zone degroupee etendue : remise de 21&euro;/mois pendant 1 an, soit 27,99&euro;/mois puis 48,99&euro;/mois. En cas de resiliation avant la fin de la periode d&rsquo;engagement, perte des remises et facturation des mois
+ restants dus au tarif mensuel de l&rsquo;offre hors promotion (et hors location box). Communications (hors n0 courts et speciaux) a usage prive entre 2 individus. Listes des chaines et destinations au 06/07/2020 susceptibles d&rsquo;evoluer. Les resolutions HD et 4K necessitent une TV et des contenus compatibles. Chaines TV 4K uniquement avec la fibre. Enregistreur 128Go (jusqu&rsquo;a 20% peuvent etre utilises par les fichiers systeme). Certains contenus peuvent etre payants. Bonus : un seul bonus au choix valable 24 mois (12 mois pour Cafeyn) en France metropolitaine apres activation sur bouyguestelecom.fr et avec equipements compatibles. Bonus Cle 4G sous reserve de couverture 3G/4G reserve aux clients en prelevement automatique. Changement de bonus possible chaque mois excepte pour
+ le bonus Cle 4G modifiable 2 fois par an. Bonus CANAL+SERIES : 2 connexions simultanees dont 1 ecran TV maximum. Service fourni par Groupe CANAL+. L&rsquo;acces au service necessite de creer un compte CANAL ou de se connecter avec son compte CANAL. Bonus susceptibles d&rsquo;evoluer (en nombre et contenu) au 06/07/2020. Debits variables en fonction de la longueur de la ligne : Debit descendant atteignable en general entre 1 Mbit/s et 15 Mbit/s, pouvant etre compris entre 15 Mbit/s et 50 Mbit/s pour certaines des lignes les plus courtes (moins de 1 km) ; debit montant atteignable en general inferieur a 1 Mbit/s, pouvant atteindre 8 Mbit/s pour certaines des lignes les plus courtes (moins de 1 km).
+
+Voir conditions, liste des chaines et destinations dans << Les Tarifs >> et eligibilite sur bouyguestelecom.fr.
+
+(2) Offre valable jusqu'au 16/08/2020 pour toute premiere souscription sous reserve d&rsquo;eligibilite zone degroupee par Bouygues Telecom . Engagement 1 an. Frais de mise en service : 48&euro; ; frais de resiliation : 59&euro;.. Debit TV min : 3,6 Mbit/s (7,7 Mbit/s pour la HD). Appels illimites vers les fixes et mobiles France / DOM (hors les mobiles vers Mayotte) et fixes de 110 destinations jusqu&rsquo;a 199 correspondants differents (au-dela : factures hors forfait). En zone degroupee en propre par Bouygues Telecom : remise de 12&euro;/mois pendant 1 an, soit 21,99&euro;/mois puis 33,99&euro;/mois. En zone degroupee etendue : remise de 20&euro;/mois pendant 1 an, soit 21,99&euro;/mois puis 41,99&euro;/mois. . En cas de resiliation avant la fin de la periode d&rsquo;engagement, perte
+ des remises et facturation des mois restants dus au tarif mensuel de l&rsquo;offre hors promotion (et hors location box). Communications (hors n0 courts et speciaux) a usage prive entre 2 individus. Listes des chaines et destinations au 06/07/2020 susceptibles d&rsquo;evoluer. Les resolutions HD et 4K necessitent une TV et des contenus compatibles. Chaines TV 4K uniquement avec la fibre. Enregistreur 128Go sur demande pour Bbox Must ADSL/VDSL (jusqu&rsquo;a 20% peuvent etre utilises par les fichiers systeme). Certains contenus peuvent etre payants. Debits variables en fonction de la longueur de la ligne : debit descendant atteignable en general entre 1 Mbit/s et 15 Mbit/s, pouvant etre compris entre 15 Mbit/s et 50 Mbit/s pour certaines des lignes les plus courtes (moins de 1 km) ; debit
+ montant atteignable en general inferieur a 1 Mbit/s, pouvant atteindre 8 Mbit/s pour certaines des lignes les plus courtes (moins de 1 km). Voir conditions, liste des chaines et destinations dans << Les Tarifs >> et eligibilite sur bouyguestelecom.fr.
+
+(3) Cle 4G sur demande (hors-serie speciale) et sous reserve de couverture 4G en France metropolitaine jusqu&rsquo;a l&rsquo;activation de votre Bbox ou jusqu&rsquo;au retablissement des services Bbox.
+
+(4) Offre differee de remboursement, sous forme de virement sur compte bancaire valable pour toute souscription jusqu&rsquo;au 13/09/2020.)
+
+
+ 
+
+
+(c) 2020 Bouygues Telecom, 37 - 39 rue Boissiere 75116 Paris - S.A. au capital de 712 588 399,56 &euro; - 397 480 930 R.C.S. PARIS.
+
+Si vous voulez vous desabonner, 
+https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8456183ea17f4dc0c2adb8557f5040db85a4b649f2e5eb5296860ca239254f4fc5373c90bbff006bb070c214276baae79fce0174e873f0428 
+cliquez ici. 
+
+
+ 
+
+
+  
+  
+
+ 
+
+--Gnd59U2x1Wkh=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="fr" xml:lang="fr">
+ 
+ <head>
+  
+  <title>Bouygues Telecom</title>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta name="x-apple-disable-message-reformatting">
+  
+  <meta name="format-detection" content="telephone=no">
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+  <meta name="referrer" content="no-referrer">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" href="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/3/38e5d853-6178-48ab-8793-644ab0f53042.png" sizes="16x16">
+  
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+  
+  <!-- V1.5 styles newsletter -->
+<style type="text/css">
+img
+{
+ border: 0;
+ height: auto;
+ line-height: 100%;
+ outline: none;
+ text-decoration: none;
+}
+
+table
+{
+ border-collapse: collapse !important;
+}
+
+body
+{
+ height: 100% !important;
+ margin: 0 !important;
+ padding: 0 !important;
+ width: 100% !important;
+}
+
+/*body>table
+{
+ -webkit-animation: fadein 2s cubic-bezier(0, 0, 0, 1);
+ animation: fadein 2s cubic-bezier(0, 0, 0, 1);
+}
+
+*/
+@-webkit-keyframes fadein
+{
+ 0%
+ {
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+ }
+
+ 20%
+ {
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+ }
+
+ 100%
+ {
+  opacity: 1;
+  -webkit-transform: scale(1);
+ }
+}
+
+@keyframes fadein
+{
+ 0%
+ {
+  opacity: 0;
+  transform: scale(0.8);
+ }
+
+ 20%
+ {
+  opacity: 0;
+  transform: scale(0.8);
+ }
+
+ 100%
+ {
+  opacity: 1;
+  transform: scale(1);
+ }
+}
+
+@font-face
+{
+ font-family: 'Bouygues Speak';
+ src: url("https://a7.bouyguestelecom.fr/trilogy-1.3.6/dist/assets/fonts/bouygues-speak.woff2") format("woff2");
+ src: url("https://a7.bouyguestelecom.fr/trilogy-1.3.6/dist/assets/fonts/bouygues-speak.woff") format("woff");
+ font-weight:bold;
+ font-style: normal;
+}
+
+@font-face
+{
+ font-family: 'Bouygues Read';
+ src: url("https://a7.bouyguestelecom.fr/trilogy-1.3.6/dist/assets/fonts/bouygues-read-regular.woff2") format("woff2");
+ src: url("https://a7.bouyguestelecom.fr/trilogy-1.3.6/dist/assets/fonts/bouygues-read-regular.woff") format("woff");
+ font-weight: normal;
+ font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+MessageViewBody a
+{
+ text-decoration: none !important;
+}
+
+.ReadMsgBody
+{
+ width: 100%;
+ background-color: #ffffff;
+}
+
+.ExternalClass
+{
+ width: 100%;
+ background-color: #ffffff;
+ mso-line-height-rule: exactly;
+}
+
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div
+{
+ line-height: 100%;
+}
+
+body
+{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-width: 100% !important;
+ max-width: 100% !important;
+    background-color: #EEEEEE !important;
+}
+
+table
+{
+ border-spacing: 0;
+ border-collapse: collapse;
+}
+
+table td
+{
+ border-collapse: collapse;
+ -webkit-text-size-adjust: none;
+}
+
+a, img
+{
+ border: none;
+ outline: none;
+ text-decoration: none;
+}
+
+a
+{
+ color: #000000;
+ text-decoration: underline;
+}
+
+a[x-apple-data-detectors]
+{
+ color: inherit !important;
+ text-decoration: none !important;
+ font-size: inherit !important;
+ font-family: inherit !important;
+ font-weight: inherit !important;
+ line-height: inherit !important;
+}
+
+.desktop img
+{
+ margin: 0px;
+ padding: 0px;
+ line-height: 0;
+}
+
+.desktop, .desktop img
+{
+ max-height: none;
+ width: auto;
+ visibility: visible;
+ overflow: visible;
+ mso-hide: none;
+}
+
+.mobile, .mobile img
+{
+ max-height: 0px;
+ width: 0px;
+ font-size: 0;
+ display: none;
+ visibility: hidden;
+ overflow: hidden;
+ line-height: 0;
+ mso-hide: all;
+}
+
+sup
+{
+ line-height: 0.8em;
+}
+
+#MessageViewBody, #MessageWebViewDiv
+{
+ width: 100% !important;
+ min-width:100% !important;
+}
+
+@media only screen and (max-width:640px)
+{
+ .mobile, .mobile img
+ {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+ }
+
+ table.conteneur
+ {
+  float: none !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+ }
+
+ .desktop, .desktop img
+ {
+  max-height: 0 !important;
+  width: 0 !important;
+  display: none !important;
+  visibility: hidden !important;
+  overflow: hidden !important;
+  mso-hide: all !important;
+ }
+
+ .mobile, .mobile img
+ {
+  display: block !important;
+  max-height: none !important;
+  visibility: visible !important;
+  overflow: visible !important;
+  line-height: 1.3 !important;
+  mso-hide: none !important;
+ }
+
+ .body-text
+ {
+  width: 80% !important;
+  min-width: 80% !important;
+  max-width: 80% !important;
+  padding: 10% 5% 0px 5% !important;
+ }
+
+ .block
+ {
+  display: block !important;
+ }
+
+ .hide
+ {
+  display: none !important;
+ }
+
+ .hAuto
+ {
+  height: auto !important;
+ }
+
+ .wAuto
+ {
+  width: auto !important;
+ }
+
+ .mobile-table
+ {
+  width: 100% !important;
+  height: auto !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+ }
+
+ table.flexible
+ {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+ }
+
+ img.flexible-img
+ {
+  width: 100% !important;
+  min-width: 100% !important;
+  height: auto !important;
+ }
+
+ .wFull
+ {
+  display: block !important;
+  width: 100% !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+ }
+
+ .bgChat
+ {
+  height: 0 !important;
+  padding: 9% 0 9% 0 !important;
+  background-size: cover !important;
+  vertical-align: middle !important;
+ }
+
+ .titreChat
+ {
+  vertical-align: middle !important;
+  padding: 0 !important;
+ }
+
+ .iconChat
+ {
+  vertical-align: middle !important;
+  padding: 0 !important;
+ }
+
+ .titreChat img
+ {
+  width: 80% !important;
+  height: auto !important;
+ }
+
+ .pad10
+ {
+  padding-left: 10% !important;
+  padding-right: 10%!important;
+ }
+ 
+ .footer-txt-nl
+ {
+  vertical-align: middle !important;
+  padding: 0px 0px 10px 0px !important;
+ }
+
+ .bgHeadNl
+ {
+  height: 0 !important;
+  padding: 9% 0 9% 0 !important;
+  background-size: cover !important;
+  vertical-align: middle !important;
+ }
+
+ .iconHeadNl
+ {
+  vertical-align: middle !important;
+  padding: 0px !important;
+ }
+
+ .iconHeadNl img
+ {
+  width:65% !important;
+  max-width:65% !important;
+  height: auto !important;
+ }
+
+ .pad0
+ {
+  padding-left: 0% !important;
+  padding-right: 0% !important;
+ }
+
+ .padTop
+ {
+  padding-top:35px !important;
+ }
+
+ .padBottom
+ {
+  padding-bottom:35px !important;
+ }
+
+ .border-bottom-gray
+ {
+  border-top:0px !important;
+  border-bottom:1px solid #c8c8c8 !important;
+  border-left:0px !important;
+  border-right:0px !important;
+ }
+ 
+ .desktophide
+ {
+  display:none !important;
+  overflow:hidden !important;
+ }
+}
+
+@media only screen and (max-width:480px)
+{
+ img.flexible-img2
+ {
+  width: 80% !important;
+  min-width: 80% !important;
+  height: auto !important;
+ }
+
+ .w100
+ {
+  width: 100% !important;
+  max-width: 375px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  float: none !important;
+ }
+
+ .mobilhide
+ {
+  mso-hide:all !important;
+  display:none !important;
+  max-height:0px !important;
+  overflow:hidden !important;
+ }
+
+ .noborder
+ {
+  border : 0px !important;
+  width: 100% !important;
+  max-width: 375px !important;
+ }
+
+ .nobackground
+ {
+  background-image: none !important;
+ }
+
+ .mobilha
+ {
+  height: auto !important;
+ }
+
+ .mobilcenter
+ {
+  text-align: center !important;
+ }
+ 
+ .desktophide
+ {
+  display:contents !important;
+  overflow:visible !important;
+ }
+}
+</style>
+<!--[if gte mso 9]>
+<style>
+ li
+ {
+  text-indent: -1em;
+ }
+
+</style>
+<xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>
+   96
+  </o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+ table
+ {
+  mso-line-height-rule: exactly;
+  mso-margin-bottom-alt: 0;
+  mso-margin-top-alt: 0;
+ }
+
+</style>
+<![endif]-->
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+ table
+ {
+  border-collapse: collapse !important;
+ }
+</style>
+<![endif]--> 
+  
+  
+
+
+  
+  
+  
+ </head>
+ 
+ <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly;" bgcolor="#EEEEEE" align="center"><style type="text/css">
+div.preheader 
+{ display: none !important; } 
+</style>
+<div class="preheader" style="font-size: 1px; display: none !important;">Avec un prix avantageux comme ça, vous avez le droit…</div>
+ 
+ <!--[if mso]>  <style type="text/css">  .fallback-font {  font-family: Arial, sans-serif !important;  }  .fallback-font-bold {  font-family: Arial, sans-serif !important;  font-weight:bold !important;  }  body, table, td  {  border-collapse: collapse !important;  }  </style>  <![endif]-->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#EEEEEE" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;margin:0 auto;min-width:100%;">
+   <tr>
+    <td align="center" style="padding:0px 0px 0px 0px;">
+     <table class="conteneur" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+       <td align="center">
+        <table align="center" class="flexible" width="100%" border="0" cellspacing="0" cellpadding="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;min-width:100%;" bgcolor="#FFFFFF">
+         <tr>
+          <td align="center" style="text-align:center;vertical-align:top;font-size:0px; mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;line-height: 0px">
+           <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="max-width: 640px;width:100%;min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#EEEEEE" align="center">
+ 
+  <tr>
+   <td style="padding: 12px 0% 12px 0%;" width="100%" valign="middle" bgcolor="#EEEEEE" align="center">
+    <table style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;" width="90%" cellspacing="0" cellpadding="0" align="center">
+     
+      <tr>
+       <td class="fallback-font" style="font-family:'Bouygues Read','Maven pro',Arial,sans-serif;font-size:13px; line-height: 18px; color:#7d7d7d; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;" bgcolor="#EEEEEE" align="center">
+        Avec un prix avantageux comme ça, vous&nbsp;avez&nbsp;le&nbsp;droit…<br>
+        Retrouvez cet e-mail &eacute;galement sur la <a  href="https://view.infos.bouyguestelecom.fr/?qs=ed4607832374ce81b5f98113322552204aaba04c242c314d11e42cd54c4323f38a3f1f87f28d024e75d6820b33cac411058f2795546d133c65af28874bd4efc580eaa6705ccaed3e8c67cfb26bf1825a" style="color: #7d7d7d; text-decoration:underline;" target="_blank">version en ligne.</a> </td></tr></table></td></tr></table></td></tr></table>
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="text-align:center;vertical-align:top;font-size:0px; mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;line-height: 0px" width="100%" valign="top">
+           <table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="max-width: 640px;width:100%;min-width:100%;" width="100%">
+ <tr>
+  <td width="100%" align="center" valign="middle" bgcolor="#ffffff" style="padding: 20px 0px 20px 0px;">
+   <table width="90%" border="0" cellspacing="0" cellpadding="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:90%;min-width:90%;max-width:90%;">
+    <tr>
+     <td width="100" align="left" valign="middle">
+      <a  target="_blank" href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8f0967067686e246e3a00710e0e5ae4fa97451995e6bac57135a3d740e6d0620a5602371b537899c52ec4e93e7d7d103c49fb5facb2c530dc"><img src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/4/5c0808c1-558c-43a9-92b0-25ab2544a922.png" alt="Bouygues Telecom" width="60" height="62" style="display: block; overflow: hidden; font-family: 'Bouygues Read','Maven pro',Arial,sans-serif; font-size: 12px; color: #109db9; text-align: center; font-weight: normal;" /></a>
+     </td>
+     <td class="fallback-font" align="right" valign="bottom" style="font-family:'Bouygues Read','Maven pro',Arial,sans-serif;font-size:13px; line-height: 18px; color:#02455E; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: right;">
+      Votre ligne
+      <br/>
+      <span>&#173;07 84 35 85 27&#173;</span>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="text-align:center;vertical-align:top;font-size:0px; mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;line-height: 0px" width="100%" valign="top">
+           <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="max-width: 640px;width:100%;min-width:100%;" width="100%">
+ <!-- bloc 1-->
+  <tr>
+   <td align="center" bgcolor="#ffffff" style="padding:0px 0% 0px 0%;" valign="top">
+    <a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee86c24fdb34454edd60f75c8ac9bf87ab9327772e077a5833736ca86c50b9fbad841c8d41195869dae1a42e2296bfb5e0075aedd08e72e9dfa" target="_blank"><img alt="La fibre, c'est une sacrée bonne nouvelle, ça" border="0" class="flexible-img" height="auto" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/8b22663c-5860-4c3f-95df-11fa429eb86c.jpg" style="display: block;overflow: hidden; font-size: 16px; font-family: 'Bouygues Speak','Poppins',Arial,sans-serif; color: #454545; vertical-align: middle; text-align: center;width:100%;min-width:100%;" width="640"></a></td></tr><tr>
+   <td align="center" bgcolor="#ffffff" valign="middle" width="100%">
+    <table align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:90%;min-width:90%;max-width:90%;" width="90%">
+     
+      <tr>
+       <td align="center" bgcolor="#ffffff" class="fallback-font" style="padding: 45px 0px 0px 0px;font-family:'Bouygues Read','Maven Pro',Arial, sans-serif;font-size:18px; line-height: 24px;  color:#02455E; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+        Avec votre forfait, vous avez d&eacute;j&agrave; fait un bon choix pour votre mobile. &Agrave; la maison, une bonne connexion &agrave; prix avantageux, ce serait pas mal aussi.<br>
+        <br>
+        &nbsp;</td></tr><tr>
+       <td align="center" bgcolor="#ffffff" class="fallback-font" style="padding: 0px 0px 35px 0px;font-family:'Bouygues Read','Maven Pro',Arial, sans-serif;font-size:18px; line-height: 24px;  color:#02455E; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+        On a justement <strong>deux nouvelles offres Bbox ADSL</strong> qui ont tout pour plaire. L&rsquo;occasion de changer de box Internet ? On dirait bien.</td></tr></table></td></tr><tr>
+   <td align="center" bgcolor="#ffffff" style="padding:0px 0px 40px 0px;" valign="top">
+    <table align="center" border="0" cellpadding="0" cellspacing="0">
+     
+      <tr>
+       <td align="center" valign="center">
+        <!-- CTA PLEIN --><div>
+         <!--[if mso]>   <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.bouyguestelecom.fr/offres-internet#offres-adsl?utm_medium=email&utm_source=sfmcc&utm_campaign=C_MOB_VSB_FAI_XDSL_STROMBOLI_EMAIL_20200710_20200717&utm_term=cta_ca_setudie&cd9=800015991653&cd10=10063674224&cid=800015991653" target="_blank" alias="cta_ca_setudie" style="height:45px;v-text-anchor:middle;width:240px;" arcsize="10%" strokecolor="#ffffff" fillcolor="#FF554B">     <w:anchorlock/>     <center style="color:#ffffff;font-family: Arial,sans-serif;font-size:16px;font-weight:bold;">&Ccedil;a&nbsp;s'&eacute;tudie&nbsp;de&nbsp;près</center>   </v:roundrect> <![endif]-->
+<a  class="fallback-font" href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee889fbb07e41afa09a820d3bb4293208e5abf6ed46c03ffa493b9c360fa69cd2e22f75f0b540a2c59beacb732d913661c912f48c958cd4bc7c" style="background-color:#FF554B;border-radius:5px;color:#ffffff;display:inline-block;font-family:'Bouygues Read','Maven Pro', Arial, Helvetica, sans-serif;font-size:16px;font-weight:bold;line-height:45px;text-align:center;text-decoration:none;width:240px; -webkit-text-size-adjust:none;mso-hide:all;padding: 0px 0px;" target="_blank">&Ccedil;a&nbsp;s'&eacute;tudie&nbsp;de&nbsp;pr&egrave;s</a></div><!--/ CTA PLEIN --></td></tr></table></td></tr></table></td></tr></table>
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="text-align:center;vertical-align:top;font-size:0px; mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;line-height: 0px" width="100%" valign="top">
+           <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="max-width: 640px;width:100%;min-width:100%;" width="100%">
+	<!-- bloc 3 -->
+		<tr>
+			<td align="center" bgcolor="#ffffff" style="padding: 0px 0px 30px 0px" valign="middle" width="100%">
+				<table align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:90%;min-width:90%;max-width:90%;" width="90%">
+					
+						<tr>
+							<td align="center" bgcolor="#ffffff" class="fallback-font" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:18px; line-height: 24px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border-radius: 5px; background-color: #25465F;" width="100%">
+									
+										<tr>
+											<td style="padding: 40px 20px 45px 20px;">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;" width="100%">
+													
+														<tr>
+															<td align="center" bgcolor="#25465F" class="fallback-font" style="padding:0px 0% 30px 0%;font-family:'Bouygues Speak','Poppins',Arial,sans-serif;font-size:26px; line-height: 32px;  font-weight: bold; color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																Le plein de bonus&nbsp;?</td></tr><tr>
+															<td align="center" bgcolor="#25465F" style="padding:0px 0% 20px 0%;" valign="top">
+																<img alt="Bbox ultym la fibre" border="0" height="37" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/9bc2bde0-0ea2-47c2-8bf9-3edb6cac3f79.png" style="display: block; overflow: hidden; font-family:'Bouygues Speak','Poppins',Arial,sans-serif; font-size: 12px; color: #ffffff; text-align: center; font-weight: bold;" width="198"></td></tr><tr>
+															<td align="center" bgcolor="#25465F" style="padding:0px 0% 20px 0%;" valign="top">
+																<a   data-linkto="other" href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8ed0b7196ddbfc43fae3e22f0e15d7096fcd72ff8dc752e28bfb2ee0805a9a52fdaf3c29ddec56a44011aed664b36a01f485eb6ee43757570" target="_blank" title=""><img alt="Bbox must" data-assetid="17252" height="133" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/fb2f2e80-01f0-4673-9331-b0476929b6d6.png" style="display: block; overflow: hidden; padding: 0px; text-align: center; height: 133px; width: 200px;" width="200"></a></td></tr><tr>
+															<td align="center" bgcolor="#25465F" style="padding: 0px 0px 25px 0px" valign="middle" width="100%">
+																<table align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:90%;min-width:90%;max-width:90%;" width="90%">
+																	
+																		<tr>
+																			<td align="center" bgcolor="#25465F" class="fallback-font" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:18px; line-height: 24px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																				<table align="center" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;">
+																					
+																						<tr>
+																							<td align="right" class="fallback-font" rowspan="2" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:70px;line-height: 76px; color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: right;" valign="middle">
+																								<b>27</b></td><td align="left" class="fallback-font" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:33px; line-height: 33px; color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: left;" valign="bottom">
+																								<strong>&euro;99</strong></td></tr><tr>
+																							<td align="left" class="fallback-font" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:18px;line-height: 18px; color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: left;" valign="top">
+																								/mois</td></tr></table>pendant 12&nbsp;mois<sup style="font-size: 12px;">(1)</sup><br>
+																				puis 40,99 &euro;/mois.</td></tr></table></td></tr><tr>
+															<td align="center" bgcolor="#25465F" class="fallback-font" style="padding:0px 0px 30px 0px;font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:14px; line-height: 18px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																Engagement 1&nbsp;an.<br>
+																Location box incluse.</td></tr><tr>
+															<td align="center" bgcolor="#25465F" style="padding: 0px 0px 10px 0px;" valign="top">
+																<img alt="cadeau bonus" border="0" height="56" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/97c97882-0481-49bf-842a-6fd999b5ff18.png" style="display: block; overflow: hidden; font-family:'Bouygues Speak','Poppins',Arial,sans-serif; font-size: 12px; color: #ffffff; text-align: center; font-weight: bold;" width="48"></td></tr><tr>
+															<td align="center" bgcolor="#25465F" class="fallback-font" style="padding: 0px 0px 20px 0px;font-family:'Bouygues Read','Maven Pro',Arial, sans-serif;font-size:18px; line-height: 24px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																Appels illimit&eacute;s vers fixes et mobiles<br class="desktop">
+																en France et d&rsquo;Europe<br class="desktop">
+																+&nbsp;fixes de 110 pays</td></tr><tr>
+															<td align="center" bgcolor="#25465F" style="padding: 0px 0px 10px 0px;" valign="top">
+																<img alt="cadeau bonus" bouygues="" height="42" speak="" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/f9c18974-9942-487a-ac70-17656a3a1bae.png" style="display: block; overflow: hidden; font-family: " width="55"></td></tr><tr>
+															<td align="center" bgcolor="#25465F" class="fallback-font" style="padding: 0px 0px 20px 0px;font-family:'Bouygues Read','Maven Pro',Arial, sans-serif;font-size:18px; line-height: 24px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																180 cha&icirc;nes TV<br>
+																avec d&eacute;codeur 4K</td></tr><tr>
+															<td align="center" bgcolor="#25465F" style="padding: 0px 0px 10px 0px;" valign="top">
+																<img alt="cadeau bonus" border="0" height="56" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/2e4e86ab-7a48-46e7-b695-045c9630fd71.png" style="display: block; overflow: hidden; font-family:'Bouygues Speak','Poppins',Arial,sans-serif; font-size: 12px; color: #ffffff; text-align: center; font-weight: bold;" width="48"></td></tr><tr>
+															<td align="center" bgcolor="#25465F" class="fallback-font" style="padding: 0px 0px 20px 0px;font-family:'Bouygues Read','Maven Pro',Arial, sans-serif;font-size:18px; line-height: 24px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																Internet en haut&nbsp;d&eacute;bit et couverture Wi-Fi&nbsp;&eacute;tendue&nbsp;</td></tr><tr>
+															<td align="center" bgcolor="#25465F" style="padding: 0px 0px 10px 0px;" valign="top">
+																<img alt="cadeau bonus" border="0" height="44" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/e5c8d4b3-efe0-48a9-a1c1-8ead7785eddd.png" style="display: block; overflow: hidden; font-family:'Bouygues Speak','Poppins',Arial,sans-serif; font-size: 12px; color: #ffffff; text-align: center; font-weight: bold;" width="42"></td></tr><tr>
+															<td align="center" bgcolor="#25465F" class="fallback-font" style="padding: 0px 0px 5px 0px;font-family:'Bouygues Read','Maven Pro',Arial, sans-serif;font-size:17px; line-height: 24px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																1 Bonus inclus au choix&nbsp;:<br>
+																&nbsp;</td></tr><tr>
+															<td align="center" bgcolor="#25465F" style="padding: 0px 0px 5px 0px;" valign="top">
+																<img alt="Clé 4G..." border="0" height="42" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/87f012e3-4338-427f-b720-8750ee764a6e.png" style="display: block; overflow: hidden; font-family:'Bouygues Speak','Poppins',Arial,sans-serif; font-size: 12px; color: #ffffff; text-align: center; font-weight: bold;" width="92"></td></tr><tr>
+															<td align="center" bgcolor="#25465F" class="fallback-font" style="padding: 0px 0px 35px 0px;font-family:'Bouygues Read','Maven Pro',Arial, sans-serif;font-size:18px; line-height: 24px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																<br>
+																Ou<br>
+																cl&eacute; 4G, Playzer, bouquet TV Bbox jeunesse</td></tr><!-- CTA PLEIN --><tr>
+															<td align="center" bgcolor="#25465F" style="padding:0px 5% 0% 5%;" valign="top">
+																<table align="center" border="0" cellpadding="0" cellspacing="0">
+																	
+																		<tr>
+																			<td align="center" valign="center">
+																				<!-- CTA PLEIN --><div>
+																					<!--[if mso]>                  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.bouyguestelecom.fr/offres-internet#offres-adsl?utm_medium=email&utm_source=sfmcc&utm_campaign=C_MOB_VSB_FAI_XDSL_STROMBOLI_EMAIL_20200710_20200717&utm_term=cta_plus_de_details&cd9=800015991653&cd10=10063674224&cid=800015991653" target="_blank" alias="cta_plus_de_details" style="height:45px;v-text-anchor:middle;width:240px;" arcsize="10%" strokecolor="#ffffff" fillcolor="#ffffff">                 <w:anchorlock/>                 <center style="color:#FF554B;font-family: Arial,sans-serif;font-size:16px;font-weight:bold;">Plus&nbsp;de&nbsp;d&eacute;tails&nbsp;?</center>                  </v:roundrect>                <![endif]-->
+<a  class="fallback-font" href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8fb670e7f90b94dde9a76c3be182c0fa6038b665c7f498ff5310fea7e893357953516c7e433596b84b43e00586fa4139e9929b894d281713b" style="background-color:#ffffff;border-radius:5px;color:#FF554B;display:inline-block;font-family:'Bouygues Read','Maven Pro', Arial, Helvetica, sans-serif;font-size:16px;font-weight:bold;line-height:45px;text-align:center;text-decoration:none;width:240px; -webkit-text-size-adjust:none;mso-hide:all;padding: 0px 0px;" target="_blank">Plus&nbsp;de&nbsp;d&eacute;tails&nbsp;?</a></div><!--/ CTA PLEIN --></td></tr></table></td></tr><!-- CTA PLEIN --></table></td></tr></table></td></tr></table></td></tr><!-- fin bloc 3 --></table></td></tr></table>
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="text-align:center;vertical-align:top;font-size:0px; mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;line-height: 0px" width="100%" valign="top">
+           <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="max-width: 640px;width:100%;min-width:100%;" width="100%">
+	<!-- BLOC 4 -->
+		<tr>
+			<td align="center" bgcolor="#ffffff" style="padding: 0px 0px 40px 0px" valign="middle" width="100%">
+				<table align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:90%;min-width:90%;max-width:90%;" width="90%">
+					
+						<tr>
+							<td align="center" bgcolor="#ffffff" class="fallback-font" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:18px; line-height: 24px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border-radius: 5px; background-color: #109DB9;" width="100%">
+									
+										<tr>
+											<td style="padding: 40px 20px 45px 20px;">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;" width="100%">
+													
+														<tr>
+															<td align="center" bgcolor="#109DB9" class="fallback-font" style="padding:0px 0% 30px 0%;font-family:'Bouygues Speak','Poppins',Arial,sans-serif;font-size:26px; line-height: 32px;  font-weight: bold; color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																&hellip;ou tous les services essentiels&nbsp;?</td></tr><tr>
+															<td align="center" bgcolor="#109DB9" style="padding:0px 0% 20px 0%;" valign="top">
+																<img alt="Bbox must avec la fibre" border="0" height="28" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/2a28ef97-e484-47e8-8c71-2589f6aec1ca.png" style="display: block; overflow: hidden; font-family:'Bouygues Speak','Poppins',Arial,sans-serif; font-size: 12px; color: #454545; text-align: center; font-weight: bold;" width="173"></td></tr><tr>
+															<td align="center" bgcolor="#109DB9" style="padding:0px 0% 20px 0%;" valign="top">
+																<a   data-linkto="other" href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee85cc2fcd64f2d00656bd8ff002c590f998eff2e0a0a0d5cc2f1d644402b874adb05b8170359ec47a27d2cc88ee96d968d5fc5565c63cf140e" target="_blank" title="BBOXMUST"><img alt="Bbox must" data-assetid="8001" height="77" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/342fddc0-7e95-4e3e-ad7d-219ef5cb9427.png" style="display: block; overflow: hidden; padding: 0px; height: 77px; width: 251px;" width="251"></a></td></tr><tr>
+															<td align="center" bgcolor="#109DB9" style="padding: 0px 0px 25px 0px" valign="middle" width="100%">
+																<table align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:90%;min-width:90%;max-width:90%;" width="90%">
+																	
+																		<tr>
+																			<td align="center" bgcolor="#109DB9" class="fallback-font" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:18px; line-height: 24px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																				&nbsp;<table align="center" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;">
+																					
+																						<tr>
+																							<td align="right" class="fallback-font" rowspan="2" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:70px;line-height: 76px; color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: right;" valign="middle">
+																								<b>21</b></td><td align="left" class="fallback-font" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:33px; line-height: 33px; color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: left;" valign="bottom">
+																								<strong>&euro;99</strong></td></tr><tr>
+																							<td align="left" class="fallback-font" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:18px;line-height: 18px; color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: left;" valign="top">
+																								/mois</td></tr></table>pendant 12&nbsp;mois<sup style="font-size: 12px;">(2)</sup><br>
+																				puis 33,99 &euro;/mois.</td></tr></table></td></tr><tr>
+															<td align="center" bgcolor="#109DB9" class="fallback-font" style="padding:0px 0px 30px 0px;font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:14px; line-height: 18px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																Engagement 1&nbsp;an.<br>
+																Location box incluse.</td></tr><tr>
+															<td align="center" bgcolor="#109DB9" style="padding: 0px 0px 10px 0px;" valign="top">
+																<img alt="cadeau bonus" border="0" height="56" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/97c97882-0481-49bf-842a-6fd999b5ff18.png" style="display: block; overflow: hidden; font-family: &quot;Bouygues Speak&quot;, Poppins, Arial, sans-serif; font-size: 12px; color: rgb(69, 69, 69); font-weight: bold;" width="48"></td></tr><tr>
+															<td align="center" bgcolor="#109DB9" class="fallback-font" style="padding: 0px 0px 20px 0px;font-family:'Bouygues Read','Maven Pro',Arial, sans-serif;font-size:18px; line-height: 24px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																<strong>Appels illimit&eacute;s vers fixes et mobiles<br class="desktop">
+																en France et d&rsquo;Europe<br class="desktop">
+																+&nbsp;fixes de 110 pays</strong></td></tr><tr>
+															<td align="center" bgcolor="#109DB9" style="padding: 0px 0px 10px 0px;" valign="top">
+																<img alt="tv_HD" bouygues="" data-assetid="17261" height="37" speak="" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/174ca2e2-27f7-4e11-b480-18a8998cb556.png" style="display: block; overflow: hidden; padding: 0px; text-align: center; height: 37px; width: 48px;" width="48"></td></tr><tr>
+															<td align="center" bgcolor="#109DB9" class="fallback-font" style="padding: 0px 0px 20px 0px;font-family:'Bouygues Read','Maven Pro',Arial, sans-serif;font-size:18px; line-height: 24px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																180 cha&icirc;nes TV</td></tr><tr>
+															<td align="center" bgcolor="#109DB9" style="padding: 0px 0px 10px 0px;" valign="top">
+																<img alt="cadeau bonus" border="0" height="56" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/2e4e86ab-7a48-46e7-b695-045c9630fd71.png" style="display: block; overflow: hidden; font-family: &quot;Bouygues Speak&quot;, Poppins, Arial, sans-serif; font-size: 12px; color: rgb(69, 69, 69); font-weight: bold;" width="48"></td></tr><tr>
+															<td align="center" bgcolor="#109DB9" class="fallback-font" style="padding: 0px 0px 35px 0px;font-family:'Bouygues Read','Maven Pro',Arial, sans-serif;font-size:18px; line-height: 24px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+																Internet en haut&nbsp;d&eacute;bit et couverture Wi-Fi &eacute;tendue</td></tr><tr>
+															<td align="center" bgcolor="#109DB9" style="padding:0px 5% 0px 5%;" valign="top">
+																<table align="center" border="0" cellpadding="0" cellspacing="0">
+																	
+																		<tr>
+																			<td align="center" valign="center">
+																				<!-- CTA PLEIN --><div>
+																					<!--[if mso]>                                                               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.bouyguestelecom.fr/offres-internet#offres-adsl?utm_medium=email&utm_source=sfmcc&utm_campaign=C_MOB_VSB_FAI_XDSL_STROMBOLI_EMAIL_20200710_20200717&utm_term=cta_plus_de_details&cd9=800015991653&cd10=10063674224&cid=800015991653" target="_blank" alias="cta_plus_de_details" style="height:45px;v-text-anchor:middle;width:240px;" arcsize="10%" strokecolor="#ffffff" fillcolor="#ffffff">                                                                 <w:anchorlock/>                                                                 <center style="color:#FF554B;font-family: Arial,sans-serif;font-size:16px;font-weight:bold;">Plus&nbsp;de&nbsp;d&eacute;tails&nbsp;?</center>                                                               
+</v:roundrect>                                                             <![endif]-->
+<a  class="fallback-font" href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8fb670e7f90b94dde9a76c3be182c0fa6038b665c7f498ff5310fea7e893357953516c7e433596b84b43e00586fa4139e9929b894d281713b" style="background-color:#ffffff;border-radius:5px;color:#FF554B;display:inline-block;font-family:'Bouygues Read','Maven Pro', Arial, Helvetica, sans-serif;font-size:16px;font-weight:bold;line-height:45px;text-align:center;text-decoration:none;width:240px; -webkit-text-size-adjust:none;mso-hide:all;padding: 0px 0px;" target="_blank">Plus&nbsp;de&nbsp;d&eacute;tails&nbsp;?</a></div><!--/ CTA PLEIN --></td></tr></table></td></tr></table></td></tr></table></td></tr></table></td></tr><!-- BLOC 4 --></table></td></tr></table>
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="text-align:center;vertical-align:top;font-size:0px; mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;line-height: 0px" width="100%" valign="top">
+           <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="max-width: 640px;width:100%;min-width:100%;" width="100%">
+	<!-- BLOC 4 -->
+		<tr>
+			<td align="center" bgcolor="#ffffff" style="padding: 0px 0px 30px 0px" valign="middle" width="100%">
+				<table align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:90%;min-width:90%;max-width:90%;" width="90%">
+					
+						<tr>
+							<td align="center" bgcolor="#fefefe" style="padding:0px 0% 0% 0%;" valign="top">
+								<img alt="En plaus on a pensé à tout" border="0" height="59" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/f91af967-81c3-4ab1-9692-234371367ed0.png" style="display: block; overflow: hidden; font-family: arial, helvetica, sans-serif; font-size: 12px; color: #454545; text-align: center; font-weight: bold;" width="41"></td></tr></table></td></tr><tr>
+			<td align="center" bgcolor="#ffffff" style="padding: 0px 0px 35px 0px" valign="middle" width="100%">
+				<table align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:90%;min-width:90%;max-width:90%;" width="90%">
+					
+						<tr>
+							<td align="center" bgcolor="#ffffff" class="fallback-font" style="font-family:'Bouygues Speak','Poppins',Arial,sans-serif;font-size:26px; line-height: 32px;  font-weight: bold; color:#02455E; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+								En plus, on a pens&eacute; &agrave; tout...</td></tr></table></td></tr><tr>
+			<td align="center" bgcolor="#ffffff" style="padding: 0px 0px 40px 0px" valign="middle" width="100%">
+				<table align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:90%;min-width:90%;max-width:90%;" width="90%">
+					
+						<tr>
+							<td align="center" bgcolor="#ffffff" class="fallback-font" style="font-family:'Bouygues Speak','Poppins',Arial, sans-serif;font-size:18px; line-height: 24px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;" width="100%">
+									
+										<tr>
+											<td align="center" bgcolor="#ffffff" style="padding:0px 0% 0% 0%;" valign="top">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;">
+													
+														<tr>
+															<td align="center" bgcolor="#ffffff" class="fallback-font" style="font-family:'Bouygues Speak','Poppins',Arial, sans-serif;font-size:18px;line-height: 24px; color:#02455E; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;padding:0px 0% 0px 0%;" valign="top">
+																<table border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:100%;min-width:100%;" width="100%">
+																	
+																		<tr>
+																			<td align="left" bgcolor="#ffffff" style="padding: 0px 0px 15px 0px" valign="top" width="30">
+																				<img alt="Check" height="15" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/ae3b91b0-2f8f-44e0-a235-668458d39179.png" style="display: block;overflow: hidden; font-size: 12px; font-family: arial, helvetica, sans-serif; color: #454545; vertical-align: middle; text-align: center;" width="15"></td><td align="left" bgcolor="#ffffff" class="fallback-font" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:18px; line-height: 24px;  color:#02455E; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: left;text-decoration:none; padding: 0px 0px 15px 0px" valign="top">
+																				<strong>Internet garanti</strong><span style="font-size:12px;"><b><sup>(3)</sup></b></span><strong>&nbsp;:</strong> pas de coupure de votre connexion. On vous pr&ecirc;te une cl&eacute; 4G jusqu&rsquo;&agrave; la mise en service de votre Bbox.</td></tr><tr>
+																			<td align="left" bgcolor="#ffffff" style="padding: 0px 0px 15px 0px" valign="top" width="30">
+																				<img alt="Check" height="15" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/ae3b91b0-2f8f-44e0-a235-668458d39179.png" style="display: block;overflow: hidden; font-size: 12px; font-family: arial, helvetica, sans-serif; color: #454545; vertical-align: middle; text-align: center;" width="15"></td><td align="left" bgcolor="#ffffff" class="fallback-font" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:18px; line-height: 24px;  color:#02455E; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: left;text-decoration:none; padding: 0px 0px 15px 0px" valign="top">
+																				<strong>Jusqu'&agrave; 100&nbsp;&euro; rembours&eacute;s</strong><span style="font-size:12px;"><b><sup>(4)</sup></b></span> sur les frais de r&eacute;siliation.</td></tr></table></td></tr></table></td></tr></table></td></tr></table></td></tr><!-- BLOC 4 --></table></td></tr></table>
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="text-align:center;vertical-align:top;font-size:0px; mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;line-height: 0px" width="100%" valign="top">
+           <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="max-width: 640px;width:100%;min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center">
+    <!-- BLOC 5 -->
+    <tr>
+        <td style="padding:0 0 0 0;" width="100%" valign="top" bgcolor="#25465F" align="center">
+            <table style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:90%;min-width:90%;max-width:90%;" width="90%" cellspacing="0" cellpadding="0" border="0" align="center">
+                <tr>
+                    <td class="fallback-font" style="font-family:'Bouygues Speak','Poppins', Arial,sans-serif;font-size:26px; line-height: 32px; font-weight: bold; color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;padding:45px 5% 0% 5%;" valign="top" bgcolor="#25465F" align="center">3 façons d’en profiter</td>
+                </tr>
+                <tr>
+                    <td style="padding:20px 0% 40px 0%;" valign="top" bgcolor="#25465F" align="center">
+                        <table class="mobile-table" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;" width="570" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                                <td valign="top" align="center">
+                                    <!--[if (gte mso 9)|(IE)]>                                         <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="width:100%;">                                              <tr>                                                 <td width="190" height="120">                                                 <![endif]-->
+                                    <table class="mobile-table" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;display:inline-table;" width="190" cellspacing="0" cellpadding="0" align="center">
+                                        <tr>
+                                            <td style="padding: 0px 0px 0px 0px;" valign="middle" height="60" align="center"><a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee85f37f2f4abce20655c34331a476c66e07aaaafde3404748b3815b29cd7871eb1192abaefc95400cbd9437ed9732fe4c79c7a9ef598730ff0" target="_blank"><img src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/7619b9ee-dae3-45d3-a615-c1f179d104a8.png" alt="Boutique" style="display: block; overflow: hidden; font-size: 12px; font-family: 'Bouygues Speak','Poppins',Arial,sans-serif; color: #ffffff; vertical-align: middle; text-align: center;" width="37" height="32"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fallback-font" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:18px; line-height: 21px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top" height="60" align="center"><a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8e83face4b2ebb81020c79fca89559897b1ae79f89b9778364bce9c1dc9e19701b8c21b307044f37759dd4f432f659cc34e359dc61a1c99d1" target="_blank" style="color: #ffffff; text-decoration: underline;">Venez nous <br class="desktop">
+                                                    voir en boutique</a></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>                                         </td><td width="190" height="120">                                     <![endif]-->
+                                    <table class="mobile-table" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;display:inline-table;" width="190" cellspacing="0" cellpadding="0" align="center">
+                                        <tr>
+                                            <td style="padding: 0px 0px 0px 0px;" valign="middle" height="60" align="center"><a alias="icon_smartphone" href="tel:3106" target="_blank"><img src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/813e6b85-c143-4652-b4b5-dd6f819b6f01.png" alt="Smartphone" style="display: block; overflow: hidden; font-size: 12px; font-family: 'Bouygues Speak','Poppins',Arial,sans-serif; color: #ffffff; vertical-align: middle; text-align: center;" width="21" height="35"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fallback-font" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:18px; line-height: 21px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top" height="60" align="center"><a alias="lien_smartphone" href="tel:3106" target="_blank" style="color: #ffffff; text-decoration: underline;">Appelez-nous au<br class="desktop">
+                                                    au 3106</a></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>                                         </td><td width="190" height="120">                                     <![endif]-->
+                                    <table class="mobile-table" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;display:inline-table;" width="190" cellspacing="0" cellpadding="0" align="center">
+                                        <tr>
+                                            <td style="padding: 0px 0px 0px 0px;" valign="middle" height="60" align="center"><a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee84baa008aedfb598cb9d31fd5a674d54d53bffcf45c45718fed8f728ac350181c8763546ded01266ae910a1de53682ac88cc7d218a6000c11" target="_blank"><img src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/61f19f05-5d4e-453e-ba24-4ea02f07d589.png" alt="Site" style="display: block; overflow: hidden; font-size: 12px; font-family: 'Bouygues Speak','Poppins',Arial,sans-serif; color: #ffffff; vertical-align: middle; text-align: center;" width="42" height="28"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fallback-font" style="font-family:'Bouygues Read','Maven pro', Arial, sans-serif;font-size:18px; line-height: 21px;  color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: center;text-decoration:none;" valign="top" height="60" align="center"><a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee84c34b32190d2c31194aa4e5c03fe3335f70c17c0086c7700ddea702767bcc2f1f66d948c2751a84576bff2c11a660f95fecbedcd5ea47cd2" target="_blank" style="color: #ffffff; text-decoration: underline;">Rendez-vous<br class="desktop">
+                                                    sur le site</a></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>                                                                                 </td>                                                                             </tr>                                                                         </table>                                                                         <![endif]-->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!-- FIN BLOC 5 -->
+</table></td></tr></table>
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="text-align:center;vertical-align:top;font-size:0px; mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;line-height: 0px" width="100%" valign="top">
+           <table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="max-width: 640px;width:100%;min-width:100%;" width="100%">
+ <tr>
+  <td align="center" valign="top" bgcolor="#ffffff" style="padding:0px 0% 0% 0%;">
+   <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;width:100%;min-width:100%;">
+    <tr>
+     <td width="640" height="160" valign="top" background="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/4/5ca6a519-72b5-420d-8fc1-e3ed2fc7d20e.jpg" bgcolor="#25465f" class="bgChat" style="height:160px;background-image:url(https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/4/5ca6a519-72b5-420d-8fc1-e3ed2fc7d20e.jpg); background-repeat:no-repeat; background-position:center top; background-size:640px 160px;vertical-align:center;">
+      <!--[if gte mso 12]>
+      <v:image xmlns:v="urn:schemas-microsoft-com:vml" style="width:640px;height:160px;" color="#ffffff" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/4/5ca6a519-72b5-420d-8fc1-e3ed2fc7d20e.jpg" />
+      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="false" stroke="false" style="position:relative;width:640px;height:160px;">
+       <v:textbox inset="0,0,0,0">
+        <![endif]-->
+        <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:90%;min-width:90%;max-width:90%;">
+         <tr>
+          <td width="80%" align="left" valign="middle" class="fallback-font titreChat" style="font-family:'Bouygues Speak','Poppins',Arial,sans-serif;font-size:22px; line-height: 28px; font-weight: bold; color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: left;text-decoration:none;padding:55px 0 0 0;min-width:80%; width:80%;">
+           <a class="fallback-font"  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8ac312d9214d3c42f3cc6ea624eb5ae87393925faa2df63a16f06c04329ef0c535e8a24408dbed04faa9cc0a416383470fe758f96a900508e" target="_blank" style="font-family:'Bouygues Speak','Poppins',Arial,sans-serif;font-size:22px; font-weight: bold; line-height: 28px; color:#ffffff; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: left;text-decoration:none;">Une question sur l'utilisation <br />de vos services&nbsp;?</a>
+          </td>
+          <td width="20%" align="right" valign="middle" class="iconChat" style="padding: 55px 0px 0px 0px;min-width:20%; width:20%;">
+           <a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8be19bd543da361dff09043fdc245759c7751084d0fe6e606fa1dd4aa5a844547e8c3722651a793154af9f71205881af1b58c5f0fa2ae7e09" target="_blank"><img src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/38358466-ee2c-485e-bf42-400e15230c6f.png" alt="Une question sur  l'utilisation de vos services ?" width="60" height="61" border="0" style="display: block;overflow: hidden; font-size: 12px; font-family: 'Bouygues Read','Maven Pro', Arial, sans-serif; color: #ffffff; vertical-align: middle; text-align: center;"></a>
+          </td>
+         </tr>
+        </table>
+        <!--[if gte mso 12]>
+       </v:textbox>
+      </v:rect>
+      <![endif]-->
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td width="90%" valign="middle" bgcolor="#ffffff" style="padding: 40px 5% 40px 5%;width:90%;min-width:90%;max-width:90%;">
+   <table width="100%" alborder="0" cellspacing="0" cellpadding="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:100%;min-width:100%; ">
+    <tr>
+     <td valign="top">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:100%;min-width:100%;">
+       <tr>
+        <td height="34" align="left" valign="middle">
+         <img src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/5/99d278ed-83ad-4d6e-9587-901b6676b774.png" alt="Bouygues Telecom" width="33" height="34" style="display: block;overflow: hidden; font-size: 12px; font-family: 'Bouygues Read','Maven Pro', Arial, sans-serif; color: #25465f; vertical-align: middle; text-align: center;" />
+        </td>
+        <td align="right" valign="middle">
+         <table align="right" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+           <td align="right">
+            <!--[if (mso)]>
+            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://redirect.bouyguestelecom.fr/mon-compte/dashboard?utm_medium=email&utm_source=sfmcc&utm_campaign=C_MOB_VSB_FAI_XDSL_STROMBOLI_EMAIL_20200710_20200717&utm_term=cta_mon_compte_footer&cd9=800015991653&cd10=10063674224&cid=800015991653" style="v-text-anchor:middle;width:150px;height:45px" arcsize="10%" stroke="f" fillcolor="#F0F0F0">
+             <w:anchorlock/>
+             <center>
+              <![endif]-->
+              <a class="fallback-font"  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee80ec34dc4a541a5017254fcb9f6fc7555090abbaca03d3c22b9da09b4f6fa079febdf6724b9a19a54bf0b1083604ad06b4fe026f502e2a78b" target="_blank" style="font-family:'Bouygues Read','Maven Pro', 'Bouygues Read','Maven Pro', Arial, sans-serif; color: #02455F; font-size:16px;line-height: 18px;  font-weight:bold; vertical-align:middle;text-decoration:none;background-color:#F0F0F0; border-radius: 5px;padding: 15px 25px;width:100%;">Mon&nbsp;compte</a>
+              <!--[if (mso)]>
+             </center>
+            </v:roundrect>
+            <![endif]-->
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td class="fallback-font" align="left" style="font-family:'Bouygues Read','Maven Pro',Arial, sans-serif;font-size:14px; line-height: 18px; color:#25465f; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: left; padding: 10px 0px 0px 0px">
+      <strong>Axel CALIXTE </strong>
+     </td>
+    </tr>
+    <tr>
+     <td align="left" style="padding: 5px 0px 0px 0px">
+       
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;">
+       <tr>
+        <td width="20" style="padding: 10px 10px 0px 0px;width:20px;min-width:20px;">
+         <img src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/4/a87b0950-a0cd-420a-b25f-b2c640e10b26.png" alt="Mon forfait" width="21" height="28" style="display: block;overflow: hidden; font-size: 12px; font-family: 'Bouygues Read','Maven Pro', Arial, sans-serif; color: #25465f; vertical-align: middle; text-align: center;" />
+        </td>
+        <td class="fallback-font" style="font-family:'Bouygues Read','Maven Pro', Arial, sans-serif;font-size:13px;line-height: 16px;  color:#25465f; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: left;padding: 10px 0px 0px 0px">
+         Votre ligne : 
+         <span>&#173;07 84 35 85 27&#173;</span>
+        </td>
+       </tr>
+      </table>
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" align="center" valign="middle" bgcolor="#ffffff">
+   <table width="90%" border="0" cellspacing="0" cellpadding="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:90%;min-width:90%;max-width:90%;">
+    <tr>
+     <td align="center" valign="bottom" style="font-size: 1px; line-height: 1px; border-top: 2px #C8C8C8 solid;"></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" align="center" valign="middle" bgcolor="#ffffff" style="padding: 40px 0px 10px 0px">
+   <table width="90%" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:90%;min-width:90%;max-width:90%;">
+    <tr>
+     <td align="left" valign="top" bgcolor="#ffffff" style="padding: 0px 0px 0px 0px">
+      <!--[if (gte mso 9)|(IE)]>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="width:100%;">
+       <tr>
+        <td width="340" height="35">
+         <![endif]-->
+         <table class="mobile-table" width="340" align="left" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;">
+          <tr>
+           <td class="fallback-font" align="left" valign="top" bgcolor="#ffffff" style="font-family:'Bouygues Read','Maven Pro', Arial, sans-serif;font-size:14px; line-height: 18px;  color:#25465f; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: left;text-decoration:none;padding: 0px 0px 20px 0px">
+            Gérez votre offre depuis votre smartphone en téléchargeant l’application Espace Client
+           </td>
+          </tr>
+         </table>
+         <!--[if (gte mso 9)|(IE)]>
+        </td>
+        <td width="230" height="35">
+         <![endif]-->
+         <table width="230" border="0" cellspacing="0" cellpadding="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;">
+          <tr>
+           <td width="112" height="35" align="right" valign="top" style="padding: 0px 10px 0px 0px">
+            <a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8cd93a8f28a8b64c6c1d442ff27bb73925f55003121533b03f3f9b1e046c816eb6faafb574775d08a73c3732c752e85f552e78fa5f895bbd2" target="_blank" style="text-decoration:none;"><img src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/4/acdff9bc-aa03-4be7-8542-fec7285abd89.png" alt="App Store" width="112" height="35" style="display: block;overflow: hidden; font-size: 12px; font-family: 'Bouygues Read','Maven Pro', Arial, sans-serif; color: #25465f; vertical-align: middle; text-align: center;" /></a>
+            &nbsp;
+           </td>
+           <td width="112" height="35" align="right" valign="top" style="padding: 0px 0px 0px 0px">
+            <a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8b52bd29e55237be2b72d44c4dc3d8390f1b774bc6ba9f2e4548a743b0b8b240941ea518e86b7183175d218c587203b35f37029406c8a5552" target="_blank" style="text-decoration:none;"><img src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/4/d45b9a1b-e178-4860-80a8-d01320faf007.png" alt="Google Play" width="112" height="35" style="display: block;overflow: hidden; font-size: 12px; font-family: 'Bouygues Read','Maven Pro', Arial, sans-serif; color: #25465f; vertical-align: middle; text-align: center;" /></a>
+            &nbsp;
+           </td>
+          </tr>
+         </table>
+         <!--[if (gte mso 9)|(IE)]>
+        </td>
+       </tr>
+      </table>
+      <![endif]-->
+     </td>
+    </tr>
+   </table>
+   &nbsp;
+  </td>
+ </tr>
+</table>
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="text-align:center;vertical-align:top;font-size:0px; mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;line-height: 0px" width="100%" valign="top">
+           <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table align="center" bgcolor="#EEEEEE" border="0" cellpadding="0" cellspacing="0" style="max-width: 640px;width:100%;min-width:100%;" width="100%">
+	
+		<tr>
+			<td align="center" bgcolor="#EEEEEE" style="padding: 30px 0% 30px 0%;" valign="middle" width="100%">
+				<table align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;" width="90%">
+					
+						<tr>
+							<td align="left" bgcolor="#EEEEEE" style="padding: 0px 0px 20px 0px;" valign="top">
+								<table border="0" cellpadding="0" cellspacing="0" class="mobile-table" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;width:100%;min-width:100%;" width="100%">
+									
+										<tr>
+											<td align="left" bgcolor="#EEEEEE" valign="middle">
+												<a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8646fafb47314e8bbdb766d2f614c557f36b519c4d1e7c012f93760e28853ca4f37625a9e0130aa5ba0d8984b73c5b62af25b2a0092f3ed9c" target="_blank"><img alt="Bouygues Telecom" height="61" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/4/5c0808c1-558c-43a9-92b0-25ab2544a922.png" style="display: block; overflow: hidden; font-family:'Bouygues Read','Maven pro',Arial,sans-serif; font-size: 12px; color: #109db9; text-align: center; font-weight: bold;text-decoration: none" width="60"></a></td><td align="right" bgcolor="#EEEEEE" style="padding: 0px 0px 0px 10px;width:25px; min-width:25px;" valign="middle" width="25">
+												<a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee82163796707549bdf7098583ba1c5a1f1725977e345d68ba37c574e5cfef2ec73b1ef038f5673db3b6c7e440eeb55966246fd0e7d63274e6f" target="_blank"><img alt="Youtube" height="17" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/4/9e74438a-1b60-43e7-94c5-1999d3519876.png" style="display: block; overflow: hidden; font-family:'Bouygues Read','Maven pro',Arial,sans-serif; font-size: 12px; color: #7d7d7d; text-align: center; font-weight: bold;width:25px; min-width:25px;text-decoration: none" width="24"></a></td><td align="right" bgcolor="#EEEEEE" style="padding: 0px 0px 0px 10px;width:25px; min-width:25px;" valign="middle" width="25">
+												<a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8aa62e5ec2a504701bdce0f16a13a5ea4d6a1486a576c687c7c21ef2271ed5f486a4d55fcedd13f78d93d060abaf5487082569d63b904cae5" target="_blank"><img alt="Twitter" height="16" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/4/7ede4ff3-e57c-4c4d-9d1d-59bc2ae1f1e2.png" style="display: block; overflow: hidden; font-family:'Bouygues Read','Maven pro',Arial,sans-serif; font-size: 12px; color: #7d7d7d; text-align: center; font-weight: bold;width:25px; min-width:25px;text-decoration: none" width="20"></a></td><td align="right" bgcolor="#EEEEEE" style="padding: 0px 0px 0px 10px;width:25px; min-width:25px;" valign="middle" width="25">
+												<a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8183d503a5b08d5827803ad74315d7776870c5607d93f1fe04e8af9bf714abf5ef91dd03a059c89c6bdbefa619dec74146074e6b18333cb2e" target="_blank"><img alt="Instagram" height="20" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/4/5658f710-58b2-46f5-bd9c-ed33b3373ce3.png" style="display: block; overflow: hidden; font-family:'Bouygues Read','Maven pro',Arial,sans-serif; font-size: 12px; color: #7d7d7d; text-align: center; font-weight: bold;width:25px; min-width:25px;text-decoration: none" width="20"></a></td><td align="right" bgcolor="#EEEEEE" style="padding: 0px 0px 0px 10px;width:25px; min-width:25px;" valign="middle" width="25">
+												<a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee8cfdcaef39ff18b1a0a596f7e779ca7fbebdd7878ac67f4e6f09afb7eb5050914e0ab337cb078070e81d07260698b84cb7834f356f067bc1b" target="_blank"><img alt="Facebook" height="18" src="https://image.infos.bouyguestelecom.fr/lib/fe8e13727467027470/m/4/aea426cf-c6b4-4dc3-9e94-c66fcf31eccb.png" style="display: block; overflow: hidden; font-family:'Bouygues Read','Maven pro',Arial,sans-serif; font-size: 12px; color: #7d7d7d; text-align: center; font-weight: bold;width:25px; min-width:25px;text-decoration: none" width="18"></a></td></tr></table></td></tr><tr>
+							<td align="left" bgcolor="#EEEEEE" class="fallback-font" style="font-family:'Bouygues Read','Maven pro',Arial,sans-serif;font-size:12px; line-height: 18px;color:#7d7d7d; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: left;text-decoration:none;" valign="top">
+								<b>(1) 
+</b>Offre valable jusqu'au 16/08/2020 pour toute premi&egrave;re souscription sous r&eacute;serve d&rsquo;&eacute;ligibilit&eacute; zone d&eacute;group&eacute;e par Bouygues Telecom. Engagement 1 an. Frais de mise en service : 48&euro; ; frais de r&eacute;siliation : 59&euro;. D&eacute;bit TV min : 3,6 Mbit/s (7,7 Mbit/s pour la HD). Appels illimit&eacute;s vers les fixes et mobiles France / DOM / EUROPE et 110 destinations jusqu&rsquo;&agrave; 199 correspondants diff&eacute;rents (au-del&agrave; : factur&eacute;s hors forfait). En zone d&eacute;group&eacute;e en propre par Bouygues T&eacute;l&eacute;com : remise de 13&euro;/mois pendant 1 an, soit 27,99&euro;/mois puis 40,99&euro;/mois. En zone d&eacute;group&eacute;e &eacute;tendue : remise de 21&euro;/mois pendant 1 an, soit
+ 27,99&euro;/mois puis 48,99&euro;/mois. En cas de r&eacute;siliation avant la fin de la p&eacute;riode d&rsquo;engagement, perte des remises et facturation des mois restants dus au tarif mensuel de l&rsquo;offre hors promotion (et hors location box). Communications (hors n&deg; courts et sp&eacute;ciaux) &agrave; usage priv&eacute; entre 2 individus. Listes des cha&icirc;nes et destinations au 06/07/2020 susceptibles d&rsquo;&eacute;voluer. Les r&eacute;solutions HD et 4K n&eacute;cessitent une TV et des contenus compatibles. Cha&icirc;nes TV 4K uniquement avec la fibre. Enregistreur 128Go (jusqu&rsquo;&agrave; 20% peuvent &ecirc;tre utilis&eacute;s par les fichiers syst&egrave;me). Certains contenus peuvent &ecirc;tre payants. Bonus : un seul bonus au choix valable 24 mois (12 mois pour
+ Cafeyn) en France m&eacute;tropolitaine apr&egrave;s activation sur bouyguestelecom.fr et avec &eacute;quipements compatibles. Bonus Cl&eacute; 4G sous r&eacute;serve de couverture 3G/4G r&eacute;serv&eacute; aux clients en pr&eacute;l&egrave;vement automatique. Changement de bonus possible chaque mois except&eacute; pour le bonus Cl&eacute; 4G modifiable 2 fois par an. Bonus CANAL+S&Eacute;RIES : 2 connexions simultan&eacute;es dont 1 &eacute;cran TV maximum. Service fourni par Groupe CANAL+. L&rsquo;acc&egrave;s au service n&eacute;cessite de cr&eacute;er un compte CANAL ou de se connecter avec son compte CANAL. Bonus susceptibles d&rsquo;&eacute;voluer (en nombre et contenu) au 06/07/2020. D&eacute;bits variables en fonction de la longueur de la ligne : D&eacute;bit descendant
+ atteignable en g&eacute;n&eacute;ral entre 1 Mbit/s et 15 Mbit/s, pouvant &ecirc;tre compris entre 15 Mbit/s et 50 Mbit/s pour certaines des lignes les plus courtes (moins de 1 km) ; d&eacute;bit montant atteignable en g&eacute;n&eacute;ral inf&eacute;rieur &agrave; 1 Mbit/s, pouvant atteindre 8 Mbit/s pour certaines des lignes les plus courtes (moins de 1 km).<br>
+								Voir conditions, liste des cha&icirc;nes et destinations dans &laquo; Les Tarifs &raquo; et &eacute;ligibilit&eacute; sur bouyguestelecom.fr.<br>
+								<br>
+								<b>(2)
+</b> Offre valable jusqu'au 16/08/2020 pour toute premi&egrave;re souscription sous r&eacute;serve d&rsquo;&eacute;ligibilit&eacute; zone d&eacute;group&eacute;e par Bouygues Telecom . Engagement 1 an. Frais de mise en service : 48&euro; ; frais de r&eacute;siliation : 59&euro;.. D&eacute;bit TV min : 3,6 Mbit/s (7,7 Mbit/s pour la HD). Appels illimit&eacute;s vers les fixes et mobiles France / DOM (hors les mobiles vers Mayotte) et fixes de 110 destinations jusqu&rsquo;&agrave; 199 correspondants diff&eacute;rents (au-del&agrave; : factur&eacute;s hors forfait). En zone d&eacute;group&eacute;e en propre par Bouygues T&eacute;l&eacute;com : remise de 12&euro;/mois pendant 1 an, soit 21,99&euro;/mois puis 33,99&euro;/mois. En zone d&eacute;group&eacute;e &eacute;tendue : remise de
+ 20&euro;/mois pendant 1 an, soit 21,99&euro;/mois puis 41,99&euro;/mois. . En cas de r&eacute;siliation avant la fin de la p&eacute;riode d&rsquo;engagement, perte des remises et facturation des mois restants dus au tarif mensuel de l&rsquo;offre hors promotion (et hors location box). Communications (hors n&deg; courts et sp&eacute;ciaux) &agrave; usage priv&eacute; entre 2 individus. Listes des cha&icirc;nes et destinations au 06/07/2020 susceptibles d&rsquo;&eacute;voluer. Les r&eacute;solutions HD et 4K n&eacute;cessitent une TV et des contenus compatibles. Cha&icirc;nes TV 4K uniquement avec la fibre. Enregistreur 128Go sur demande pour Bbox Must ADSL/VDSL (jusqu&rsquo;&agrave; 20% peuvent &ecirc;tre utilis&eacute;s par les fichiers syst&egrave;me). Certains contenus peuvent
+ &ecirc;tre payants. D&eacute;bits variables en fonction de la longueur de la ligne : d&eacute;bit descendant atteignable en g&eacute;n&eacute;ral entre 1 Mbit/s et 15 Mbit/s, pouvant &ecirc;tre compris entre 15 Mbit/s et 50 Mbit/s pour certaines des lignes les plus courtes (moins de 1 km) ; d&eacute;bit montant atteignable en g&eacute;n&eacute;ral inf&eacute;rieur &agrave; 1 Mbit/s, pouvant atteindre 8 Mbit/s pour certaines des lignes les plus courtes (moins de 1 km). Voir conditions, liste des cha&icirc;nes et destinations dans &laquo; Les Tarifs &raquo; et &eacute;ligibilit&eacute; sur bouyguestelecom.fr.<br>
+								<br>
+								<b>(3) </b>Cl&eacute; 4G sur demande (hors-s&eacute;rie sp&eacute;ciale) et sous r&eacute;serve de couverture 4G en France m&eacute;tropolitaine jusqu&rsquo;&agrave; l&rsquo;activation de votre Bbox ou jusqu&rsquo;au r&eacute;tablissement des services Bbox.<br>
+								<br>
+								<b>(4)</b> Offre diff&eacute;r&eacute;e de remboursement, sous forme de virement sur compte bancaire valable pour toute souscription jusqu&rsquo;au 13/09/2020.)<br>
+								<br>
+								&nbsp;</td></tr></table></td></tr><tr>
+			<td align="center" bgcolor="#EEEEEE" valign="middle" width="100%">
+				<table border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;" width="90%">
+					
+						<tr>
+							<td align="center" style="font-size: 1px; line-height: 1px; border-top: 2px #C8C8C8 solid;" valign="bottom">
+							</td></tr></table></td></tr><tr>
+			<td align="center" bgcolor="#EEEEEE" style="padding: 30px 0% 20px 0%;" valign="middle" width="100%">
+				<table align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0; mso-table-rspace:0;border-collapse: collapse;border:0px;" width="90%">
+					
+						<tr>
+							<td align="left" bgcolor="#EEEEEE" class="fallback-font" style="font-family:'Bouygues Read','Maven pro',Arial,sans-serif;font-size:12px; line-height: 18px; color:#7d7d7d; -webkit-text-size-adjust: none; mso-line-height-rule:exactly;text-align: left;text-decoration:none;" valign="top">
+								&copy; 2020 Bouygues Telecom, 37 - 39 rue Boissi&egrave;re 75116 Paris - S.A. au capital de 712 588 399,56&nbsp;&euro; - 397 480 930 R.C.S. PARIS.<br>
+								Si vous voulez vous d&eacute;sabonner, <a  href="https://click.infos.bouyguestelecom.fr/?qs=9f5f321cb25b2ee843b437f4a131c108ee41fdb39bd42597a02c9977d92e195f4f1556107ab2e497d87167392a018eec83148780e1a8705a5e13f9d7f7fa7ff5" style="color: #7d7d7d;" target="_blank">cliquez ici.</a></td></tr></table></td></tr></table></td></tr></table>
+          </td>
+         </tr>
+        </table>
+       </td>
+      </tr>
+     </table>
+    </td>
+   </tr>
+  </table>
+    <!-- tag Weborama -->
+  <img src="http://bouyguestelecomfr.solution.weborama.fr/fcgi-bin/dispatch.fcgi?a.A=im&a.si=1215&a.te=4501&a.he=1&a.wi=1&a.hr=p&a.ra=20200717181222&a.ycp=C_MOB_VSB_FAI_XDSL_STROMBOLI_EMAIL_20200710|105854" width="1" height="1" alt=" " style="border:0px"/>
+  <!-- tag Return Path SFMC -->
+  <img src="https://pixel.inbox.exacttarget.com/pixel.gif?r=50c72c25c83768f582f37496ecafe05551136604" width="1" height="1" alt=" " style="border:0px"/> 
+  <!-- tag Google Analytics -->
+  <img src="https://www.google-analytics.com/collect?v=1&tid=UA-56765283-7&ni=1&t=event&ec=sfmcc&ea=Ouverture_mail&el=C_MOB_VSB_FAI_XDSL_STROMBOLI_EMAIL_20200710_20200717&cd9=800015991653&cd10=10063674224&cid=800015991653" width="1" height="1" style="border:0px"> 
+  <!-- tag DMP Weborama -->
+  <img src="https://wamfactory.solution.weborama.fr/streampixel/?wamid=4598&Wvar=%7b%22id_personne%22%3a%22800015991653%22%2c%22idsContrats%22%3a%2210063674224%22%2c%22email%22%3a%22c3e3b462e8c101130672fc475cc5d221229ed2f8304a8073e963380963981ec4%22%2c%22type_email%22%3a%22SFMCC%22%7d&d.r=9529" width="1" height="1" alt=" " style="border:0px" />
+  <!-- tag Return Path -->
+  <img src="https://pixel.app.returnpath.net/pixel.gif?r=50c72c25c83768f582f37496ecafe05551136604" width="1" height="1" alt=" " style="border:0px" /> 
+  <!--Email Log--> 
+
+  <img src="https://click.infos.bouyguestelecom.fr/open.aspx?ffcb10-fec81570706c0179-fe58107774640d747612-fe8e13727467027470-ff981576-fe531d77746204787c13-ff3215737161" width="1" height="1">
+   
+ </body>
+  
+</html>
+
+--Gnd59U2x1Wkh=_?:--
+
+

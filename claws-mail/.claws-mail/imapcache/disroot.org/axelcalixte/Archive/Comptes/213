@@ -1,0 +1,127 @@
+Return-Path: <20200807001016903ddc5b943945bc9191d48004d0p0na@bounces.amazon.com>
+Delivered-To: axelcalixte@disroot.org
+Received: from localhost (localhost [127.0.0.1])
+	by disroot.org (Postfix) with ESMTP id 2599752996
+	for <axelcalixte@disroot.org>; Fri,  7 Aug 2020 02:10:20 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at disroot.org
+Received: from knopi.disroot.org ([127.0.0.1])
+	by localhost (disroot.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 6tCQE2dOELIL for <axelcalixte@disroot.org>;
+	Fri,  7 Aug 2020 02:10:18 +0200 (CEST)
+Received: from a13-9.smtp-out.amazonses.com (a13-9.smtp-out.amazonses.com [54.240.13.9])
+	by disroot.org (Postfix) with ESMTPS id 667C152995
+	for <axelcalixte@disroot.org>; Fri,  7 Aug 2020 02:10:18 +0200 (CEST)
+Authentication-Results: disroot.org;
+	dkim=pass (1024-bit key; unprotected) header.d=amazon.com header.i=@amazon.com header.b="moJLON/g";
+	dkim=pass (1024-bit key; unprotected) header.d=amazonses.com header.i=@amazonses.com header.b="NiH6knOM";
+	dkim-atps=neutral
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=jvxsykglqiaiibkijmhy37vqxh4mzqr6; d=amazon.com; t=1596759016;
+	h=From:To:Message-ID:Subject:MIME-Version:Content-Type:Date;
+	bh=U/g67QK2Uvog1ENuZTBBaJspbrWHUEx5OoPxlAK1+iM=;
+	b=moJLON/gG7VL5PYzKFs5gaHZUGRJDhDNuZcIM9kh0axrBLINNWm+XZ42KkupulUM
+	ss4dmxP7DvOwqZFVcbf2QUTMHU0DCUXZeP08d2kIaq4xkcgsBseWmr+12XkD6usrWo7
+	nPHdQ6v5ahGIDv7drqFU7GjB6y0Uy8o6KE78vphs=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1596759016;
+	h=From:To:Message-ID:Subject:MIME-Version:Content-Type:Date:Feedback-ID;
+	bh=U/g67QK2Uvog1ENuZTBBaJspbrWHUEx5OoPxlAK1+iM=;
+	b=NiH6knOMztY1RGLGyiF1Z4bFmcvKo3fM+VkHqw8A9SRjJq2C+Ob2r7MZU2FDHvFl
+	LKFS6oN0h/U+SQ2tyv7F5eUewt23PuJEq+wzx/V7Uhg17W2nSQJR00WgQ2+HjOwLFIP
+	aXFC6UFIgareGFVKc3i1xebys4O7W+394y14iYGI=
+From: twitch-verify@amazon.com
+To: axelcalixte@disroot.org
+Message-ID: <01000173c6410524-b6372892-bd42-44a0-b800-291ead759b1b-000000@email.amazonses.com>
+Subject: =?UTF-8?B?TWlzZSDDoCBqb3VyIDogbm91dmVhdSBjb21wdGUgVHdpdGNoIGFzc29jacOp?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_29399605_722301572.1596759016730"
+X-AMAZON-MAIL-RELAY-TYPE: notification
+Bounces-to: 20200807001016903ddc5b943945bc9191d48004d0p0na@bounces.amazon.com
+X-AMAZON-METADATA: CA=C1HY2RG04SE5D7-CU=A7Y1DA568J9NV
+X-Original-MessageID: <urn.rtn.msg.20200807001016903ddc5b943945bc9191d48004d0p0na@1596759016730.rtn-svc-na-back-c42xl1a-89b22138.us-east-1.amazon.com>
+Date: Fri, 7 Aug 2020 00:10:16 +0000
+X-SES-Outgoing: 2020.08.07-54.240.13.9
+Feedback-ID: 1.us-east-1.ZHcGJK6s+x+i9lRHKog4RW3tECwWIf1xzTYCZyUaiec=:AmazonSES
+
+------=_Part_29399605_722301572.1596759016730
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Dear Axel Calixte:
+
+------=_Part_29399605_722301572.1596759016730
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<img width=3D"1" height=3D"1" src=3D"https://www.amazon.com/gp/r.html?C=3D2=
+PGY7HB8V5O20&K=3D3VW7EERSGO3VP&M=3Durn:rtn:msg:20200807001016903ddc5b943945=
+bc9191d48004d0p0na&R=3DQHOR3X9H3ZAL&T=3DO&U=3Dhttps%3A%2F%2Fimages-na.ssl-i=
+mages-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&H=3DO0VGW3MBEJPK9CTQG=
+HMR7D1JLIOA&ref_=3Dpe_2590210_197103490_opens" />
+
+
+<table><td>
+<p>
+Cher/Ch=C3=A8re Axel Calixte :
+</p>
+<p>
+Votre compte Amazon axelcalixte@disroot.org a =C3=A9t=C3=A9 associ=C3=A9 =
+=C3=A0 votre compte Twitch LCT_Kine.
+</p>
+<p>
+Si vous n&#x27;avez pas lanc=C3=A9 l&#x27;association =C3=A0 un compte Twit=
+ch, il se peut que quelqu&#x27;un d&#x27;autre essaie d&#x27;acc=C3=A9der =
+=C3=A0 votre compte.
+</p>
+<p>
+Si vous soup=C3=A7onnez qu'une personne essaie d'acc=C3=A9der =C3=A0 votre =
+compte :
+
+</br>
+
+<ol>
+
+<li>Rendez-vous sur la page <a href=3D"https://www.amazon.com/gp/f.html?C=
+=3D2PGY7HB8V5O20&K=3D3VW7EERSGO3VP&M=3Durn:rtn:msg:20200807001016903ddc5b94=
+3945bc9191d48004d0p0na&R=3D17CBMG4RC2JHB&T=3DC&U=3Dhttps%3A%2F%2Famazon.fr%=
+3Fref_%3Dpe_2590210_197103490&H=3DRVDEFP00B2EJJ6AAWQFUHLNZGKSA&ref_=3Dpe_25=
+90210_197103490">Amazon.fr</a> et modifiez votre mot de passe d=C3=A8s que =
+possible.</br></li>
+
+<li>Pour dissocier vos comptes Amazon et Twitch, allez =C3=A0 la section <a=
+ href=3D"https://www.amazon.com/gp/f.html?C=3D2PGY7HB8V5O20&K=3D3VW7EERSGO3=
+VP&M=3Durn:rtn:msg:20200807001016903ddc5b943945bc9191d48004d0p0na&R=3D3BVB3=
+A8T4XO7X&T=3DC&U=3Dhttps%3A%2F%2Ftwitch.amazon.fr%2Fmanage%3Flocale%3Dfr-FR=
+%26ref_%3Dpe_2590210_197103490&H=3DGB9RW5EYXU3HPVLCEAPCLKWCKR0A&ref_=3Dpe_2=
+590210_197103490">G=C3=A9rer les param=C3=A8tres de compte Twitch</a>.</li>
+
+</ol>
+</p>
+<p>
+Merci de nous aider =C3=A0 garantir la s=C3=A9curit=C3=A9 de votre compte.<=
+br />Assistance Amazon
+</p>
+<p>
+Remarque : cette adresse de messagerie n'accepte pas les e-mails entrants. =
+Veuillez ne pas r=C3=A9pondre =C3=A0 ce message et nous contacter <a href=
+=3D"https://www.amazon.com/gp/f.html?C=3D2PGY7HB8V5O20&K=3D3VW7EERSGO3VP&M=
+=3Durn:rtn:msg:20200807001016903ddc5b943945bc9191d48004d0p0na&R=3D294DE58HL=
+5MOE&T=3DC&U=3Dhttps%3A%2F%2Fhelp.twitch.tv&H=3DMHWDWUL5QOUSROCJJYZCKWYBTRK=
+A">ici</a>
+</p>
+<a href=3D"https://www.amazon.com/gp/f.html?C=3D2PGY7HB8V5O20&K=3D3VW7EERSG=
+O3VP&M=3Durn:rtn:msg:20200807001016903ddc5b943945bc9191d48004d0p0na&R=3D24L=
+D23THVJFNY&T=3DC&U=3Dhttps%3A%2F%2Fhelp.twitch.tv&H=3DRAKBEFBRSBXWOSJ6OIQGJ=
+7XIEHWA">Assistance</a> | <a href=3D"https://www.amazon.com/gp/f.html?C=3D2=
+PGY7HB8V5O20&K=3D3VW7EERSGO3VP&M=3Durn:rtn:msg:20200807001016903ddc5b943945=
+bc9191d48004d0p0na&R=3D1Q5QX3XS1HXMK&T=3DC&U=3Dhttps%3A%2F%2Fwww.twitch.tv%=
+2Fuser%2Flegal%3Fpage%3Dprivacy_policy&H=3DJDNGITISGMWWXGDRWA8CM1A9CRKA">Po=
+litique de confidentialit=C3=A9</a><br>
+Copyright &copy; 2017 Amazon.fr. Tous droits r=C3=A9serv=C3=A9s.
+</td></table><img width=3D"1" height=3D"1" src=3D"https://www.amazon.com/gp=
+/r.html?C=3D2PGY7HB8V5O20&K=3D3VW7EERSGO3VP&M=3Durn:rtn:msg:202008070010169=
+03ddc5b943945bc9191d48004d0p0na&R=3D385VM5ZJZHM9A&T=3DE&U=3Dhttps%3A%2F%2Fi=
+mages-na.ssl-images-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&H=3DFCH=
+QFUJFXQMSEBNSULLEUI4Y5GWA&ref_=3Dpe_2590210_197103490_open" />
+------=_Part_29399605_722301572.1596759016730--

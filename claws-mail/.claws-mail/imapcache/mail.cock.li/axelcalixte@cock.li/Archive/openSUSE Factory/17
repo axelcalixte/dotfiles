@@ -1,0 +1,107 @@
+Return-Path: <opensuse-factory+bounces-95862-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 8CCF7823DA; Thu, 23 Jul 2020 12:39:42 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.6 required=5.0 tests=BAYES_50,DKIM_ADSP_CUSTOM_MED,
+	DKIM_SIGNED,FREEMAIL_FROM,MAILING_LIST_MULTI,RCVD_IN_DNSWL_MED,
+	RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,RDNS_NONE,T_DKIM_INVALID,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 5A6A7826C2
+	for <axelcalixte@cock.li>; Thu, 23 Jul 2020 12:39:34 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.b="RP4TTPNw";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 8CDAC21767
+	for <axelcalixte@cock.li>; Thu, 23 Jul 2020 12:39:33 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 7558C10E2C;
+	Thu, 23 Jul 2020 12:39:28 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 63AE110E2C
+	for <opensuse-factory@lists5.opensuse.org>; Thu, 23 Jul 2020 12:39:28 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id 75A1C2C16C
+	for <opensuse-factory@lists5.opensuse.org>; Thu, 23 Jul 2020 12:39:26 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id 5oLjNjKKNAbc for <opensuse-factory@lists5.opensuse.org>;
+	Thu, 23 Jul 2020 12:39:21 +0000 (UTC)
+Received: from mx2.suse.de (unknown [149.44.161.68])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 23D0E2C15C
+	for <opensuse-factory@lists5.opensuse.org>; Thu, 23 Jul 2020 12:39:21 +0000 (UTC)
+Received: from mail-ed1-f52.google.com (mail-ed1-f52.google.com [209.85.208.52])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mx2.suse.de (Postfix) with ESMTPS id CD00AAAC5
+	for <opensuse-factory@opensuse.org>; Thu, 23 Jul 2020 12:39:35 +0000 (UTC)
+Received: by mail-ed1-f52.google.com with SMTP id i26so1095170edv.4
+        for <opensuse-factory@opensuse.org>; Thu, 23 Jul 2020 05:39:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=NtbRl8c9fihf0JFZWmDtpO5vLAeorqiRBx4aKOo6HDo=;
+        b=RP4TTPNw5ZEPd6WQghpG6Scl1/lyuSvsSF9tPqF4uzPgcTdZB1zvaYfjxES8BjNL7U
+         K2MhFb2PrYOw4vG0XYzhJFoIB5QXEFrB6MiIV46tLtA87yoTT40LaPGV+FSC43L9VhS0
+         ZAJd7oVx33A3g2qxN7cUPj1LwijiRIzeU2bHCmx6IDA6d3c0xNDUmbLs5ioishs41rWT
+         /CFWG22SBdoZuIc5/NkarWZtItIMJNSo4h+EBP3gK1T9Eij3aNT5Pe2RlB/NICy0j8+U
+         pCof1z6T2FAn1FdLdwxgSpZLHNOYKn82Z5qck2iuCkTBuzlz34lqisKogwnlnxTBywcJ
+         5MHA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=NtbRl8c9fihf0JFZWmDtpO5vLAeorqiRBx4aKOo6HDo=;
+        b=o6Nd515xoWZsls0rQVyYAkdeMe7CtjPDB18tZB2eO0w/wpBmbeg4J+/L2EtOD5yznJ
+         pBnfc4MDzwDMpG1UdpnVCIrbAybU4YnDZwbAoqKFHy4f/U/d466cwyDKodvdeXTlIZZs
+         N3sMjSinwshsWaJqSa/36XMBph3Xv0Du6sN2Fjy1c7BzkQJjxQpadI5SSSrL31dwEeUS
+         T5EONwGMsF2YDHg/sRdboIzPXPFqPPoQHgixvhBQTGmFtXkYiD481hyT29heMk38DUtz
+         HObGLIxx5A0tvbtd+Z3rEYEudGCXzFwIwlRyN0924mMnVLy+2YKTn2enwPotk4BesAHE
+         Gwig==
+X-Gm-Message-State: AOAM53259cy5lsFBX6Kb/0IXzLmdU5yXH8aLPxM2TbZJwx86GqZKnQVd
+	o4PsvLZ9KHWS9XFbE8zfLdTAqbYaHDIGWPqAr9sToOz9mU8=
+X-Google-Smtp-Source: ABdhPJwykJahj58b6UYHc3nKlvBs2EoHULzeqWoM2g1/1sj3MCRuy8Oi2gG7r2+XlSsMYLVixKbQS5F5S3tkKQlvzGc=
+X-Received: by 2002:aa7:da06:: with SMTP id r6mr3995719eds.189.1595507966956;
+ Thu, 23 Jul 2020 05:39:26 -0700 (PDT)
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+From: Juan Erbes <jerbes@gmail.com>
+Date: Thu, 23 Jul 2020 09:39:15 -0300
+Message-ID: <CACB8RRb+f96gWxKmu8OShktawQpNmmvweQDnyceTO6rAmjbQGw@mail.gmail.com>
+Subject: [opensuse-factory] Linux Kernel / KVM Developer
+To: Software und SystemEntwicklung <opensuse-factory@opensuse.org>
+Content-Type: text/plain; charset="UTF-8"
+
+In case anyone's interested.
+
+https://www.stepstone.de/stellenangebote--Linux-Kernel-KVM-Developer-f-m-d-Berlin-IONOS-by-11--6587715-inline.html
+
+Greetings,
+                  Juan
+
+-- 
+USA LINUX OPENSUSE QUE ES SOFTWARE LIBRE, NO NECESITAS PIRATEAR NADA Y
+NI TE VAS A PREOCUPAR MAS POR LOS VIRUS Y SPYWARES:
+http://www.opensuse.org/es/
+Puedes visitar mi blog en:
+http://jerbes.blogspot.com.ar/
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

@@ -1,0 +1,133 @@
+Return-Path: <opensuse-factory+bounces-95941-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id D08CC826E3; Mon,  3 Aug 2020 17:51:52 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.4 required=5.0 tests=BAYES_00,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,RDNS_NONE,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 6245E82428
+	for <axelcalixte@cock.li>; Mon,  3 Aug 2020 17:51:47 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id AEC422181D
+	for <axelcalixte@cock.li>; Mon,  3 Aug 2020 17:51:46 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 71AAC10E2C;
+	Mon,  3 Aug 2020 17:51:24 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 64D5910E2C
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 17:51:24 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id 7CB152C15C
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 17:51:48 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id mlhBNeknuRIo for <opensuse-factory@lists5.opensuse.org>;
+	Mon,  3 Aug 2020 17:51:43 +0000 (UTC)
+Received: from mx1.suse.de (unknown [149.44.161.67])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 276992C164
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 17:51:43 +0000 (UTC)
+Received: from mout.kundenserver.de (mout.kundenserver.de [212.227.17.10])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx1.suse.de (Postfix) with ESMTPS id 3CF80AD52
+	for <opensuse-factory@opensuse.org>; Mon,  3 Aug 2020 17:51:23 +0000 (UTC)
+Received: from 'smile.earth' ([95.89.3.2]) by mrelayeu.kundenserver.de
+ (mreue106 [212.227.15.183]) with ESMTPSA (Nemesis) id
+ 1MAgIQ-1jrgFo0F7w-00B3gp for <opensuse-factory@opensuse.org>; Mon, 03 Aug
+ 2020 19:51:40 +0200
+From: Hans-Peter Jansen <hpj@urpla.net>
+To: opensuse-factory@opensuse.org
+Subject: Re: [opensuse-factory] Get RTL8125B 2.5GB Ethernet working?
+Date: Mon, 03 Aug 2020 19:51:38 +0200
+Message-ID: <79828955.cIQc99O0c0@xrated>
+In-Reply-To: <d53594df-0585-9e24-d0d1-f27e3efb0acc@aei.mpg.de>
+References: <d53594df-0585-9e24-d0d1-f27e3efb0acc@aei.mpg.de>
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7Bit
+Content-Type: text/plain; charset="us-ascii"
+X-Provags-ID: V03:K1:u+Cyy3tQKb1xvgXO39UrcDSqB5N7eEYvhqkpsa3CoA8oiE0xKwi
+ ntqxy1VjmfRe0yICzX4iYpl7W3EJSeD4K/usk8QESUZnRNacBtxvenGZtvhipLnRhkWFyVf
+ E1y5GaRfDK6kqVQG+k+vkig6wjfWazFI4/0OzWv+PQc5HoqqRDaN8WEzjzqYNtqWzup7JWt
+ Jtbx6oWG+SmplIMGuz8FQ==
+X-UI-Out-Filterresults: notjunk:1;V03:K0:zrdm05KuQg4=:sGd02HXrE7GBlfT628OtzH
+ p0mYracPhQfO+ONeCKM1HuzsHH4jxHCO+qW3Kl8a2n/d5FxLNXL99Hx/UzU+I45FEtLN27Z4u
+ +AE2Yuee1IBsjBLbv1elP9qQFnPFwfXsorU6/bnSlsDHX7WQNLGf3RteuZf6V3w+jvCaUO+uL
+ SQgc9bY2mB5F7/S5XCF6XQtaEnNT3ImtR1I2bNa3IJW+8jVTCjKxdWF21gNLZN9/SudRj1KIS
+ cSUUs3cKQ6ul3ix6C4HkAR/Pri0FDx6gvASwdFCBafVHEfVbu2rBHAWMkIr76mC8qXm2IArEJ
+ kb0kM0P/863aCr/FnfUbu78bZOfNNZX2SAiHPvtGoKtqu8DdlO/b6gLF6oz0RkVDytO18Fvgl
+ e2P7hzpRdhZkLJBKc93Iw6oewO9RtqL8gs/GMOsSB77hPKnXN6pVb0I/qCMTpCuGRlVHnEDWq
+ PfATjqP+Slucy6s2bcpz82wMNncJVOSxlFJVcjdsBJFB+p6YEfB9zeH172gQmmzLSbZJsL8b1
+ 5IffHAQOtAu8yCGm0IaY+0kPFrdN9Ti4L4XDcerZGIBT05pAPyD8JCCBoB9ef9NykEe+HwSPU
+ xkrtr9HmuBXpzQHOqN4u/aTRjIyDvltsh1QovR+Tuo1YSZOvut+OXOqgIRv6JsI+QEC/nVNdj
+ SyYmiEAl5WT81ZzkikmFAoheE81LyHkSFveqKL1peuYD2ENY68FfSfDQCppkbJ4X1XX6gRxkP
+ oO5gmN7IxayYrEJKz9Wh5J/0rVeTK3u2uFrU6sH9iI+Rz6RrfeW+EFkNqoWsQ4tMK+TRQvpIB
+ 2o55AUWVD3TsPXKJmjmq8m0EKTUQ4Mf63ubg0CbnFKhzsCn7wktHat+c/c3HBP7glfQoQsO
+
+Am Montag, 3. August 2020, 19:08:12 CEST schrieb Michael Born:
+> Dear all.
+> 
+> Die somebody get the Ethernet working with the Realtek RTL8125B chip.
+> It is commonly used on new B550 mainboards.
+> 
+> I tried the Leap15.2 KDE Live USB stick and the Tumbleweed 20200801 Live
+> KDE USB image. Both do not work.
+> 
+> It seems the r8169 driver tries to access the network chip. But, AFAIK
+> there is a separate driver for this chip since kernel 5.4.
+> Using the kernel boot option blacklist=r8169 did not work for me.
+> 
+> Any idea how to get the network running?
+> 
+> Cheers,
+> Michael
+> 
+> from Tumbleweed:
+> 
+> linux@localhost:~> uname -a
+> Linux localhost 5.7.11-1-default #1 SMP Wed Jul 29 09:32:21 UTC 2020
+> (5015994) x86_64 x86_64 x86_64 GNU/Linux
+> 
+> from lspci:
+> 05:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd.
+> RTL8125 2.5GbE Controller [10ec:8125] (rev 04)
+>         Subsystem: ASUSTeK Computer Inc. Device [1043:87d7]
+>         Kernel modules: r8169
+> 
+> localhost:/home/linux # dmesg |grep -i r8169
+> [    5.541457] r8169 0000:05:00.0: unknown chip XID 641
+
+It's on its way into the kernel, but note, that it seems to require some 
+firmware:
+
+https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/commit/
+drivers/net/ethernet/realtek?
+h=next-20200720&id=0439297be95111cf9ef5ece2091af16d140ce2ef
+
+Don't know, if Greg will pick this up in the stable series (of 5.8).
+
+Cheers,
+Pete
+
+
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

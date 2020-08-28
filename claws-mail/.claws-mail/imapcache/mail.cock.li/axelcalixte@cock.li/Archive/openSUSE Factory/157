@@ -1,0 +1,255 @@
+Return-Path: <opensuse-factory+bounces-95991-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 79C4E82828; Mon, 10 Aug 2020 10:23:07 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.1 required=5.0 tests=BAYES_40,DKIM_SIGNED,
+	MAILING_LIST_MULTI,RCVD_IN_DNSWL_NONE,RDNS_NONE,T_DKIM_INVALID,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id EA6808280F
+	for <axelcalixte@cock.li>; Mon, 10 Aug 2020 10:23:00 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (1024-bit key; unprotected) header.d=suse.com header.i=@suse.com header.b="mVmOz4Yo";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 08A9F21DB4
+	for <axelcalixte@cock.li>; Mon, 10 Aug 2020 10:23:00 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id E73D110E67;
+	Mon, 10 Aug 2020 10:22:29 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id CEBC910E67
+	for <opensuse-factory@lists5.opensuse.org>; Mon, 10 Aug 2020 10:22:29 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id 423902C187
+	for <opensuse-factory@lists5.opensuse.org>; Mon, 10 Aug 2020 10:23:01 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id IW3HPfOHOQGz for <opensuse-factory@lists5.opensuse.org>;
+	Mon, 10 Aug 2020 10:22:55 +0000 (UTC)
+Received: from mx2.suse.de (unknown [149.44.161.68])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 655DB2C171
+	for <opensuse-factory@lists5.opensuse.org>; Mon, 10 Aug 2020 10:22:55 +0000 (UTC)
+Received: from de-smtp-delivery-102.mimecast.com (de-smtp-delivery-102.mimecast.com [62.140.7.102])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx2.suse.de (Postfix) with ESMTPS id B06ADB03D
+	for <opensuse-factory@opensuse.org>; Mon, 10 Aug 2020 10:23:13 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=suse.com; s=mimecast20200619;
+	t=1597054973;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding;
+	bh=MZLfpZCI0LRo6KuY8yGxmZeG8myu80HrzaGTeKq/wC4=;
+	b=mVmOz4YoSZeKkpv0cPQ1xdwg10ycJLa3NalP94oGxD7wyvalcAbC8eI2u/b4vmBzSdKRyQ
+	vo6P//Yawg6nNndz2vze/skY8EihLsQ/R9VM6vkocJuOFAqMLt7BUnwhZd90N374tCaHfA
+	uN6TnflB7AhSBooRHtR6u9sHqYxG/T8=
+Received: from EUR04-HE1-obe.outbound.protection.outlook.com
+ (mail-he1eur04lp2051.outbound.protection.outlook.com [104.47.13.51]) (Using
+ TLS) by relay.mimecast.com with ESMTP id
+ de-mta-12-qFSk2qevMmeP3aPkyrjIaA-1; Mon, 10 Aug 2020 12:22:52 +0200
+X-MC-Unique: qFSk2qevMmeP3aPkyrjIaA-1
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=eVUy6/MU6AKMogyBl39d9OZOvXMvvbu3V9SpxPGSHnBPiSebflzl5Uca0FBd8cI4wQWRKqHtQX/ol2FIEKY8E9CtVn7ctFYFa40k00pSdyVLm9u7c401FbW3pAngA6N8O7TAGBmT+3dHiYjOe4hCgCfLXcn87QL65X+CxJNhf4WKdbRtQccuC9LhQwECRfqm+wtg7T+4A4vflyfHyeWg2YUcHsEe0HPV5gV1teqknziexPQCys9AN1zr+aButY3NzI6QtfbTJC0xE3L04KOTqBZBPtBT0TKZExYG7DX+7ym+Iy+iZufkB7+gYL5nTu/vtUGlH+kRR3lbS64bJevfFw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=MZLfpZCI0LRo6KuY8yGxmZeG8myu80HrzaGTeKq/wC4=;
+ b=LFRsT/BoiNcnp93ZsYs6Bel7ENb1uFVKbjT8sg2gecGIyZ3cO+gO7m5mzHvVKCwDfmLcDjS8Gg18r0zZrpZco5OHKJ5PyiQy8uoSopCKKPcmWEvL8nLHg2MCjckiVgUpyjAPB61TFZDcwnBuAH+gcNDZFdSn5PQ/OALb+jTJRYJBXybCEeOYNnb5KJVTi2+LwHeJESZ8SuP4og7r+MmlH+BrPNgFAfcdwnqFwgVTRtJHKZkTRnEZD/9UAqgHhzBFU3kXC3otP9cc2wADqxRmnraY7kgQgLkIyQri4rOqe+H+uYBW5WBaBVFr8SK97lYi8dzn4hm2Q3E8emYbfGJKxg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=suse.com; dmarc=pass action=none header.from=suse.com;
+ dkim=pass header.d=suse.com; arc=none
+Received: from DB7PR04MB4123.eurprd04.prod.outlook.com (2603:10a6:5:20::28) by
+ DB6PR0401MB2248.eurprd04.prod.outlook.com (2603:10a6:4:48::26) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3261.17; Mon, 10 Aug 2020 10:22:51 +0000
+Received: from DB7PR04MB4123.eurprd04.prod.outlook.com
+ ([fe80::13e:448c:d3b2:ce1]) by DB7PR04MB4123.eurprd04.prod.outlook.com
+ ([fe80::13e:448c:d3b2:ce1%6]) with mapi id 15.20.3261.024; Mon, 10 Aug 2020
+ 10:22:51 +0000
+From: Lubos Kocman <lubos.kocman@suse.com>
+To: "opensuse-factory@opensuse.org" <opensuse-factory@opensuse.org>
+Subject: [opensuse-factory] New submit request workflow for Jump, publicly available builds
+Thread-Topic: New submit request workflow for Jump, publicly available builds
+Thread-Index: AQHWbwAzBYJQMyMD/E+gHokTXMXbyw==
+Date: Mon, 10 Aug 2020 10:22:50 +0000
+Message-ID: <420feb5ec59ce2517a4d5ebec2be39fa1daeb77e.camel@suse.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: opensuse.org; dkim=none (message not signed)
+ header.d=none;opensuse.org; dmarc=none action=none header.from=suse.com;
+x-originating-ip: [195.135.221.27]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 2658e752-64ab-46a3-dc1f-08d83d17560b
+x-ms-traffictypediagnostic: DB6PR0401MB2248:
+x-microsoft-antispam-prvs:
+ <DB6PR0401MB224835F9A262D8ECB702D1DEE9440@DB6PR0401MB2248.eurprd04.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:10000;
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ zN40T9zXHgAZ5FKAc5gsqWb1kpqzR5B5H3m9Ab0g9gh0fgSci6LfB0f9twaHEOCzvy5yZnnkoNBhlniWH0zjxxJIN6aVBRV4G+Uq5hJ16zzFkUOHVlEasDsajHjKvfd1ERY/SSpuIQJkCerN2N/iL0qJJ6+feruWdvhOplkFKKR4IqTFCwD5i7l4bVUk0UcAF8jJi8sp2/D9AlgXKG3s6OdrryH+48+dR0rHmgVsSCIAzs0ZTckmhEn23JkJ9eVEzJAbRl3WiHIHQxYgVXy134sig8gRWRu6GT9PwxgABGM1cAGGWHpgqTKCvIAZeebIeQ6/DW8ANuirXm9MKlX+dZ/SqtosHb54KCZRbLTx6nU7RtEWhuxc/gZwqOK3PRSILd0fUAA0YgMl9K/EzdSeuQ==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:DB7PR04MB4123.eurprd04.prod.outlook.com;PTR:;CAT:NONE;SFTY:;SFS:(396003)(136003)(376002)(366004)(346002)(39860400002)(2616005)(6512007)(6916009)(966005)(8676002)(44832011)(8936002)(478600001)(5660300002)(86362001)(66476007)(66556008)(64756008)(66446008)(71200400001)(2906002)(83380400001)(36756003)(6506007)(316002)(91956017)(6486002)(186003)(76116006)(26005)(66946007);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata:
+ 338YA55hvHcLWUhk5O4F55ihkBSgCtOWxVj1G//JoQCZW3Qkl2hBCW82t/pPCPUlIWllLP3XC3RhwdO3SeNxxZM1OXBgd0XaZNfoYJukPQR+u7q074Yguga8UscE1A1ObKSLOmAZI2oqYRsalvZgKy7XCHy+5SLbB+TNiGHVev/UuXnkO5aHC+M87gO7xvvfyobJpyAn7lyQftJ6oyCCGFc0DReaLZgr6NOr7hS332woTvpaeP/K4yGSXBmPh0ngBR35y5GgONzOzfoI77P0ndRIpdRygjaez+ns1HBKjmrTdhDZ6sOf9Z50DRn0YvUqc8hbr8sBh5EgdS8iOOYMuItoVts3mi7mJSlqr1ekaHC6jWkNh9gILLRb7oPEqE+njpLn2jFUJS3KBGWm88d/mANNeEWepeJbP7Obiurfr3x5Owza6fQSr3hx1OxxZUxdDLvGgrb28umujRxGZ+Ss5C0lyxjcLXY+uapet1lqleX28I8kmOg1hUPG8YGFycvLn2UoRT7XDJBsfQjD+jL+ndzbZgOZEkS0rtyGYTjE48/ixkjOOCy/oQPfL9E7OIpmwDKOkyFJtAqjda5jtH3wJ39yPNTh3mg2QcDNdXIuZrLgZqiElJsdJDr4pOJIFm+sCoPIZVBAPyJssO+KBaSDHw==
+x-ms-exchange-transport-forked: True
+Content-Type: text/plain; charset="utf-8"
+Content-ID: <BAEA4D3A3F53D14AA34897D82FB17D4A@eurprd04.prod.outlook.com>
+Content-Transfer-Encoding: base64
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+X-OriginatorOrg: suse.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: DB7PR04MB4123.eurprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 2658e752-64ab-46a3-dc1f-08d83d17560b
+X-MS-Exchange-CrossTenant-originalarrivaltime: 10 Aug 2020 10:22:50.8755
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: f7a17af6-1c5c-4a36-aa8b-f5be247aa4ba
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: 6W8Xg89C/0lORwznuYh+X3VeSaePSsIXRn/6GifPh6+zTv0ntBzSo8D5yU2TgnkUNx4DEGrEgcR8kmIfg1z4Yg==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB6PR0401MB2248
+
+SGVsbG8gb3BlblNVU0UhDQoNCkkgZG8gaGF2ZSBzb21lIGV4Y2l0aW5nIG5ld3MgdG8gc2hhcmUh
+DQoNClRMRFI6IG9wZW5TVVNFIEp1bXAgYnVpbGRzIHdpbGwgYmUgbm93IHB1YmxpY2x5IGF2YWls
+YWJsZSwNCmppcmEuc3VzZS5jb20gYWNjZXNzIGZvciBjb250cmlidXRvcnMgaW4gNSB3ZWVrcywg
+T0JTIHN1Ym1pc3Npb25zDQphZ2FpbnN0IFNMRSBwYWNrYWdlcyB3aWxsIGJlIHN1Ym1pdHRlZCBh
+Z2FpbnN0IEp1bXAgYW5kIG1pcnJvcmVkIGluDQpJQlMuIEFueSB1cGRhdGVzIG9uIHJlcXVlc3Qg
+d2lsbCBiZSB0aGVuIHN5bmNlZCBvdXRzaWRlIChiaS1kaXJlY3Rpb25hbCANCnN5bmMpLiBQcm9w
+b3NlZCB3b3JrZmxvdyByZWNlaXZlZCB0aHVtYnMgdXAgZnJvbSBNYWludGVuYW5jZSBhbmQgU0xF
+DQpSZWxlYXNlIE1hbmFnZW1lbnQuCQ0KaHR0cHM6Ly9naXRodWIuY29tL29wZW5TVVNFL0NvbW11
+bml0eVNMRUZlYXR1cmVSZXF1ZXN0cy9ibG9iL21hc3Rlci9pbWFnZXMvc3ZnL29wZW5TVVNFLWp1
+bXAtY29udGVudC13b3JrZmxvdy5zdmcNCg0KRmlyc3QsIEknZCBsaWtlIHRvIGFubm91bmNlIHRo
+YXQgd2UnbGwgc3RhcnQgcHVibGlzaGluZyBpbWFnZXMgYW5kIEZUUA0KdHJlZXMgZm9yIG9wZW5T
+VVNFIEp1bXAqLCBzbyBwZW9wbGUgY2FuIGdldCB0aGVpciBoYW5kcyBvbi4gUGxlYXNlIGJlDQph
+d2FyZSB0aGF0IEp1bXAgaXMgc3RpbGwgaW4gQWxwaGEgcXVhbGl0eS4gIEkgZXhwZWN0IGRhdGEg
+dG8gYmUNCmF2YWlsYWJsZSBsYXRlciB0aGlzIHdlZWsgYXMgdGhlcmUgaXMgc3RpbGwgcGVuZGlu
+ZyB3b3JrIG9uIHBvbnRpZmV4IGJ5DQpIZXJvZXMuDQpodHRwczovL2J1aWxkLm9wZW5zdXNlLm9y
+Zy9wcm9qZWN0L3Nob3cvb3BlblNVU0U6SnVtcDoxNS4yDQoNClNlY29uZCwgSSd2ZSBhZ3JlZWQg
+b24gRVRBIG9mIDUgd2Vla3MgZm9yIHRoZSBpbml0aWFsIGF2YWlsYWJpbGl0eSBvZg0KSklSQSBw
+YXJ0bmVyIGFjY2VzcyB0byBvcGVuU1VTRSBDb250cmlidXRvcnMgKEpJUkEtNzIyKS4gIEluIHRo
+aXMgd2F5LA0Kd2UgY2FuIGhhdmUgdHJhbnNwYXJlbnQgaGFuZGxpbmcgb2YgZmVhdHVyZSByZXF1
+ZXN0cywganVzdCBsaWtlIGZvciBhbnkNCm90aGVyIFNVU0UgcGFydG5lci4gSSBob3BlIHRoYXQg
+dGhpcyBicmluZ3Mgc29tZSBtb3JlIHRyYW5zcGFyZW5jeSBhbmQNCnNlbGYtc2VydmljZSBmb3Ig
+U0xFIC0+IG9wZW5TVVNFIGZlYXR1cmUgcmVxdWVzdHMuIFRBTSBmb3Igb3BlblNVU0UNCihMdWJv
+cykgd2lsbCBiZSBpbiBjaGFyZ2Ugb2YgY29udHJvbGxpbmcgdGhlIGFjY2Vzcy4NCg0KV2UnbGwg
+aW5pdGlhbGx5IGhhdmUgcmF0aGVyIGEgc21hbGxlciBwb29sIG9mIHVzZXJzIChpbml0aWFsbHkg
+MTApIGFuZA0Kd2lsbCBncm93IGl0IG92ZXIgdGltZSBiYXNlZCBvbiB0aGUgcG9wdWxhcml0eS4g
+SnVzdCBGWUk6IFRoZSBzdGFuZGFyZA0Kc2l6ZSBvZiB0aGUgcG9vbCBmb3IgcGFydG5lcnMgaXMg
+Miwgc28gb3BlblNVU0UgaXMgYmVpbmcgdGFrZW4NCnNlcmlvdXNseSBhcyBhIHBhcnRuZXIgaGVy
+ZS4NCg0KU2Vjb25kLCB0aGUgcHJvcG9zYWwgb2YgdGhlIG5ldyBzdWJtaXNzaW9uIG1vZGVsIGZv
+ciB0aGUgb3BlblNVU0UgSnVtcA0KYW5kIGl0J3MgU1VTRSBMaW51eCBFbnRlcnByaXNlIHBhcnQg
+d2FzIGFjY2VwdGVkIHdlbGwgYnkgdGhlDQpNYWludGVuYW5jZSB0ZWFtIGFuZCBTTEUgUmVsZWFz
+ZSBtYW5hZ2VtZW50LCB0aGVyZWZvcmUgKipJJ2QgbGlrZSB0bw0KaGVhciB5b3VyIG9waW5pb24q
+Ki4gTXkgaGFyZCByZXF1aXJlbWVudCBpcyB0aGF0IHdlIHdpbGwgTk9UIHJlamVjdA0Kc3VibWlz
+c2lvbnMganVzdCBiZWNhdXNlIGl0J3MgYSBzdWJtaXNzaW9uIGFnYWluc3QgYW4gU0xFIHBhY2th
+Z2UuDQoNCk15IGF0dGVwdCB0byBjYXB0dXJlIGlzIGhlcmUgDQpodHRwczovL2dpdGh1Yi5jb20v
+b3BlblNVU0UvQ29tbXVuaXR5U0xFRmVhdHVyZVJlcXVlc3RzL2Jsb2IvbWFzdGVyL2ltYWdlcy9z
+dmcvb3BlblNVU0UtanVtcC1jb250ZW50LXdvcmtmbG93LnN2Zw0KKGFsc28gYXZhaWxhYmxlIGlu
+IGRyYXdpbyBhbmQgcG5nKS4NCg0KTG9nIHN0b3J5IHNob3J0LCBhbiBvcGVuU1VTRSBjb250cmli
+dXRvciB3b3VsZCBhbHdheXMgc3VibWl0IGNvZGUNCmFnYWluc3QgYSBzaW5nbGUgcHJvamVjdC4g
+TGV0J3Mgc2F5IG9wZW5TVVNFOkp1bXA6MTUuMiBmb3Igbm93IChsYXRlcg0KTGVhcCkuIA0KDQpD
+b2RlIHN1Ym1pc3Npb24gd291bGQgdGhlbiBnZXQgcmVkaXJlY3RlZCB0byBhIHByb3BlciBvcmln
+aW4NCihCYWNrcG9ydHMsIExlYXAsIFNMRSkuIFRoZSB0b29sIGZvciBTUiByZWRpcmVjdGlvbiBp
+cyBhbHJlYWR5IGluIHBsYWNlDQooT0JTLTU5KS4NCg0KT3JpZ2luIG9wdGlvbnM6DQpvcGVuU1VT
+RSBCYWNrcG9ydHMgKGZvciB0aGUgbWFqb3JpdHkgb2YgTGVhcCBwYWNrYWdlcyB+OGspLA0Kb3Bl
+blNVU0UgTGVhcCAobW9zdGx5IGJyYW5kaW5nIHBhY2thZ2VzLCBwYXR0ZXJucywgYW5kIFNMRSBw
+YWNrYWdlDQpmb3JrcyBvZiBwYWNrYWdlcyBuZWNlc3NhcnkgdG8ga2VlcCBvcGVuU1VTRSBMZWFw
+IGJ1aWxkaW5nIH4xMDApIA0KU1VTRSBMaW51eCBFbnRlcnByaXNlICh+NGsgcGFja2FnZXMsIHRo
+ZSBjb3JlKQ0KDQpCYWNrcG9ydHMgYW5kIG9wZW5TVVNFIExlYXAgY29kZSBzdWJtaXNzaW9ucyB3
+aWxsIGhhdmUgcHJldHR5IG11Y2ggdGhlDQpzYW1lIGV4cGVyaWVuY2UgYXMgbm93LiBXaXRoIHRo
+ZSBleGNlcHRpb24gdGhhdCB5b3UnbGwgYmUgYWJsZSB0byB1c2UNCmp1c3Qgb25lIHN1Ym1pdCBy
+ZXF1ZXN0IHRhcmdldCBmb3IgbW9yZSBjb252ZW5pZW5jZSBhbmQgcmV1c2FiaWxpdHkgYXMNCnRo
+ZXJlIHdpbGwgYmUgb25lIGJ1aWxkIHVzZWQgZm9yIGJvdGggUGFja2FnZSBIdWIgYW5kIExlYXAu
+DQoNClN1Ym1pc3Npb25zIHRvIFNVU0UgTGludXggRW50ZXJwcmlzZSB3aWxsIGdldCBtb3JlIHRy
+YW5zcGFyZW50Lg0KSSdkIHJlYWxseSBsaWtlIHRvIGFzayB5b3UgdG8gbG9vayBhdCBpdCBhcyBh
+IGdvb2Qgc3RhcnRpbmcgcG9pbnQuDQpJIHNlZSBpdCBhcyBhIGJpZyBpbXByb3ZlbWVudCBmcm9t
+IHdoYXQgd2UgaGF2ZSBub3cgc2luY2UgeW91J2xsIGJlIG5vdw0KYWJsZSB0byBzZWUgYmVoaW5k
+IHRoZSBzY2VuZXMuIFRoaXMgYWxsIGlzIGNvbnN0YW50bHkgaGFwcGVuaW5nLCB5b3UNCndlcmUg
+anVzdCBub3QgYWJsZSB0byBzZWUgaXQgYmVmb3JlLg0KDQpUaGlzIHdvdWxkIGJlIG1vcmUgb3Ig
+bGVzcyBhIHJlZ3VsYXIgd2F5IHRvIHVwZGF0ZSBhbiBTTEUgcGFja2FnZS4NCg0KMCkgVGhlIGNv
+bnRyaWJ1dG9yIHJlcG9ydHMgYSBidWcgb3IgbG9ncyBpbiB0byBqaXJhLnN1c2UuY29tIGFuZCBm
+aWxlcw0KYSBwYXJ0bmVyIGZlYXR1cmUgcmVxdWVzdCBmb3IgbmV3IGZlYXR1cmVzLiANCg0KSklS
+QSByZXF1ZXN0IGNhbiBzdGlsbCBiZSBjcmVhdGVkIGJ5IFRBTSAoTHVib3MpIGlmIHRoZXJlIHdv
+dWxkIGJlIGFueQ0KcHJvYmxlbSAoZS5nLiBtaXNzaW5nIGFjY2VzcyBldGMpLiBVc2VyIChhbmQg
+b3RoZXIgb3BlblNVU0UNCmNvbnRyaWJ1dG9ycyB3aG8gcmVxdWVzdGVkIEpJUkEgYWNjZXNzKSBz
+ZWUgdXBkYXRlcyBpbiBKSVJBLg0KDQoxKSBUQU0gcmV2aWV3cyBmZWF0dXJlIGFuZCByZWplY3Qg
+d2l0aCByZWFzb25pbmcgb3IgZ2l2ZXMgaXQgYSBnbyBhbmQNCnBhc3NlcyBpdCBmb3IgZnVydGhl
+ciBldmFsdWF0aW9uLg0KDQoxKSBUaGUgY29udHJpYnV0b3Igc3VibWl0cyBjb2RlIGFnYWluc3Qg
+b3BlblNVU0U6SnVtcDoxNS4yIChsYXRlcg0KTGVhcCksIG9wdGlvbmFsbHkgcmVmZXJlbmNlcyBv
+cGVuU1VTRSBQYXJ0bmVyIEpJUkEgZmVhdHVyZSAoc2VlIG15IG5vdGUNCm9uIEpJUkEgYWNjZXNz
+KSBvciBhIGJ1Zw0KDQoyKSBvcGVuU1VTRSBSZWxlYXNlIHRlYW0gcmV2aWV3cyBhIG5ldyB0eXBl
+IG9mIHJldmlldyBsZXQncyByZWZlciB0byBpdA0KYXMgYW4gIm9wZW5TVVNFIEp1bXAiIHJldmll
+dyBmb3Igbm93LiANCg0KMykgQXBwcm92ZWQgc3VibWlzc2lvbnMgd2lsbCBnZXQgbWlycm9yZWQg
+KE9CUy02MykgZnJvbSBPQlMgdG8gSUJTDQooSW50ZXJuYWwgU1VTRSBPQlMgaW5zdGFuY2UpIHdp
+dGggYmktZGlyZWN0aW9uYWwgc3luYyBvbiBjb21tZW50cywNCnVwZGF0ZXMgZm9yIGZ1bGwgdHJh
+bnNwYXJlbmN5IHNvIHRoZSBjb250cmlidXRvciBjYW4gc2VlIHByb2dyZXNzIG9uDQp0aGUgc3Vi
+bWlzc2lvbiBieSBoaW1zZWxmLg0KDQo0KSBTdWJtaXNzaW9uIGdldHMgcHJvY2Vzc2VkIGJ5IFNM
+RSBSZWxlYXNlIE1hbmFnZW1lbnQgb3IgTWFpbnRlbmFuY2UNCnRlYW0gYmFzZWQgb24gdGhlIG9y
+aWdpbiAoc2VlIG15IG5vdGUgYmVsb3cpLiANCkF0IHRoaXMgcG9pbnQsIGl0J3MgZWl0aGVyIHJl
+amVjdGVkIG9yIHBhc3NlZCBvbiBzdGFnaW5nIGZvciBwcmUtDQppbnRlZ3JhdGlvbiB0ZXN0cy4N
+Cg0KUmVqZWN0IHJlYXNvbnMgbWlnaHQgYmUgbm90IGZvbGxvd2luZyAobm90IGEgZnVsbCBsaXN0
+KQ0KRmFpbGVkIGNvZGUgcmV2aWV3IHN1Y2ggYXMgc2tpcHBpbmcgRmFjdG9yeSBGaXJzdCwgbWFu
+ZGF0b3J5IDQgZXllcw0KcmV2aWV3LCBldGMuDQpDaGFuZ2UgaXMgcGFzdCB0aGUgY29kZS1zdWJt
+aXNzaW9uIGRlYWRsaW5lDQpNaXNzaW5nIGFwcHJvdmFsIG9uIGEgZmVhdHVyZSwgRUNPIG9yIGEg
+bWlzc2luZyBpc3N1ZSByZWZlcmVuY2UNCkRvZXMgbm90IG1lZXQgdXN1YWwgbWFpbnRlbmFuY2Ug
+dXBkYXRlIGNyaXRlcmlhIHN1Y2ggYXMgYmFja3dhcmQtDQppbmNvbXBhdGlibGUgdXBkYXRlIG9y
+IHdvdWxkIHJlcXVpcmUgYSByZWJ1aWxkIG9mIGEgbG90IG9mIHBhY2thZ2VzDQpGYWlsZWQgcHJl
+LWludGVncmF0aW9uIHRlc3RpbmcuDQoNClRoZSByZWplY3QgcmVhc29uIHdvdWxkIGJlIGNvbW11
+bmljYXRlZCBpbiB0aGUgc3VibWlzc2lvbi4NCkdlbmVyYWxseSwgdGhlIHN1Ym1pc3Npb24gY3Jp
+dGVyaWEgd291bGQgYmUgdGhlIHNhbWUgYXMgYW55IFNVU0UNCmVtcGxveWVlLg0KDQo1KSBvcGVu
+U1VTRSBUQU0gKEx1Ym9zKSBvcHRpb25hbGx5IGNyZWF0ZXMgYW4gRUNPKiB0byBnZXQgYXBwcm92
+YWxzIGZvcg0KZmVhdHVyZSByZXF1ZXN0cyBpbiBhIGxhdGUgZGV2ZWxvcG1lbnQgcGhhc2Ugb3Ig
+TWFpbnRlbmFuY2UgdXBkYXRlcy4NCg0KNikgTWlycm9yZWQgU1IgaW4gSUJTIGFuZCBPcmlnaW5h
+bCBTUiAodmlhIGJpLWRpcmVjdGlvbmFsIHN5bmMpIGdldHMNCmFjY2VwdGVkIChvciByZWplY3Rl
+ZCkuIA0KDQo3KSBUaGUgcGFydG5lciBmZWF0dXJlIHJlcXVlc3QgaXMgbWFya2VkIGFzIERvbmUg
+b3IgYnVnIGlzIG1hcmtlZCBhcw0KUmVzb2x2ZWQuDQoNCkp1c3Qgb25lIG5vdGUgb24gU0xFIFN1
+Ym1pdCByZXF1ZXN0cywgd2hpY2ggSSBiZWxpZXZlIHdpbGwgYmUgYSBzb3VyY2UNCm9mIG1hbnkg
+Y29uZmxpY3RzLg0KDQpTdWJtaXNzaW9ucyB0byBTVVNFIExpbnV4IEVudGVycHJpc2UqIGFyZSBh
+IGJpdCBtb3JlIHRyaWNreSBkdWUgdG8gdGhlDQpwcm9qZWN0IGluaGVyaXRhbmNlLCBhcyBwYWNr
+YWdlcyBhcmUgY29taW5nIGZyb20gb2xkZXIgU0xFIFNlcnZpY2UNClBhY2tzLCByZXNwZWN0aXZl
+IGl0cyAiOlVwZGF0ZSIgcHJvamVjdHMuIA0KDQpUaGF0IG1lYW5zIHRoYXQgaXQgd29uJ3QgYmUg
+dW5jb21tb24gdGhhdCB0aGUgdXNlciB3aWxsIGJlIHN1Ym1pdHRpbmcNCmNvZGUgYWdhaW5zdCBm
+b3IgYW4gZXhhbXBsZSBvcGVuU1VTRSBMZWFwIDE1LjMgZHVyaW5nIHRoZSBFYXJseSBBbHBoYQ0K
+cGhhc2UsIGhvd2V2ZXIsIGluIHRoZSBlbmQsIGl0J3MgZ29pbmcgdG8gYmUgYSBzdWJtaXNzaW9u
+IGZvciBTVVNFOlNMRS0NCjE1LVNQMTpVcGRhdGUuIFN1Y2ggc3VibWlzc2lvbiBtYXkgcmVxdWly
+ZSBhZGRpdGlvbmFsIEVDTyogYXBwcm92YWwgb3INCndpbGwgcmVzdWx0IGluIGEgZm9yayBpbiB0
+aGUgbGF0ZXN0IFNlcnZpY2UgUGFjayBvZiBTTEUuIFNvIEkgcmVjb21tZW5kDQphbGwgdXNlcnMg
+dG8gdXNlICJvc2Mgb3JpZ2luIiB0byBjaGVjayB3aGVyZSBkb2VzIHRoZSBwYWNrYWdlIGNvbWUN
+CmZyb20sIHRvIGF2b2lkIGFueSBzdXJwcmlzZXMgbGF0ZXIgb24uDQoNCkFuZCB0aGUgbGFzdCBJ
+J2xsIGNoZWNrIG91ciB3aWtpIHBhZ2VzIGFuZCBtYWtlIHN1cmUgdGhhdCB0aGUgY29udGVudA0K
+aXMgaW4gYWxpZ25tZW50IHdpdGggdGhlIHByZXNlbnRlZCBpZGVhLg0KaHR0cHM6Ly9lbi5vcGVu
+c3VzZS5vcmcvb3BlblNVU0U6U3VibWl0dGluZ19mZWF0dXJlX3JlcXVlc3RzKSANCmh0dHBzOi8v
+ZW4ub3BlbnN1c2Uub3JnL1BvcnRhbDpMZWFwL1NMRUZlYXR1cmVSZXF1ZXN0cw0KaHR0cHM6Ly9n
+aXRodWIuY29tL29wZW5TVVNFL0NvbW11bml0eVNMRUZlYXR1cmVSZXF1ZXN0cy8NCg0KU28gd2hh
+dCBkbyB5b3UgdGhpbms/DQoNClswXSBvcGVuU1VTRSBKdW1wIGh0dHBzOi8vZW4ub3BlbnN1c2Uu
+b3JnL1BvcnRhbDpMZWFwOkp1bXANClsxXSBFQ08gLSBodHRwczovL2VuLm9wZW5zdXNlLm9yZy9F
+Q08NClsyXSBUaGUgc3VibWl0IHJlcXVlc3Qgd2lsbCBiZSBtaXJyb3JlZCBpbiBPQlMgdW5kZXIg
+YSBkaWZmZXJlbnQgSUQNCmV0Yy4gYnV0IHRoZSBzdGF0ZSBvZiBvcmlnaW5hbCBzdWJtaXNzaW9u
+IHdpbGwgYmUgQWNjZXB0ZWQuDQpbM10gSUJTIC0gU1VTRSBJbnRlcm5hbCBPQlMgaW5zdGFuY2Us
+IHRoYXQgaXMgdXNlZCB0byBidWlsZCBTVVNFIExpbnV4DQpFbnRlcnByaXNlDQoNClRoYW5rIHlv
+dSBmb3IgeW91ciB0aW1lDQo=
+
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

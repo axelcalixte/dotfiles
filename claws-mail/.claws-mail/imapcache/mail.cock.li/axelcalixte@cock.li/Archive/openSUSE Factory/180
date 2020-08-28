@@ -1,0 +1,196 @@
+Return-Path: <opensuse-factory+bounces-96016-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id C662F82589; Thu, 13 Aug 2020 14:33:05 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.6 required=5.0 tests=BAYES_50,DKIM_SIGNED,
+	MAILING_LIST_MULTI,RCVD_IN_DNSWL_MED,RDNS_NONE,T_DKIM_INVALID,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 0D6F882580
+	for <axelcalixte@cock.li>; Thu, 13 Aug 2020 14:32:58 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (1024-bit key; unprotected) header.d=suse.com header.i=@suse.com header.b="lC1sr4tS";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 6682123BE8
+	for <axelcalixte@cock.li>; Thu, 13 Aug 2020 14:32:57 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 3E12010EB4;
+	Thu, 13 Aug 2020 14:32:23 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from mx2.opensuse.org (unknown [192.168.47.96])
+	by lists5.opensuse.org (Postfix) with ESMTP id 1A20D10E2C
+	for <opensuse-factory@lists5.opensuse.org>; Thu, 13 Aug 2020 14:32:23 +0000 (UTC)
+Received: from mx2.opensuse.org (localhost [127.0.0.1])
+	by mx2.opensuse.org (Postfix) with ESMTP id 496BE863D
+	for <opensuse-factory@opensuse.org>; Thu, 13 Aug 2020 14:32:54 +0000 (UTC)
+Received: from de-smtp-delivery-102.mimecast.com (de-smtp-delivery-102.mimecast.com [51.163.158.102])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx2.opensuse.org (Postfix) with ESMTPS
+	for <opensuse-factory@opensuse.org>; Thu, 13 Aug 2020 14:32:54 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=suse.com; s=mimecast20200619;
+	t=1597329173;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding;
+	bh=0NubzY8nnNY5yzA3MlC1UGC23H25/sacyqcAUgo/5Fw=;
+	b=lC1sr4tSPVkgrtGzvMIhTBni++K9pAJQr0V4xayRNHgbK31BToL6Mvbx+nZS2Qb676Ov36
+	kToov9tN4Lft+q54RKtV0EqzU66XA43D9Mzh2rcSZYNZ5n+pryM4wHJxSOeSEBcrhkJrbm
+	PBo2M1l2M6WkhRb40t7h/GtLZYWviYw=
+Received: from EUR04-VI1-obe.outbound.protection.outlook.com
+ (mail-vi1eur04lp2058.outbound.protection.outlook.com [104.47.14.58]) (Using
+ TLS) by relay.mimecast.com with ESMTP id de-mta-7-S7Tao68KNd-KWvhEKykhoQ-1;
+ Thu, 13 Aug 2020 16:32:52 +0200
+X-MC-Unique: S7Tao68KNd-KWvhEKykhoQ-1
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=VImIQu3lqin19HVbjoHF5AXUzAZ5nvFsfQQKjzf8Z9Ft8ZBUxd7DFUKAui9+uXVjPqgdHObCwQURb+dUhIu1IpbIoS5duing2wnmMIU5XHyQGfaD/ma1+ts2H/9G+QHIIn+S8OrW0RdcEktl7qzpemvXM0FSU5KWT6kI5tGgj6JvKW1K5i+vyqA91Ch/UmpjTXeRTOqp8YU0+Uk1Cr3BUO6iTOwwwm8dCwDMiVpDG3zzCbNCHt3Dm0iyjM7V878HyGoGGGLPf3tLP7A18w7Xo8il6YKUTIJPf2XdvQ6+ev8aq0Is2/Bo5l2J4MncKwNNTqovcNSH0k2qziCM++/cdQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=0NubzY8nnNY5yzA3MlC1UGC23H25/sacyqcAUgo/5Fw=;
+ b=AwlNTJ0XQOnvGBg6+b1FJbH0GRRehJDaC0xEJBcKqwv7htRFosQ45CilkaTr3WDG4SroyEv+WMdqG3bLFiGL+Q+4KpS5Ebf4XKZ5yE1hKe0vC/V2d7dACPz0O9rDCNZOD9aAH+uiwGeGSeQ/qBjwfe+CYzYPPxDJCtGXeOoernqxmdwr1phF2rBtYccCLlC5ehgfVWYLiIRd3pSTBqOhrmXRzvweOkmvPo0LvmR6DQfHomevnDKLhq2RQnejbT2fIO6100LJnqrUmK+EKYccMBMW+Nq41cR4QApfH5ZDt0m55aHA6U1HxYDuzhilnZEIcCDGw1Px1nW0GVjX4qRwsQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=suse.com; dmarc=pass action=none header.from=suse.com;
+ dkim=pass header.d=suse.com; arc=none
+Received: from DB7PR04MB4123.eurprd04.prod.outlook.com (2603:10a6:5:20::28) by
+ DB7PR04MB4123.eurprd04.prod.outlook.com (2603:10a6:5:20::28) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3283.20; Thu, 13 Aug 2020 14:32:51 +0000
+Received: from DB7PR04MB4123.eurprd04.prod.outlook.com
+ ([fe80::13e:448c:d3b2:ce1]) by DB7PR04MB4123.eurprd04.prod.outlook.com
+ ([fe80::13e:448c:d3b2:ce1%6]) with mapi id 15.20.3283.020; Thu, 13 Aug 2020
+ 14:32:51 +0000
+From: Lubos Kocman <lubos.kocman@suse.com>
+To: "opensuse-factory@opensuse.org" <opensuse-factory@opensuse.org>,
+	"opensuse-project@opensuse.org" <opensuse-project@opensuse.org>
+Subject: [opensuse-factory] Too many open bugs (Leap 15.2 retro)
+Thread-Topic: Too many open bugs (Leap 15.2 retro)
+Thread-Index: AQHWcX6fwAdXZPgeyke9uVvSppWlrQ==
+Date: Thu, 13 Aug 2020 14:32:50 +0000
+Message-ID: <8a3b1f5b8e5362e65f2dd5b7605051c108d26f7e.camel@suse.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+user-agent: Evolution 3.34.4 
+authentication-results: opensuse.org; dkim=none (message not signed)
+ header.d=none;opensuse.org; dmarc=none action=none header.from=suse.com;
+x-originating-ip: [195.135.221.27]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 4192ea34-4e7d-4b56-d9ac-08d83f95c210
+x-ms-traffictypediagnostic: DB7PR04MB4123:
+x-microsoft-antispam-prvs:
+ <DB7PR04MB41231491142AEE90A09305F4E9430@DB7PR04MB4123.eurprd04.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:10000;
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ OrF26MJXVOVwppoUTVJOx4ZdTVoU513F8y/PLxAEf+SmsiBemFEqOVwZKn/4gAHh/RH3caOICjCOUJhOGPInrwxM8ikhNfTCO2GpdGirz+DezHit3VO+DEmyKCUGiStJsgVeCvSUJbMRYg83ZPIjm1AzPkGdHAfEDSbWS96E7ZzQmCBF6qPMZPIspTg0nZPLcRjgZ4EwUB6M3NY+q4dGwMnSJlYkiGvLXJNdorGYgq9Ah0pYjtJg8slm3X9AQRpy0DHwIUA3zVHJUWHrVgIBLdCxKIMYvE+hSqOrDx2PQCunc2qhSD8r0LrU473JIDXcYkDRXWia5CNvoJ8c0NmJCgpB7KGDEMEUARWIbpfv1tcnnS/HmuoVzPrnes5LXkdRNUk174mcKcyVTaAwCEBGQw==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:DB7PR04MB4123.eurprd04.prod.outlook.com;PTR:;CAT:NONE;SFS:(366004)(966005)(498600001)(86362001)(66946007)(76116006)(91956017)(64756008)(66556008)(66476007)(186003)(26005)(2616005)(44832011)(6486002)(5660300002)(66446008)(8936002)(71200400001)(6512007)(110136005)(83380400001)(6506007)(450100002)(36756003)(2906002)(8676002);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata:
+ Ic1Kh4oqJNc0g0JWJLUHK63+04sdvb3wUmbMQxOtW2bBp70TkWyrJm5GlcJaVc4EqC+PNr/j01s5UOQ4CLaXrKoO6VR2iA0B531FWBDUHA1a+VyDxmMf/rnsskecwvEO01xoZpOj4/bEcvL79jgSZ9Rsf/Zn5mp5SqWrR0ZoclIyAh7O7Vv7E0HhS8Q06h5WX5Fp9uiBcLKPuMz4378UYkqnlmTYAgVwNLAz1lmnULY5yzIBFuA56DG8c3NdA+b+Em+61f6UAooCLlKhnMA4Grpm+g9hjM1Rvjw+WSbhIMeZd8Nb3QlkfSTWbcGOae3pNuVziJepQDG1CtgKUVXRcQ/cScEbryEWxC3DdfRn4ZIifw7HGRlSedT592szpH3cA//TfQ6JCzVdermGbeQnLGhe2DR9HiFBHiD0c1S7lunLdzHZ2UuV70MtZiLKVIQoYImPjHyjsKjEQ+IEt/eAPG3dJQfMz5hQCvQ5CQgpuv0eeINKmFG9wZoZc+yBJ4DBssXrD4RRteVxFtC7QvtKxDCm5SLC5RiFskSIl5HvUKkj+BrSmZVgnHpC+y4EicrjfA9fi2kMeKYvqHBtMwoWHNMLejNoZAAGQCMtspq8OlmwJWJ9Q8HBp/4LVbRIRYNmqWrRlGdmWOj+hKMfN7lgVg==
+x-ms-exchange-transport-forked: True
+Content-Type: text/plain; charset="utf-8"
+Content-ID: <09697F914F624446830ECC5B2C26A900@eurprd04.prod.outlook.com>
+Content-Transfer-Encoding: base64
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+X-OriginatorOrg: suse.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: DB7PR04MB4123.eurprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 4192ea34-4e7d-4b56-d9ac-08d83f95c210
+X-MS-Exchange-CrossTenant-originalarrivaltime: 13 Aug 2020 14:32:51.0307
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: f7a17af6-1c5c-4a36-aa8b-f5be247aa4ba
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: 2MXgo+LRP87vC+wlpfccYp523tB2mkZrz6MLvDH+tpqT5OYgcUL3Z64EvZ/NMysfndGlOMsMgAFeaofJbOGxyw==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB7PR04MB4123
+
+SGVsbG8gb3BlblNVU0UhDQoNCm9uZSBvZiB0aGUgaXRlbXMgcmFpc2VkIG9uIHRoZSByZXRyb3Nw
+ZWN0aXZlKiB3YXMgYSBsYXJnZSBudW1iZXIgb2YNCm9wZW4gYnVncywgbm90IGp1c3QgZm9yIG9w
+ZW5TVVNFIExlYXAgMTUuMiBidXQgZm9yIG9wZW5TVVNFDQpEaXN0cmlidXRpb24gaW4gZ2VuZXJh
+bC4gVHJhY2tlZCBhcyANCmh0dHBzOi8vcHJvZ3Jlc3Mub3BlbnN1c2Uub3JnL2lzc3Vlcy83MDAw
+MCAuDQoNCkkgYWxyZWFkeSBoYWQgYSBkaXNjdXNzaW9uIHdpdGggT2xpdmVyIGFuZCBBbnRvbmlz
+IG9uIHRoaXMgdG9waWMgb24gdGhlDQpRdWFsaXR5IEFzc3VyYW5jZSBldmVudCB0aGF0IHRvb2sg
+cGxhY2UgbGFzdCBGcmlkYXkgaW4gU2Nod2VpZy4NCg0KSSdkIGxpa2UgdG8gc2hhcmUgd2l0aCB5
+b3UgdGhlIGlkZWEgb2YgYSByZWd1bGFyICJCdWcgc21hc2hpbmciDQptZWV0aW5ncy4gKEknZCBj
+YWxsIHRob3NlICJCdWcgdHJpYWdpbmciLCB0aG9zZSBtZWV0aW5nIHdpbGwgbm90IGdldA0KYnVn
+IGZpeGVkIGJ1dCBqdXN0IGFsbG93IHRvIHRyaWFnZSB0aGVtIHByb3Blcmx5LCBpZiBJIHVuZGVy
+c3RhbmQNCmNvcnJlY3RseSkNClRoZXNlIGh0dHBzOi8vbWVldC5vcGVuc3VzZS5vcmcgbWVldGlu
+Z3Mgd291bGQgZm9jdXMgb24gb3V0c3RhbmRpbmcNCmJ1Z3MgYW5kIHJlc3BlY3RpdmUgInByb2Js
+ZW1hdGljIGNvbXBvbmVudHMiIChlLmcuIE90aGVyIG9yIEJhc2UNCnN5c3RlbSkuIFdlJ2QgZm9j
+dXMgb24gb25lIEJ1Z3ppbGxhIGNvbXBvbmVudCBhdCBhIHRpbWUgYW5kIHdvdWxkIGdvDQp0aHJv
+dWdoIHRoZSByZXN1bHRzIG9mIHByZS1hZ3JlZWQgcXVlcmllcy4NCg0KSXQgY291bGQgYmUgbXVs
+dGlwbGUgc2hvcnQgKDIwIG1pbnMpIHNlc3Npb25zIHBlciB3ZWVrIEUuZy4gIkJhc2UNCnN5c3Rl
+bSIgQnVnIHNtYXNoaW5nIGV0Yy4gSSBkb24ndCBtaW5kIGxvdyBhdHRlbmRhbmNlIGJ1dCBoYXZp
+bmcgYW4NCm9wdGlvbiB0byBqb2luIGFuZCByYWlzZSBwYXJ0aWN1bGFyIGlzc3VlIGlzIHZlcnkg
+aW1wb3J0YW50IHRvIG1lLg0KDQpLZWVwIGluIG1pbmQgdGhhdCB0aGUgb3BlblNVU0UgUmVsZWFz
+ZSBUZWFtIGlzIHN1cHBvc2VkIHRvIGRvIHRoaXMNCiJvdmVyc2VlaW5nIiBhbnl3YXkuIEJ1dCBJ
+IHRoaW5rIHdlIGNhbiBiZSBhIGJpdCBtb3JlIHRyYW5zcGFyZW50IGFib3V0DQppdC4NCg0KVGhl
+IGlkZWEgaXMgdGhhdCBJJ2Qgc2hhcmUgc2NyZWVuIGdvIHRocm91Z2ggdGhlIGxpc3Qgb2YgYnVn
+cywgZmluZCBhbg0KYWdyZWVtZW50IG9uIHRoZSBuZXh0IHN0ZXBzLCBhbmQgdGhlbiB0aGUgcGVy
+c29uIHNoYXJpbmcgdGhlIHNjcmVlbg0KKHR5cGljYWxseSBSZWxlYXNlIFRlYW0gbWVtYmVyKSB3
+b3VsZCB3cml0ZSBhbiB1cGRhdGUgdG8gdGhlIGJ1Zy4gVGhpcw0Kd291bGQgdGhlbiBiZSBmb2xs
+b3dlZCBieSBzZW5kaW5nIGEgbm90aWZpY2F0aW9uIHRvIHRoZSBidWcgb3duZXIgb3INCmZpbmRp
+bmcgYSBuZXcgYnVnIG93bmVyIGluIGNhc2Ugb2Ygbm8gcmVzcG9uc2UuDQoNClRoZSBwdWJsaWMg
+YW5kIHZpcnR1YWwgbmF0dXJlIG9mIHNlc3Npb25zIHdvdWxkIGVuYWJsZSBwZW9wbGUgdG8gam9p
+bg0KYW5kIHJhaXNlIGF0dGVudGlvbiB0byB0aGUgYnVnIHRoYXQgbWlnaHQgYmUgbm90IGdldHRp
+bmcgZW5vdWdoDQphdHRlbnRpb24uDQoNClRoZSBnb2FsIHNob3VsZCBiZSBvbiBwcm9jZXNzaW5n
+IGJ1Z3MgaW4gYSB3YXkgdGhhdCB3ZSdyZSBhYmxlIHRvDQphY2hpZXZlIGEgZGVjZW50IHJlc3Bv
+bnNlIHRpbWUgYW5kIG5vdCBjYXVzZSBhIHBvdGVudGlhbCBkZWNyZWFzZSBpbg0KcXVhbGl0eSBv
+ciBjbG9zZSBidWdzIHRoYXQgbWlnaHQgcG90ZW50aWFsbHkgbGVhZCB0byBhIGRhdGEgbG9zcy4g
+V2UncmUNCm5vdCBkb2luZyB0aGlzIGZvciB0aGUgc2FrZSBvZiBiZXR0ZXItbG9va2luZyBzdGF0
+aXN0aWNzLCBidXQgdG8gaGF2ZSBhDQptb3JlIHN0YWJsZSBkaXN0cmlidXRpb24uDQoNClRoZSBw
+cmUtcmVxdWlzaXRlIGZvciB0aGlzIGlzIGFuIGFncmVlZCBwb2xpY3kgYWJvdXQgaG93IHRvIHRh
+Y2tsZSBidWdzDQpwcm9wZXJseS4gU28gd2UncmUgaGVscGluZyBpbnN0ZWFkIG9mIGNhdXNpbmcg
+aGFybS4NCg0KVGhlIHBvbGljeSBzaG91bGQgcHJvdmlkZSBhbnN3ZXJzIHRvIHRoZSBmb2xsb3dp
+bmcgcXVlc3Rpb25zOg0KV2hhdCBpcyBleHBlY3RlZCB0byBiZSB0cmFja2VkIGluIEJ1Z3ppbGxh
+IGFuZCB3aGVyZSB0byB0cmFjayBvdGhlcg0KcmVxdWVzdHMuIEUuZy4gdGhlIERvY3VtZW50YXRp
+b24gY29tcG9uZW50IGlzIGEgYml0IGNvbnRyb3ZlcnNpYWwgYXMgaXQNCmNvbnRhaW5zIHZhcmlv
+dXMgdHlwZXMgb2YgcmVxdWVzdHMuDQpDcml0ZXJpYSBmb3Iga2VlcGluZyBidWdzIG9wZW4gb3Ig
+Y2xvc2luZyB0aGVtLiAoYWthIGNsZWFudXAgdGhhdA0KaGVscHMpLiBFLmcuIHRoZSBkZWZpbml0
+aW9uIG9mIENMT1NFRC9JbnN1ZmZpY2llbnQgZGF0YSwgZG8gbm90IGNsb3NlDQppc3N1ZXMgdGhh
+dCBsZWFkIHRvIGRhdGEgbG9zcy4NCkFncmVlbWVudCBhYm91dCBzZXR0aW5nIHRoZSBwcmlvcml0
+eSBvbiBpc3N1ZXMsIHdobyBpcyBleHBlY3RlZCB0byBkbw0Kc28sIGFuZCB3aGF0IGl0IG1lYW5z
+IHRvIHRoZSBidWcgb3duZXIgYmUgaXQgU1VTRSBFbXBsb3llZSBvciBub3QuDQpUaGVyZSBhcmUg
+dHdvIHdheXMgaG93IHRvIHNlZSBwcmlvcml0eS4gSG93IG11Y2ggb2YgYW4gaXNzdWUgaXMgaXQg
+Zm9yDQpHaXZlbiByZWxlYXNlIChlLmcuIHJlbGVhc2UgY2FuJ3QgYmUgc2hpcHBlZCB3aXRoIG9w
+ZW4gUDEgb3IgUDApIGFuZA0KaG93IGJpZyBvZiBhIHByaW9yaXR5IGlzIGl0IHRvIHRoZSBidWcg
+b3duZXIuIFdlIG5lZWQgdG8gZmluZCBhbg0KYWdyZWVtZW50Lg0KQWdyZWVtZW50IGFib3V0IG93
+bmVyc2hpcCBvZiBidWdzLiBIb3cgZG9lcyB0aGUgc2NyZWVuaW5nIHRlYW0gZml0IGluDQphbmQg
+c28gb24gLi4uDQpBZ3JlZW1lbnQgaG93IHRvIHRyYWNrICdzZWVuJyBidWdzIFA1IHZzIENvbmZp
+cm1lZCBldGMuDQpBZ3JlZW1lbnQgb24gd2hvIGhhbmRsZXMgcmVndWxhciBwcm9jZXNzaW5nIG9m
+IGJ1Z3MgZm9yIHdoYXQgcHJvZHVjdChzKQ0KYW5kIHdoYXQgcmVsZWFzZXMvdmVyc2lvbnMuIA0K
+DQpUaGUgbGFzdCBvbmUgaXMgaW1wb3J0YW50IGFzIHRoZXJlIHNlZW1zIHRvIGJlIGEgYmlnIGRp
+ZmZlcmVuY2UgaW4NCm92ZXJzZWVpbmcgaXNzdWVzIGZvciB0aGUgY3VycmVudCByZWxlYXNlIGFu
+ZCByZWxlYXNlcyBpbiB0aGUNCm1haW50ZW5hbmNlIHBoYXNlLiBXaG8gc2hvdWxkIG92ZXJzZWUg
+bWFpbnRlbmFuY2UgdXBkYXRlcyBpcyBzdGlsbCBhbg0Kb3BlbiB0b3BpYyBhdCBsZWFzdCBmb3Ig
+U0xFLiBJJ2QgbGlrZSB0byBmaW5kIGFuIGFncmVlbWVudCB3aXRoIHRoZQ0Kb3BlblNVU0UgTWFp
+bnRlbmFuY2UgdGVhbSBhbmQgam9pbiBmb3JjZXMgdG8gYmUgbW9yZSBlZmZpY2llbnQgYXQgcHJl
+LQ0KYWdyZWVkIGJ1ZyBwcm9jZXNzaW5nLg0KDQoqKkxldCdzIHVzZSAgDQpodHRwczovL2V0aGVy
+cGFkLm9wZW5zdXNlLm9yZy9wL1JlbGVhc2VFbmdpbmVlcmluZy1idWctc21hc2hpbmctaWRlYXMt
+MjAyMDA4MTMNCmZvciBhIGJyYWluc3Rvcm0gYW5kIHJldmlzaXQgZG9jdW1lbnQgb24gbmV4dCB0
+aGUgbmV4dCBSZWxlYXNlDQpFbmdpbmVlcmluZyBtZWV0aW5nKiBvbiB0aGUgV2VkbmVzZGF5IDE5
+dGggQXVnKiouDQpNb3JlIGluZm8gYW5kIG1lZXRpbmcgZGV0YWlscyBhcmUgaW4gdGhlIGJyYWlu
+c3Rvcm0gZG9jdW1lbnQuDQoNClswXSBodHRwczovL2VuLm9wZW5zdXNlLm9yZy9Qb3J0YWw6MTUu
+Mi9SZXRyb3NwZWN0aXZlDQoNCg0KDQpCZXN0IHJlZ2FyZHMNCg0Kb3BlblNVU0UgUmVsZWFzZSB0
+ZWFtDQo=
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

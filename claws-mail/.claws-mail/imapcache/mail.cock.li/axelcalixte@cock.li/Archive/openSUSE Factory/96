@@ -1,0 +1,103 @@
+Return-Path: <opensuse-factory+bounces-95930-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id E92F882705; Mon,  3 Aug 2020 09:52:32 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.7 required=5.0 tests=BAYES_50,FREEMAIL_FROM,
+	MAILING_LIST_MULTI,RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,
+	RCVD_IN_MSPIKE_WL,RDNS_NONE,URIBL_BLOCKED shortcircuit=_SCTYPE_
+	autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 4BBA482478
+	for <axelcalixte@cock.li>; Mon,  3 Aug 2020 09:52:27 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id A97B3217C0
+	for <axelcalixte@cock.li>; Mon,  3 Aug 2020 09:52:26 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id D75B810E2C;
+	Mon,  3 Aug 2020 09:52:04 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id C8C7010E2C
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 09:52:04 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id 879102C15C
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 09:52:28 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id cB5qOJ7Yaadn for <opensuse-factory@lists5.opensuse.org>;
+	Mon,  3 Aug 2020 09:52:23 +0000 (UTC)
+Received: from mx1.suse.de (unknown [149.44.161.67])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 267012C15D
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 09:52:23 +0000 (UTC)
+Received: from vsmx009.vodafonemail.xion.oxcs.net (vsmx009.vodafonemail.xion.oxcs.net [153.92.174.87])
+	(using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mx1.suse.de (Postfix) with ESMTPS id 7093AAC77
+	for <opensuse-factory@opensuse.org>; Mon,  3 Aug 2020 09:52:03 +0000 (UTC)
+Received: from vsmx001.vodafonemail.xion.oxcs.net (unknown [192.168.75.191])
+	by mta-5-out.mta.xion.oxcs.net (Postfix) with ESMTP id 3BDB3159D421;
+	Mon,  3 Aug 2020 09:52:19 +0000 (UTC)
+Received: from cecilia.fritz.box (unknown [207.89.86.224])
+	by mta-5-out.mta.xion.oxcs.net (Postfix) with ESMTPA id 05FF8159CE8D;
+	Mon,  3 Aug 2020 09:52:14 +0000 (UTC)
+Subject: Re: [opensuse-factory] New Tumbleweed snapshot 20200801 released! -
+ update hangs on Plasma update tool
+To: opensuse-factory@opensuse.org
+References: <trinity-5317f446-6c6d-4d6e-8ddc-ae2bd32072f8-1596443488597@3c-app-gmx-bap18>
+From: Bjoern Voigt <bjoernv@arcor.de>
+Date: Mon, 3 Aug 2020 11:51:27 +0200
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+In-Reply-To: <trinity-5317f446-6c6d-4d6e-8ddc-ae2bd32072f8-1596443488597@3c-app-gmx-bap18>
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+Content-Language: en-US
+X-VADE-STATUS: LEGIT
+Message-Id: <20200803095219.3BDB3159D421@mta-5-out.mta.xion.oxcs.net>
+
+ub22@gmx.net wrote:
+> # ls -l / | grep home
+> lrwxrwxrwx   1 root root   11 Jun  4 21:50 home -> /home.server/
+> drwxr-xr-x   1 root root   52 Apr  4 10:39 home.local
+> drwxr-xr-x  10 root root 4096 Aug  1 12:36 home.server
+> # mount | grep home
+> /dev/nvme0n1p2 on /home.local type btrfs (rw,relatime,ssd,space_cache,subvolid=263,subvol=/@/home)
+> server:/home on /home.server type nfs4 (rw,relatime,vers=4.2,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=x.y.z.2,local_lock=none,addr=x.y.z.1)
+> server:/home/users on /home.server/users type nfs4 (rw,relatime,vers=4.2,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=x.y.z.2,local_lock=none,addr=x.y.z.1)
+> # cat /etc/fstab | grep home
+> UUID=123         /home.local             btrfs  subvol=/@/home                0  0
+> server:/home     /home.server            nfs    defaults                      0  0
+>
+>
+> Seams to be an issue with the linked /home (which I use to be able to use the device in my network with mounted /home from Server and stand alone).
+If you need a symlink home -> /home.server/ I would suggest to use a
+bind mount instead of a symlink. Two reasons:
+
+  * Many programs use files in $HOME and many of them could not deal
+    consistently with symlinks. For instance they write pathes like
+    /home.server/user/some-file1 and /home/user/some-file2 in config files.
+  * Bind mounts will not result in errors like you described. Offline
+    updates (from CDROM, ISO) may still be an issue. I haven't tested,
+    if the Installer uses the bind mounts from /etc/fstab.
+
+Greetings,
+Björn
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

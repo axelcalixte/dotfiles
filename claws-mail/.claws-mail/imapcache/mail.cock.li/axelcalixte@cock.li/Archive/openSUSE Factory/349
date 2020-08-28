@@ -1,0 +1,127 @@
+Return-Path: <opensuse-factory+bounces-96196-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id C3AE381D6F; Thu, 27 Aug 2020 11:42:58 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.7 required=5.0 tests=BAYES_00,DKIM_SIGNED,
+	MAILING_LIST_MULTI,RCVD_IN_DNSWL_LOW,RDNS_NONE,T_DKIM_INVALID,
+	T_TVD_MIME_EPI,URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled
+	version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id 0BD9D823A8
+	for <axelcalixte@cock.li>; Thu, 27 Aug 2020 11:42:54 +0000 (UTC)
+Authentication-Results: mx1.cock.li;
+	dkim=fail reason="signature verification failed" (2048-bit key; unprotected) header.d=aepfle.de header.i=@aepfle.de header.b="obUw0sA3";
+	dkim-atps=neutral
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 468D22184C
+	for <axelcalixte@cock.li>; Thu, 27 Aug 2020 11:42:53 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 283A610E52;
+	Thu, 27 Aug 2020 11:42:53 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from mx2.opensuse.org (unknown [192.168.47.96])
+	by lists5.opensuse.org (Postfix) with ESMTP id 2017010E52
+	for <opensuse-factory@lists5.opensuse.org>; Thu, 27 Aug 2020 11:42:53 +0000 (UTC)
+Received: from mx2.opensuse.org (localhost [127.0.0.1])
+	by mx2.opensuse.org (Postfix) with ESMTP id 7396D70A;
+	Thu, 27 Aug 2020 11:42:51 +0000 (UTC)
+Received: from mo4-p00-ob.smtp.rzone.de (mo4-p00-ob.smtp.rzone.de [81.169.146.217])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange ECDHE (P-256) server-signature ECDSA (P-384) server-digest SHA384)
+	(No client certificate requested)
+	by mx2.opensuse.org (Postfix) with ESMTPS;
+	Thu, 27 Aug 2020 11:42:51 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; t=1598528571;
+	s=strato-dkim-0002; d=aepfle.de;
+	h=References:In-Reply-To:Message-ID:Subject:Cc:To:From:Date:
+	X-RZG-CLASS-ID:X-RZG-AUTH:From:Subject:Sender;
+	bh=1WOdYrUMtbxtmG3PvGkkNsLKCakFxcESePnKWkzS2nY=;
+	b=obUw0sA3ydXzUYjosAUcqUbtLGsfvt2Jgemcma2BxWwkfSL6KZ6u9BQxqxM0bdAAiq
+	1RXgLhPUO8gVd+ykQaUNWB+siKLfX3ZVOJ8GBJTLocVm9tres6ht1z0czoUEKsOLpCXM
+	cZRbXrJd4xxgKfHNlzmePyYnSdrPXc9z+qzTi6b3M0kTWG0Sjgbx0Gw25JNHFVziYxTK
+	l5626AiZ/CcPgF/nmv/l2PXbwHpCMexrzAbqCZHgcZxrImL3jADyd+GbfnvxPHWsaZQL
+	dOqvwSGz28KoAt1/xe5HkVKp4lw6ypQNV3wR44wkpRrCwTIIo1lEo0DVcg0zi8+xy8NT
+	lzhA==
+X-RZG-AUTH: ":P2EQZWCpfu+qG7CngxMFH1J+3q8wa/QLpd5ylWvMDXdoX8l8pYAcz5OTWe6X"
+X-RZG-CLASS-ID: mo00
+Received: from sender
+	by smtp.strato.de (RZmta 46.10.7 DYNA|AUTH)
+	with ESMTPSA id 60ad29w7RBgpXIi
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256 bits))
+	(Client did not present a certificate);
+	Thu, 27 Aug 2020 13:42:51 +0200 (CEST)
+Date: Thu, 27 Aug 2020 13:42:44 +0200
+From: Olaf Hering <olaf@aepfle.de>
+To: "Dominique Leuenberger / DimStar" <dimstar@opensuse.org>
+Cc: Neal Gompa <ngompa13@gmail.com>, opensuse-factory
+ <opensuse-factory@opensuse.org>
+Subject: Re: Python 3 packaging change (was: [opensuse-factory] Tumbleweed -
+ Review of the week 2020/29)
+Message-ID: <20200827134244.1705180e.olaf@aepfle.de>
+In-Reply-To: <CAEg-Je_YfmajGeecvyFyYG0YMudBgp=jXUO9-LiWfeLZO31THg@mail.gmail.com>
+References: <CAEg-Je_YfmajGeecvyFyYG0YMudBgp=jXUO9-LiWfeLZO31THg@mail.gmail.com>
+X-Mailer: Claws Mail 2020.07.13 (GTK+ 2.24.32; x86_64-suse-linux-gnu)
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha256;
+ boundary="Sig_/J1auF0NzoCxe8=7N.mNbPLz"; protocol="application/pgp-signature"
+
+--Sig_/J1auF0NzoCxe8=7N.mNbPLz
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: quoted-printable
+
+Am Fri, 17 Jul 2020 10:44:58 -0400
+schrieb Neal Gompa <ngompa13@gmail.com>:
+
+> We still have a concept of a *default* Python version and things will jus=
+t *work* that way?
+
+Do we plan to have one? If yes: who is maintaining the result of this decis=
+ion?
+
+Current failure in "openSUSE:Tumbleweed": have choice for python > 3.0: pyt=
+hon36 python38 python39
+
+I think this has to be handled in the prjconf of the base prj.
+
+
+Olaf
+
+--Sig_/J1auF0NzoCxe8=7N.mNbPLz
+Content-Type: application/pgp-signature
+Content-Description: Digitale Signatur von OpenPGP
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEE97o7Um30LT3B+5b/86SN7mm1DoAFAl9HnDQACgkQ86SN7mm1
+DoA88g/9Fdcf0nU+fFB9BKRoZ4x2poBcEU15+F+K1Yx9J39fKEjO/kqcLhkH9RP5
+IdpSdgP8h8mwEc7TzrbixymRaT2cqlrR0KPQqrnK9trQG9eUbWfdo4HgvB69Z1BN
+IxIK+mwDWSpPlY4IDMTRqjhaqWweAGaq2bnevo00hHG+ihmPak7KVkOWHKl+tbs5
+AqJJnvZdzka9ttE0FwHe35HPh6O893lGwVDK6fnxCcH5qnX9AcCh9sjO5UC4fAZt
+pB94AC+OxUeCG6f4rj33Jx2p0tq0xUuRPq5qmCNE+GYmKh+GVbGFnGewYT4x3mY9
+GQVERCioBrEciLlDy6teDqrVE/tiXR0FzJKbjSKxOxWYHAtXHCbQ3VGI0r/YeWdz
+dNrPuTANIO+TrJbyNyVRiEDYsn3aXsBl0sKtdrgtVZzQYIO6Hcex9pIpB98Ksc1v
+S+Xyt+6Ipns2eatQt99A6KqOJu+T+bvwb2bTJLFNwHoJMoUu5S2YJ2Z6gt4Lz7nt
+0r57yDb30VBQsNuvTgM5qG1s8A4mwq0UKG0HvtBEHXTFGoFaQSu6W0cSnTpqVLhR
+9SDWBkru+paTMPl6dsmTRhqJ52wTFcRFiqGYdbyo9jpzUYmph1HYvv3lPR9Fp72X
+31wGaitA4pquOx5YgYxnsUv68+x86EtgWKxZrXUPb7/lupcEybk=
+=TjLg
+-----END PGP SIGNATURE-----
+
+--Sig_/J1auF0NzoCxe8=7N.mNbPLz--
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

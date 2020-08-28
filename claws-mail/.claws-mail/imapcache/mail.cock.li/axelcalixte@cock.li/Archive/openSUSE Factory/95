@@ -1,0 +1,150 @@
+Return-Path: <opensuse-factory+bounces-95929-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id D0625826E9; Mon,  3 Aug 2020 09:43:05 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=5.0 tests=BAYES_05,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,RDNS_NONE,
+	T_TVD_MIME_EPI shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id CA9B782613
+	for <axelcalixte@cock.li>; Mon,  3 Aug 2020 09:42:59 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 21D72216F4
+	for <axelcalixte@cock.li>; Mon,  3 Aug 2020 09:42:59 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 2FF9010E2C;
+	Mon,  3 Aug 2020 09:42:37 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 1258B10E2C
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 09:42:37 +0000 (UTC)
+Received: from relay2.suse.de (localhost [127.0.0.1])
+	by relay2.suse.de (Postfix) with ESMTP id C2AE52C499
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 09:43:00 +0000 (UTC)
+X-Virus-Scanned: by amavisd-new at relay2.suse.de
+Received: from relay2.suse.de ([127.0.0.1])
+	by relay2.suse.de (relay2.suse.de [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id SZfR9OeZGk7Y for <opensuse-factory@lists5.opensuse.org>;
+	Mon,  3 Aug 2020 09:42:55 +0000 (UTC)
+Received: from mx1.suse.de (unknown [149.44.161.67])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id 084972C16F
+	for <opensuse-factory@lists5.opensuse.org>; Mon,  3 Aug 2020 09:42:54 +0000 (UTC)
+Received: from mailout07.t-online.de (mailout07.t-online.de [194.25.134.83])
+	(using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mx1.suse.de (Postfix) with ESMTPS id 52811AD90
+	for <opensuse-factory@opensuse.org>; Mon,  3 Aug 2020 09:42:31 +0000 (UTC)
+Received: from fwd27.aul.t-online.de (fwd27.aul.t-online.de [172.20.26.132])
+	by mailout07.t-online.de (Postfix) with SMTP id 125434278A87
+	for <opensuse-factory@opensuse.org>; Mon,  3 Aug 2020 11:42:48 +0200 (CEST)
+Received: from mailhost.hollstein.homelinux.org (bjUhLGZrZhXRygmEvHRlTeGyHPcb96mmO1pxed3rse8cpo55SGl4xXgpr++BPI4g-V@[93.118.31.12]) by fwd27.t-online.de
+	with (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384 encrypted)
+	esmtp id 1k2WzW-3Kdhdw0; Mon, 3 Aug 2020 11:42:46 +0200
+Received: from saturn.hollstein.homelinux.org (saturn.hollstein.homelinux.org [192.168.17.11])
+	by mailhost.hollstein.homelinux.org (Postfix) with ESMTP id 4531C3544660
+	for <opensuse-factory@opensuse.org>; Mon,  3 Aug 2020 11:42:46 +0200 (CEST)
+Received: by saturn.hollstein.homelinux.org (Postfix, from userid 1000)
+	id 3A24320B89EB; Mon,  3 Aug 2020 11:42:46 +0200 (CEST)
+Date: Mon, 3 Aug 2020 11:42:46 +0200
+From: Manfred Hollstein <mhollstein@t-online.de>
+To: opensuse-factory@opensuse.org
+Subject: Re: update hangs on Plasma update tool ([opensuse-factory] New
+ Tumbleweed snapshot 20200801)
+Message-ID: <20200803094246.GA7499@saturn.hollstein.homelinux.org>
+Mail-Followup-To: Manfred Hollstein <mhollstein@t-online.de>,
+	opensuse-factory@opensuse.org
+References: <trinity-5317f446-6c6d-4d6e-8ddc-ae2bd32072f8-1596443488597@3c-app-gmx-bap18>
+ <nycvar.YFH.7.77.849.2008031045490.14142@n3.vanv.qr>
+ <11015074.tJN8lJgSeD@xrated>
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha256;
+	protocol="application/pgp-signature"; boundary="jRHKVT23PllUwdXP"
+Content-Disposition: inline
+In-Reply-To: <11015074.tJN8lJgSeD@xrated>
+User-Agent: Mutt/1.10.1 (2018-07-13)
+X-ID: bjUhLGZrZhXRygmEvHRlTeGyHPcb96mmO1pxed3rse8cpo55SGl4xXgpr++BPI4g-V
+X-TOI-EXPURGATEID: 150726::1596447766-0000CED0-D8CF0ABE/0/0 CLEAN NORMAL
+X-TOI-MSGID: 966ca685-7afc-438b-886a-63f16d122ccd
+
+
+--jRHKVT23PllUwdXP
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Mon, 03 Aug 2020, 11:16:24 +0200, Hans-Peter Jansen wrote:
+> Am Montag, 3. August 2020, 10:46:50 CEST schrieb Jan Engelhardt:
+> > On Monday 2020-08-03 10:31, ub22@gmx.net wrote:
+> > >If I start the update on plasma update tool, it stops/hangs.
+> > >
+> > >Subprocess failed. Error: RPM failed: error: unpacking of archive fail=
+ed on
+> > >file /home: cpio: chmod failed - No such file or directory error:
+> > >filesystem-15.5-30.1.x86_64: install failed
+> > >error: filesystem-15.5-29.2.x86_64: erase skipped
+> > >
+> > ># ls -l / | grep home
+> > >lrwxrwxrwx   1 root root   11 Jun  4 21:50 home -> /home.server/
+> >=20
+> > Isn't this the historic problem of rpm having been unable to deal with
+> > from-symlink and to-symlink changes.. (after all, it is trying
+> > to update/replace it with a drwx /home)
+>=20
+> ..along with the from-dir to-file and vice versa.=20
+>=20
+> Considering, that we all get bitten by it from time to time, question is,=
+ why=20
+> rpm refrains from solving this annoyance?
+>=20
+> Another question is, if packages should touch /home at all?
+
+I'd rather ask why people don't add a proper entry to their /etc/fstab?
+This way, everything would be OK from rpm's point of view:
+
+  /home.server	/home	none  bind  0 0
+
+Cheers.
+
+l8er
+manfred
+
+--jRHKVT23PllUwdXP
+Content-Type: application/pgp-signature; name="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAABCAAdFiEEYi2tNR04t+DbYB/qr3aTLzTrAekFAl8n3BYACgkQr3aTLzTr
+AemwMw//bvK9qzFx4365GXau75Cdtx+nTSjr8HbhCyVnVx0BNyPJ8j3iCjNGGXOX
+DKn4LCCEyMBq4+hW8yt+vzQqJjcO5gLIvnQFfplARrPxTOMOiKPhPa6bciUN3Co7
+MliyYFNx7FqYq6H2H3oeWfWv0fUhIiSCuuMd4DjEmAtkRh9JeCTcx8B5CBHmmyzv
+2bbPqxwHKRC8DKeMyzSz23n9aKpsJLK8D5VS2tk+HrR/CJdAjndz/cg2yC2grfih
+BZDhPgqcglaU9y+1A/oSBdJ2rBaeK6h1mYS7Fw+HVlrba8uyj9K6s1kl9QkCvNsW
+TAa2qQfVFsD7RwmAU0TDZflyY+GnA03yStnugh3AJHY6Dw5WkbehRK2EOXYC2zuQ
+JmMV+H4snWMXWE2QCqNC3djeRSoYCDQYAZLIBKH3yMLAy5ejK4D83Y9mlOr1haQ2
+5Uc+2dWW9FrZ1x7zQZD1W66eihm8qyQ85Ly8bR3xWdbd3zMSHRtrwWRVXFe+VEIX
+7lNRpjWfSL1WqrgfhTMfk+Oi30YDS+U3cZkHzaeNpgO+D9XGeoIlN7FsL3o0UP4Y
+ninzo7/nKqZ6Lz4eGhZovL4yOn06QdO97eA7qT+GJcEQXKsMgnKkPNPmZbvPIz5o
+nhNZtWQcaK1PRJyhRMjXDoCUtHUI1WGYiS+TfmBqAYekNXmkASw=
+=tuhz
+-----END PGP SIGNATURE-----
+
+--jRHKVT23PllUwdXP--
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

@@ -1,0 +1,96 @@
+Return-Path: <opensuse-factory+bounces-96147-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 5A47482581; Tue, 25 Aug 2020 17:13:54 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.5 required=5.0 tests=BAYES_20,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,RDNS_NONE,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 3F61082767
+	for <axelcalixte@cock.li>; Tue, 25 Aug 2020 17:13:48 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 7F9EA20CDF
+	for <axelcalixte@cock.li>; Tue, 25 Aug 2020 17:13:47 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 5B77811B1B;
+	Tue, 25 Aug 2020 17:13:47 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from mx1.opensuse.org (unknown [192.168.47.95])
+	by lists5.opensuse.org (Postfix) with ESMTP id 4ECB811B1B
+	for <opensuse-factory@lists5.opensuse.org>; Tue, 25 Aug 2020 17:13:47 +0000 (UTC)
+Received: from mx1.opensuse.org (localhost [127.0.0.1])
+	by mx1.opensuse.org (Postfix) with ESMTP id 6FF473EDC
+	for <opensuse-factory@opensuse.org>; Tue, 25 Aug 2020 17:13:46 +0000 (UTC)
+Received: from mout.kundenserver.de (mout.kundenserver.de [212.227.17.24])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange ECDHE (P-256) server-signature RSA-PSS (4096 bits) server-digest SHA256)
+	(No client certificate requested)
+	by mx1.opensuse.org (Postfix) with ESMTPS
+	for <opensuse-factory@opensuse.org>; Tue, 25 Aug 2020 17:13:46 +0000 (UTC)
+Received: from 'smile.earth' ([95.88.238.127]) by mrelayeu.kundenserver.de
+ (mreue106 [212.227.15.183]) with ESMTPSA (Nemesis) id
+ 1MdeOl-1kjgHg47EX-00ZgyC for <opensuse-factory@opensuse.org>; Tue, 25 Aug
+ 2020 19:13:46 +0200
+X-Virus-Scanned: amavisd at 'smile.earth'
+From: Hans-Peter Jansen <hpj@urpla.net>
+To: opensuse-factory@opensuse.org
+Subject: [opensuse-factory] Virtualbox for TW
+Date: Tue, 25 Aug 2020 19:13:44 +0200
+Message-ID: <3135642.ubgr4unnOM@xrated>
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7Bit
+Content-Type: text/plain; charset="us-ascii"
+X-Provags-ID: V03:K1:fPMC+ImuVZu5qUkSMfj1+224pnLoXXhLP/yl3/T0mk5WYcvidKF
+ lQ48+W958ogIZWlQGpd47uvQB8qGrgYemoJ6ouRC0KwKsmEjg+KGZhNQ2o7/e4V+ArNEBSp
+ xD1Jr23o+IYK1v7PPhEb06Q9cpnTGNIx9IF4/rV6flIkLzX/VfaUYkHlEwgkKA6uAfHF6RC
+ OJmUqKW53u6wfFuuLb49w==
+X-UI-Out-Filterresults: notjunk:1;V03:K0:mN1omQKiysc=:Ek1whkoRJqaxDaSPgIkfCK
+ /aDJ9KPMeC0CLgzcL+tAnyl/qtyG7HhJjR8/HTSJFp/JOY1ItZD5VIuc6RxG3uAeuwCs1BTwq
+ SxxKJJoX5+PclEVsgpgbOnwUwL5/Zk1Li36eIWR7HlqVmWdTtPpagJvZ4asMAxiYSJLkOqUdA
+ k3rBTSWFc8rJLuySRf2TT7PqLb3H3/4+j5CjLMeDUOgtM/ECnQJrwzWz4dzmEPD/cUbDRYlVp
+ C4XImC/0mzjhTfJAZd1IZwUCdyA45cVipm83ij6fnU3q1t2A42+lh0y77Wp+HBynwsLwgrC5y
+ R0E/k9P7+4ba+kd6Fobqg4wlNFNs9Zd9jg6LFlo9/y5YcHzm5t0p0JoN4NmykEXIt+7su/RWm
+ topAIfZS/fofp+yG6EmWX/tUlEThT8e/wY+fuIeXYzrZu8t/KJj/cds6LYTHyuw46LeFNl0HT
+ aUXMo/12KfYZWL90SrI3cT2uf/t7HnGaJMZnzilMdbZRuu53bxmvZOv2F9OqDVLvDs0Db7SDr
+ KWIKQthwmefPCetY1TpdVXVbUXFOWQqALzuWPdY67k5xi7+HQVI3hJbcZRyTIS9wk89JlLRzk
+ CSFpsgS/9tHAEb6rHETKjmLbUbCsfqVUGgqLq2Kt7CTbdHcPelluViu5GJ4AgvpZY3EMBYagH
+ cIyrUkC/6WVSPpvgWoIG0lXHFcBLouT6EqGzJBOiKgafGKdtCNf1py/ulzH2wMRlk0O/XpTh7
+ atNfxi6OrEff0uY/NtNlJi6vc+j+K9qcbGmw9QPeBBwzGuUQlGbRRV2yuSDKLDAf31IR6QTHV
+ bcuYh5Q5jlI+JYfCllZsu6qONvGkb9zEBJv06gJsqHLEWL2ardaFu6TQT6PyCcMKi0zMCqO
+
+Hi,
+
+FYI: Virtualbox 6.1.97, fetched from SVN, and built here:
+https://build.opensuse.org/package/show/home:frispete:kernel/virtualbox
+does work including USB-{2,3} support, given the extpack r140056 from 
+https://www.virtualbox.org/wiki/Testbuilds is installed properly.
+
+No kernel patching nor driver patching necessary. 
+Well, internally, I'm using (an unpatched) kernel 5.8.3 from stable tree, but 
+apart from USB-{2,3} support, that was missing due to an extpack mismatch, 
+this was tested with 5.8.0 as well.
+
+If some of you guys are using this, please give feedback.
+I found Klaus Espenlaub from Oracle pretty responsive in this issue.
+
+An official release will take some more time due to some other issues.
+
+Cheers,
+Pete
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

@@ -1,0 +1,189 @@
+Return-Path: <010101741a21419f-d8716dc0-1404-4b24-ac54-bff99213f311-000000@bounce-west.twitch.tv>
+Delivered-To: axelcalixte@disroot.org
+Received: from localhost (localhost [127.0.0.1])
+	by disroot.org (Postfix) with ESMTP id 8AD08529A1
+	for <axelcalixte@disroot.org>; Sun, 23 Aug 2020 09:03:45 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at disroot.org
+Received: from knopi.disroot.org ([127.0.0.1])
+	by localhost (disroot.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id ZZCkQCu5E39k for <axelcalixte@disroot.org>;
+	Sun, 23 Aug 2020 09:03:44 +0200 (CEST)
+Received: from a26-76.smtp-out.us-west-2.amazonses.com (a26-76.smtp-out.us-west-2.amazonses.com [54.240.26.76])
+	by disroot.org (Postfix) with ESMTPS id 94A514005C
+	for <axelcalixte@disroot.org>; Sun, 23 Aug 2020 09:03:43 +0200 (CEST)
+Authentication-Results: disroot.org;
+	dkim=pass (1024-bit key; unprotected) header.d=twitch.tv header.i=@twitch.tv header.b="jb5pRa6+";
+	dkim=pass (1024-bit key; unprotected) header.d=amazonses.com header.i=@amazonses.com header.b="BUnOQkXo";
+	dkim-atps=neutral
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=dh6r6vaod6penm5x6ufsnymrqcq2rt3a; d=twitch.tv; t=1598166221;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date;
+	bh=D8hW8YIxkc3HZ9/DH8viFrdkJQHzwN9iQvtZAUgTlHw=;
+	b=jb5pRa6+D1AmS3pcCZyfbuYz9mX0RJwURz2c9xQl/PRjqGr9USpToRfJLUwjDp55
+	utT5uCKpAolPGOvGuBvOyNBLp7WhHoU7yrAc+3iJu3V5Hxr8mnj/yqGgKCxG1fCYW8Z
+	a8+dQzY2COqiVgBPAcMW5IEsSKJ4vF69n373TQ34=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1598166221;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date:Feedback-ID;
+	bh=D8hW8YIxkc3HZ9/DH8viFrdkJQHzwN9iQvtZAUgTlHw=;
+	b=BUnOQkXoYCAkrcmU9H5ZZmKShpNot2SKgEZIY5PaEEO+CV92zSfCN8D0MJRAcGNw
+	g5JJ2qPWEF2NQh/FzyFZZtQkfuNUiZY0bP0FF0DQ6DOjAmSyVQFvJ+9JMEZsEvHiVqF
+	qwMAQE+TyAuBjgIX6KdyBezT3ZrIoY2D80UBDKgs=
+From: Twitch <no-reply@twitch.tv>
+To: axelcalixte@disroot.org
+Subject: =?UTF-8?Q?Connexion_r=C3=A9ussie_=C3=A0_votre_compte_Twitch?=
+Mime-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <010101741a21419f-d8716dc0-1404-4b24-ac54-bff99213f311-000000@us-west-2.amazonses.com>
+Date: Sun, 23 Aug 2020 07:03:41 +0000
+X-SES-Outgoing: 2020.08.23-54.240.26.76
+Feedback-ID: 1.us-west-2.6if1qLlyPRc8dOFaAhyZ7qPPGGxp441EVJenuzKlcvQ=:AmazonSES
+
+<!doctype html><html xmlns=3Dhttp://www.w3.org/1999/xhtml style=3D"backgrou=
+nd-color: #efeef1"><base target=3D=E2=80=9C_blank=E2=80=9D><meta charset=3D=
+utf-8><meta name=3Dviewport content=3D"width=3Ddevice-width"><body style=3D=
+"background-color:#eee;background-image:none;background-repeat:repeat;backg=
+round-position:top left;background-attachment:scroll;color:#333;font-family=
+:Helvetica, Arial, sans-serif;line-height:1.25;-webkit-text-size-adjust:100=
+%;"><div class=3Dpreview-text style=3D"color: #333333; display: none; font-=
+size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; o=
+verflow: hidden;"></div><meta charset=3Dutf-8><meta name=3Dviewport content=
+=3D"width=3Ddevice-width"><table border=3D0 cellpadding=3D0 cellspacing=3D0=
+ height=3D100% width=3D100% class=3Dbody-table><tbody><tr><td align=3Dcente=
+r valign=3Dtop><table border=3D0 cellpadding=3D20 cellspacing=3D0 width=3D6=
+00 class=3Douter-email-container><tbody><tr><td align=3Dcenter valign=3Dtop=
+><table border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D100% class=3Dinn=
+er-email-container style=3D"background-color:#fff;background-image:none;bac=
+kground-repeat:repeat;background-position:top left;background-attachment:sc=
+roll;"><tbody><tr><td align=3Dcenter valign=3Dtop><table border=3D0 cellpad=
+ding=3D0 cellspacing=3D0 height=3D90 width=3D100% class=3Demail-logo style=
+=3D"background-color:#fff;background-image:none;background-repeat:repeat;ba=
+ckground-position:top left;background-attachment:scroll;"><tbody><tr><td al=
+ign=3Dcenter valign=3Dmiddle><a href=3D"https://www.twitch.tv/r/e/eyJsb2Nhd=
+GlvbiI6ImxvZ28iLCJlbWFpbF9pZCI6IjZkY2FmMGRhLTc0MjItNDE2YS1iNjM1LWY5ZTE2YWE1=
+YjE0YyIsIm5hbWUiOiJuZXdfY2xpZW50X2xvZ2luIiwiY3RhX3ZhbHVlIjoiIn0=3D/11256658=
+9/718674d16e322652e74d3c7bba17a7c7c9f2365f?ignore_query=3Dtrue&amp;tt_conte=
+nt=3Dnew_client_login&amp;tt_email_id=3D6dcaf0da-7422-416a-b635-f9e16aa5b14=
+c&amp;tt_medium=3Demail"><img src=3Dhttps://static-cdn.jtvnw.net/growth-ass=
+ets/email_twitch_logo_uv width=3D114 height=3D38 alt=3DTwitch></a></table><=
+tr><td align=3Dcenter valign=3Dtop><table border=3D0 cellpadding=3D0 cellsp=
+acing=3D0 height=3D1 width=3D100% class=3Demail-divider><tbody><tr><td alig=
+n=3Dcenter valign=3Dmiddle style=3D"background-color: #eeeeee" width=3D249>=
+<td align=3Dcenter valign=3Dmiddle style=3D"background-color: #9147ff" widt=
+h=3D102><td align=3Dcenter valign=3Dmiddle style=3D"background-color: #eeee=
+ee" width=3D249></table><tr><td align=3Dcenter valign=3Dtop><table border=
+=3D0 cellpadding=3D0 cellspacing=3D0 height=3D1 width=3D100% class=3Demail-=
+header><tbody><tr><td align=3Dcenter valign=3Dmiddle><div class=3Dheader-me=
+ssage style=3D"text-align: center;padding: 20px 0 20px 0;font-size: 20px;li=
+ne-height: 1.5;width: 80%;"><b>Connexion r=C3=A9ussie =C3=A0 votre compte T=
+witch</b></div></table><tr><td align=3Dcenter valign=3Dtop><table border=3D=
+0 cellpadding=3D1 cellspacing=3D0 height=3D0 width=3D100% class=3Demail-bod=
+y><tbody><tr><td align=3Dcenter valign=3Dmiddle><div class=3Dheader-message=
+ style=3D"text-align: left;padding: 0 0 20px 0;font-size: 14px;line-height:=
+ 1.5;width: 80%;">Bonjour LCT_Kine,</div><tr><td align=3Dcenter valign=3Dmi=
+ddle><div class=3Dheader-message style=3D"text-align: left;padding: 0 0 20p=
+x 0;font-size: 14px;line-height: 1.5;width: 80%;">Cet e-mail a =C3=A9t=C3=
+=A9 cr=C3=A9=C3=A9 car une nouvelle connexion au compte <b>LCT_Kine</b> a =
+=C3=A9t=C3=A9 =C3=A9tablie le 23 ao=C3=BBt 2020 00:03:00 PDT (23 ao=C3=BBt =
+2020 07:03:00 UTC) depuis=C2=A0:</div><tr><td align=3Dcenter valign=3Dmiddl=
+e><div class=3Dheader-message style=3D"text-align: left;padding: 0 0 20px 0=
+;font-size: 14px;line-height: 1.5;width: 80%;"><ul style=3Dlist-style-type:=
+none;><li><b>Lieu=C2=A0:</b> Troyes, Grand Est, France<li><b>Appareil=C2=A0=
+:</b> Linux<li><b>Navigateur=C2=A0:</b> Safari<li><b>Adresse IP=C2=A0:</b> =
+90.54.189.4</ul></div><tr><td align=3Dcenter valign=3Dmiddle><div class=3Dh=
+eader-message style=3D"text-align: left;padding: 0 0 20px 0;font-size: 14px=
+;line-height: 1.5;width: 80%;">Si vous =C3=AAtes =C3=A0 l&#39;origine de ce=
+tte connexion, pas de probl=C3=A8me=C2=A0! Nous voulions juste v=C3=A9rifie=
+r qu&#39;il s&#39;agissait de vous.</div><div class=3Dheader-message style=
+=3D"text-align: left;padding: 0 0 20px 0;font-size: 14px;line-height: 1.5;w=
+idth: 80%;">Si vous n&#39;=C3=AAtes pas =C3=A0 l&#39;origine de cette conne=
+xion, vous devez imm=C3=A9diatement <a href=3D"https://www.twitch.tv/r/e/ey=
+Jsb2NhdGlvbiI6InNlY3VyaXR5X2xpbmsiLCJlbWFpbF9pZCI6IjZkY2FmMGRhLTc0MjItNDE2Y=
+S1iNjM1LWY5ZTE2YWE1YjE0YyIsIm5hbWUiOiJuZXdfY2xpZW50X2xvZ2luIiwiY3RhX3ZhbHVl=
+IjoiIn0=3D/112566589/7952154db578ec061d34b1d9a6e97a66aaaa3fab/settings/secu=
+rity?ignore_query=3Dtrue&amp;tt_content=3Dnew_client_login&amp;tt_email_id=
+=3D6dcaf0da-7422-416a-b635-f9e16aa5b14c&amp;tt_medium=3Demail">changer votr=
+e mot de passe sur Twitch</a> pour assurer la s=C3=A9curit=C3=A9 de votre c=
+ompte.</div><div class=3Dheader-message style=3D"text-align: left;padding: =
+0 0 20px 0;font-size: 14px;line-height: 1.5;width: 80%;">Nous vous <b>recom=
+mandons fortement</b> d&#39;activer la double authentification, si ce n&#39=
+;est pas d=C3=A9j=C3=A0 fait. Nous vous encourageons aussi =C3=A0 recevoir =
+vos codes de s=C3=A9curit=C3=A9 sur l&#39;application Authy. Cela vous aide=
+ra =C3=A0 =C3=A9conomiser des co=C3=BBts de SMS, mais c&#39;est =C3=A9galem=
+ent la m=C3=A9thode la plus s=C3=BBre pour recevoir vos codes de s=C3=A9cur=
+it=C3=A9, car les SMS peuvent =C3=AAtre intercept=C3=A9s.</div><tr><td alig=
+n=3Dcenter valign=3Dmiddle><div class=3Dheader-message style=3D"text-align:=
+ left;padding: 0 0 20px 0;font-size: 14px;line-height: 1.5;width: 80%;"><b>=
+Comment activer la double authentification=C2=A0:</b><ul style=3Dlist-style=
+-type:disc;><li>Allez sur <a href=3D"https://www.twitch.tv/r/e/eyJsb2NhdGlv=
+biI6InNlY3VyaXR5X2xpbmsiLCJlbWFpbF9pZCI6IjZkY2FmMGRhLTc0MjItNDE2YS1iNjM1LWY=
+5ZTE2YWE1YjE0YyIsIm5hbWUiOiJuZXdfY2xpZW50X2xvZ2luIiwiY3RhX3ZhbHVlIjoiIn0=3D=
+/112566589/7952154db578ec061d34b1d9a6e97a66aaaa3fab/settings/security?ignor=
+e_query=3Dtrue&amp;tt_content=3Dnew_client_login&amp;tt_email_id=3D6dcaf0da=
+-7422-416a-b635-f9e16aa5b14c&amp;tt_medium=3Demail">https://www.twitch.tv/s=
+ettings/security</a><li>Cliquez sur =C2=AB=C2=A0Configurer la double authen=
+tification=C2=A0=C2=BB<li>Saisissez votre num=C3=A9ro de t=C3=A9l=C3=A9phon=
+e.<li>Vous recevrez un SMS contenant votre code de s=C3=A9curit=C3=A9</ul><=
+/div><tr><td align=3Dcenter valign=3Dmiddle><div class=3Dheader-message sty=
+le=3D"text-align: left;padding: 0 0 20px 0;font-size: 14px;line-height: 1.5=
+;width: 80%;">Pour en savoir plus, consultez <a href=3D"https://www.twitch.=
+tv/r/e/eyJsb2NhdGlvbiI6InNlY3VyaXR5X3N1cHBvcnRfbGluayIsImVtYWlsX2lkIjoiNmRj=
+YWYwZGEtNzQyMi00MTZhLWI2MzUtZjllMTZhYTViMTRjIiwibmFtZSI6Im5ld19jbGllbnRfbG9=
+naW4iLCJjdGFfdmFsdWUiOiIifQ=3D=3D/112566589/5eb278640f322d833b44aaa80975cd5=
+ddd299ca9/legacyPath?custom_domain_target_url=3Dhttps%3A%2F%2Fhelp.twitch.t=
+v%2Fs%2Farticle%2Faccount-hacked%3Flanguage%3Dfr">cette page d&#39;assistan=
+ce</a> expliquant ce que vous devez faire si vous pensez que votre compte a=
+ =C3=A9t=C3=A9 pirat=C3=A9.</div><tr><td align=3Dcenter valign=3Dmiddle><di=
+v class=3Dheader-message style=3D"text-align: left;padding: 0 0 20px 0;font=
+-size: 14px;line-height: 1.5;width: 80%;">Merci,<br>L&#39;=C3=A9quipe d&#39=
+;assistance de Twitch</div></table></table></table><table align=3Dcenter st=
+yle=3D"background:0 0!important;border-collapse:collapse;border-spacing:0;m=
+argin:20px auto 0 auto;padding:0;text-align:inherit;vertical-align:top;widt=
+h:580px"><tbody><tr><th><table style=3Dborder-collapse:collapse;border-spac=
+ing:0;display:table;padding:0;text-align:left;vertical-align:top;width:100%=
+><tbody><tr style=3Dpadding:0;text-align:left;vertical-align:top><th style=
+=3D"Margin:0 auto;color:#322f37;font-family:Helvetica,Arial,sans-serif;font=
+-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-=
+bottom:0!important;padding-left:20px;padding-right:10px;padding-top:0!impor=
+tant;text-align:left;width:270px"><a href=3Dhttps://twitter.com/twitch/ sty=
+le=3DMargin:0;color:#9147ff;font-family:Helvetica,Arial,sans-serif;font-wei=
+ght:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:=
+none target=3D_blank data-saferedirecturl=3D"https://www.google.com/url?q=
+=3Dhttps://twitter.com/twitch/&amp;source=3Dgmail&amp;ust=3D157204894641400=
+0&amp;usg=3DAFQjCNEJEY5NkmTnXd5Q9wprWPiE2ITgvw"><img src=3D"https://ci5.goo=
+gleusercontent.com/proxy/NjrXjBJfWd_KVMGC2RlzLVYSFdY3i6I4jo6h9CG3zyai6S3SMs=
+qcK-Ufc_rmmpLKtvpfpaRsWgDHJkCrfBUEW5JH_9uJelJhBdIka6mmYQM-bLJT95fgwlxWuqjvg=
+Ut_bWmNUq1B=3Ds0-d-e1-ft#https://s.jtvnw.net/jtv_user_pictures/hosted_image=
+s/email-twitter-logo-20171115.png" width=3D20 height=3D20 alt=3Dtwitch-twit=
+ter style=3Dborder:none;clear:both;display:block;float:right;max-width:100%=
+;outline:0;text-align:right;text-decoration:none;width:auto class=3DCToWUd>=
+</a><th style=3D"Margin:0 auto;color:#322f37;font-family:Helvetica,Arial,sa=
+ns-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;paddi=
+ng:0;padding-bottom:0!important;padding-left:10px;padding-right:20px;paddin=
+g-top:0!important;text-align:left;width:270px"><a href=3Dhttps://www.facebo=
+ok.com/twitch/ style=3DMargin:0;color:#9147ff;font-family:Helvetica,Arial,s=
+ans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:lef=
+t;text-decoration:none target=3D_blank data-saferedirecturl=3D"https://www.=
+google.com/url?q=3Dhttps://www.facebook.com/twitch/&amp;source=3Dgmail&amp;=
+ust=3D1572048946414000&amp;usg=3DAFQjCNHrvpLubLbeJxTMWxqMwwLU9J64aA"><img s=
+rc=3D"https://ci4.googleusercontent.com/proxy/XHffVu34DLJFd5BgnT-FmR1sO6U8a=
+NYtqIngRIAczxlyKN1dB0Fe-00F3bXbo3fVQ4PlEIpJVQrCAsfuBto15Y4neEJHUxd2v0z7gy41=
+unT3YDbJg6bTUgmWOcju7HCKeL18r1pH8A=3Ds0-d-e1-ft#https://s.jtvnw.net/jtv_use=
+r_pictures/hosted_images/email-facebook-logo-20171115.png" width=3D20 heigh=
+t=3D20 alt=3Dtwitch-facebook style=3Dborder:none;clear:both;display:block;f=
+loat:left;max-width:100%;outline:0;text-align:left;text-decoration:none;wid=
+th:auto class=3DCToWUd></a></table><tr style=3Dpadding:0;vertical-align:top=
+><th style=3Dcolor:#322F37;font-family:Helvetica,Arial,sans-serif;font-size=
+:16px;font-weight:400;line-height:1.3;margin:0;padding:0;><p style=3D"color=
+:#322F37;font-family:Helvetica,Arial,Verdana,'Trebuchet MS';font-size:16px;=
+font-weight:400;line-height:24px;margin:0;margin-top:5px;margin-bottom:10px=
+;padding:0;padding-bottom:10px;text-align:center"><small style=3Dcolor:#706=
+a7c;font-size:14px>=C2=A9 2020 Twitch, tous droits r=C3=A9serv=C3=A9s<br>35=
+0 Bush Street, 2nd Floor, San Francisco, CA, 94104 - USA</small><th class=
+=3Dexpander style=3Dcolor:#322F37;font-family:Helvetica,Arial,sans-serif;fo=
+nt-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0!important;t=
+ext-align:left;visibility:hidden;width:0></table></table><img src=3D"https:=
+//spade.twitch.tv/track?data=3DeyJldmVudCI6ImVtYWlsX29wZW4iLCJwcm9wZXJ0aWVz=
+Ijp7Im5vdGlmaWNhdGlvbl9pZCI6IjZkY2FmMGRhLTc0MjItNDE2YS1iNjM1LWY5ZTE2YWE1YjE=
+0YyJ9fQ%3D%3D&amp;img=3D1&amp;ua=3D1" width=3D1 height=3D1>

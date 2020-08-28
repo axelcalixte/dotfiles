@@ -1,0 +1,81 @@
+Return-Path: <opensuse-factory+bounces-96138-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id 37B48823AB; Mon, 24 Aug 2020 09:22:27 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.7 required=5.0 tests=BAYES_50,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,RDNS_NONE,
+	URIBL_BLOCKED shortcircuit=_SCTYPE_ autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [195.135.221.145])
+	by mx1.cock.li (Postfix) with ESMTPS id 33C2C825F4
+	for <axelcalixte@cock.li>; Mon, 24 Aug 2020 09:22:21 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 92A6621AAD
+	for <axelcalixte@cock.li>; Mon, 24 Aug 2020 09:22:20 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 5F418119C9;
+	Mon, 24 Aug 2020 09:22:20 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 585E0119C9
+	for <opensuse-factory@lists5.opensuse.org>; Mon, 24 Aug 2020 09:22:20 +0000 (UTC)
+Received: from imap.suse.de (unknown [149.44.161.75])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id C5BAC2D208;
+	Mon, 24 Aug 2020 09:22:22 +0000 (UTC)
+Received: from [192.168.0.41] (ip4d177a06.dynamic.kabel-deutschland.de [77.23.122.6])
+	by imap.suse.de (Postfix) with ESMTPSA id 28B2411974;
+	Mon, 24 Aug 2020 09:22:20 +0000 (UTC)
+Message-ID: <e1b4a9281e0a85bc186af4a602c284a376352b20.camel@suse.de>
+Subject: Re: [opensuse-factory] openQA Livestream next Wednesday 11 UTC
+From: Elisei Roca <eroca@suse.de>
+To: Dan =?UTF-8?Q?=C4=8Cerm=C3=A1k?= <dcermak@suse.com>, 
+	opensuse-factory@opensuse.org
+Date: Mon, 24 Aug 2020 11:22:19 +0200
+In-Reply-To: <87d03htztu.fsf@cgc-instruments.com>
+References: <87d03htztu.fsf@cgc-instruments.com>
+Content-Type: text/plain; charset="UTF-8"
+User-Agent: Evolution 3.36.5 
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Hi Dan,
+
+On Sun, 2020-08-23 at 12:35 +0200, Dan Čermák wrote:
+> Hi all,
+> 
+> I'll be live streaming another tutorial about openQA next Wednesday (August
+> 26) over on https://www.twitch.tv/defolos.
+> 
+> The current plan is to cover the following topics:
+> - How to setup your own local test environment
+> - How does running tests actually work (including job groups, test
+>   suites, etc.)
+> 
+> and anything else that you'd like to hear.
+> 
+> Hope to see you on Wednesday in the chat,
+> 
+> Dan
+
+Sounds great! What time will you start the livestream?
+
+Eli
+
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+

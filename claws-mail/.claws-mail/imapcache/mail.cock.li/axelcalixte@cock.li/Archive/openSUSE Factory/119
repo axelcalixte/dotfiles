@@ -1,0 +1,98 @@
+Return-Path: <opensuse-factory+bounces-95953-axelcalixte=cock.li@opensuse.org>
+Delivered-To: axelcalixte@cock.li
+Received: by mx1.cock.li (Postfix, from userid 65534)
+	id A0B9E826A0; Tue,  4 Aug 2020 13:41:23 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on de8f7fd56dc0
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.2 required=5.0 tests=BAYES_40,MAILING_LIST_MULTI,
+	RCVD_IN_DNSWL_NONE,RDNS_NONE,URIBL_BLOCKED shortcircuit=_SCTYPE_
+	autolearn=disabled version=3.4.2
+Received: from hydra.opensuse.org (unknown [IPv6:2001:67c:2178:8::18])
+	by mx1.cock.li (Postfix) with ESMTPS id 3462182605
+	for <axelcalixte@cock.li>; Tue,  4 Aug 2020 13:41:19 +0000 (UTC)
+Received: from lists5.opensuse.org (baloo.infra.opensuse.org [192.168.47.38])
+	by hydra.opensuse.org (Postfix) with ESMTP id 6D20321DAD
+	for <axelcalixte@cock.li>; Tue,  4 Aug 2020 13:41:18 +0000 (UTC)
+Received: from baloo.infra.opensuse.org (localhost [127.0.0.1])
+	by lists5.opensuse.org (Postfix) with ESMTP id 1EEE110E2C;
+	Tue,  4 Aug 2020 13:40:55 +0000 (UTC)
+X-Original-To: opensuse-factory@lists5.opensuse.org
+Delivered-To: opensuse-factory@lists5.opensuse.org
+Received: from relay2.suse.de (unknown [195.135.221.27])
+	by lists5.opensuse.org (Postfix) with ESMTP id 0A37D10E2C
+	for <opensuse-factory@lists5.opensuse.org>; Tue,  4 Aug 2020 13:40:55 +0000 (UTC)
+Received: from imap.suse.de (unknown [149.44.161.75])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by relay2.suse.de (Postfix) with ESMTPS id F3C962C16E;
+	Tue,  4 Aug 2020 13:41:19 +0000 (UTC)
+Received: from [192.168.1.104] (ipbcc2c06d.dynamic.kabel-deutschland.de [188.194.192.109])
+	by imap.suse.de (Postfix) with ESMTPSA id DB24B118DF;
+	Tue,  4 Aug 2020 13:41:17 +0000 (UTC)
+Message-ID: <92b8ca006f1a7793b868391a042529d66126f87a.camel@suse.de>
+Subject: Re: [opensuse-factory] Proposal: /tmp as tmpfs
+From: Richard Brown <rbrown@suse.de>
+To: Rainer Klier <r.klier@namirial.com>, opensuse-factory@opensuse.org
+Date: Tue, 04 Aug 2020 15:41:17 +0200
+In-Reply-To: <cb7cc587-dd11-e424-629c-9ceb61eab2dd@namirial.com>
+References: <5b8160761d853bb0953f92cec237f3b01e2513e0.camel@suse.de>
+	 <f68e2542-9198-4ab5-d42d-3726075c2841@namirial.com>
+	 <05fe55b2789a58dcc0e784aaf391af5f79481702.camel@suse.de>
+	 <cb7cc587-dd11-e424-629c-9ceb61eab2dd@namirial.com>
+Content-Type: text/plain; charset="UTF-8"
+User-Agent: Evolution 3.36.4 
+Precedence: bulk
+Mailing-List: contact opensuse-factory+help@opensuse.org; run by mlmmj
+X-Mailinglist: opensuse-factory
+List-Post: <mailto:opensuse-factory@opensuse.org>
+List-Help: <mailto:opensuse-factory+help@opensuse.org>
+List-Subscribe:  <mailto:opensuse-factory+subscribe@opensuse.org>
+List-Unsubscribe:  <mailto:opensuse-factory+unsubscribe@opensuse.org>
+List-Owner: <mailto:opensuse-factory+owner@opensuse.org>
+List-Archive: <http://lists.opensuse.org/opensuse-factory/>
+X-MIME-Notice: attachments may have been removed from this message
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+On Tue, 2020-08-04 at 15:37 +0200, Rainer Klier wrote:
+> 
+> thank you very much, for taking care of users like me, who need to
+> prepare for the upcoming changes.
+> 
+> > https://en.opensuse.org/openSUSE:Tmp_on_tmpfs
+> > 
+> > Hope this helps
+> 
+> yes, thanks, i totally understand, what i have to do, when this
+> change happens.
+> 
+> how do i know, when this happens?
+> 
+> will it be part of the next systemd update in tumbleweed?
+> 
+> and thanks for making tmpfs the default for /tmp
+
+Hi Rainer,
+
+Unless something dramatically changes, it should be in the next systemd
+update in Tumbleweed.
+
+It's currently in staging and being tested, with any last minute issues
+being taken care of.
+
+I'll update both the wiki and make an announcement here when I know the
+exact snapshot number that the release will make
+-- 
+Richard Brown
+Linux Distribution Engineer - Future Technology Team
+  
+Phone +4991174053-361
+SUSE Software Solutions Germany GmbH,  Maxfeldstr. 5,  D-90409
+Nuernberg
+(HRB 36809, AG Nürnberg)
+Geschäftsführer: Felix Imendörffer
+
+-- 
+To unsubscribe, e-mail: opensuse-factory+unsubscribe@opensuse.org
+To contact the owner, e-mail: opensuse-factory+owner@opensuse.org
+
