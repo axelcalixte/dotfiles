@@ -2,18 +2,14 @@ typeset -U PATH path
 path+=("$HOME/.local/bin" "$path[@]")
 export PATH
 
-# Start graphical server on tty1 if not already running.
-#[ "$(tty)" = "/dev/tty1" ] && ! ps -e | grep -qw Xorg && exec startx "/home/axel/.config/X11/xinitrc"
-
-if [ -n "$DESKTOP_SESSION" ];then
-    eval $(gnome-keyring-daemon --start)
-    export SSH_AUTH_SOCK
-fi
+# Keychain for ssh-agent keys
+eval $(keychain --eval --noask --nogui --quiet id_ed25519 id_rsa ~/.ssh/id_rsa)
 
 # Default programs:
 export VISUAL="nvim"
+export EDITOR="geany"
 export PAGER="less"
-export TERMINAL="kitty"
+export TERMINAL="xfce4-terminal"
 export BROWSER="firefox"
 export READER="zathura"
 
