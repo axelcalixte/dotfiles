@@ -16,8 +16,19 @@ call minpac#add('jiangmiao/auto-pairs')
 call minpac#add('vimwiki/vimwiki')
 call minpac#add('arcticicestudio/nord-vim')
 call minpac#add('itchyny/lightline.vim')
+call minpac#add('rrethy/vim-hexokinase', { 'do': 'make hexokinase' })
 
 let g:vimwiki_list = [{'path': '~/docs/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
+let g:Hexokinase_highlighters = [ 'virtual' ]
+let g:Hexokinase_optInPatterns = [
+\     'full_hex',
+\     'triple_hex',
+\     'rgb',
+\     'rgba',
+\     'hsl',
+\     'hsla',
+\     'colour_names'
+\ ]
 
 "--- other config files 
 source ~/.config/nvim/conf/basic.vim

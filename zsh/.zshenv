@@ -1,6 +1,8 @@
-typeset -U PATH path
-path+=("$path[@]" $HOME/.local/bin)
-export PATH
+#typeset -U PATH path
+#path+=("~/.local/bin" "$path[@]")
+#export path
+
+export PATH="${PATH}:${HOME}/.local/bin"
 
 # Keychain for ssh-agent keys
 eval $(keychain --eval --noask --nogui --quiet id_ed25519 id_rsa ~/.ssh/id_rsa)
@@ -47,7 +49,4 @@ export QT_QPA_PLATFORMTHEME='gnome'
 export _JAVA_AWT_WM_NONREPARENTING=1
 export NNN_TRASH=1 
 export NNN_COLORS="3246" 
-export NNN_FIFO=/tmp/nnn.fifo
-export NNN_BMS='s:~/.local/share;c:~/.config;u:~/utt'
 export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
-export NNN_PLUG='a:autojump;d:dragdrop;m:nmount;n:nuke;p:preview-tabbed;s:suedit;v:vidthumb;w:wall'

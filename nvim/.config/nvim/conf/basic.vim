@@ -1,7 +1,7 @@
 "---ColorScheme
-	set termguicolors
+	"set termguicolors
 	let g:lightline = {'colorscheme' : 'nord'}
-	colorscheme nord
+	"colorscheme nord
 
 "--- Netrw
 	let g:netrw_preview=1
@@ -20,6 +20,7 @@
 	set foldmethod=indent
 	set path+=**
 	set showcmd
+	set mouse=a
 
 	" FZF
 		nnoremap <c-p> :FZF<CR>
