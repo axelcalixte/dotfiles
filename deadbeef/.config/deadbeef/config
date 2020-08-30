@@ -1,10 +1,10 @@
 alsa_soundcard default
 artwork.filemask *cover*.jpg;*front*.jpg;*folder*.jpg;*cover*.png;*front*.png;*folder*.png
 cli_add_playlist_name Default
-deadbeef_version 1.8.4
+deadbeef_version 1.8.3
 filechooser.lastdir file:///home/axel/music
 gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"29","align":"0","color_override":"0","color":"#ff000000"},{"title":"Artiste / Album","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"384","align":"0","color_override":"0","color":"#ff000000"},{"title":"Piste","id":"-1","format":"%tracknumber%","sort_format":"","size":"54","align":"1","color_override":"0","color":"#ff000000"},{"title":"Titre","id":"-1","format":"%title%","sort_format":"","size":"317","align":"0","color_override":"0","color":"#ff000000"},{"title":"Durée","id":"-1","format":"%length%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"},{"title":"Couverture de l’album","id":"8","format":"","sort_format":"","size":"194","align":"2","color_override":"0","color":"#ffd8dee9"},{"title":"Année","id":"-1","format":"%year%","sort_format":"","size":"100","align":"0","color_override":"0","color":"#ffd8dee9"},{"title":"Codec","id":"-1","format":"%codec%","sort_format":"","size":"100","align":"0","color_override":"0","color":"#ffd8dee9"}]
-gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 1" homogeneous=0 {playtb {} seekbar {} volumebar {} } tabbed_playlist hideheaders=0 width=944 {} } 
+gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 1" homogeneous=0 {playtb {} seekbar {} volumebar {} } tabbed_playlist hideheaders=0 width=1910 {} } 
 gtkui.playlist.group_by_tf ""
 gtkui.statusbar.visible 1
 gtkui.tabscroll 0
@@ -43,18 +43,22 @@ hotkey.key30 b 0 0 next
 hotkey.key31 n 0 0 playback_random
 hotkey.key32 "Ctrl k" 0 0 toggle_stop_after_album
 hotkeys_created 1
+logwindow.geometry.h 200
+logwindow.geometry.w 400
+logwindow.geometry.x 40
+logwindow.geometry.y 40
 mainwin.geometry.h 1038
-mainwin.geometry.w 1914
-mainwin.geometry.x 1920
+mainwin.geometry.w 1910
+mainwin.geometry.x 5
 mainwin.geometry.y 36
 network.proxy.port 8080
 output_plugin alsa
 playback.loop 1
 playback.volume -37.14284
 playlist.current 0
-playlist.cursor.0 0
+playlist.cursor.0 4
 playlist.cursor.1 0
-playlist.scroll.0 0
+playlist.scroll.0 924
 playlist.scroll.1 0
 playlist.scroll.cursorfollowplayback 1
 playlist.tab.00000 Nouvelle liste de lecture
@@ -64,8 +68,8 @@ prefwin.geometry.x 481
 prefwin.geometry.y 262
 resume.paused 1
 resume.playlist 0
-resume.position 199.13520
-resume.track 7
+resume.position 0.0000000
+resume.track 4
 streamer.samplerate 44100
 streamer.samplerate_mult_44 44100
 streamer.samplerate_mult_48 48000
