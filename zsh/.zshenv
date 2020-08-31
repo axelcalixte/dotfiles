@@ -4,9 +4,6 @@
 
 export PATH="${PATH}:${HOME}/.local/bin"
 
-# Keychain for ssh-agent keys
-eval $(keychain --eval --noask --nogui --quiet id_ed25519 id_rsa ~/.ssh/id_rsa)
-
 # Default programs:
 export VISUAL="nvim"
 export EDITOR="geany"
