@@ -11,7 +11,7 @@ eval $(keychain --eval --noask --nogui --quiet id_ed25519 id_rsa ~/.ssh/id_rsa)
 export VISUAL="nvim"
 export EDITOR="geany"
 export PAGER="less"
-export TERMINAL="xfce4-terminal"
+export TERMINAL="alacritty"
 export BROWSER="firefox"
 export READER="zathura"
 

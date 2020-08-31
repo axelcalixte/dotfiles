@@ -1,7 +1,17 @@
-"---ColorScheme
-	"set termguicolors
-	let g:lightline = {'colorscheme' : 'nord'}
-	"colorscheme nord
+"---ColorScheme & Bar
+	set termguicolors
+	let g:lightline = {
+      \ 'colorscheme': 'ayu_mirage',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
+	let ayucolor="mirage"
+	colorscheme ayu
 
 "--- Netrw
 	let g:netrw_preview=1
