@@ -7,6 +7,10 @@ PURE_GIT_PULL=1
 zstyle :prompt:pure:git:stash show yes
 prompt pure
 
+
+export PATH="${PATH}:${HOME}/.local/bin"
+
+
 # The following lines were added by compinstall
 autoload -Uz compinit
 compinit
@@ -60,6 +64,7 @@ alias udb="sudo updatedb"
 alias szy="sudo zypper"
 alias zyse="zypper se"
 alias szyin="sudo zypper in"
+alias zyli="rpm -qa | wc -l"
 alias zyreflu="sudo zypper ref && sudo zypper lu"
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'

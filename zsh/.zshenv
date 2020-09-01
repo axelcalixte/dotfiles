@@ -2,8 +2,6 @@
 #path+=("~/.local/bin" "$path[@]")
 #export path
 
-export PATH="${PATH}:${HOME}/.local/bin"
-
 # Default programs:
 export VISUAL="nvim"
 export EDITOR="geany"
@@ -38,8 +36,8 @@ export ANSIBLE_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/ansible/ansible.cfg"
 # export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export ICEAUTHORITY="$XDG_CACHE_HOME"/Iceauthority
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
-export QT_SCALE_FACTOR=1.2
-export QT_AUTO_SCREEN_SCALE_FACTOR=1.2
+export QT_SCALE_FACTOR=1.1
+export QT_AUTO_SCREEN_SCALE_FACTOR=1.1
 export QT_QPA_PLATFORMTHEME='gnome'
 
 # Application configs
