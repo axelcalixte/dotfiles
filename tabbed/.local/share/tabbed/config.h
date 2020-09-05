@@ -1,11 +1,11 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[]        = "monospace-9";
-static const char* normbgcolor  = "#222222";
-static const char* normfgcolor  = "#cccccc";
-static const char* selbgcolor   = "#555555";
-static const char* selfgcolor   = "#ffffff";
+static const char font[]        = "DejaVu Sans Mono-9";
+static const char* normbgcolor  = "#212733";
+static const char* normfgcolor  = "#5e6f7c";
+static const char* selbgcolor   = "#bbbdfd";
+static const char* selfgcolor   = "#5e6f7c";
 static const char before[]      = "<";
 static const char after[]       = ">";
 static const int  tabwidth      = 200;
@@ -34,24 +34,24 @@ static Key keys[] = { \
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          { 0 } },
 	{ MODKEY,                       XK_t,      spawn,          SETPROP("_TABBED_SELECT_TAB") },
 
-	{ MODKEY|ShiftMask,             XK_l,      rotate,         { .i = +1 } },
-	{ MODKEY|ShiftMask,             XK_h,      rotate,         { .i = -1 } },
-	{ MODKEY|ShiftMask,             XK_j,      movetab,        { .i = -1 } },
-	{ MODKEY|ShiftMask,             XK_k,      movetab,        { .i = +1 } },
+	{ MODKEY,             XK_Next,      rotate,         { .i = +1 } },
+	{ MODKEY,             XK_Prior,      rotate,         { .i = -1 } },
+	{ MODKEY|ShiftMask,             XK_k,      movetab,        { .i = -1 } },
+	{ MODKEY|ShiftMask,             XK_j,      movetab,        { .i = +1 } },
 	{ MODKEY,                       XK_Tab,    rotate,         { .i = 0 } },
 
-	{ MODKEY,                       XK_1,      move,           { .i = 0 } },
-	{ MODKEY,                       XK_2,      move,           { .i = 1 } },
-	{ MODKEY,                       XK_3,      move,           { .i = 2 } },
-	{ MODKEY,                       XK_4,      move,           { .i = 3 } },
-	{ MODKEY,                       XK_5,      move,           { .i = 4 } },
-	{ MODKEY,                       XK_6,      move,           { .i = 5 } },
-	{ MODKEY,                       XK_7,      move,           { .i = 6 } },
-	{ MODKEY,                       XK_8,      move,           { .i = 7 } },
-	{ MODKEY,                       XK_9,      move,           { .i = 8 } },
-	{ MODKEY,                       XK_0,      move,           { .i = 9 } },
+	{ MODKEY,                       XK_ampersand,      move,           { .i = 0 } },
+	{ MODKEY,                       XK_eacute,      move,           { .i = 1 } },
+	{ MODKEY,                       XK_quotedbl,      move,           { .i = 2 } },
+	{ MODKEY,                       XK_apostrophe,      move,           { .i = 3 } },
+	{ MODKEY,                       XK_parenleft,      move,           { .i = 4 } },
+	{ MODKEY,                       XK_minus,      move,           { .i = 5 } },
+	{ MODKEY,                       XK_egrave,      move,           { .i = 6 } },
+	{ MODKEY,                       XK_underscore,      move,           { .i = 7 } },
+	{ MODKEY,                       XK_ccedilla,      move,           { .i = 8 } },
+	{ MODKEY,                       XK_agrave,      move,           { .i = 9 } },
 
-	{ MODKEY,                       XK_q,      killclient,     { 0 } },
+	{ ControlMask,                       XK_w,      killclient,     { 0 } },
 
 	{ 0,                            XK_F11,    fullscreen,     { 0 } },
 };
