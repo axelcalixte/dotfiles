@@ -45,7 +45,7 @@ HISTFILE=/home/axel/.cache/zsh/history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt autocd completealiases extendedglob nomatch notify
-bindkey -v
+#bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were read by zsh-newuser-install.
 # They were moved here as they could not be understood.
@@ -63,6 +63,7 @@ alias lc="ls -lA | wc -l"
 alias udb="sudo updatedb"
 alias szy="sudo zypper"
 alias zyse="zypper se"
+alias zyif="zypper if"
 alias szyin="sudo zypper in"
 alias zyli="rpm -qa | wc -l"
 alias zyreflu="sudo zypper ref && sudo zypper lu"
