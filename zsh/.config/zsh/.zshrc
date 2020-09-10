@@ -7,9 +7,7 @@ PURE_GIT_PULL=1
 zstyle :prompt:pure:git:stash show yes
 prompt pure
 
-
 export PATH="${PATH}:${HOME}/.local/bin"
-
 
 # The following lines were added by compinstall
 autoload -Uz compinit
@@ -65,6 +63,7 @@ alias szy="sudo zypper"
 alias zyse="zypper se"
 alias zyif="zypper if"
 alias szyin="sudo zypper in"
+alias zypa="zypper pa"
 alias zyli="rpm -qa | wc -l"
 alias zyreflu="sudo zypper ref && sudo zypper lu"
 alias sp='systemctl poweroff'
@@ -80,8 +79,10 @@ alias gps="git push"
 alias gpl="git pull"
 
 #Fish syntax highlighting
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#ZSH auto-suggestions
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/axel/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 #fzf fuzzy file search
 source /etc/zsh_completion.d/fzf-key-bindings
+
+#ZSH auto-suggestions
+#source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#commenting zsh-autosuggestions because I should probably use either this or fzf in my shell and I also have fzf for nvim even tho I don't use it much so we'll see which one I end up keeping, zsh-autosuggestions or fzf
