@@ -1,7 +1,7 @@
 "---ColorScheme & Bar
 	set termguicolors
 	let g:lightline = {
-      \ 'colorscheme': 'ayu_mirage',
+      \ 'colorscheme': 'ayu_dark',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -10,7 +10,7 @@
       \   'gitbranch': 'FugitiveHead'
       \ },
       \ }
-	let ayucolor="mirage"
+	let ayucolor="dark"
 	colorscheme ayu
 
 "--- Netrw
@@ -32,19 +32,25 @@
 	set showcmd
 	set mouse=a
 
+	let mapleader=','
+
 	" FZF
 		nnoremap <c-p> :FZF<CR>
+		let g:fzf_layout = { 'window' : { 'width': 0.8, 'height': 0.8 } }
 
 	" buffer menu"
         set wildchar=<Tab> wildmenu wildmode=list
 
     " moving blocks of text
-        vnoremap J :m '>+1<CR>gv=gv 
+        vnoremap J :m '>+1<CR>gv=gv
         vnoremap K :m '<-2<CR>gv=gv
 
 	" switching between buffers
 		nnoremap <Space>b :Buffers<CR>
 		nnoremap <Space><Space> :b#<CR>
+
+	" vimwikio	
+		let g:vimwiki_list = [{'path': '~/docs/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
 
 "---From ModernVim Book
 	" you can undo even after saving and resuming the file
@@ -52,6 +58,7 @@
 	if !has('nvim')
 		set undodir=~/.local/share/vim/undo
 	endif
+
 " press escape to go back in normal mode inside terminal buffers
 	if has('nvim')
 		tnoremap <Esc> <C-\><C-n>

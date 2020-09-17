@@ -1,22 +1,15 @@
-"Configuring vim for java development averywagar.com
-"ALE
-
-" Shorten error/warning flags
-let g:ale_echo_msg_error_str = 'E'
-let g:ale_echo_msg_warning_str = 'W'
-" I have some custom icons for errors and warnings but feel free to change them.
-let g:ale_sign_error = '✘✘'
-let g:ale_sign_warning = '⚠⚠'
-
-" Disable or enable loclist at the bottom of vim 
-" Comes down to personal preferance.
-let g:ale_open_list = 0
-let g:ale_loclist = 0
-
-" Setup compilers for languages
-
+" Linting
 let g:ale_linters = {
-      \  'cs':['syntax', 'semantic', 'issues'],
-      \  'python': ['pylint'],
       \  'java': ['javac']
       \ }
+
+" Fixing
+nmap <F8> <Plug>(ale_fix)
+
+let g:ale_fix_on_save=1
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'java': ['google_java_format']
+\}
+
+" Completion
