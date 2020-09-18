@@ -1,8 +1,8 @@
 #!/bin/bash
 
 nitrogen --restore &
-#xrdb ~/.config/X11/Xresources
-xautolock -time 10 -locker slock -corners ---- &
+xrdb -merge ~/.config/X11/Xresources &
+xautolock -time 10 -corners ---- -locker i3lock &
 dunst -conf ~/.config/dunst/dunstrc &
 picom -b --config ~/.config/picom/picom.conf &
 
