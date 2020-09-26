@@ -1,9 +1,4 @@
-#!/bin/sh
-
-snapshot(){
-	shot=$(lsb_release -r | egrep -o '.{3,8}$')
-	echo "$shot"
-}
+#!/bin/bash
 
 net(){
 	case "$(cat /sys/class/net/w*/operstate 2>/dev/null)" in
@@ -55,11 +50,7 @@ done | sed 's/ *$//'
 dte(){
 	hm=$(date +%R)
 	cal=$(date +%x)
-
-	echo "  $hm |   $cal"
+	echo "  $hm |  $cal"
 }
 
-while true; do
-	echo "$(snapshot)+<|+<$(net)|$(volume)|+<$(battery)+<|+<$(dte)"
-	sleep 10 
-done
+xsetroot -name "$(net)|$(volume)|$(battery) |$(dte)"
