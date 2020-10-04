@@ -1,8 +1,4 @@
-#typeset -U PATH path
-#path+=("~/.local/bin" "$path[@]")
-#export path
-
-export VISUAL="vi"
+export VISUAL="nvim"
 export EDITOR="nvim"
 export PAGER="less"
 export TERMINAL="kitty"

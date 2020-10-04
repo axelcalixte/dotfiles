@@ -54,7 +54,7 @@ stty stop undef		# Disable ctrl-s to freeze terminal
 # End of lines moved by zsh-newuser-install.
 
 # Aliases
-alias vi="~/.local/bin/nvim"
+alias syncftp="ssh -L 41127:localhost:41127 axel@rpi.remi.calixte.eu"
 alias aptcount="apt list --installed | wc -l"
 alias aptcheck="apt list --installed | less"
 alias mkdir='mkdir -pv'
