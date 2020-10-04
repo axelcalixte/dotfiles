@@ -1,6 +1,6 @@
 "---ColorScheme & Bar
-	set termguicolors
-	let g:lightline = {
+	"set termguicolors
+	"let g:lightline = {
       \ 'colorscheme': 'ayu_dark',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
@@ -10,8 +10,8 @@
       \   'gitbranch': 'FugitiveHead'
       \ },
       \ }
-	let ayucolor="dark"
-	colorscheme ayu
+	"let ayucolor="dark"
+	"colorscheme ayu
 
 "--- Netrw
 	let g:netrw_preview=1
@@ -22,10 +22,10 @@
 	nnoremap <C-b> :Lexplore<CR>
 
 "--- My own
-	set background=dark
+	"set background=dark
 	set shiftwidth=4 softtabstop=4 tabstop=4 smarttab
 	set number relativenumber
-	set noshowmode "to not show modes with lightline
+	"set noshowmode "to not show modes with lightline
 	set smartindent
 	set foldmethod=indent
 	set path+=**
