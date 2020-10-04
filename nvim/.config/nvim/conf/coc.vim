@@ -1,3 +1,5 @@
+let g:coc_disable_startup_warning = 1
+
 " if hidden is not set, TextEdit might fail.
 set hidden
 
