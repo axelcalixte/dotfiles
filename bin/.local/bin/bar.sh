@@ -52,7 +52,7 @@ done | sed 's/ *$//'
 
 dte(){
 	hm=$(date +%R)
-	cal=$(date +%x)
+	cal=$(date +%d/%m/%Y)
 	echo "  $hm |  $cal "
 }
 
