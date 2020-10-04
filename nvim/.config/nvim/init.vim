@@ -8,7 +8,7 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 
 " Add other plugins here.
 call minpac#add('tpope/vim-sensible')
-call minpac#add('junegunn/fzf', {'do': { -> fzf#install() } } )
+call minpac#add('junegunn/fzf')
 call minpac#add('junegunn/fzf.vim')
 call minpac#add('vimwiki/vimwiki')
 "call minpac#add('ayu-theme/ayu-vim')
