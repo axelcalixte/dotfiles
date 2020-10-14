@@ -1,5 +1,5 @@
-export VISUAL="nvim"
-export EDITOR="nvim"
+export VISUAL="~/.local/bin/nvim"
+export EDITOR="~/.local/bin/nvim"
 export PAGER="less"
 export TERMINAL="kitty"
 export BROWSER="firefox"
@@ -28,7 +28,7 @@ export ANDROID_SDK_HOME="$XDG_CONFIG_HOME"/android
 export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
 export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
 export ANSIBLE_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/ansible/ansible.cfg"
-export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+#export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export ICEAUTHORITY="$XDG_CACHE_HOME"/Iceauthority
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 export QT_SCALE_FACTOR=1.1
@@ -40,3 +40,4 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export NNN_TRASH=1 
 export NNN_COLORS="3246" 
 export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
+echo bite
