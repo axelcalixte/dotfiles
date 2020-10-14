@@ -1,9 +1,9 @@
 #!/bin/sh
 
-choice=$(echo "suspend\nlogout\nreboot\npoweroff" | dmenu)
+choice=$(echo "lock\nlogout\nreboot\npoweroff" | dmenu)
 
 case "$choice" in
-	suspend) systemctl suspend && slock ;;
+	lock) slock ;;
     logout) pkill xinit ;;
     reboot | poweroff) systemctl $choice;;
 esac

@@ -15,6 +15,7 @@ volume(){
 
 vol="$(pamixer --get-volume)"
 
+
 if [ "$vol" -gt "70" ]; then
 	icon=""
 elif [ "$vol" -lt "30" ]; then
