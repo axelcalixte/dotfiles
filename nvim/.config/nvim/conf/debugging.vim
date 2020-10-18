@@ -6,7 +6,7 @@ map <F9> :make<Return>:copen<Return>
 map <F10> :cprevious<Return>
 map <F11> :cnext<Return>
 
-packadd termdebug 
+"packadd termdebug 
 let g:termdebug_wide=1 "debugger window on the left
 
 autocmd Filetype c set makeprg=gcc\ -g\ -o\ %<\ %
