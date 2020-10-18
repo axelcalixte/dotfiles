@@ -1,9 +1,9 @@
-export VISUAL="~/.local/bin/nvim"
-export EDITOR="~/.local/bin/nvim"
+export VISUAL="nvim"
+export EDITOR="nvim"
 export PAGER="less"
 export TERMINAL="kitty"
-export BROWSER="firefox"
-export READER="zathura"
+export BROWSER="firefox-esr"
+export READER="evince"
 
 # ~/ Clean-up:
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -40,4 +40,5 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export NNN_TRASH=1 
 export NNN_COLORS="3246" 
 export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
-echo bite
+
+eval `keychain --eval --agents ssh id_rsa id_rsa.azure --noask`

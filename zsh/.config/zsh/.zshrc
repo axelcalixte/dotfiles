@@ -1,4 +1,4 @@
-fpath+=~/dots/zsh/.local/share/zsh/pure/
+fpath+=~/.local/share/zsh/pure/
 autoload -U promptinit; promptinit
 # change the color for both `prompt:success` and `prompt:error`
 #zstyle ':prompt:pure:prompt:*' color cyan
@@ -7,7 +7,7 @@ PURE_GIT_PULL=1
 zstyle :prompt:pure:git:stash show yes
 prompt pure
 
-[ "$(tty)" = "/dev/tty1" ] && ! pidof Xorg >/dev/null 2>&1  && exec startx
+[ "$(tty)" = "/dev/tty1" ] && ! pidof Xorg >/dev/null 2>&1  && exec startx $XDG_CONFIG_HOME/x11/.xinitrc
 
 export PATH="${PATH}:${HOME}/.local/bin"
 
