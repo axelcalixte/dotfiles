@@ -1,3 +1,6 @@
 nvim/.config/nvim/.netrwhist
 nvim/.config/nvim/pack/minpac/start/
 zsh/.config/zsh/.zcompdump
+bin/.local/bin/nvim
+bin/.local/bin/google-java-format-1.9-all-deps.jar
+bin/.local/bin/texlab
