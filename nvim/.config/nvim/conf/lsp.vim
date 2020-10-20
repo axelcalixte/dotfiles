@@ -10,20 +10,15 @@ local on_attach_vim = function(client)
   require'diagnostic'.on_attach(client)
 end
 
--- jdtls stuff
-vim.cmd('packadd nvim-jdtls')
-jdtls = require('jdtls')
-config = {cmd = {'jdtls-start.sh'}}
-vim.cmd('augroup lsp')
-    vim.cmd('au!')
-    vim.cmd("au FileType java lua jdtls.start_or_attach(config)")
-vim.cmd('augroup end')
--- end of jdtls-stuff
+require'nvim_lsp'.jdtls.setup{
+        on_attach_vim,
+        init_options = {
+                workspace = "/home/axel/.config/jdtls-workspace"
+        }
+}
 
 require'nvim_lsp'.bashls.setup{
-    on_attach_vim,
-    filetypes = { "sh" },
-    cmd = { "bash-language-server", "start" }
+    on_attach_vim
 }
 
 require'nvim_lsp'.texlab.setup{
@@ -62,5 +57,5 @@ let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 let g:completion_enable_snippet = 'vim-vsnip'
 
 """ nvim colorizer.lua
-set termguicolors 
+set termguicolors
 lua require'colorizer'.setup()

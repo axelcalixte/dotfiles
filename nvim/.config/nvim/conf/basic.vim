@@ -19,10 +19,10 @@
     let g:netrw_banner=0
     let g:netrw_winsize=20
     set hidden "don't know why i need it for for <A-e> netrw
-    nnoremap <C-b> :Lexplore<CR>
+    nnoremap <leader>n :Lexplore<CR>
 
 "--- My own
-    set tabstop=8 shiftwidth=8 expandtab
+    set tabstop=4 shiftwidth=4 expandtab
     set number relativenumber
     set noshowmode "to not show modes with lightline
     set smartindent autoindent
@@ -36,20 +36,16 @@
 
     " FZF
     nnoremap <c-p> :Files<CR>
+    "nnoremap <c-b> :Buffers<CR>
 
-    " moving blocks of text
-    vnoremap J :m '>+1<CR>gv=gv
-    vnoremap K :m '<-2<CR>gv=gv
-
-    " switching between buffers
-    nnoremap <Space>b :Buffers<CR>
+    " switching between 2 buffers
     nnoremap <Space><Space> :b#<CR>
 
-    " nohighlight remap
-    nnoremap <leader>noh :nohlsearch
+    " nohlsearch remap
+    nnoremap <leader>noh :nohlsearch<CR>
 
     " vimwiki	
-    let g:vimwiki_list = [{'path': '~/docs/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
+    let g:vimwiki_list = [{'path': '~/sync/notes', 'syntax': 'markdown', 'ext': '.md'}]
 
 "---From ModernVim Book
     " you can undo even after saving and resuming the file

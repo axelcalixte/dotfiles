@@ -10,6 +10,7 @@ map <F11> :cnext<Return>
 let g:termdebug_wide=1 "debugger window on the left
 
 autocmd Filetype c set makeprg=gcc\ -g\ -o\ %<\ %
-autocmd Filetype c set errorformat=%+A\ %#%f\ %#(%l\\\,%c):\ %m,%C%mq " format of compilation errors for C
 autocmd Filetype java set makeprg=javac\ %
-autocmd Filetype java set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#  " format of compilation errors for java
+autocmd Filetype java set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
+autocmd Filetype ts set makeprg=tsc\ $*\ --outDir\ build\ %
+autocmd Filetype ts set errorformat=%+A\ %#%f\ %#(%l\\\,%c):\ %m,%C%m
