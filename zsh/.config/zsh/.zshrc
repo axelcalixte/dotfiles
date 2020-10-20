@@ -60,7 +60,6 @@ alias aptcheck="apt list --installed | less"
 alias mkdir='mkdir -pv'
 alias ll="ls -lhAF --color --group-directories-first"
 alias lc="ls -lA | wc -l"
-alias udb="sudo updatedb"
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'
 alias sr='systemctl reboot'
@@ -73,7 +72,11 @@ alias gco="git checkout"
 alias gps="git push"
 alias gpl="git pull"
 
-#Fish syntax highlighting
-source /home/axel/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+#fish syntax highlighting
+#source /home/axel/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#fish auto-suggestions
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #fzf fuzzy file search
 source /usr/share/doc/fzf/examples/key-bindings.zsh
+
