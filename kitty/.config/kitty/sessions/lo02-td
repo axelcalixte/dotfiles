@@ -1,0 +1,4 @@
+layout tall
+cd utt/lo02/partie2-langageJava/td
+launch zsh
+launch nvim .
