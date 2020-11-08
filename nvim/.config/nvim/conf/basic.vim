@@ -1,7 +1,7 @@
 "---ColorScheme & Bar
 	"set termguicolors
 	let g:lightline = {
-	\ 'colorscheme': 'ayu_mirage',
+	\ 'colorscheme': 'nord',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -10,39 +10,36 @@
 	\   'gitbranch': 'FugitiveHead'
 	\ },
 	\ }
-	let ayucolor="mirage"
-	colorscheme ayu
+	colorscheme nord
+
+"--- General Settings
+    set tabstop=2 shiftwidth=2 expandtab
+    set number relativenumber
+    set noshowmode "to not show modes with lightline
+    set smartindent autoindent
+    set path+=**
+    set showcmd
+    set mouse=a
+    set wildchar=<Tab> wildmenu wildmode=list
+
+    let mapleader=" "
+
+    " FZF
+    nnoremap <leader>p :Files<CR>
+    nnoremap <leader>b :Buffers<CR>
+    nnoremap <leader><leader> :b#<CR>
+    nnoremap <leader>g :GFiles<CR>
+    nnoremap <leader>r :Rg
+
+    " nohlsearch remap
+    nnoremap <leader>noh :nohlsearch<CR>
 
 "--- Netrw
     let g:netrw_preview=1
     let g:netrw_liststyle= 3
     let g:netrw_banner=0
     let g:netrw_winsize=20
-    set hidden "don't know why i need it for for <A-e> netrw
-    nnoremap <leader>n :Lexplore<CR>
-
-"--- My own
-    set tabstop=4 shiftwidth=4 expandtab
-    set number relativenumber
-    set noshowmode "to not show modes with lightline
-    set smartindent autoindent
-    set foldmethod=indent
-    set path+=**
-    set showcmd
-    set mouse=a
-    set wildchar=<Tab> wildmenu wildmode=list
-
-    let mapleader=','
-
-    " FZF
-    nnoremap <c-p> :Files<CR>
-    "nnoremap <c-b> :Buffers<CR>
-
-    " switching between 2 buffers
-    nnoremap <Space><Space> :b#<CR>
-
-    " nohlsearch remap
-    nnoremap <leader>noh :nohlsearch<CR>
+    nnoremap <leader>le :Lexplore<CR>
 
     " vimwiki	
     let g:vimwiki_list = [{'path': '~/sync/notes', 'syntax': 'markdown', 'ext': '.md'}]

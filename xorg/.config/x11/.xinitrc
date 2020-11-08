@@ -1,7 +1,7 @@
-setxkbmap fr latin9 &
-dunst -conf ~/.config/dunst/dunstrc &
-xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
-redshift -l 48.9:2.3 -t 6500:4200 -g 0.8 -m randr -v &
+xwallpaper --zoom /home/axel/pics/chris-bair-Uh6SSVNmzPE-unsplash.jpg &
 slstatus &
-nitrogen --restore &
+xcompmgr &
+xrdb /home/axel/.config/x11/.Xresources &
+redshift -l 48.9:2.3 -t 6500:4200 -g 0.8 -m randr -v &
+dunst &
 exec dwm

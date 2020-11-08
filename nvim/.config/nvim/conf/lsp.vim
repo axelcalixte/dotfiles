@@ -24,6 +24,11 @@ require'nvim_lsp'.bashls.setup{
 require'nvim_lsp'.texlab.setup{
     on_attach_vim
 }
+
+require'nvim_lsp'.sumneko_lua.setup{
+    on_attach_vim
+}
+
 EOF
 
 " Keybinds from :h lsp

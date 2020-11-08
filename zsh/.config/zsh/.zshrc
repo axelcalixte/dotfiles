@@ -56,7 +56,6 @@ stty stop undef		# Disable ctrl-s to freeze terminal
 # Aliases
 alias syncftp="ssh -L 41127:localhost:41127 axel@rpi.remi.calixte.eu"
 alias aptcount="apt list --installed | wc -l"
-alias aptcheck="apt list --installed | less"
 alias mkdir='mkdir -pv'
 alias ll="ls -lhAF --color --group-directories-first"
 alias lc="ls -lA | wc -l"
@@ -71,6 +70,9 @@ alias ga="git add"
 alias gco="git checkout"
 alias gps="git push"
 alias gpl="git pull"
+alias t="todo-txt"
+
+kitty + complete setup zsh | source /dev/stdin
 
 #fish syntax highlighting
 #source /home/axel/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
@@ -79,4 +81,3 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #fzf fuzzy file search
 source /usr/share/doc/fzf/examples/key-bindings.zsh
-

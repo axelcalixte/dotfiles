@@ -1,0 +1,7 @@
+#include "/home/axel/.config/x11/nord"
+
+XTerm.vt100.locale: true
+Xterm.vt100.metaSendsExcape: true
+XTerm.vt100.saveLines: 8192
+
+XTerm.vt100.faceName: DejaVu Sans Mono:size=13
