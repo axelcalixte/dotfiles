@@ -1,13 +1,14 @@
 export EDITOR="nvim"
 export PAGER="less"
 export TERMINAL="kitty"
-export BROWSER="firefox-esr"
-export READER="zathura"
+export BROWSER="firefox"
+export READER="less"
 
 # ~/ Clean-up:
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
+export HISTFILE="$XDG_CACHE_HOME/bash/history"
 #export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
 export NOTMUCH_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/notmuch-config"
 export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
@@ -29,7 +30,7 @@ export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
 export ANSIBLE_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/ansible/ansible.cfg"
 #export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export ICEAUTHORITY="$XDG_CACHE_HOME"/Iceauthority
-export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
+#export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 export QT_SCALE_FACTOR=1.0
 export QT_AUTO_SCREEN_SCALE_FACTOR=1.0
 export QT_QPA_PLATFORMTHEME='gnome'
