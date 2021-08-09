@@ -69,29 +69,45 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  LuaSnip = {
+  ["coq.artifacts"] = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/LuaSnip"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/coq.artifacts"
   },
-  ["friendly-snippets"] = {
+  coq_nvim = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/friendly-snippets"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/coq_nvim"
+  },
+  ["fzf-lua"] = {
+    loaded = true,
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/fzf-lua"
   },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/axel/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
-  ["neovim-ayu"] = {
+  neogit = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/neovim-ayu"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/neogit"
+  },
+  neovim = {
+    loaded = true,
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/neovim"
+  },
+  ["nord-vim"] = {
+    loaded = true,
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nord-vim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
   },
-  ["nvim-compe"] = {
+  ["nvim-fzf"] = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-compe"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-fzf"
+  },
+  ["nvim-jdtls"] = {
+    loaded = true,
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-jdtls"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -112,14 +128,6 @@ _G.packer_plugins = {
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/axel/.local/share/nvim/site/pack/packer/start/plenary.nvim"
-  },
-  ["popup.nvim"] = {
-    loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/popup.nvim"
-  },
-  ["telescope.nvim"] = {
-    loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   }
 }
 

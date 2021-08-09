@@ -1,15 +1,18 @@
-fpath+=~/.local/share/zsh/pure/
-autoload -U promptinit; promptinit
-# change the color for both `prompt:success` and `prompt:error`
-#zstyle ':prompt:pure:prompt:*' color cyan
-# turn on git stash status
-PURE_GIT_PULL=1
-zstyle :prompt:pure:git:stash show yes
-prompt pure
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 [ "$(tty)" = "/dev/tty1" ] && ! pidof Xorg >/dev/null 2>&1  && exec startx $XDG_CONFIG_HOME/x11/.xinitrc
 
 export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/bin/scripts"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+#test -r ~/.dir_colors && eval $(dircolors ~/.dir_colors)
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.cache/zsh/history
@@ -31,6 +34,7 @@ alias syncftp="ssh -L 41127:localhost:41127 axel@rpi.remi.calixte.eu"
 alias aptcount="apt list --installed | wc -l"
 alias backup="rsync -a --delete --verbose -e ssh /home/axel/ axel@creney:~/Storage/debian"
 alias mkdir='mkdir -pv'
+alias rm='rm -I'
 alias ll="ls -lhAF --color --group-directories-first"
 alias lc="ls -lA | wc -l"
 alias sp='systemctl poweroff'
@@ -45,9 +49,14 @@ alias gco="git checkout --"
 alias gps="git push"
 alias gpl="git pull"
 alias t="todo-txt"
-
+alias bat='bat --theme="Nord"'
+alias newmenu="xdg-xmenu > ~/.local/bin/scripts/menu"
 
 #fast-syntax-highlighting
 source ~/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 #fzf fuzzy file search
 source /usr/share/doc/fzf/examples/key-bindings.zsh
+
+source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

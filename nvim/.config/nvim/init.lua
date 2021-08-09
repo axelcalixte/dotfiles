@@ -1,0 +1,5 @@
+require('plugins')
+require('options')
+require('theme')
+require('lsp')
+require('remaps')
