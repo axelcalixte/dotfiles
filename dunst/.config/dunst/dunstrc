@@ -240,7 +240,7 @@
     history = ctrl+oe
 
     # Context menu.
-    context = ctrl+shift+period
+    context = ctrl+shift+semicolon
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.

@@ -47,5 +47,7 @@ alias gpl="git pull"
 alias t="todo-txt"
 
 
+#fast-syntax-highlighting
+source ~/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 #fzf fuzzy file search
 source /usr/share/doc/fzf/examples/key-bindings.zsh
