@@ -1,11 +1,9 @@
-fpath+=~/.local/share/zsh/pure/
-autoload -U promptinit; promptinit
-# change the color for both `prompt:success` and `prompt:error`
-#zstyle ':prompt:pure:prompt:*' color cyan
-# turn on git stash status
-PURE_GIT_PULL=1
-zstyle :prompt:pure:git:stash show yes
-prompt pure
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 [ "$(tty)" = "/dev/tty1" ] && ! pidof Xorg >/dev/null 2>&1  && exec startx $XDG_CONFIG_HOME/x11/.xinitrc
 
@@ -46,8 +44,11 @@ alias gps="git push"
 alias gpl="git pull"
 alias t="todo-txt"
 
-
 #fast-syntax-highlighting
 source ~/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 #fzf fuzzy file search
 source /usr/share/doc/fzf/examples/key-bindings.zsh
+
+source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

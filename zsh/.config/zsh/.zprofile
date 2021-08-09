@@ -40,7 +40,8 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export NNN_TRASH=1 
 export NNN_COLORS="3246" 
 export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
-export NNN_PLUG='m:nmount'
+export NNN_PLUG='m:nmount;a:mtpmount;p:preview-tui'
 export NNN_BMS='u:~/utt;v:~/.config/nvim;p:~/utt/lo02/projet;s:~/.local/suckless'
+export NNN_FIFO=/tmp/nnn.fifo
 
-eval `keychain --eval --agents ssh id_rsa id_rsa.azure --noask`
+eval `keychain --eval --agents ssh id_rsa id_rsa.azure --noask` # not if using keepass
