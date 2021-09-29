@@ -1,6 +1,6 @@
 [submodule "zsh/.local/share/zsh/fast-syntax-highlighting"]
 	path = zsh/.local/share/zsh/fast-syntax-highlighting
-	url = git@github.com:zdharma/fast-syntax-highlighting.git
+	url = https://github.com/zdharma/fast-syntax-highlighting
 [submodule "/home/axel/.dots/zsh/.local/share/zsh/powerlevel10k"]
-	path = /home/axel/.dots/zsh/.local/share/zsh/powerlevel10k
+	path = zsh/.local/share/zsh/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
