@@ -4,3 +4,9 @@
 [submodule "/home/axel/.dots/zsh/.local/share/zsh/powerlevel10k"]
 	path = zsh/.local/share/zsh/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
+[submodule "dwm/.local/suckless/mon_dwm"]
+	path = dwm/.local/suckless/mon_dwm
+	url = git@github.com:axelcalixte/mon_dwm.git
+[submodule "st/.local/suckless/mon_st"]
+	path = st/.local/suckless/mon_st
+	url = git@github.com:axelcalixte/mon_st.git
