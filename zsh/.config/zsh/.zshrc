@@ -12,8 +12,6 @@ export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/bin/scripts"
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-#test -r ~/.dir_colors && eval $(dircolors ~/.dir_colors)
-
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.cache/zsh/history
 HISTSIZE=5000

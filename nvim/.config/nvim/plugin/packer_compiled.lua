@@ -85,14 +85,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/axel/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
-  neogit = {
-    loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/neogit"
-  },
-  neovim = {
-    loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/neovim"
-  },
   ["nord-vim"] = {
     loaded = true,
     path = "/home/axel/.local/share/nvim/site/pack/packer/start/nord-vim"
@@ -124,10 +116,6 @@ _G.packer_plugins = {
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/axel/.local/share/nvim/site/pack/packer/start/packer.nvim"
-  },
-  ["plenary.nvim"] = {
-    loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/plenary.nvim"
   }
 }
 

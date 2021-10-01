@@ -1,11 +1,7 @@
-local neogit = require('neogit')
-neogit.setup{}
-
 -----------------------------------
 --           COQ setup           --
 -----------------------------------
---vim.cmd("let g:coq_settings = { 'auto_start': v:true}")
-vim.g.coq_settings = { ["auto_start"] = true, ["display.icons.mode"] = "none" }
+vim.g.coq_settings = { ["auto_start"] = "shut-up" } --, ["display.icons.mode"] = "none" }
 local coq = require('coq')
 
 -----------------------------------
@@ -24,7 +20,6 @@ require('fzf-lua').setup{}
 -----------------------------------
 --     Language Servers          --
 -----------------------------------
-
 local system_name = "Linux"
 -- set the path to the sumneko installation; if you previously installed via the now deprecated :LspInstall, use
 local sumneko_root_path = "/home/axel/.local/share/lua-language-server"
@@ -80,39 +75,10 @@ vim.cmd([[ autocmd FileType java lua require('jdtls').start_or_attach({ cmd = {'
 -----------------------------------
 
 local nvim_lsp = require('lspconfig')
--- icons local protocol = require('vim.lsp.protocol')
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
- --[[ icons protocol.CompletionItemKind = {
-    '';   -- Text          = 1;
-    '';   -- Method        = 2;
-    'ƒ';   -- Function      = 3;
-    '';   -- Constructor   = 4;
-    '識';  -- Field         = 5;
-    '';   -- Variable      = 6;
-    '';   -- Class         = 7;
-    'ﰮ';   -- Interface     = 8;
-    '';   -- Module        = 9;
-    '';   -- Property      = 10;
-    '';   -- Unit          = 11;
-    '';   -- Value         = 12;
-    '了';  -- Enum          = 13;
-    '';   -- Keyword       = 14;
-    '﬌';   -- Snippet       = 15;
-    '';   -- Color         = 16;
-    '';   -- File          = 17;
-    '渚';  -- Reference     = 18;
-    '';   -- Folder        = 19;
-    '';   -- EnumMember    = 20;
-    '';   -- Constant      = 21;
-    '';   -- Struct        = 22;
-    '鬒';  -- Event         = 23;
-    'Ψ';   -- Operator      = 24;
-    '';   -- TypeParameter = 25;
-  } --]]
-
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
@@ -142,22 +108,17 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
-nvim_lsp.tsserver.setup(coq.lsp_ensure_capabilities({
-    on_attach = on_attach,
-    flags = {
-      debounce_text_changes = 150,
-    }
-}
-))
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
---[[local servers = { "tsserver", "bashls" }
+local servers = { "tsserver", "bashls", "html", "cssls" }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup(coq.lsp_ensure_capabilities({
     on_attach = on_attach,
+    capabilities = capabilities,
     flags = {
       debounce_text_changes = 150,
     }
   }))
 end
---]]

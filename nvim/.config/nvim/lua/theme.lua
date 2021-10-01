@@ -1,9 +1,5 @@
 vim.o.termguicolors = true
 vim.cmd('colorscheme nord')
--- vim.g.rose_pine_variant = 'base'
--- vim.g.rose_pine_disable_italics = false
--- vim.g.rose_pine_disable_background = false
--- vim.cmd('colorscheme rose-pine')
 
 require'nvim-web-devicons'.setup {
  -- globally enable default icons (default to false)
@@ -14,7 +10,7 @@ require'nvim-web-devicons'.setup {
 require'lualine'.setup {
 	options = {
 		icons_enabled = true,
-		theme = 'rose-pine',
+		theme = 'nord',
 		component_separators = {'', ''},
 		section_separators = {'', ''},
 		disabled_filetypes = {}
@@ -40,7 +36,7 @@ require'lualine'.setup {
 }
 
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "javascript", "c", "lua", "java" },
+  ensure_installed = { "javascript", "c", "lua", "java", "html", "css" },
   highlight = {
     enable = true,              -- false will disable the whole extension
   }
