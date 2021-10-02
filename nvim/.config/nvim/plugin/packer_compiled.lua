@@ -89,6 +89,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/axel/.local/share/nvim/site/pack/packer/start/nord-vim"
   },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/null-ls.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
@@ -116,6 +120,10 @@ _G.packer_plugins = {
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/axel/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/plenary.nvim"
   }
 }
 
