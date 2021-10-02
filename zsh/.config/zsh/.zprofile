@@ -28,6 +28,7 @@ export ANDROID_SDK_HOME="$XDG_CONFIG_HOME/android"
 export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
 export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
 export ANSIBLE_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/ansible/ansible.cfg"
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 #export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export ICEAUTHORITY="$XDG_CACHE_HOME"/Iceauthority
 #export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
@@ -46,5 +47,5 @@ export NNN_PLUG='m:nmount;a:mtpmount;p:preview-tui'
 export NNN_BMS='u:~/utt;v:~/.config/nvim;p:~/utt/lo02/projet;s:~/.local/suckless'
 export NNN_FIFO=/tmp/nnn.fifo
 
-eval `keychain --dir $XDG_CONFIG_HOME/keychain --eval --agents ssh id_rsa id_rsa.azure --noask` # not if using keepass
+eval `keychain --absolute --dir "$XDG_RUNTIME_DIR"/keychain --eval --agents ssh id_rsa --noask` # not if using keepass
 . /home/axel/.nix-profile/etc/profile.d/nix.sh
