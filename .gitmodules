@@ -12,3 +12,6 @@
 	path = st/.local/suckless/mon_st
 	url = git@github.com:axelcalixte/mon_st.git
 	ignore = dirty
+[submodule "slock/.local/suckless/mon_slock"]
+	path = slock/.local/suckless/mon_slock
+	url = git@github.com:axelcalixte/mon_slock.git
