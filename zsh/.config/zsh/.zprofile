@@ -1,6 +1,6 @@
 export EDITOR="nvim"
 export PAGER="less"
-export TERMINAL="st-256color"
+export TERMINAL="kitty"
 export BROWSER="firefox"
 export READER="less"
 
@@ -20,7 +20,7 @@ export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
 #export ALSA_CONFIG_PATH="$XDG_CONFIG_HOME/alsa/asoundrc"
 export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}/wineprefixes/default"
 export PASSWORD_STORE_DIR="$HOME/sync/pass"
-#export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export ADB_VENDOR_KEY="$XDG_CONFIG_HOME/android"
 export ANDROID_AVD_HOME="$XDG_DATA_HOME/android/"
 export ANDROID_EMULATOR_HOME="$XDG_DATA_HOME/android/"
@@ -32,20 +32,18 @@ export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 #export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export ICEAUTHORITY="$XDG_CACHE_HOME"/Iceauthority
 #export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
-export QT_SCALE_FACTOR=1.2
-export QT_AUTO_SCREEN_SCALE_FACTOR=1.2
-export QT_QPA_PLATFORMTHEME='gnome'
+export QT_SCALE_FACTOR=1.1
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
+export QT_QPA_PLATFORMTHEME='gtk3'
 export SFEED_URL_FILE="$XDG_CONFIG_HOME/sfeed/read"
-#export BAT_THEME="Nord"
 
 # Application configs
 export _JAVA_AWT_WM_NONREPARENTING=1
-export NNN_TRASH=1 
-export NNN_COLORS="3246" 
+export NNN_TRASH=1
+export NNN_COLORS="3246"
 export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
 export NNN_PLUG='m:nmount;a:mtpmount;p:preview-tui'
 export NNN_BMS='u:~/utt;v:~/.config/nvim;p:~/utt/lo02/projet;s:~/.local/suckless'
 export NNN_FIFO=/tmp/nnn.fifo
 
-eval `keychain --absolute --dir "$XDG_RUNTIME_DIR"/keychain --eval --agents ssh id_rsa --noask` # not if using keepass
-. /home/axel/.nix-profile/etc/profile.d/nix.sh
+eval "$(keychain --absolute --dir "$XDG_RUNTIME_DIR"/keychain --eval --agents ssh id_rsa --noask)" # not if using keepass or gnome

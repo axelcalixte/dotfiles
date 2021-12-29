@@ -5,12 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-[ "$(tty)" = "/dev/tty1" ] && ! pidof Xorg >/dev/null 2>&1  && exec startx $XDG_CONFIG_HOME/x11/.xinitrc
+#[ "$(tty)" = "/dev/tty1" ] && ! pidof Xorg >/dev/null 2>&1  && exec startx $XDG_CONFIG_HOME/x11/.xinitrc
 
 export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/bin/scripts"
-
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.cache/zsh/history
@@ -47,13 +44,11 @@ alias gco="git checkout --"
 alias gps="git push"
 alias gpl="git pull"
 alias t="todo-txt"
-alias bat='bat --theme="Nord"'
-alias newmenu="xdg-xmenu > ~/.local/bin/scripts/menu"
 
 #fast-syntax-highlighting
 source ~/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 #fzf fuzzy file search
-source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /etc/zsh_completion.d/fzf-key-bindings
 
 source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
