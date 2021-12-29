@@ -1,7 +1,11 @@
-#include "/home/axel/.config/x11/nord"
+!Xft.dpi: 352 200% scaling
+!Xft.dpi: 193 110% scaling
+!Xft.dpi: 176 100% scaling
 
-XTerm.vt100.locale: true
-Xterm.vt100.metaSendsExcape: true
-XTerm.vt100.saveLines: 8192
-
-XTerm.vt100.faceName: DejaVu Sans Mono:size=13
+! These might also be useful depending on your monitor and personal preference:
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
