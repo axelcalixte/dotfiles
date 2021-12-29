@@ -12,3 +12,6 @@
 [submodule "slock/.local/suckless/mon_slock"]
 	path = slock/.local/suckless/mon_slock
 	url = git@github.com:axelcalixte/dotfiles.git
+[submodule "zsh/.local/share/zsh/fast-syntax-highlighting"]
+	path = zsh/.local/share/zsh/fast-syntax-highlighting
+	url = git@github.com:zdharma-continuum/fast-syntax-highlighting.git
