@@ -15,3 +15,6 @@
 [submodule "nvim/.local/share/nvim/site/pack/packer/start/packer.nvim"]
 	path = nvim/.local/share/nvim/site/pack/packer/start/packer.nvim
 	url = git@github.com:wbthomason/packer.nvim.git
+[submodule "slock/.local/suckless/mon_slock"]
+	path = slock/.local/suckless/mon_slock
+	url = git@github.com:axelcalixte/dotfiles.git
