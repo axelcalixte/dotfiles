@@ -1,0 +1,5 @@
+[user]
+	name = Axel Calixte
+	email = axelcalixte@disroot.org
+[credential]
+	helper = /usr/libexec/git/git-credential-libsecret
