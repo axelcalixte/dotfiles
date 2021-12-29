@@ -39,3 +39,6 @@ vim.o.swapfile = false
 -- note: this setting is global and should be set only once
 vim.o.updatetime = 250
 vim.cmd([[autocmd CursorHold,CursorHoldI * lua vim.lsp.diagnostic.show_line_diagnostics({focusable=false})]])
+
+vim.cmd([[let g:python3_host_prog = "/usr/bin/python3"]])
+vim.cmd([[let g:loaded_python_provider = 0]])

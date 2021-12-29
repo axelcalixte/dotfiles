@@ -6,24 +6,45 @@ if vim.fn.has("nvim") then
 	vim.api.nvim_set_keymap("t", "<C-v><Esc>", "<Esc>", { noremap = true, silent = true })
 end
 
--- fzf-lua
-vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>lua require('fzf-lua').files()<cr>", {
+-- Telescope
+--[[vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<cr>", {
 	noremap = true,
 	silent = true,
 })
-vim.api.nvim_set_keymap("n", "<leader>fg", "<cmd>lua require('fzf-lua').grep()<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<cr>", {
+    noremap = true, 
+    silent = true
+})
 vim.api.nvim_set_keymap(
 	"n",
 	"<leader>fb",
-	"<cmd>lua require('fzf-lua').buffers()<cr>",
+	"<cmd>lua require('telescope.builtin').buffers()<cr>",
 	{ noremap = true, silent = true }
 )
 vim.api.nvim_set_keymap(
 	"n",
 	"<leader>fh",
-	"<cmd>lua require('fzf-lua').help_tags()<cr>",
+	"<cmd>lua require('telescope.builtin').help_tags()<cr>",
 	{ noremap = true, silent = true }
-)
+)]]
+
+-- fzf-lua
+vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>lua require('fzf-lua').files()<cr>",{
+	noremap = true,
+	silent = true,
+})
+vim.api.nvim_set_keymap("n", "<leader>fg", "<cmd>lua require('fzf-lua').grep()<cr>",{
+    noremap = true,
+    silent = true
+})
+vim.api.nvim_set_keymap("n", "<leader>fb", "<cmd>lua require('fzf-lua').buffers()<cr>",{
+    noremap = true,
+    silent = true
+})
+vim.api.nvim_set_keymap("n", "<leader>fh", "<cmd>lua require('fzf-lua').help_tags()<cr>",{
+    noremap = true,
+    silent = true
+})
 
 -- nvim-jdtls
 -- `code_action` is a superset of vim.lsp.buf.code_action and you'll be able to

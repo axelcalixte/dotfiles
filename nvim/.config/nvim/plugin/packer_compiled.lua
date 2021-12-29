@@ -57,7 +57,7 @@ end
 time([[Luarocks path setup]], false)
 time([[try_loadstring definition]], true)
 local function try_loadstring(s, component, name)
-  local success, result = pcall(loadstring(s))
+  local success, result = pcall(loadstring(s), name, _G.packer_plugins[name])
   if not success then
     vim.schedule(function()
       vim.api.nvim_notify('packer.nvim: Error running ' .. component .. ' for ' .. name .. ': ' .. result, vim.log.levels.ERROR, {})
@@ -69,65 +69,84 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
+    loaded = true,
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   ["coq.artifacts"] = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/coq.artifacts"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/coq.artifacts",
+    url = "https://github.com/ms-jpq/coq.artifacts"
   },
   coq_nvim = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/coq_nvim"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/coq_nvim",
+    url = "https://github.com/ms-jpq/coq_nvim"
   },
   ["fzf-lua"] = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/fzf-lua"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/fzf-lua",
+    url = "https://github.com/ibhagwan/fzf-lua"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/lualine.nvim"
-  },
-  ["nord-vim"] = {
-    loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nord-vim"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/null-ls.nvim"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
-  },
-  ["nvim-fzf"] = {
-    loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-fzf"
-  },
-  ["nvim-jdtls"] = {
-    loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-jdtls"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/axel/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rose-pine"] = {
+    config = { "\27LJ\2\nå\1\0\0\3\0\a\0\r6\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0+\1\1\0=\1\4\0006\0\0\0009\0\5\0'\2\6\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\30rose_pine_disable_italics\tbase\22rose_pine_variant\6g\bvim\0" },
+    loaded = true,
+    path = "/home/axel/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
+-- Config for: rose-pine
+time([[Config for rose-pine]], true)
+try_loadstring("\27LJ\2\nå\1\0\0\3\0\a\0\r6\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0+\1\1\0=\1\4\0006\0\0\0009\0\5\0'\2\6\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\30rose_pine_disable_italics\tbase\22rose_pine_variant\6g\bvim\0", "config", "rose-pine")
+time([[Config for rose-pine]], false)
 if should_profile then save_profiles() end
 
 end)

@@ -2,7 +2,28 @@
 --           COQ setup           --
 -----------------------------------
 vim.g.coq_settings = { ["auto_start"] = "shut-up" }
+
 local coq = require("coq")
+
+vim.g.coq_settings = {
+	display = {
+		icons = {
+			mode = "long",
+		},
+		pum = {
+			source_context = { "[", "]" },
+		},
+		preview = {
+			border = "rounded",
+			positions = {
+				north = 3,
+				south = 2,
+				west = 1,
+				east = 4,
+			},
+		},
+	},
+}
 
 -----------------------------------
 --        nvim-autopairs         --
@@ -16,14 +37,6 @@ npairs.setup({
 	enable_check_bracket_line = false, -- don't add pairs if a closing pair is already present on the line
 	map_bs = false,
 })
-
-vim.g.coq_settings = { keymap = { recommended = false } }
-
--- these mappings are coq recommended mappings unrelated to nvim-autopairs
-remap("i", "<esc>", [[pumvisible() ? "<c-e><esc>" : "<esc>"]], { expr = true, noremap = true })
-remap("i", "<c-c>", [[pumvisible() ? "<c-e><c-c>" : "<c-c>"]], { expr = true, noremap = true })
-remap("i", "<tab>", [[pumvisible() ? "<c-n>" : "<tab>"]], { expr = true, noremap = true })
-remap("i", "<s-tab>", [[pumvisible() ? "<c-p>" : "<bs>"]], { expr = true, noremap = true })
 
 -- skip it, if you use another global object
 _G.MUtils = {}
@@ -53,9 +66,11 @@ remap("i", "<bs>", "v:lua.MUtils.BS()", { expr = true, noremap = true })
 npairs.setup({})
 
 -----------------------------------
---           fzf-lua             --
+--         telescope             --
 -----------------------------------
 require("fzf-lua").setup({})
+--require("telescope").setup({})
+--require("telescope").load_extension("fzf")
 
 -----------------------------------
 --     Language Servers          --
@@ -181,29 +196,24 @@ local on_attach = function(client, bufnr)
 	buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 end
 
-null_ls.config({
+null_ls.setup({
 	sources = {
+		null_ls.builtins.formatting.trim_whitespace,
 		null_ls.builtins.formatting.stylua,
-		null_ls.builtins.formatting.google_java_format,
-		null_ls.builtins.formatting.prettier.with({
-			filetypes = { "html", "json", "yaml", "markdown" },
+		null_ls.builtins.formatting.nixfmt,
+		null_ls.builtins.diagnostics.shellcheck,
+		null_ls.builtins.formatting.prettierd.with({
+			filetypes = { "html", "json", "yaml", "markdown", "javascript", "typescript" },
 		}),
 	},
 })
 
-nvim_lsp["null-ls"].setup({
-	on_attach = on_attach,
-})
-
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.textDocument.completion.completionItem.snippetSupport = true
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { "tsserver", "ccls", "bashls", "html", "cssls" }
+local servers = { "tsserver", "ccls", "bashls", "html", "cssls", "jedi_language_server" }
 for _, lsp in ipairs(servers) do
 	nvim_lsp[lsp].setup(coq.lsp_ensure_capabilities({
 		on_attach = on_attach,
-		capabilities = capabilities,
 		flags = {
 			debounce_text_changes = 500,
 		},
