@@ -45,6 +45,10 @@ alias gps="git push"
 alias gpl="git pull"
 alias t="todo-txt"
 
+# fnm
+export PATH=.local/bin:$PATH
+eval "$(fnm env)"
+
 #fast-syntax-highlighting
 source ~/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 #fzf fuzzy file search
