@@ -15,3 +15,6 @@
 [submodule "zsh/.local/share/zsh/powerlevel10k"]
 	path = zsh/.local/share/zsh/powerlevel10k
 	url = git@github.com:romkatv/powerlevel10k.git
+[submodule "slock/.local/suckless/mon_slock"]
+	path = slock/.local/suckless/mon_slock
+	url = git@github.com:axelcalixte/mon_slock.git
