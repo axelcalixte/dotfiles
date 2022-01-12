@@ -5,8 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-#[ "$(tty)" = "/dev/tty1" ] && ! pidof Xorg >/dev/null 2>&1  && exec startx $XDG_CONFIG_HOME/x11/.xinitrc
-
 export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/bin/scripts"
 
 # Lines configured by zsh-newuser-install
@@ -19,18 +17,22 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/axel/.config/zsh/.zshrc'
+zstyle ':completion:*' menu select
 
 autoload -Uz compinit
 compinit
+_comp_options+=(globdots)		# Include hidden files.
 # End of lines added by compinstall
 
 # Aliases
 alias syncftp="ssh -L 41127:localhost:41127 axel@rpi.remi.calixte.eu"
-alias aptcount="apt list --installed | wc -l"
+alias rpmcount="rpm -qa | wc -l"
 alias backup="rsync -a --delete --verbose -e ssh /home/axel/ axel@creney:~/Storage/debian"
 alias mkdir='mkdir -pv'
 alias rm='rm -I'
-alias ll="ls -lhAF --color --group-directories-first"
+alias ll="exa --icons -al  --git --group-directories-first"
+#alias ll="ls -lhAF --color --group-directories-first"
+alias la="ls -lAh --color --group-directories-first"
 alias lc="ls -lA | wc -l"
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'
@@ -46,8 +48,9 @@ alias gpl="git pull"
 alias t="todo-txt"
 
 # fnm
-export PATH=.local/bin:$PATH
-eval "$(fnm env)"
+export PATH=./.config/fnm:$PATH
+eval "`fnm env`"
+eval "$(fnm env --use-on-cd)"
 
 #fast-syntax-highlighting
 source ~/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
