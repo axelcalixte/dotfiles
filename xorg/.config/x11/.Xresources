@@ -9,3 +9,6 @@ Xft.hintstyle:  hintfull
 Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
+
+!Xcursor.theme: Breeze_Snow
+!Xcursor.size: 16
