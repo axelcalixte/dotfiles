@@ -1,9 +1,22 @@
 #!/bin/sh
 
-#xrandr --output HDMI2 --auto --same-as eDP1 --mode 1920x1080
-#xrandr --output HDMI2 --auto --right-of eDP1
-#xrandr --output HDMI2 --auto --left-of eDP1
+right(){
+    xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --off --output DP2 --off --output HDMI1 --off --output HDMI2 --mode 1920x1080 --pos 1928x0 --rotate normal --output VIRTUAL1 --off
+}
 
-xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP2 --off --output HDMI1 --off --output HDMI2 --off --output VIRTUAL1 --off
+left() {
+    xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP1 --off --output DP2 --off --output HDMI1 --off --output HDMI2 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
+}
 
-notify-send "Secondary screen setup changed : ok."
+laptop(){
+    xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --off --output DP2 --off --output HDMI1 --off --output HDMI2 --off --output VIRTUAL1 --off
+}
+
+
+choice=$(printf "left to laptop\nright to laptop\nlaptop only\n" | dmenu -p "screen position" -fn 'Iosevka Term:style=Regular:size=12' -nb '#191724' -nf '#e0def4' -sb '#31748f' -sf '#eceff4')
+
+case "$choice" in
+    "left to laptop") left ;;
+    "right to laptop") right ;;
+    "laptop only") laptop ;;
+esac
