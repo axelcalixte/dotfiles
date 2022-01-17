@@ -1,7 +1,3 @@
-[submodule "dwm/.local/suckless/mon_dwm"]
-	path = dwm/.local/suckless/mon_dwm
-	url = git@github.com:axelcalixte/mon_dwm.git
-	ignore = dirty
 [submodule "st/.local/suckless/mon_st"]
 	path = st/.local/suckless/mon_st
 	url = git@github.com:axelcalixte/mon_st.git
