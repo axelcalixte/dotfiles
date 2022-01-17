@@ -32,9 +32,10 @@ export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 #export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export ICEAUTHORITY="$XDG_CACHE_HOME"/Iceauthority
 #export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
-export QT_SCALE_FACTOR=1.1
+export QT_SCALE_FACTOR=1.10
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
-export QT_QPA_PLATFORMTHEME='gtk3'
+export QT_QPA_PLATFORMTHEME='gtk2'
+#export GDK_SCALE=2
 export SFEED_URL_FILE="$XDG_CONFIG_HOME/sfeed/read"
 
 # Application configs
@@ -46,4 +47,4 @@ export NNN_PLUG='m:nmount;a:mtpmount;p:preview-tui'
 export NNN_BMS='u:~/utt;v:~/.config/nvim;p:~/utt/lo02/projet;s:~/.local/suckless'
 export NNN_FIFO=/tmp/nnn.fifo
 
-eval "$(keychain --absolute --dir "$XDG_RUNTIME_DIR"/keychain --eval --agents ssh id_rsa --noask)" # not if using keepass or gnome
+eval "$(keychain -q --absolute --dir "$XDG_RUNTIME_DIR"/keychain --eval --agents ssh,gpg id_rsa --noask)" # not if using keepass or gcr
