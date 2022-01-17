@@ -1,5 +1,13 @@
 vim.o.termguicolors = true
---vim.cmd("colorscheme nord")
+
+--vim.cmd[[colorscheme catppuccin]]
+
+--vim.g.rose_pine_variant = "base"
+--vim.g.rose_pine_disable_italics = true
+--vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme kanagawa")
+
+require("colorizer").setup()
 
 require("nvim-web-devicons").setup({
 	-- globally enable default icons (default to false)
@@ -10,7 +18,7 @@ require("nvim-web-devicons").setup({
 require("lualine").setup({
 	options = {
 		icons_enabled = true,
-		theme = "rose-pine",
+		theme = "kanagawa",
 		component_separators = { "", "" },
 		section_separators = { "", "" },
 		disabled_filetypes = {},
@@ -36,7 +44,7 @@ require("lualine").setup({
 })
 
 require("nvim-treesitter.configs").setup({
-	ensure_installed = { "javascript", "c", "lua", "java", "html", "css", "nix", "python" },
+	ensure_installed = { "javascript", "c", "lua", "java", "html", "css", "latex", "python" },
 	highlight = {
 		enable = true, -- false will disable the whole extension
 	},

@@ -1,15 +1,11 @@
 return require("packer").startup(function()
-	use("wbthomason/packer.nvim")
-	--use("arcticicestudio/nord-vim")
-	use({
-		"rose-pine/neovim",
-		as = "rose-pine",
-		config = function()
-			vim.g.rose_pine_variant = "base"
-			vim.g.rose_pine_disable_italics = true
-			vim.cmd("colorscheme rose-pine")
-		end,
-	})
+	use({"wbthomason/packer.nvim"})
+	use({"arcticicestudio/nord-vim"})
+	use({ "rose-pine/neovim" })
+	use({ "catppuccin/nvim", as = "catpuccin" })
+    use({ "rebelot/kanagawa.nvim" })
+
+	use({ "norcalli/nvim-colorizer.lua" })
 
 	use({
 		"nvim-lualine/lualine.nvim",
@@ -22,18 +18,11 @@ return require("packer").startup(function()
 
 	--use({"mfussenegger/nvim-jdtls", ft = { "java" }})
 
+	use({
+		"ibhagwan/fzf-lua",
+		requires = { "kyazdani42/nvim-web-devicons" },
+	})
 
-    use { 'ibhagwan/fzf-lua',
-  -- optional for icon support
-  requires = { 'kyazdani42/nvim-web-devicons' }
-}
-	-- use({
-	-- 	"nvim-telescope/telescope.nvim",
-	-- 	requires = {
-	-- 		{ "nvim-lua/plenary.nvim" },
-	-- 		{ "nvim-telescope/telescope-fzf-native.nvim", run = "make" },
-	-- 	},
-	-- })
 	use({ "ms-jpq/coq_nvim", branch = "coq" }) -- main one
 	use({ "ms-jpq/coq.artifacts", branch = "artifacts" }) -- 9000+ Snippets
 
@@ -54,4 +43,6 @@ return require("packer").startup(function()
 			require("Comment").setup()
 		end,
 	})
+
+	use("lervag/vimtex")
 end)

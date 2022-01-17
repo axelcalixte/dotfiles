@@ -8,7 +8,7 @@ local coq = require("coq")
 vim.g.coq_settings = {
 	display = {
 		icons = {
-			mode = "long",
+			mode = "short",
 		},
 		pum = {
 			source_context = { "[", "]" },
@@ -68,9 +68,12 @@ npairs.setup({})
 -----------------------------------
 --         telescope             --
 -----------------------------------
-require("fzf-lua").setup({})
---require("telescope").setup({})
---require("telescope").load_extension("fzf")
+require("fzf-lua").setup({
+    lsp = {
+        -- make lsp requests synchronous so they work with null-ls
+        async_or_timeout = 3000,
+    },
+})
 
 -----------------------------------
 --     Language Servers          --
@@ -109,19 +112,19 @@ require("lspconfig").sumneko_lua.setup(coq.lsp_ensure_capabilities({
 		},
 	},
 }))
-if vim.fn.has("nvim-0.5") then
-	vim.cmd([[
-    augroup lsp
-    au!
-    au FileType java lua require('jdtls').start_or_attach({cmd = {'jdtls.sh'}})
-    augroup end
-  ]])
-end
-
--- find_root looks for parent directories relative to the current buffer containing one of the given arguments.
-vim.cmd(
-	[[ autocmd FileType java lua require('jdtls').start_or_attach({ cmd = {'jdtls.sh', '/home/axel/.config/jdtls-workspace' .. vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')}, root_dir = require('jdtls.setup').find_root({'gradle.build', 'pom.xml'}) }) ]]
-)
+-- if vim.fn.has("nvim-0.5") then
+-- 	vim.cmd([[
+--     augroup lsp
+--     au!
+--     au FileType java lua require('jdtls').start_or_attach({cmd = {'jdtls.sh'}})
+--     augroup end
+--   ]])
+-- end
+--
+-- -- find_root looks for parent directories relative to the current buffer containing one of the given arguments.
+-- vim.cmd(
+-- 	[[ autocmd FileType java lua require('jdtls').start_or_attach({ cmd = {'jdtls.sh', '/home/axel/.config/jdtls-workspace' .. vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')}, root_dir = require('jdtls.setup').find_root({'gradle.build', 'pom.xml'}) }) ]]
+-- )
 
 -----------------------------------
 --     lspconfig and null-ls     --
@@ -189,7 +192,7 @@ local on_attach = function(client, bufnr)
 	buf_set_keymap("n", "<space>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
 	buf_set_keymap("n", "<space>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
 	buf_set_keymap("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
-	buf_set_keymap("n", "<space>e", "<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>", opts)
+	buf_set_keymap("n", "<space>e", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
 	buf_set_keymap("n", "[d", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>", opts)
 	buf_set_keymap("n", "]d", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>", opts)
 	buf_set_keymap("n", "<space>q", "<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>", opts)
@@ -200,11 +203,11 @@ null_ls.setup({
 	sources = {
 		null_ls.builtins.formatting.trim_whitespace,
 		null_ls.builtins.formatting.stylua,
-		null_ls.builtins.formatting.nixfmt,
 		null_ls.builtins.diagnostics.shellcheck,
 		null_ls.builtins.formatting.prettierd.with({
 			filetypes = { "html", "json", "yaml", "markdown", "javascript", "typescript" },
 		}),
+        null_ls.builtins.diagnostics.chktex,
 	},
 })
 

@@ -1,11 +1,8 @@
 -- set -> vim.o
 -- let -> vim.g
---vim.g.mapleader = "<Space>"
+
 vim.g.mapleader = " "
 
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
-vim.o.expandtab = true
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.expandtab = true
@@ -18,7 +15,7 @@ vim.cmd("set path+=**")
 vim.o.showcmd = true
 -- vim.o.mouse = a
 vim.opt.completeopt = { "menuone", "noselect" }
-vim.o.colorcolumn = "80"
+--vim.o.colorcolumn = "80"
 
 --vim.o.netrw_preview = 1
 -- vim.o.netrw_liststyle = 3
@@ -31,14 +28,16 @@ vim.o.undofile = true
 if vim.fn.has("nvim") == 0 then
 	vim.o.undodir = "~/.local/share/nvim/undo"
 end
-
 -- no swap file then
 vim.o.swapfile = false
 
--- You will likely want to reduce updatetime which affects CursorHold
--- note: this setting is global and should be set only once
-vim.o.updatetime = 250
-vim.cmd([[autocmd CursorHold,CursorHoldI * lua vim.lsp.diagnostic.show_line_diagnostics({focusable=false})]])
+vim.cmd([[let g:tex_flavor='latex']])
+vim.cmd([[let g:vimtex_compiler_progname= '/home/axel/.local/bin/nvr']])
+vim.cmd([[let g:vimtex_view_method='zathura']])
+vim.cmd([[let g:vimtex_quickfix_mode=0]])
+vim.cmd([[set conceallevel=1]])
+vim.cmd([[let g:tex_conceal='abdmg']])
 
-vim.cmd([[let g:python3_host_prog = "/usr/bin/python3"]])
-vim.cmd([[let g:loaded_python_provider = 0]])
+vim.cmd([[setlocal spell]])
+vim.cmd([[set spelllang=fr,en_us]])
+vim.cmd([[inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u]])
