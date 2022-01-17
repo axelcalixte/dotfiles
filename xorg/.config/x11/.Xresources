@@ -1,5 +1,5 @@
 !Xft.dpi: 352 200% scaling
-!Xft.dpi: 193 110% scaling
+!Xft.dpi: 193
 !Xft.dpi: 176 100% scaling
 
 ! These might also be useful depending on your monitor and personal preference:
@@ -9,6 +9,3 @@ Xft.hintstyle:  hintfull
 Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
-
-!Xcursor.theme: Breeze_Snow
-!Xcursor.size: 16
