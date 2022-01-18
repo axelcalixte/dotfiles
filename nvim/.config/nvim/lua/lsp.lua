@@ -24,49 +24,8 @@ vim.g.coq_settings = {
 		},
 	},
 }
-
 -----------------------------------
---        nvim-autopairs         --
------------------------------------
-local remap = vim.api.nvim_set_keymap
-local npairs = require("nvim-autopairs")
-
-npairs.setup({
-	map_cr = true, --  map <CR> on insert mode
-	map_complete = true, -- it will auto insert `(` after select function or method item
-	enable_check_bracket_line = false, -- don't add pairs if a closing pair is already present on the line
-	map_bs = false,
-})
-
--- skip it, if you use another global object
-_G.MUtils = {}
-
-MUtils.CR = function()
-	if vim.fn.pumvisible() ~= 0 then
-		if vim.fn.complete_info({ "selected" }).selected ~= -1 then
-			return npairs.esc("<c-y>")
-		else
-			return npairs.esc("<c-e>") .. npairs.autopairs_cr()
-		end
-	else
-		return npairs.autopairs_cr()
-	end
-end
-remap("i", "<cr>", "v:lua.MUtils.CR()", { expr = true, noremap = true })
-
-MUtils.BS = function()
-	if vim.fn.pumvisible() ~= 0 and vim.fn.complete_info({ "mode" }).mode == "eval" then
-		return npairs.esc("<c-e>") .. npairs.autopairs_bs()
-	else
-		return npairs.autopairs_bs()
-	end
-end
-remap("i", "<bs>", "v:lua.MUtils.BS()", { expr = true, noremap = true })
-
-npairs.setup({})
-
------------------------------------
---         telescope             --
+--         fzf-lua               --
 -----------------------------------
 require("fzf-lua").setup({
     lsp = {
@@ -112,19 +71,6 @@ require("lspconfig").sumneko_lua.setup(coq.lsp_ensure_capabilities({
 		},
 	},
 }))
--- if vim.fn.has("nvim-0.5") then
--- 	vim.cmd([[
---     augroup lsp
---     au!
---     au FileType java lua require('jdtls').start_or_attach({cmd = {'jdtls.sh'}})
---     augroup end
---   ]])
--- end
---
--- -- find_root looks for parent directories relative to the current buffer containing one of the given arguments.
--- vim.cmd(
--- 	[[ autocmd FileType java lua require('jdtls').start_or_attach({ cmd = {'jdtls.sh', '/home/axel/.config/jdtls-workspace' .. vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')}, root_dir = require('jdtls.setup').find_root({'gradle.build', 'pom.xml'}) }) ]]
--- )
 
 -----------------------------------
 --     lspconfig and null-ls     --
@@ -203,11 +149,12 @@ null_ls.setup({
 	sources = {
 		null_ls.builtins.formatting.trim_whitespace,
 		null_ls.builtins.formatting.stylua,
-		null_ls.builtins.diagnostics.shellcheck,
 		null_ls.builtins.formatting.prettierd.with({
 			filetypes = { "html", "json", "yaml", "markdown", "javascript", "typescript" },
 		}),
+		null_ls.builtins.diagnostics.shellcheck,
         null_ls.builtins.diagnostics.chktex,
+        null_ls.builtins.code_actions.gitsigns,
 	},
 })
 

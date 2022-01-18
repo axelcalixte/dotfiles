@@ -15,7 +15,6 @@ vim.cmd("set path+=**")
 vim.o.showcmd = true
 -- vim.o.mouse = a
 vim.opt.completeopt = { "menuone", "noselect" }
---vim.o.colorcolumn = "80"
 
 --vim.o.netrw_preview = 1
 -- vim.o.netrw_liststyle = 3
