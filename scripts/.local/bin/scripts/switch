@@ -12,7 +12,7 @@ windows=$(echo "$windows" | \
                     $1 = ""; printf "%s\n", $0}')
 
 
-target=$(echo "$windows" | dmenu -fn 'Liga SFMono Nerd Font:style=Regular:size=12' -nb '#191724' -nf '#e0def4' -sb '#31748f' -sf '#eceff4' -l 10 -i -p switch: | tr -s '[:blank:]' | cut -d ' ' -f 2-)
+target=$(echo "$windows" | dmenu -fn 'Iosevka Term:style=Regular:size=13' -nb '#1F1F28' -nf '#DCD7BA' -sb '#223249' -sf '#DCD7BA' -l 10 -i -p switch: | tr -s '[:blank:]' | cut -d ' ' -f 2-)
 
 if [[ -n $target ]]; then
     wmctrl -a "$target"
