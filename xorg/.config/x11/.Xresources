@@ -9,3 +9,84 @@ Xft.hintstyle:  hintfull
 Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
+
+!! Set a default font and font size as below:
+*.font: Iosevka:pixelsize=18:autohint=true:antialias=true
+*.dmenufont: Iosevka:pixelsize=18
+*.alpha: 0.9
+
+/* !! dark gruvbox material : */
+!! for color0 /* hard contrast: #1d2021 / soft contrast: #32302f */
+! *.color0: #282828
+!*.color1: #ea6962
+!*.color2: #a9b665
+!*.color3: #d8a657
+!*.color4: #7daea3
+!*.color5: #d3869b
+!*.color6: #89b482
+!*.color7: #d4be98
+
+!*.color8: #928374
+!*.color9: #ef938e
+!*.color10: #bbc585
+!*.color11: #e1bb7e
+!*.color12: #9dc2ba
+!*.color13: #e1acbb
+!*.color14: #a7c7a2
+!*.color15: #e2d3ba
+
+! *.background: #282828
+! *.foreground: #e2d3ba
+!
+!! demnu
+!*.normfgcolor: #e2d3ba
+!*.normbgcolor: #282828
+!*.selfgcolor: #d4be98
+!*.selbgcolor: #7daea3
+!*.prompt: #98971a
+
+! kanagawa .Xresources file
+*color0: #090618
+*color1: #C34043
+*color2: #76946A
+! *color3: #FFA066 surimiOrange instead of boatYellow2 C0A36E
+*color3: #C0A36E
+*color4: #7E9CD8
+*color5: #957FB8
+*color6: #6A9589
+*color7: #C8C093
+
+*color8: #727169
+*color9: #E82424
+*color10: #98BB6C
+*color11: #E6C384
+*color12: #7FB4CA
+*color13: #938AA9
+*color14: #7AA89F
+*color15: #DCD7BA
+
+*background: #1F1F28
+*foreground: #DCD7BA
+
+!! dwm and dmenu
+dmenu.normbgcolor: #1F1F28
+dmenu.normbordercolor: #16161D
+dmenu.normfgcolor: #DCD7BA
+dmenu.selbgcolor: #223249
+dmenu.selbordercolor: #223249
+dmenu.selfgcolor: #C8C093
+dwm.normbgcolor: #1F1F28
+dwm.normbordercolor: #16161D
+dwm.normfgcolor: #DCD7BA
+dwm.selbgcolor: #223249
+dwm.selbordercolor: #223249
+dwm.selfgcolor: #C8C093
+dwm.borderpx: 5
+*.snap: 32
+*.showbar: 1
+*.topbar: 1
+*.nmaster: 1
+*.resizehints: 1
+*.mfact: 0.55
+
+!*.prompt: #98971a for dmenu

@@ -1,7 +1,6 @@
 export EDITOR="nvim"
 export PAGER="less"
 export TERMINAL="kitty"
-export BROWSER="firefox"
 export READER="less"
 
 # ~/ Clean-up:
