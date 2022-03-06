@@ -1,56 +1,52 @@
-return require("packer").startup(function()
-	use({ "wbthomason/packer.nvim" })
+-- Install packer
+local install_path = vim.fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
-	use({ "rebelot/kanagawa.nvim" })
+-- returns the require for use in `config` parameter of packer's use
+-- expects the name of the config file
+-- thanks to Allaman on Github
+function get_config(name)
+	return string.format('require("packed/%s")', name)
+end
 
-	use({ "norcalli/nvim-colorizer.lua" })
+if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
+	vim.fn.execute("!git clone https://github.com/wbthomason/packer.nvim " .. install_path)
+end
 
-	use({
-		"nvim-lualine/lualine.nvim",
-		requires = { "kyazdani42/nvim-web-devicons", opt = true },
-	})
-	use("neovim/nvim-lspconfig")
-	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
-	use({
-		"ibhagwan/fzf-lua",
-		requires = { "kyazdani42/nvim-web-devicons" },
-	})
-	use({ "ms-jpq/coq_nvim", branch = "coq" }) -- main one
+local use = require("packer").use
+require("packer").startup(function()
+	use("wbthomason/packer.nvim") -- Package manager
+	use({ "numToStr/Comment.nvim", config = get_config("comment-nvim") }) -- "gc" to comment visual regions/lines
+	use("ludovicchabant/vim-gutentags") -- Automatic tags management
+	-- UI to select things (files, grep results, open buffers...)
+	use({ "ibhagwan/fzf-lua", requires = { "kyazdani42/nvim-web-devicons" }, config = get_config("fzf-lua") })
+	use({ "rebelot/kanagawa.nvim", config = get_config("colorscheme") })
+	use({ "nvim-lualine/lualine.nvim", config = get_config("lualine") }) -- Fancier statusline
+	-- Add indentation guides even on blank lines
+	use("lukas-reineke/indent-blankline.nvim")
+	-- surround text objects
+	use("machakann/vim-sandwich")
+	-- Add git related info in the signs columns and popups
+	use({ "lewis6991/gitsigns.nvim", requires = { "nvim-lua/plenary.nvim" }, config = get_config("gitsigns") })
+	-- Highlight, edit, and navigate code using a fast incremental parsing library
+	use({ "nvim-treesitter/nvim-treesitter", config = get_config("treesitter") })
+	-- Additional textobjects for treesitter
+	use("nvim-treesitter/nvim-treesitter-textobjects")
+	use({ "neovim/nvim-lspconfig", config = get_config("lspconfig") }) -- Collection of configurations for built-in LSP client
+	use({ "ms-jpq/coq_nvim", branch = "coq", run = ":COQnow", config = get_config("coq-nvim") }) -- main one
 	use({ "ms-jpq/coq.artifacts", branch = "artifacts" }) -- 9000+ Snippets
-	use({ "jose-elias-alvarez/null-ls.nvim", requires = {
-		"nvim-lua/plenary.nvim",
-	} })
+	use({ "lervag/vimtex", ft = "tex" }) --, config = get_config("vimtex"))
+	use({ "jose-elias-alvarez/null-ls.nvim", requires = { "nvim-lua/plenary.nvim" }, config = get_config("null-ls") })
+	-- Trying plugins
+	use({ "j-hui/fidget.nvim", config = get_config("fidget-nvim") })
 	use({
-		"folke/trouble.nvim",
-		requires = "kyazdani42/nvim-web-devicons",
-		config = function()
-			require("trouble").setup({
-				-- your configuration comes here
-				-- or leave it empty to use the default settings
-				-- refer to the configuration section below
-			})
-		end,
+		"nvim-neorg/neorg",
+		requires = "nvim-lua/plenary.nvim",
 	})
-	use({
-		"luukvbaal/stabilize.nvim",
-		config = function()
-			require("stabilize").setup()
-		end,
-	})
-	use({
-		"lewis6991/gitsigns.nvim",
-		requires = {
-			"nvim-lua/plenary.nvim",
-		},
-		config = function()
-			require("gitsigns").setup()
-		end,
-	})
-	use({
-		"numToStr/Comment.nvim",
-		config = function()
-			require("Comment").setup()
-		end,
-	})
-	use("lervag/vimtex")
 end)
+
+vim.cmd([[
+	augroup Packer
+		autocmd!
+		autocmd BufWritePost init.lua PackerCompile
+	augroup end
+]])
