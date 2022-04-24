@@ -1,2 +1,2 @@
 --Enabling Comment.nvim
-require("Comment").setup({})
+require("Comment").setup()

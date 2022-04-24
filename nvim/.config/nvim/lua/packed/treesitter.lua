@@ -1,6 +1,6 @@
 -- Treesitter configuration
 require("nvim-treesitter.configs").setup({
-	ensure_installed = { "javascript", "c", "lua", "html", "css", "latex", "python", "norg" },
+	ensure_installed = { "javascript", "c", "lua", "html", "css", --[[ "latex" ,]] "python" },
 	highlight = {
 		enable = true, -- false will disable the whole extension
 	},

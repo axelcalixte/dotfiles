@@ -1,3 +1,4 @@
+--Set colorscheme
 require("kanagawa").setup({ --those are the defaults
 	undercurl = true, -- enable undercurls
 	commentStyle = "italic",
@@ -12,4 +13,14 @@ require("kanagawa").setup({ --those are the defaults
 	dimInactive = true, -- dim inactive window `:h hl-NormalNC`
 	colors = {},
 	overrides = {},
+})
+
+--Set statusbar
+require("lualine").setup({
+	options = {
+		icons_enabled = true,
+		theme = "kanagawa",
+		component_separators = "|",
+		section_separators = "",
+	},
 })
