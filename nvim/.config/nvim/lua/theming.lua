@@ -1,6 +1,7 @@
 -- Global settings
 --vim.g.selenized_variant = "bw" -- or "normal"
-vim.o.background = "light"
+vim.cmd("let g:selenized_variant = 'bw'")
+vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.o.colorcolumn = "80"
 

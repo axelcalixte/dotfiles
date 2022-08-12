@@ -11,10 +11,10 @@ open_url(){
     #grep nearest city from openweathermap api call with gps data of geoclue
     lati=$(grep Lat < "$TMPFILE" | awk '{print $2}' | cut -c-6)
     longi=$(grep Lon < "$TMPFILE" | awk '{print $2}' | cut -c-6)
-    id=$(curl "api.openweathermap.org/data/2.5/weather?lat="$lati"&lon="$longi"&appid=APIKEY_HERE" | grep -o 'id":[0-9]*,"n' | grep -o '[0-9]*')
+    id=$(curl "api.openweathermap.org/data/2.5/weather?lat="$lati"&lon="$longi"&appid=2d9f37fd857075daca3092a7a910758f" | grep -o 'id":[0-9]*,"n' | grep -o '[0-9]*')
 
     # You can use the city variable with websites other than openweathermap
-    #city=$(curl "api.openweathermap.org/data/2.5/weather?lat="$lati"&lon="$longi"&appid=APIKEY_HERE" | grep -o 'ame":"[A-z-]*' | cut -d'"' -f3)
+    #city=$(curl "api.openweathermap.org/data/2.5/weather?lat="$lati"&lon="$longi"&appid=2d9f37fd857075daca3092a7a910758f" | grep -o 'ame":"[A-z-]*' | cut -d'"' -f3)
 
     xdg-open https://openweathermap.org/city/"$id"
 }

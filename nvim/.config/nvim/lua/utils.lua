@@ -9,6 +9,7 @@ require("fzf-lua").setup({
 	},
 })
 
+vim.keymap.set("n", "<leader><leader>", "<cmd>lua require('fzf-lua').builtin()<cr>")
 vim.keymap.set("n", "<leader>ff", "<cmd>lua require('fzf-lua').files()<cr>")
 vim.keymap.set("n", "<leader>fg", "<cmd>lua require('fzf-lua').grep()<cr>")
 vim.keymap.set("n", "<leader>fb", "<cmd>lua require('fzf-lua').buffers()<cr>")

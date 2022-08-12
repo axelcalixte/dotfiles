@@ -1,1 +1,7 @@
-print('y\'a plus rien')
+require('debugging')
+require('options')
+require('plugins')
+require('remaps')
+require('smart')
+require('theming')
+require('utils')

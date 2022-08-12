@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/bin/scripts:${XDG_DATA_HOME}/npm/bin:${XDG_DATA_HOME}/cargo/bin"
+export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/bin/scripts:$HOME/.local/bin/platform-tools:${XDG_DATA_HOME}/npm/bin"
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.cache/zsh/history
@@ -14,7 +14,7 @@ SAVEHIST=10000
 setopt autocd
 unsetopt beep
 bindkey -v
-bindkey -s "^Z" fg"^M" # same ^Z behaviour in zsh and a shell program like vim
+#bindkey -s "^Z" fg"^M" # same ^Z behaviour in zsh and a shell program like vim
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/axel/.config/zsh/.zshrc'
@@ -26,7 +26,7 @@ _comp_options+=(globdots)		# Include hidden files.
 # End of lines added by compinstall
 
 # Aliases
-alias website_update="rsync -uvrP --delete-after ~/docs/projects/website/ axel@azure:/srv/www/monSite"
+alias website_update="rsync -uvrP --delete-after ~/docs/projects/website/ axel@azure:/srv/www/axelcalixte.fr"
 alias syncftp="ssh -L 41127:localhost:41127 rpi"
 alias rpmcount="rpm -qa | wc -l"
 alias backup="rsync -a --delete --verbose -e ssh /home/axel/ rpi:~/Storage/cloud/axelSUSE"
@@ -47,7 +47,6 @@ alias ga="git add"
 alias gco="git checkout --"
 alias gps="git push"
 alias gpl="git pull"
-alias t="todo-txt"
 
 #fast-syntax-highlighting
 source ~/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh

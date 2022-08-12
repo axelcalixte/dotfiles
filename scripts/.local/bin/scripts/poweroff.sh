@@ -1,6 +1,6 @@
 #!/bin/sh
 
-choice=$(printf "lock\nsuspend\nlogout\nreboot\npoweroff" | dmenu -fn 'Iosevka Term:style=Regular:size=13')
+choice=$(printf "lock\nsuspend\nlogout\nreboot\npoweroff" | dmenu -fn 'Liga SFMono Nerd Font:style=Regular:size=11')
 
 case "$choice" in
     lock) slock ;;
