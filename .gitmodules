@@ -1,19 +1,7 @@
-[submodule "st/.local/suckless/mon_st"]
-	path = st/.local/suckless/mon_st
-	url = git@github.com:axelcalixte/mon_st.git
-	ignore = dirty
-[submodule "nvim/.local/share/nvim/site/pack/packer/start/packer.nvim"]
-	path = nvim/.local/share/nvim/site/pack/packer/start/packer.nvim
-	url = git@github.com:wbthomason/packer.nvim.git
 [submodule "zsh/.local/share/zsh/fast-syntax-highlighting"]
 	path = zsh/.local/share/zsh/fast-syntax-highlighting
 	url = git@github.com:zdharma-continuum/fast-syntax-highlighting.git
 [submodule "zsh/.local/share/zsh/powerlevel10k"]
 	path = zsh/.local/share/zsh/powerlevel10k
 	url = git@github.com:romkatv/powerlevel10k.git
-[submodule "slock/.local/suckless/mon_slock"]
-	path = slock/.local/suckless/mon_slock
-	url = git@github.com:axelcalixte/mon_slock.git
-[submodule "dwm/.local/suckless/mon_dwm"]
-	path = dwm/.local/suckless/mon_dwm
-	url = git@github.com:axelcalixte/mon_dwm.git
+
