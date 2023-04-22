@@ -20,19 +20,12 @@ require('lazy').setup({
 
 
 -- Ensure the servers above are installed
-local mason_lspconfig = require 'mason-lspconfig'
 local servers = require('axel.tables.servers')
 local capabilities = require('axel.tables.capabilities')
 local on_attach = require('axel.tables.on_attach')
 
--- Setup mason so it can manage external tooling
-require('mason').setup()
 
-mason_lspconfig.setup {
-   ensure_installed = vim.tbl_keys(servers),
-}
-
-mason_lspconfig.setup_handlers {
+require('mason-lspconfig').setup_handlers {
    function(server_name)
       require('lspconfig')[server_name].setup {
          capabilities = capabilities,
