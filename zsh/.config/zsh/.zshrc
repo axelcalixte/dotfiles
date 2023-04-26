@@ -64,3 +64,7 @@ source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.dots/zsh/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.dots/zsh/.config/zsh/.p10k.zsh ]] || source ~/.dots/zsh/.config/zsh/.p10k.zsh
+
+# fnm
+export PATH="./.local/dev/fnm:$PATH"
+eval "`fnm env`"
