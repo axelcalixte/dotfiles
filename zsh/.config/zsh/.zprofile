@@ -22,3 +22,5 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=0
 export CONDARC=/home/axel/.config/conda/condarc
 export JUPYTER_CONFIG_DIR=/home/axel/.config/jupyter
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+export LANG=fr_FR.utf8

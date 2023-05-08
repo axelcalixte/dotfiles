@@ -5,3 +5,6 @@
 	path = zsh/.local/share/zsh/powerlevel10k
 	url = git@github.com:romkatv/powerlevel10k.git
 
+[submodule "zsh/.local/share/zsh/pure"]
+	path = zsh/.local/share/zsh/pure
+	url = git@github.com:sindresorhus/pure.git

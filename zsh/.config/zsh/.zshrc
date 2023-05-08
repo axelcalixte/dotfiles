@@ -1,11 +1,14 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
+fpath+=($HOME/.local/share/zsh/pure)
+autoload -U promptinit; promptinit
+prompt pure
 
-export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/bin/scripts:${XDG_DATA_HOME}/npm/bin"
+export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/bin/scripts:${XDG_DATA_HOME}/npm/bin:${HOME}/.local/dev/fnm"
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.cache/zsh/history
@@ -40,7 +43,7 @@ alias lc="ls -lA | wc -l"
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'
 alias sr='systemctl reboot'
-#alias g="git"
+alias g="git"
 alias gs="git status"
 alias gcm="git commit -m"
 alias gau="git add -u"
@@ -58,13 +61,12 @@ source ~/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plug
 [ -f "/etc/zsh_completion.d/fzf-key-bindings" ] && source /etc/zsh_completion.d/fzf-key-bindings
 
 # powerlevel10k prompt
-source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
+# source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+# [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.dots/zsh/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.dots/zsh/.config/zsh/.p10k.zsh ]] || source ~/.dots/zsh/.config/zsh/.p10k.zsh
+# [[ ! -f ~/.dots/zsh/.config/zsh/.p10k.zsh ]] || source ~/.dots/zsh/.config/zsh/.p10k.zsh
 
 # fnm
-export PATH="./.local/dev/fnm:$PATH"
 eval "`fnm env`"
