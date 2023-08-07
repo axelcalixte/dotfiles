@@ -1,36 +1,50 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
-local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-   vim.fn.system {
-      'git',
-      'clone',
-      '--filter=blob:none',
-      'https://github.com/folke/lazy.nvim.git',
-      '--branch=stable', -- latest stable release
+   vim.fn.system({
+      "git",
+      "clone",
+      "--filter=blob:none",
+      "https://github.com/folke/lazy.nvim.git",
+      "--branch=stable", -- latest stable release
       lazypath,
-   }
+   })
 end
 vim.opt.rtp:prepend(lazypath)
 
-require('lazy').setup({
-   { import = 'axel.plugins' },
-}, {})
+require("lazy").setup({
+   { "echasnovski/mini.surround",  version = "*", opts = {} },
+   {
+      "echasnovski/mini.hipatterns",
+      version = "*",
+      config = function()
+         local hipatterns = require "mini.hipatterns"
+         hipatterns.setup {
+            highlighters = {
+               -- Highlight standalone 'FIXME', 'HACK', 'TODO', 'NOTE'
+               fixme = { pattern = "%f[%w]()FIXME()%f[%W]", group = "MiniHipatternsFixme" },
+               hack = { pattern = "%f[%w]()HACK()%f[%W]", group = "MiniHipatternsHack" },
+               todo = { pattern = "%f[%w]()TODO()%f[%W]", group = "MiniHipatternsTodo" },
+               note = { pattern = "%f[%w]()NOTE()%f[%W]", group = "MiniHipatternsNote" },
 
-
--- Ensure the servers above are installed
-local servers = require('axel.tables.servers')
-local capabilities = require('axel.tables.capabilities')
-local on_attach = require('axel.tables.on_attach')
-
-
-require('mason-lspconfig').setup_handlers {
-   function(server_name)
-      require('lspconfig')[server_name].setup {
-         capabilities = capabilities,
-         on_attach = on_attach,
-         settings = servers[server_name],
-      }
-   end,
-}
+               -- Highlight hex color strings (`#rrggbb`) using that color
+               hex_color = hipatterns.gen_highlighter.hex_color(),
+            },
+         }
+      end,
+   },
+   { "echasnovski/mini.comment",   version = "*", opts = {} },
+   { 'echasnovski/mini.bracketed', version = '*', opts = {} },
+   -- History of buffer changes in a tree view
+   {
+      'mbbill/undotree',
+      keys = {
+         { "<leader>u", vim.cmd.UndotreeToggle, desc = "UndoTree" },
+      },
+   },
+   { import = 'features' },
+}, { lazy = true })

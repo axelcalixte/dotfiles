@@ -42,3 +42,6 @@ vim.o.foldnestmax = 1
 
 -- Behave netrw !
 vim.g.netrw_banner = 0
+
+-- Should remove comments on newlines
+vim.opt.formatoptions:remove({ "c", "r", "o" })
