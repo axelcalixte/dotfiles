@@ -1,12 +1,13 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
-fpath+=($HOME/.local/share/zsh/pure)
-autoload -U promptinit; promptinit
-prompt pure
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# fpath+=($HOME/.local/share/zsh/pure)
+# autoload -U promptinit; promptinit
+# prompt pure
 
 export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/bin/scripts:${XDG_DATA_HOME}/npm/bin:${HOME}/.local/dev/fnm"
 
@@ -36,9 +37,9 @@ alias syncftp="ssh -L 41127:localhost:41127 rpi"
 alias rpmcount="rpm -qa | wc -l"
 alias mkdir='mkdir -pv'
 alias rm='rm -I'
-#alias ll="exa --icons -al  --git --group-directories-first"
-alias ll="ls -ghAF --color --group-directories-first"
-alias la="ls -gAh --color --group-directories-first"
+alias ll="exa --icons -al  --git --group-directories-first"
+# alias ll="ls -ghAF --color --group-directories-first"
+# alias la="ls -gAh --color --group-directories-first"
 alias lc="ls -lA | wc -l"
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'
@@ -60,13 +61,10 @@ source ~/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plug
 #fzf fuzzy file search
 [ -f "/etc/zsh_completion.d/fzf-key-bindings" ] && source /etc/zsh_completion.d/fzf-key-bindings
 
-# powerlevel10k prompt
-# source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-# [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
-
-# To customize prompt, run `p10k configure` or edit ~/.dots/zsh/.config/zsh/.p10k.zsh.
-# [[ ! -f ~/.dots/zsh/.config/zsh/.p10k.zsh ]] || source ~/.dots/zsh/.config/zsh/.p10k.zsh
-
 # fnm
 eval "`fnm env`"
+
+source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
