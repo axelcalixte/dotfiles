@@ -1,63 +1,70 @@
 return {
    {
       'VonHeikemen/lsp-zero.nvim',
-      branch = 'dev-v3',
+      branch = 'v3.x',
       lazy = true,
       config = false,
+      init = function()
+         -- Disable automatic setup, we are doing it manually
+         vim.g.lsp_zero_extend_cmp = 0
+         vim.g.lsp_zero_extend_lspconfig = 0
+      end,
    },
    {
       'williamboman/mason.nvim',
-      cmd = { 'Mason', 'MasonInstall', 'MasonUpdate' },
-      lazy = true,
+      lazy = false,
       config = true,
+   },
+   {
+      'stevearc/conform.nvim',
+      opts = {
+         formatters_by_ft = {
+            lua = { "stylua" },
+            html = { "prettierd" },
+            css = { "prettierd" },
+            javascriptreact = { "prettierd" },
+            javascript = { "prettierd" },
+            typescriptreact = { "prettierd" },
+            typescript = { "prettierd" },
+         },
+         format_on_save = {
+            timeout_ms = 500,
+            lsp_fallback = "true",
+         },
+      },
    },
    -- General LSP
    {
-      'williamboman/mason-lspconfig.nvim',
+      'neovim/nvim-lspconfig',
       cmd = { 'LspInfo', 'LspInstall', 'LspStart' },
       event = { 'BufReadPre', 'BufNewFile' },
       dependencies = {
-         { 'neovim/nvim-lspconfig' },
+         { 'williamboman/mason-lspconfig.nvim' },
          { 'hrsh7th/cmp-nvim-lsp' },
          { 'hrsh7th/cmp-nvim-lsp-signature-help' },
       },
       config = function()
-         local lsp = require('lsp-zero').preset({})
+         local lsp_zero = require('lsp-zero')
+         lsp_zero.extend_lspconfig()
 
-         lsp.on_attach(function(client, bufnr)
-            lsp.default_keymaps({ buffer = bufnr })
+         lsp_zero.on_attach(function(client, bufnr)
+            lsp_zero.default_keymaps({ buffer = bufnr })
          end)
 
 
-         lsp.setup_servers({ 'lua_ls' })
          require('mason-lspconfig').setup({
-            ensure_installed = { 'lua_ls', 'jdtls', 'pylsp' },
+            ensure_installed = { 'lua_ls' },
             handlers = {
-               lsp.default_setup,
+               lsp_zero.default_setup,
                lua_ls = function()
-                  require 'lspconfig'.lua_ls.setup {
-                     settings = {
-                        Lua = {
-                           diagnostics = {
-                              -- Get the language server to recognize the `vim` global
-                              globals = { 'vim' },
-                           },
-                           workspace = {
-                              -- Make the server aware of Neovim runtime files
-                              library = vim.api.nvim_get_runtime_file("", true),
-                           },
-                           -- Do not send telemetry data containing a randomized but unique identifier
-                           telemetry = {
-                              enable = false,
-                           },
-                        },
-                     }
-                  }
+                  local lua_opts = lsp_zero.nvim_lua_ls()
+                  require 'lspconfig'.lua_ls.setup(lua_opts)
                end,
                pylsp = function()
                   require('lspconfig').pylsp.setup({
                      settings = {
                         pylsp = {
+                           -- pylsp plugins are installed manually in its pipx env
                            plugins = {
                               ruff = {
                                  enabled = true,

@@ -1,12 +1,5 @@
 return {
    {
-      'VonHeikemen/lsp-zero.nvim',
-      branch = 'dev-v3',
-      lazy = true,
-      config = false,
-   },
-   -- Autocompletion
-   {
       'hrsh7th/nvim-cmp',
       event = 'InsertEnter',
       dependencies = {
@@ -16,14 +9,16 @@ return {
          { 'rafamadriz/friendly-snippets' },
       },
       config = function()
-         require('lsp-zero').extend_cmp()
+         local lsp_zero = require('lsp-zero')
+         lsp_zero.extend_cmp()
 
          local cmp = require('cmp')
-         local cmp_action = require('lsp-zero').cmp_action()
+         local cmp_action = lsp_zero.cmp_action()
 
          require("luasnip.loaders.from_vscode").lazy_load()
 
          cmp.setup({
+            formatting = lsp_zero.cmp_format(),
             mapping = {
                ['<CR>'] = cmp.mapping.confirm({ select = false }),
                ['<C-p>'] = cmp.mapping(function()
@@ -40,6 +35,8 @@ return {
                      cmp.complete()
                   end
                end),
+               ['<C-u>'] = cmp.mapping.scroll_docs(-4),
+               ['<C-d>'] = cmp.mapping.scroll_docs(4),
                ['<C-j>'] = cmp_action.luasnip_jump_forward(),
                ['<C-k>'] = cmp_action.luasnip_jump_backward(),
             },
