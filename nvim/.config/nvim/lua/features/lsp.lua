@@ -11,12 +11,13 @@ return {
       end,
    },
    {
-      'williamboman/mason.nvim',
+      "williamboman/mason.nvim",
       lazy = false,
       config = true,
    },
    {
-      'stevearc/conform.nvim',
+      "stevearc/conform.nvim",
+      enabled = false,
       opts = {
          formatters_by_ft = {
             lua = { "stylua" },
@@ -35,62 +36,75 @@ return {
    },
    -- General LSP
    {
-      'neovim/nvim-lspconfig',
-      cmd = { 'LspInfo', 'LspInstall', 'LspStart' },
-      event = { 'BufReadPre', 'BufNewFile' },
+      "neovim/nvim-lspconfig",
+      cmd = { "LspInfo", "LspInstall", "LspStart" },
+      event = { "BufReadPre", "BufNewFile" },
       dependencies = {
-         { 'williamboman/mason-lspconfig.nvim' },
-         { 'hrsh7th/cmp-nvim-lsp' },
-         { 'hrsh7th/cmp-nvim-lsp-signature-help' },
+         { "williamboman/mason-lspconfig.nvim" },
+         { "hrsh7th/cmp-nvim-lsp" },
+         { "hrsh7th/cmp-nvim-lsp-signature-help" },
       },
       config = function()
-         local lsp_zero = require('lsp-zero')
+         local lsp_zero = require("lsp-zero")
          lsp_zero.extend_lspconfig()
 
          lsp_zero.on_attach(function(client, bufnr)
             lsp_zero.default_keymaps({ buffer = bufnr })
          end)
 
-
-         require('mason-lspconfig').setup({
-            ensure_installed = { 'lua_ls' },
+         require("mason-lspconfig").setup({
+            ensure_installed = { "lua_ls" },
             handlers = {
                lsp_zero.default_setup,
                lua_ls = function()
                   local lua_opts = lsp_zero.nvim_lua_ls()
-                  require 'lspconfig'.lua_ls.setup(lua_opts)
+                  require("lspconfig").lua_ls.setup(lua_opts)
                end,
                pylsp = function()
-                  require('lspconfig').pylsp.setup({
+                  require("lspconfig").pylsp.setup({
                      settings = {
                         pylsp = {
-                           -- pylsp plugins are installed manually in its pipx env
+                           -- pylsp plugins are installed in mason's venv
                            plugins = {
-                              ruff = {
-                                 enabled = true,
-                                 extendSelect = { "I" },
-                              },
                               autopep8 = {
-                                 enabled = false
+                                 enabled = false,
                               },
                               yapf = {
-                                 enabled = false
+                                 enabled = false,
+                              },
+                              mccabe = {
+                                 enabled = true,
+                              },
+                              pycodestyle = {
+                                 enabled = true,
+                              },
+                              pydocstyle = {
+                                 enabled = false,
+                              },
+                              pyflakes = {
+                                 enabled = true,
                               },
                               black = {
-                                 enabled = true
+                                 enabled = true,
+                              },
+                              ruff = {
+                                 enabled = false,
                               },
                               mypy = {
-                                 enabled = false
-                              }
-                           }
-                        }
-                     }
+                                 enabled = false,
+                              },
+                              rope_autoimport = {
+                                 enabled = true,
+                              },
+                           },
+                        },
+                     },
                   })
-               end
+               end,
             },
          })
-      end
+      end,
    },
    -- Java LSP adapter
-   "mfussenegger/nvim-jdtls"
+   "mfussenegger/nvim-jdtls",
 }
