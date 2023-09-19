@@ -44,4 +44,14 @@ vim.o.foldnestmax = 1
 vim.g.netrw_banner = 0
 
 -- Should remove comments on newlines
-vim.opt.formatoptions:remove({ "c", "r", "o" })
+vim.opt.formatoptions = vim.opt.formatoptions
+    + "c"
+    - "r"
+    - "o"
+    + "j"
+
+vim.opt.list = true
+vim.opt.listchars = { tab = "┊ ", eol = "↴" --[[↵]] }
+
+
+vim.opt.grepprg = "rg --vimgrep --no-heading --smart-case"
