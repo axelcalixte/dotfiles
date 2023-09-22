@@ -1,0 +1,70 @@
+" Leader key
+let mapleader = ' '
+let localleader = ','
+
+" Plugins
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'machakann/vim-highlightedyank'
+
+" Options
+set scrolloff=5
+set incsearch
+set hlsearch
+set visualbell
+
+"Useful remaps
+""Moving code
+:vmap J <Action>(MoveStatementDown)
+:vmap K <Action>(MoveStatementUp)
+
+""Split commands
+:nnoremap <C-h> <C-w>h
+:nnoremap <C-j> <C-w>j
+:nnoremap <C-k> <C-w>k
+:nnoremap <C-l> <C-w>l
+
+" Finding things
+:map <leader>e <Action>(ActivateProjectToolWindow)
+:map <leader><leader> <Action>(RecentFiles)
+:map <leader>ff <Action>(GotoFile)
+:map <leader>fa <Action>(GotoAction)
+:map <leader>fb <Action>(RecentFiles)
+:map <leader>fc <Action>(GotoClass)
+:map <leader>fl <Action>(RecentLocations)
+
+"LSP actions
+:map gd <Action>(GotoDeclaration)
+:nmap <leader>gy <Action>(GotoTypeDeclaration)
+:nmap <leader>gi <Action>(GotoImplementation)
+:nmap <leader>gu <Action>(ShowUsages)
+:nmap <leader>gt <Action>(GotoTest)
+
+:map <leader>cf <Action>(ReformatCode)
+:map <leader>rn <Action>(RenameElement)
+:map <leader>cr <Action>(Run)
+:map <leader>ct <Action>(RunClass)
+:map <leader>cd <Action>(Debug)
+
+"Git commands
+:map <leader>gu <Action>(Vcs.RollbackChangedLines)
+:map <leader>gU <Action>(ChangesView.Revert)
+:map <leader>gc <Action>(ActivateCommitToolWindow)
+:map <leader>gs <Action>(ActivateVersionControlToolWindow)
+:map <leader>gco <Action>(Git.Branches)
+:map <leader>gp <Action>(Git.Pull)
+:map <leader>gP <Action>(Vcs.Push)
+:map <leader>gd <Action>(VcsShowCurrentChangeMarker)
+:nmap ]g <Action>(VcsShowNextChangeMarker)
+:nmap [g <Action>(VcsShowPrevChangeMarker)
+
+"Window commands
+:map <leader>wf <Action>(WindowMode)
+:map <leader>wd <Action>(DockPinnedMode)
+:map <leader>wz <action>(ToggleDistractionFreeMode)
+:map <leader>wZ <action>(ToggleZenMode)
+:map <leader>wt <Action>(ActivateProblemsViewToolWindow)
+:map <leader>wm <Action>(Maven.ExecuteGoal)
+
+"Terminal commands
+:map <leader>t <Action>(ActivateTerminalToolWindow)
