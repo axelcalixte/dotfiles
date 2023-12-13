@@ -5,20 +5,15 @@ return {
       -- optional for icon support
       dependencies = { "nvim-tree/nvim-web-devicons" },
       keys = {
-         { '<leader>sf',       '<cmd>FzfLua git_files<cr>' },
+         { '<leader>ff',       '<cmd>FzfLua git_files<cr>' },
          { '<leader><leader>', '<cmd>FzfLua buffers<cr>' },
-         { '<leader>sF',       '<cmd> FzfLua files<cr>' },
-         { '<leader>sh',       '<cmd>FzfLua help_tags<cr>' },
-         { '<leader>sw',       '<cmd>FzfLua grep<cr>' },
-         { '<leader>sg',       '<cmd>FzfLua live_grep<cr>' },
-         { '<leader>sd',       '<cmd>FzfLua diagnostics_document<cr>' },
-         { '<leader>sD',       '<cmd>FzfLua diagnostics_workspace<cr>' },
+         { '<leader>fh',       '<cmd>FzfLua help_tags<cr>' },
+         { '<leader>fw',       '<cmd>FzfLua grep<cr>' },
+         { '<leader>fg',       '<cmd>FzfLua live_grep<cr>' },
+         { '<leader>fd',       '<cmd>FzfLua diagnostics_document<cr>' },
+         { '<leader>fD',       '<cmd>FzfLua diagnostics_workspace<cr>' },
       }
    },
-   -- {
-   --    "stevearc/oil.nvim",
-   --    opts = {},
-   -- }
    {
       "echasnovski/mini.files",
       version = "*",
@@ -28,8 +23,7 @@ return {
          })
          vim.keymap.set('n', '-', '<cmd>lua MiniFiles.open()<cr>')
       end
-   },
-   -- Navigation
+   }, -- Navigation
    {
       "mrjones2014/smart-splits.nvim",
       opts = {

@@ -40,18 +40,9 @@ vim.o.foldenable = true
 vim.o.foldmethod = "indent"
 vim.o.foldnestmax = 1
 
--- Behave netrw !
-vim.g.netrw_banner = 0
+vim.opt.path = "./**"
 
--- Should remove comments on newlines
-vim.opt.formatoptions = vim.opt.formatoptions
-    + "c"
-    - "r"
-    - "o"
-    + "j"
+vim.o.scrolloff = 3
 
-vim.opt.list = true
-vim.opt.listchars = { tab = "┊ ", eol = "↴" --[[↵]] }
-
-
-vim.opt.grepprg = "rg --vimgrep --no-heading --smart-case"
+--vim.opt.formatoptions:remove({ 'c', 'r', 'o' }) weird that this doesn't work
+vim.cmd [[autocmd FileType * set formatoptions-=cro]]

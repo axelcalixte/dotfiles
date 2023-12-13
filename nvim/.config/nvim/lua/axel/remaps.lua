@@ -1,3 +1,9 @@
+-- Set <Space> as leader
+vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
+
+vim.g.mapleader = " "
+vim.g.maplocalleader = ","
+--
 -- Remap for dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
@@ -24,9 +30,21 @@ vim.keymap.set('n', "n", "nzzzv")
 vim.keymap.set('n', "N", "Nzzzv")
 
 -- Stop overwriting
-vim.keymap.set("x", "<leader>p",  [["_dP]])
+vim.keymap.set("x", "<leader>p", [["_dP]])
 
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
+
+-- Window commands (unneeded with smart-splits plugin)
+-- vim.keymap.set({ "n" }, "<C-h>", "<C-w>h")
+-- vim.keymap.set({ "n" }, "<C-j>", "<C-w>j")
+-- vim.keymap.set({ "n" }, "<C-k>", "<C-w>k")
+-- vim.keymap.set({ "n" }, "<C-l>", "<C-w>l")
+
+-- Diagnostics basics
+vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
+vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
