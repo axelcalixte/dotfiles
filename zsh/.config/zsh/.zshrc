@@ -9,7 +9,7 @@ fi
 # autoload -U promptinit; promptinit
 # prompt pure
 
-export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/bin/scripts:${XDG_DATA_HOME}/npm/bin:${HOME}/.local/dev/fnm"
+export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/bin/scripts:${XDG_DATA_HOME}/npm/bin:${HOME}/.local/dev/fnm:${BUN_INSTALL}/bin:${DENO_INSTALL}/bin"
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.cache/zsh/history
@@ -64,7 +64,14 @@ source ~/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plug
 # fnm
 eval "`fnm env`"
 
+# bun completions
+[ -s "/home/axel/.bun/_bun" ] && source "/home/axel/.bun/_bun"
+
 source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+
+# bun completions
+[ -s "/home/axel/.local/dev/bun/_bun" ] && source "/home/axel/.local/dev/bun/_bun"
