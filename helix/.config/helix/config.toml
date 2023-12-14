@@ -1,0 +1,21 @@
+theme = "fleet_dark"
+
+[editor]
+line-number = "relative"
+cursorline = true
+bufferline = "multiple"
+rulers = [80]
+
+[editor.file-picker]
+hidden = false
+
+[editor.whitespace.render]
+newline = "all"
+
+[editor.whitespace.characters]
+newline = "⏎"
+
+[editor.indent-guides]
+render = true
+character = "▏"
+skip-levels = 1
