@@ -34,9 +34,8 @@ alias syncftp="ssh -L 41127:localhost:41127 rpi"
 alias rpmcount="rpm -qa | wc -l"
 alias mkdir='mkdir -pv'
 alias rm='rm -I'
-alias ll="eza --icons -al  --git --group-directories-first"
-# alias ll="ls -ghAF --color --group-directories-first"
-# alias la="ls -gAh --color --group-directories-first"
+alias ll="ls -ghAF --color --group-directories-first"
+alias la="ls -gAh --color --group-directories-first"
 alias lc="ls -lA | wc -l"
 alias sp='systemctl poweroff'
 alias ss='systemctl suspend'
@@ -49,7 +48,6 @@ alias ga="git add"
 alias gco="git checkout --"
 alias gps="git push"
 alias gpl="git pull"
-alias connect="kitty +kitten ssh"
 alias box="distrobox enter debian"
 
 ### Plugins
