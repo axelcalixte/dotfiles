@@ -36,13 +36,15 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 
       if vim.bo.filetype == "java" then
-         local jdtls = require("jdtls")
-         vim.keymap.set({ "n" }, "<A-o>", jdtls.organize_imports)
-         vim.keymap.set({ "n" }, "crv", jdtls.extract_variable)
-         vim.keymap.set({ "v" }, "crv", function() jdtls.extract_variable { true } end)
-         vim.keymap.set({ "n" }, "crc", jdtls.extract_constant)
-         vim.keymap.set({ "v" }, "crc", function() jdtls.extract_constant { true } end)
-         vim.keymap.set({ "v" }, "crm", function() jdtls.extract_method { true } end)
+         local jdtls, ok = pcall(require("jdtls"))
+         if ok then
+            vim.keymap.set({ "n" }, "<A-o>", jdtls.organize_imports)
+            vim.keymap.set({ "n" }, "crv", jdtls.extract_variable)
+            vim.keymap.set({ "v" }, "crv", function() jdtls.extract_variable { true } end)
+            vim.keymap.set({ "n" }, "crc", jdtls.extract_constant)
+            vim.keymap.set({ "v" }, "crc", function() jdtls.extract_constant { true } end)
+            vim.keymap.set({ "v" }, "crm", function() jdtls.extract_method { true } end)
+         end
       end
    end,
 })
