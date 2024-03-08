@@ -71,24 +71,13 @@ return {
       end,
    },
    {
-      "mcchrish/zenbones.nvim",
-      dependencies = {
-         "rktjmp/lush.nvim",
-      },
-      lazy = false,
-      enabled = false,
-      priority = 1000,
-      config = function()
-         vim.cmd([[colorscheme zenbones]])
-      end,
-   },
-   {
       "miikanissi/modus-themes.nvim",
       lazy = false,
       priority = 1000,
       config = function()
          require("modus-themes").setup({
-            variant = "default" -- tilted for a slight tone change
+            variant = "default", -- tilted for a slight tone change
+            transparent = true,
          })
          vim.cmd("colorscheme modus")
       end
