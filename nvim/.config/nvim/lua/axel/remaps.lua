@@ -37,12 +37,6 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
--- Window commands (unneeded with smart-splits plugin)
--- vim.keymap.set({ "n" }, "<C-h>", "<C-w>h")
--- vim.keymap.set({ "n" }, "<C-j>", "<C-w>j")
--- vim.keymap.set({ "n" }, "<C-k>", "<C-w>k")
--- vim.keymap.set({ "n" }, "<C-l>", "<C-w>l")
-
 -- Diagnostics basics
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
