@@ -8,6 +8,7 @@ return {
          local lspconfig = require('lspconfig')
          local capabilities = vim.lsp.protocol.make_client_capabilities()
          capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+         capabilities.textDocument.completion.completionItem.snippetSupport = true
 
          lspconfig.lua_ls.setup {
             on_init = function(client)
@@ -78,11 +79,14 @@ return {
          --    capabilities = capabilities
          -- }
 
-         -- Enable (broadcasting) snippet capability for completion
-         -- capabilities.textDocument.completion.completionItem.snippetSupport = true
-
          lspconfig.html.setup {
             capabilities = capabilities,
+            filetypes = { "html", "astro" }
+         }
+
+         lspconfig.cssls.setup {
+            capabilities = capabilities,
+            filetypes = { "css", "astro" }
          }
 
          lspconfig.astro.setup {

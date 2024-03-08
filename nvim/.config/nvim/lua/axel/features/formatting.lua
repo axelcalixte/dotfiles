@@ -5,6 +5,7 @@ return {
          formatters_by_ft = {
             typescript = { "prettier" },
             html = { "prettier" },
+            astro = { "prettier" },
             ["_"] = { "trim_whitespace" }
          },
       })
