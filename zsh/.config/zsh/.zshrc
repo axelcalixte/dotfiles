@@ -5,8 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-LOCAL_DEV="${HOME}/.local/dev"
-export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/bin/scripts:${BUN_INSTALL}/bin:${LOCAL_DEV}/gradle-8.5/bin:${XDG_DATA_HOME}/JetBrains/Toolbox/scripts"
+export PATH="${PATH}:${HOME}/.local/bin:${LOCAL_DEV}/fnm:${XDG_DATA_HOME}/JetBrains/Toolbox/scripts"
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.cache/zsh/history
@@ -61,5 +60,12 @@ source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
-# bun completions
-[ -s "/home/axel/.local/dev/bun/_bun" ] && source "/home/axel/.local/dev/bun/_bun"
+# fnm
+eval "`fnm env`"
+
+# pnpm
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
