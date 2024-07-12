@@ -12,6 +12,8 @@ function cleanup {
 function install_utils {
     sudo apt install \
         git stow zsh zsh-syntax-highlighting zsh-autosuggestions fzf nnn
+
+    mkdir -p ~/.cache/zsh && touch ~/.cache/zsh/history
 }
 
 function download_dotfiles {
