@@ -2,7 +2,7 @@
 # Utility functions to help setup my SpiralLinux debian system
 
 function update_system {
-    sudo apt update && apt upgrade
+    sudo apt update && sudo apt upgrade
 }
 
 function cleanup {
