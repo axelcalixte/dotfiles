@@ -1,7 +1,7 @@
-[user]
-	name = Axel Calixte
-	email = axelcalixte@disr.it
-[credential]
-	helper = /usr/libexec/git/git-credential-libsecret
 [init]
 	defaultBranch = main
+[user]
+	name = Axel Calixte
+	email = axelcalixte@mailbox.org
+[push]
+	autoSetupRemote = true
