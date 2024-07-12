@@ -53,6 +53,7 @@ function install_desktop {
         gnome-software-plugin-flatpak \
         gnome-shell-extension-caffeine \
         switcheroo-control \
+        mesa-vulkan-drivers \
         keepassxc
 }
 
