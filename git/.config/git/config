@@ -5,3 +5,19 @@
 	email = axelcalixte@mailbox.org
 [push]
 	autoSetupRemote = true
+[pull]
+	rebase = true
+[merge]
+	tool = nvimdiff3
+[rebase]
+	autoStash = true
+	updateRefs = true # if source branch is rebased, dependent branches will update their base commit on source branch
+[push]
+	autoSetupRemote = true
+	default = current
+[credential]
+	helper = cache --timeout 28800
+[rerere]
+	enabled = true
+[alias]
+	pushf = push --force-with-lease
