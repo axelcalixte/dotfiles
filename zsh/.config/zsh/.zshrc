@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export PATH="${PATH}:${HOME}/.local/bin:${LOCAL_DEV}/fnm:${XDG_DATA_HOME}/JetBrains/Toolbox/scripts"
+export PATH="${PATH}:${HOME}/.local/bin:${XDG_DATA_HOME}/JetBrains/Toolbox/scripts:$DENO_INSTALL/bin:${LOCAL_DEV}/lua_ls/bin"
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.cache/zsh/history
@@ -49,16 +49,8 @@ alias gps="git push"
 alias gpl="git pull"
 alias box="distrobox enter debian"
 
-### Plugins
-#fast-syntax-highlighting
-source ~/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 #fzf fuzzy file search
-[ -f "/etc/zsh_completion.d/fzf-key-bindings" ] && source /etc/zsh_completion.d/fzf-key-bindings
-
-source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+[ -n "$(which fzf)" ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
 
 # fnm
 eval "`fnm env`"
@@ -69,3 +61,16 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/axel/.local/share/zsh/zsh-nvim-appname/zsh-nvim-appname.plugin.zsh
+
+source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+

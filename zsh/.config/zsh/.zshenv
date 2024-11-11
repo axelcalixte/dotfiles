@@ -9,7 +9,6 @@ export MOZ_ENABLE_WAYLAND=1
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export PNPM_HOME="$XDG_DATA_HOME/pnpm"
-#export NVIM_APPNAME=astronvim_v4
 export HELIX_RUNTIME="$XDG_DATA_HOME/helix-git/runtime"
-export QT_QPA_PLATFORM=xcb
+export DENO_INSTALL="$LOCAL_DEV/deno"
 
