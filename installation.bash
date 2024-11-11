@@ -19,7 +19,7 @@ function install_utils {
 function download_dotfiles {
     git clone git@github.com/axelcalixte/dotfiles.git ~/.dots
     cd ~/.dots || echo "couldn't cd to ~/.dots" && exit
-    stow zsh
+    stow bash
 }
 
 function configure_gcadapter {
@@ -42,8 +42,13 @@ function install_distrobox {
 }
 
 function install_fnm {
-    mkdir -p /home/$USER/.local/bin
-    curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir "/home/'$USER'/.local/bin" --skip-shell
+    mkdir -p $HOME/.local/bin
+    curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir "$HOME/.local/bin" --skip-shell
+}
+
+function install_kitty {
+    mkdir -p $HOME/.local/dev
+    curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin dest="$HOME/.local/dev"
 }
 
 function install_desktop {
@@ -113,7 +118,6 @@ function setup_fonts {
     dconf write /org/gnome/desktop/interface/document-font-name 'Inter  11'
     dconf write /org/gnome/desktop/wm/preferences/titlebar-font 'Inter Bold 11'
     dconf write /org/gnome/desktop/interface/monospace-font-name 'DejaVu Sans Mono 11'
-
 }
 
 
@@ -122,9 +126,13 @@ cleanup
 install_desktop
 install_flatpaks
 install_utils
+install_fnm
+install_kitty
 get_dotfiles
 install_distrobox
 configure_gcadapter
+gnome_settings
+setup_fonts
 "
 
 case "$1" in
@@ -134,9 +142,12 @@ case "$1" in
     "install_flatpaks") install_flatpaks ;;
     "install_utils") install_utils ;;
     "install_fnm") install_fnm ;;
-    "get_dotfiles") get_dotfiles ;;
+    "install_kitty") install_kitty ;;
+    "get_dotfiles") download_dotfiles ;;
     "install_distrobox") install_distrobox ;;
     "configure_gcadapter") configure_gcadapter ;;
+    "gnome_settings") gnome_settings ;;
+    "setup_fonts") setup_fonts ;;
 
     *) printf "possible arguments are:\n%s" "$possible_steps";;
 esac
