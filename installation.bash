@@ -51,6 +51,11 @@ function install_kitty {
     curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin dest="$HOME/.local/dev"
 }
 
+function install_starship {
+    mkdir -p $HOME/.local/dev
+    curl -sS https://starship.rs/install.sh | BIN_DIR="$HOME"/.local/bin sh
+}
+
 function install_desktop {
     sudo apt install gnome-core \
         gnome-tweaks gnome-shell-extension-manager gnome-shell-extension-prefs \
@@ -128,6 +133,7 @@ install_flatpaks
 install_utils
 install_fnm
 install_kitty
+install_starship
 get_dotfiles
 install_distrobox
 configure_gcadapter
@@ -143,6 +149,7 @@ case "$1" in
     "install_utils") install_utils ;;
     "install_fnm") install_fnm ;;
     "install_kitty") install_kitty ;;
+    "install_starship") install_starship ;;
     "get_dotfiles") download_dotfiles ;;
     "install_distrobox") install_distrobox ;;
     "configure_gcadapter") configure_gcadapter ;;
