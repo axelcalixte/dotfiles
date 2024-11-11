@@ -7,11 +7,21 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'machakann/vim-highlightedyank'
 
+"" https://plugins.jetbrains.com/plugin/19417-ideavim-quickscope needed
+set quickscope "" quickscope instead of vim-sneak or alternatives
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
 " Options
 set scrolloff=5
 set incsearch
 set hlsearch
 set visualbell
+
+" make motion J join lines using IDE features if available
+set ideajoin
+
+" enter visual mode instead of select mode during refactoring (ie: renaming)
+set idearefactormode=visual
 
 "Useful remaps
 ""Moving code
@@ -28,10 +38,17 @@ set visualbell
 :nnoremap <C-d> <C-d>zz
 :nnoremap <C-u> <C-u>zz
 
+"" easy clipboard copy/paste
+:nnoremap <leader>y "+y
+:vnoremap <leader>y "+y
+:nnoremap <leader>p "+p
+:vnoremap <leader>p "+p
+
 " Finding things
 :map <leader>e <Action>(ActivateProjectToolWindow)
 :map <leader><leader> <Action>(RecentFiles)
 :map <leader>ff <Action>(GotoFile)
+:map <leader>fs <Action>(GotoSymbol)
 :map <leader>fg <Action>(TextSearchAction)
 :map <leader>fa <Action>(GotoAction)
 :map <leader>fb <Action>(RecentFiles)
@@ -45,6 +62,7 @@ set visualbell
 :map gr <Action>(GotoDeclaration)
 :nmap <leader>gy <Action>(GotoTypeDeclaration)
 :nmap <leader>gi <Action>(GotoImplementation)
+:nmap gi <Action>(GotoImplementation)
 :nmap <leader>gu <Action>(ShowUsages)
 :nmap <leader>gt <Action>(GotoTest)
 
@@ -54,6 +72,27 @@ set visualbell
 :map <leader>cr <Action>(Run)
 :map <leader>ct <Action>(RunClass)
 :map <leader>cd <Action>(Debug)
+
+"Debug commands
+:map <leader>db <Action>(ToggleLineBreakpoint)
+":map <leader>dc <Action>(AddConditionalBreakpoint) unfortunately not working
+
+"Bookmarks - Harpoon like feature
+:map <leader>bb <Action>(ShowBookmarks)
+:map <leader>bc <Action>(ToggleBookmarkWithMnemonic) "create
+:map <leader>bt <Action>(ToggleBookmark) "toggle
+:map <leader>bn <Action>(GotoNextBookmark)
+:map <leader>bp <Action>(GotoPreviousBookmark)
+
+:map<leader>bq <Action>(ToggleBookmarkQ)
+:map<leader>bs <Action>(ToggleBookmarkS)
+:map<leader>bd <Action>(ToggleBookmarkD)
+:map<leader>bf <Action>(ToggleBookmarkF)
+
+:map<leader>bj <Action>(ToggleBookmarkJ)
+:map<leader>bk <Action>(ToggleBookmarkK)
+:map<leader>bl <Action>(ToggleBookmarkL)
+:map<leader>bm <Action>(ToggleBookmarkM)
 
 "Git commands
 :map <leader>gu <Action>(Vcs.RollbackChangedLines)
@@ -68,13 +107,12 @@ set visualbell
 :nmap [g <Action>(VcsShowPrevChangeMarker)
 
 "Window commands
-:map <leader>wf <Action>(WindowMode)
-:map <leader>wd <Action>(DockPinnedMode)
 :map <leader>wz <action>(ToggleDistractionFreeMode)
 :map <leader>wZ <action>(ToggleZenMode)
 :map <leader>wt <Action>(ActivateProblemsViewToolWindow)
 :map <leader>wm <Action>(Maven.ExecuteGoal)
 :map <leader>wg <Action>(Gradle.ExecuteTask)
+:map <leader>wb <Action>(ActivateBookmarksToolWindow)
 
 "Terminal commands
 :map <leader>t <Action>(ActivateTerminalToolWindow)
