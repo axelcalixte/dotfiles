@@ -52,7 +52,7 @@ fi
 
 ### MY CONFIG
 function projects {
-	cd $(find ~/projects/ -maxdepth 2 | fzf)
+	cd $(find ~/Documents/projects/ -type d ! -path '*/node_modules/*' ! -path '*/dist/*' ! -path '*/venv/*' ! -path '*/target/*' ! -path '*/.*/*' -maxdepth 4)
 }
 
 function gco {
@@ -75,13 +75,13 @@ alias ss='systemctl suspend'
 alias sr='systemctl reboot'
 alias g="git"
 alias nnn="nnn -HC -a -P preview-tui"
-[ -n "$(which nvim)" ] && alias vi=nvim
+alias ssh="kitten ssh"
+[ -n "$(which nvim)" ] && alias vi="nvim"
 
 [ -n $(which fnm) ] && eval "$(fnm env)"
 [ -n "$(which fzf)" ] && source "/usr/share/doc/fzf/examples/key-bindings.bash"
 # [ -n $(which uv) ] && eval "$(uv generate-shell-completion-bash)"
 # [ -n $(which uvx) ] && eval "$(uvx --generate-shell-completion-bash)"
 # [ $(which ng) ] && source <(ng completion script)
-# [ -s "$DENO_INSTALL/env" ] && source "$DENO_INSTALL"/env
 
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
