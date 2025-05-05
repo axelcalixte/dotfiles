@@ -8,44 +8,17 @@ black = {enabled = true}
 rope_autoimport = {enabled = true}
 ruff = {enabled = true}
 
-[language-server.angularls]
-command = "ngserver"
-args = ["--stdio", "--tsProbeLocations", "/home/axel/.local/share/npm/lib/node_modules", "--ngProbeLocations", "/home/axel/.local/share/npm/lib/node_modules"]
-
-[language-server.tsserver]
-command = "tsserver"
-args = ["--stdio"]
-config.hostInfo = "helix"
-
-[language-server.astro-ls]
-command = "astro-ls"
-args = [ "--stdio" ]
-config = { "typescript" = { "tsdk" = "/home/axel/.local/share/pnpm/global/5/node_modules/typescript/lib"}, "environment" = "node" }
-
 [[language]]
 name = "python"
 auto-format = true
 language-servers = [ "pylsp" ]
 
-[[language]]
-name = "html"
-formatter = { command = 'prettier', args = ["--parser", "angular"] }
-language-servers = ["angularls", "tailwindcss-ls", "vscode-html-language-server"]
-
-[[language]]
-name = "css"
-formatter = { command = 'prettier', args = ["--parser", "css"] }
-language-servers = [ "vscode-css-language-server" ]
+[language-server.denols]
+command = "deno"
+args = ["lsp"]
+config = { enable = true, suggest = { imports = { hosts = {"https://deno.land" = true}}}}
 
 [[language]]
 name = "typescript"
-formatter = { command = 'prettier', args = ["--parser", "angular"] }
-language-servers = [ "angularls", "tsserver" ]
+language-servers = ["denols"]
 
-[[language]]
-name = "astro"
-scope = "source.astro"
-injection-regex = "astro"
-file-types = ["astro"]
-roots = ["package.json", "astro.config.mjs"]
-language-servers = [ "astro-ls" ]
