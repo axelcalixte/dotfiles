@@ -22,6 +22,15 @@ function download_dotfiles {
     stow bash
 }
 
+function install_neovim {
+	sudo apt-get install ninja-build gettext cmake curl build-essential libnsl-dev
+	mkdir -pv /home/axel/.local/dev
+	git clone https://github.com/neovim/neovim /home/axel/.local/dev/neovim
+	cd /home/axel/.local/dev/neovim
+	git checkout v0.$(git tag -l | cut -d'.' -f2- | sort -g -r | head -1) # will work as long as nvim hasn't reached 1.X.Y version.
+	make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=$HOME/.local install
+}
+
 function configure_gcadapter {
     echo 'SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="057e", ATTRS{idProduct}=="0337", MODE="0666"' | sudo tee /etc/udev/rules.d/51-gcadapters.rules > /dev/null
 
@@ -134,6 +143,7 @@ install_utils
 install_fnm
 install_kitty
 install_starship
+install_neovim
 get_dotfiles
 install_distrobox
 configure_gcadapter
@@ -150,6 +160,7 @@ case "$1" in
     "install_fnm") install_fnm ;;
     "install_kitty") install_kitty ;;
     "install_starship") install_starship ;;
+    "install_neovim") install_neovim ;;
     "get_dotfiles") download_dotfiles ;;
     "install_distrobox") install_distrobox ;;
     "configure_gcadapter") configure_gcadapter ;;
