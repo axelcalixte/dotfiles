@@ -11,7 +11,7 @@ function cleanup {
 
 function install_utils {
     sudo apt install \
-        git bash-completion fzf ripgrep nnn fd-find stow
+        git bash-completion fzf ripgrep nnn trash-cli fd-find stow
 
     mkdir -p ~/.cache/bash && touch ~/.cache/bash/history
 }
@@ -58,6 +58,10 @@ function install_fnm {
 function install_kitty {
     mkdir -p $HOME/.local/dev
     curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin dest="$HOME/.local/dev"
+    (
+    cd ~/.local/dev
+    stow -v kitty.app
+    )
 }
 
 function install_starship {
