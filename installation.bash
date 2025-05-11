@@ -71,19 +71,19 @@ function install_fnm {
     curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir "$HOME/.local/bin" --skip-shell
 }
 
-function install_kitty {
-    mkdir -p $HOME/.local/dev
-    curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin dest="$HOME/.local/dev"
-    (
-    cd ~/.local/dev
-    stow -v kitty.app
-    )
-}
+# function install_kitty {
+#     mkdir -p $HOME/.local/dev
+#     curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin dest="$HOME/.local/dev"
+#     (
+#     cd ~/.local/dev
+#     stow -v kitty.app
+#     )
+# }
 
-function install_starship {
-    mkdir -p $HOME/.local/dev
-    curl -sS https://starship.rs/install.sh | BIN_DIR="$HOME"/.local/bin sh
-}
+# function install_starship {
+#     mkdir -p $HOME/.local/dev
+#     curl -sS https://starship.rs/install.sh | BIN_DIR="$HOME"/.local/bin sh
+# }
 
 function install_uv {
     mkdir -p $HOME/.local/bin
@@ -166,8 +166,6 @@ install_desktop
 install_flatpaks
 install_utils
 install_fnm
-install_kitty
-install_starship
 install_uv
 install_neovim
 get_dotfiles
@@ -175,6 +173,8 @@ install_distrobox
 configure_gcadapter
 gnome_settings
 "
+# install_starship
+# install_kitty
 # setup_fonts
 
 case "$1" in
@@ -183,8 +183,8 @@ case "$1" in
     "install_flatpaks") install_flatpaks ;;
     "install_utils") install_utils ;;
     "install_fnm") install_fnm ;;
-    "install_kitty") install_kitty ;;
-    "install_starship") install_starship ;;
+    # "install_kitty") install_kitty ;;
+    # "install_starship") install_starship ;;
     "install_uv") install_uv ;;
     "install_neovim") install_neovim ;;
     "get_dotfiles") download_dotfiles ;;
