@@ -5,6 +5,7 @@ function update_system {
     sudo apt update -y && sudo apt upgrade -y
 }
 
+# everything cli-related
 function install_utils {
     sudo apt install \
         ani-cli \
@@ -59,11 +60,6 @@ function configure_gcadapter {
 function install_distrobox {
     sudo apt install distrobox --no-install-recommends
     distrobox create -n toolbx --image docker.io/library/debian:trixie
-
-    print "inside debian toolbox:\n \
-    'sudo apt install distrobox locales' \
-    'sudo dpkg-reconfigure locales' to keep fr_FR and en_US UTF-8 \
-    'export LANG=fr_FR.UTF-8' to have ls be good"
 }
 
 function install_fnm {
@@ -71,25 +67,12 @@ function install_fnm {
     curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir "$HOME/.local/bin" --skip-shell
 }
 
-# function install_kitty {
-#     mkdir -p $HOME/.local/dev
-#     curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin dest="$HOME/.local/dev"
-#     (
-#     cd ~/.local/dev
-#     stow -v kitty.app
-#     )
-# }
-
-# function install_starship {
-#     mkdir -p $HOME/.local/dev
-#     curl -sS https://starship.rs/install.sh | BIN_DIR="$HOME"/.local/bin sh
-# }
-
 function install_uv {
     mkdir -p $HOME/.local/bin
     curl -LsSf https://astral.sh/uv/install.sh | env INSTALLER_NO_MODIFY_PATH=1 UV_INSTALL_DIR="$HOME/.local/bin" sh
 }
 
+# everything gui-related
 function install_desktop {
     sudo apt install gnome-core \
         gnome-tweaks gnome-shell-extension-manager gnome-shell-extension-prefs \
@@ -103,7 +86,7 @@ function install_desktop {
         mesa-vulkan-drivers \
         keepassxc \
         syncthing \
-        zim \
+        zim
 }
 
 function install_flatpaks {
@@ -141,26 +124,6 @@ function gnome_settings {
     dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name 'Terminal'
 }
 
-# function setup_fonts {
-#     fonts_dir="~/.local/share/fonts"
-#     mkdir -p "$fonts_dir"
-#
-#     curl -LO https://github.com/rsms/inter/releases/download/v4.0/Inter-4.0.zip > "$fonts_dir"/Inter-4.0.zip
-#     unzip "$fonts_dir"/Inter-4.0.zip
-#     mkdir "$fonts_dir"/Inter && mv "$fonts_dir"/extras/ttf/Inter* "$fonts_dir"/Inter
-#     rm -rf "$fonts_dir"/extras "$fonts_dir"/web "$fonts_dir"/help.txt "$fonts_dir"/Inter-4.0.zip "$fonts_dir"/Inter.ttc "$fonts_dir"/*.ttf "$fonts_dir"/LICENSE.txt
-#
-#     curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/NerdFontsSymbolsOnly.zip > "$fonts_dir"/NerdFontsSymbolsOnly.zip
-#     unzip "$fonts_dir"/NerdFontsSymbolsOnly.zip -d "$fonts_dir"/NerdFontsSymbolsOnly
-#
-#     fc-cache -fv
-#     dconf write /org/gnome/desktop/interface/font-name 'Inter 11'
-#     dconf write /org/gnome/desktop/interface/document-font-name 'Inter  11'
-#     dconf write /org/gnome/desktop/wm/preferences/titlebar-font 'Inter Bold 11'
-#     dconf write /org/gnome/desktop/interface/monospace-font-name 'DejaVu Sans Mono 11'
-# }
-
-
 possible_steps="update_system
 install_desktop
 install_flatpaks
@@ -173,9 +136,6 @@ install_distrobox
 configure_gcadapter
 gnome_settings
 "
-# install_starship
-# install_kitty
-# setup_fonts
 
 case "$1" in
     "update_system") update_system ;;
@@ -183,15 +143,12 @@ case "$1" in
     "install_flatpaks") install_flatpaks ;;
     "install_utils") install_utils ;;
     "install_fnm") install_fnm ;;
-    # "install_kitty") install_kitty ;;
-    # "install_starship") install_starship ;;
     "install_uv") install_uv ;;
     "install_neovim") install_neovim ;;
     "get_dotfiles") download_dotfiles ;;
     "install_distrobox") install_distrobox ;;
     "configure_gcadapter") configure_gcadapter ;;
     "gnome_settings") gnome_settings ;;
-    # "setup_fonts") setup_fonts ;;
 
     *) printf "possible arguments are:\n%s" "$possible_steps";;
 esac
