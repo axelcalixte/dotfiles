@@ -91,37 +91,45 @@ function install_desktop {
 
 function install_flatpaks {
     flatpak install -y \
-        com.obsproject.Studio \
-        org.gnome.World.PikaBackup \
-        org.signal.Signal \
-        com.microsoft.Edge \
-        org.mozilla.Thunderbird \
-        org.gimp.GIMP \
-        org.telegram.desktop \
-        com.github.tchx84.Flatseal \
+    	com.obsproject.Studio \
+    	com.discordapp.Discord \
+    	com.github.tchx84.Flatseal \
+    	com.mattjakeman.ExtensionManager \
+    	com.microsoft.Edge \
+    	com.nextcloud.desktopclient.nextcloud \
         com.valvesoftware.Steam \
+    	com.vixalien.sticky \
+    	it.mijorus.gearlever \
+        com.github.PintaProject.Pinta \
+    	org.gnome.World.PikaBackup \
+    	org.gnome.Evolution \
+    	org.gnome.seahorse.Application \
+    	org.keepassxc.KeePassXC \
         org.libreoffice.LibreOffice \
-        com.discordapp.Discord
+    	org.mozilla.firefox \
+    	org.signal.Signal \
+    	org.telegram.desktop \
+    	org.zim_wiki.Zim \
 }
 
 function gnome_settings {
     dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:swapescape']"
-    dconf write /org/gnome/desktop/peripherals/mouse/accel-profile 'flat'
+    dconf write /org/gnome/desktop/peripherals/mouse/accel-profile "'flat'"
     dconf write /org/gnome/mutter/center-new-windows true
     dconf write /org/gnome/desktop/search-providers/disabled ['org.gnome.Software.desktop']
     dconf write /org/gnome/desktop/privacy/remove-old-temp-files true
     dconf write /org/gnome/settings-daemon/plugins/color/night-light-enabled true
-    dconf write /org/gnome/settings-daemon/plugins/color/night-light-temperature uint32 4240
+    dconf write /org/gnome/settings-daemon/plugins/color/night-light-temperature "'uint32 3200'"
     dconf write /org/gnome/desktop/interface/locate-pointer true
-    dconf write /org/gnome/desktop/search-providers/disabled ['org.gnome.Software.desktop']
+    dconf write /org/gnome/desktop/search-providers/disabled "['org.gnome.Software.desktop']"
 
-    dconf write /org/gnome/shell/keybindings/show-screenshot-ui ['<Shift><Super>s']
-    dconf write /org/gnome/desktop/wm/keybindings/toggle-fullscreen ['<Super>F11']
-    dconf write /org/gnome/settings-daemon/plugins/media-keys/home ['<Super>e']
-    dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings ['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
-    dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding '<Super>Return'
-    dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command 'gnome-terminal'
-    dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name 'Terminal'
+    dconf write /org/gnome/shell/keybindings/show-screenshot-ui "['<Shift><Super>s']"
+    dconf write /org/gnome/desktop/wm/keybindings/toggle-fullscreen "['<Super>F11']"
+    dconf write /org/gnome/settings-daemon/plugins/media-keys/home "['<Super>e']"
+    dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
+    dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'<Super>Return'"
+    dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command "'gnome-terminal'"
+    dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name "'Terminal'"
 }
 
 possible_steps="update_system
