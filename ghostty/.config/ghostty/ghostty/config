@@ -1,0 +1,18 @@
+font-family = "CommitMono"
+adjust-cell-height = 30%
+adjust-cursor-height = 30%
+theme = dark:Adwaita Dark,light:Adwaita
+mouse-hide-while-typing = true
+background-opacity = 1.0
+command = fish
+window-subtitle = working-directory
+window-theme = ghostty
+
+keybind = ctrl+alt+h=goto_split:left
+keybind = ctrl+alt+j=goto_split:down
+keybind = ctrl+alt+k=goto_split:up
+keybind = ctrl+alt+l=goto_split:right
+keybind = ctrl+shift+z=toggle_split_zoom
+
+# linux pkg manager managed
+auto-update = off

@@ -1,0 +1,22 @@
+# Exclude patterns
+
+- .thumbnails/***
+- node_modules/***
+- venv/***
+- .venv/***
+
+# Include patterns
+
++ /Documents/***
++ /Images/***
++ /Musique/***
++ /Téléchargements/***
++ /Vidéos/***
++ /Music/***
++ /.var/***
++ /.ssh/***
++ /.dots/***
+
+# Exclude everything else
+- /**
+

@@ -1,4 +1,4 @@
-theme = "fleet_dark"
+theme = "adwaita-dark"
 
 [editor]
 line-number = "relative"
@@ -19,3 +19,8 @@ newline = "⏎"
 render = true
 character = "▏"
 skip-levels = 1
+
+[keys.normal.space]
+B = ":sh blame.sh %{buffer_name} %{cursor_line}" # Show blame information
+U = ":sh blame.sh --url-only %{cursor_line} %{buffer_name} | xargs -I{} xdg-open {}" # Open PR or commit url in browser
+R = ':run-shell-command kitten @ send-text -m recent:1 odin run \(string replace -r \"/.*\" \"/\" %{buffer_name}\); kitten @ send-key -m recent:1 enter'
