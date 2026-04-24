@@ -1,18 +1,20 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 install_packages() {
     apt install --no-install-recommends \
         mesa-vulkan-drivers \
-        git \
-        curl \
+        intel-gpu-tools \
+        git tig \
+        curl stow unzip \
         flatpak gnome-software-plugin-flatpak \
         keepassxc \
         zim \
         vis lua-lpeg \
-        stow \
-        intel-gpu-tools \
+	ncdu \
+        fish \
+	nnn \
         adwaita-qt qgnomeplatform-qt5 adwaita-qt6 qgnomeplatform-qt6 \
-        rsync \
+	ripgrep fd-find fzf rsync \
 # gnome-shell-extension-manager gnome-shell-extension-prefs \
 
         flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
@@ -32,13 +34,14 @@ install_flatpaks() {
         com.github.tchx84.Flatseal \
         com.vixalien.sticky \
         org.gnome.gitlab.YaLTeR.VideoTrimmer \
-        it.mijorus.gearlever
+        it.mijorus.gearlever \
+	com.nextcloud.desktopclient.nextcloud \
+	org.qbittorrent.qBittorrent \
 }
 
 function configure_gcadapter {
-    echo 'SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="057e", ATTRS{idProduct}
-=="0337", MODE="0666"' | sudo tee /etc/udev/rules.d/51-gcadapters.rules > /dev/null
-    echo 'SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="102b", MODE="0666"' | sudo tee /etc/udev/rules.d/51-losslessadapters.rules > /dev/null
+    echo "SUBSYSTEM==\"usb\", ENV{DEVTYPE}==\"usb_device\", ATTRS{idVendor}==\"057e\", ATTRS{idProduct}==\"0337\", MODE=\"0666\"" | sudo tee /etc/udev/rules.d/51-gcadapter.rules
+    echo "SUBSYSTEM==\"usb\", ENV{DEVTYPE}==\"usb_device\", ATTRS{idVendor}==\"2e8a\", ATTRS{idProduct}==\"102b\", MODE=\"0666\"" | sudo tee /etc/udev/rules.d/51-losslessadapter.rules
 
     sudo udevadm control --reload-rules
 }
@@ -115,53 +118,12 @@ install_fonts() {
     gsettings set org.gnome.desktop.interface monospace-font-name "CommitMono 11"
 }
 
-install_nix() {
-# for dev env, dependencies, runtimes etc
-sudo apt install nix-setup-systemd
-
-if [ -s "$(getent group nix-users)" ]; then
-    sudo usermod -aG nix-users axel
-else
-    echo "${USER}\C2\A0already belongs to nix-users group"
-fi
-
-nix-channel --add https://nixos.org/channels/nixos-25.05 nixpkgs
-
-echo "log out and log in from session, then run :"
-echo "nix-channel --update"
-# then add nix-profile/bin to PATH in .profile and everything is good !
-# nix-env -iA nixpkgs.nnn to install latest nnn !
-}
 
 #install_appimages() {
 # p+fr appimage
+# slippi launcher
 # helium browser (check for hardware acceleration)
-#}
-
-#setup_obs() {
-
-# obs-cmd binary and zenity in path
-# fish / bash function replay_buffer to display zenity
-# obs configured to expose a websocket server
-
-# curl -L https://github.com/grigio/obs-cmd/releases/latest/download/obs-cmd-linux-amd64 -o obs-cmd
-#\C2\A0chmod +x obs-cmd
-# sudo mv obs-cmd /usr/local/bin/
-# or nixpkgs
-
-# Defined in /home/axel/.config/fish/functions/replay-buffer.fish @ line 1
-# function replay-buffer 
-#    if not command -q obs-cmd; or not command -q zenity
-#        exit 1
-#    end
-#
-#    if obs-cmd info &>/dev/null
-#        obs-cmd replay (zenity --list  --column "command"  --text (obs-cmd replay status | tail -1) "save" "toggle")
-#    end
-# end
-
-# gnome shortcut added
-
+# appimage manager or gearlever...
 #}
 
 main() {
@@ -171,7 +133,6 @@ main() {
     configure_gcadapter
     gnome_online_accounts
     install_fonts
-    install_nix
 }
 
 main
