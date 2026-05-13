@@ -1,2 +1,1 @@
-vim.o.tabstop = 3
-
+vim.lsp.enable("lua_ls")

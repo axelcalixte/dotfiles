@@ -10,36 +10,20 @@
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "gitsigns.nvim": {
-      "rev": "8d82c240f190fc33723d48c308ccc1ed8baad69d",
+      "rev": "dd3f588bacbeb041be6facf1742e42097f62165d",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
-    "lualine.nvim": {
-      "rev": "a905eeebc4e63fdc48b5135d3bf8aea5618fb21c",
-      "src": "https://github.com/nvim-lualine/lualine.nvim"
-    },
     "mini.nvim": {
-      "rev": "c67822c53e8e282fe863343e88aa0a8ca3534059",
+      "rev": "17c448b0f3f29c0857a3436fc64e1d7cb9267ec3",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
-    "modus-themes.nvim": {
-      "rev": "17a64464c27c1be605adca13dbe48f2f402fe107",
-      "src": "https://github.com/miikanissi/modus-themes.nvim"
-    },
-    "nvim-jdtls": {
-      "rev": "77ccaeb422f8c81b647605da5ddb4a7f725cda90",
-      "src": "https://github.com/mfussenegger/nvim-jdtls"
-    },
     "nvim-lspconfig": {
-      "rev": "8a9378a822719346a0288fa004dab302ca3c0a8f",
+      "rev": "75e49cfa588a89ca667d767c0afef3ceac205faa",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "snacks.nvim": {
       "rev": "ad9ede6a9cddf16cedbd31b8932d6dcdee9b716e",
       "src": "https://github.com/folke/snacks.nvim"
-    },
-    "vim-asciidoctor": {
-      "rev": "d45364d662489e0ffcad0e2bc6f41c859ba58799",
-      "src": "https://github.com/habamax/vim-asciidoctor"
     },
     "vim-dadbod": {
       "rev": "6d1d41da4873a445c5605f2005ad2c68c99d8770",
@@ -52,10 +36,6 @@
     "vim-dadbod-ui": {
       "rev": "07e92e22114cc5b1ba4938d99897d85b58e20475",
       "src": "https://github.com/kristijanhusak/vim-dadbod-ui"
-    },
-    "vim-dispatch": {
-      "rev": "a2ff28abdb2d89725192db5b8562977d392a4d3f",
-      "src": "https://github.com/tpope/vim-dispatch"
     },
     "vim-fugitive": {
       "rev": "3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0",

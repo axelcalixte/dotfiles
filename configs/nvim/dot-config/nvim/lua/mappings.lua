@@ -39,3 +39,5 @@ map({ "n", "v" }, "<leader>y", [["+y]])
 map("n", "<leader>Y", [["+Y]])
 
 map({ "n", "v" }, "<leader>d", [["_d]])
+
+map({ "n" }, "<leader>r", "<cmd>restart<cr>")

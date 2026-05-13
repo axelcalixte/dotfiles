@@ -10,14 +10,15 @@ install_packages() {
         keepassxc \
         zim \
         vis lua-lpeg \
-	ncdu \
+        ncdu \
         fish \
-	nnn \
+        nnn \
         adwaita-qt qgnomeplatform-qt5 adwaita-qt6 qgnomeplatform-qt6 \
-	ripgrep fd-find fzf rsync \
-# gnome-shell-extension-manager gnome-shell-extension-prefs \
+        ripgrep fd-find fzf rsync \
+        distrobox \
+        gnome-shell-extension-manager gnome-shell-extension-prefs \
 
-        flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+    flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 }
 
 install_flatpaks() {
@@ -35,8 +36,13 @@ install_flatpaks() {
         com.vixalien.sticky \
         org.gnome.gitlab.YaLTeR.VideoTrimmer \
         it.mijorus.gearlever \
-	com.nextcloud.desktopclient.nextcloud \
-	org.qbittorrent.qBittorrent \
+        com.nextcloud.desktopclient.nextcloud \
+        org.qbittorrent.qBittorrent \
+
+        # com.jetbrains.IntelliJ-IDEA-Ultimate \
+        # com.jetbrains.WebStorm \
+        # org.freedesktop.Sdk.Extension.node24 \
+        # org.freedesktop.Sdk.Extension.openjdk21
 }
 
 function configure_gcadapter {
@@ -53,16 +59,15 @@ change_gnome_settings() {
         ["/org/gnome/desktop/peripherals/mouse/accel-profile"]="'flat'" \
         ["/org/gnome/desktop/sound/event-sounds"]="false" \
         ["/org/gnome/settings-daemon/plugins/color/night-light-enabled"]="true" \
-#	    ["/org/gnome/settings-daemon/plugins/color/night-light-temperature"]="'uint32 3200'" \
+        ["/org/gnome/settings-daemon/plugins/color/night-light-temperature"]="'uint32 3200'" \
         ["/org/gnome/desktop/interface/locate-pointer"]="true" \
         ["/org/gnome/desktop/wm/keybindings/toggle-fullscreen"]="['<Super>F11']" \
-#	    ["/org/gnome/shell/favorite-apps"]="['org.gnome.Terminal.desktop', 'firefox-esr.desktop']" \
+        ["/org/gnome/shell/favorite-apps"]="['org.gnome.Terminal.desktop', 'firefox-esr.desktop']" \
         ["/org/gnome/settings-daemon/plugins/media-keys/home"]="['<Super>e']" \
         ["/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings"]="['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']" \
         ["/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding"]="['<Super>Return']" \
-        # this doesn't work for reasons... manual step required
-        ["/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command"]="'gnome-terminal'" \
-        ["/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name"]="'Terminal'" \
+        ["/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command"]="\'gnome-terminal\'" \
+        ["/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name"]="\'Terminal\'" \
     )
 
     for setting in "${!settings[@]}"; do
@@ -77,25 +82,25 @@ gnome_online_accounts() {
     if [ ! -d "$goa_dir" ]; then
         mkdir -pv "$goa_dir"
     fi
-    
+
     echo "[Account account_1752676242_2]
-Provider=owncloud
-Identity=axel
-PresentationIdentity=axel@rpi.remi.calixte.eu
-Uri=https://rpi.remi.calixte.eu/remote.php/webdav
-CalendarEnabled=true
-CalDavUri=https://rpi.remi.calixte.eu/remote.php/dav
-ContactsEnabled=true
-CardDavUri=https://rpi.remi.calixte.eu/remote.php/dav
-FilesEnabled=true
-AcceptSslErrors=false" > "${goa_dir}/accounts.conf"
+    Provider=owncloud
+    Identity=axel
+    PresentationIdentity=axel@rpi.remi.calixte.eu
+    Uri=https://rpi.remi.calixte.eu/remote.php/webdav
+    CalendarEnabled=true
+    CalDavUri=https://rpi.remi.calixte.eu/remote.php/dav
+    ContactsEnabled=true
+    CardDavUri=https://rpi.remi.calixte.eu/remote.php/dav
+    FilesEnabled=true
+    AcceptSslErrors=false" > "${goa_dir}/accounts.conf"
 }
 
 install_fonts() {
     fonts_dir="${HOME}/.local/share/fonts"
     if [ -d "$fonts_dir" ]; then
         rm -rf "$fonts_dir"
-    fi 
+    fi
     mkdir -pv "$fonts_dir"
 
     base_tmp="$(pwd)"
@@ -124,6 +129,23 @@ install_fonts() {
 # slippi launcher
 # helium browser (check for hardware acceleration)
 # appimage manager or gearlever...
+}
+
+#use_qmk() {
+# curl -fsSL https://install.qmk.fm | sh
+# The above script installs dependencies via apt, installs uv and uvx and then installs qmk through uv
+# It clones the qmk_firmware repository with submodules.
+# To flash the firmware of a keyboard, I had to run their util/install_udev.sh script
+# It installs in /etc/udev/udev_rules.d the udev rules.
+# It also installs a executable /usr/lib/udev/qmk_id
+# after installing all these requirements I was able to flash the default firmware for my keyboard by running
+# > qmk flash -kb keychron/v1/iso_encoder -km default
+
+# A cleaner version of all this would be
+# 1. Install through pipx since I don't need all the features of uv
+# 2. run `qmk doctor` to check for missing apt dependencies
+# 3. git clone with submodules into a proper directory instead of ~
+# 4. run the util/install_udev.sh to make the flash command work
 #}
 
 main() {
