@@ -37,7 +37,7 @@ install_flatpaks() {
         org.gnome.gitlab.YaLTeR.VideoTrimmer \
         it.mijorus.gearlever \
         com.nextcloud.desktopclient.nextcloud \
-        org.qbittorrent.qBittorrent \
+        org.qbittorrent.qBittorrent
 
         # com.jetbrains.IntelliJ-IDEA-Ultimate \
         # com.jetbrains.WebStorm \
@@ -45,7 +45,7 @@ install_flatpaks() {
         # org.freedesktop.Sdk.Extension.openjdk21
 }
 
-function configure_gcadapter {
+configure_gcadapter() {
     echo "SUBSYSTEM==\"usb\", ENV{DEVTYPE}==\"usb_device\", ATTRS{idVendor}==\"057e\", ATTRS{idProduct}==\"0337\", MODE=\"0666\"" | sudo tee /etc/udev/rules.d/51-gcadapter.rules
     echo "SUBSYSTEM==\"usb\", ENV{DEVTYPE}==\"usb_device\", ATTRS{idVendor}==\"2e8a\", ATTRS{idProduct}==\"102b\", MODE=\"0666\"" | sudo tee /etc/udev/rules.d/51-losslessadapter.rules
 
@@ -104,18 +104,27 @@ install_fonts() {
     mkdir -pv "$fonts_dir"
 
     base_tmp="$(pwd)"
-    cd "$fonts_dir" || echo "not able to create fonts dir" && exit
+    cd "$fonts_dir" || { echo "not able to create fonts dir"; return 1; }
 
     curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/NerdFontsSymbolsOnly.zip
     curl -LO https://github.com/eigilnikolajsen/commit-mono/releases/download/v1.143/CommitMono-1.143.zip
     curl -LO https://download.gnome.org/sources/adwaita-fonts/49/adwaita-fonts-49.0.tar.xz
 
-    find . -name '*.zip' -exec sh -c 'unzip $1' ';'
-    rm ./*.zip
-    find . -name '*.tar.xz' -exec sh -c 'tar -xf $1' ';'
-    rm ./*.tar.xz
+    unzip -o NerdFontsSymbolsOnly.zip
+    unzip -o CommitMono-1.143.zip
+    tar -xf adwaita-fonts-49.0.tar.xz
 
-    cd "$(base_tmp)" || echo "chouldn't return to base dir when installing fonts" && exit
+    # Move font files from subdirectories to fonts_dir
+    find . -name "*.ttf" -o -name "*.otf" -o -name "*.woff2" | while read -r fontfile; do
+        mv "$fontfile" "$fonts_dir/" 2>/dev/null || true
+    done
+
+    # Clean up empty directories and archives
+    rm -rf "$fonts_dir"/CommitMono-1.143
+    rm -rf "$fonts_dir"/adwaita-fonts-49.0
+    rm -f ./*.zip ./*.tar.xz
+
+    cd "$base_tmp" || { echo "couldn't return to base dir when installing fonts"; return 1; }
 
     fc-cache -fv
 
