@@ -16,7 +16,7 @@ fnm env | source
 echo "Installed node" (node -v)
 
 # Download and install pnpm:
-yes | corepack enable pnpm
+yes | corepack install -g pnpm
 
 # Verify pnpm version:
 echo "Installed node" (pnpm -v)
