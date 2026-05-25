@@ -8,6 +8,7 @@ local m = utils.map
 m({ "n" }, '<leader>ff', function() Snacks.picker.files() end, { silent = true })
 m({ "n" }, '<leader><leader>', function() Snacks.picker.buffers() end, { silent = true })
 m({ "n" }, '<leader>fh', function() Snacks.picker.help() end, { silent = true })
+m({ "n" }, '<leader>fk', function() Snacks.picker.keymaps() end, { silent = true })
 m({ "n" }, '<leader>fg', function() Snacks.picker.grep() end, { silent = true })
 m({ "n" }, '<leader>fd', function() Snacks.picker.diagnostics_buffer() end, { silent = true })
 m({ "n" }, '<leader>fD', function() Snacks.picker.diagnostics() end, { silent = true })
