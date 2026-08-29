@@ -21,3 +21,4 @@
 	enabled = true
 [alias]
 	pushf = push --force-with-lease
+	publish = push -u origin HEAD

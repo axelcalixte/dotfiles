@@ -18,7 +18,7 @@ end
 M.get_directories = function(paths)
     local directories = {}
     for _, path in ipairs(paths) do
-       for _, dir in ipairs(vim.fn.glob(path .. '/*', 0, 1)) do
+       for _, dir in ipairs(vim.fn.glob(path .. '/*', 0, 7)) do
            if vim.fn.isdirectory(dir) == 1 then
                table.insert(directories, dir)
            end

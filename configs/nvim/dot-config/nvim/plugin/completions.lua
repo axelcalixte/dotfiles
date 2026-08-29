@@ -31,4 +31,3 @@ require('blink.cmp').setup({
    fuzzy = { implementation = 'lua' }, -- TODO: switch to rust fuzzy matcher when v2.x becomes stable
    signature = { enabled = true },
 })
-

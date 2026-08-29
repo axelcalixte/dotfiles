@@ -1,4 +1,5 @@
 #!/usr/bin/env fish
+# works through a distrobox container !
 
 dpkg -s ddcutil > /dev/null 2>&1
 if test $status -eq 1

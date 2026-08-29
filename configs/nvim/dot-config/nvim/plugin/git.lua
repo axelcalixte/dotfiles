@@ -38,5 +38,3 @@ require("gitsigns").setup({
       map('n', '<leader>gd', gitsigns.diffthis)
    end
 })
-
-

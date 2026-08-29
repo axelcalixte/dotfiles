@@ -4,6 +4,9 @@
 - node_modules/***
 - venv/***
 - .venv/***
+- .local/share/containers/***
+- .local/share/flatpak/***
+- .local/share/Trash/***
 
 # Include patterns
 
