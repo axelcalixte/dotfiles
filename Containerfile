@@ -10,7 +10,7 @@ RUN zypper --non-interactive install --no-recommends \
     fzf \
     git \
     neovim \
-    kitty \
+    kitty kitty-shell-integration kitty-terminfo \
     starship \
     fnm \
     maven \
